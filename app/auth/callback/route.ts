@@ -11,8 +11,8 @@ export async function GET(request: Request) {
 
   if (code) {
     const cookieStore = await cookies();
-    const { url, key } = assertSupabasePublicEnv();
-    const supabase = createServerClient(url, key, {
+    const { url, anonKey } = assertSupabasePublicEnv();
+    const supabase = createServerClient(url, anonKey, {
       cookies: {
         getAll() {
           return cookieStore.getAll();

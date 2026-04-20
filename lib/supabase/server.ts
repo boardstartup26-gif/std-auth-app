@@ -1,13 +1,13 @@
-import { createServerClient } from "@supabase/ssr";
+import { createServerClient as createSupabaseServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
 import { assertSupabasePublicEnv } from "@/lib/supabase/env";
 
-export async function createClient() {
+export async function createServerClient() {
   const cookieStore = await cookies();
-  const { url, key } = assertSupabasePublicEnv();
+  const { url, anonKey } = assertSupabasePublicEnv();
 
-  return createServerClient(url, key, {
+  return createSupabaseServerClient(url, anonKey, {
     cookies: {
       getAll() {
         return cookieStore.getAll();
@@ -18,7 +18,7 @@ export async function createClient() {
             cookieStore.set(name, value, options)
           );
         } catch {
-          // Server Components cannot set cookies; session refresh runs in `proxy.ts`.
+          // Server Components cannot set cookies; session refresh runs in `middleware.ts`.
         }
       },
     },

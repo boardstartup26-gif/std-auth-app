@@ -5,12 +5,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { createClient } from "@/lib/supabase/server";
+import { createServerClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
-  const supabase = await createClient();
+  const supabase = await createServerClient();
   const { data } = await supabase.auth.getClaims();
   const claims = (data?.claims ?? {}) as Record<string, unknown>;
   const email = typeof claims.email === "string" ? claims.email : null;

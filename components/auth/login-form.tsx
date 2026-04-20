@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
 
-import { signInWithPassword } from "@/app/actions/auth";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import * as React from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,6 +15,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { createBrowserClient } from "@/lib/supabase/client";
 
 type Props = {
   nextPath: string;
@@ -19,6 +23,10 @@ type Props = {
 };
 
 export function LoginForm({ nextPath, error }: Props) {
+  const router = useRouter();
+  const [pending, startTransition] = React.useTransition();
+  const [message, setMessage] = React.useState<string | null>(error ?? null);
+
   return (
     <Card className="mx-auto w-full max-w-md border-border/80 shadow-sm">
       <CardHeader>
@@ -28,14 +36,43 @@ export function LoginForm({ nextPath, error }: Props) {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form action={signInWithPassword} className="grid gap-4">
-          <input type="hidden" name="next" value={nextPath} />
-          {error ? (
+        <form
+          className="grid gap-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            setMessage(null);
+
+            const form = new FormData(e.currentTarget);
+            const email = String(form.get("email") ?? "").trim();
+            const password = String(form.get("password") ?? "");
+
+            startTransition(async () => {
+              try {
+                const supabase = createBrowserClient();
+                const { error } = await supabase.auth.signInWithPassword({
+                  email,
+                  password,
+                });
+
+                if (error) {
+                  setMessage(error.message);
+                  return;
+                }
+
+                router.push(nextPath);
+                router.refresh();
+              } catch (err) {
+                setMessage(err instanceof Error ? err.message : String(err));
+              }
+            });
+          }}
+        >
+          {message ? (
             <p
               className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive"
               role="alert"
             >
-              {error}
+              {message}
             </p>
           ) : null}
           <div className="grid gap-2">
@@ -60,8 +97,8 @@ export function LoginForm({ nextPath, error }: Props) {
               minLength={6}
             />
           </div>
-          <Button type="submit" size="lg" className="w-full">
-            Sign in
+          <Button type="submit" size="lg" className="w-full" disabled={pending}>
+            {pending ? "Signing in..." : "Sign in"}
           </Button>
         </form>
       </CardContent>

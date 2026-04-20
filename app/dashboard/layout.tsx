@@ -1,6 +1,6 @@
 import { signOut } from "@/app/actions/auth";
 import { Button } from "@/components/ui/button";
-import { createClient } from "@/lib/supabase/server";
+import { createServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
@@ -10,7 +10,7 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const supabase = await createClient();
+  const supabase = await createServerClient();
   const { data, error } = await supabase.auth.getClaims();
 
   if (error || !data?.claims?.sub) {

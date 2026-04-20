@@ -1,6 +1,6 @@
 import { LoginForm } from "@/components/auth/login-form";
 import { SiteHeader } from "@/components/site-header";
-import { createClient } from "@/lib/supabase/server";
+import { createServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
@@ -15,7 +15,7 @@ function pickNext(raw: string | undefined) {
 }
 
 export default async function LoginPage({ searchParams }: Props) {
-  const supabase = await createClient();
+  const supabase = await createServerClient();
   const { data } = await supabase.auth.getClaims();
   if (data?.claims?.sub) {
     redirect("/dashboard");

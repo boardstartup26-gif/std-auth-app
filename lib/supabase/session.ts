@@ -8,8 +8,8 @@ import { getSupabasePublicEnv } from "@/lib/supabase/env";
  * Call from `proxy.ts` so Server Components receive a valid JWT (use `getClaims()` there for auth checks).
  */
 export async function updateSession(request: NextRequest) {
-  const { url, key } = getSupabasePublicEnv();
-  if (!url || !key) {
+  const { url, anonKey } = getSupabasePublicEnv();
+  if (!url || !anonKey) {
     return NextResponse.next({ request });
   }
 
@@ -17,7 +17,7 @@ export async function updateSession(request: NextRequest) {
     request,
   });
 
-  const supabase = createServerClient(url, key, {
+  const supabase = createServerClient(url, anonKey, {
     cookies: {
       getAll() {
         return request.cookies.getAll();

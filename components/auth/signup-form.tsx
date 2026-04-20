@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
 
-import { signUpWithPassword } from "@/app/actions/auth";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import * as React from "react";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,14 +15,19 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { createBrowserClient } from "@/lib/supabase/client";
 
 type Props = {
-  siteUrl: string;
   error?: string;
   notice?: string;
 };
 
-export function SignupForm({ siteUrl, error, notice }: Props) {
+export function SignupForm({ error, notice }: Props) {
+  const router = useRouter();
+  const [pending, startTransition] = React.useTransition();
+  const [message, setMessage] = React.useState<string | null>(error ?? null);
+  const [localNotice, setLocalNotice] = React.useState<string | null>(notice ?? null);
+
   return (
     <Card className="mx-auto w-full max-w-md border-border/80 shadow-sm">
       <CardHeader>
@@ -29,17 +37,62 @@ export function SignupForm({ siteUrl, error, notice }: Props) {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form action={signUpWithPassword} className="grid gap-4">
-          <input type="hidden" name="site_url" value={siteUrl} />
-          {error ? (
+        <form
+          className="grid gap-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            setMessage(null);
+            setLocalNotice(null);
+
+            const form = new FormData(e.currentTarget);
+            const fullName = String(form.get("full_name") ?? "").trim();
+            const email = String(form.get("email") ?? "").trim();
+            const password = String(form.get("password") ?? "");
+
+            startTransition(async () => {
+              try {
+                const supabase = createBrowserClient();
+                const origin =
+                  typeof window !== "undefined" ? window.location.origin : "";
+                const emailRedirectTo = `${origin}/auth/callback?next=/dashboard`;
+
+                const { data, error } = await supabase.auth.signUp({
+                  email,
+                  password,
+                  options: {
+                    emailRedirectTo,
+                    data: fullName ? { full_name: fullName } : undefined,
+                  },
+                });
+
+                if (error) {
+                  setMessage(error.message);
+                  return;
+                }
+
+                // If email confirmation is enabled, you won't get a session yet.
+                if (data.user && !data.session) {
+                  setLocalNotice("confirm_email");
+                  return;
+                }
+
+                router.push("/dashboard");
+                router.refresh();
+              } catch (err) {
+                setMessage(err instanceof Error ? err.message : String(err));
+              }
+            });
+          }}
+        >
+          {message ? (
             <p
               className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive"
               role="alert"
             >
-              {error}
+              {message}
             </p>
           ) : null}
-          {notice === "confirm_email" ? (
+          {localNotice === "confirm_email" ? (
             <p className="rounded-lg border border-border bg-muted/40 px-3 py-2 text-sm text-muted-foreground">
               Check your email and use the confirmation link to finish setting up your account, then sign in.
             </p>
@@ -77,8 +130,8 @@ export function SignupForm({ siteUrl, error, notice }: Props) {
               placeholder="At least 6 characters"
             />
           </div>
-          <Button type="submit" size="lg" className="w-full">
-            Create account
+          <Button type="submit" size="lg" className="w-full" disabled={pending}>
+            {pending ? "Creating..." : "Create account"}
           </Button>
         </form>
       </CardContent>
