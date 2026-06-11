@@ -1,0 +1,1389 @@
+{
+  "year": 2018,
+  "paper": "2",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)(i)",
+      "scheme_text": "A or calcium nitrate",
+      "total_marks": 1,
+      "key_points": [
+        "Calcium Nitrate (Option A) does not react with ammonium hydroxide",
+        "NH4OH forms precipitates with Pb2+, Zn2+, Cu2+, Fe2+, Fe3+ but NOT with Ca2+"
+      ],
+      "model_answer": "The correct answer is A — Calcium Nitrate. Ammonium hydroxide forms precipitates with Pb2+, Zn2+, Cu2+, Fe2+, and Fe3+ ions, but calcium ions (Ca2+) do not react with NH4OH to form a precipitate, so calcium nitrate solution remains unchanged.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["A"],
+      "common_errors": [
+        "Some candidates chose copper nitrate instead of calcium nitrate",
+        "Some candidates selected lead nitrate instead of calcium nitrate"
+      ],
+      "examiner_notes": "Familiarize students with practical work showing that NH4OH forms precipitates with Pb2+, Zn2+, Cu2+, Fe2+, Fe3+ but not with Ca2+."
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "scheme_text": "D or C2H6",
+      "total_marks": 1,
+      "key_points": [
+        "C2H6 (ethane) is an alkane and undergoes substitution reactions",
+        "Alkanes follow the general formula CnH2n+2",
+        "C2H2 and C2H4 undergo addition reactions; C10H18 is not a standard alkane"
+      ],
+      "model_answer": "The correct answer is D — C2H6 (ethane). Ethane is an alkane, and alkanes characteristically undergo substitution reactions (e.g., halogenation in the presence of UV light). C2H2 and C2H4 are unsaturated hydrocarbons that undergo addition reactions instead.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["D"],
+      "common_errors": [
+        "Many candidates made random choices without associating alkanes with substitution reactions",
+        "Candidates did not apply the general formula CnH2n+2 to identify the correct alkane"
+      ],
+      "examiner_notes": "Ask students to learn hydrocarbons (alkanes, alkenes, and alkynes), their general formulae, methods of preparation, and main properties thoroughly."
+    },
+    {
+      "question_number": "1(a)(iii)",
+      "scheme_text": "C or redox reaction",
+      "total_marks": 1,
+      "key_points": [
+        "Electrolysis of acidified water involves both oxidation (at anode) and reduction (at cathode)",
+        "A reaction involving both oxidation and reduction simultaneously is a redox reaction"
+      ],
+      "model_answer": "The correct answer is C — Redox reaction. During the electrolysis of acidified water, oxidation occurs at the anode (water/OH- ions lose electrons to form O2) and reduction occurs at the cathode (H+ ions gain electrons to form H2), making it simultaneously both an oxidation and a reduction, i.e., a redox reaction.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["C"],
+      "common_errors": [
+        "A few candidates wrote 'oxidation' only",
+        "A few candidates wrote 'reduction' only instead of redox reaction"
+      ],
+      "examiner_notes": "Stress upon revising concepts based on oxidation and reduction frequently."
+    },
+    {
+      "question_number": "1(a)(iv)",
+      "scheme_text": "B or methoxy methane",
+      "total_marks": 1,
+      "key_points": [
+        "Dimethyl ether has the structure CH3-O-CH3",
+        "IUPAC name: methoxymethane (the larger/only alkyl group is the parent chain, the -O-CH3 is the methoxy group)"
+      ],
+      "model_answer": "The correct answer is B — Methoxy methane. Dimethyl ether (CH3-O-CH3) has both alkyl groups as methyl groups; in IUPAC nomenclature, ethers are named as alkoxy derivatives of an alkane, giving methoxymethane.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["B"],
+      "common_errors": [
+        "Many candidates were unsure of the correct IUPAC name and gave varied answers"
+      ],
+      "examiner_notes": "Train students in naming of compounds, both the trivial names (where possible) and IUPAC names."
+    },
+    {
+      "question_number": "1(a)(v)",
+      "scheme_text": "C or Vanadium pentoxide",
+      "total_marks": 1,
+      "key_points": [
+        "The catalyst used in the Contact Process (for manufacture of sulphuric acid) is Vanadium pentoxide (V2O5)"
+      ],
+      "model_answer": "The correct answer is C — Vanadium pentoxide (V2O5). In the Contact Process for manufacturing sulphuric acid, vanadium pentoxide is used as the catalyst to oxidise sulphur dioxide (SO2) to sulphur trioxide (SO3).",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["C"],
+      "common_errors": [
+        "A few candidates chose iron as the catalyst, which is incorrect (iron is used in the Haber Process)"
+      ],
+      "examiner_notes": "Instruct students to learn industrial processes like Haber's, Ostwald's and Contact with conditions, reactions, and precautions (if any) in detail."
+    },
+    {
+      "question_number": "1(b)(i)",
+      "scheme_text": "Electron affinity / electron gain enthalpy",
+      "total_marks": 1,
+      "key_points": [
+        "Electron affinity (also called electron gain enthalpy) is the energy released when an electron is added to a neutral gaseous isolated atom to form a negatively charged ion"
+      ],
+      "model_answer": "Electron affinity (or electron gain enthalpy) is the term for the energy released when an electron is added to a neutral gaseous isolated atom, converting it into a negatively charged ion.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["electron gain enthalpy"],
+      "common_errors": [
+        "Many candidates wrote 'electronegativity' instead of electron affinity",
+        "Many candidates wrote 'ionization potential' instead of electron affinity"
+      ],
+      "examiner_notes": "Advise students to learn the differentiation between terms such as ionization potential and electron affinity; electron affinity and electronegativity."
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "scheme_text": "Ionisation",
+      "total_marks": 1,
+      "key_points": [
+        "Ionisation is the process of formation of ions from molecules that are not in the ionic state"
+      ],
+      "model_answer": "Ionisation is the process by which neutral molecules or atoms are converted into ions (charged particles), applicable when the starting material is not already in an ionic state.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates wrote 'dissociation' instead of ionisation"
+      ],
+      "examiner_notes": "Advise students to learn the differentiation between dissociation and ionisation; ionic compounds and covalent compounds."
+    },
+    {
+      "question_number": "1(b)(iii)",
+      "scheme_text": "Catenation",
+      "total_marks": 1,
+      "key_points": [
+        "Catenation is the tendency of an element to form chains of identical atoms"
+      ],
+      "model_answer": "Catenation is the term describing the unique tendency of certain elements (notably carbon) to form long chains or rings by bonding with atoms of the same element.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates wrote 'self-linking' instead of catenation"
+      ],
+      "examiner_notes": "Advise students to differentiate between self-linking and catenation."
+    },
+    {
+      "question_number": "1(b)(iv)",
+      "scheme_text": "Efflorescence / efflorescent",
+      "total_marks": 1,
+      "key_points": [
+        "Efflorescence is the property by which certain hydrated salts, when left exposed to the atmosphere, lose their water of crystallisation and crumble into powder"
+      ],
+      "model_answer": "Efflorescence is the property of certain hydrated salts whereby, on exposure to the atmosphere, they spontaneously lose their water of crystallisation and crumble into a fine powder.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["efflorescent"],
+      "common_errors": [
+        "A few candidates confused efflorescence with deliquescence",
+        "Some referred to it as effervescence",
+        "Spelling errors were noted in some answers"
+      ],
+      "examiner_notes": "Advise students to differentiate between efflorescence and deliquescence, and between efflorescence and effervescence."
+    },
+    {
+      "question_number": "1(b)(v)",
+      "scheme_text": "Froth floatation method",
+      "total_marks": 1,
+      "key_points": [
+        "Froth floatation method is the process by which sulphide ores are concentrated"
+      ],
+      "model_answer": "The froth floatation method is the process used to concentrate sulphide ores, in which ore particles are selectively wetted by oil and float to the surface as froth while gangue sinks.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates wrote 'roasting' instead of froth floatation",
+        "Many candidates wrote 'calcination' instead of froth floatation"
+      ],
+      "examiner_notes": "Teach various methods of concentration of ores with the help of diagrams/charts for better retention of the content."
+    },
+    {
+      "question_number": "1(c)(i)",
+      "scheme_text": "C + 2H2SO4 → CO2 + 2SO2 + 2H2O",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: carbon (C) and concentrated sulphuric acid (H2SO4)",
+        "Products: carbon dioxide (CO2), sulphur dioxide (SO2), and water (H2O)",
+        "Balanced equation: C + 2H2SO4 → CO2 + 2SO2 + 2H2O"
+      ],
+      "model_answer": "When concentrated sulphuric acid acts on carbon, the equation is: C + 2H2SO4 → CO2 + 2SO2 + 2H2O. The carbon is oxidised to CO2 while the sulphuric acid is reduced to SO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates wrote H2SO3 or H2CO3 among the products",
+        "Some left the equation unbalanced",
+        "A few wrote Cu instead of C as the reactant"
+      ],
+      "examiner_notes": "Advise students to learn the chemical reactions with necessary conditions and their balanced chemical equations and practise by writing again and again."
+    },
+    {
+      "question_number": "1(c)(ii)",
+      "scheme_text": "FeCl3 + 3NaOH → Fe(OH)3 + 3NaCl",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: iron(III) chloride (FeCl3) and sodium hydroxide (NaOH)",
+        "Products: iron(III) hydroxide precipitate Fe(OH)3 and sodium chloride (NaCl)",
+        "Balanced equation: FeCl3 + 3NaOH → Fe(OH)3 + 3NaCl"
+      ],
+      "model_answer": "The reaction of sodium hydroxide solution with iron(III) chloride solution produces a reddish-brown precipitate of iron(III) hydroxide and sodium chloride: FeCl3 + 3NaOH → Fe(OH)3 + 3NaCl.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates wrote the equation with FeCl2 instead of FeCl3, giving Fe(OH)2 as the product"
+      ],
+      "examiner_notes": "Draw the attention of students to the difference in the symbols of radicals especially when the names sound similar."
+    },
+    {
+      "question_number": "1(c)(iii)",
+      "scheme_text": "2Al(OH)3 → Al2O3 + 3H2O",
+      "total_marks": 1,
+      "key_points": [
+        "Reactant: aluminium hydroxide Al(OH)3",
+        "Products on heating: aluminium oxide Al2O3 and water H2O",
+        "Balanced equation: 2Al(OH)3 → Al2O3 + 3H2O"
+      ],
+      "model_answer": "On heating, aluminium hydroxide decomposes to give aluminium oxide and water: 2Al(OH)3 → Al2O3 + 3H2O. This is a thermal decomposition reaction.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates incorrectly wrote the products as Al and H2O"
+      ],
+      "examiner_notes": "Advise students to learn the chemical reactions with necessary conditions and their balanced chemical equations and practise by writing again and again."
+    },
+    {
+      "question_number": "1(c)(iv)",
+      "scheme_text": "Zn + 2KOH → K2ZnO2 + H2",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: zinc (Zn) and potassium hydroxide solution (KOH)",
+        "Products: potassium zincate (K2ZnO2) and hydrogen gas (H2)",
+        "Balanced equation: Zn + 2KOH → K2ZnO2 + H2"
+      ],
+      "model_answer": "Zinc reacts with potassium hydroxide solution to form potassium zincate and hydrogen gas: Zn + 2KOH → K2ZnO2 + H2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates wrote an incorrect formula for potassium zincate",
+        "Many wrote one of the products as Zn(OH)2, ZnO, or K2O"
+      ],
+      "examiner_notes": "Advise students to learn the chemical reactions with necessary conditions and balanced chemical equations assiduously and practise by writing again and again."
+    },
+    {
+      "question_number": "1(c)(v)",
+      "scheme_text": "MgSO3 + 2HCl → MgCl2 + SO2 + H2O",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: magnesium sulphite (MgSO3) and dilute hydrochloric acid (HCl)",
+        "Products: magnesium chloride (MgCl2), sulphur dioxide (SO2), and water (H2O)",
+        "Balanced equation: MgSO3 + 2HCl → MgCl2 + SO2 + H2O"
+      ],
+      "model_answer": "Dilute hydrochloric acid acting on magnesium sulphite produces magnesium chloride, sulphur dioxide gas, and water: MgSO3 + 2HCl → MgCl2 + SO2 + H2O.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates confused magnesium sulphite with magnesium sulphide and magnesium sulphate",
+        "Some wrote one of the products as H2SO3 instead of H2O + SO2"
+      ],
+      "examiner_notes": "Instruct students to be specific as per the requirement of the question in writing the correct gas or precipitate instead of giving multiple answers."
+    },
+    {
+      "question_number": "1(d)(i)(1)",
+      "scheme_text": "Methanal or methan-1-al",
+      "total_marks": 1,
+      "key_points": [
+        "Structure H-C(=O)-H is methanal (the simplest aldehyde)",
+        "IUPAC name: methanal or methan-1-al"
+      ],
+      "model_answer": "The IUPAC name of H-C(=O)-H (formaldehyde) is methanal (also written methan-1-al). It is the simplest aldehyde, with one carbon atom bearing a carbonyl group.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["methan-1-al"],
+      "common_errors": [
+        "Some candidates wrote the trivial name 'methanone' instead of the IUPAC name 'methanal'"
+      ],
+      "examiner_notes": "Ensure students grasp the fact that alcohols end in 'ol' and aldehydes end in 'al', and that the 'e' of an alkane is replaced by 'ol' or 'al'."
+    },
+    {
+      "question_number": "1(d)(i)(2)",
+      "scheme_text": "1Propanol or Propane-1-OL",
+      "total_marks": 1,
+      "key_points": [
+        "Structure H-C-C-C-OH (propan-1-ol / 1-propanol)",
+        "IUPAC name: propan-1-ol or 1-propanol"
+      ],
+      "model_answer": "The structure showing a three-carbon chain with an -OH group at carbon 1 is propan-1-ol (1-propanol). The IUPAC name is derived by replacing the terminal 'e' of propane with '-ol' and indicating the position as 1.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["1-propanol", "propane-1-ol"],
+      "common_errors": [
+        "Some candidates ended the name with 'al' instead of 'ol'",
+        "Some incorrectly wrote prop-1-ol"
+      ],
+      "examiner_notes": "Instruct students that numbering of the chain is essential to assign the number to the functional group."
+    },
+    {
+      "question_number": "1(d)(i)(3)",
+      "scheme_text": "2Butene or but-2-ene",
+      "total_marks": 1,
+      "key_points": [
+        "Structure H3C-C=C-CH3 (with H substituents shown) is but-2-ene",
+        "IUPAC name: but-2-ene or 2-butene"
+      ],
+      "model_answer": "The structure H3C-CH=CH-CH3 (a four-carbon chain with a double bond between carbons 2 and 3) is named but-2-ene (or 2-butene) in IUPAC nomenclature.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["2-butene"],
+      "common_errors": [
+        "Some candidates wrote '1,2-dimethylethene' instead of 2-butene",
+        "Some wrote simply 'butane' or 'butan-2-ene' (incorrect suffix)"
+      ],
+      "examiner_notes": "Clarify straight and branched chains with sufficient examples and by giving repeated practice."
+    },
+    {
+      "question_number": "1(d)(ii)",
+      "scheme_text": "1. H-C-C-C-C-H (n-butane) OR CH3-CH2-CH2-CH3; 2. Branched isobutane structure OR H3C-CH(CH3)-CH3",
+      "total_marks": 1,
+      "key_points": [
+        "Isomer 1 (n-butane): straight chain — CH3-CH2-CH2-CH3",
+        "Isomer 2 (isobutane / 2-methylpropane): branched chain — (CH3)2CHCH3 or H3C-CH(CH3)-CH3"
+      ],
+      "model_answer": "Butane has two structural isomers: n-butane (CH3-CH2-CH2-CH3), a straight-chain four-carbon molecule, and isobutane (2-methylpropane, (CH3)2CHCH3), a branched-chain isomer with a methyl group on the central carbon.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["CH3-CH2-CH2-CH3", "H3C-CH(CH3)-CH3"],
+      "common_errors": [
+        "Many candidates did not understand the difference between straight and branched chains",
+        "Some showed only the carbon skeleton without the complete structural formula including hydrogen atoms"
+      ],
+      "examiner_notes": "Clarify straight and branched chains with sufficient examples and by giving repeated practice."
+    },
+    {
+      "question_number": "1(e)(i)",
+      "scheme_text": "White precipitate soluble in excess of sodium hydroxide solution.",
+      "total_marks": 1,
+      "key_points": [
+        "A white precipitate of Pb(OH)2 is formed initially",
+        "The precipitate dissolves in excess NaOH to give a colourless solution (sodium plumbate)"
+      ],
+      "model_answer": "When lead nitrate solution is treated with sodium hydroxide solution dropwise until in excess, a white precipitate forms initially which dissolves in excess sodium hydroxide to give a colourless solution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["White precipitate forms and dissolves in excess NaOH to give a colourless solution"],
+      "common_errors": [
+        "Many candidates wrote 'white Pb(OH)2' without stating that it is soluble in excess NaOH",
+        "Some wrote 'insoluble in excess' instead of 'soluble in excess'",
+        "Some wrote 'white solution' instead of 'colourless solution'"
+      ],
+      "examiner_notes": "Insist upon students recording the observation on their own during practical and then ask them to compare with expected observations."
+    },
+    {
+      "question_number": "1(e)(ii)",
+      "scheme_text": "Reddish brown vapour at the anode.",
+      "total_marks": 1,
+      "key_points": [
+        "At the anode during electrolysis of molten lead bromide, reddish-brown bromine vapour is evolved"
+      ],
+      "model_answer": "At the anode, when molten lead bromide is electrolysed using graphite electrodes, reddish-brown bromine vapour is produced as bromide ions are oxidised.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Colour of bromine was written as orange/red instead of reddish-brown",
+        "Some forgot to mention 'vapour' or 'gas' with the colour",
+        "A few wrote that grey metal is deposited at the anode",
+        "Several candidates wrote equations instead of observations"
+      ],
+      "examiner_notes": "Ask students to first name the electrode and then give the equation or product while answering questions on reaction at electrode."
+    },
+    {
+      "question_number": "1(e)(iii)",
+      "scheme_text": "A white precipitate is formed which dissolves on heating; or initially white precipitate is formed but on heating colourless solution is observed.",
+      "total_marks": 1,
+      "key_points": [
+        "White precipitate of PbCl2 forms when lead nitrate is mixed with dilute HCl",
+        "On heating, the white precipitate dissolves to give a colourless solution (PbCl2 is more soluble in hot water)"
+      ],
+      "model_answer": "When lead nitrate solution is mixed with dilute hydrochloric acid, a white precipitate of lead chloride (PbCl2) forms initially. On heating, this precipitate dissolves to give a colourless solution, since PbCl2 is more soluble in hot water.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Initially white precipitate is formed but on heating a colourless solution is observed"],
+      "common_errors": [
+        "Instead of 'white precipitate' many candidates wrote reddish-brown fumes of NO2",
+        "Some wrote the equation without stating the colour of the precipitate",
+        "A few left out the effect of heating on the solubility of PbCl2"
+      ],
+      "examiner_notes": "Demonstrate the 'what happens when' type of possible cases to students to enable them to write relevant observations with confidence."
+    },
+    {
+      "question_number": "1(e)(iv)",
+      "scheme_text": "Colourless solution or solid CaCl2 turns into solution.",
+      "total_marks": 1,
+      "key_points": [
+        "Anhydrous calcium chloride is deliquescent; it absorbs moisture from the air",
+        "The solid CaCl2 gradually turns into a colourless solution on exposure to air"
+      ],
+      "model_answer": "When anhydrous calcium chloride is exposed to air for some time, it absorbs moisture (it is deliquescent) and the solid gradually dissolves to form a colourless solution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Solid CaCl2 turns into solution"],
+      "common_errors": [
+        "Instead of saying CaCl2 turns into a colourless solution, candidates wrote that it turns hydrated",
+        "Some stated it turns powdery, confusing it with efflorescent substances"
+      ],
+      "examiner_notes": "Demonstrate the 'what happens when' type of possible cases. Advise students to differentiate between efflorescence and deliquescence."
+    },
+    {
+      "question_number": "1(e)(v)",
+      "scheme_text": "A white precipitate is formed. (correct relevant observations accepted)",
+      "total_marks": 1,
+      "key_points": [
+        "Barium chloride solution added to sodium sulphate solution produces a white precipitate of barium sulphate (BaSO4)"
+      ],
+      "model_answer": "When barium chloride solution is slowly added to sodium sulphate solution, a white precipitate of barium sulphate (BaSO4) is formed.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["White precipitate of BaSO4 is formed"],
+      "common_errors": [
+        "A few candidates identified the product BaSO4 but missed out the word 'precipitate' or the colour 'white'"
+      ],
+      "examiner_notes": "Train students to write answers to the point. While writing a chemical equation, gas should be highlighted with an upward arrow and precipitation with a downward arrow."
+    },
+    {
+      "question_number": "1(f)(i)",
+      "scheme_text": "Oppositely charged ions are held by strong force of attraction or energy is required to separate the ions/particles held by strong electrostatic force of attraction.",
+      "total_marks": 1,
+      "key_points": [
+        "Ionic compounds consist of oppositely charged ions held together by strong electrostatic forces of attraction",
+        "A large amount of energy is required to overcome these forces, hence the high melting point"
+      ],
+      "model_answer": "Ionic compounds have high melting points because the oppositely charged ions are held together by very strong electrostatic forces of attraction. A large amount of energy is needed to break these forces and separate the ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Energy is required to separate the ions held by strong electrostatic force of attraction"],
+      "common_errors": [
+        "'Intermolecular force of attraction' was stated instead of 'strong electrostatic force of attraction between ions'"
+      ],
+      "examiner_notes": "Give practice in answering reasoning questions in different units. Explain the possible reasoning questions in the class at the time of discussing a topic."
+    },
+    {
+      "question_number": "1(f)(ii)",
+      "scheme_text": "Inert gases have stable electronic configuration or have 8 electrons in the valence shell (last shell) / do not lose or gain electrons to form ions / complete outermost or valence shell.",
+      "total_marks": 1,
+      "key_points": [
+        "Inert gases have a stable electronic configuration with 8 electrons in the valence shell (2 for helium)",
+        "They do not lose or gain electrons to form ions as they already have a complete outermost shell"
+      ],
+      "model_answer": "Inert gases do not form ions because they have a stable electronic configuration with a fully filled valence shell (8 electrons, or 2 for helium). They have no tendency to gain or lose electrons.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Do not lose or gain electrons to form ions; complete outermost shell"],
+      "common_errors": [
+        "Some candidates wrote that inert gases are stable without mentioning their electronic configuration or the presence of 8 electrons in the valence shell"
+      ],
+      "examiner_notes": "Give practice in answering reasoning questions in different units."
+    },
+    {
+      "question_number": "1(f)(iii)",
+      "scheme_text": "Nuclear charge increases / nucleus exerts greater force of attraction on the valence electrons of same shell or atomic size decreases / the force of attraction on the valence electrons are more i.e., increases.",
+      "total_marks": 1,
+      "key_points": [
+        "Across a period from left to right, nuclear charge (number of protons) increases",
+        "Increased nuclear charge means greater attractive force on valence electrons in the same shell",
+        "More energy is required to remove an electron, hence ionisation potential increases"
+      ],
+      "model_answer": "Ionisation potential increases across a period from left to right because nuclear charge increases while the number of electron shells remains the same. The greater nuclear charge exerts a stronger attractive force on the valence electrons, making them harder to remove.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Atomic size decreases across a period so force of attraction on valence electrons increases"],
+      "common_errors": [
+        "Many candidates could not explain the reason for increase in ionisation potential across a period from left to right"
+      ],
+      "examiner_notes": "Advise students to differentiate between ionization potential and electron affinity."
+    },
+    {
+      "question_number": "1(f)(iv)",
+      "scheme_text": "Alkali metals have low ionization potential / have one electron in their valence shell / and hence they easily lose or donate electron.",
+      "total_marks": 1,
+      "key_points": [
+        "Alkali metals have only one electron in their outermost (valence) shell",
+        "They have a low ionisation potential and easily lose this one electron",
+        "Since they readily donate electrons, they act as good reducing agents"
+      ],
+      "model_answer": "Alkali metals are good reducing agents because they have only one electron in their valence shell and a very low ionisation potential, allowing them to easily lose (donate) this electron, thereby reducing other substances.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Have low ionization potential and readily donate electrons"],
+      "common_errors": [
+        "Many candidates did not write the correct reason and failed to link low ionisation potential / single valence electron to the ability to donate electrons easily"
+      ],
+      "examiner_notes": "Give practice in answering reasoning questions in different units."
+    },
+    {
+      "question_number": "1(f)(v)",
+      "scheme_text": "Dilute hydrochloric acid undergoes complete ionization/dissociation whereas acetic acid undergoes incomplete or partial ionization; or dilute HCl has higher concentration of ions than acetic acid; or dilute hydrochloric acid is a stronger acid than acetic acid; or dilute hydrochloric acid is a strong electrolyte and acetic acid is a weak electrolyte; or dilute hydrochloric acid has higher degree of dissociation than acetic acid.",
+      "total_marks": 1,
+      "key_points": [
+        "HCl is a strong acid and undergoes complete dissociation/ionisation in dilute solution",
+        "Acetic acid is a weak acid and undergoes only partial/incomplete ionisation",
+        "Higher concentration of ions in HCl solution leads to greater conductivity"
+      ],
+      "model_answer": "The conductivity of dilute hydrochloric acid is greater than that of acetic acid because HCl is a strong acid that undergoes complete ionisation in solution, producing a high concentration of ions. Acetic acid is a weak acid that only partially ionises, resulting in fewer ions and lower conductivity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Dilute HCl has higher degree of dissociation than acetic acid",
+        "Dilute HCl is a strong electrolyte; acetic acid is a weak electrolyte"
+      ],
+      "common_errors": [
+        "Most candidates wrote about the conductivity of dilute HCl or acetic acid separately but could not compare the conductivity of both the acids"
+      ],
+      "examiner_notes": "Give practice in answering reasoning questions in different units."
+    },
+    {
+      "question_number": "1(g)(i)",
+      "scheme_text": "Nitrogen dioxide or NO2",
+      "total_marks": 1,
+      "key_points": [
+        "When sulphur is oxidised by concentrated nitric acid, the gas produced is nitrogen dioxide (NO2)",
+        "S + 4HNO3(conc.) → H2SO4 + 4NO2 + 2H2O (or similar)"
+      ],
+      "model_answer": "When sulphur is oxidised by concentrated nitric acid, the gas produced is nitrogen dioxide (NO2). The sulphur is oxidised to sulphuric acid while concentrated HNO3 is reduced to NO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Instead of NO2, some candidates wrote SO2, H2S, or N2",
+        "Some others wrote both NO2 and SO2 as products"
+      ],
+      "examiner_notes": "Instruct students to be specific as per the requirement — write only the correct gas instead of giving multiple answers. Guide students to learn chemical names correctly especially the various oxides of nitrogen."
+    },
+    {
+      "question_number": "1(g)(ii)",
+      "scheme_text": "Hydrogen sulphide or H2S",
+      "total_marks": 1,
+      "key_points": [
+        "Dilute hydrochloric acid acting on sodium sulphide produces hydrogen sulphide gas (H2S)",
+        "Na2S + 2HCl → 2NaCl + H2S"
+      ],
+      "model_answer": "The action of dilute hydrochloric acid on sodium sulphide produces hydrogen sulphide gas (H2S): Na2S + 2HCl → 2NaCl + H2S.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Most candidates answered this sub-part correctly"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(g)(iii)",
+      "scheme_text": "Nitric oxide / nitrogen monoxide or NO",
+      "total_marks": 1,
+      "key_points": [
+        "Cold and dilute nitric acid acting on copper produces nitric oxide (NO) gas",
+        "8Cu + 8HNO3(dilute) → 8Cu(NO3)2 + ... NO (balanced: 3Cu + 8HNO3 → 3Cu(NO3)2 + 2NO + 4H2O)"
+      ],
+      "model_answer": "When cold and dilute nitric acid acts on copper, the gas produced is nitric oxide (NO, also called nitrogen monoxide). The balanced equation is: 3Cu + 8HNO3(dilute) → 3Cu(NO3)2 + 2NO + 4H2O.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["nitrogen monoxide"],
+      "common_errors": [
+        "A few candidates called it 'nitrogen oxide' instead of 'nitric oxide'",
+        "Some gave the incorrect answer NO2"
+      ],
+      "examiner_notes": "Guide students to learn the chemical names correctly especially the various oxides of nitrogen."
+    },
+    {
+      "question_number": "1(g)(iv)",
+      "scheme_text": "Oxygen or O2",
+      "total_marks": 1,
+      "key_points": [
+        "At the anode during electrolysis of acidified water, oxygen gas (O2) is produced",
+        "Anode reaction: 2H2O → O2 + 4H+ + 4e- (or 4OH- → 2H2O + O2 + 4e-)"
+      ],
+      "model_answer": "At the anode during the electrolysis of acidified water, oxygen gas (O2) is produced. The anode is the positive electrode where oxidation occurs: 4OH- → 2H2O + O2 + 4e-.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates overlooked the term 'anode' and wrote both hydrogen and oxygen as the products",
+        "Some wrote only hydrogen"
+      ],
+      "examiner_notes": "Ask students to first name the electrode and then give the equation or product while answering questions on reaction at electrode."
+    },
+    {
+      "question_number": "1(g)(v)",
+      "scheme_text": "Hydrogen or H2",
+      "total_marks": 1,
+      "key_points": [
+        "The reaction of ethanol with sodium produces hydrogen gas (H2)",
+        "2C2H5OH + 2Na → 2C2H5ONa + H2"
+      ],
+      "model_answer": "When ethanol reacts with sodium, hydrogen gas (H2) is produced along with sodium ethoxide: 2C2H5OH + 2Na → 2C2H5ONa + H2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Several candidates wrote ethane or ethene instead of hydrogen"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(h)(i)",
+      "scheme_text": "solid",
+      "total_marks": 1,
+      "key_points": [
+        "Ionic compounds do not conduct electricity in their solid state because ions are not free to move",
+        "They conduct in fused (molten) or aqueous state where ions are mobile"
+      ],
+      "model_answer": "Ionic or electrovalent compounds do not conduct electricity in their solid state because the ions are held in fixed positions in the crystal lattice and cannot move to carry charge.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates chose 'fused' instead of 'solid'"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(h)(ii)",
+      "scheme_text": "hydrogen (gas)",
+      "total_marks": 1,
+      "key_points": [
+        "Electrolysis of aqueous sodium chloride solution forms hydrogen gas at the cathode (H+ ions are preferentially discharged over Na+ ions)"
+      ],
+      "model_answer": "During the electrolysis of aqueous sodium chloride solution, hydrogen gas is formed at the cathode. Hydrogen ions (H+) from the water are selectively discharged in preference to sodium ions (Na+).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates chose 'sodium metal' instead of hydrogen gas"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(h)(iii)",
+      "scheme_text": "upward",
+      "total_marks": 1,
+      "key_points": [
+        "Dry hydrogen chloride gas is denser than air",
+        "It is collected by upward displacement of air (gas jar held with opening downward, HCl sinks in)"
+      ],
+      "model_answer": "Dry hydrogen chloride gas can be collected by upward displacement of air because it is denser than air and will displace the air upwards when introduced at the bottom of the collection vessel.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates chose 'downward' displacement instead of 'upward'"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(h)(iv)",
+      "scheme_text": "Haematite",
+      "total_marks": 1,
+      "key_points": [
+        "The most common ore of iron is haematite (Fe2O3)"
+      ],
+      "model_answer": "The most common ore of iron is haematite (Fe2O3), an iron oxide ore from which iron is extracted in the blast furnace.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates chose 'calamine' which is an ore of zinc"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "1(h)(v)",
+      "scheme_text": "iron (III) chloride",
+      "total_marks": 1,
+      "key_points": [
+        "The salt prepared by direct combination (direct synthesis) is iron(III) chloride (FeCl3)",
+        "2Fe + 3Cl2 → 2FeCl3 (excess chlorine gives Fe(III))"
+      ],
+      "model_answer": "The salt prepared by the method of direct combination is iron(III) chloride (FeCl3), formed by passing excess chlorine over heated iron: 2Fe + 3Cl2 → 2FeCl3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates chose 'iron(II) chloride' instead of 'iron(III) chloride'"
+      ],
+      "examiner_notes": ""
+    },
+    {
+      "question_number": "2(a)(i)",
+      "scheme_text": "The pair of electrons which is not yet shared with other atoms in a covalent molecule is known as lone pair of electrons.",
+      "total_marks": 1,
+      "key_points": [
+        "A lone pair of electrons is a pair of electrons in the valence shell of an atom",
+        "These electrons are not shared with any other atom in the covalent molecule"
+      ],
+      "model_answer": "A lone pair of electrons is a pair of valence electrons that belongs to one atom in a covalent molecule and is not shared with any other atom.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates could not define lone pair of electrons completely",
+        "Missed key words: 'pair of electrons', 'not shared/unshared', 'covalent molecule'"
+      ],
+      "examiner_notes": "Stress upon using the necessary key words and insist on underlining them at the time of regular practice in class. Train students to draw both dot structure and bond structure separately."
+    },
+    {
+      "question_number": "2(a)(ii)",
+      "scheme_text": "Electron dot diagram of Hydronium ion (H3O+) showing coordinate bond from O to H+ with a positive charge, lone pair on O.",
+      "total_marks": 2,
+      "key_points": [
+        "Oxygen has 2 lone pairs in water; one lone pair forms a coordinate bond with H+",
+        "Hydronium ion H3O+ has a positive charge",
+        "The coordinate (dative) bond should be indicated by an arrow",
+        "Different symbols (dots/crosses) should be used for electrons of O and H"
+      ],
+      "model_answer": "The electron dot diagram of the hydronium ion (H3O+) shows an oxygen atom bonded to three hydrogen atoms, with one lone pair remaining on oxygen. The positive charge arises because oxygen donates one lone pair to a H+ ion via a coordinate bond (shown by an arrow).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "The lone pair or the positive charge was missing from the diagram",
+        "Same kind of dots were used for electrons of both O and H",
+        "The coordinate bond was not indicated by an arrow"
+      ],
+      "examiner_notes": "Train students to draw both dot structure and bond structure separately."
+    },
+    {
+      "question_number": "2(b)(i)",
+      "scheme_text": "higher",
+      "total_marks": 1,
+      "key_points": [
+        "In Period 3, element B is to the left of element A",
+        "Metallic character decreases across a period from left to right",
+        "Therefore element B (to the left) has higher metallic character than A"
+      ],
+      "model_answer": "Element B would have higher metallic character than element A. Metallic character decreases across a period from left to right; since B is to the left of A in Period 3, B is more metallic.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few exceptions who could not choose the correct word from the brackets"
+      ],
+      "examiner_notes": "Instruct students about the periodic properties of elements in the Periodic table and variations of properties in detail."
+    },
+    {
+      "question_number": "2(b)(ii)",
+      "scheme_text": "higher",
+      "total_marks": 1,
+      "key_points": [
+        "Electron affinity increases across a period from left to right",
+        "Element A is to the right of B, so A has higher electron affinity than B"
+      ],
+      "model_answer": "Element A would have higher electron affinity than element B. Electron affinity generally increases across a period from left to right, so A (being to the right of B) has greater electron affinity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few exceptions who could not choose the correct word"
+      ],
+      "examiner_notes": "Give regular exercises in application of the knowledge of trends of periodic properties in groups and periods: atomic size, metallic character, electron affinity, etc."
+    },
+    {
+      "question_number": "2(b)(iii)",
+      "scheme_text": "smaller",
+      "total_marks": 1,
+      "key_points": [
+        "Atomic size decreases across a period from left to right",
+        "Element A is to the right of B in Period 3, so A has a smaller atomic size than B"
+      ],
+      "model_answer": "Element A would have a smaller atomic size than element B. Atomic radius decreases across a period from left to right due to increasing nuclear charge with the same number of electron shells, so A is smaller than B.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few exceptions who could not choose the correct word"
+      ],
+      "examiner_notes": "Give regular exercises in application of the knowledge of trends of periodic properties."
+    },
+    {
+      "question_number": "2(c)(i)",
+      "scheme_text": "2Cl1- – 2e → Cl2 or Cl- – e → Cl (or Cl- → Cl + e-) and Cl + Cl → Cl2 or 2Cl → Cl2",
+      "total_marks": 2,
+      "key_points": [
+        "Chloride ions lose electrons: 2Cl- - 2e- → Cl2 (or in steps: Cl- → Cl + e-, then 2Cl → Cl2)",
+        "This is an oxidation reaction"
+      ],
+      "model_answer": "The ionic equation for converting chloride ions to chlorine molecule is: 2Cl- – 2e- → Cl2. This is an oxidation process since electrons are lost from the chloride ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["2Cl- → Cl2 + 2e-"],
+      "common_errors": [
+        "In ionic equation, Cl- + e- → Cl was given (reduction) instead of Cl- – e- → Cl",
+        "The second step (Cl + Cl → Cl2) was missed out"
+      ],
+      "examiner_notes": "Illustrate the concept of oxidation and reduction based on loss and gain of electrons in detail."
+    },
+    {
+      "question_number": "2(c)(ii)",
+      "scheme_text": "Oxidation",
+      "total_marks": 1,
+      "key_points": [
+        "The conversion of chloride ions to chlorine involves loss of electrons — this is oxidation"
+      ],
+      "model_answer": "The conversion of chloride ions to chlorine molecules is oxidation, as electrons are lost by the chloride ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "The term oxidation/reduction was incorrectly associated with the ionic equations"
+      ],
+      "examiner_notes": "Illustrate the concept of oxidation and reduction based on loss and gain of electrons in detail."
+    },
+    {
+      "question_number": "2(c)(iii)",
+      "scheme_text": "Pb2+ + 2e → Pb",
+      "total_marks": 1,
+      "key_points": [
+        "Lead(II) ions gain 2 electrons to form neutral lead atoms: Pb2+ + 2e- → Pb"
+      ],
+      "model_answer": "The ionic equation for the conversion of lead(II) ions to lead metal is: Pb2+ + 2e- → Pb.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some wrote Pb2+ - 2e → Pb (incorrect sign)",
+        "The term oxidation/reduction was incorrectly associated"
+      ],
+      "examiner_notes": "Illustrate the concept of oxidation and reduction based on loss and gain of electrons in detail."
+    },
+    {
+      "question_number": "2(c)(iv)",
+      "scheme_text": "Reduction",
+      "total_marks": 1,
+      "key_points": [
+        "The conversion of Pb2+ ions to Pb involves gain of electrons — this is reduction"
+      ],
+      "model_answer": "The conversion of lead(II) ions to lead metal is reduction, as electrons are gained by the Pb2+ ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "The term oxidation/reduction was incorrectly associated with the ionic equations"
+      ],
+      "examiner_notes": "Illustrate the concept of oxidation and reduction based on loss and gain of electrons in detail."
+    },
+    {
+      "question_number": "3(a)(i)",
+      "scheme_text": "2NH4Cl + Ca(OH)2 → (heat) CaCl2 + 2H2O + 2NH3",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: ammonium chloride (NH4Cl) and calcium hydroxide (Ca(OH)2), heated",
+        "Products: calcium chloride (CaCl2), water (H2O), and ammonia gas (NH3)",
+        "Balanced equation: 2NH4Cl + Ca(OH)2 → CaCl2 + 2H2O + 2NH3"
+      ],
+      "model_answer": "Ammonia gas is prepared in the laboratory by heating ammonium chloride with calcium hydroxide: 2NH4Cl + Ca(OH)2 → CaCl2 + 2H2O + 2NH3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates used NaOH or (NH4)2SO4 instead of NH4Cl",
+        "Some showed formation of NH4OH instead of NH3"
+      ],
+      "examiner_notes": "Insist upon students sticking to the choice of appropriate reactants for laboratory preparations."
+    },
+    {
+      "question_number": "3(a)(ii)",
+      "scheme_text": "Concentrated sulphuric acid reacts with ammonia / form ammonium sulphate or NH3 being basic combines with concentrated H2SO4 / correct chemical equation.",
+      "total_marks": 1,
+      "key_points": [
+        "Concentrated H2SO4 reacts with ammonia (a basic gas) to form ammonium sulphate",
+        "Therefore it cannot be used to dry ammonia — it removes the gas rather than just the moisture"
+      ],
+      "model_answer": "Concentrated sulphuric acid cannot be used to dry ammonia gas because ammonia is basic and reacts with H2SO4 to form ammonium sulphate, so the gas would be absorbed rather than just dried.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["NH3 being basic combines with concentrated H2SO4 to form ammonium sulphate"],
+      "common_errors": [
+        "Some candidates answered sub-parts (ii) and (iii) of this question correctly"
+      ],
+      "examiner_notes": "Explain thoroughly the study of compounds with laboratory preparation of hydrogen chloride gas, ammonia, etc."
+    },
+    {
+      "question_number": "3(a)(iii)",
+      "scheme_text": "NH3 is highly soluble in water or dissolves in water.",
+      "total_marks": 1,
+      "key_points": [
+        "Ammonia gas is highly soluble in water",
+        "Collecting over water would result in the gas dissolving rather than being collected"
+      ],
+      "model_answer": "Ammonia gas is not collected over water because it is extremely soluble in water and would dissolve rather than be collected as a gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["NH3 dissolves in water"],
+      "common_errors": [],
+      "examiner_notes": "Explain thoroughly the study of compounds with laboratory preparation of ammonia and their physical and chemical properties."
+    },
+    {
+      "question_number": "3(b)(i)",
+      "scheme_text": "Concentrated sulphuric acid. It is nonvolatile / has high boiling point / displaces the volatile hydrogen chloride from the salt sodium chloride.",
+      "total_marks": 2,
+      "key_points": [
+        "Concentrated sulphuric acid is used for the laboratory preparation of HCl gas",
+        "It is preferred because it is nonvolatile (has a high boiling point)",
+        "It displaces the volatile HCl from sodium chloride without itself being driven off"
+      ],
+      "model_answer": "Concentrated sulphuric acid is used for the preparation of hydrogen chloride gas in the laboratory. It is preferred because it is non-volatile (high boiling point) and therefore displaces the volatile hydrogen chloride from sodium chloride salt without evaporating itself.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Nonvolatile / has high boiling point / displaces volatile HCl from NaCl"],
+      "common_errors": [
+        "Many candidates did not specify whether the sulphuric acid should be concentrated or dilute",
+        "Some wrote that it does not react with HCl gas (incomplete reason)"
+      ],
+      "examiner_notes": "Train students to write 'dilute' or 'concentrated' whenever reference is made to any acid."
+    },
+    {
+      "question_number": "3(b)(ii)",
+      "scheme_text": "NaCl + H2SO4(conc.) → (below 200°C) NaHSO4 + HCl",
+      "total_marks": 1,
+      "key_points": [
+        "Reactants: sodium chloride (NaCl) and concentrated sulphuric acid (H2SO4)",
+        "Condition: temperature below 200°C",
+        "Products: sodium hydrogen sulphate (NaHSO4) and hydrogen chloride gas (HCl)",
+        "Balanced equation: NaCl + H2SO4(conc.) → NaHSO4 + HCl (below 200°C)"
+      ],
+      "model_answer": "The laboratory preparation of hydrogen chloride gas: NaCl + H2SO4(conc.) → NaHSO4 + HCl (at temperature below 200°C).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates did not mention the necessary condition of temperature below 200°C",
+        "Some wrote the equation forming Na2SO4 instead of NaHSO4"
+      ],
+      "examiner_notes": "Habituate students to write chemical equations with necessary conditions."
+    },
+    {
+      "question_number": "3(c)(i)",
+      "scheme_text": "Back suction occurs (or the description of back suction) / HCl gas dissolves in water at a faster rate than it is produced.",
+      "total_marks": 1,
+      "key_points": [
+        "HCl gas is extremely soluble in water",
+        "Direct absorption would cause back suction — water rushes up into the apparatus",
+        "This happens because the gas dissolves faster than it is produced, creating a partial vacuum"
+      ],
+      "model_answer": "Direct absorption of hydrogen chloride gas into water is not feasible because HCl is extremely soluble in water and dissolves faster than it is produced, causing back suction where water rushes up into the delivery tube and could crack the hot glassware.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Description of back suction mechanism"],
+      "common_errors": [
+        "Many candidates gave inadequate explanation without mentioning the effect of back suction"
+      ],
+      "examiner_notes": "Show a presentation on back suction; it will give clarity to students."
+    },
+    {
+      "question_number": "3(c)(ii)",
+      "scheme_text": "Inverted funnel arrangement / the rim of the funnel just touches the surface of water taken in the trough or correct diagram.",
+      "total_marks": 1,
+      "key_points": [
+        "An inverted funnel arrangement is used to prevent back suction",
+        "The rim of the inverted funnel just touches the surface of the water in the trough",
+        "If back suction occurs, water rises only into the funnel and cannot reach the delivery tube"
+      ],
+      "model_answer": "To dissolve hydrogen chloride gas in water safely, an inverted funnel arrangement is used, in which the rim of the funnel just touches the surface of the water in the trough, preventing back suction from damaging the apparatus.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Correct diagram of inverted funnel"],
+      "common_errors": [
+        "A few candidates wrote 'thistle funnel' instead of 'inverted funnel'"
+      ],
+      "examiner_notes": "Show a presentation on back suction to give clarity to students."
+    },
+    {
+      "question_number": "3(d)(i)",
+      "scheme_text": "Pure copper",
+      "total_marks": 1,
+      "key_points": [
+        "In electro-refining of copper, the cathode is made of pure copper",
+        "Pure copper deposits on the cathode during the process"
+      ],
+      "model_answer": "In the electro-refining of copper, the cathode is made of pure (thin) copper, onto which pure copper is deposited during the electrolysis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates wrote 'impure copper' instead of 'pure copper' for the cathode"
+      ],
+      "examiner_notes": "Discuss electrorefining and also give practice in writing reactions taking place at cathode and anode."
+    },
+    {
+      "question_number": "3(d)(ii)",
+      "scheme_text": "Cu – 2e → Cu2+ / Cu → Cu2+ + 2e-",
+      "total_marks": 1,
+      "key_points": [
+        "At the anode (impure copper), copper dissolves by losing 2 electrons",
+        "Anode reaction: Cu – 2e- → Cu2+ or Cu → Cu2+ + 2e-"
+      ],
+      "model_answer": "The reaction at the anode during electro-refining of copper is: Cu → Cu2+ + 2e-. The impure copper anode dissolves, releasing copper ions into the electrolyte solution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Cu - 2e- → Cu2+"],
+      "common_errors": [
+        "Some candidates wrote incorrect reactions such as Cu + 2e- → Cu2+ or Cu2+ - 2e- → Cu"
+      ],
+      "examiner_notes": "Discuss electrorefining and also give practice in writing reactions taking place at cathode and anode."
+    },
+    {
+      "question_number": "4(a)",
+      "scheme_text": "Empirical Formula N1H3 (NH3). N: 82.35/14 = 5.88 atoms; H: 17.64/1 = 17.64 atoms; Ratio N:H = 5.88/5.88 : 17.64/5.88 = 1:3",
+      "total_marks": 2,
+      "key_points": [
+        "Divide percentage by atomic mass: N = 82.35/14 = 5.88; H = 17.64/1 = 17.64",
+        "Divide by smallest value (5.88): N = 1, H = 3",
+        "Empirical formula: NH3"
+      ],
+      "model_answer": "Dividing percentage composition by atomic mass: N = 82.35/14 = 5.88; H = 17.64/1 = 17.64. Dividing by the smallest value (5.88) gives N:H = 1:3. The empirical formula is NH3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates calculated the number of atoms by dividing atomic weight by the individual percentage (inverted the operation)",
+        "Some stated the empirical formula as N3H instead of NH3"
+      ],
+      "examiner_notes": "Train students to work out numericals step by step and give enough practice in solving them. Explain Mole concept and Stoichiometry in detail."
+    },
+    {
+      "question_number": "4(b)(i)",
+      "scheme_text": "144 g Al4C3 → 312 g of Al(OH)3; Mass of Al(OH)3 = (312/144) × 12 = 26 g",
+      "total_marks": 2,
+      "key_points": [
+        "From the equation: Al4C3 + 12H2O → 4Al(OH)3 + 3CH4",
+        "Molar mass of Al4C3 = 144 g; 4 moles Al(OH)3 formed = 4 × 78 = 312 g",
+        "12 g of Al4C3 → (312/144) × 12 = 26 g of Al(OH)3"
+      ],
+      "model_answer": "From the equation, 144 g of Al4C3 produces 312 g of Al(OH)3 (4 × 78). Therefore 12 g of Al4C3 produces (312/144) × 12 = 26 g of Al(OH)3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates ignored the stoichiometric coefficients and did not consider 4 moles of Al(OH)3"
+      ],
+      "examiner_notes": "Explain Mole concept and Stoichiometry in detail. Train students to work out numericals step by step."
+    },
+    {
+      "question_number": "4(b)(ii)",
+      "scheme_text": "144 g Al4C3 → 3 × 22.4 L of CH4; Volume of CH4 = (3 × 22.4 / 144) × 12 = 5.6 L",
+      "total_marks": 2,
+      "key_points": [
+        "From the equation: 144 g Al4C3 produces 3 moles CH4 = 3 × 22.4 L at STP",
+        "12 g of Al4C3 → (3 × 22.4 / 144) × 12 = 5.6 L of CH4 at STP"
+      ],
+      "model_answer": "From the equation, 144 g of Al4C3 produces 3 × 22.4 = 67.2 L of CH4 at STP. Therefore 12 g produces (67.2/144) × 12 = 5.6 L of CH4.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates ignored the fact that 3 moles of CH4 are released with every mole of Al4C3"
+      ],
+      "examiner_notes": "Familiarize students with the equivalent correspondence between number of moles, molar mass and molar volume."
+    },
+    {
+      "question_number": "4(c)(i)",
+      "scheme_text": "No. of molecules of B = (75 × x) / 150 = x/2",
+      "total_marks": 1,
+      "key_points": [
+        "By Avogadro's law, equal volumes of all gases under the same conditions contain equal numbers of molecules",
+        "75 cc of gas B contains (75/150) × X = X/2 molecules"
+      ],
+      "model_answer": "By Avogadro's law, since 150 cc of gas A contains X molecules, 75 cc of gas B (at the same temperature and pressure) contains X/2 molecules.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates wrote the number of molecules of gas B as 2X instead of X/2"
+      ],
+      "examiner_notes": "Ensure that students understand Avogadro's law, its statement, explanation, and numerical problems based on it."
+    },
+    {
+      "question_number": "4(c)(ii)",
+      "scheme_text": "Avogadro's law",
+      "total_marks": 1,
+      "key_points": [
+        "The law is Avogadro's law: equal volumes of all gases under the same conditions of temperature and pressure contain equal numbers of molecules"
+      ],
+      "model_answer": "The law on which this problem is based is Avogadro's law, which states that equal volumes of all gases at the same temperature and pressure contain equal numbers of molecules.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates named the law as Gay Lussac's law, which was incorrect"
+      ],
+      "examiner_notes": "Ensure that students understand Gay Lussac's law of combining volumes, Avogadro's law, their statements, explanation, and numerical problems based on them."
+    },
+    {
+      "question_number": "4(d)(i)",
+      "scheme_text": "Copper",
+      "total_marks": 1,
+      "key_points": [
+        "The main component of Brass is copper (Cu); Brass is an alloy of copper and zinc"
+      ],
+      "model_answer": "The main component of Brass is copper. Brass is an alloy consisting predominantly of copper, with zinc as the secondary component.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Most candidates listed all the components of Brass instead of giving only the main component as asked"
+      ],
+      "examiner_notes": "Train students to read the question carefully and answer only whatever is asked."
+    },
+    {
+      "question_number": "4(d)(ii)",
+      "scheme_text": "Aluminum",
+      "total_marks": 1,
+      "key_points": [
+        "The main component of Duralumin is aluminium; Duralumin is an alloy of aluminium with copper, magnesium, and manganese"
+      ],
+      "model_answer": "The main component of Duralumin is aluminium. Duralumin is a lightweight alloy chiefly composed of aluminium, with small amounts of copper, magnesium, and manganese.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Most candidates listed all the components of Duralumin instead of giving only the main component"
+      ],
+      "examiner_notes": "Train students to read the question carefully and answer only whatever is asked."
+    },
+    {
+      "question_number": "5(a)",
+      "scheme_text": "(A) Alkyne; (B) Triple covalent bond/triple/≡/C≡C/CH≡CH; (C) Ethyne; (D) Alkane; (E) Single covalent bond/single/−/C−C; (F) Methane",
+      "total_marks": 6,
+      "key_points": [
+        "CnH2n-2: (A) Alkyne, (B) Triple covalent bond (≡), (C) Ethyne (first member)",
+        "CnH2n+2: (D) Alkane, (E) Single covalent bond (−), (F) Methane (first member)"
+      ],
+      "model_answer": "For the general formula CnH2n-2: the homologous series is (A) Alkyne, with characteristic (B) triple covalent bond, and first member (C) ethyne. For CnH2n+2: the series is (D) Alkane, with characteristic (E) single covalent bond, and first member (F) methane.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Triple covalent bond / triple / ≡ / C≡C / CH≡CH",
+        "Single covalent bond / single / − / C−C"
+      ],
+      "common_errors": [
+        "Name of compound (e.g. ethyne, methane) was written in place of the name of the homologous series",
+        "Characteristic bond referred to as unsaturated/saturated instead of triple/single covalent bond respectively",
+        "IUPAC name of first member of alkynes was given as methyne instead of ethyne"
+      ],
+      "examiner_notes": "Develop an understanding of the general formula of hydrocarbons. Train students to apply general formula to various components and point out the formation of a homologous series with its special features like successive members differing by CH2."
+    },
+    {
+      "question_number": "5(b)(i)",
+      "scheme_text": "Bauxite Al2O3.2H2O",
+      "total_marks": 1,
+      "key_points": [
+        "The most common ore of aluminium from which the metal is extracted is Bauxite",
+        "Chemical formula of Bauxite: Al2O3.2H2O"
+      ],
+      "model_answer": "The most common ore of aluminium is Bauxite, with the chemical formula Al2O3.2H2O (hydrated aluminium oxide).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates wrote alumina or cryolite instead of Bauxite",
+        "Some gave the chemical formula as Al2O3.5H2O (incorrect number of water molecules)"
+      ],
+      "examiner_notes": "Instruct students to commit to memory the names and formulae of important ores of metals listed in the syllabus and the processes for extraction of metals from ores."
+    },
+    {
+      "question_number": "5(b)(ii)",
+      "scheme_text": "Baeyer's Process",
+      "total_marks": 1,
+      "key_points": [
+        "Baeyer's Process is used to purify impure bauxite ore using concentrated NaOH (alkali) solution"
+      ],
+      "model_answer": "The process by which impure ore of aluminium is purified using a concentrated alkali solution is Baeyer's Process. The impure bauxite is treated with hot concentrated NaOH to dissolve aluminium oxide while impurities remain.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates named it Hall's Process or Hoope's Process instead of Baeyer's Process"
+      ],
+      "examiner_notes": "Instruct students to commit to memory the names and formulae of important ores of metals and the processes for extraction."
+    },
+    {
+      "question_number": "5(b)(iii)",
+      "scheme_text": "Al3+ + 3e → Al",
+      "total_marks": 2,
+      "key_points": [
+        "At the cathode during electrolysis of alumina, Al3+ ions gain 3 electrons to form aluminium",
+        "Cathode equation: Al3+ + 3e- → Al"
+      ],
+      "model_answer": "The equation for the formation of aluminium at the cathode during electrolysis of alumina is: Al3+ + 3e- → Al. Aluminium ions are reduced to aluminium metal.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some confused the direction of electron transfer and wrote Al – 3e- → Al3+ (which is oxidation)",
+        "Some wrote Al + 3e- → Al3+ (both direction and sign incorrect)"
+      ],
+      "examiner_notes": "Advise students to ensure that instructions are read carefully."
+    },
+    {
+      "question_number": "6(a)(i)",
+      "scheme_text": "Y: Ethyl acetate / Ethyl ethanoate / CH3COOC2H5; Z: Concentrated H2SO4",
+      "total_marks": 2,
+      "key_points": [
+        "Y is ethyl ethanoate (ethyl acetate, CH3COOC2H5) — the ester with a fruity smell",
+        "Z is concentrated sulphuric acid (catalyst and dehydrating agent in esterification)"
+      ],
+      "model_answer": "Y is ethyl ethanoate (ethyl acetate, CH3COOC2H5), the ester formed which has a fruity smell. Z is concentrated sulphuric acid, which acts as the catalyst and dehydrating agent in this esterification reaction.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Ethyl acetate", "CH3COOC2H5"],
+      "common_errors": [
+        "Many candidates identified Y as C2H5COOCH3 (isomer, incorrect)",
+        "Some identified Y as simply 'ester' without naming it",
+        "A few did not mention that the acid Z is concentrated"
+      ],
+      "examiner_notes": "Clarify that the H of acid is replaced by the alkyl group of alcohol and to prevent the backward reaction conc. H2SO4 (a strong dehydrating agent) is used to remove the moisture content."
+    },
+    {
+      "question_number": "6(a)(ii)",
+      "scheme_text": "Structural formula of X (acetic acid / ethanoic acid): H-C(H2)-C(=O)-OH or CH3COOH structure",
+      "total_marks": 1,
+      "key_points": [
+        "Compound X is acetic acid (ethanoic acid, CH3COOH) — it has a vinegar-like smell",
+        "Structural formula: H3C-C(=O)-OH (showing methyl group, carbonyl group, and hydroxyl group)"
+      ],
+      "model_answer": "Compound X is ethanoic acid (acetic acid, CH3COOH). Its structural formula shows a methyl group (CH3-) connected to a carboxylic acid group (-COOH): H-C(H2)-C(=O)-OH.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates drew an incorrect structural formula for compound X"
+      ],
+      "examiner_notes": "Train students in naming as well as drawing various kinds of structural formulae."
+    },
+    {
+      "question_number": "6(a)(iii)",
+      "scheme_text": "Esterification",
+      "total_marks": 1,
+      "key_points": [
+        "The reaction of an acid with an alcohol (in the presence of concentrated H2SO4) to form an ester is called esterification"
+      ],
+      "model_answer": "The above reaction is called esterification. It is the reaction between an organic acid and an alcohol in the presence of a concentrated acid catalyst to form an ester and water.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates called it 'catalysis' instead of esterification"
+      ],
+      "examiner_notes": "Ensure that students know the reaction is called esterification."
+    },
+    {
+      "question_number": "6(b)(i)",
+      "scheme_text": "Volume of CO2 formed = (4/2) × 300 = 600 cc",
+      "total_marks": 2,
+      "key_points": [
+        "From equation: 2C2H6 + 7O2 → 4CO2 + 6H2O",
+        "2 volumes of ethane produce 4 volumes of CO2 (ratio 1:2)",
+        "300 cc of ethane produces (4/2) × 300 = 600 cc of CO2"
+      ],
+      "model_answer": "From the equation 2C2H6 + 7O2 → 4CO2 + 6H2O, 2 volumes of ethane give 4 volumes of CO2. Therefore, 300 cc of ethane produces (4/2) × 300 = 600 cc of CO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "A few candidates incorrectly used volume of O2 to calculate the volume of CO2",
+        "Some copied the volume of ethane incorrectly"
+      ],
+      "examiner_notes": "Provide adequate practice to students in numerical problems. Insist on stepwise working."
+    },
+    {
+      "question_number": "6(b)(ii)",
+      "scheme_text": "Volume of O2 used = (7/2) × 300 = 1050 cc; Volume of unused oxygen = 1250 – 1050 = 200 cc",
+      "total_marks": 2,
+      "key_points": [
+        "From equation: 2 volumes ethane require 7 volumes O2",
+        "300 cc ethane requires (7/2) × 300 = 1050 cc O2",
+        "Volume of unused O2 = 1250 – 1050 = 200 cc"
+      ],
+      "model_answer": "Volume of O2 required to burn 300 cc of ethane = (7/2) × 300 = 1050 cc. Since 1250 cc of O2 is available, the volume of unused oxygen = 1250 – 1050 = 200 cc.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates did not calculate the volume of unused O2"
+      ],
+      "examiner_notes": "Provide adequate practice to students in numerical problems. Insist on stepwise working."
+    },
+    {
+      "question_number": "6(c)(i)",
+      "scheme_text": "Solution Q (pH 5.2)",
+      "total_marks": 1,
+      "key_points": [
+        "A weak acid has a pH slightly below 7 (between ~3 and 6.9)",
+        "pH 5.2 (Solution Q) is closest to neutral — consistent with a weak acid",
+        "pH 3.5 (Solution P) is more acidic — more likely a strong or concentrated acid"
+      ],
+      "model_answer": "Solution Q (pH 5.2) is a weak acid. A pH of 5.2 is slightly below 7, indicating weak acidity, whereas pH 3.5 (Solution P) suggests a stronger or more concentrated acid.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some candidates wrote Solution P (pH 3.5) as that of a weak acid instead of Q"
+      ],
+      "examiner_notes": "Guide students about the pH scale to test for acidity, neutrality, and alkalinity."
+    },
+    {
+      "question_number": "6(c)(ii)",
+      "scheme_text": "Solution R (pH 12.2)",
+      "total_marks": 1,
+      "key_points": [
+        "A strong alkali has a pH well above 7",
+        "Solution R with pH 12.2 is strongly alkaline"
+      ],
+      "model_answer": "Solution R (pH 12.2) is a strong alkali. A pH of 12.2 is well above 7, indicating a strongly alkaline solution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Most candidates answered correctly"
+      ],
+      "examiner_notes": "Guide students about the pH scale to test for acidity, neutrality, and alkalinity."
+    },
+    {
+      "question_number": "7(a)(i)",
+      "scheme_text": "By adding ammonium hydroxide in excess. Lead nitrate solution gives a white precipitate while Zinc Nitrate solution gives a colourless solution.",
+      "total_marks": 2,
+      "key_points": [
+        "Reagent: ammonium hydroxide (NH4OH) added in excess",
+        "Lead nitrate: gives a white precipitate of Pb(OH)2 which is insoluble in excess NH4OH",
+        "Zinc nitrate: gives a white precipitate of Zn(OH)2 which dissolves in excess NH4OH to give a colourless solution"
+      ],
+      "model_answer": "To distinguish lead nitrate from zinc nitrate, add ammonium hydroxide solution in excess to each. Lead nitrate gives a white precipitate that remains insoluble in excess NH4OH, while zinc nitrate also forms a white precipitate initially but this dissolves in excess NH4OH to give a colourless solution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Alternate correct chemical test"],
+      "common_errors": [
+        "Many candidates ignored the solution state and performed a dry heating test, which was contrary to the requirement",
+        "Some used NaOH instead of NH4OH as the reagent"
+      ],
+      "examiner_notes": "Demonstrate chemical tests to distinguish between the pairs of chemicals for better understanding and recall."
+    },
+    {
+      "question_number": "7(a)(ii)",
+      "scheme_text": "By adding silver nitrate / lead nitrate solution. Sodium chloride gives a white precipitate while sodium nitrate gives no precipitate / colourless solution / remains unchanged. (alternate correct chemical test)",
+      "total_marks": 2,
+      "key_points": [
+        "Reagent: silver nitrate (AgNO3) solution or lead nitrate Pb(NO3)2 solution",
+        "Sodium chloride solution: gives a white precipitate of AgCl (insoluble in dilute HNO3) or PbCl2",
+        "Sodium nitrate solution: gives no precipitate / colourless solution / remains unchanged"
+      ],
+      "model_answer": "To distinguish sodium chloride from sodium nitrate, add silver nitrate (or lead nitrate) solution to each. Sodium chloride gives a white precipitate (AgCl or PbCl2), while sodium nitrate gives no precipitate and the solution remains colourless.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["Lead nitrate solution as reagent (gives white precipitate with NaCl)"],
+      "common_errors": [
+        "A few candidates used concentrated H2SO4 to distinguish, overlooking that both are in solution form"
+      ],
+      "examiner_notes": "Demonstrate chemical tests to distinguish between the pairs of chemicals for better understanding and recall."
+    },
+    {
+      "question_number": "7(b)(i)",
+      "scheme_text": "CuCO3 + H2SO4 → CuSO4 + H2O + CO2",
+      "total_marks": 1,
+      "key_points": [
+        "Copper sulphate is prepared from copper carbonate by reaction with sulphuric acid",
+        "CuCO3 + H2SO4 → CuSO4 + H2O + CO2"
+      ],
+      "model_answer": "Copper sulphate is prepared from copper carbonate by the reaction: CuCO3 + H2SO4 → CuSO4 + H2O + CO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Instead of reacting with H2SO4, a few candidates used Na2SO4 solution",
+        "Some wrote two equations (first with HCl, then with H2SO4)"
+      ],
+      "examiner_notes": "Guide students to learn the typical reactions of acid in word form: Carbonate + Acid → Salt + H2O + CO2."
+    },
+    {
+      "question_number": "7(b)(ii)",
+      "scheme_text": "ZnSO4 + Na2CO3 → ZnCO3 + Na2SO4; Or ZnSO4 + (NH4)2CO3 → (NH4)2SO4 + ZnCO3",
+      "total_marks": 1,
+      "key_points": [
+        "Zinc carbonate is prepared from zinc sulphate by double decomposition with sodium carbonate",
+        "ZnSO4 + Na2CO3 → ZnCO3 + Na2SO4"
+      ],
+      "model_answer": "Zinc carbonate is prepared from zinc sulphate by reacting with sodium carbonate (or ammonium carbonate): ZnSO4 + Na2CO3 → ZnCO3 + Na2SO4.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["ZnSO4 + (NH4)2CO3 → (NH4)2SO4 + ZnCO3"],
+      "common_errors": [
+        "Instead of Na2CO3, a few candidates used H2CO3 solution",
+        "Some used two steps: first reacting ZnSO4 with HCl, then ZnCl2 with Na2CO3"
+      ],
+      "examiner_notes": "Guide students to learn the typical reactions of acids in word form."
+    },
+    {
+      "question_number": "7(c)(i)",
+      "scheme_text": "Acid Salt / bisulphate / hydrogen sulphate / NaHSO4 / KHSO4",
+      "total_marks": 1,
+      "key_points": [
+        "For the preparation of nitric acid, reactants (NaNO3 or KNO3 and concentrated H2SO4) are heated at a suitable temperature",
+        "The type of salt formed is an acid salt (bisulphate/hydrogen sulphate: NaHSO4 or KHSO4)"
+      ],
+      "model_answer": "When the reactants (e.g. NaNO3 and concentrated H2SO4) are heated at a suitable temperature for the preparation of nitric acid, the type of salt formed is an acid salt — specifically sodium bisulphate (NaHSO4) or potassium bisulphate (KHSO4).",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["NaHSO4", "KHSO4", "bisulphate", "hydrogen sulphate"],
+      "common_errors": [
+        "Instead of acid salt, some candidates wrote normal salt"
+      ],
+      "examiner_notes": "Explain thoroughly the preparation of nitric acid, equations with conditions, setting up of apparatus, precautions, material suitable for its storage, etc."
+    },
+    {
+      "question_number": "7(c)(ii)",
+      "scheme_text": "The vapour of nitric acid being highly corrosive / HNO3 vapours attack rubber, cork etc. / HNO3 vapours do not react with glass.",
+      "total_marks": 1,
+      "key_points": [
+        "Nitric acid vapours are highly corrosive and attack rubber and cork stoppers",
+        "HNO3 vapours do not react with glass, making glass the suitable material for the apparatus"
+      ],
+      "model_answer": "The complete apparatus for the preparation of nitric acid is made of glass because HNO3 vapours are highly corrosive and attack rubber and cork, whereas they do not react with glass.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["HNO3 vapours attack rubber, cork, etc."],
+      "common_errors": [
+        "A few candidates stated that rubber will melt due to heat or cork will break (imprecise reasons)"
+      ],
+      "examiner_notes": "Explain thoroughly the preparation of nitric acid with conditions, setting up of apparatus, precautions, and materials suitable for storage."
+    },
+    {
+      "question_number": "7(d)(i)",
+      "scheme_text": "Dehydrating agent / dehydration",
+      "total_marks": 1,
+      "key_points": [
+        "When concentrated sulphuric acid reacts with ethanol, it acts as a dehydrating agent",
+        "It removes water (chemically combined H2O) from ethanol to form ethene"
+      ],
+      "model_answer": "The property of concentrated sulphuric acid shown in its reaction with ethanol is its action as a dehydrating agent (dehydration). It removes a molecule of water from ethanol to produce ethene.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["dehydration"],
+      "common_errors": [
+        "Many candidates wrote 'drying' instead of 'dehydration' (drying = physical removal of moisture; dehydration = chemical removal of combined water)"
+      ],
+      "examiner_notes": "Stress on the essential difference between drying and dehydration: in drying, only physically combined water/moisture is removed; in dehydration, chemically combined H2O is removed."
+    },
+    {
+      "question_number": "7(d)(ii)",
+      "scheme_text": "Oxidizing agent / oxidation",
+      "total_marks": 1,
+      "key_points": [
+        "When concentrated sulphuric acid reacts with carbon, it acts as an oxidising agent",
+        "Carbon is oxidised to CO2 while H2SO4 is reduced to SO2"
+      ],
+      "model_answer": "The property of concentrated sulphuric acid shown in its reaction with carbon is its action as an oxidising agent. The carbon is oxidised to CO2 while the sulphuric acid is reduced to SO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": ["oxidation"],
+      "common_errors": [
+        "Several candidates stated 'acidic property' instead of 'oxidising property'"
+      ],
+      "examiner_notes": "Explain about the behaviour of sulphuric acid in its dilute and concentrated forms, and its volatile nature with illustrations."
+    }
+  ]
+}

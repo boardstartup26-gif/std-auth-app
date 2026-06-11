@@ -1,4 +1,5 @@
 import { createServerClient } from "@supabase/ssr";
+import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { cookies } from "next/headers";
 
 function getSupabaseUrl() {
@@ -19,6 +20,7 @@ function getSupabaseKey() {
   );
 }
 
+// Client for Server Components / Server Actions (Respects User Session)
 export async function createClient() {
   const url = getSupabaseUrl();
   const key = getSupabaseKey();
@@ -48,3 +50,18 @@ export async function createClient() {
   });
 }
 
+// Admin Client with Service Role Key (Bypasses Row-Level Security Rules)
+export function createAdminClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "";
+
+  if (!url || !serviceRoleKey) {
+    throw new Error(
+      "Missing env vars: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required."
+    );
+  }
+
+  return createSupabaseClient(url, serviceRoleKey, {
+    auth: { persistSession: false },
+  });
+}

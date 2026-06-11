@@ -1,6 +1,8 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+//  NEW LINE 3:
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import Link from "next/link";
 
 type AuthResult =
@@ -34,10 +36,11 @@ export function AuthForm({
   submitLabel: string;
   alternate: { href: string; label: string };
 }) {
-  const [state, formAction] = useFormState<AuthResult | null, FormData>(
-    action,
-    null,
-  );
+ //  NEW LINES 37-40:
+const [state, formAction] = useActionState<AuthResult | null, FormData>(
+  action,
+  null,
+);
 
   return (
     <div className="mx-auto w-full max-w-md px-6 py-16">

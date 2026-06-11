@@ -1,0 +1,1777 @@
+{
+  "year": 2025,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "scheme_text": "(a) Sulphur dioxide/SO2",
+      "total_marks": 1,
+      "key_points": [
+        "Sulphur dioxide / SO2"
+      ],
+      "model_answer": "Sulphur dioxide (SO2) decolourises potassium permanganate solution because it acts as a reducing agent, reducing the purple MnO4- ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "SO2",
+        "Sulphur dioxide"
+      ],
+      "common_errors": [
+        "Confusion between sulphur dioxide and carbon dioxide"
+      ],
+      "examiner_notes": "Explain the similarity and difference between carbon dioxide and sulphur dioxide with the help of confirmatory tests. Demonstrate reactions such as the decolourisation of KMnO4 by SO2 in laboratory to create strong visual memory."
+    },
+    {
+      "question_number": "1(ii)",
+      "scheme_text": "(b) C5H12 / pentane / correct structural formula as well as condensed form",
+      "total_marks": 1,
+      "key_points": [
+        "C5H12",
+        "pentane",
+        "correct structural formula or condensed form accepted"
+      ],
+      "model_answer": "C5H12 (pentane) represents a saturated hydrocarbon as it follows the general alkane formula CnH(2n+2) with no double or triple bonds.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "pentane",
+        "correct structural formula",
+        "condensed form"
+      ],
+      "common_errors": [
+        "Confusing C5H12 with C5H10 and selecting C5H10 as a saturated hydrocarbon"
+      ],
+      "examiner_notes": "Provide sufficient practice in identifying, naming, and writing structural formulas for saturated and unsaturated hydrocarbons. Clearly highlight the comparison among alkanes, alkenes, and alkynes in tabular form."
+    },
+    {
+      "question_number": "1(iii)",
+      "scheme_text": "(a) Copper / Cu",
+      "total_marks": 1,
+      "key_points": [
+        "Copper",
+        "Cu"
+      ],
+      "model_answer": "Copper is the metal whose oxide can be reduced by common reducing agents, as it is low in the reactivity series and its oxide is not very stable.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Cu"
+      ],
+      "common_errors": [
+        "Incorrectly choosing sodium or aluminium",
+        "Selecting multiple answers"
+      ],
+      "examiner_notes": "Explain the concept of reduction and the role of a reducing agent in a chemical reaction. Lay stress on the metal reactivity series and how it relates to the stability of metal oxides and the feasibility of reduction."
+    },
+    {
+      "question_number": "1(iv)",
+      "scheme_text": "(d) C3H8 / propane / correct structural formula as well as condensed form",
+      "total_marks": 1,
+      "key_points": [
+        "C3H8",
+        "propane",
+        "correct structural formula or condensed form accepted"
+      ],
+      "model_answer": "With vapour density 22, the molecular mass = 2 × 22 = 44. C3H8 has a molecular mass of 44 (3×12 + 8×1), making it the correct answer.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "propane",
+        "correct structural formula",
+        "condensed form"
+      ],
+      "common_errors": [
+        "Choosing C2H6 due to confusion with the formula",
+        "Not applying the formula: Molecular mass = 2 × vapour density"
+      ],
+      "examiner_notes": "Explain the correct usage of formula: Molecular mass = 2 × vapour density. Clarify the difference between empirical formula, molecular formula, vapour density, and molecular mass with multiple examples."
+    },
+    {
+      "question_number": "1(v)",
+      "scheme_text": "(c) Oxidising agent / Oxidizing / Oxidizing property / Oxidised / Oxidation / Ox",
+      "total_marks": 1,
+      "key_points": [
+        "Oxidising agent"
+      ],
+      "model_answer": "In the reaction S + 2H2SO4 → 3SO2 + 2H2O, sulphuric acid acts as an oxidising agent because it oxidises sulphur from 0 to +4 oxidation state while itself being reduced.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Oxidizing",
+        "Oxidizing property",
+        "Oxidised",
+        "Oxidation"
+      ],
+      "common_errors": [
+        "Confusing oxidising agent with reducing agent"
+      ],
+      "examiner_notes": "Thoroughly teach the chemical properties of sulphuric acid with examples and its role in different reactions. Give regular practice of identification of oxidised and reduced reactants in a chemical reaction."
+    },
+    {
+      "question_number": "1(vi)",
+      "scheme_text": "(c) (A) is true but (R) is false.",
+      "total_marks": 1,
+      "key_points": [
+        "(A) is true but (R) is false"
+      ],
+      "model_answer": "The assertion is true: the tendency to lose electrons does increase down Group 1. However, the reason is false: the most reactive metal is placed at the bottom, not the top, of Group 1.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Incorrectly choosing options (a) or (b) due to difficulty correlating assertion and reason"
+      ],
+      "examiner_notes": "Give ample practice of assertion-reason type questions."
+    },
+    {
+      "question_number": "1(vii)",
+      "scheme_text": "(b) Haematite / Fe2O3 / Ferric oxide / Iron(III) oxide",
+      "total_marks": 1,
+      "key_points": [
+        "Haematite",
+        "Fe2O3",
+        "Ferric oxide",
+        "Iron(III) oxide"
+      ],
+      "model_answer": "Haematite (Fe2O3) is the ore that can be concentrated by magnetic separation because it contains iron oxide which is attracted to a magnet.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Fe2O3",
+        "Ferric oxide",
+        "Iron(III) oxide"
+      ],
+      "common_errors": [
+        "Opting for bauxite instead of haematite",
+        "Choosing corundum or calamine"
+      ],
+      "examiner_notes": "Teach various methods of concentration of ores using suitable videos to reinforce the concepts."
+    },
+    {
+      "question_number": "1(viii)",
+      "scheme_text": "(d) 2,6   2,8,7",
+      "total_marks": 1,
+      "key_points": [
+        "A: 2,6",
+        "B: 2,8,7"
+      ],
+      "model_answer": "Before combining, atom A has electronic configuration 2,6 (6 valence electrons, needs 2 more) and atom B has configuration 2,8,7 (7 valence electrons, needs 1 more), allowing AB2 formation.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mistakenly choosing option (c) by considering electronic configuration after combination rather than before"
+      ],
+      "examiner_notes": "Give imaginary elements with specific electronic configuration and ask students to demonstrate the bond formation."
+    },
+    {
+      "question_number": "1(ix)",
+      "scheme_text": "(a) CH4, C2H6, C3H8 / methane, ethane, propane.",
+      "total_marks": 1,
+      "key_points": [
+        "CH4, C2H6, C3H8",
+        "all are alkanes following CnH(2n+2)"
+      ],
+      "model_answer": "CH4, C2H6, and C3H8 are all alkanes (saturated hydrocarbons) following the general formula CnH(2n+2), making them members of the same homologous series.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "methane, ethane, propane"
+      ],
+      "common_errors": [
+        "Confusion between option (a) and option (b)",
+        "Failing to identify general formulas for alkanes, alkenes, and alkynes"
+      ],
+      "examiner_notes": "Emphasise on the general formulas for each homologous series: Alkanes CnH2n+2, Alkenes CnH2n, Alkynes CnH2n-2."
+    },
+    {
+      "question_number": "1(x)",
+      "scheme_text": "(a) Both (A) and (R) are true, and (R) is the correct explanation of (A).",
+      "total_marks": 1,
+      "key_points": [
+        "Both (A) and (R) are true",
+        "(R) is the correct explanation of (A)"
+      ],
+      "model_answer": "Both the assertion and reason are true: SO3 is not dissolved directly in water in the Contact Process because dense fog or misty droplets of sulphuric acid form which are difficult to condense, which correctly explains the assertion.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mistakenly thinking SO3 can be directly dissolved in water",
+        "Misunderstanding the meaning of 'dense fog' formed during this reaction"
+      ],
+      "examiner_notes": "Explain explicitly the Contact Process for manufacturing of sulfuric acid by showing animations or videos for better understanding."
+    },
+    {
+      "question_number": "1(xi)",
+      "scheme_text": "(c) Cl– & K+ / Chloride ion & Potassium ion / Chloride & Potassium ion",
+      "total_marks": 1,
+      "key_points": [
+        "Cl– and K+",
+        "both have 18 electrons / configuration 2,8,8"
+      ],
+      "model_answer": "Cl– (17+1=18 electrons, config 2,8,8) and K+ (19-1=18 electrons, config 2,8,8) have the same electronic configuration, making them isoelectronic.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Chloride ion & Potassium ion"
+      ],
+      "common_errors": [
+        "Confusion between options (c) and (d)",
+        "Errors in counting electrons gained by anions or lost by cations",
+        "Confusion between Li and K"
+      ],
+      "examiner_notes": "Encourage students to understand how atoms form cations and anions by losing or gaining electrons respectively. Provide regular practice exercises on conversion of neutral atoms to ions and writing their corresponding electronic configurations."
+    },
+    {
+      "question_number": "1(xii)",
+      "scheme_text": "(c) Sodium sulphate + Lead nitrate / Na2SO4 and Pb(NO3)2",
+      "total_marks": 1,
+      "key_points": [
+        "Sodium sulphate + Lead nitrate",
+        "Na2SO4 and Pb(NO3)2",
+        "double displacement / precipitation reaction"
+      ],
+      "model_answer": "Sodium sulphate and lead nitrate is the best method as it is a double displacement reaction producing insoluble lead sulphate as a precipitate, which can be filtered off easily.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Na2SO4 and Pb(NO3)2"
+      ],
+      "common_errors": [
+        "Not understanding the concept of double displacement reaction",
+        "Choosing incorrect options due to misunderstanding solubility"
+      ],
+      "examiner_notes": "Make students aware of exceptions and special cases in salt preparation. Address specifically why certain methods of salt preparation are preferred over others."
+    },
+    {
+      "question_number": "1(xiii)",
+      "scheme_text": "(d) The number of copper (II) ions in the electrolyte decreases.",
+      "total_marks": 1,
+      "key_points": [
+        "Statement (d) is NOT correct",
+        "When copper electrodes are used, the concentration of Cu(II) ions remains unchanged"
+      ],
+      "model_answer": "Statement (d) is incorrect because when copper electrodes are used, the anode dissolves releasing Cu2+ ions into solution at the same rate they are deposited at the cathode, so the concentration remains constant.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Overlooking the word 'not' in the question",
+        "Forgetting that with active copper electrodes the Cu(II) ion concentration stays constant"
+      ],
+      "examiner_notes": "Provide detailed observations for both copper (active) electrodes and platinum (inert) electrodes in electrolysis of copper sulphate. Emphasise the difference between electrolysis using active and inert electrodes."
+    },
+    {
+      "question_number": "1(xiv)",
+      "scheme_text": "(c) Z",
+      "total_marks": 1,
+      "key_points": [
+        "Z",
+        "largest atomic radius = lowest in the group = most metallic = best reducing agent"
+      ],
+      "model_answer": "Z is the best reducing agent because it has the largest atomic radius (being lowest in the group), meaning its outermost electrons are furthest from the nucleus and most easily lost.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Relating small atomic size with best reducing agent and selecting X"
+      ],
+      "examiner_notes": "Link the concept of reducing agent with metallic character of an element. Provide in-depth knowledge on periodic properties and their variations across period and down the group."
+    },
+    {
+      "question_number": "1(xv)",
+      "scheme_text": "(b) 40 cm3 / 40 / 10 cc CH4 and 30 cc CO2",
+      "total_marks": 1,
+      "key_points": [
+        "40 cm3",
+        "CH4 + 2O2 → CO2 + 2H2O",
+        "40 cm3 CH4 requires 80 cm3 O2 but only 60 cm3 available",
+        "O2 is limiting: 60 cm3 O2 reacts with 30 cm3 CH4 producing 30 cm3 CO2",
+        "10 cm3 CH4 unreacted + 30 cm3 CO2 = 40 cm3 total"
+      ],
+      "model_answer": "Since CH4 requires twice its volume of O2, 60 cm3 O2 can only react with 30 cm3 CH4, leaving 10 cm3 CH4 unreacted. The products include 30 cm3 CO2 (water is liquid at room temperature), giving a total remaining gas volume of 10 + 30 = 40 cm3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "10 cc CH4 and 30 cc CO2"
+      ],
+      "common_errors": [
+        "Selecting 60 cm3 due to confusion",
+        "Calculating volume of gases formed but not total remaining",
+        "Not accounting for water being liquid at room temperature"
+      ],
+      "examiner_notes": "Clearly state that Gay Lussac's Law is applicable to gases only. Guide students to pay attention to the physical state of reactants and products while practising numericals based on Gay Lussac's Law."
+    },
+    {
+      "question_number": "2(i)(a)",
+      "scheme_text": "Warm water / hot water",
+      "total_marks": 1,
+      "key_points": [
+        "Warm water",
+        "hot water"
+      ],
+      "model_answer": "The substance X added through the thistle funnel is warm (hot) water, which reacts with aluminium nitride to produce ammonia gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "hot water"
+      ],
+      "common_errors": [
+        "Writing just 'water' without specifying warm/hot",
+        "Writing concentrated sulphuric acid"
+      ],
+      "examiner_notes": "Teach laboratory preparation of ammonia thoroughly, covering reactants, products, drying agents, and conditions of reaction."
+    },
+    {
+      "question_number": "2(i)(b)",
+      "scheme_text": "AlN + 3H2O → Al(OH)3 + NH3",
+      "total_marks": 1,
+      "key_points": [
+        "AlN + 3H2O → Al(OH)3 + NH3",
+        "correctly balanced"
+      ],
+      "model_answer": "The balanced equation for the reaction is: AlN + 3H2O → Al(OH)3 + NH3. Aluminium nitride reacts with warm water to produce aluminium hydroxide and ammonia gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing sulphuric acid as reactant instead of water",
+        "Writing aluminium oxide instead of aluminium hydroxide as product",
+        "Unbalanced equation"
+      ],
+      "examiner_notes": "Emphasise the importance of balanced equations in accurately representing chemical reactions and provide regular practice. Highlight the need to include all products formed in chemical equations."
+    },
+    {
+      "question_number": "2(i)(c)",
+      "scheme_text": "CaO / Calcium oxide / quick lime / lime",
+      "total_marks": 1,
+      "key_points": [
+        "CaO",
+        "Calcium oxide",
+        "quick lime",
+        "lime"
+      ],
+      "model_answer": "Substance Y is calcium oxide (CaO), also known as quicklime, which is used as a drying agent in this experiment.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Calcium oxide",
+        "quick lime",
+        "lime"
+      ],
+      "common_errors": [
+        "Writing concentrated sulphuric acid as the drying agent",
+        "Writing calcium hydroxide"
+      ],
+      "examiner_notes": "Clearly explain the purpose of the drying agent and make students aware of the specific drying agent used for specific gases, along with the scientific reason."
+    },
+    {
+      "question_number": "2(i)(d)",
+      "scheme_text": "drying agent / to absorb moisture / to remove water / to dry gas",
+      "total_marks": 1,
+      "key_points": [
+        "drying agent",
+        "to absorb moisture / remove water from the gas"
+      ],
+      "model_answer": "The function of Y (calcium oxide) is to act as a drying agent, absorbing any moisture from the ammonia gas to produce dry ammonia.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "to absorb moisture",
+        "to remove water",
+        "to dry gas"
+      ],
+      "common_errors": [
+        "Confusing drying agent with dehydrating agent"
+      ],
+      "examiner_notes": "Clearly teach the difference between drying agents and dehydrating agents by providing examples of each to avoid confusion."
+    },
+    {
+      "question_number": "2(i)(e)",
+      "scheme_text": "Ammonia gas is soluble in water / dissolves in water / highly soluble in water / miscible in water / forms ammonium hydroxide / is collected by downward displacement of air / by upward delivery of gas",
+      "total_marks": 1,
+      "key_points": [
+        "Ammonia is highly soluble in water",
+        "cannot be collected over water",
+        "collected by downward displacement of air"
+      ],
+      "model_answer": "The student could not collect ammonia over water because ammonia is highly soluble in water; it would dissolve rather than be collected. Ammonia must be collected by downward displacement of air.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "dissolves in water",
+        "miscible in water",
+        "forms ammonium hydroxide"
+      ],
+      "common_errors": [
+        "Unable to explain why ammonia is collected by downward displacement rather than over water",
+        "Not aware of the high solubility of ammonia in water"
+      ],
+      "examiner_notes": "Stress on the high solubility of ammonia in water, which is the reason for not collecting it in water. Emphasise on collecting ammonia by downward displacement of air and explain the reason."
+    },
+    {
+      "question_number": "2(ii)(a)",
+      "scheme_text": "Spurious / Illicit alcohol",
+      "total_marks": 1,
+      "key_points": [
+        "Spurious alcohol",
+        "Illicit alcohol"
+      ],
+      "model_answer": "Undistilled alcohol containing a large amount of methanol is called spurious (or illicit) alcohol.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Illicit alcohol"
+      ],
+      "common_errors": [
+        "Confusion with denatured alcohol or methylated spirit",
+        "Writing incomplete terms like 'illicit' or 'methylated' alone"
+      ],
+      "examiner_notes": "Ensure that students understand key terms and their precise meanings, emphasising the use of correct words in context."
+    },
+    {
+      "question_number": "2(ii)(b)",
+      "scheme_text": "Basic salt / Basic / Base",
+      "total_marks": 1,
+      "key_points": [
+        "Basic salt"
+      ],
+      "model_answer": "A salt formed by the partial replacement of the hydroxyl group of a di-acidic or tri-acidic base by an acid radical is called a basic salt.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Basic",
+        "Base"
+      ],
+      "common_errors": [
+        "Confusing with alkaline salt or acidic salt",
+        "Copying 'di acidic base' from the question"
+      ],
+      "examiner_notes": "Explain the meaning of partial replacement of hydroxyl groups and the terms di-basic, di-acidic, and tri-acidic bases, with examples. Clarify the difference between acidic and basic salts."
+    },
+    {
+      "question_number": "2(ii)(c)",
+      "scheme_text": "Isomers",
+      "total_marks": 1,
+      "key_points": [
+        "Isomers"
+      ],
+      "model_answer": "Organic compounds having the same molecular formula but different structural formulae are called isomers.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing 'isomer' with 'isomerism'",
+        "Writing 'isotope' or 'homologous series'"
+      ],
+      "examiner_notes": "Explain the meaning of the term isomer, highlighting its use with isomerism by giving suitable examples."
+    },
+    {
+      "question_number": "2(ii)(d)",
+      "scheme_text": "Electronegativity",
+      "total_marks": 1,
+      "key_points": [
+        "Electronegativity"
+      ],
+      "model_answer": "The tendency of an atom to attract the shared pair of electrons towards itself when combined in a compound is called electronegativity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing electron affinity or ionisation potential",
+        "Using incorrect terms like 'electron negativity' or 'EN'"
+      ],
+      "examiner_notes": "Emphasise the definitions like electronegativity, electron affinity, etc. that are used in periodic trends. Clarify the difference between electronegativity and electron affinity."
+    },
+    {
+      "question_number": "2(ii)(e)",
+      "scheme_text": "Polar covalent bond / Polar",
+      "total_marks": 1,
+      "key_points": [
+        "Polar covalent bond"
+      ],
+      "model_answer": "The type of covalent bond in which electrons are shared unequally between the combining atoms is called a polar covalent bond.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Polar"
+      ],
+      "common_errors": [
+        "Confusing with non-polar covalent bond or coordinate covalent bond"
+      ],
+      "examiner_notes": "Teach students the concept of polar and non-polar covalent bonds with correct definitions and appropriate examples."
+    },
+    {
+      "question_number": "2(iii)(a)",
+      "scheme_text": "Copper nitrate / Copper (II) nitrate / Cu(NO3)2 / Cupric nitrate",
+      "total_marks": 1,
+      "key_points": [
+        "Copper nitrate",
+        "Cu(NO3)2"
+      ],
+      "model_answer": "Copper nitrate solution forms a coloured precipitate with ammonium hydroxide which is soluble in excess of ammonium hydroxide (deep blue/inky blue tetraamine copper(II) complex).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Copper (II) nitrate",
+        "Cu(NO3)2",
+        "Cupric nitrate"
+      ],
+      "common_errors": [
+        "Mistakenly choosing ferrous chloride instead of copper nitrate"
+      ],
+      "examiner_notes": "Demonstrate the chemical reaction of copper nitrate using ammonium hydroxide first in a limited amount and then in excess to differentiate between the precipitates formed."
+    },
+    {
+      "question_number": "2(iii)(b)",
+      "scheme_text": "Roasting",
+      "total_marks": 1,
+      "key_points": [
+        "Roasting"
+      ],
+      "model_answer": "Zinc blende (ZnS) is converted to zinc oxide by roasting, which involves heating in excess air/oxygen to convert the sulphide to the oxide.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing roasting with calcination"
+      ],
+      "examiner_notes": "Facilitate discussion on roasting and calcination along with the names of the ores that are taken for the same."
+    },
+    {
+      "question_number": "2(iii)(c)",
+      "scheme_text": "molten sodium chloride / fused NaCl / Sodium chloride / NaCl / aqueous NaCl",
+      "total_marks": 1,
+      "key_points": [
+        "Molten sodium chloride",
+        "conducts by movement of ions"
+      ],
+      "model_answer": "Molten sodium chloride conducts electricity by the movement of ions, as the ionic lattice is broken down in the molten state releasing free Na+ and Cl- ions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "fused NaCl",
+        "NaCl",
+        "aqueous NaCl"
+      ],
+      "common_errors": [
+        "Answering 'molten iron' which conducts by electron flow, not ion movement"
+      ],
+      "examiner_notes": "Reinforce the difference between ionic and metallic conduction by giving examples of an electrolyte and a metal."
+    },
+    {
+      "question_number": "2(iii)(d)",
+      "scheme_text": "Ag → Ag+ + e– / Ag - e– → Ag+",
+      "total_marks": 1,
+      "key_points": [
+        "Ag → Ag+ + e–",
+        "oxidation occurs at anode"
+      ],
+      "model_answer": "At the anode during electrolysis of aqueous sodium argentocyanide with silver electrodes, the silver anode is oxidised: Ag → Ag+ + e–.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Ag - e– → Ag+"
+      ],
+      "common_errors": [
+        "Writing the reduction half-equation instead of oxidation"
+      ],
+      "examiner_notes": "Highlight the OIL RIG concept (Oxidation Is Loss, Reduction Is Gain) and connect it to the reactions occurring at electrodes."
+    },
+    {
+      "question_number": "2(iii)(e)",
+      "scheme_text": "sodium zincate / Na2ZnO2",
+      "total_marks": 1,
+      "key_points": [
+        "sodium zincate",
+        "Na2ZnO2"
+      ],
+      "model_answer": "When ZnO reacts with hot concentrated NaOH, the salt formed is sodium zincate (Na2ZnO2), as ZnO is an amphoteric oxide.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Na2ZnO2"
+      ],
+      "common_errors": [
+        "Incorrectly choosing zinc hydroxide"
+      ],
+      "examiner_notes": "Stress the concept of amphoteric oxides, demonstrating their reactions with both acids and alkalis, and encourage students to write balanced equations for these reactions."
+    },
+    {
+      "question_number": "2(iv)",
+      "scheme_text": "Column A (a)→3, (b)→5, (c)→1/5, (d)→2/5, (e)→4",
+      "total_marks": 5,
+      "key_points": [
+        "(a) N2 + 3H2 ⇌ 2NH3 — catalyst: Iron (3)",
+        "(b) 4NH3 + 5O2 → 4NO + 6H2O — catalyst: Platinum (5)",
+        "(c) 2SO2 + O2 ⇌ 2SO3 — catalyst: Vanadium Pentoxide (1) or Platinum (5)",
+        "(d) C2H4 + H2 → C2H6 — catalyst: Nickel (2) or Platinum (5)",
+        "(e) CuSO4.5H2O → CuSO4 + 5H2O — agent: Concentrated Sulphuric acid (4)"
+      ],
+      "model_answer": "The Haber process uses iron as catalyst; catalytic oxidation of ammonia uses platinum; the Contact process uses vanadium pentoxide; hydrogenation of ethene uses nickel; dehydration of copper sulphate pentahydrate uses concentrated sulphuric acid.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Platinum also accepted for (c) and (d)"
+      ],
+      "common_errors": [
+        "Confusing platinum with nickel",
+        "Confusing concentrated sulphuric acid with other options"
+      ],
+      "examiner_notes": "Teach the basic concept of catalysts and explain their role in various types of reactions. Ask students to make a list of different catalysts and promoters used in both laboratory and industrial processes."
+    },
+    {
+      "question_number": "2(v)(a)1",
+      "scheme_text": "Structural diagram for 2-methyl propene (correct structure with double bond and methyl branch accepted in multiple forms)",
+      "total_marks": 1,
+      "key_points": [
+        "Double bond between C1 and C2 or C2 and C3",
+        "methyl group on C2",
+        "correct hydrogen count on each carbon"
+      ],
+      "model_answer": "2-methylpropene has the structure: CH2=C(CH3)-CH3, where there is a double bond at the second carbon and a methyl branch also at the second carbon.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Any correct full structural formula showing CH2=C(CH3)CH3"
+      ],
+      "common_errors": [
+        "Drawing condensed formula rather than structural formula",
+        "Adding extra hydrogen to the carbon with the double bond",
+        "Misplacing the methyl group",
+        "Incorrect hydrogen count"
+      ],
+      "examiner_notes": "Train students to draw structural formulae properly, ensuring all carbon atoms satisfy tetravalency. Elucidate clearly the IUPAC rules for naming and drawing organic compounds."
+    },
+    {
+      "question_number": "2(v)(a)2",
+      "scheme_text": "Structural diagram for butanal (correct structure with –CHO terminal group)",
+      "total_marks": 1,
+      "key_points": [
+        "Four carbon chain",
+        "–CHO group at C1",
+        "correct hydrogen count"
+      ],
+      "model_answer": "Butanal has the structural formula CH3–CH2–CH2–CHO, with an aldehyde (–CHO) functional group at the terminal carbon.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Any correct full structural formula of CH3CH2CH2CHO"
+      ],
+      "common_errors": [
+        "Confusing –CHO with –OH or –COOH",
+        "Drawing condensed form of functional group",
+        "Failing to show the double bond of oxygen in –CHO",
+        "Incorrectly placing –CHO group within the chain"
+      ],
+      "examiner_notes": "Facilitate revision of functional groups with the help of flashcards for quick recall. Emphasise the importance of correct placement of substituents or functional groups according to IUPAC rules."
+    },
+    {
+      "question_number": "2(v)(b)1",
+      "scheme_text": "1,1,2,2-tetrachloroethane",
+      "total_marks": 1,
+      "key_points": [
+        "1,1,2,2-tetrachloroethane",
+        "prefix 'tetra'",
+        "correct numbering 1,1,2,2"
+      ],
+      "model_answer": "The IUPAC name for the compound with two Cl atoms on each of the two carbons (CCl2H–CCl2H) is 1,1,2,2-tetrachloroethane.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not mentioning prefix 'tetra'",
+        "Using 'quadra' or 'quadri' instead of 'tetra'",
+        "Incorrect numbering of chlorine atoms",
+        "Omitting the numbering"
+      ],
+      "examiner_notes": "Teach students to identify the longest carbon chain in organic compounds and number the carbons correctly. Elucidate that the functional group should be given the lowest numbering."
+    },
+    {
+      "question_number": "2(v)(b)2",
+      "scheme_text": "butanoic acid / Butan-1-oic acid",
+      "total_marks": 1,
+      "key_points": [
+        "butanoic acid",
+        "butan-1-oic acid"
+      ],
+      "model_answer": "The IUPAC name for the 4-carbon carboxylic acid (CH3CH2CH2COOH) is butanoic acid (or butan-1-oic acid).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Butan-1-oic acid"
+      ],
+      "common_errors": [
+        "Writing 'butanol' instead of butanoic acid",
+        "Omitting the word 'acid'",
+        "Spelling errors"
+      ],
+      "examiner_notes": "Provide ample practice with worksheets for naming and drawing organic compounds."
+    },
+    {
+      "question_number": "2(v)(b)3",
+      "scheme_text": "2-pentene / pent-2-ene",
+      "total_marks": 1,
+      "key_points": [
+        "pent-2-ene",
+        "2-pentene",
+        "5-carbon chain with double bond at C2"
+      ],
+      "model_answer": "The compound with a 5-carbon chain and a double bond between C2 and C3 is named pent-2-ene (or 2-pentene).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "2-pentene"
+      ],
+      "common_errors": [
+        "Writing 'pentane' instead of pent-2-ene",
+        "Incorrectly identifying the longest carbon chain leading to '1-methylbut-1-ene'"
+      ],
+      "examiner_notes": "Teach students to identify the longest carbon chain in organic compounds and number the carbons correctly. Clarify how branching and the length of the carbon chain affect naming."
+    },
+    {
+      "question_number": "3(i)(a)",
+      "scheme_text": "Period 3 / third period / 3 / third",
+      "total_marks": 1,
+      "key_points": [
+        "Period 3",
+        "X has atomic number 14, electronic config 2,8,4, so 3 shells = Period 3"
+      ],
+      "model_answer": "Atom X with atomic number 14 has electronic configuration 2,8,4 and therefore belongs to Period 3 of the periodic table.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "third period",
+        "third"
+      ],
+      "common_errors": [
+        "Writing period number in Roman numeral (III) instead of Arabic numeral (3)"
+      ],
+      "examiner_notes": "Ensure students write the period number in Arabic numerals only. Teach students to find the group number and period number with the help of atomic number via electronic configuration."
+    },
+    {
+      "question_number": "3(i)(b)",
+      "scheme_text": "XY2 / Y2X / X2Y4 / Y4X2",
+      "total_marks": 1,
+      "key_points": [
+        "XY2",
+        "X has valency 4, Y has valency 2",
+        "formula XY2"
+      ],
+      "model_answer": "X (atomic number 14, valency 4) and Y (atomic number 8, valency 2) combine to form the compound XY2 by the criss-cross method.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Y2X",
+        "X2Y4",
+        "Y4X2"
+      ],
+      "common_errors": [
+        "Providing the name of the compound instead of the formula",
+        "Writing X2Y or X6Y12"
+      ],
+      "examiner_notes": "Provide repetitive practice of writing accurate chemical formulas based on criss-cross method and reinforce valency matching with plenty of examples."
+    },
+    {
+      "question_number": "3(ii)(a)",
+      "scheme_text": "Anions or ions migrate to the anode and give up / lose electrons / donate electrons (and get oxidised) / Anode receives / gains electrons (causing oxidation) / Oxidation takes place",
+      "total_marks": 1,
+      "key_points": [
+        "Anions migrate to anode",
+        "lose/donate electrons at anode",
+        "oxidation occurs at anode"
+      ],
+      "model_answer": "The anode is known as the oxidising electrode because anions migrate towards it and lose electrons (are oxidised) at its surface; oxidation always occurs at the anode.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Anode receives/gains electrons causing oxidation"
+      ],
+      "common_errors": [
+        "Wrongly stating the anode loses electrons rather than anions",
+        "Confusing oxidation with reduction",
+        "Relating to gain/loss of oxygen/hydrogen instead of electron transfer"
+      ],
+      "examiner_notes": "Relate the concept of oxidation and reduction putting stress on the fact that oxidation occurs at the anode and reduction occurs at the cathode. Use visual stimuli like animations to show the movement of electrons."
+    },
+    {
+      "question_number": "3(ii)(b)",
+      "scheme_text": "Graphite electrodes are not attacked / remains unaffected by (Br2 vapours) / Graphite is an inert / unreactive / non-reactive electrode",
+      "total_marks": 1,
+      "key_points": [
+        "Graphite is inert/unreactive",
+        "not attacked by bromine vapour produced"
+      ],
+      "model_answer": "Graphite electrodes are preferred in the electrolysis of molten lead bromide because graphite is an inert electrode that is not attacked by the bromine vapour produced at the anode.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "remains unaffected by Br2 vapours",
+        "non-reactive electrode"
+      ],
+      "common_errors": [
+        "Not providing appropriate reasoning for the preference of graphite"
+      ],
+      "examiner_notes": "Highlight that inert electrodes, such as graphite or platinum, do not participate in the electrolytic reaction and remain unchanged."
+    },
+    {
+      "question_number": "3(iii)(a)",
+      "scheme_text": "G.A.W of Mg=24; G.M.W of H2SO4=98; 24g Mg needs 2×98g H2SO4; 60g Mg needs 490g H2SO4",
+      "total_marks": 1,
+      "key_points": [
+        "Molar mass of H2SO4 = 98 g/mol",
+        "Ratio: 1 mol Mg : 2 mol H2SO4",
+        "60/24 × 2 × 98 = 490 g"
+      ],
+      "model_answer": "From the equation, 24 g Mg reacts with 2×98 = 196 g H2SO4. For 60 g Mg: mass of H2SO4 = (60/24) × 196 = 490 g.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "490"
+      ],
+      "common_errors": [
+        "Writing final answer as 98 g without full calculation",
+        "Calculation errors or substituting incorrect values for molar mass"
+      ],
+      "examiner_notes": "Guide students to read numerical questions carefully and solve in a stepwise manner. Provide ample practice of questions related to calculation of molar mass of a given compound."
+    },
+    {
+      "question_number": "3(iii)(b)",
+      "scheme_text": "24g Mg liberates 22.4L SO2; 60g Mg liberates 56L SO2",
+      "total_marks": 2,
+      "key_points": [
+        "1 mol Mg (24g) produces 1 mol SO2 (22.4 L at STP)",
+        "60g Mg → (60/24)×22.4 = 56 L"
+      ],
+      "model_answer": "From the equation, 24 g Mg produces 22.4 L of SO2 at STP. For 60 g Mg: volume = (60/24) × 22.4 = 56 L of SO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "56",
+        "56000 cc"
+      ],
+      "common_errors": [
+        "Confusion in calculating volume at STP",
+        "Substituting values incorrectly",
+        "Providing only final answer without steps"
+      ],
+      "examiner_notes": "Explain the use of standard molar volume (22.4 L/mol) in calculations. Focus on practicing mole concept problems and teach how to substitute values in the correct order."
+    },
+    {
+      "question_number": "3(iv)(a)",
+      "scheme_text": "White ppt / white insoluble substance / white substance is formed",
+      "total_marks": 1,
+      "key_points": [
+        "White precipitate forms",
+        "BaSO4 is the insoluble white precipitate"
+      ],
+      "model_answer": "When barium chloride solution is added to zinc sulphate solution, a white precipitate of barium sulphate is formed.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "white insoluble substance",
+        "white substance is formed"
+      ],
+      "common_errors": [
+        "Writing chemical equations or products rather than stating the observation",
+        "Confusing white colour with blue"
+      ],
+      "examiner_notes": "Emphasise learning chemical reactions through practical experiments wherever possible. Provide thorough revision of observation-based questions, highlighting the importance of detailed observations."
+    },
+    {
+      "question_number": "3(iv)(b)",
+      "scheme_text": "Reddish brown gas / buff / yellow residue / a gas which rekindles a glowing splinter / crackling sound is heard / decrepitation takes place / a solid which fuses to the glass",
+      "total_marks": 1,
+      "key_points": [
+        "Reddish brown gas (NO2) evolved",
+        "yellow residue of PbO formed",
+        "crackling/decrepitation sound"
+      ],
+      "model_answer": "When lead nitrate is heated, a reddish-brown gas (NO2) is evolved, a yellow residue of lead monoxide (PbO) remains, and a crackling/decrepitation sound is heard.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "buff",
+        "yellow residue",
+        "gas rekindles glowing splinter",
+        "decrepitation"
+      ],
+      "common_errors": [
+        "Mentioning 'brown gas' without specifying reddish-brown",
+        "Writing NO2 is formed without describing colour",
+        "Calling it colourless gas"
+      ],
+      "examiner_notes": "Ensure students learn and remember the correct colour of gases by asking oral questions in the class. Guide students to write exact initial and final colour."
+    },
+    {
+      "question_number": "3(iv)(c)",
+      "scheme_text": "Starch iodide paper turns blue black / bluish black",
+      "total_marks": 1,
+      "key_points": [
+        "Starch iodide paper turns blue-black"
+      ],
+      "model_answer": "When chlorine gas is passed over moist starch iodide paper, the paper turns blue-black because chlorine oxidises iodide ions to iodine, which forms a blue-black complex with starch.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "bluish black"
+      ],
+      "common_errors": [
+        "Incorrect observations noted in some answer scripts"
+      ],
+      "examiner_notes": "Conduct experiments and use visual aids or videos to demonstrate actual colour changes, gas evolution, and other observations in the given reactions."
+    },
+    {
+      "question_number": "4(i)(a)",
+      "scheme_text": "Vapour density = 450/150 or only 3",
+      "total_marks": 1,
+      "key_points": [
+        "Vapour density = mass of gas / mass of equal volume of H2",
+        "VD = 450/150 = 3"
+      ],
+      "model_answer": "Since equal volumes of gases under identical conditions have masses proportional to their molecular masses, the vapour density of gas G = 450/150 = 3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "3"
+      ],
+      "common_errors": [
+        "Confusion regarding the relationship between vapour density and molecular weight",
+        "Calculation errors",
+        "Giving direct answer without working"
+      ],
+      "examiner_notes": "Emphasise using the correct formulas and performing accurate calculations, followed by rechecking of the answers while solving numerical problems."
+    },
+    {
+      "question_number": "4(i)(b)",
+      "scheme_text": "Molecular weight = 3 × 2 = 6",
+      "total_marks": 1,
+      "key_points": [
+        "Molecular weight = 2 × vapour density",
+        "MW = 2 × 3 = 6"
+      ],
+      "model_answer": "The molecular weight of gas G = 2 × vapour density = 2 × 3 = 6 g/mol.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "6"
+      ],
+      "common_errors": [
+        "Simply mentioning 6 without showing calculation"
+      ],
+      "examiner_notes": "Provide sufficient practice on calculation of molecular masses by using vapour density."
+    },
+    {
+      "question_number": "4(ii)(a)",
+      "scheme_text": "CH3COONa + NaOH → CH4 + Na2CO3 (with CaO/Δ condition)",
+      "total_marks": 1,
+      "key_points": [
+        "CH3COONa + NaOH → CH4 + Na2CO3",
+        "CaO catalyst and heat required",
+        "correctly balanced"
+      ],
+      "model_answer": "When sodium acetate is heated with sodium hydroxide in the presence of CaO, methane gas and sodium carbonate are produced: CH3COONa + NaOH → CH4 + Na2CO3.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing NaHCO3 instead of Na2CO3 as product",
+        "Incorrect products",
+        "Unbalanced equation"
+      ],
+      "examiner_notes": "Provide rigorous practice and discussion of completing and balancing equations of alkanes, alkenes, and alkynes."
+    },
+    {
+      "question_number": "4(ii)(b)",
+      "scheme_text": "2CH3COOH + Mg → (CH3COO)2Mg + H2",
+      "total_marks": 1,
+      "key_points": [
+        "2CH3COOH + Mg → (CH3COO)2Mg + H2",
+        "magnesium acetate and hydrogen produced",
+        "balanced with coefficient 2"
+      ],
+      "model_answer": "Acetic acid reacts with magnesium to produce magnesium acetate and hydrogen gas: 2CH3COOH + Mg → (CH3COO)2Mg + H2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Majority unable to balance this equation correctly"
+      ],
+      "examiner_notes": "Provide rigorous practice and discussion of completing and balancing equations."
+    },
+    {
+      "question_number": "4(iii)(a)",
+      "scheme_text": "Nitrogen dioxide / NO2",
+      "total_marks": 1,
+      "key_points": [
+        "Nitrogen dioxide",
+        "NO2"
+      ],
+      "model_answer": "When copper is treated with hot concentrated nitric acid, nitrogen dioxide (NO2), a reddish-brown gas, is produced.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "NO2"
+      ],
+      "common_errors": [
+        "Confusing nitrogen dioxide with nitric oxide (NO)",
+        "Writing hydrogen gas"
+      ],
+      "examiner_notes": "Emphasise the product formed when copper reacts with concentrated HNO3 and dilute HNO3. Highlight the difference between concentrated and dilute nitric acid in terms of NO2 and NO evolution."
+    },
+    {
+      "question_number": "4(iii)(b)",
+      "scheme_text": "Nitrogen / N2",
+      "total_marks": 1,
+      "key_points": [
+        "Nitrogen gas",
+        "N2"
+      ],
+      "model_answer": "When ammonia is burnt in an atmosphere of oxygen, nitrogen gas (N2) and water are produced: 4NH3 + 3O2 → 2N2 + 6H2O.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "N2"
+      ],
+      "common_errors": [
+        "Confusing with nitrogen dioxide or nitric oxide"
+      ],
+      "examiner_notes": "Facilitate practice and revision of the chemical properties of ammonia, with emphasis on writing and balancing the equations."
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "scheme_text": "Hydrogen sulphide / H2S",
+      "total_marks": 1,
+      "key_points": [
+        "Hydrogen sulphide",
+        "H2S"
+      ],
+      "model_answer": "When ferrous sulphide reacts with dilute hydrochloric acid, hydrogen sulphide (H2S) gas with a rotten egg smell is produced: FeS + 2HCl → FeCl2 + H2S.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "H2S"
+      ],
+      "common_errors": [
+        "Writing sulphur dioxide instead of hydrogen sulphide"
+      ],
+      "examiner_notes": "Explain the reaction of dilute hydrochloric acid with metallic sulphides and demonstrate it in the laboratory to identify the rotten egg-smelling gas."
+    },
+    {
+      "question_number": "4(iv)(a)",
+      "scheme_text": "3 / three (valency of element G in Group VA)",
+      "total_marks": 1,
+      "key_points": [
+        "Valency of G = 3",
+        "G is in Group VA"
+      ],
+      "model_answer": "Element G is in Group VA of the periodic table and therefore has a valency of 3 (it needs 3 more electrons to complete its outer shell).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "three"
+      ],
+      "common_errors": [
+        "Mentioning only numeric value without sign",
+        "Writing valency as 5 due to confusion between valency and number of valence electrons"
+      ],
+      "examiner_notes": "Clearly explain the relationship between group number and number of outermost electrons, and how to determine valency from electronic configuration."
+    },
+    {
+      "question_number": "4(iv)(b)",
+      "scheme_text": "E (element in Group IVA, Period 2)",
+      "total_marks": 1,
+      "key_points": [
+        "E",
+        "E is in Group IVA — the carbon group — which exhibits catenation"
+      ],
+      "model_answer": "Element E (in Group IVA) can exhibit catenation because carbon-group elements have the unique ability to form long chains and rings by bonding with themselves.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mentioning carbon by name instead of using the designated letter E"
+      ],
+      "examiner_notes": "Explain the meaning of the term catenation and the group in the periodic table that can exhibit catenation."
+    },
+    {
+      "question_number": "4(iv)(c)",
+      "scheme_text": "MP2",
+      "total_marks": 1,
+      "key_points": [
+        "MP2",
+        "M is in Group IIA (valency 2), P is in Group VIIA (valency 1)"
+      ],
+      "model_answer": "M is in Group IIA (valency 2) and P is in Group VIIA (valency 1), so the formula of the compound formed between them is MP2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Identifying M as hydrogen and writing HP2",
+        "Reversing element order to write P2M"
+      ],
+      "examiner_notes": "Instruct students to write the metallic ion first, followed by the non-metallic ion while writing the chemical formula."
+    },
+    {
+      "question_number": "5(i)(a)",
+      "scheme_text": "Cl / chlorine / Cl2",
+      "total_marks": 1,
+      "key_points": [
+        "Cl",
+        "Chlorine has highest ionisation potential among Al, Cl, Mg (all Period 3)"
+      ],
+      "model_answer": "Among Al, Cl, and Mg (all in Period 3), chlorine (Cl) has the highest ionisation potential as it is furthest to the right in the period with the greatest nuclear charge and smallest atomic radius.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "chlorine",
+        "Cl2"
+      ],
+      "common_errors": [
+        "Arranging elements without stating the name",
+        "Confusing ionisation potential with electronegativity"
+      ],
+      "examiner_notes": "Thoroughly explain the variation in periodic properties across periods and down groups. Emphasise the correct usage of < and > signs to represent the trends accurately."
+    },
+    {
+      "question_number": "5(i)(b)",
+      "scheme_text": "Ne / Neon",
+      "total_marks": 1,
+      "key_points": [
+        "Ne",
+        "Neon is a noble gas with full outer shell, highest IE in Period 2"
+      ],
+      "model_answer": "Among Ne, O, and F (all in Period 2), neon (Ne) has the highest ionisation potential as it is a noble gas with a completely filled outer shell, making it extremely stable.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Neon"
+      ],
+      "common_errors": [
+        "Incorrectly writing fluorine (F)"
+      ],
+      "examiner_notes": "Reinforce the concept of periodic trends by providing practice worksheets."
+    },
+    {
+      "question_number": "5(ii)(a)",
+      "scheme_text": "Nitrogen / N2",
+      "total_marks": 1,
+      "key_points": [
+        "Nitrogen gas",
+        "N2",
+        "ammonia reduces CuO to Cu, itself oxidised to N2"
+      ],
+      "model_answer": "When ammonia gas is passed over heated copper(II) oxide, the gas evolved is nitrogen (N2), as ammonia acts as a reducing agent: 2NH3 + 3CuO → 3Cu + N2 + 3H2O.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "N2"
+      ],
+      "common_errors": [
+        "Identifying gas as nitrogen dioxide, nitric oxide, hydrogen, or water"
+      ],
+      "examiner_notes": "Use step-by-step reaction mechanism to illustrate ammonia acting as a reducing agent and the reduction of CuO to Cu."
+    },
+    {
+      "question_number": "5(ii)(b)",
+      "scheme_text": "Pink / reddish brown / brown / pinkish brown / brownish pink",
+      "total_marks": 1,
+      "key_points": [
+        "Copper residue left",
+        "pink/reddish-brown colour"
+      ],
+      "model_answer": "The residue left in the combustion tube is reddish-brown (pink) in colour, which is the copper metal formed by the reduction of black copper(II) oxide.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "pink",
+        "brown",
+        "pinkish brown",
+        "brownish pink"
+      ],
+      "common_errors": [
+        "Writing random colours like blue, black"
+      ],
+      "examiner_notes": "Provide clear observations for each reaction by real laboratory demonstrations or through virtual lab platforms available online."
+    },
+    {
+      "question_number": "5(iii)(a)",
+      "scheme_text": "(NH4)2CO3 + 2HCl → 2NH4Cl + H2O + CO2",
+      "total_marks": 1,
+      "key_points": [
+        "(NH4)2CO3 + 2HCl → 2NH4Cl + H2O + CO2",
+        "balanced",
+        "CO2 and H2O as products"
+      ],
+      "model_answer": "The balanced equation for the action of dilute hydrochloric acid on ammonium carbonate is: (NH4)2CO3 + 2HCl → 2NH4Cl + H2O + CO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing unbalanced equation",
+        "Writing sulphuric acid as one of the products instead of CO2 and H2O"
+      ],
+      "examiner_notes": "Guide students to always balance a chemical reaction and mention the name of the reactants and products formed."
+    },
+    {
+      "question_number": "5(iii)(b)",
+      "scheme_text": "S + 6HNO3 → H2SO4 + 2H2O + 6NO2",
+      "total_marks": 1,
+      "key_points": [
+        "S + 6HNO3 → H2SO4 + 2H2O + 6NO2",
+        "balanced",
+        "hot concentrated HNO3"
+      ],
+      "model_answer": "The balanced equation for the oxidation of sulphur with hot concentrated nitric acid is: S + 6HNO3 → H2SO4 + 2H2O + 6NO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Unable to write correct products",
+        "Difficulty balancing the equation"
+      ],
+      "examiner_notes": "Review student responses carefully during practice sessions to identify common misconceptions or errors."
+    },
+    {
+      "question_number": "5(iii)(c)",
+      "scheme_text": "C + 2H2SO4 → CO2 + 2H2O + 2SO2",
+      "total_marks": 1,
+      "key_points": [
+        "C + 2H2SO4 → CO2 + 2H2O + 2SO2",
+        "balanced"
+      ],
+      "model_answer": "The balanced equation for the reaction of concentrated sulphuric acid with carbon is: C + 2H2SO4 → CO2 + 2H2O + 2SO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failing to balance the equation"
+      ],
+      "examiner_notes": "Regularly practise writing and balancing equations correctly. Always mention reaction conditions when writing equations."
+    },
+    {
+      "question_number": "5(iv)(a)",
+      "scheme_text": "white ppt / ppt / insoluble substance / white substance formed",
+      "total_marks": 1,
+      "key_points": [
+        "White precipitate forms in both test tubes"
+      ],
+      "model_answer": "The common observation in both reactions (AgNO3 + HCl and Pb(NO3)2 + HCl) is the formation of a white precipitate — AgCl and PbCl2 respectively.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "ppt",
+        "insoluble substance",
+        "white substance formed"
+      ],
+      "common_errors": [
+        "Confusing observation with product formation"
+      ],
+      "examiner_notes": "Encourage students to write detailed observations, including colour, state, and confirmatory tests, rather than just naming the products."
+    },
+    {
+      "question_number": "5(iv)(b)1",
+      "scheme_text": "In C (white) ppt dissolves / is soluble in excess / forms clear or colourless solution / forms solution",
+      "total_marks": 1,
+      "key_points": [
+        "AgCl dissolves in excess NH4OH",
+        "forms colourless solution (diamminesilver complex)"
+      ],
+      "model_answer": "On addition of excess ammonium hydroxide to test tube C, the white precipitate of silver chloride dissolves to form a clear, colourless solution (diamminesilver(I) complex).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "ppt is soluble in excess",
+        "forms solution"
+      ],
+      "common_errors": [
+        "Incorrectly stating that the precipitate is insoluble"
+      ],
+      "examiner_notes": "Use group-wise solubility rule charts and summary tables to help students classify and remember precipitates and their characteristics."
+    },
+    {
+      "question_number": "5(iv)(b)2",
+      "scheme_text": "In D (white) ppt does not dissolve / remains insoluble / remains unchanged / (white) ppt remains / no change / white ppt",
+      "total_marks": 1,
+      "key_points": [
+        "PbCl2 does not dissolve in excess NH4OH",
+        "precipitate remains"
+      ],
+      "model_answer": "On addition of excess ammonium hydroxide to test tube D, the white precipitate of lead chloride does not dissolve and remains unchanged.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "remains insoluble",
+        "no change",
+        "white ppt remains"
+      ],
+      "common_errors": [
+        "Giving incomplete observations by only mentioning colour change without specifying solubility",
+        "Writing chemical equation instead of observation"
+      ],
+      "examiner_notes": "Instruct students to write accurate and complete observation statements, such as: 'white precipitate forms, then dissolves in excess.' Conduct hands-on experiments to show precipitation reactions."
+    },
+    {
+      "question_number": "6(i)(a)",
+      "scheme_text": "Amphoteric oxide",
+      "total_marks": 1,
+      "key_points": [
+        "Amphoteric oxide",
+        "ZnO is in region X"
+      ],
+      "model_answer": "The type of oxide represented in region X is an amphoteric oxide; ZnO can react with both acids and bases.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing amphoteric oxide with basic oxide or neutral oxide"
+      ],
+      "examiner_notes": "Explain the concepts of acidic, basic, amphoteric, and neutral oxides with equations, and highlight the differences between them with suitable examples."
+    },
+    {
+      "question_number": "6(i)(b)",
+      "scheme_text": "CuO / Copper oxide / Copper(II) oxide / Cupric oxide / Cu",
+      "total_marks": 1,
+      "key_points": [
+        "CuO is incorrectly placed",
+        "CuO is a basic oxide, not amphoteric"
+      ],
+      "model_answer": "CuO (copper oxide) has been incorrectly placed; it is a basic oxide and should be with the basic oxides, not in the amphoteric region.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Copper oxide",
+        "Copper(II) oxide",
+        "Cupric oxide"
+      ],
+      "common_errors": [
+        "Confusing CuO with Na2O",
+        "Incorrectly writing Fe2O3"
+      ],
+      "examiner_notes": "Thoroughly explain the solubility rules for metal oxides."
+    },
+    {
+      "question_number": "6(i)(c)",
+      "scheme_text": "Na2O / Sodium oxide / Na",
+      "total_marks": 1,
+      "key_points": [
+        "Na2O",
+        "Na2O + H2O → 2NaOH (an alkali)"
+      ],
+      "model_answer": "Na2O (sodium oxide) will form an alkali (NaOH) when dissolved in water: Na2O + H2O → 2NaOH.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Sodium oxide"
+      ],
+      "common_errors": [
+        "Confusing Na2O with CuO",
+        "Not recalling solubility rules for metal oxides"
+      ],
+      "examiner_notes": "Give practice exercises in class to identify the salts that are soluble or insoluble in water."
+    },
+    {
+      "question_number": "6(ii)(a)",
+      "scheme_text": "C / C2H4 / ethene / Ethylene or correct structure",
+      "total_marks": 1,
+      "key_points": [
+        "Compound C (ethene, C2H4)",
+        "alkene undergoes addition with Br2 to give single product 1,2-dibromoethane"
+      ],
+      "model_answer": "Compound C (ethene, C2H4) forms a single product with bromine via addition reaction: CH2=CH2 + Br2 → CH2BrCH2Br (1,2-dibromoethane).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "C2H4",
+        "ethene",
+        "Ethylene"
+      ],
+      "common_errors": [
+        "Mistakenly choosing compound E",
+        "Confusion in identifying functional groups"
+      ],
+      "examiner_notes": "Clearly explain the properties of alkenes and encourage students to write the correct balanced equations for addition reactions."
+    },
+    {
+      "question_number": "6(ii)(b)",
+      "scheme_text": "D and F / butane & 2-methylpropane / butane & iso-butane or correct structures",
+      "total_marks": 1,
+      "key_points": [
+        "D (butane, C4H10) and F (2-methylpropane, C4H10)",
+        "both have molecular formula C4H10"
+      ],
+      "model_answer": "Compounds D (butane) and F (2-methylpropane / isobutane) have the same molecular formula C4H10; they are structural isomers.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "butane & 2-methylpropane",
+        "butane & iso-butane"
+      ],
+      "common_errors": [
+        "Selecting incorrect pairs"
+      ],
+      "examiner_notes": "Teach the concept of isomerism and isomer clearly by providing sufficient examples."
+    },
+    {
+      "question_number": "6(ii)(c)",
+      "scheme_text": "A and B / Ethanoic acid & Ethanol / Acetic acid & Ethyl alcohol or correct structures",
+      "total_marks": 1,
+      "key_points": [
+        "A (ethanoic acid) and B (ethanol)",
+        "esterification in presence of conc. H2SO4 gives fruity-smelling ester"
+      ],
+      "model_answer": "Compounds A (ethanoic acid) and B (ethanol) react together in the presence of concentrated H2SO4 to form ethyl ethanoate, which has a fruity smell, in an esterification reaction.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Acetic acid & Ethyl alcohol"
+      ],
+      "common_errors": [
+        "Confusing with compounds A and C"
+      ],
+      "examiner_notes": "Explain esterification reaction with special reference to the characteristics of the product formed."
+    },
+    {
+      "question_number": "6(iii)",
+      "scheme_text": "% O = 100 - 47.4 - 10.5 = 42.1; moles C=3.95, O=2.63, H=10.5; ratio C:O:H = 3:2:8; Empirical Formula C3O2H8; n=1; Molecular Formula C3O2H8",
+      "total_marks": 4,
+      "key_points": [
+        "% O = 100 - 47.4 - 10.5 = 42.1%",
+        "Moles: C = 47.4/12 = 3.95, O = 42.1/16 = 2.63, H = 10.5/1 = 10.5",
+        "Divide by smallest (2.63): C=1.5, O=1, H=4",
+        "Multiply by 2: C=3, O=2, H=8",
+        "Empirical formula = C3H8O2",
+        "Empirical formula mass = 36+8+32 = 76",
+        "n = 76/76 = 1",
+        "Molecular formula = C3H8O2"
+      ],
+      "model_answer": "The percentage of oxygen is 100 - 47.4 - 10.5 = 42.1%. Dividing by atomic masses gives moles C:O:H = 3.95:2.63:10.5. Dividing by the smallest (2.63) gives ratio 1.5:1:4, which multiplied by 2 gives 3:2:8. The empirical formula is C3H8O2 (or C3O2H8). Since the empirical formula mass = 76 = RMM, n=1 and the molecular formula is also C3H8O2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "C3O2H8"
+      ],
+      "common_errors": [
+        "Unable to find molecular formula after finding empirical formula",
+        "Dividing atomic weights by percentage (reversed)",
+        "Not dividing by smallest mole value",
+        "Not multiplying empirical formula by n"
+      ],
+      "examiner_notes": "Lay stress on the formula: Molecular weight = n × Empirical formula weight. Provide classroom practice of numerical problems based on empirical formula and discuss common errors."
+    },
+    {
+      "question_number": "7(i)(a)",
+      "scheme_text": "concentrated HNO3 / nitric acid / aqua fortis",
+      "total_marks": 1,
+      "key_points": [
+        "Concentrated HNO3",
+        "concentrated nitric acid"
+      ],
+      "model_answer": "The concentrated acid P used by Seema is concentrated nitric acid (HNO3), which produces reddish-brown nitrogen dioxide gas when reacted with copper.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "nitric acid",
+        "aqua fortis"
+      ],
+      "common_errors": [
+        "Writing HCl or H2SO4",
+        "Writing nitric acid without the word 'concentrated'"
+      ],
+      "examiner_notes": "Emphasise the reaction of nitric acid with copper, producing NO2 or NO depending on concentration. Clarify that concentrated nitric acid releases reddish-brown gas while dilute nitric acid releases colourless nitric oxide."
+    },
+    {
+      "question_number": "7(i)(b)",
+      "scheme_text": "Cu + 4HNO3 → Cu(NO3)2 + 2H2O + 2NO2",
+      "total_marks": 1,
+      "key_points": [
+        "Cu + 4HNO3 → Cu(NO3)2 + 2H2O + 2NO2",
+        "balanced",
+        "concentrated HNO3"
+      ],
+      "model_answer": "The balanced equation for the reaction is: Cu + 4HNO3 (conc.) → Cu(NO3)2 + 2H2O + 2NO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failing to balance the equation",
+        "Writing copper oxide instead of copper nitrate",
+        "Writing NO instead of NO2"
+      ],
+      "examiner_notes": "Facilitate observation-based learning while teaching the properties of both concentrated and dilute nitric acid."
+    },
+    {
+      "question_number": "7(ii)(a)",
+      "scheme_text": "Baeyer's Process / Hall's process / Leaching",
+      "total_marks": 1,
+      "key_points": [
+        "Baeyer's Process",
+        "leaching with NaOH solution"
+      ],
+      "model_answer": "The process used to concentrate bauxite ore is Baeyer's Process (leaching), where the ore is dissolved in hot concentrated NaOH to separate aluminium hydroxide from impurities.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Hall's process",
+        "Leaching"
+      ],
+      "common_errors": [
+        "Confusing Baeyer's process with Hall-Heroult's process"
+      ],
+      "examiner_notes": "Teach the correct names and functions of each process involved in the concentration of bauxite ore. Explain explicitly the steps involved in the extraction of metal from its ore."
+    },
+    {
+      "question_number": "7(ii)(b)",
+      "scheme_text": "2Al(OH)3 → Al2O3 + 3H2O",
+      "total_marks": 1,
+      "key_points": [
+        "2Al(OH)3 → Al2O3 + 3H2O",
+        "balanced",
+        "thermal decomposition"
+      ],
+      "model_answer": "The balanced equation for the conversion of aluminium hydroxide to pure alumina by heating is: 2Al(OH)3 → Al2O3 + 3H2O.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing steps of Baeyer's process and including multiple reactions",
+        "Unable to balance the equation"
+      ],
+      "examiner_notes": "Explain explicitly the steps involved in the extraction of metal from its ore."
+    },
+    {
+      "question_number": "7(iii)(a)",
+      "scheme_text": "[Mg]2+ 2[Cl]- dot and cross structure showing ionic bond; Mg2+ and 2Cl- ions with complete electron configurations shown",
+      "total_marks": 1,
+      "key_points": [
+        "Mg2+ ion shown",
+        "Two Cl- ions shown with 8 electrons each",
+        "Mg loses 2 electrons to two Cl atoms",
+        "Ionic bond (electron transfer not sharing)"
+      ],
+      "model_answer": "The ionic compound MgCl2 is formed when Mg (config 2,8,2) loses 2 electrons to become Mg2+ and two Cl atoms (config 2,8,7) each gain 1 electron to become Cl- (config 2,8,8), shown with dots and crosses.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Any correctly drawn ionic dot-and-cross structure for MgCl2"
+      ],
+      "common_errors": [
+        "Missing charge on ions",
+        "Depicting covalent bonding instead of ionic",
+        "Wrong charge on chlorine",
+        "Not differentiating Mg from Cl electrons",
+        "Drawing orbital structure"
+      ],
+      "examiner_notes": "Reiterate to use distinct symbols (dots and crosses) for two different elements. Provide rigorous practice of drawing electron dot diagrams neatly."
+    },
+    {
+      "question_number": "7(iii)(b)",
+      "scheme_text": "H:Cl with shared pair shown and lone pairs on Cl (dot and cross structure of HCl)",
+      "total_marks": 1,
+      "key_points": [
+        "One shared pair of electrons between H and Cl",
+        "Three lone pairs on Cl shown",
+        "Dots and crosses used correctly"
+      ],
+      "model_answer": "In the covalent compound HCl, hydrogen (1 electron) and chlorine (7 outer electrons) share one pair of electrons; the dot-and-cross structure shows one bonding pair and three lone pairs on chlorine.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Any correct dot-and-cross structure of HCl"
+      ],
+      "common_errors": [
+        "Omitting lone pairs on chlorine"
+      ],
+      "examiner_notes": "Stress upon the representation rules for electron dot structures."
+    },
+    {
+      "question_number": "7(iii)(c)",
+      "scheme_text": "[H:N:H with H also attached via coordinate bond, positive charge shown]+ — the NH4+ ion dot and cross structure",
+      "total_marks": 1,
+      "key_points": [
+        "NH4+ ion",
+        "4 N-H bonds",
+        "positive charge shown on ion",
+        "coordinate bond from N's lone pair to H+"
+      ],
+      "model_answer": "When ammonia dissolves in water, a proton (H+) is accepted by the lone pair on nitrogen via a coordinate bond to form the ammonium ion NH4+, shown as [H:N:H:H:H]+ with a positive charge.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Any correct dot-and-cross structure of NH4+"
+      ],
+      "common_errors": [
+        "Missing positive charge on ammonium ion",
+        "Not including lone pair on nitrogen",
+        "Showing bonded structure instead of dot-and-cross",
+        "Depicting lone pairs and arrows simultaneously"
+      ],
+      "examiner_notes": "Explicitly teach the concept of coordinate bonding using examples like the ammonium ion (NH4+). Ensure students represent the coordinate bond clearly with an arrow from donor to acceptor."
+    },
+    {
+      "question_number": "7(iv)(a)",
+      "scheme_text": "(Being covalent) water does not ionize / water is a bad or poor or non-conductor of electricity / to increase conductivity / acts as a catalyst / speeds the rate of reaction / water will ionize / to produce (free mobile) ions / water is a non-electrolyte",
+      "total_marks": 1,
+      "key_points": [
+        "Water is a poor conductor / non-electrolyte",
+        "H2SO4 increases conductivity by providing free mobile ions"
+      ],
+      "model_answer": "Dilute sulphuric acid is added to water because water alone is a very poor conductor of electricity (non-electrolyte); H2SO4 ionises fully to provide free mobile ions, greatly increasing conductivity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "to increase conductivity",
+        "to produce free mobile ions",
+        "acts as a catalyst"
+      ],
+      "common_errors": [
+        "Only mentioning water being polar covalent without elaborating why H2SO4 is necessary",
+        "Vague answers"
+      ],
+      "examiner_notes": "Emphasise that ion availability is key to electrical conductivity in solution. Demonstrate electrolysis of acidulated water in the lab."
+    },
+    {
+      "question_number": "7(iv)(b)",
+      "scheme_text": "H+ + 1e– → [H] / 2H+ + 2e– → H2",
+      "total_marks": 1,
+      "key_points": [
+        "2H+ + 2e- → H2",
+        "reduction at cathode"
+      ],
+      "model_answer": "The reaction at the cathode is: 2H+ + 2e- → H2. Hydrogen ions are reduced (gain electrons) to form hydrogen gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "H+ + 1e- → [H]"
+      ],
+      "common_errors": [
+        "Writing 4H+ + 4e- → 2H2 (incorrect stoichiometry)",
+        "Unable to provide any cathode reaction"
+      ],
+      "examiner_notes": "Familiarise students with the confirmatory tests for the gases that evolved during electrolysis of acidulated water."
+    },
+    {
+      "question_number": "7(iv)(c)",
+      "scheme_text": "bubbles of colourless gas released / Volume of gas collected is almost half of that collected at cathode / gas released rekindles glowing splinter / gas released turns alkaline pyrogallol solution brown",
+      "total_marks": 1,
+      "key_points": [
+        "Colourless gas (oxygen) released at anode",
+        "volume is half that at cathode",
+        "rekindles a glowing splinter"
+      ],
+      "model_answer": "At the anode, colourless oxygen gas is released (bubbles observed); the volume collected is approximately half that at the cathode, and the gas rekindles a glowing splinter.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "gas rekindles glowing splinter",
+        "turns alkaline pyrogallol solution brown"
+      ],
+      "common_errors": [
+        "Only writing 'O2 is evolved' without confirmatory test"
+      ],
+      "examiner_notes": "Provide regular practice of writing the observations during electrolysis through class tests or revision assignments."
+    },
+    {
+      "question_number": "8(i)(a)",
+      "scheme_text": "Avogadro's Law: Under the same conditions of temperature and pressure equal volume of all gases contain the same number of molecules / particles.",
+      "total_marks": 1,
+      "key_points": [
+        "Equal volumes of all gases",
+        "under same conditions of temperature and pressure",
+        "contain same number of molecules/particles"
+      ],
+      "model_answer": "Avogadro's Law states that under the same conditions of temperature and pressure, equal volumes of all gases contain the same number of molecules.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missing the key phrase 'under the same temperature and pressure'"
+      ],
+      "examiner_notes": "Emphasise the correct definitions and Laws with keywords and conditions."
+    },
+    {
+      "question_number": "8(i)(b)",
+      "scheme_text": "Co-ordinate bond: The bond formed between two atoms by sharing a pair of electrons provided entirely by one of the combining atoms.",
+      "total_marks": 1,
+      "key_points": [
+        "Shared pair of electrons",
+        "both electrons provided by one atom only (donor)"
+      ],
+      "model_answer": "A co-ordinate (dative) bond is formed between two atoms by the sharing of a pair of electrons that are provided entirely by one of the combining atoms (the donor atom).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing lone pairs with shared pairs of electrons"
+      ],
+      "examiner_notes": "Explicitly teach the concept of coordinate bonding by using examples like bonding in ammonium ion (NH4+) and hydronium ion (H3O+)."
+    },
+    {
+      "question_number": "8(ii)(a)",
+      "scheme_text": "NH4Cl reacts with alkali to produce pungent colourless gas / turns moist red litmus blue / dense white fumes with conc. HCl / Nessler's reagent turns brown. With NaCl - no reaction / no gas evolved.",
+      "total_marks": 1,
+      "key_points": [
+        "NH4Cl + alkali → NH3 gas (pungent, turns moist red litmus blue)",
+        "NaCl + alkali → no reaction / no gas"
+      ],
+      "model_answer": "When an alkali is added to ammonium chloride, a pungent colourless gas (ammonia) is produced that turns moist red litmus paper blue; sodium chloride shows no reaction with alkali and no gas is evolved.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "dense white fumes with conc. HCl",
+        "turns Nessler's reagent brown"
+      ],
+      "common_errors": [
+        "Writing reactions for both salts without specific confirmatory tests",
+        "Mentioning 'colourless gas' without identifying it as ammonia"
+      ],
+      "examiner_notes": "Teach differentiation between colourless gases like ammonia, carbon dioxide, and hydrogen through confirmatory tests."
+    },
+    {
+      "question_number": "8(ii)(b)",
+      "scheme_text": "Zinc nitrate gives gelatinous white precipitate soluble in excess NaOH. Calcium nitrate gives white precipitate insoluble in excess NaOH.",
+      "total_marks": 1,
+      "key_points": [
+        "Zn(NO3)2 + NaOH → white gelatinous ppt, dissolves in excess NaOH",
+        "Ca(NO3)2 + NaOH → white ppt, insoluble in excess NaOH"
+      ],
+      "model_answer": "Zinc nitrate gives a gelatinous white precipitate of Zn(OH)2 which dissolves in excess NaOH to form a clear solution (sodium zincate); calcium nitrate gives a white precipitate of Ca(OH)2 which remains insoluble in excess NaOH.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "ppt dissolves in excess / ppt does not dissolve in excess"
+      ],
+      "common_errors": [
+        "Writing 'both are soluble' or 'both are insoluble'",
+        "Providing reaction for only one salt"
+      ],
+      "examiner_notes": "Lay stress on observing the precipitate if formed while adding the reagent to the compound and its solubility in limited and excess use of the reagent."
+    },
+    {
+      "question_number": "8(iii)(a)",
+      "scheme_text": "SO2 / Sulphur dioxide",
+      "total_marks": 1,
+      "key_points": [
+        "SO2",
+        "turns acidified K2Cr2O7 from orange to green (reducing agent)"
+      ],
+      "model_answer": "SO2 (sulphur dioxide) is the colourless gas that turns acidified K2Cr2O7 from orange to green, acting as a reducing agent.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Sulphur dioxide"
+      ],
+      "common_errors": [
+        "Incorrectly choosing CO2 or CH4"
+      ],
+      "examiner_notes": "Emphasise the key chemical test to distinguish sulphur dioxide from carbon dioxide, which is the acidified potassium dichromate test. Highlight that carbon dioxide does not affect acidified potassium dichromate solution."
+    },
+    {
+      "question_number": "8(iii)(b)",
+      "scheme_text": "NCl3 / Nitrogen trichloride",
+      "total_marks": 1,
+      "key_points": [
+        "NCl3",
+        "formed when excess Cl2 reacts with NH3",
+        "yellow explosive oily liquid"
+      ],
+      "model_answer": "NCl3 (nitrogen trichloride) is the yellow explosive oily liquid formed when excess chlorine gas reacts with ammonia gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Nitrogen trichloride"
+      ],
+      "common_errors": [
+        "Missing the significance of 'excess' chlorine; limited chlorine gives different product"
+      ],
+      "examiner_notes": "Use animations or simulations to show how the product changes based on the relative amounts of NH3 and Cl2."
+    },
+    {
+      "question_number": "8(iii)(c)",
+      "scheme_text": "PbO / Lead oxide / lead monoxide / Litharge",
+      "total_marks": 1,
+      "key_points": [
+        "PbO",
+        "yellow metallic oxide from thermal decomposition of PbCO3"
+      ],
+      "model_answer": "PbO (lead monoxide / litharge) is the yellow metallic oxide formed on thermal decomposition of PbCO3: PbCO3 → PbO + CO2.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Lead oxide",
+        "lead monoxide",
+        "Litharge"
+      ],
+      "common_errors": [
+        "Writing PbO2 or ZnO instead of PbO"
+      ],
+      "examiner_notes": "Conduct lab demonstrations wherever possible for visual memory."
+    },
+    {
+      "question_number": "8(iv)(a)",
+      "scheme_text": "Precipitation / R",
+      "total_marks": 1,
+      "key_points": [
+        "Precipitation (R)",
+        "PbCl2 is insoluble and formed by mixing two soluble salts"
+      ],
+      "model_answer": "PbCl2 is best prepared by precipitation (method R) by mixing solutions of a lead salt and a chloride salt, as lead chloride is insoluble and precipitates out.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "R"
+      ],
+      "common_errors": [
+        "Incorrectly choosing method P (simple displacement)"
+      ],
+      "examiner_notes": "Give MCQs based on salt names and their preparation methods."
+    },
+    {
+      "question_number": "8(iv)(b)",
+      "scheme_text": "Direct combination / S",
+      "total_marks": 1,
+      "key_points": [
+        "Direct combination (S)",
+        "Fe + Cl2 → FeCl3 on heating"
+      ],
+      "model_answer": "FeCl3 is best prepared by direct combination (method S): iron is heated in chlorine gas to directly form iron(III) chloride.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "S"
+      ],
+      "common_errors": [
+        "Selecting incorrect method for preparation of ferric chloride"
+      ],
+      "examiner_notes": "Provide worksheets based on writing equations, observations, and identifying the precipitate."
+    },
+    {
+      "question_number": "8(iv)(c)",
+      "scheme_text": "Neutralisation by titration / Q",
+      "total_marks": 1,
+      "key_points": [
+        "Neutralisation by titration (Q)",
+        "Na2SO4 from NaOH + H2SO4, both soluble so titration needed"
+      ],
+      "model_answer": "Na2SO4 is best prepared by neutralisation by titration (method Q), as both the acid (H2SO4) and base (NaOH) are soluble and no precipitate forms, so exact amounts must be determined by titration.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Q"
+      ],
+      "common_errors": [
+        "Confusing with simple displacement"
+      ],
+      "examiner_notes": "Give MCQs based on salt names and their preparation methods."
+    }
+  ]
+}

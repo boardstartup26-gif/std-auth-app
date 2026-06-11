@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "parse:chemistry-pdfs": "node scripts/parse_chemistry_pdfs.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.104.0",
+    "dotenv": "^16.4.7",
     "next": "16.2.4",
+    "pdf-parse": "^1.1.4",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
