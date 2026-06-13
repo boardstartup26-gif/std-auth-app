@@ -48,7 +48,7 @@ RULES — READ CAREFULLY:
 5. points_missed: list only scheme points the student clearly omitted or got wrong.
 6. conceptual_errors: flag misconceptions or factually wrong statements in the student's answer. Empty array if none.
 7. model_answer: use the provided model_answer verbatim if it exists. If absent, construct a concise examiner-quality answer strictly from scheme_text and key_points — label it ai_generated.
-8. examiner_feedback: 2–4 sentences max. Be direct. Identify the single most impactful gap or strength.
+8. examiner_feedback: 2–3 sentences max. Be direct. Identify the single most impactful gap or strength.
 9. DO NOT be lenient because the student declared higher marks. declared_marks is context only — it does not influence your award.
 10. Output ONLY valid JSON matching the schema below. No preamble, no markdown fences, no trailing text.
 
@@ -275,13 +275,12 @@ async function persistSubmission(
     evaluation: EvaluationOutput;
   }
 ) {
-  // Insert student_answer
+  // Insert student_answer — matches schema: id, user_id, question_id, answer_text, submitted_at
   const { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
     .insert({
       question_id: questionId,
       answer_text: studentAnswer,
-      declared_marks: declaredMarks,
       user_id: userId,
     })
     .select("id")
@@ -292,16 +291,16 @@ async function persistSubmission(
     return;
   }
 
-  // Insert evaluation
+  // Insert evaluation — total_marks NOT a column here (lives on marking_schemes via question_id)
   const { error: evalError } = await supabase.from("evaluations").insert({
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
-    total_marks: evaluation.total_marks,
     points_hit: evaluation.points_hit,
     points_missed: evaluation.points_missed,
     conceptual_errors: evaluation.conceptual_errors,
     model_answer: evaluation.model_answer,
     model_answer_source: evaluation.model_answer_source,
+    declared_marks: declaredMarks,
     examiner_feedback: evaluation.examiner_feedback,
   });
 
