@@ -24,7 +24,12 @@ interface EvaluationResult {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-const SUBJECTS = ["Chemistry", "Physics", "Biology", "Geography"];
+const SUBJECTS = [
+  { name: "Chemistry", available: true },
+  { name: "Physics", available: false },
+  { name: "Biology", available: false },
+  { name: "Geography", available: false },
+];
 
 function ScoreBadge({ awarded, total }: { awarded: number; total: number }) {
   const pct = total > 0 ? awarded / total : 0;
@@ -80,6 +85,9 @@ export default function EvaluatePage() {
   const [evaluating, setEvaluating] = useState(false);
   const [result, setResult] = useState<EvaluationResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [limitReached, setLimitReached] = useState(false);
+  const [feedbackText, setFeedbackText] = useState("");
+  const [feedbackSent, setFeedbackSent] = useState(false);
 
   // ── Fetch years when subject changes ──────────────────────────────────────
   useEffect(() => {
@@ -190,6 +198,9 @@ export default function EvaluatePage() {
     setEvaluating(true);
     setResult(null);
     setError(null);
+    setLimitReached(false);
+    setFeedbackText("");
+    setFeedbackSent(false);
 
     try {
       const res = await fetch("/api/evaluate", {
@@ -208,6 +219,9 @@ export default function EvaluatePage() {
       const data = await res.json();
 
       if (!res.ok) {
+        if (res.status === 429) {
+          setLimitReached(true);
+        }
         setError(data?.error ?? "Evaluation failed. Try again.");
       } else {
         setResult(data as EvaluationResult);
@@ -218,7 +232,6 @@ export default function EvaluatePage() {
       setEvaluating(false);
     }
   }
-
   // ✅ NEW
   const canSubmit =
     !!subject &&
@@ -266,7 +279,9 @@ export default function EvaluatePage() {
             >
               <option value="">Select subject</option>
               {SUBJECTS.map((s) => (
-                <option key={s} value={s}>{s}</option>
+                <option key={s.name} value={s.name} disabled={!s.available}>
+                  {s.name}{!s.available ? " — Coming soon" : ""}
+                </option>
               ))}
             </select>
           </div>
@@ -380,8 +395,52 @@ export default function EvaluatePage() {
 
       {/* Error */}
       {error && (
-        <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300">
-          {error}
+        <div className="mt-4 space-y-3">
+          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300">
+            {error}
+          </div>
+
+          {/* Feedback box — only shown if limit reached */}
+          {limitReached && (
+            <div className="rounded-lg border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+              {feedbackSent ? (
+                <p className="text-sm text-emerald-600 dark:text-emerald-400">
+                  Thanks — we'll take a look.
+                </p>
+              ) : (
+                <div className="flex flex-col gap-2">
+                  <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                    Help us prioritize — why do you need more evaluations today?
+                  </p>
+                  <textarea
+                    value={feedbackText}
+                    onChange={(e) => setFeedbackText(e.target.value)}
+                    placeholder="E.g., exam prep, testing different approaches…"
+                    rows={2}
+                    className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-zinc-400"
+                  />
+                  <button
+                    onClick={async () => {
+                      if (!feedbackText.trim()) return;
+                      try {
+                        const res = await fetch("/api/feedback", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({ message: feedbackText }),
+                        });
+                        if (res.ok) setFeedbackSent(true);
+                      } catch (err) {
+                        console.error("Feedback send failed:", err);
+                      }
+                    }}
+                    className="self-start rounded-lg bg-zinc-900 px-4 py-1.5 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                  >
+                    Send Feedback
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
 

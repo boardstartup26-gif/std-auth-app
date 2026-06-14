@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 
+// ─── Config ───────────────────────────────────────────────────────────────────
+
+const DAILY_EVALUATION_LIMIT = 10;
+
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface EvaluateRequestBody {
@@ -125,13 +129,41 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "student_answer is too short to evaluate" }, { status: 400 });
   }
 
-  // Extract authenticated user
+  // 1a. Extract authenticated user — evaluation requires login
   const supabaseAuth = await createClient();
   const { data: { user } } = await supabaseAuth.auth.getUser();
   const userId = user?.id ?? null;
 
-  // 2. DB lookups
+  if (!userId) {
+    return NextResponse.json(
+      { error: "You must be signed in to run an evaluation." },
+      { status: 401 }
+    );
+  }
+
   const supabase = createAdminClient();
+
+  // 1b. Check daily usage cap
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+  const { data: usageRow } = await supabase
+    .from("usage")
+    .select("evaluation_count")
+    .eq("user_id", userId)
+    .eq("usage_date", today)
+    .maybeSingle();
+
+  if (usageRow && usageRow.evaluation_count >= DAILY_EVALUATION_LIMIT) {
+  return NextResponse.json(
+    {
+      error: `You've used your ${DAILY_EVALUATION_LIMIT} evaluations for today. Come back tomorrow — or tell us if you need more during exam prep.`,
+      limit_reached: true,
+    },
+    { status: 429 }
+  );
+}
+
+  // 2. DB lookups
 
   // 2a. Resolve subject_id
   const { data: subjectRow, error: subjectError } = await supabase
@@ -245,6 +277,11 @@ export async function POST(req: NextRequest) {
   // 5. Enforce model_answer_source from DB truth, not Claude's guess
   evaluation.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
+  // 5b. Increment daily usage count (only counts successful evaluations)
+  incrementUsage(supabase, userId, today).catch((err) =>
+    console.error("[BoardEdge] Usage increment error:", err)
+  );
+
   // 6. Persist to student_answers + evaluations (fire-and-forget; don't block response)
   persistSubmission(supabase, {
     questionId: questionRow.id,
@@ -255,6 +292,33 @@ export async function POST(req: NextRequest) {
   }).catch((err) => console.error("[BoardEdge] Persist error:", err));
 
   return NextResponse.json(evaluation, { status: 200 });
+}
+
+// ─── Usage Tracking ────────────────────────────────────────────────────────────
+
+async function incrementUsage(
+  supabase: ReturnType<typeof createAdminClient>,
+  userId: string,
+  date: string
+) {
+  const { data: existing } = await supabase
+    .from("usage")
+    .select("evaluation_count")
+    .eq("user_id", userId)
+    .eq("usage_date", date)
+    .maybeSingle();
+
+  if (existing) {
+    await supabase
+      .from("usage")
+      .update({ evaluation_count: existing.evaluation_count + 1 })
+      .eq("user_id", userId)
+      .eq("usage_date", date);
+  } else {
+    await supabase
+      .from("usage")
+      .insert({ user_id: userId, usage_date: date, evaluation_count: 1 });
+  }
 }
 
 // ─── Background Persistence ───────────────────────────────────────────────────
@@ -271,7 +335,7 @@ async function persistSubmission(
     questionId: string;
     studentAnswer: string;
     declaredMarks: number;
-    userId: string | null;
+    userId: string;
     evaluation: EvaluationOutput;
   }
 ) {
