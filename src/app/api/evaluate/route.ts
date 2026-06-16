@@ -14,7 +14,6 @@ interface EvaluateRequestBody {
   paper: string;
   subject: string;
   student_answer: string;
-  declared_marks: number;
 }
 
 interface MarkingScheme {
@@ -53,8 +52,7 @@ RULES — READ CAREFULLY:
 6. conceptual_errors: flag misconceptions or factually wrong statements in the student's answer. Empty array if none.
 7. model_answer: use the provided model_answer verbatim if it exists. If absent, construct a concise examiner-quality answer strictly from scheme_text and key_points — label it ai_generated.
 8. examiner_feedback: 2–3 sentences max. Be direct. Identify the single most impactful gap or strength.
-9. DO NOT be lenient because the student declared higher marks. declared_marks is context only — it does not influence your award.
-10. Output ONLY valid JSON matching the schema below. No preamble, no markdown fences, no trailing text.
+9. Output ONLY valid JSON matching the schema below. No preamble, no markdown fences, no trailing text.
 
 OUTPUT SCHEMA:
 {
@@ -74,7 +72,6 @@ OUTPUT SCHEMA:
 function buildUserMessage(
   questionText: string,
   studentAnswer: string,
-  declaredMarks: number,
   scheme: MarkingScheme
 ): string {
   return `QUESTION:
@@ -82,8 +79,6 @@ ${questionText}
 
 STUDENT'S ANSWER:
 ${studentAnswer}
-
-STUDENT DECLARED MARKS: ${declaredMarks}
 
 MARKING SCHEME:
 Total Marks: ${scheme.total_marks}
@@ -116,11 +111,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const { question_number, year, paper, subject, student_answer, declared_marks } = body;
+  const { question_number, year, paper, subject, student_answer } = body;
 
-  if (!question_number || !year || !paper || !subject || !student_answer || declared_marks === undefined) {
+  if (!question_number || !year || !paper || !subject || !student_answer) {
     return NextResponse.json(
-      { error: "Missing required fields: question_number, year, paper, subject, student_answer, declared_marks" },
+      { error: "Missing required fields: question_number, year, paper, subject, student_answer" },
       { status: 400 }
     );
   }
@@ -154,14 +149,14 @@ export async function POST(req: NextRequest) {
     .maybeSingle();
 
   if (usageRow && usageRow.evaluation_count >= DAILY_EVALUATION_LIMIT) {
-  return NextResponse.json(
-    {
-      error: `You've used your ${DAILY_EVALUATION_LIMIT} evaluations for today. Come back tomorrow — or tell us if you need more during exam prep.`,
-      limit_reached: true,
-    },
-    { status: 429 }
-  );
-}
+    return NextResponse.json(
+      {
+        error: `You've used your ${DAILY_EVALUATION_LIMIT} evaluations for today. Come back tomorrow — or tell us if you need more during exam prep.`,
+        limit_reached: true,
+      },
+      { status: 429 }
+    );
+  }
 
   // 2. DB lookups
 
@@ -234,7 +229,6 @@ export async function POST(req: NextRequest) {
           content: buildUserMessage(
             questionRow.question_text,
             student_answer,
-            declared_marks,
             scheme
           ),
         },
@@ -286,7 +280,6 @@ export async function POST(req: NextRequest) {
   persistSubmission(supabase, {
     questionId: questionRow.id,
     studentAnswer: student_answer,
-    declaredMarks: declared_marks,
     userId,
     evaluation,
   }).catch((err) => console.error("[BoardEdge] Persist error:", err));
@@ -328,13 +321,11 @@ async function persistSubmission(
   {
     questionId,
     studentAnswer,
-    declaredMarks,
     userId,
     evaluation,
   }: {
     questionId: string;
     studentAnswer: string;
-    declaredMarks: number;
     userId: string;
     evaluation: EvaluationOutput;
   }
@@ -364,7 +355,6 @@ async function persistSubmission(
     conceptual_errors: evaluation.conceptual_errors,
     model_answer: evaluation.model_answer,
     model_answer_source: evaluation.model_answer_source,
-    declared_marks: declaredMarks,
     examiner_feedback: evaluation.examiner_feedback,
   });
 

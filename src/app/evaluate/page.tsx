@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -66,6 +67,10 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
 
 export default function EvaluatePage() {
   const supabase = createClient();
+  const router = useRouter();
+
+  // Auth gate
+  const [authChecked, setAuthChecked] = useState(false);
 
   // Selections
   const [subject, setSubject] = useState("");
@@ -73,7 +78,6 @@ export default function EvaluatePage() {
   const [questionNumber, setQuestionNumber] = useState("");
   const [questionText, setQuestionText] = useState("");
   const [studentAnswer, setStudentAnswer] = useState("");
-  const [declaredMarks, setDeclaredMarks] = useState<number | "">("");
 
   // Dropdown options
   const [years, setYears] = useState<number[]>([]);
@@ -88,6 +92,19 @@ export default function EvaluatePage() {
   const [limitReached, setLimitReached] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
   const [feedbackSent, setFeedbackSent] = useState(false);
+
+  // ── Auth check on mount ─────────────────────────────────────────────────
+  useEffect(() => {
+    async function checkAuth() {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        router.push("/login");
+        return;
+      }
+      setAuthChecked(true);
+    }
+    checkAuth();
+  }, []);
 
   // ── Fetch years when subject changes ──────────────────────────────────────
   useEffect(() => {
@@ -124,6 +141,7 @@ export default function EvaluatePage() {
         .from("questions")
         .select("year")
         .eq("subject_id", subjectRow.id)
+        .eq("is_subjective", true)
         .order("year", { ascending: false });
 
       const uniqueYears = [...new Set((data ?? []).map((r: { year: number }) => r.year))];
@@ -160,14 +178,14 @@ export default function EvaluatePage() {
         setLoadingQuestions(false);
         return;
       }
-      console.log("subjectRow:", subjectRow); // ADD THIS
-      const { data, error } = await supabase
+
+      const { data } = await supabase
         .from("questions")
         .select("id, question_number, question_text")
         .eq("subject_id", subjectRow.id)
         .eq("year", year)
+        .eq("is_subjective", true)
         .order("question_number", { ascending: true });
-      console.log("questions data:", data, "error:", error); // ADD THIS
 
       setQuestions(data ?? []);
       setLoadingQuestions(false);
@@ -182,10 +200,7 @@ export default function EvaluatePage() {
       setQuestionText("");
       return;
     }
-    console.log("questionNumber changed:", questionNumber);
-    console.log("questions array:", questions);
     const q = questions.find((q) => q.question_number === questionNumber);
-    console.log("matched question:", q);                    // 👈 ADD THIS
     setQuestionText(q?.question_text ?? "");
     setResult(null);
     setError(null);
@@ -193,7 +208,7 @@ export default function EvaluatePage() {
 
   // ── Submit ────────────────────────────────────────────────────────────────
   async function handleSubmit() {
-    if (!subject || !year || !questionNumber || !studentAnswer.trim() || declaredMarks === "") return;
+    if (!subject || !year || !questionNumber || !studentAnswer.trim()) return;
 
     setEvaluating(true);
     setResult(null);
@@ -212,7 +227,6 @@ export default function EvaluatePage() {
           paper: "1",
           subject,
           student_answer: studentAnswer,
-          declared_marks: Number(declaredMarks),
         }),
       });
 
@@ -232,33 +246,25 @@ export default function EvaluatePage() {
       setEvaluating(false);
     }
   }
-  // ✅ NEW
-  const canSubmit =
-    !!subject &&
-    !!year &&
-    !!questionNumber &&
-    !!questionText.trim() && // Hard lock: Must have question text
-    studentAnswer.trim().length >= 5 &&
-    declaredMarks !== "";
 
-  // ─── Render ────────────────────────────────────────────────────────────────
+  const canSubmit = Boolean(subject && year && questionNumber && studentAnswer.trim());
+
+  if (!authChecked) {
+    return (
+      <div className="mx-auto w-full max-w-3xl px-6 py-16 text-sm text-zinc-500 dark:text-zinc-400">
+        Checking session…
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto w-full max-w-3xl px-6 py-16">
-
-      {/* Header */}
-      <div className="mb-10">
-        <a
-          href="/dashboard"
-          className="mb-4 inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
-        >
-          ← Dashboard
-        </a>
+      <div className="mb-8">
         <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-          Evaluate answer
+          New evaluation
         </h1>
-        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-          Select a past year question, write your answer, and get examiner-style feedback.
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          Select a past paper question, write your answer, and get examiner-style feedback.
         </p>
       </div>
 
@@ -333,7 +339,7 @@ export default function EvaluatePage() {
               </p>
             ) : (
               <p className="text-sm italic leading-relaxed text-zinc-500 dark:text-zinc-400">
-                Objective, MCQ, or Table Question type. Full text is not stored in the database. Please refer to your physical question paper.
+                Question text not yet available. Please refer to your physical question paper.
               </p>
             )}
           </div>
@@ -360,27 +366,13 @@ export default function EvaluatePage() {
                 placeholder={
                   questionText.trim()
                     ? "Write your detailed analysis or descriptive answer here…"
-                    : "Automated evaluation is not available for objective questions or questions missing stored text."
+                    : "Question text not available — evaluation unavailable until added."
                 }
                 className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 disabled:cursor-not-allowed disabled:bg-zinc-50 disabled:opacity-70 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-zinc-400 dark:disabled:bg-zinc-950/50"
               />
             </div>
 
             <div className="flex items-end gap-4">
-              <div className="flex flex-col gap-1.5">
-                <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400">
-                  Marks you expect
-                </label>
-                <input
-                  type="number"
-                  value={declaredMarks}
-                  onChange={(e) => setDeclaredMarks(e.target.value ? Number(e.target.value) : "")}
-                  min={0}
-                  placeholder="0"
-                  className="h-10 w-24 rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:ring-zinc-400"
-                />
-              </div>
-
               <button
                 onClick={handleSubmit}
                 disabled={!canSubmit || evaluating}
