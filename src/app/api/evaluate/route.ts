@@ -277,12 +277,17 @@ export async function POST(req: NextRequest) {
   );
 
   // 6. Persist to student_answers + evaluations (fire-and-forget; don't block response)
-  persistSubmission(supabase, {
-    questionId: questionRow.id,
-    studentAnswer: student_answer,
-    userId,
-    evaluation,
-  }).catch((err) => console.error("[BoardEdge] Persist error:", err));
+  // ✅ NEW CODE:
+  try {
+    await persistSubmission(supabase, {
+      questionId: questionRow.id,
+      studentAnswer: student_answer,
+      userId,
+      evaluation,
+    });
+  } catch (err) {
+    console.error("[BoardEdge] Persist execution failed:", err);
+  }
 
   return NextResponse.json(evaluation, { status: 200 });
 }
@@ -330,7 +335,7 @@ async function persistSubmission(
     evaluation: EvaluationOutput;
   }
 ) {
-  // Insert student_answer — matches schema: id, user_id, question_id, answer_text, submitted_at
+  // Insert student_answer
   const { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
     .insert({
@@ -343,10 +348,10 @@ async function persistSubmission(
 
   if (answerError || !answerRow) {
     console.error("[BoardEdge] student_answers insert failed:", answerError);
-    return;
+    throw new Error(`student_answers insert failed: ${answerError?.message}`);
   }
 
-  // Insert evaluation — total_marks NOT a column here (lives on marking_schemes via question_id)
+  // Insert evaluation
   const { error: evalError } = await supabase.from("evaluations").insert({
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
@@ -360,5 +365,6 @@ async function persistSubmission(
 
   if (evalError) {
     console.error("[BoardEdge] evaluations insert failed:", evalError);
+    throw new Error(`evaluations insert failed: ${evalError.message}`);
   }
 }
