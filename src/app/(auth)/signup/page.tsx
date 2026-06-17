@@ -4,10 +4,10 @@ import { signup } from "../actions";
 export default function SignupPage() {
   return (
     <AuthForm
-      title="Student signup"
+      title="Create account"
       action={signup}
       submitLabel="Create account"
-      alternate={{ href: "/login", label: "Have an account?" }}
+      alternate={{ href: "/login", label: "Already have an account?" }}
     />
   );
 }

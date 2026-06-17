@@ -4,7 +4,7 @@ import { login } from "../actions";
 export default function LoginPage() {
   return (
     <AuthForm
-      title="Student login"
+      title="Log in"
       action={login}
       submitLabel="Log in"
       alternate={{ href: "/signup", label: "Create account" }}

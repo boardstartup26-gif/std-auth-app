@@ -1,6 +1,15 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { createClient, createAdminClient } from "@/lib/supabase/server";
+import {
+  backLink,
+  btnPrimary,
+  cardInteractive,
+  errorAlert,
+  pageShellWide,
+  scoreBadgeClass,
+  sectionLabel,
+} from "@/lib/ui";
 
 type HistoryRow = {
   id: string;
@@ -14,17 +23,11 @@ type HistoryRow = {
   evaluations: { marks_awarded: number }[] | null;
 };
 
-function scoreColor(awarded: number, total: number) {
-  if (!total) return "bg-gray-100 text-gray-700";
-  const pct = (awarded / total) * 100;
-  if (pct >= 75) return "bg-green-100 text-green-800";
-  if (pct >= 50) return "bg-yellow-100 text-yellow-800";
-  return "bg-red-100 text-red-800";
-}
-
 export default async function HistoryPage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
   const admin = createAdminClient();
@@ -46,24 +49,40 @@ export default async function HistoryPage() {
     .order("submitted_at", { ascending: false });
 
   if (error) {
-    return <div className="p-6 text-red-600">Failed to load history: {error.message}</div>;
+    return (
+      <div className={pageShellWide}>
+        <div className={errorAlert}>Failed to load history: {error.message}</div>
+      </div>
+    );
   }
 
   const rows = (data ?? []) as unknown as HistoryRow[];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold">Evaluation History</h1>
-        <Link href="/dashboard" className="text-sm text-blue-600 hover:underline">
-          ← Back to Dashboard
+    <div className={pageShellWide}>
+      <div className="flex items-start justify-between gap-6">
+        <div>
+          <p className={sectionLabel}>Past submissions</p>
+          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            Evaluation history
+          </h1>
+        </div>
+        <Link href="/dashboard" className={backLink}>
+          ← Dashboard
         </Link>
       </div>
 
       {rows.length === 0 ? (
-        <p className="text-gray-500">No evaluations yet. Go solve a question.</p>
+        <div className="mt-12 rounded-2xl border border-dashed border-zinc-200 bg-white p-8 text-center dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
+            No evaluations yet. Submit your first answer to see results here.
+          </p>
+          <Link href="/evaluate" className={`${btnPrimary} mt-6`}>
+            Start evaluation
+          </Link>
+        </div>
       ) : (
-        <div className="space-y-3">
+        <div className="mt-10 space-y-4">
           {rows.map((row) => {
             const q = row.questions;
             const evaluation = row.evaluations?.[0];
@@ -71,17 +90,14 @@ export default async function HistoryPage() {
             const awarded = evaluation?.marks_awarded ?? 0;
 
             return (
-              <Link
-                key={row.id}
-                href={`/history/${row.id}`}
-                className="block border rounded-lg p-4 hover:shadow-md transition-shadow bg-white"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-medium">
-                      {q?.subjects?.name ?? "Unknown Subject"} — {q?.year ?? "—"} — Q{q?.question_number ?? "—"}
+              <Link key={row.id} href={`/history/${row.id}`} className={cardInteractive}>
+                <div className="flex items-center justify-between gap-6">
+                  <div className="min-w-0">
+                    <p className="font-medium text-zinc-950 dark:text-zinc-50">
+                      {q?.subjects?.name ?? "Unknown Subject"} — {q?.year ?? "—"} — Q
+                      {q?.question_number ?? "—"}
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400">
                       {new Date(row.submitted_at).toLocaleDateString("en-IN", {
                         day: "numeric",
                         month: "short",
@@ -89,7 +105,7 @@ export default async function HistoryPage() {
                       })}
                     </p>
                   </div>
-                  <span className={`px-3 py-1 rounded-full text-sm font-semibold ${scoreColor(awarded, totalMarks)}`}>
+                  <span className={scoreBadgeClass(awarded, totalMarks)}>
                     {awarded} / {totalMarks}
                   </span>
                 </div>

@@ -2,7 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import {
+  backLink,
+  btnPrimary,
+  cardPadded,
+  errorAlert,
+  inputBase,
+  mutedPanel,
+  pageShell,
+  scoreBadgeClass,
+  sectionLabel,
+} from "@/lib/ui";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -32,29 +44,16 @@ const SUBJECTS = [
   { name: "Geography", available: false },
 ];
 
-function ScoreBadge({ awarded, total }: { awarded: number; total: number }) {
-  const pct = total > 0 ? awarded / total : 0;
-  const color =
-    pct >= 0.75
-      ? "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-800"
-      : pct >= 0.4
-        ? "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-800"
-        : "bg-red-50 text-red-700 border-red-200 dark:bg-red-950/40 dark:text-red-300 dark:border-red-800";
-  return (
-    <span className={`inline-flex items-center rounded-full border px-3 py-1 text-sm font-semibold ${color}`}>
-      {awarded} / {total}
-    </span>
-  );
-}
-
 function Section({ title, items, color }: { title: string; items: string[]; color: string }) {
   if (!items || items.length === 0) return null;
   return (
     <div>
-      <div className={`mb-2 text-xs font-semibold uppercase tracking-widest ${color}`}>{title}</div>
-      <ul className="space-y-1">
+      <div className={`mb-3 text-xs font-semibold uppercase tracking-widest ${color}`}>
+        {title}
+      </div>
+      <ul className="space-y-2">
         {items.map((item, i) => (
-          <li key={i} className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+          <li key={i} className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
             — {item}
           </li>
         ))}
@@ -63,40 +62,47 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
   );
 }
 
+const selectClass = `${inputBase} h-10 w-full`;
+const textareaClass = `${inputBase} w-full px-3 py-2.5 disabled:bg-zinc-50 dark:disabled:bg-zinc-950/50`;
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function EvaluatePage() {
   const supabase = createClient();
   const router = useRouter();
 
-  // Auth gate
   const [authChecked, setAuthChecked] = useState(false);
 
-  // Selections
   const [subject, setSubject] = useState("");
   const [year, setYear] = useState<number | "">("");
   const [questionNumber, setQuestionNumber] = useState("");
   const [questionText, setQuestionText] = useState("");
   const [studentAnswer, setStudentAnswer] = useState("");
 
-  // Dropdown options
   const [years, setYears] = useState<number[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
 
-  // UI state
   const [loadingYears, setLoadingYears] = useState(false);
   const [loadingQuestions, setLoadingQuestions] = useState(false);
   const [evaluating, setEvaluating] = useState(false);
   const [result, setResult] = useState<EvaluationResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  
+  // Rate-Limit Feedback State
   const [limitReached, setLimitReached] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
   const [feedbackSent, setFeedbackSent] = useState(false);
 
-  // ── Auth check on mount ─────────────────────────────────────────────────
+  // Evaluation Quality Feedback State
+  const [evalRating, setEvalRating] = useState<"up" | "down" | null>(null);
+  const [evalFeedbackText, setEvalFeedbackText] = useState("");
+  const [evalFeedbackStatus, setEvalFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
   useEffect(() => {
     async function checkAuth() {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) {
         router.push("/login");
         return;
@@ -104,9 +110,8 @@ export default function EvaluatePage() {
       setAuthChecked(true);
     }
     checkAuth();
-  }, []);
+  }, [router, supabase.auth]);
 
-  // ── Fetch years when subject changes ──────────────────────────────────────
   useEffect(() => {
     if (!subject) {
       setYears([]);
@@ -150,9 +155,8 @@ export default function EvaluatePage() {
     }
 
     fetchYears();
-  }, [subject]);
+  }, [subject, supabase]);
 
-  // ── Fetch questions when year changes ─────────────────────────────────────
   useEffect(() => {
     if (!subject || !year) {
       setQuestions([]);
@@ -192,9 +196,8 @@ export default function EvaluatePage() {
     }
 
     fetchQuestions();
-  }, [subject, year]);
+  }, [subject, year, supabase]);
 
-  // ── Set question text when question number changes ────────────────────────
   useEffect(() => {
     if (!questionNumber) {
       setQuestionText("");
@@ -206,7 +209,6 @@ export default function EvaluatePage() {
     setError(null);
   }, [questionNumber, questions]);
 
-  // ── Submit ────────────────────────────────────────────────────────────────
   async function handleSubmit() {
     if (!subject || !year || !questionNumber || !studentAnswer.trim()) return;
 
@@ -216,6 +218,11 @@ export default function EvaluatePage() {
     setLimitReached(false);
     setFeedbackText("");
     setFeedbackSent(false);
+    
+    // Reset the evaluation feedback states for a fresh run
+    setEvalRating(null);
+    setEvalFeedbackText("");
+    setEvalFeedbackStatus("idle");
 
     try {
       const res = await fetch("/api/evaluate", {
@@ -247,75 +254,99 @@ export default function EvaluatePage() {
     }
   }
 
+  // Handle the submission for the quality of the evaluation
+  async function handleEvalFeedbackSubmit() {
+    if (!evalRating || evalFeedbackText.trim().length < 3) return;
+    
+    setEvalFeedbackStatus("submitting");
+    try {
+      const formattedMessage = `[${evalRating === "up" ? "👍" : "👎"}] ${evalFeedbackText.trim()}`;
+      
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: formattedMessage }),
+      });
+
+      if (!res.ok) throw new Error("Feedback failed");
+      setEvalFeedbackStatus("success");
+    } catch {
+      setEvalFeedbackStatus("error");
+    }
+  }
+
   const canSubmit = Boolean(subject && year && questionNumber && studentAnswer.trim());
 
   if (!authChecked) {
     return (
-      <div className="mx-auto w-full max-w-3xl px-6 py-16 text-sm text-zinc-500 dark:text-zinc-400">
+      <div className={`${pageShell} text-sm text-zinc-500 dark:text-zinc-400`}>
         Checking session…
       </div>
     );
   }
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-6 py-16">
-      <div className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-          New evaluation
-        </h1>
-        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-          Select a past paper question, write your answer, and get examiner-style feedback.
-        </p>
+    <div className={pageShell}>
+      <div className="mb-10 flex items-start justify-between gap-6">
+        <div>
+          <p className={sectionLabel}>Evaluation engine</p>
+          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            New evaluation
+          </h1>
+          <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            Select a past paper question, write your answer, and receive examiner-style feedback.
+          </p>
+        </div>
+        <Link href="/dashboard" className={backLink}>
+          ← Dashboard
+        </Link>
       </div>
 
-      {/* Question selector */}
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-          Select question
-        </h2>
+      <div className={cardPadded}>
+        <h2 className={sectionLabel}>Select question</h2>
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          {/* Subject */}
-          <div className="flex flex-col gap-1.5">
+        <div className="mt-6 grid gap-6 sm:grid-cols-3">
+          <div className="flex flex-col gap-2">
             <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400">Subject</label>
             <select
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="h-10 rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:ring-zinc-400"
+              className={selectClass}
             >
               <option value="">Select subject</option>
               {SUBJECTS.map((s) => (
                 <option key={s.name} value={s.name} disabled={!s.available}>
-                  {s.name}{!s.available ? " — Coming soon" : ""}
+                  {s.name}
+                  {!s.available ? " — Coming soon" : ""}
                 </option>
               ))}
             </select>
           </div>
 
-          {/* Year */}
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-2">
             <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400">Year</label>
             <select
               value={year}
               onChange={(e) => setYear(e.target.value ? Number(e.target.value) : "")}
               disabled={!subject || loadingYears}
-              className="h-10 rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-900 disabled:cursor-not-allowed disabled:opacity-40 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:ring-zinc-400"
+              className={selectClass}
             >
               <option value="">{loadingYears ? "Loading…" : "Select year"}</option>
               {years.map((y) => (
-                <option key={y} value={y}>{y}</option>
+                <option key={y} value={y}>
+                  {y}
+                </option>
               ))}
             </select>
           </div>
 
-          {/* Question number */}
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-2">
             <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400">Question</label>
             <select
               value={questionNumber}
               onChange={(e) => setQuestionNumber(e.target.value)}
               disabled={!year || loadingQuestions}
-              className="h-10 rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-900 disabled:cursor-not-allowed disabled:opacity-40 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:ring-zinc-400"
+              className={selectClass}
             >
               <option value="">{loadingQuestions ? "Loading…" : "Select question"}</option>
               {questions.map((q) => (
@@ -327,12 +358,11 @@ export default function EvaluatePage() {
           </div>
         </div>
 
-        {/* Question text */}
         {questionNumber && (
-          <div className="mt-5 rounded-lg border border-zinc-100 bg-zinc-50 px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/50">
-            <div className="mb-1 text-xs font-medium text-zinc-400 dark:text-zinc-500">
-              Question Reference
-            </div>
+          <div className={`${mutedPanel} mt-6`}>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+              Question reference
+            </p>
             {questionText.trim() ? (
               <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
                 {questionText}
@@ -346,15 +376,12 @@ export default function EvaluatePage() {
         )}
       </div>
 
-      {/* Answer + submission */}
       {questionNumber && (
-        <div className="mt-4 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-            Your answer
-          </h2>
+        <div className={`${cardPadded} mt-6`}>
+          <h2 className={sectionLabel}>Your answer</h2>
 
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-1.5">
+          <div className="mt-6 flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
               <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400">
                 Write your answer
               </label>
@@ -368,39 +395,33 @@ export default function EvaluatePage() {
                     ? "Write your detailed analysis or descriptive answer here…"
                     : "Question text not available — evaluation unavailable until added."
                 }
-                className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 disabled:cursor-not-allowed disabled:bg-zinc-50 disabled:opacity-70 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-zinc-400 dark:disabled:bg-zinc-950/50"
+                className={textareaClass}
               />
             </div>
 
-            <div className="flex items-end gap-4">
-              <button
-                onClick={handleSubmit}
-                disabled={!canSubmit || evaluating}
-                className="h-10 rounded-lg bg-zinc-900 px-5 text-sm font-medium text-white hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
-              >
-                {evaluating ? "Evaluating…" : "Evaluate"}
-              </button>
-            </div>
+            <button
+              onClick={handleSubmit}
+              disabled={!canSubmit || evaluating}
+              className={btnPrimary}
+            >
+              {evaluating ? "Evaluating…" : "Evaluate"}
+            </button>
           </div>
         </div>
       )}
 
-      {/* Error */}
       {error && (
-        <div className="mt-4 space-y-3">
-          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300">
-            {error}
-          </div>
+        <div className="mt-6 space-y-4">
+          <div className={errorAlert}>{error}</div>
 
-          {/* Feedback box — only shown if limit reached */}
           {limitReached && (
-            <div className="rounded-lg border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-950">
+            <div className={cardPadded}>
               {feedbackSent ? (
-                <p className="text-sm text-emerald-600 dark:text-emerald-400">
-                  Thanks — we'll take a look.
+                <p className="text-sm text-emerald-700 dark:text-emerald-400">
+                  Thanks — we&apos;ll take a look.
                 </p>
               ) : (
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-4">
                   <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400">
                     Help us prioritize — why do you need more evaluations today?
                   </p>
@@ -409,7 +430,7 @@ export default function EvaluatePage() {
                     onChange={(e) => setFeedbackText(e.target.value)}
                     placeholder="E.g., exam prep, testing different approaches…"
                     rows={2}
-                    className="w-full rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-zinc-400"
+                    className={textareaClass}
                   />
                   <button
                     onClick={async () => {
@@ -425,9 +446,9 @@ export default function EvaluatePage() {
                         console.error("Feedback send failed:", err);
                       }
                     }}
-                    className="self-start rounded-lg bg-zinc-900 px-4 py-1.5 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                    className={`${btnPrimary} self-start`}
                   >
-                    Send Feedback
+                    Send feedback
                   </button>
                 </div>
               )}
@@ -436,53 +457,44 @@ export default function EvaluatePage() {
         </div>
       )}
 
-      {/* Result */}
       {result && (
-        <div className="mt-4 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-          <div className="mb-6 flex items-center justify-between">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-              Examiner feedback
-            </h2>
-            <ScoreBadge awarded={result.marks_awarded} total={result.total_marks} />
+        <div className={`${cardPadded} mt-6`}>
+          <div className="mb-8 flex items-center justify-between gap-4">
+            <h2 className={sectionLabel}>Examiner feedback</h2>
+            <span className={scoreBadgeClass(result.marks_awarded, result.total_marks)}>
+              {result.marks_awarded} / {result.total_marks}
+            </span>
           </div>
 
-          <div className="space-y-6">
-
-            {/* Examiner feedback */}
-            <div className="rounded-lg border border-zinc-100 bg-zinc-50 px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/50">
-              <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300 italic">
-                "{result.examiner_feedback}"
+          <div className="space-y-8">
+            <div className={mutedPanel}>
+              <p className="text-sm italic leading-relaxed text-zinc-700 dark:text-zinc-300">
+                &ldquo;{result.examiner_feedback}&rdquo;
               </p>
             </div>
 
-            {/* Points hit */}
             <Section
               title="Points awarded"
               items={result.points_hit}
-              color="text-emerald-600 dark:text-emerald-400"
+              color="text-emerald-700 dark:text-emerald-400"
             />
 
-            {/* Points missed */}
             <Section
               title="Points missed"
               items={result.points_missed}
-              color="text-red-500 dark:text-red-400"
+              color="text-red-700 dark:text-red-400"
             />
 
-            {/* Conceptual errors */}
             <Section
               title="Conceptual errors"
               items={result.conceptual_errors}
-              color="text-amber-600 dark:text-amber-400"
+              color="text-amber-700 dark:text-amber-400"
             />
 
-            {/* Model answer */}
             <div>
-              <div className="mb-2 flex items-center gap-2">
-                <span className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                  Model answer
-                </span>
-                <span className="rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">
+              <div className="mb-3 flex flex-wrap items-center gap-2">
+                <span className={sectionLabel}>Model answer</span>
+                <span className="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
                   {result.model_answer_source === "verified" ? "CISCE verified" : "AI generated"}
                 </span>
               </div>
@@ -490,11 +502,75 @@ export default function EvaluatePage() {
                 {result.model_answer}
               </p>
             </div>
+            
+            {/* ─── Evaluation Quality Feedback Block ─── */}
+            <div className="mt-8 border-t border-zinc-100 pt-6 dark:border-zinc-800/50">
+              {evalFeedbackStatus === "success" ? (
+                <div className="flex items-center justify-center gap-2 rounded-xl bg-emerald-50 py-4 text-sm font-medium text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Thank you! Your feedback helps improve the AI.
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                      Was this evaluation accurate?
+                    </h3>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => setEvalRating("up")}
+                        className={`rounded-lg border px-3 py-1.5 transition-colors ${
+                          evalRating === "up"
+                            ? "border-zinc-900 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                            : "border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+                        }`}
+                      >
+                        👍
+                      </button>
+                      <button
+                        onClick={() => setEvalRating("down")}
+                        className={`rounded-lg border px-3 py-1.5 transition-colors ${
+                          evalRating === "down"
+                            ? "border-zinc-900 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                            : "border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+                        }`}
+                      >
+                        👎
+                      </button>
+                    </div>
+                  </div>
 
+                  {evalRating && (
+                    <div className="animate-in fade-in slide-in-from-top-2 flex flex-col gap-3">
+                      <textarea
+                        value={evalFeedbackText}
+                        onChange={(e) => setEvalFeedbackText(e.target.value)}
+                        placeholder="What did the AI get right or wrong?"
+                        className={`${textareaClass} resize-none`}
+                        rows={2}
+                      />
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-red-500">
+                          {evalFeedbackStatus === "error" && "Something went wrong. Try again."}
+                        </span>
+                        <button
+                          onClick={handleEvalFeedbackSubmit}
+                          disabled={evalFeedbackText.trim().length < 3 || evalFeedbackStatus === "submitting"}
+                          className="rounded-lg bg-zinc-900 px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-zinc-800 disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                        >
+                          {evalFeedbackStatus === "submitting" ? "Sending..." : "Submit Feedback"}
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
-
     </div>
   );
 }

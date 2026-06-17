@@ -1,6 +1,14 @@
 import { redirect, notFound } from "next/navigation";
 import Link from "next/link";
 import { createClient, createAdminClient } from "@/lib/supabase/server";
+import {
+  backLink,
+  cardPadded,
+  mutedPanel,
+  pageShell,
+  scoreBadgeClass,
+  sectionLabel,
+} from "@/lib/ui";
 
 type DetailRow = {
   id: string;
@@ -25,12 +33,19 @@ type DetailRow = {
   }[] | null;
 };
 
-function scoreColor(awarded: number, total: number) {
-  if (!total) return "bg-gray-100 text-gray-700";
-  const pct = (awarded / total) * 100;
-  if (pct >= 75) return "bg-green-100 text-green-800";
-  if (pct >= 50) return "bg-yellow-100 text-yellow-800";
-  return "bg-red-100 text-red-800";
+function FeedbackList({ items }: { items: string[] }) {
+  if (!items.length) {
+    return <p className="text-sm text-zinc-500 dark:text-zinc-400">None recorded.</p>;
+  }
+  return (
+    <ul className="space-y-2">
+      {items.map((point, i) => (
+        <li key={i} className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+          — {point}
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export default async function HistoryDetailPage({
@@ -41,7 +56,9 @@ export default async function HistoryDetailPage({
   const { id } = await params;
 
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
   const admin = createAdminClient();
@@ -83,17 +100,16 @@ export default async function HistoryDetailPage({
 
   const totalMarks = scheme?.total_marks ?? 0;
   const awarded = evaluation?.marks_awarded ?? 0;
-  // Fallback for pre-migration rows: no persisted model_answer → use DB scheme, label as verified
   const modelAnswer = evaluation?.model_answer ?? scheme?.model_answer ?? null;
   const modelAnswerSource = evaluation?.model_answer_source ?? "verified";
 
   return (
-    <div className="max-w-3xl mx-auto p-6 space-y-6">
-      <div className="flex items-center justify-between">
-        <Link href="/history" className="text-sm text-blue-600 hover:underline">
-          ← Back to History
+    <div className={`${pageShell} space-y-8`}>
+      <div className="flex items-center justify-between gap-4">
+        <Link href="/history" className={backLink}>
+          ← History
         </Link>
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-zinc-500 dark:text-zinc-400">
           {new Date(row.submitted_at).toLocaleDateString("en-IN", {
             day: "numeric",
             month: "short",
@@ -102,80 +118,92 @@ export default async function HistoryDetailPage({
         </span>
       </div>
 
-      <div className="flex items-center justify-between">
-        <h1 className="text-xl font-bold">
-          {q?.subjects?.name ?? "Unknown Subject"} — {q?.year ?? "—"} — Q{q?.question_number ?? "—"}
-        </h1>
-        <span className={`px-4 py-1.5 rounded-full text-lg font-bold ${scoreColor(awarded, totalMarks)}`}>
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className={sectionLabel}>Evaluation result</p>
+          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+            {q?.subjects?.name ?? "Unknown Subject"} — {q?.year ?? "—"} — Q
+            {q?.question_number ?? "—"}
+          </h1>
+        </div>
+        <span className={scoreBadgeClass(awarded, totalMarks, "lg")}>
           {awarded} / {totalMarks}
         </span>
       </div>
 
       {q?.question_text && (
-        <div className="border rounded-lg p-4 bg-white">
-          <h2 className="font-semibold mb-1">Question</h2>
-          <p className="text-gray-700 whitespace-pre-wrap">{q.question_text}</p>
-        </div>
+        <section className={cardPadded}>
+          <h2 className={sectionLabel}>Question</h2>
+          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+            {q.question_text}
+          </p>
+        </section>
       )}
 
-      <div className="border rounded-lg p-4 bg-white">
-        <h2 className="font-semibold mb-1">Your Answer</h2>
-        <p className="text-gray-700 whitespace-pre-wrap">{row.answer_text}</p>
+      <section className={cardPadded}>
+        <h2 className={sectionLabel}>Your answer</h2>
+        <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+          {row.answer_text}
+        </p>
         {evaluation?.declared_marks != null && (
-          <p className="text-sm text-gray-500 mt-2">Declared marks: {evaluation.declared_marks}</p>
+          <p className="mt-4 text-sm text-zinc-500 dark:text-zinc-400">
+            Declared marks: {evaluation.declared_marks}
+          </p>
         )}
-      </div>
+      </section>
 
-      <div className="border rounded-lg p-4 bg-white">
-        <h2 className="font-semibold mb-1">Examiner Feedback</h2>
-        <p className="text-gray-700 whitespace-pre-wrap">{evaluation?.examiner_feedback ?? "—"}</p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-4">
-        <div className="border rounded-lg p-4 bg-green-50">
-          <h2 className="font-semibold mb-2 text-green-800">Points Hit</h2>
-          {evaluation?.points_hit?.length ? (
-            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-              {evaluation.points_hit.map((point, i) => <li key={i}>{point}</li>)}
-            </ul>
-          ) : (
-            <p className="text-sm text-gray-500">None recorded.</p>
-          )}
+      <section className={cardPadded}>
+        <h2 className={sectionLabel}>Examiner feedback</h2>
+        <div className={`${mutedPanel} mt-4`}>
+          <p className="whitespace-pre-wrap text-sm italic leading-relaxed text-zinc-700 dark:text-zinc-300">
+            {evaluation?.examiner_feedback ?? "—"}
+          </p>
         </div>
+      </section>
 
-        <div className="border rounded-lg p-4 bg-red-50">
-          <h2 className="font-semibold mb-2 text-red-800">Points Missed</h2>
-          {evaluation?.points_missed?.length ? (
-            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-              {evaluation.points_missed.map((point, i) => <li key={i}>{point}</li>)}
-            </ul>
-          ) : (
-            <p className="text-sm text-gray-500">None recorded.</p>
-          )}
-        </div>
+      <div className="grid gap-6 md:grid-cols-2">
+        <section className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 dark:border-emerald-900/50 dark:bg-emerald-950/30">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:text-emerald-400">
+            Points hit
+          </h2>
+          <div className="mt-4">
+            <FeedbackList items={evaluation?.points_hit ?? []} />
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-red-200 bg-red-50 p-6 dark:border-red-900/50 dark:bg-red-950/30">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-red-700 dark:text-red-400">
+            Points missed
+          </h2>
+          <div className="mt-4">
+            <FeedbackList items={evaluation?.points_missed ?? []} />
+          </div>
+        </section>
       </div>
 
       {evaluation?.conceptual_errors && evaluation.conceptual_errors.length > 0 && (
-        <div className="border rounded-lg p-4 bg-orange-50">
-          <h2 className="font-semibold mb-2 text-orange-800">Conceptual Errors</h2>
-          <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
-            {evaluation.conceptual_errors.map((err, i) => <li key={i}>{err}</li>)}
-          </ul>
-        </div>
+        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-900/50 dark:bg-amber-950/30">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-amber-700 dark:text-amber-400">
+            Conceptual errors
+          </h2>
+          <div className="mt-4">
+            <FeedbackList items={evaluation.conceptual_errors} />
+          </div>
+        </section>
       )}
 
       {modelAnswer && (
-        <div className="border rounded-lg p-4 bg-blue-50">
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="font-semibold text-blue-800">Model Answer</h2>
-            <span className={`text-xs px-2 py-0.5 rounded-full ${
-              modelAnswerSource === "verified" ? "bg-blue-200 text-blue-900" : "bg-gray-200 text-gray-700"
-            }`}>
-              {modelAnswerSource === "verified" ? "CISCE Verified" : "AI Generated"}
+        <section className={cardPadded}>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className={sectionLabel}>Model answer</h2>
+            <span className="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
+              {modelAnswerSource === "verified" ? "CISCE verified" : "AI generated"}
             </span>
           </div>
-          <p className="text-gray-700 whitespace-pre-wrap">{modelAnswer}</p>
-        </div>
+          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+            {modelAnswer}
+          </p>
+        </section>
       )}
     </div>
   );
