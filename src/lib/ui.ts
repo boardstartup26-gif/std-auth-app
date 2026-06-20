@@ -31,9 +31,20 @@ export const btnSecondary = "inline-flex items-center justify-center rounded-xl 
 // ─── Alerts & Badges ────────────────────────────────────────────────────────
 export const errorAlert = "p-4 rounded-xl border border-red-100 bg-red-50/50 text-sm font-medium text-red-800 dark:border-red-900/30 dark:bg-red-950/20 dark:text-red-400";
 
-export function scoreBadgeClass(awarded: number, total: number) {
-  const ratio = total > 0 ? awarded / total : 0;
-  if (ratio >= 0.8) return "inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/10 dark:bg-emerald-500/10 dark:text-emerald-400 dark:ring-emerald-500/20";
-  if (ratio >= 0.4) return "inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-inset ring-amber-600/10 dark:bg-amber-500/10 dark:text-amber-400 dark:ring-amber-500/20";
-  return "inline-flex items-center rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10 dark:bg-red-500/10 dark:text-red-400 dark:ring-red-500/20";
+export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg" = "sm") {
+  const sizeClass = size === "lg" ? "px-3 py-1 text-sm font-semibold" : "px-2.5 py-0.5 text-xs font-semibold";
+  const base = `inline-flex items-center rounded-full border ${sizeClass}`;
+
+  if (!total) {
+    return `${base} border-zinc-200 bg-zinc-100 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300`;
+  }
+
+  const pct = awarded / total;
+  if (pct >= 0.75) {
+    return `${base} border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300`;
+  }
+  if (pct >= 0.5) {
+    return `${base} border-amber-200 bg-amber-50 text-amber-700 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-300`;
+  }
+  return `${base} border-red-200 bg-red-50 text-red-700 dark:border-red-800 dark:bg-red-950/40 dark:text-red-300`;
 }
