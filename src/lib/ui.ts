@@ -31,10 +31,9 @@ export const btnSecondary = "inline-flex items-center justify-center rounded-xl 
 // ─── Alerts & Badges ────────────────────────────────────────────────────────
 export const errorAlert = "p-4 rounded-xl border border-red-100 bg-red-50/50 text-sm font-medium text-red-800 dark:border-red-900/30 dark:bg-red-950/20 dark:text-red-400";
 
-export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg" = "sm") {
+export function scoreBadgeClass(awarded: number, total: number) {
   const ratio = total > 0 ? awarded / total : 0;
-  const sizeClasses = size === "lg" ? "px-3 py-1 text-sm" : "px-2.5 py-0.5 text-xs";
-  if (ratio >= 0.8) return `inline-flex items-center rounded-full bg-emerald-50 ${sizeClasses} font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/10 dark:bg-emerald-500/10 dark:text-emerald-400 dark:ring-emerald-500/20`;
-  if (ratio >= 0.4) return `inline-flex items-center rounded-full bg-amber-50 ${sizeClasses} font-medium text-amber-700 ring-1 ring-inset ring-amber-600/10 dark:bg-amber-500/10 dark:text-amber-400 dark:ring-amber-500/20`;
-  return `inline-flex items-center rounded-full bg-red-50 ${sizeClasses} font-medium text-red-700 ring-1 ring-inset ring-red-600/10 dark:bg-red-500/10 dark:text-red-400 dark:ring-red-500/20`;
+  if (ratio >= 0.8) return "inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-600/10 dark:bg-emerald-500/10 dark:text-emerald-400 dark:ring-emerald-500/20";
+  if (ratio >= 0.4) return "inline-flex items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-700 ring-1 ring-inset ring-amber-600/10 dark:bg-amber-500/10 dark:text-amber-400 dark:ring-amber-500/20";
+  return "inline-flex items-center rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10 dark:bg-red-500/10 dark:text-red-400 dark:ring-red-500/20";
 }

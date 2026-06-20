@@ -4,7 +4,9 @@ import Anthropic from "@anthropic-ai/sdk";
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 
-const DAILY_EVALUATION_LIMIT = 10;
+const DAILY_TOKEN_LIMIT = 10;
+const TOKEN_COST_SUBJECTIVE = 3;
+const TOKEN_COST_OBJECTIVE = 1;
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -16,6 +18,16 @@ interface EvaluateRequestBody {
   student_answer: string;
 }
 
+interface QuestionRow {
+  id: string;
+  question_text: string;
+  is_subjective: boolean;
+  question_type: string | null;
+  options: string[] | null;
+  correct_answer: string | null;
+  diagram_required: boolean | null;
+}
+
 interface MarkingScheme {
   scheme_text: string;
   total_marks: number;
@@ -25,6 +37,7 @@ interface MarkingScheme {
   accepted_alternatives: string[] | Record<string, unknown> | null;
   common_errors: string[] | Record<string, unknown> | null;
   examiner_notes: string | null;
+  marks_per_correct_point: number | null;
 }
 
 interface EvaluationOutput {
@@ -36,6 +49,12 @@ interface EvaluationOutput {
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
   examiner_feedback: string;
+  // Objective-only fields
+  is_objective?: boolean;
+  correct_answer?: string;
+  is_correct?: boolean;
+  token_cost: number;
+  tokens_remaining: number;
 }
 
 // ─── System Prompt ────────────────────────────────────────────────────────────
@@ -100,6 +119,50 @@ ${scheme.examiner_notes ? `Examiner Notes:\n${scheme.examiner_notes}` : ""}
 Evaluate the student's answer against the marking scheme above. Return valid JSON only.`;
 }
 
+// ─── Objective Answer Matching ────────────────────────────────────────────────
+
+function normaliseAnswer(raw: string): string {
+  return raw
+    .trim()
+    .toLowerCase()
+    .replace(/^[a-d]\.\s*/i, "") // strip "B. " prefix if user typed full MCQ option
+    .replace(/\s+/g, " ");
+}
+
+function matchObjectiveAnswer(
+  userAnswer: string,
+  correctAnswer: string,
+  questionType: string | null
+): boolean {
+  const userNorm = normaliseAnswer(userAnswer);
+  const correctNorm = normaliseAnswer(correctAnswer);
+
+  // MCQ: accept just the letter OR full option text
+  if (questionType === "mcq") {
+    const userLetter = userAnswer.trim().toUpperCase().charAt(0);
+    const correctLetter = correctAnswer.trim().toUpperCase().charAt(0);
+    return (
+      userNorm === correctNorm ||
+      (userLetter === correctLetter && /^[A-D]$/.test(userLetter))
+    );
+  }
+
+  // Match-the-following: compare pair-by-pair e.g. "A-3,B-1,C-4,D-2"
+  if (questionType === "match") {
+    const parsePairs = (s: string) =>
+      s
+        .toLowerCase()
+        .replace(/\s/g, "")
+        .split(",")
+        .map((p) => p.trim())
+        .sort();
+    return parsePairs(userAnswer).join() === parsePairs(correctAnswer).join();
+  }
+
+  // True/False, fill_in_blank: normalised string match
+  return userNorm === correctNorm;
+}
+
 // ─── Route Handler ────────────────────────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
@@ -120,13 +183,15 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  if (student_answer.trim().length < 5) {
-    return NextResponse.json({ error: "student_answer is too short to evaluate" }, { status: 400 });
+  if (student_answer.trim().length < 1) {
+    return NextResponse.json({ error: "student_answer is empty" }, { status: 400 });
   }
 
-  // 1a. Extract authenticated user — evaluation requires login
+  // 1a. Auth check
   const supabaseAuth = await createClient();
-  const { data: { user } } = await supabaseAuth.auth.getUser();
+  const {
+    data: { user },
+  } = await supabaseAuth.auth.getUser();
   const userId = user?.id ?? null;
 
   if (!userId) {
@@ -138,29 +203,8 @@ export async function POST(req: NextRequest) {
 
   const supabase = createAdminClient();
 
-  // 1b. Check daily usage cap
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  // 2. DB lookups — resolve subject → question → scheme
 
-  const { data: usageRow } = await supabase
-    .from("usage")
-    .select("evaluation_count")
-    .eq("user_id", userId)
-    .eq("usage_date", today)
-    .maybeSingle();
-
-  if (usageRow && usageRow.evaluation_count >= DAILY_EVALUATION_LIMIT) {
-    return NextResponse.json(
-      {
-        error: `You've used your ${DAILY_EVALUATION_LIMIT} evaluations for today. Come back tomorrow — or tell us if you need more during exam prep.`,
-        limit_reached: true,
-      },
-      { status: 429 }
-    );
-  }
-
-  // 2. DB lookups
-
-  // 2a. Resolve subject_id
   const { data: subjectRow, error: subjectError } = await supabase
     .from("subjects")
     .select("id")
@@ -168,16 +212,14 @@ export async function POST(req: NextRequest) {
     .single();
 
   if (subjectError || !subjectRow) {
-    return NextResponse.json(
-      { error: `Subject not found: ${subject}` },
-      { status: 404 }
-    );
+    return NextResponse.json({ error: `Subject not found: ${subject}` }, { status: 404 });
   }
 
-  // 2b. Fetch question
   const { data: questionRow, error: questionError } = await supabase
     .from("questions")
-    .select("id, question_text")
+    .select(
+      "id, question_text, is_subjective, question_type, options, correct_answer, diagram_required"
+    )
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
     .eq("paper", paper)
@@ -194,13 +236,14 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // 2c. Fetch marking scheme
+  const question = questionRow as QuestionRow;
+
   const { data: schemeRow, error: schemeError } = await supabase
     .from("marking_schemes")
     .select(
-      "scheme_text, total_marks, key_points, model_answer, model_answer_verified, accepted_alternatives, common_errors, examiner_notes"
+      "scheme_text, total_marks, key_points, model_answer, model_answer_verified, accepted_alternatives, common_errors, examiner_notes, marks_per_correct_point"
     )
-    .eq("question_id", questionRow.id)
+    .eq("question_id", question.id)
     .single();
 
   if (schemeError || !schemeRow) {
@@ -212,7 +255,84 @@ export async function POST(req: NextRequest) {
 
   const scheme = schemeRow as MarkingScheme;
 
-  // 3. Call Claude
+  // 3. Determine token cost BEFORE cap check
+  const tokenCost = question.is_subjective ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE;
+  const today = new Date().toISOString().slice(0, 10);
+
+  const { data: usageRow } = await supabase
+    .from("usage")
+    .select("token_count")
+    .eq("user_id", userId)
+    .eq("usage_date", today)
+    .maybeSingle();
+
+  const currentTokens = usageRow?.token_count ?? 0;
+  const tokensRemaining = Math.max(0, DAILY_TOKEN_LIMIT - currentTokens);
+
+  if (currentTokens + tokenCost > DAILY_TOKEN_LIMIT) {
+    return NextResponse.json(
+      {
+        error: `Not enough tokens. This question costs ${tokenCost} token${tokenCost > 1 ? "s" : ""}. You have ${tokensRemaining} remaining today.`,
+        limit_reached: true,
+        tokens_remaining: tokensRemaining,
+        token_cost: tokenCost,
+      },
+      { status: 429 }
+    );
+  }
+
+  // ─── 4a. OBJECTIVE PATH (no Claude call) ─────────────────────────────────
+
+  if (!question.is_subjective) {
+    if (!question.correct_answer) {
+      return NextResponse.json(
+        { error: "Correct answer not available for this question yet." },
+        { status: 500 }
+      );
+    }
+
+    const isCorrect = matchObjectiveAnswer(
+      student_answer,
+      question.correct_answer,
+      question.question_type
+    );
+
+    const marksAwarded = isCorrect ? scheme.total_marks : 0;
+
+    const evaluation: EvaluationOutput = {
+      marks_awarded: marksAwarded,
+      total_marks: scheme.total_marks,
+      points_hit: isCorrect ? [question.correct_answer] : [],
+      points_missed: isCorrect ? [] : [question.correct_answer],
+      conceptual_errors: [],
+      model_answer: question.correct_answer,
+      model_answer_source: "verified",
+      examiner_feedback: isCorrect
+        ? "Correct."
+        : `Incorrect. The correct answer is: ${question.correct_answer}`,
+      is_objective: true,
+      correct_answer: question.correct_answer,
+      is_correct: isCorrect,
+      token_cost: tokenCost,
+      tokens_remaining: tokensRemaining - tokenCost,
+    };
+
+    // Increment usage + persist — fire and forget
+    incrementUsage(supabase, userId, today, tokenCost).catch((err) =>
+      console.error("[BoardEdge] Usage increment error:", err)
+    );
+    persistSubmission(supabase, {
+      questionId: question.id,
+      studentAnswer: student_answer,
+      userId,
+      evaluation,
+    }).catch((err) => console.error("[BoardEdge] Persist error:", err));
+
+    return NextResponse.json(evaluation, { status: 200 });
+  }
+
+  // ─── 4b. SUBJECTIVE PATH (Claude call) ───────────────────────────────────
+
   const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
   });
@@ -226,16 +346,11 @@ export async function POST(req: NextRequest) {
       messages: [
         {
           role: "user",
-          content: buildUserMessage(
-            questionRow.question_text,
-            student_answer,
-            scheme
-          ),
+          content: buildUserMessage(question.question_text, student_answer, scheme),
         },
       ],
     });
 
-    // Extract text content block
     const textBlock = message.content.find((b) => b.type === "text");
     if (!textBlock || textBlock.type !== "text") {
       throw new Error("Claude returned no text content");
@@ -250,16 +365,15 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // 4. Parse Claude's JSON response
-  let evaluation: EvaluationOutput;
+  // 5. Parse Claude response
+  let claudeEval: Omit<EvaluationOutput, "is_objective" | "correct_answer" | "is_correct" | "token_cost" | "tokens_remaining">;
   try {
-    // Strip accidental markdown fences if Claude misbehaves
     const cleaned = rawContent
       .replace(/^```json\s*/i, "")
       .replace(/^```\s*/i, "")
       .replace(/```\s*$/i, "")
       .trim();
-    evaluation = JSON.parse(cleaned);
+    claudeEval = JSON.parse(cleaned);
   } catch {
     console.error("[BoardEdge] Failed to parse Claude output:", rawContent);
     return NextResponse.json(
@@ -268,26 +382,25 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // 5. Enforce model_answer_source from DB truth, not Claude's guess
-  evaluation.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
+  // 6. Enforce model_answer_source from DB truth
+  claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
-  // 5b. Increment daily usage count (only counts successful evaluations)
-  incrementUsage(supabase, userId, today).catch((err) =>
+  const evaluation: EvaluationOutput = {
+    ...claudeEval,
+    token_cost: tokenCost,
+    tokens_remaining: tokensRemaining - tokenCost,
+  };
+
+  // Increment usage + persist — fire and forget
+  incrementUsage(supabase, userId, today, tokenCost).catch((err) =>
     console.error("[BoardEdge] Usage increment error:", err)
   );
-
-  // 6. Persist to student_answers + evaluations (fire-and-forget; don't block response)
-  // ✅ NEW CODE:
-  try {
-    await persistSubmission(supabase, {
-      questionId: questionRow.id,
-      studentAnswer: student_answer,
-      userId,
-      evaluation,
-    });
-  } catch (err) {
-    console.error("[BoardEdge] Persist execution failed:", err);
-  }
+  persistSubmission(supabase, {
+    questionId: question.id,
+    studentAnswer: student_answer,
+    userId,
+    evaluation,
+  }).catch((err) => console.error("[BoardEdge] Persist error:", err));
 
   return NextResponse.json(evaluation, { status: 200 });
 }
@@ -297,11 +410,12 @@ export async function POST(req: NextRequest) {
 async function incrementUsage(
   supabase: ReturnType<typeof createAdminClient>,
   userId: string,
-  date: string
+  date: string,
+  cost: number
 ) {
   const { data: existing } = await supabase
     .from("usage")
-    .select("evaluation_count")
+    .select("token_count")
     .eq("user_id", userId)
     .eq("usage_date", date)
     .maybeSingle();
@@ -309,13 +423,13 @@ async function incrementUsage(
   if (existing) {
     await supabase
       .from("usage")
-      .update({ evaluation_count: existing.evaluation_count + 1 })
+      .update({ token_count: existing.token_count + cost })
       .eq("user_id", userId)
       .eq("usage_date", date);
   } else {
     await supabase
       .from("usage")
-      .insert({ user_id: userId, usage_date: date, evaluation_count: 1 });
+      .insert({ user_id: userId, usage_date: date, token_count: cost });
   }
 }
 
@@ -335,7 +449,6 @@ async function persistSubmission(
     evaluation: EvaluationOutput;
   }
 ) {
-  // Insert student_answer
   const { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
     .insert({
@@ -351,7 +464,6 @@ async function persistSubmission(
     throw new Error(`student_answers insert failed: ${answerError?.message}`);
   }
 
-  // Insert evaluation
   const { error: evalError } = await supabase.from("evaluations").insert({
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
