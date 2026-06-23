@@ -51,7 +51,7 @@ const SUBJECTS = [
   { name: "Chemistry", available: true },
   { name: "Physics", available: false },
   { name: "Biology", available: false },
-  { name: "Geography", available: false },
+  { name: "Geography", available: true },
 ];
 
 const DAILY_TOKEN_LIMIT = 10;
@@ -219,7 +219,6 @@ export default function EvaluatePage() {
         .from("questions")
         .select("year")
         .eq("subject_id", subjectRow.id)
-        .eq("is_subjective", true) //new-remove after beta
         .order("year", { ascending: false });
 
       const uniqueYears = [
@@ -267,7 +266,6 @@ export default function EvaluatePage() {
         )
         .eq("subject_id", subjectRow.id)
         .eq("year", year)
-        .eq("is_subjective", true) //new-remove after beta
         .order("question_number", { ascending: true });
 
       console.log("[fetchQuestions] data:", data, "error:", error, "year:", year, "subject_id:", subjectRow.id);
