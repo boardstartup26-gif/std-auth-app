@@ -152,16 +152,16 @@ export default function EvaluatePage() {
   // ─── Auth check ───────────────────────────────────────────────────────────
 
   useEffect(() => {
+    // page.tsx — checkAuth useEffect
     async function checkAuth() {
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (!user) {
+      const { data: { user }, error } = await supabase.auth.getUser();
+      if (!user || error) {
+        await supabase.auth.signOut(); // clears the stale cookie causing the loop
         router.push("/login");
         return;
       }
       setAuthChecked(true);
-    }
+    } 
     checkAuth();
   }, [router, supabase.auth]);
 
@@ -457,7 +457,9 @@ export default function EvaluatePage() {
               {questions.map((q) => (
                 <option key={q.id} value={q.question_number}>
                   Q{q.question_number}
-                  {q.is_subjective === false ? " · MCQ" : ""}
+                  {q.is_subjective === false
+                    ? ` · ${q.question_type ? q.question_type.replace(/_/g, " ") : "Objective"}`
+                    : ""}
                 </option>
               ))}
             </select>
@@ -509,8 +511,8 @@ export default function EvaluatePage() {
                     <label
                       key={i}
                       className={`flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${studentAnswer === opt
-                          ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
-                          : "border-border bg-card text-zinc-700 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
+                        ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
+                        : "border-border bg-card text-zinc-700 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
                         }`}
                     >
                       <input
@@ -540,8 +542,8 @@ export default function EvaluatePage() {
                       type="button"
                       onClick={() => setStudentAnswer(opt)}
                       className={`flex-1 rounded-xl border px-4 py-3 text-sm font-medium transition-colors ${studentAnswer === opt
-                          ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
-                          : "border-border bg-card text-zinc-700 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
+                        ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
+                        : "border-border bg-card text-zinc-700 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50"
                         }`}
                     >
                       {opt}
@@ -672,14 +674,14 @@ export default function EvaluatePage() {
             {result.is_objective ? (
               <div
                 className={`rounded-xl border px-5 py-4 ${result.is_correct
-                    ? "border-emerald-200 bg-emerald-50 dark:border-emerald-900/50 dark:bg-emerald-950/30"
-                    : "border-red-200 bg-red-50 dark:border-red-900/50 dark:bg-red-950/30"
+                  ? "border-emerald-200 bg-emerald-50 dark:border-emerald-900/50 dark:bg-emerald-950/30"
+                  : "border-red-200 bg-red-50 dark:border-red-900/50 dark:bg-red-950/30"
                   }`}
               >
                 <p
                   className={`text-sm font-medium ${result.is_correct
-                      ? "text-emerald-800 dark:text-emerald-300"
-                      : "text-red-800 dark:text-red-300"
+                    ? "text-emerald-800 dark:text-emerald-300"
+                    : "text-red-800 dark:text-red-300"
                     }`}
                 >
                   {result.is_correct ? "✓ Correct" : "✗ Incorrect"}
@@ -759,8 +761,8 @@ export default function EvaluatePage() {
                           key={r}
                           onClick={() => setEvalRating(r)}
                           className={`rounded-lg border px-3 py-1.5 transition-colors ${evalRating === r
-                              ? "border-zinc-900 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                              : "border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+                            ? "border-zinc-900 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                            : "border-zinc-200 bg-white text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
                             }`}
                         >
                           {r === "up" ? "👍" : "👎"}

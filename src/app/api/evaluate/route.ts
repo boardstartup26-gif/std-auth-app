@@ -222,8 +222,8 @@ export async function POST(req: NextRequest) {
     )
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
-    .eq("paper", paper)
     .eq("question_number", question_number)
+    .or(`paper.eq.${paper},paper.is.null`)
     .single();
 
   if (questionError || !questionRow) {
@@ -286,8 +286,8 @@ export async function POST(req: NextRequest) {
   if (!question.is_subjective) {
     if (!question.correct_answer) {
       return NextResponse.json(
-        { error: "Correct answer not available for this question yet." },
-        { status: 500 }
+        { error: "Answer key for this question hasn't been added yet. Try a different question." },
+        { status: 404 }
       );
     }
 
