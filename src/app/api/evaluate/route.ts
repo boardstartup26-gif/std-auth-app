@@ -175,7 +175,7 @@ export async function POST(req: NextRequest) {
   }
 
   const { question_number, year, paper, subject, student_answer } = body;
-
+  console.log("[DEBUG]", { subject, year, paper, question_number }); // ← add this
   if (!question_number || !year || !paper || !subject || !student_answer) {
     return NextResponse.json(
       { error: "Missing required fields: question_number, year, paper, subject, student_answer" },
@@ -215,6 +215,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: `Subject not found: ${subject}` }, { status: 404 });
   }
 
+  // REMOVE the .or() line entirely
   const { data: questionRow, error: questionError } = await supabase
     .from("questions")
     .select(
@@ -223,9 +224,9 @@ export async function POST(req: NextRequest) {
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
     .eq("question_number", question_number)
-    .or(`paper.eq.${paper},paper.is.null`)
+    // ← no paper filter
     .single();
-
+    
   if (questionError || !questionRow) {
     return NextResponse.json(
       {

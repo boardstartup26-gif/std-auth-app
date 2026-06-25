@@ -25,6 +25,12 @@ export default async function DashboardPage() {
         </div>
         <div className="flex items-center gap-2">
           <ThemeToggle />
+          <Link
+            href="/account"
+            className="h-10 rounded-xl border border-[var(--border)] px-4 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--border)] flex items-center"
+          >
+            Account
+          </Link>
           <form action={signOut}>
             <button
               className="h-10 rounded-xl border border-[var(--border)] px-4 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--border)]"
