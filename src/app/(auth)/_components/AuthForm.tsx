@@ -4,6 +4,7 @@
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createBrowserClient } from "@supabase/ssr";
 import {
   authShell,
@@ -89,10 +90,11 @@ export function AuthForm({
 
   return (
     <div className={authShell}>
-      <div className="mb-8">
+      <div className="mb-8 flex items-center justify-between">
         <Link href="/" className={backLink}>
           ← Home
         </Link>
+        <ThemeToggle />
       </div>
 
       <div className={cardPadded}>

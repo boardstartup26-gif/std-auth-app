@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createClient, createAdminClient } from "@/lib/supabase/server";
 import {
   backLink,
@@ -67,9 +68,12 @@ export default async function HistoryPage() {
             Evaluation history
           </h1>
         </div>
-        <Link href="/dashboard" className={backLink}>
-          ← Dashboard
-        </Link>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Link href="/dashboard" className={backLink}>
+            ← Dashboard
+          </Link>
+        </div>
       </div>
 
       {rows.length === 0 ? (

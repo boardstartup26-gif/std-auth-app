@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tailwind v4: make dark: utilities follow .dark on <html>, not only OS preference */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* 1. Light mode defaults */
 :root,
 .light {

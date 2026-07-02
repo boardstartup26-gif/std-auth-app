@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createBrowserClient } from "@supabase/ssr";
 import { authShell, btnPrimary, cardPadded, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
 
@@ -36,6 +37,9 @@ export default function ResetPasswordPage() {
 
   return (
     <div className={authShell}>
+      <div className="mb-8 flex justify-end">
+        <ThemeToggle />
+      </div>
       <div className={cardPadded}>
         <p className={sectionLabel}>BoardEdge</p>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">

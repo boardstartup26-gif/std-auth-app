@@ -1,0 +1,2090 @@
+{
+  "year": 2024,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "Duplicated chromosomes are joined at a point termed:\n(a) Centrosome\n(b) Centromere\n(c) Centriole\n(d) Chromatid",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Centrosome",
+        "(b) Centromere",
+        "(c) Centriole",
+        "(d) Chromatid"
+      ],
+      "correct_answer": "(b) Centromere",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Centromere",
+      "total_marks": 1,
+      "key_points": [
+        "Centromere is the point where duplicated chromosomes (chromatids) are joined"
+      ],
+      "model_answer": "(b) Centromere",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing centrosome with centromere"
+      ],
+      "examiner_notes": "Most candidates provided the correct answer. A common error was referring to the centrosome as the centromere.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "The process of conversion of ADP to ATP during photosynthesis is called:\n(a) Photolysis\n(b) Phagocytosis\n(c) Photophosphorylation\n(d) Polymerisation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Photolysis",
+        "(b) Phagocytosis",
+        "(c) Photophosphorylation",
+        "(d) Polymerisation"
+      ],
+      "correct_answer": "(c) Photophosphorylation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Photophosphorylation",
+      "total_marks": 1,
+      "key_points": [
+        "Photophosphorylation is the conversion of ADP to ATP using light energy during photosynthesis"
+      ],
+      "model_answer": "(c) Photophosphorylation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing photolysis or polymerisation instead of photophosphorylation"
+      ],
+      "examiner_notes": "Majority wrote the correct answer. A few candidates mentioned photolysis and polymerisation instead of photophosphorylation.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "The process in which water is lost from the margins of strawberry leaves is:\n(a) Osmosis\n(b) Imbibition\n(c) Diffusion\n(d) Guttation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Osmosis",
+        "(b) Imbibition",
+        "(c) Diffusion",
+        "(d) Guttation"
+      ],
+      "correct_answer": "(d) Guttation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Guttation",
+      "total_marks": 1,
+      "key_points": [
+        "Guttation is the loss of water in liquid form from the margins/tips of leaves"
+      ],
+      "model_answer": "(d) Guttation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing osmosis instead of guttation"
+      ],
+      "examiner_notes": "A large number of candidates mentioned the correct answer. A few wrote osmosis in place of guttation.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "The hormone that affects urination is:\n(a) Adrenaline\n(b) Vasopressin\n(c) Oestrogen\n(d) Thyroxine",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Adrenaline",
+        "(b) Vasopressin",
+        "(c) Oestrogen",
+        "(d) Thyroxine"
+      ],
+      "correct_answer": "(b) Vasopressin",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Vasopressin",
+      "total_marks": 1,
+      "key_points": [
+        "Vasopressin (ADH) regulates water reabsorption in kidneys and thus affects urination"
+      ],
+      "model_answer": "(b) Vasopressin",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing functions of adrenaline and vasopressin"
+      ],
+      "examiner_notes": "Majority answered correctly. A few candidates were confused with the functions of adrenaline and vasopressin.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "Which one of the following helps in the opening of stomata:\n(a) Cobalt ions\n(b) Potassium ions\n(c) Magnesium ions\n(d) Aluminium ions",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Cobalt ions",
+        "(b) Potassium ions",
+        "(c) Magnesium ions",
+        "(d) Aluminium ions"
+      ],
+      "correct_answer": "(b) Potassium ions",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Potassium ions",
+      "total_marks": 1,
+      "key_points": [
+        "Potassium ions accumulate in guard cells causing them to become turgid and stomata to open"
+      ],
+      "model_answer": "(b) Potassium ions",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing magnesium instead of potassium"
+      ],
+      "examiner_notes": "Several candidates mentioned the correct answer. A few wrote magnesium in place of potassium.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "A zygote which has Y chromosome inherited from the father will develop into a:\n(a) Will depend on the chromosome inherited from the mother\n(b) Girl\n(c) Either boy or a girl\n(d) Boy",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Will depend on the chromosome inherited from the mother",
+        "(b) Girl",
+        "(c) Either boy or a girl",
+        "(d) Boy"
+      ],
+      "correct_answer": "(d) Boy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Boy",
+      "total_marks": 1,
+      "key_points": [
+        "Y chromosome from father combined with X chromosome from mother gives XY = Boy"
+      ],
+      "model_answer": "(d) Boy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing either boy or a girl"
+      ],
+      "examiner_notes": "Majority wrote the correct answer. Some candidates wrote either boy or a girl.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "The ear ossicle that transports sound vibrations to the inner ear:\n(a) Stapes\n(b) Malleus\n(c) Incus\n(d) Cochlea",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Stapes",
+        "(b) Malleus",
+        "(c) Incus",
+        "(d) Cochlea"
+      ],
+      "correct_answer": "(a) Stapes",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Stapes",
+      "total_marks": 1,
+      "key_points": [
+        "Stapes is the ear ossicle that transmits vibrations to the oval window of the inner ear"
+      ],
+      "model_answer": "(a) Stapes",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Choosing malleus instead of stapes"
+      ],
+      "examiner_notes": "Almost all candidates answered correctly. A few chose malleus in place of stapes.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "If a person has a heart attack, what must be done immediately?\nP. Loosen his/her clothing\nQ. Make him/her lie down in an airy room\nR. Rush him/her to the hospital\nS. Engage him/her in a conversation\n(a) P and Q\n(b) P and S\n(c) R and S\n(d) P, Q and R",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) P and Q",
+        "(b) P and S",
+        "(c) R and S",
+        "(d) P, Q and R"
+      ],
+      "correct_answer": "(d) P, Q and R",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) P, Q and R",
+      "total_marks": 1,
+      "key_points": [
+        "Loosen clothing, make patient lie down in airy room, and rush to hospital are all correct first-aid steps for a heart attack"
+      ],
+      "model_answer": "(d) P, Q and R",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selecting P and Q instead of P, Q and R without reading all options carefully"
+      ],
+      "examiner_notes": "Some candidates answered correctly but many selected P and Q instead of P, Q and R as they did not read the options carefully.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "Adjusting the focal length of the eye lens to view objects at different distances is done by:\n(a) Cornea\n(b) Iris\n(c) Ciliary muscles\n(d) Sclera",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Cornea",
+        "(b) Iris",
+        "(c) Ciliary muscles",
+        "(d) Sclera"
+      ],
+      "correct_answer": "(c) Ciliary muscles",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Ciliary muscles",
+      "total_marks": 1,
+      "key_points": [
+        "Ciliary muscles control the shape and focal length of the eye lens — accommodation"
+      ],
+      "model_answer": "(c) Ciliary muscles",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing iris instead of ciliary muscles"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote iris in place of ciliary muscles.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "Four friends P, Q, R and S were discussing the examples of genetic disorders. The examples they quoted were as follows:\nP. Colour blindness and Malaria\nQ. Albinism and Cholera\nR. Haemophilia and Colour blindness\nS. Haemophilia and Albinism\nWho gave the correct examples?\n(a) P and Q\n(b) R and S\n(c) P and R\n(d) Q and S",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) P and Q",
+        "(b) R and S",
+        "(c) P and R",
+        "(d) Q and S"
+      ],
+      "correct_answer": "(b) R and S",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) R and S",
+      "total_marks": 1,
+      "key_points": [
+        "Haemophilia, Colour blindness, and Albinism are genetic disorders; Malaria and Cholera are non-genetic (infectious) disorders"
+      ],
+      "model_answer": "(b) R and S",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "All candidates answered this part correctly.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Osmosis takes place when there is:\n(a) A freely permeable membrane\n(b) A cell wall\n(c) A selectively permeable membrane\n(d) An impermeable membrane",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) A freely permeable membrane",
+        "(b) A cell wall",
+        "(c) A selectively permeable membrane",
+        "(d) An impermeable membrane"
+      ],
+      "correct_answer": "(c) A selectively permeable membrane",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) A selectively permeable membrane",
+      "total_marks": 1,
+      "key_points": [
+        "Osmosis requires a selectively/semi-permeable membrane that allows water but not solutes to pass"
+      ],
+      "model_answer": "(c) A selectively permeable membrane",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "Several candidates mentioned the correct answer.",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "A male gorilla has 48 chromosomes in each of its body cells. How many chromosomes will each of the sperms have?\n(a) 24\n(b) 48\n(c) 12\n(d) 16",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 24",
+        "(b) 48",
+        "(c) 12",
+        "(d) 16"
+      ],
+      "correct_answer": "(a) 24",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) 24",
+      "total_marks": 1,
+      "key_points": [
+        "Gametes are haploid — they have half the number of chromosomes of somatic cells; 48/2 = 24"
+      ],
+      "model_answer": "(a) 24",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion between chromosome numbers in body cells and gametes"
+      ],
+      "examiner_notes": "Almost all candidates had confusion regarding the number of chromosomes in body cells and gametes.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "Assertion (A): Sympathetic nervous system prepares the body for violent action against abnormal conditions.\nReason (R): Sympathetic nervous system accelerates heartbeat.\nWhich of the following is correct?\n(a) Both A and R are True\n(b) A is True, R is False\n(c) A is False but R is True\n(d) Both A and R are False",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Both A and R are True",
+        "(b) A is True, R is False",
+        "(c) A is False but R is True",
+        "(d) Both A and R are False"
+      ],
+      "correct_answer": "(a) Both A and R are True",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Both A and R are True",
+      "total_marks": 1,
+      "key_points": [
+        "Sympathetic nervous system prepares body for fight-or-flight and does accelerate heartbeat"
+      ],
+      "model_answer": "(a) Both A and R are True",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selecting options (b) or (c) instead of (a)"
+      ],
+      "examiner_notes": "Few candidates answered correctly; others selected options (b) and (c) instead of (a).",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Birth rate is the number of live births per thousand persons in:\n(a) 1 year\n(b) 2 years\n(c) 10 years\n(d) 20 years",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 1 year",
+        "(b) 2 years",
+        "(c) 10 years",
+        "(d) 20 years"
+      ],
+      "correct_answer": "(a) 1 year",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) 1 year",
+      "total_marks": 1,
+      "key_points": [
+        "Birth rate = number of live births per 1000 persons per year"
+      ],
+      "model_answer": "(a) 1 year",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Answering 10 years instead of 1 year"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few answered incorrectly as 10 years instead of one year.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "Industrial Melanism was observed in:\n(a) Mice\n(b) Peppered Moth\n(c) House Flies\n(d) Crow",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Mice",
+        "(b) Peppered Moth",
+        "(c) House Flies",
+        "(d) Crow"
+      ],
+      "correct_answer": "(b) Peppered Moth",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Peppered Moth",
+      "total_marks": 1,
+      "key_points": [
+        "Industrial melanism is a classic example of natural selection observed in the Peppered Moth (Biston betularia)"
+      ],
+      "model_answer": "(b) Peppered Moth",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mentioning House flies or Mice instead of Peppered Moth"
+      ],
+      "examiner_notes": "Majority answered correctly but a few mentioned House flies and Mice instead of Peppered Moth.",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(a)",
+      "question_text": "Name the following: Unicellular outgrowths from the epidermis of roots.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Root hairs",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Root hairs",
+      "total_marks": 1,
+      "key_points": [
+        "Root hairs are unicellular outgrowths from the epidermal cells of roots"
+      ],
+      "model_answer": "Root hairs",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing rootlets instead of root hairs"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote rootlets which was incorrect.",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(b)",
+      "question_text": "Name the following: A defect in our eyes, in which some parts of the object are in focus while the other parts are blurred.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Astigmatism",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Astigmatism",
+      "total_marks": 1,
+      "key_points": [
+        "Astigmatism causes uneven focus — some parts of an image are sharp while others are blurred"
+      ],
+      "model_answer": "Astigmatism",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing hyperopia or myopia instead of astigmatism"
+      ],
+      "examiner_notes": "Most candidates failed to score as they wrote hyperopia and myopia.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(c)",
+      "question_text": "Name the following: The tropic movement of plant parts in response to chemicals.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Chemotropism",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Chemotropism",
+      "total_marks": 1,
+      "key_points": [
+        "Chemotropism is the growth movement of plant parts in response to chemical stimuli"
+      ],
+      "model_answer": "Chemotropism",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing chemical tropism instead of chemotropism"
+      ],
+      "examiner_notes": "Majority answered correctly. A few wrote chemical tropism which was incorrect.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(d)",
+      "question_text": "Name the following: The main nitrogenous waste formed in the body.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Urea",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Urea",
+      "total_marks": 1,
+      "key_points": [
+        "Urea is the main nitrogenous excretory product formed in the liver from amino acid metabolism"
+      ],
+      "model_answer": "Urea",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing urine instead of urea"
+      ],
+      "examiner_notes": "A large number answered correctly but some wrote urine instead of urea.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(e)",
+      "question_text": "Name the following: The process of attachment of fertilized ovum to the wall of uterus.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Implantation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Implantation",
+      "total_marks": 1,
+      "key_points": [
+        "Implantation is the process by which the fertilised ovum embeds itself in the uterine wall"
+      ],
+      "model_answer": "Implantation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing ovulation, fertilisation, or gestation instead of implantation"
+      ],
+      "examiner_notes": "Only few candidates wrote the correct answer without spelling mistakes. Many mentioned ovulation, fertilisation, gestation instead of implantation.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(a)",
+      "question_text": "Arrange and rewrite the terms in the correct order to be in a logical sequence beginning with the term that is underlined: Australopithecus, Cro-Magnon, Homo erectus, Neanderthal man.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Australopithecus, Homo erectus, Neanderthal man, Cro-Magnon",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Australopithecus, Homo erectus, Neanderthal man, Cro-Magnon",
+      "total_marks": 1,
+      "key_points": [
+        "Correct chronological order of human evolution: Australopithecus → Homo erectus → Neanderthal man → Cro-Magnon"
+      ],
+      "model_answer": "Australopithecus, Homo erectus, Neanderthal man, Cro-Magnon",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Changing the sequence of Homo erectus and Cro-Magnon"
+      ],
+      "examiner_notes": "A few candidates wrote Homo erectus after Cro-Magnon which is incorrect.",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(b)",
+      "question_text": "Arrange and rewrite the terms in the correct order to be in a logical sequence beginning with the term that is underlined: Pupil, Aqueous humour, Retina, Vitreous humour.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Aqueous humour, Pupil, Vitreous humour, Retina",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Aqueous humour, Pupil, Vitreous humour, Retina",
+      "total_marks": 1,
+      "key_points": [
+        "Path of light through the eye: Aqueous humour → Pupil → Vitreous humour → Retina"
+      ],
+      "model_answer": "Aqueous humour, Pupil, Vitreous humour, Retina",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing vitreous humour after retina instead of before it"
+      ],
+      "examiner_notes": "Some candidates mentioned vitreous humour after retina instead of before it.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(c)",
+      "question_text": "Arrange and rewrite the terms in the correct order to be in a logical sequence beginning with the term that is underlined: Effector, Receptor, Motor neuron, Sensory neuron.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Receptor, Sensory neuron, Motor neuron, Effector",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Receptor, Sensory neuron, Motor neuron, Effector",
+      "total_marks": 1,
+      "key_points": [
+        "Reflex arc order: Receptor → Sensory neuron → Motor neuron → Effector"
+      ],
+      "model_answer": "Receptor, Sensory neuron, Motor neuron, Effector",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "A large number of candidates answered it correctly.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(d)",
+      "question_text": "Arrange and rewrite the terms in the correct order to be in a logical sequence beginning with the term that is underlined: Loop of Henle, Distal convoluted tubule, Bowman's Capsule, Proximal convoluted tubule.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Bowman's Capsule, Proximal convoluted tubule, Loop of Henle, Distal convoluted tubule",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Bowman's Capsule, Proximal convoluted tubule, Loop of Henle, Distal convoluted tubule",
+      "total_marks": 1,
+      "key_points": [
+        "Order of filtrate flow in nephron: Bowman's Capsule → PCT → Loop of Henle → DCT"
+      ],
+      "model_answer": "Bowman's Capsule, Proximal convoluted tubule, Loop of Henle, Distal convoluted tubule",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "A large number of candidates answered it correctly.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(e)",
+      "question_text": "Arrange and rewrite the terms in the correct order to be in a logical sequence beginning with the term that is underlined: Water vapour, Soil water, Leaves, Ascent of Sap.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Soil water, Ascent of sap, Leaves, Water vapour",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Soil water, Ascent of sap, Leaves, Water vapour",
+      "total_marks": 1,
+      "key_points": [
+        "Water pathway: Soil water → Ascent of sap → Leaves → Water vapour (transpiration)"
+      ],
+      "model_answer": "Soil water, Ascent of sap, Leaves, Water vapour",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing leaves after water vapour instead of before it"
+      ],
+      "examiner_notes": "A few candidates wrote leaves after water vapour instead of before it.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(a)",
+      "question_text": "Study the diagram showing a potted plant with a leaf inside a conical flask containing KOH. Fill in the blank: In order to prove that carbon dioxide is necessary for (a) ___________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Photosynthesis",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Photosynthesis",
+      "total_marks": 1,
+      "key_points": [
+        "The experiment demonstrates that CO2 is necessary for photosynthesis"
+      ],
+      "model_answer": "Photosynthesis",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "Several candidates answered it correctly.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(b)",
+      "question_text": "Study the diagram showing a potted plant with a leaf inside a conical flask containing KOH. Fill in the blank: a potted plant is placed in dark for 48 hours to (b) __________ the leaves.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Destarch",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Destarch",
+      "total_marks": 1,
+      "key_points": [
+        "Plants are kept in dark for 48 hours to destarch the leaves before the experiment"
+      ],
+      "model_answer": "Destarch",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "Several candidates answered it correctly.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(c)",
+      "question_text": "Study the diagram showing a potted plant with a leaf inside a conical flask containing KOH. Fill in the blank: This is to absorb (c) ___________ from the flask.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "CO2",
+      "marks_per_correct_point": 1,
+      "scheme_text": "CO2",
+      "total_marks": 1,
+      "key_points": [
+        "KOH absorbs carbon dioxide (CO2) from the flask to deprive the enclosed leaf of CO2"
+      ],
+      "model_answer": "CO2",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Carbon dioxide"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Several candidates answered it correctly.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(d)",
+      "question_text": "Study the diagram showing a potted plant with a leaf inside a conical flask containing KOH. Fill in the blank: The part of the leaf that was inside the conical flask turns (d) ___________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Brown",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Brown",
+      "total_marks": 1,
+      "key_points": [
+        "The part of the leaf inside the flask (deprived of CO2) cannot photosynthesise and shows no starch — turns brown with iodine"
+      ],
+      "model_answer": "Brown",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing blue black for part (d) instead of brown"
+      ],
+      "examiner_notes": "A few candidates were confused with parts (d) and (e) — wrote blue black for (d) and brown for (e) instead of vice versa.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(e)",
+      "question_text": "Study the diagram showing a potted plant with a leaf inside a conical flask containing KOH. Fill in the blank: whereas the part of the leaf outside turns (e) __________ in colour.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Blue black",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Blue black",
+      "total_marks": 1,
+      "key_points": [
+        "The part of the leaf outside the flask receives CO2 and can photosynthesise, producing starch — turns blue-black with iodine"
+      ],
+      "model_answer": "Blue black",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Blue-black"
+      ],
+      "common_errors": [
+        "Writing brown for part (e) instead of blue black"
+      ],
+      "examiner_notes": "A few candidates wrote brown for part (e) instead of blue black.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(a)",
+      "question_text": "Choose the odd one out from the following terms and name the category to which the others belong: Prothrombin, Thrombin, Fibrinogen, Albumin",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Odd - Albumin; Category – Clotting of blood",
+      "total_marks": 1,
+      "key_points": [
+        "Albumin is not involved in blood clotting; prothrombin, thrombin, and fibrinogen are all clotting factors"
+      ],
+      "model_answer": "Odd: Albumin. Category: Clotting of blood",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mentioning others are present in blood platelets instead of clotting of blood as the category"
+      ],
+      "examiner_notes": "Most candidates failed to write the category correctly, mentioning others are present in blood platelets instead of clotting of blood.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(b)",
+      "question_text": "Choose the odd one out from the following terms and name the category to which the others belong: Tonsils, Glomerulus, Spleen, Lymph nodes",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Odd – Glomerulus; Category – Lymphatic organs",
+      "total_marks": 1,
+      "key_points": [
+        "Glomerulus is part of the nephron (excretory system); tonsils, spleen, and lymph nodes are lymphatic organs"
+      ],
+      "model_answer": "Odd: Glomerulus. Category: Lymphatic organs",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mentioning circulatory system or lymph as the category instead of lymphatic organs"
+      ],
+      "examiner_notes": "A large number of candidates failed to score — they mentioned circulatory system or Lymph instead of lymphatic organs.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(c)",
+      "question_text": "Choose the odd one out from the following terms and name the category to which the others belong: Neutrophils, Basophils, Monocytes, Eosinophils",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Odd – Monocytes; Category – Granular WBCs",
+      "total_marks": 1,
+      "key_points": [
+        "Neutrophils, basophils, and eosinophils are granulocytes; monocytes are agranulocytes"
+      ],
+      "model_answer": "Odd: Monocytes. Category: Granular WBCs",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Granulocytes",
+        "Granular leucocytes"
+      ],
+      "common_errors": [
+        "Writing parts of WBCs as the category"
+      ],
+      "examiner_notes": "Majority answered correctly. A few wrote incorrect answers like parts of WBCs.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(d)",
+      "question_text": "Choose the odd one out from the following terms and name the category to which the others belong: Leaves, Styrofoam, Grass, Cow Dung",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Odd – Styrofoam; Category – Biodegradable",
+      "total_marks": 1,
+      "key_points": [
+        "Styrofoam is non-biodegradable; leaves, grass, and cow dung are biodegradable materials"
+      ],
+      "model_answer": "Odd: Styrofoam. Category: Biodegradable",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Incorrectly choosing cow dung as the odd one"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few incorrectly chose cow dung.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(e)",
+      "question_text": "Choose the odd one out from the following terms and name the category to which the others belong: Pulmonary artery, Renal artery, Coronary artery, Hepatic artery",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Odd – Pulmonary artery; Category – Carry oxygenated blood",
+      "total_marks": 1,
+      "key_points": [
+        "Pulmonary artery carries deoxygenated blood to the lungs; renal, coronary, and hepatic arteries carry oxygenated blood"
+      ],
+      "model_answer": "Odd: Pulmonary artery. Category: Carry oxygenated blood",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Choosing coronary artery or renal artery as the odd one instead of pulmonary artery"
+      ],
+      "examiner_notes": "Many candidates lost marks by choosing coronary or renal artery instead of pulmonary artery.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(a)",
+      "question_text": "Match the items given in Column I with most appropriate ones in Column II and rewrite the correct matching pairs: Leydig Cells",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "Leydig Cells – Testosterone",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Leydig Cells – 3. Testosterone",
+      "total_marks": 1,
+      "key_points": [
+        "Leydig cells in the testes secrete testosterone"
+      ],
+      "model_answer": "Leydig Cells – Testosterone",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Matching with haploid cells instead of testosterone"
+      ],
+      "examiner_notes": "A few candidates mentioned haploid cell instead of testosterone for part (a).",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(b)",
+      "question_text": "Match the items given in Column I with most appropriate ones in Column II and rewrite the correct matching pairs: Stoma",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "Stoma – Diffusion of respiratory gases",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Stoma – 4. Diffusion of respiratory gases",
+      "total_marks": 1,
+      "key_points": [
+        "Stomata are the pores through which diffusion of respiratory gases (CO2 and O2) occurs"
+      ],
+      "model_answer": "Stoma – Diffusion of respiratory gases",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "A large number of candidates answered this part correctly.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(c)",
+      "question_text": "Match the items given in Column I with most appropriate ones in Column II and rewrite the correct matching pairs: Ova",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "Ova – Haploid cells",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Ova – 5. Haploid cells",
+      "total_marks": 1,
+      "key_points": [
+        "Ova (eggs) are haploid cells produced by meiosis"
+      ],
+      "model_answer": "Ova – Haploid cells",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing diploid cells instead of haploid cells"
+      ],
+      "examiner_notes": "A few candidates wrote diploid cells instead of haploid cells for part (c).",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(d)",
+      "question_text": "Match the items given in Column I with most appropriate ones in Column II and rewrite the correct matching pairs: Cranial nerve",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "Cranial nerve – 12 pairs",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cranial nerve – 2. 12 pairs",
+      "total_marks": 1,
+      "key_points": [
+        "There are 12 pairs of cranial nerves"
+      ],
+      "model_answer": "Cranial nerve – 12 pairs",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 31 pairs instead of 12 pairs (confusing cranial with spinal nerves)"
+      ],
+      "examiner_notes": "A few candidates mentioned 31 pairs instead of 12 pairs.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(e)",
+      "question_text": "Match the items given in Column I with most appropriate ones in Column II and rewrite the correct matching pairs: Cretinism",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "Cretinism – Lack of thyroxine in children",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cretinism – 1. Lack of thyroxine in children",
+      "total_marks": 1,
+      "key_points": [
+        "Cretinism is caused by deficiency of thyroxine in children, leading to stunted physical and mental growth"
+      ],
+      "model_answer": "Cretinism – Lack of thyroxine in children",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "A large number of candidates answered this part correctly.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "Expand the abbreviation-NADP.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Nicotinamide Adenine Dinucleotide Phosphate",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Nicotinamide Adenine Dinucleotide Phosphate",
+      "total_marks": 1,
+      "key_points": [
+        "NADP = Nicotinamide Adenine Dinucleotide Phosphate"
+      ],
+      "model_answer": "Nicotinamide Adenine Dinucleotide Phosphate",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing Adenosine instead of Adenine and Diphosphate instead of Dinucleotide Phosphate; spelling errors"
+      ],
+      "examiner_notes": "Most candidates committed spelling errors. A few wrote Adenosine instead of Adenine and Diphosphate instead of Dinucleotide Phosphate.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "Mention two adaptations in roots for absorption of water from the soil.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Large surface area due to the presence of root hairs; Concentrated cell sap of root hairs; Root hairs have thin walls. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Large surface area due to root hairs",
+        "Concentrated cell sap of root hairs creating osmotic gradient",
+        "Root hairs have thin walls for easy water entry"
+      ],
+      "model_answer": "1. Root hairs provide a large surface area for water absorption. 2. Root hairs have a concentrated cell sap, creating an osmotic gradient for water uptake.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Root hairs have thin walls"
+      ],
+      "common_errors": [],
+      "examiner_notes": "A large number of candidates wrote the correct answer.",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "Differentiate between Afferent arteriole and Efferent arteriole (diameter).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Afferent arteriole – Wide; Efferent arteriole – Narrow",
+      "total_marks": 2,
+      "key_points": [
+        "Afferent arteriole has a wider diameter",
+        "Efferent arteriole has a narrower diameter",
+        "This size difference creates high filtration pressure in the glomerulus"
+      ],
+      "model_answer": "Afferent arteriole: Wide diameter. Efferent arteriole: Narrow diameter.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Stating narrow for afferent arteriole and wide for efferent arteriole — the reverse"
+      ],
+      "examiner_notes": "Most candidates were confused with the diameter and incorrectly mentioned narrow for afferent arteriole and wide for efferent arteriole.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "Give two examples of water pollutants.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Plastic, DDT, Sewage, detergents, oil spills, effluents, hot water, mercury, etc. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two valid water pollutants such as: plastic, DDT, sewage, detergents, oil spills, industrial effluents, mercury, hot water"
+      ],
+      "model_answer": "1. Sewage 2. Oil spills",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Plastic",
+        "DDT",
+        "Detergents",
+        "Industrial effluents",
+        "Hot water",
+        "Mercury"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Almost all candidates answered correctly as they had a clear understanding of water pollutants.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(v)(a)",
+      "question_text": "Ali has some pea plants in his garden which need a support to grow. A shoot is seen wrapping around a support. Name the phenomenon depicted by the shoot in the given figure.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Thigmotropism",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Thigmotropism",
+      "total_marks": 1,
+      "key_points": [
+        "Thigmotropism is the growth movement of plant parts in response to touch stimulus"
+      ],
+      "model_answer": "Thigmotropism",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing phototropism instead of thigmotropism"
+      ],
+      "examiner_notes": "Majority answered correctly. A few wrote phototropism as the incorrect answer.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(v)(b)",
+      "question_text": "Ali has some pea plants in his garden which need a support to grow. Define the above phenomenon (Thigmotropism).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Growth movement of plant parts toward touch stimulus",
+      "total_marks": 1,
+      "key_points": [
+        "Thigmotropism: growth movement of plant parts in response to/toward a touch stimulus"
+      ],
+      "model_answer": "Thigmotropism is the growth movement of plant parts in response to a touch stimulus.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missing keywords like touch stimulus or growth movement"
+      ],
+      "examiner_notes": "A few candidates answered correctly. Majority missed the keywords like touch stimulus for growth movement.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(v)(c)",
+      "question_text": "Ali has some pea plants in his garden which need a support to grow. Write the name of the part marked X (the structure that wraps around the support).",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Tendril",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Tendril",
+      "total_marks": 1,
+      "key_points": [
+        "Tendrils are slender, coiling structures that help climbing plants attach to supports"
+      ],
+      "model_answer": "Tendril",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing stem, vine, or creepers instead of tendril"
+      ],
+      "examiner_notes": "A large number answered correctly but a few wrote stem, vine, creepers as incorrect answers.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "Give the biological term for the surgical method of contraception in human females.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Tubectomy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Tubectomy",
+      "total_marks": 1,
+      "key_points": [
+        "Tubectomy is the surgical ligation or removal of the fallopian tubes to prevent pregnancy in females"
+      ],
+      "model_answer": "Tubectomy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing vasectomy (male procedure) instead of tubectomy; spelling errors like Tubecotomy"
+      ],
+      "examiner_notes": "Majority answered correctly. A few were confused and mentioned vasectomy instead of tubectomy. Spelling errors like Tubecotomy were also observed.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "State two harmful effects of acid rain on the environment.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Damage to vegetation, decay of building materials, paints, change in soil pH, erosion of monuments, harm human and animal health, harm to aquatic animals, etc. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Damages vegetation",
+        "Causes decay of building materials and monuments",
+        "Changes soil pH",
+        "Harms aquatic animals",
+        "Harms human and animal health"
+      ],
+      "model_answer": "1. Damages vegetation and agricultural crops. 2. Causes change in soil pH, making it acidic and harming aquatic life.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Decay of building materials",
+        "Erosion of monuments",
+        "Harm to human and animal health"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Several candidates answered the question correctly.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "Mention two advantages of Transpiration.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cooling effect to plant and environment, creates suction force, distribution of water and mineral salts, brings rain. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Provides a cooling effect to the plant",
+        "Creates suction force (transpiration pull) for ascent of sap",
+        "Helps in distribution of water and mineral salts",
+        "Contributes to rainfall"
+      ],
+      "model_answer": "1. Transpiration creates a suction force (transpiration pull) that helps in the ascent of water and minerals. 2. It has a cooling effect on the plant and surrounding environment.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Brings rain",
+        "Distribution of water and mineral salts"
+      ],
+      "common_errors": [
+        "Writing transpiration removes excess water from plants — which is not a recognised advantage"
+      ],
+      "examiner_notes": "Question was correctly answered by a large number of candidates. Some provided an incorrect answer like transpiration removes excess water from plants.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "Write any two objectives of Swachh Bharat Abhiyan.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Keeping surrounding clean, clean roads and infrastructure, eliminate open defecation by constructing toilets, solid and liquid waste management. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Elimination of open defecation through toilet construction",
+        "Keeping surroundings and roads clean",
+        "Solid and liquid waste management"
+      ],
+      "model_answer": "1. Elimination of open defecation by constructing toilets. 2. Solid and liquid waste management.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Keeping surrounding clean",
+        "Clean roads and infrastructure"
+      ],
+      "common_errors": [
+        "Mentioning measures to prevent air pollution instead of Swachh Bharat objectives"
+      ],
+      "examiner_notes": "Most candidates wrote the correct answer. A few were confused and mentioned measures to prevent air pollution instead of objectives.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(a)",
+      "question_text": "Mohan is fond of playing basketball and concentrating on shooting the ball into the opponent's basket. Which part of the brain helps Mohan to concentrate in putting the ball into the basket?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Cerebrum",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cerebrum",
+      "total_marks": 1,
+      "key_points": [
+        "The cerebrum is responsible for voluntary actions, concentration, reasoning, and intelligence"
+      ],
+      "model_answer": "Cerebrum",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing cerebellum and cerebrum"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few were confused with cerebellum and cerebrum.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(b)",
+      "question_text": "Mohan is fond of playing basketball. Name the sense organ that helps to gauge the distance between the ball and the basket.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Eye",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Eye",
+      "total_marks": 1,
+      "key_points": [
+        "The eye judges distance and depth perception"
+      ],
+      "model_answer": "Eye",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "All candidates wrote the correct answer.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(c)",
+      "question_text": "Mohan is fond of playing basketball. Name the part of the brain that co-ordinates all the voluntary muscles of his body.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Cerebellum",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cerebellum",
+      "total_marks": 1,
+      "key_points": [
+        "The cerebellum coordinates voluntary muscle movements, balance, and posture"
+      ],
+      "model_answer": "Cerebellum",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "Majority of the candidates wrote the correct answer.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "Name the type of nerve which has the fibres of both sensory and motor neurons.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Mixed nerve",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Mixed nerve",
+      "total_marks": 1,
+      "key_points": [
+        "Mixed nerves contain both sensory (afferent) and motor (efferent) nerve fibres"
+      ],
+      "model_answer": "Mixed nerve",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing association neuron or spinal nerve instead of mixed nerve"
+      ],
+      "examiner_notes": "Most candidates answered incorrectly as they wrote association neuron and spinal nerve instead of mixed nerve.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "Differentiate between Australopithecus and Modern man based on body hair.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Australopithecus – Body covered with hair. Modern man – Reduced body hair.",
+      "total_marks": 2,
+      "key_points": [
+        "Australopithecus had body covered with hair",
+        "Modern man has reduced body hair"
+      ],
+      "model_answer": "Australopithecus: Body covered with hair. Modern man: Reduced body hair.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Providing vague answers like long hair, short hair, facial hair"
+      ],
+      "examiner_notes": "Many candidates answered correctly. Some provided vague answers like long hair, short hair, facial hair.",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iii)",
+      "question_text": "Birth rate in India is very high. Mention two reasons in support of the statement.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Illiteracy, high mortality rate, children regarded as gift of God, increase family income, do not accept family planning methods, desire for a male child, lack of recreation. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Illiteracy",
+        "High infant mortality rate leading to more births",
+        "Children regarded as economic asset or gift of God",
+        "Non-acceptance of family planning methods",
+        "Desire for a male child",
+        "Lack of recreational activities",
+        "Early marriage"
+      ],
+      "model_answer": "1. Illiteracy and lack of awareness about family planning. 2. Desire for a male child leading to more births.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "High mortality rate",
+        "Children regarded as gift of God",
+        "Children increase family income",
+        "Do not accept family planning methods",
+        "Lack of recreation"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Majority of the candidates answered it correctly.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iv)(a)",
+      "question_text": "Give the exact location of: Pericardium",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Surrounding / enveloping / enclosing / covering / around the heart",
+      "total_marks": 1,
+      "key_points": [
+        "Pericardium is the double-layered membrane surrounding/enclosing the heart"
+      ],
+      "model_answer": "Pericardium surrounds/encloses the heart.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Surrounding the heart",
+        "Enveloping the heart",
+        "Enclosing the heart",
+        "Covering the heart",
+        "Around the heart"
+      ],
+      "common_errors": [
+        "Writing on the wall, in the wall, or in the heart"
+      ],
+      "examiner_notes": "Some candidates answered correctly. Many mentioned incorrect answers like on the wall, in the wall, in the heart.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iv)(b)",
+      "question_text": "Give the exact location of: Bicuspid valve",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Between the left auricle and left ventricle",
+      "total_marks": 1,
+      "key_points": [
+        "Bicuspid (mitral) valve is located between the left atrium (auricle) and left ventricle"
+      ],
+      "model_answer": "The bicuspid valve is located between the left auricle and left ventricle.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Between left atrium and left ventricle"
+      ],
+      "common_errors": [
+        "Writing between right atrium and right ventricle or left side of heart without specifying chambers"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few mentioned between right atrium and right ventricle, or left side of heart.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(v)(a)",
+      "question_text": "Given below is a schematic representation of the inheritance of the shape of seeds of garden pea (Round crossed with Wrinkled, F1 all Round, F2 ratio 3:1). Which is the dominant and recessive allele of the trait?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Dominant – Round; Recessive – Wrinkled",
+      "total_marks": 1,
+      "key_points": [
+        "Round seed shape is dominant",
+        "Wrinkled seed shape is recessive"
+      ],
+      "model_answer": "Dominant allele: Round. Recessive allele: Wrinkled.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Copying the diagram from the question instead of writing in words; not specifying the shape of seeds"
+      ],
+      "examiner_notes": "A few candidates answered correctly. Many copied the diagram from the question and did not specify the shape of the seeds in words.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(v)(b)",
+      "question_text": "Given below is a schematic representation of the inheritance of the shape of seeds of garden pea. What does the ratio 3:1 in the F2 generation represent?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "3 – Round; 1 – Wrinkled",
+      "total_marks": 1,
+      "key_points": [
+        "The 3:1 ratio represents phenotypic ratio in F2",
+        "3 Round : 1 Wrinkled"
+      ],
+      "model_answer": "The 3:1 ratio represents the phenotypic ratio in F2 generation: 3 Round seeds to 1 Wrinkled seed.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing Genotype instead of Phenotype"
+      ],
+      "examiner_notes": "Majority of the candidates answered correctly. However, a few wrote Genotype instead of Phenotype.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(v)(c)",
+      "question_text": "Given below is a schematic representation of the inheritance of the shape of seeds of garden pea. State Mendel's Law of Dominance.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Out of a pair of contrasting characters / traits / alleles, only one is expressed while the other is suppressed.",
+      "total_marks": 1,
+      "key_points": [
+        "Out of a pair of contrasting characters/alleles, only one (dominant) is expressed",
+        "The other (recessive) is suppressed in the F1 generation"
+      ],
+      "model_answer": "Out of a pair of contrasting characters (alleles), only one is expressed (dominant) while the other is suppressed (recessive).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not mentioning a pair of contrasting characters/alleles; writing about dominant and recessive traits without referencing the pair"
+      ],
+      "examiner_notes": "Most candidates answered it correctly. A few failed to mention a pair of contrasting characters/alleles and instead wrote about dominant and recessive traits.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "Define the term-Diapedesis.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Squeezing / oozing out of WBCs through the walls of capillaries.",
+      "total_marks": 1,
+      "key_points": [
+        "Diapedesis is the process of WBCs squeezing through capillary walls",
+        "Occurs only through capillaries (single epithelial layer)"
+      ],
+      "model_answer": "Diapedesis is the process of squeezing or oozing out of WBCs (white blood cells) through the walls of capillaries.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing blood vessels instead of capillaries"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote blood vessels instead of capillaries.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "Distinguish between Diabetes mellitus and Diabetes insipidus (endocrine gland concerned).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diabetes mellitus – Pancreas; Diabetes insipidus – Pituitary",
+      "total_marks": 2,
+      "key_points": [
+        "Diabetes mellitus involves the pancreas (insulin deficiency)",
+        "Diabetes insipidus involves the pituitary gland (ADH/vasopressin deficiency)"
+      ],
+      "model_answer": "Diabetes mellitus: Pancreas. Diabetes insipidus: Pituitary gland.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing the names of glands — wait, that IS the answer; some candidates wrote hormone names instead of gland names and lost marks"
+      ],
+      "examiner_notes": "Majority of the candidates mentioned the correct hormones. However, a few candidates wrote the names of glands and lost marks — question specifically asks for gland.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iii)",
+      "question_text": "Carbon monoxide is dangerous when inhaled in excess. Comment on the statement.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "CO combines with oxygen to form a stable compound – Carboxyhaemoglobin which cuts off the supply of oxygen to tissues. Results in asphyxiation / death.",
+      "total_marks": 2,
+      "key_points": [
+        "CO combines with haemoglobin to form carboxyhaemoglobin",
+        "Carboxyhaemoglobin is a stable compound and prevents oxygen from binding",
+        "Cuts off oxygen supply to tissues",
+        "Results in asphyxiation or death"
+      ],
+      "model_answer": "Carbon monoxide combines with haemoglobin to form a stable compound called carboxyhaemoglobin, which cuts off the supply of oxygen to the tissues, resulting in asphyxiation and death.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing about formation of carbamino haemoglobin instead of carboxyhaemoglobin"
+      ],
+      "examiner_notes": "A large number of candidates were vague in answering. They wrote about carbamino haemoglobin instead of carboxyhaemoglobin.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iv)(a)",
+      "question_text": "The diagram given below shows a section of the human ovary. Name the process for the release of the part labelled 1 (ovum/egg being released from Graafian follicle).",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Open-ended answer required, scheme has: Ovulation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Ovulation",
+      "total_marks": 1,
+      "key_points": [
+        "Ovulation is the process of release of the egg (ovum) from the Graafian follicle in the ovary"
+      ],
+      "model_answer": "Ovulation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing implantation instead of ovulation"
+      ],
+      "examiner_notes": "Most candidates failed to score as they wrote implantation instead of ovulation.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iv)(b)",
+      "question_text": "The diagram given below shows a section of the human ovary. Write the name of the structure marked 2 (structure remaining after ovulation).",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Corpus luteum",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Corpus luteum",
+      "total_marks": 1,
+      "key_points": [
+        "Corpus luteum is the yellow glandular body formed from the ruptured Graafian follicle after ovulation",
+        "It secretes progesterone"
+      ],
+      "model_answer": "Corpus luteum",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing Graafian follicle instead of corpus luteum"
+      ],
+      "examiner_notes": "Majority of the candidates made an error by writing Graafian follicle instead of corpus luteum.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(v)",
+      "question_text": "Draw a neat, labelled diagram of a chloroplast.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram of chloroplast with labels: Double membrane, Stroma, Granum, Thylakoid, Fret",
+      "total_marks": 3,
+      "key_points": [
+        "Double membrane (outer and inner membrane)",
+        "Stroma",
+        "Granum (stack of thylakoids)",
+        "Thylakoid",
+        "Fret (intergranal lamellae)"
+      ],
+      "model_answer": "A neat diagram of a chloroplast showing: double membrane, stroma, granum, thylakoid, and fret.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Drawing a single membrane instead of double membrane",
+        "Incorrect labelling"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few made errors in drawing a single membrane and labelling incorrectly.",
+      "topic": "Photosynthesis",
+      "diagram_required": true
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "Define the term hormone.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Secretions of endocrine glands which are transported by blood and act on target organs or cells of the body.",
+      "total_marks": 1,
+      "key_points": [
+        "Secretions of endocrine glands",
+        "Transported by blood",
+        "Act on specific target organs or cells"
+      ],
+      "model_answer": "Hormones are chemical secretions of endocrine glands that are transported by the blood and act on specific target organs or cells of the body.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not specifying secretions of endocrine glands or not mentioning transport by blood"
+      ],
+      "examiner_notes": "Most candidates answered correctly. Some did not specify the secretions of endocrine glands and the manner in which hormones were transported.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(ii)(a)",
+      "question_text": "Which parts of the ear are responsible for: Static equilibrium?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Utriculus / Sacculus",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Utriculus / Sacculus",
+      "total_marks": 1,
+      "key_points": [
+        "Static equilibrium is maintained by the utriculus and sacculus (otolith organs) in the vestibule"
+      ],
+      "model_answer": "Utriculus and Sacculus",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Utriculus",
+        "Sacculus"
+      ],
+      "common_errors": [
+        "Confusing functions of semicircular canals and utriculus/sacculus"
+      ],
+      "examiner_notes": "Majority answered correctly. A few candidates were confused with the functions of semicircular canals and utriculus/sacculus.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(ii)(b)",
+      "question_text": "Which parts of the ear are responsible for: Dynamic equilibrium?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Semicircular canals",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Semicircular canals",
+      "total_marks": 1,
+      "key_points": [
+        "Dynamic equilibrium (balance during movement) is maintained by the three semicircular canals and their ampullae"
+      ],
+      "model_answer": "Semicircular canals",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing only ampulla without specifying semicircular canals"
+      ],
+      "examiner_notes": "A few candidates answered correctly. Some wrote only ampulla but did not specify semicircular canals.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(iii)",
+      "question_text": "Mention two structural differences between an artery and a vein.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Artery – Narrow lumen, thick muscle layer, elastic, valves absent. Vein – Wide lumen, thin muscle layer, non-elastic, valves present.",
+      "total_marks": 2,
+      "key_points": [
+        "Artery: narrow lumen; Vein: wide lumen",
+        "Artery: thick muscle layer; Vein: thin muscle layer",
+        "Artery: elastic walls; Vein: non-elastic walls",
+        "Artery: no valves; Vein: valves present"
+      ],
+      "model_answer": "Artery: Narrow lumen, thick muscular wall, elastic, no valves. Vein: Wide lumen, thin muscular wall, non-elastic, valves present.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing arteries are thick and veins are thin (vague); describing functions instead of structure"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote arteries were thick and veins were thin. Some mentioned functions instead of structure and lost marks.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(iv)",
+      "question_text": "Write any two limitations of using a Ganong's Potometer to demonstrate the uptake of water.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Introducing air bubble is difficult, twig may not remain alive for long, air temperature affects the position of bubble.",
+      "total_marks": 2,
+      "key_points": [
+        "Difficult to introduce air bubble without leakage",
+        "Twig may not remain alive for long",
+        "Air temperature fluctuations affect the bubble position",
+        "Measures water uptake not transpiration directly"
+      ],
+      "model_answer": "1. It is difficult to introduce the air bubble without air leaks. 2. The twig may not remain alive for long, affecting results.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Air temperature affects the position of bubble"
+      ],
+      "common_errors": [
+        "Writing precautions instead of limitations"
+      ],
+      "examiner_notes": "A large number answered correctly. A few wrote precautions instead of limitations and lost marks.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(a)",
+      "question_text": "Mahesh couldn't see the diagram on the blackboard clearly as it appeared blurred to him. Name the defect of the eye Mahesh is suffering from.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Myopia",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Myopia / short sight / Near sightedness",
+      "total_marks": 1,
+      "key_points": [
+        "Myopia (short-sightedness/near-sightedness) — difficulty seeing distant objects clearly"
+      ],
+      "model_answer": "Myopia (short-sightedness / near-sightedness)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Short sight",
+        "Near sightedness"
+      ],
+      "common_errors": [
+        "Writing hyperopia instead of myopia"
+      ],
+      "examiner_notes": "Majority of the candidates answered correctly. A few wrote hyperopia instead of myopia.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(b)",
+      "question_text": "Mahesh couldn't see the diagram on the blackboard clearly. Where is the image formed in this defect (Myopia)?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "In front of the retina",
+      "marks_per_correct_point": 1,
+      "scheme_text": "In front of the retina",
+      "total_marks": 1,
+      "key_points": [
+        "In myopia, the eyeball is elongated or lens is too convex, so the image is formed in front of the retina"
+      ],
+      "model_answer": "In front of the retina",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing beyond the retina instead of in front of/before the retina"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote beyond the retina instead of before the retina and lost a mark.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(c)",
+      "question_text": "Mahesh consults an eye doctor and is prescribed suitable lenses to correct the defect (Myopia). Which type of lens do his spectacles have?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Concave / diverging lens",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Concave / diverging lens",
+      "total_marks": 1,
+      "key_points": [
+        "Myopia is corrected by a concave (diverging) lens which diverges light rays before they enter the eye"
+      ],
+      "model_answer": "Concave (diverging) lens",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Diverging lens"
+      ],
+      "common_errors": [
+        "Writing convex lens instead of concave lens"
+      ],
+      "examiner_notes": "Majority answered correctly. A few wrote convex lens in place of concave lens.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "Define the term ultrafiltration.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Filtration of the liquid part of blood under high pressure in the glomerulus.",
+      "total_marks": 1,
+      "key_points": [
+        "Filtration of blood (plasma) under high pressure",
+        "Occurs in the glomerulus",
+        "Small molecules pass into Bowman's capsule"
+      ],
+      "model_answer": "Ultrafiltration is the filtration of the liquid part of blood under high pressure in the glomerulus, resulting in glomerular filtrate passing into the Bowman's capsule.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not mentioning glomerulus or filtration under high pressure"
+      ],
+      "examiner_notes": "A large number answered correctly. A few did not mention glomerulus and filtration of blood under high pressure.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(ii)(a)",
+      "question_text": "Name the mineral elements required for: Clotting of blood",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Calcium",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Calcium / Ca",
+      "total_marks": 1,
+      "key_points": [
+        "Calcium (Ca2+) is required for the clotting cascade — it helps convert prothrombin to thrombin"
+      ],
+      "model_answer": "Calcium (Ca)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Ca",
+        "Ca2+"
+      ],
+      "common_errors": [
+        "Writing vitamin K instead of calcium"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote vitamin K instead of calcium.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(ii)(b)",
+      "question_text": "Name the mineral elements required for: Synthesis of thyroxine",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Iodine",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Iodine / I2",
+      "total_marks": 1,
+      "key_points": [
+        "Iodine is an essential component of thyroxine (tetraiodothyronine/T4)"
+      ],
+      "model_answer": "Iodine (I)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "I2",
+        "I"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Majority of the candidates answered it correctly.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(iii)",
+      "question_text": "Mention two harmful effects of noise pollution.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Irritation, headache, interferes in communication, loss of concentration, disturbs sleep, damages eardrum, disturbs bird life. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Causes irritation and headache",
+        "Interferes in communication",
+        "Loss of concentration",
+        "Disturbs sleep",
+        "Damages eardrum",
+        "Disturbs bird life and wildlife"
+      ],
+      "model_answer": "1. Noise pollution causes loss of concentration and headaches. 2. Prolonged exposure damages the eardrum, leading to hearing loss.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Irritation",
+        "Interferes in communication",
+        "Disturbs sleep",
+        "Disturbs bird life"
+      ],
+      "common_errors": [],
+      "examiner_notes": "No errors were found for this question.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(iv)",
+      "question_text": "Why are RBCs efficient in their functions though they lack nucleus and mitochondria?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Lack of nucleus provides a large surface area for absorption and transportation of oxygen. Lack of mitochondria means that they do not use oxygen and glucose for their respiration, all the oxygen and glucose is transported to tissues.",
+      "total_marks": 2,
+      "key_points": [
+        "Absence of nucleus provides more space/surface area for haemoglobin and oxygen transport",
+        "Absence of mitochondria means RBCs do not consume oxygen for their own respiration — all oxygen is delivered to tissues"
+      ],
+      "model_answer": "Lack of nucleus provides a larger surface area for oxygen absorption and transport. Lack of mitochondria ensures RBCs do not consume oxygen for their own respiration, so all oxygen is transported to body tissues.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Answering only one part (nucleus or mitochondria) due to carelessness"
+      ],
+      "examiner_notes": "Majority of the candidates failed to answer both due to carelessness. A few candidates answered correctly for nucleus and mitochondria being absent.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(a)",
+      "question_text": "The diagram given below represents a stage in mitosis (chromosomes being pulled to poles). Identify the stage given above.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Anaphase",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Anaphase",
+      "total_marks": 1,
+      "key_points": [
+        "Anaphase: chromatids/chromosomes are pulled toward opposite poles by spindle fibres"
+      ],
+      "model_answer": "Anaphase",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing metaphase or prophase instead of anaphase"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote metaphase and prophase instead of anaphase.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(b)",
+      "question_text": "The diagram given below represents a stage in mitosis. Give one reason to support your answer in (a) (Anaphase).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Chromatids / chromosomes are pulled toward the poles.",
+      "total_marks": 1,
+      "key_points": [
+        "Chromatids/chromosomes are being pulled toward opposite poles of the cell by spindle fibres"
+      ],
+      "model_answer": "The chromatids (daughter chromosomes) are being pulled toward opposite poles of the cell.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failing to mention that chromatids are being pulled towards the poles"
+      ],
+      "examiner_notes": "A few candidates answered it correctly. Many failed to mention that the chromatids are being pulled towards the poles of the cell.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(c)",
+      "question_text": "The diagram given below represents a stage in mitosis. Mention the number of chromosomes given in the diagram.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "4",
+      "marks_per_correct_point": 1,
+      "scheme_text": "4",
+      "total_marks": 1,
+      "key_points": [
+        "The diagram shows 4 chromosomes (as seen in the anaphase figure with 4 chromatids moving to each pole — total 4 in the cell at that stage as depicted)"
+      ],
+      "model_answer": "4",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 2, 16, 23, or 46 instead of 4"
+      ],
+      "examiner_notes": "Most candidates answered correctly. A few wrote incorrect answers like 2, 16, 23, and 46 and lost the mark.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    }
+  ]
+}

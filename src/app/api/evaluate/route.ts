@@ -49,6 +49,7 @@ interface EvaluationOutput {
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
   examiner_feedback: string;
+  improvement_tips: string[];
   // Objective-only fields
   is_objective?: boolean;
   correct_answer?: string;
@@ -71,7 +72,8 @@ RULES — READ CAREFULLY:
 6. conceptual_errors: flag misconceptions or factually wrong statements in the student's answer. Empty array if none.
 7. model_answer: use the provided model_answer verbatim if it exists. If absent, construct a concise examiner-quality answer strictly from scheme_text and key_points — label it ai_generated.
 8. examiner_feedback: 2–3 sentences max. Be direct. Identify the single most impactful gap or strength.
-9. Output ONLY valid JSON matching the schema below. No preamble, no markdown fences, no trailing text.
+9. improvement_tips: 2–3 tips, each tied to a SPECIFIC point in points_missed or conceptual_errors for THIS question/topic. Never output generic study advice ("revise the chapter", "practice more questions"). Each tip must name the exact concept/sub-topic and what to do about it — e.g. "You confused molarity with molality — molarity uses volume of solution (L), molality uses mass of solvent (kg). Redo 3 numericals switching between the two." If the student got full marks, return generic-free reinforcement tips on a related, slightly harder application of the same concept instead of an empty array.
+10. Output ONLY valid JSON matching the schema below. No preamble, no markdown fences, no trailing text.
 
 OUTPUT SCHEMA:
 {
@@ -82,7 +84,8 @@ OUTPUT SCHEMA:
   "conceptual_errors": ["string"],
   "model_answer": "string",
   "model_answer_source": "verified" | "ai_generated",
-  "examiner_feedback": "string"
+  "examiner_feedback": "string",
+  "improvement_tips": ["string"]
 }`;
 }
 
@@ -117,6 +120,17 @@ ${scheme.common_errors ? `Common Pupil Errors (from CISCE Examiner Comments):\n$
 ${scheme.examiner_notes ? `Examiner Notes:\n${scheme.examiner_notes}` : ""}
 
 Evaluate the student's answer against the marking scheme above. Return valid JSON only.`;
+}
+
+// ─── Date Handling ─────────────────────────────────────────────────────────────
+// BUG FIX (Handoff 7 item 1): new Date().toISOString() always returns the UTC
+// date. IST is UTC+5:30, so any user in India using the app between 00:00 and
+// 05:30 IST is silently on "yesterday" per the server, and after 18:30 IST is
+// silently on "tomorrow". Either edge makes the daily token cap appear to
+// reset mid-session even though it's the same calendar day locally. Pin the
+// usage table to IST explicitly instead of server/UTC time.
+function getUsageDateIST(): string {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" }); // YYYY-MM-DD
 }
 
 // ─── Objective Answer Matching ────────────────────────────────────────────────
@@ -257,8 +271,16 @@ export async function POST(req: NextRequest) {
   const scheme = schemeRow as MarkingScheme;
 
   // 3. Determine token cost BEFORE cap check
-  const tokenCost = question.is_subjective ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE;
-  const today = new Date().toISOString().slice(0, 10);
+  // BUG FIX (Handoff 7 item 2): route strictly on is_subjective was routing
+  // genuine free-text "short_answer" questions through the exact-string
+  // objective matcher whenever a row happened to have correct_answer populated
+  // and is_subjective left false from extraction. short_answer is inherently
+  // free-text and needs Claude's semantic evaluation, not string equality —
+  // this is a defense-in-depth check on top of the SQL backfill, since new
+  // Physics/Biology extractions will hit the same extraction bug.
+  const isSubjective = question.is_subjective || question.question_type === "short_answer";
+  const tokenCost = isSubjective ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE;
+  const today = getUsageDateIST();
 
   const { data: usageRow } = await supabase
     .from("usage")
@@ -284,7 +306,7 @@ export async function POST(req: NextRequest) {
 
   // ─── 4a. OBJECTIVE PATH (no Claude call) ─────────────────────────────────
 
-  if (!question.is_subjective) {
+  if (!isSubjective) {
     if (!question.correct_answer) {
       return NextResponse.json(
         { error: "Answer key for this question hasn't been added yet. Try a different question." },
@@ -311,6 +333,9 @@ export async function POST(req: NextRequest) {
       examiner_feedback: isCorrect
         ? "Correct."
         : `Incorrect. The correct answer is: ${question.correct_answer}`,
+      improvement_tips: isCorrect
+        ? []
+        : [`Revisit this exact question — the correct answer was "${question.correct_answer}".`],
       is_objective: true,
       correct_answer: question.correct_answer,
       is_correct: isCorrect,
@@ -386,6 +411,16 @@ export async function POST(req: NextRequest) {
   // 6. Enforce model_answer_source from DB truth
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
+  // CORRECTION (was wrong in the previous pass): this API used to redact
+  // model_answer/conceptual_errors/improvement_tips into placeholder lock
+  // strings before sending the response, on the assumption there was a
+  // server-side premium boundary to enforce. There isn't — the actual
+  // "premium" experience shipped is PremiumGate.tsx, a client-side blur +
+  // waitlist-email component. "Free during beta" is right there in its copy.
+  // Redacting server-side meant the blur had nothing real underneath it, and
+  // even after a user joined the waitlist there was no real content to reveal.
+  // The API's only job is to return the real evaluation. Gating is 100% a
+  // frontend/UX concern now — see PremiumGate.tsx note below.
   const evaluation: EvaluationOutput = {
     ...claudeEval,
     token_cost: tokenCost,
@@ -474,6 +509,7 @@ async function persistSubmission(
     model_answer: evaluation.model_answer,
     model_answer_source: evaluation.model_answer_source,
     examiner_feedback: evaluation.examiner_feedback,
+    improvement_tips: evaluation.improvement_tips,
   });
 
   if (evalError) {

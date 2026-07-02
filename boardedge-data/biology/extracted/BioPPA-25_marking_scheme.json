@@ -1,0 +1,2162 @@
+{
+  "year": 2025,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "The number of live births per thousand people per year is called:\n(a) Mortality\n(b) Population density\n(c) Population growth rate\n(d) Natality",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Mortality",
+        "(b) Population density",
+        "(c) Population growth rate",
+        "(d) Natality"
+      ],
+      "correct_answer": "(d) Natality",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Natality",
+      "total_marks": 1,
+      "key_points": [
+        "Natality refers to the number of live births per thousand people per year"
+      ],
+      "model_answer": "(d) Natality",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion with mortality",
+        "Confusion with population growth rate"
+      ],
+      "examiner_notes": "Most of the candidates wrote the correct answer. However, 'mortality' / 'population growth rate' was written as an occasional incorrect answer.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "The structure that lies at the junction of the choroid and the iris and is itself a part of the choroid is called:\n(a) Ciliary body\n(b) Suspensory ligament\n(c) Pupil\n(d) Lens",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Ciliary body",
+        "(b) Suspensory ligament",
+        "(c) Pupil",
+        "(d) Lens"
+      ],
+      "correct_answer": "(a) Ciliary body",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Ciliary body",
+      "total_marks": 1,
+      "key_points": [
+        "Ciliary body lies at the junction of the choroid and iris and is part of the choroid"
+      ],
+      "model_answer": "(a) Ciliary body",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing suspensory ligament instead of ciliary body"
+      ],
+      "examiner_notes": "Majority of the candidates wrote the correct answer. However, a few candidates mentioned 'suspensory ligament' instead of 'Ciliary Body'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "Assertion (A): Seminal vesicles pour an alkaline secretion into the semen as it passes through the ureter.\nReason (R): The female vagina is acidic and needs to be neutralized for sperm survival.\n(a) (A) is true and (R) is false.\n(b) (A) is false and (R) is true.\n(c) Both (A) and (R) are true.\n(d) Both (A) and (R) are false.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true.",
+        "(d) Both (A) and (R) are false."
+      ],
+      "correct_answer": "(b) A is false and R is true.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) A is false and R is true. The assertion is false because seminal vesicles pour secretion into the semen as it passes through the sperm duct (vas deferens), not the ureter. The reason is true as the vagina is acidic and needs neutralization for sperm survival.",
+      "total_marks": 1,
+      "key_points": [
+        "Seminal vesicles secrete into the sperm duct, not the ureter — assertion is false",
+        "Vagina is acidic; alkaline secretion neutralizes it for sperm survival — reason is true"
+      ],
+      "model_answer": "(b) A is false and R is true.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Candidates interpreted the assertion as true, not recognising that the secretion enters via the sperm duct, not the ureter"
+      ],
+      "examiner_notes": "Several candidates could not answer it correctly. They interpreted the assertion statement to be true as they were not clear about the specific roles of each gland.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "The hormone that induces vigorous contractions of the uterus in a pregnant mother is:\n(a) Oestrogen\n(b) Prolactin\n(c) Oxytocin\n(d) Progesterone",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Oestrogen",
+        "(b) Prolactin",
+        "(c) Oxytocin",
+        "(d) Progesterone"
+      ],
+      "correct_answer": "(c) Oxytocin",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Oxytocin",
+      "total_marks": 1,
+      "key_points": [
+        "Oxytocin induces vigorous uterine contractions during parturition"
+      ],
+      "model_answer": "(c) Oxytocin",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing oestrogen or progesterone instead of oxytocin"
+      ],
+      "examiner_notes": "Most of the candidates answered it correctly. However, a few candidates were confused and wrote 'oestrogen' or 'progesterone' instead of 'oxytocin'.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "A scientist wanted to conduct a genetic experiment on mice. He cut the tails of all the mice and made them reproduce. What will be the phenotype of the offsprings?\n(a) All the offsprings will be tailless.\n(b) There will be a mix of tailed and tailless offsprings.\n(c) All the offsprings will have tails.\n(d) Tail of the offsprings cannot be predicted.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) All the offsprings will be tailless.",
+        "(b) There will be a mix of tailed and tailless offsprings.",
+        "(c) All the offsprings will have tails.",
+        "(d) Tail of the offsprings cannot be predicted."
+      ],
+      "correct_answer": "(c) All the offsprings will have tails.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) All the offsprings will have tails. Cutting tails is an acquired (somatic) characteristic and is not inherited; the genotype of the mice is unchanged.",
+      "total_marks": 1,
+      "key_points": [
+        "Acquired characteristics are not inherited",
+        "Cutting tails does not alter the genotype of mice",
+        "All offspring will inherit the gene for tails and will have tails"
+      ],
+      "model_answer": "(c) All the offsprings will have tails.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Choosing option (d) — inability to apply concept that acquired traits are not heritable"
+      ],
+      "examiner_notes": "A large number of candidates were confused about the characters passing on to the next generation. They incorrectly chose option (d).",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "Assertion (A): A turgid plant cell is in a balanced state.\nReason (R): In a turgid cell, turgor pressure and wall pressure are equal and in the same direction.\n(a) (A) is true and (R) is false.\n(b) (A) is false and (R) is true.\n(c) Both (A) and (R) are true.\n(d) Both (A) and (R) are false.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true.",
+        "(d) Both (A) and (R) are false."
+      ],
+      "correct_answer": "(a) A is true and R is false.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) A is true and R is false. A turgid plant cell is in a balanced state (A is true). However, in a turgid cell, turgor pressure and wall pressure are equal but act in OPPOSITE directions, not the same direction (R is false).",
+      "total_marks": 1,
+      "key_points": [
+        "A turgid cell is in a balanced state — assertion is true",
+        "Turgor pressure and wall pressure act in opposite directions — reason is false"
+      ],
+      "model_answer": "(a) A is true and R is false.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Incorrectly selecting option (c) — both true — due to confusion about direction of turgor and wall pressure"
+      ],
+      "examiner_notes": "A few candidates could answer this question correctly. Due to lack of clear understanding about turgor pressure, wall pressure and turgidity, most of the candidates incorrectly selected option (c) instead of option (a).",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "The optimum temperature for photosynthesis is:\n(a) 10 – 15°C\n(b) 60 – 65°C\n(c) 40 – 45°C\n(d) 25 – 35°C",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 10 – 15°C",
+        "(b) 60 – 65°C",
+        "(c) 40 – 45°C",
+        "(d) 25 – 35°C"
+      ],
+      "correct_answer": "(d) 25 – 35°C",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) 25 – 35°C",
+      "total_marks": 1,
+      "key_points": [
+        "Optimum temperature for photosynthesis is 25–35°C"
+      ],
+      "model_answer": "(d) 25 – 35°C",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "All the candidates answered this question correctly.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(viii)","question_text":"Ajay and Vijay are siblings. Ajay can roll his tongue while Vijay cannot. What is the genotype of their parents?\n(a) Both the parents are homozygous dominant.\n(b) Both the parents are homozygous recessive.\n(c) One parent is homozygous dominant, and the other is homozygous recessive.\n(d) Both the parents are heterozygous dominant.","is_subjective":false,"question_type":"mcq","options":["(a) Both the parents are homozygous dominant.","(b) Both the parents are homozygous recessive.","(c) One parent is homozygous dominant, and the other is homozygous recessive.","(d) Both the parents are heterozygous dominant."],"correct_answer":"(d) Both parents are heterozygous dominant.","marks_per_correct_point":1,"scheme_text":"(d) Both parents are heterozygous dominant. Since one sibling is non-roller (homozygous recessive, tt), both parents must carry the recessive allele; since they can roll, they are Tt × Tt.","total_marks":1,"key_points":["Vijay being non-roller (tt) means both parents carry the recessive allele t","Both parents can roll tongues so they are Tt (heterozygous dominant)"],"model_answer":"(d) Both parents are heterozygous dominant.","model_answer_verified":true,"accepted_alternatives":[],"common_errors":["Choosing option (a) or (c) — failure to associate phenotype with genotype using Punnett square reasoning"],"examiner_notes":"Most of the candidates wrote the correct answer. However, some candidates chose option (a) and option (c). They made random choices indicating their failure to associate phenotype with genotypes.","topic":"Genetics","diagram_required":false},
+    {
+      "question_number": "1(ix)",
+      "question_text": "Assertion (A): Deficiency of Antidiuretic hormone causes an increase in urination.\nReason (R): Antidiuretic hormone acts on the kidney to reabsorb water from the kidney tubules.\n(a) (A) is true and (R) is false.\n(b) (A) is false and (R) is true.\n(c) Both (A) and (R) are true.\n(d) Both (A) and (R) are false.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true.",
+        "(d) Both (A) and (R) are false."
+      ],
+      "correct_answer": "(c) Both A and R are true.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Both A and R are true. ADH deficiency means less water reabsorption in kidney tubules, leading to increased urination (diabetes insipidus). ADH does act on kidney tubules to promote water reabsorption.",
+      "total_marks": 1,
+      "key_points": [
+        "ADH deficiency causes increased urination — assertion true",
+        "ADH acts on kidney tubules to reabsorb water — reason true"
+      ],
+      "model_answer": "(c) Both A and R are true.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selecting distractors due to inability to relate hormones with kidney tubule function"
+      ],
+      "examiner_notes": "Only a few candidates wrote the correct answer. Many selected the distractors as they were unable to relate the role of hormones with the function of the kidney tubules.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "A phase of cell division where the spindle fibres disappear is:\n(a) Telophase\n(b) Prophase\n(c) Metaphase\n(d) Anaphase",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Telophase",
+        "(b) Prophase",
+        "(c) Metaphase",
+        "(d) Anaphase"
+      ],
+      "correct_answer": "(a) Telophase",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Telophase",
+      "total_marks": 1,
+      "key_points": [
+        "Spindle fibres disappear during Telophase"
+      ],
+      "model_answer": "(a) Telophase",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing Anaphase instead of Telophase"
+      ],
+      "examiner_notes": "Most of the candidates answered this question correctly. However, a few candidates wrote 'Anaphase' in place of 'Telophase'.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Assertion(A): Arachnoid layer helps in speeding up the transmission of nerve impulses along the axons.\nReason(R): Axon endings at the synapse secrete acetylene.\n(a) (A) is true and (R) is false.\n(b) (A) is false and (R) is true.\n(c) Both (A) and (R) are true.\n(d) Both (A) and (R) are false.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true.",
+        "(d) Both (A) and (R) are false."
+      ],
+      "correct_answer": "(d) Both A and R are false.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Both A and R are false. The arachnoid layer is a meningeal covering of the brain; it does not speed up nerve impulses (that is the myelin sheath). Axon endings secrete acetylcholine, not acetylene.",
+      "total_marks": 1,
+      "key_points": [
+        "Arachnoid is a meningeal covering, not involved in speeding nerve impulses — assertion false",
+        "Axon endings secrete acetylcholine, not acetylene — reason false"
+      ],
+      "model_answer": "(d) Both A and R are false.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selecting option (a) or (b) due to inadequate understanding of meninges and neurotransmitters"
+      ],
+      "examiner_notes": "Only a few candidates chose the correct option. Most candidates wrongly selected option (a) or option (b) indicating inadequate understanding of the concept.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "Many nuclear power plants are constructed near water sources. They use water for cooling their machinery and release it back into the water stream. Identify the kind of pollution caused.\n(a) Radiation pollution\n(b) Water pollution\n(c) Industrial pollution\n(d) Thermal pollution",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Radiation pollution",
+        "(b) Water pollution",
+        "(c) Industrial pollution",
+        "(d) Thermal pollution"
+      ],
+      "correct_answer": "(d) Thermal pollution",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Thermal pollution",
+      "total_marks": 1,
+      "key_points": [
+        "Releasing heated water back into water bodies constitutes thermal pollution"
+      ],
+      "model_answer": "(d) Thermal pollution",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selecting radiation pollution or water pollution"
+      ],
+      "examiner_notes": "Majority of the candidates answered this question correctly. However, some candidates opted for 'radiation pollution' / 'water pollution'.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "Owls are nocturnal animals. They are active at night and hunt small animals for food. Owls have large eyes and can see well at night. This is due to:\n(a) Cones and Rhodopsin\n(b) Rods and Iodopsin\n(c) Rods and Rhodopsin\n(d) Cones and Iodopsin",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Cones and Rhodopsin",
+        "(b) Rods and Iodopsin",
+        "(c) Rods and Rhodopsin",
+        "(d) Cones and Iodopsin"
+      ],
+      "correct_answer": "(c) Rods and Rhodopsin",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Rods and Rhodopsin. Rods contain rhodopsin (visual purple) and are responsible for vision in dim light.",
+      "total_marks": 1,
+      "key_points": [
+        "Rods function in dim/night light",
+        "Rhodopsin is the photosensitive pigment in rods"
+      ],
+      "model_answer": "(c) Rods and Rhodopsin",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion between functions of rods and cones in dim vs bright light"
+      ],
+      "examiner_notes": "Majority of the candidates wrote the correct answer. However, few candidates were confused between the functions of the sensory cells in dim light and bright light and opted for the wrong answer.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Sunil tried to match the tropic movements in plants with the stimulus they respond to. The tabulation is given below:\nP - Thigmotropism - Touch\nQ - Geotropism - Water\nR - Chemotropism - Chemicals\nS - Phototropism - Gravity\nIdentify the correct pair:\n(a) P and R\n(b) Q and S\n(c) R and S\n(d) P and S",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) P and R",
+        "(b) Q and S",
+        "(c) R and S",
+        "(d) P and S"
+      ],
+      "correct_answer": "(a) P and R",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) P and R. P (Thigmotropism–Touch) and R (Chemotropism–Chemicals) are correctly matched. Q (Geotropism) responds to gravity not water; S (Phototropism) responds to light not gravity.",
+      "total_marks": 1,
+      "key_points": [
+        "Thigmotropism responds to touch — P correct",
+        "Chemotropism responds to chemicals — R correct",
+        "Geotropism responds to gravity (not water)",
+        "Phototropism responds to light (not gravity)"
+      ],
+      "model_answer": "(a) P and R",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "All the candidates answered this question correctly.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "Observe the following picture [of a person with bulging eyes and neck swelling], identify the defect and the cause of the defect.\n(a) Simple goitre, under secretion of thyroxine.\n(b) Ex-ophthalmic goitre, over secretion of thyroxine.\n(c) Simple goitre, over secretion of thyroxine.\n(d) Ex-ophthalmic goitre, under secretion of thyroxine.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Simple goitre, under secretion of thyroxine.",
+        "(b) Ex-ophthalmic goitre, over secretion of thyroxine.",
+        "(c) Simple goitre, over secretion of thyroxine.",
+        "(d) Ex-ophthalmic goitre, under secretion of thyroxine."
+      ],
+      "correct_answer": "(b) Ex-ophthalmic goitre, over secretion of thyroxine.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Ex-ophthalmic goitre, over secretion of thyroxine. The image shows protruding eyes (exophthalmos) and enlarged thyroid — characteristic of hyperthyroidism / Graves' disease.",
+      "total_marks": 1,
+      "key_points": [
+        "Exophthalmic goitre is caused by over-secretion of thyroxine",
+        "Protruding eyes (exophthalmos) are a key distinguishing feature"
+      ],
+      "model_answer": "(b) Ex-ophthalmic goitre, over secretion of thyroxine.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failure to relate the visual defect with the specific hormone secretion level"
+      ],
+      "examiner_notes": "A large number of candidates wrote the correct answer. However, some candidates failed to relate the given defect with the specific hormone and lost marks.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(a)",
+      "question_text": "Name the following: The fully developed part of the ovary containing a mature ovum.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Graafian follicle",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Graafian follicle / mature ovarian follicle / tertiary follicle",
+      "total_marks": 1,
+      "key_points": [
+        "Graafian follicle is the fully developed follicle in the ovary containing a mature ovum"
+      ],
+      "model_answer": "Graafian follicle",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "mature ovarian follicle",
+        "tertiary follicle"
+      ],
+      "common_errors": [
+        "Writing 'ovum' or 'follicle' instead of 'graafian follicle'"
+      ],
+      "examiner_notes": "Some candidates wrote 'ovum/ follicle' instead of 'graafian follicle' for the fully developed part of the ovary.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(b)",
+      "question_text": "Name the following: A waxy layer on the upper epidermis of leaves meant to reduce Transpiration.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Cuticle",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cuticle / Cuticular layer",
+      "total_marks": 1,
+      "key_points": [
+        "Cuticle is the waxy layer on upper epidermis that reduces transpiration"
+      ],
+      "model_answer": "Cuticle",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Cuticular layer"
+      ],
+      "common_errors": [
+        "Writing 'cuticular transpiration' instead of cuticle"
+      ],
+      "examiner_notes": "Some candidates wrongly mentioned 'cuticular transpiration' in place of 'cuticle', leading to loss of marks.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(c)",
+      "question_text": "Name the following: The ear ossicle which opens into the oval window of Cochlea.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Stapes",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Stapes / Stirrup",
+      "total_marks": 1,
+      "key_points": [
+        "Stapes (stirrup) is the ear ossicle that articulates with the oval window of the cochlea"
+      ],
+      "model_answer": "Stapes",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Stirrup"
+      ],
+      "common_errors": [
+        "Writing malleus or incus instead of stapes"
+      ],
+      "examiner_notes": "Several candidates were confused with the sequence of the ear ossicles in the middle ear. Instead of 'stapes', other ear ossicles like 'malleus' or 'incus' were referred by them.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(d)",
+      "question_text": "Name the following: The physiological process which is the starting point of all food chains.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Photosynthesis",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Photosynthesis",
+      "total_marks": 1,
+      "key_points": [
+        "Photosynthesis is the process by which producers fix energy, making it the starting point of all food chains"
+      ],
+      "model_answer": "Photosynthesis",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'respiration in plants' instead of photosynthesis"
+      ],
+      "examiner_notes": "Some candidates incorrectly wrote 'respiration in plants' instead of 'photosynthesis' indicating lack of clarity about the two vital processes.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(i)(e)",
+      "question_text": "Name the following: An insect which is a classic example of natural selection due to industrial melanism.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Peppered moth",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Peppered moth / Biston betularia",
+      "total_marks": 1,
+      "key_points": [
+        "Peppered moth (Biston betularia) is the classic example of industrial melanism and natural selection"
+      ],
+      "model_answer": "Peppered moth (Biston betularia)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Biston betularia"
+      ],
+      "common_errors": [
+        "Writing 'moth / paper moth / industrial moth / black moth' instead of 'Peppered Moth'",
+        "Spelling errors such as 'paper moth'"
+      ],
+      "examiner_notes": "Some candidates mentioned 'moth/ paper moth/ industrial moth/ black moth/ moth-Biston' instead of 'Peppered Moth/ Biston betularia.'",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(a)",
+      "question_text": "Given below is the diagram of a human heart. Fill in the blank: The heart is enclosed by a membrane called (a) ____________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Pericardium",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Pericardium",
+      "total_marks": 1,
+      "key_points": [
+        "The heart is enclosed by the pericardium"
+      ],
+      "model_answer": "Pericardium",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'pleura' or 'pericardial fluid' instead of 'pericardium'"
+      ],
+      "examiner_notes": "Some candidates wrote 'pleura' or 'pericardial fluid' instead of 'pericardium'.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(b)",
+      "question_text": "Given below is the diagram of a human heart. Fill in the blank: The ventricles give rise to two large blood vessels called (b) ____________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Pulmonary artery",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Pulmonary artery or aorta",
+      "total_marks": 1,
+      "key_points": [
+        "The right ventricle gives rise to the pulmonary artery; the left ventricle gives rise to the aorta"
+      ],
+      "model_answer": "Pulmonary artery",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Aorta"
+      ],
+      "common_errors": [
+        "Confusion between pulmonary artery and pulmonary vein",
+        "Using abbreviations like 'P.A.' or 'Pul. Art.'"
+      ],
+      "examiner_notes": "Many candidates were confused between 'pulmonary artery' and 'vein'. Use of short forms like 'P.A', 'Pul. Art' by the candidates led to the loss of marks.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(c)",
+      "question_text": "Given below is the diagram of a human heart. Fill in the blank: The ventricles give rise to two large blood vessels called (b) ____________ and (c) ____________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Aorta",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Aorta or Pulmonary artery (whichever was not given for (b))",
+      "total_marks": 1,
+      "key_points": [
+        "Aorta arises from the left ventricle; pulmonary artery from the right ventricle"
+      ],
+      "model_answer": "Aorta",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Pulmonary artery"
+      ],
+      "common_errors": [
+        "Writing 'vena cava' instead of 'aorta'",
+        "Misspelling 'aorta' as 'arota'"
+      ],
+      "examiner_notes": "Many candidates mentioned 'vena cava' instead of 'aorta'. Some candidates misspelled 'aorta' as 'arota'.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(d)",
+      "question_text": "Given below is the diagram of a human heart. Fill in the blank: The flaps of the cuspid valves are kept in position by (d) ____________.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Chordae tendineae",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Chordae tendineae",
+      "total_marks": 1,
+      "key_points": [
+        "Chordae tendineae are tendinous cords that keep the flaps of the cuspid (atrioventricular) valves in position and prevent prolapse"
+      ],
+      "model_answer": "Chordae tendineae",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'valves' or 'papillary muscles' instead of 'chordae tendineae'",
+        "Spelling errors"
+      ],
+      "examiner_notes": "Some candidates skipped this part of the question or incorrectly referred 'valves/ papillary muscles' instead of 'chordae tendineae'. Spelling errors were noticed in several answer scripts.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(ii)(e)",
+      "question_text": "Given below is the diagram of a human heart. Fill in the blank: (e) ____________ arteries supply oxygenated blood to the walls of the heart.",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Coronary",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Coronary",
+      "total_marks": 1,
+      "key_points": [
+        "Coronary arteries supply oxygenated blood to the heart muscle walls"
+      ],
+      "model_answer": "Coronary",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'pulmonary arteries' instead of 'coronary arteries'"
+      ],
+      "examiner_notes": "Several candidates wrote the correct answer. However, some candidates wrote 'pulmonary arteries' instead of 'coronary arteries'.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(a)",
+      "question_text": "Arrange the terms in the correct order beginning with the underlined term: Palisade cells, Cuticle, Upper epidermis, Spongy cells.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Cuticle, Upper epidermis, Palisade cells, Spongy cells.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Cuticle, Upper epidermis, Palisade cells, Spongy cells.",
+      "total_marks": 1,
+      "key_points": [
+        "Correct anatomical order from outermost to innermost: Cuticle → Upper epidermis → Palisade cells → Spongy cells"
+      ],
+      "model_answer": "Cuticle, Upper epidermis, Palisade cells, Spongy cells.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion between positions of palisade and spongy cells"
+      ],
+      "examiner_notes": "Several candidates failed to envision the correct anatomical layering of a leaf. Some of the candidates were confused regarding the positions of palisade and spongy cells.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(b)",
+      "question_text": "Arrange the terms in the correct order beginning with the underlined term: Hepatic portal vein, Stomach, Hepatic vein, Liver.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Stomach, hepatic portal vein, liver, hepatic vein.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Stomach, hepatic portal vein, liver, hepatic vein.",
+      "total_marks": 1,
+      "key_points": [
+        "Blood from the stomach travels via hepatic portal vein to liver, then drains into hepatic vein"
+      ],
+      "model_answer": "Stomach, hepatic portal vein, liver, hepatic vein.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Swapping hepatic vein with hepatic portal vein",
+        "Placing hepatic portal vein before stomach"
+      ],
+      "examiner_notes": "A large number of candidates failed to score as they changed the sequence of 'hepatic vein' with 'hepatic portal vein'. Some of the candidates wrongly placed 'hepatic portal vein' before 'stomach'.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(c)",
+      "question_text": "Arrange the terms in the correct order beginning with the underlined term: Cyton, Dendrites, Synaptic cleft, Axon endings.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Dendrites, cyton, axon ending, synaptic cleft.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Dendrites, cyton, axon ending, synaptic cleft.",
+      "total_marks": 1,
+      "key_points": [
+        "Nerve impulse travels: Dendrites → Cyton → Axon ending → Synaptic cleft"
+      ],
+      "model_answer": "Dendrites, cyton, axon ending, synaptic cleft.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion with position of axon endings and synaptic cleft"
+      ],
+      "examiner_notes": "Some of the candidates were confused with the order of neural transmission, specially with the position of axon endings and synaptic cleft.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(d)",
+      "question_text": "Arrange the terms in the correct order beginning with the underlined term: Insulin release, High blood sugar, Lowers blood sugar, Stimulates glucose uptake from blood.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "High blood sugar, insulin release, stimulates glucose uptake from blood, lowers blood sugar.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "High blood sugar, insulin release, stimulates glucose uptake from blood, lowers blood sugar.",
+      "total_marks": 1,
+      "key_points": [
+        "High blood sugar triggers insulin release → stimulates glucose uptake → lowers blood sugar"
+      ],
+      "model_answer": "High blood sugar, insulin release, stimulates glucose uptake from blood, lowers blood sugar.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Random ordering; failure to comprehend the logical endocrine sequence"
+      ],
+      "examiner_notes": "Many candidates failed to comprehend the logical endocrine sequence and presented random orders.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iii)(e)",
+      "question_text": "Arrange the terms in the correct order beginning with the underlined term: Sperm duct, Seminiferous tubule, Epididymis, Efferent ducts.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Seminiferous tubule, efferent ducts, epididymis, sperm duct.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Seminiferous tubule, efferent ducts, epididymis, sperm duct.",
+      "total_marks": 1,
+      "key_points": [
+        "Sperm pathway: Seminiferous tubule → Efferent ducts → Epididymis → Sperm duct (vas deferens)"
+      ],
+      "model_answer": "Seminiferous tubule, efferent ducts, epididymis, sperm duct.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion about sequence of structures in male reproductive system"
+      ],
+      "examiner_notes": "Several candidates were confused with the sequence of structures present in the male reproductive system.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(a)",
+      "question_text": "Read the explanation and name the structure: The canal through which the testes descend down into the scrotum just before the birth of a male baby.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Inguinal canal",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Inguinal canal",
+      "total_marks": 1,
+      "key_points": [
+        "Inguinal canal is the passage through which testes descend into the scrotum before birth"
+      ],
+      "model_answer": "Inguinal canal",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion with 'sperm duct' or 'scrotum'",
+        "Spelling errors of 'inguinal canal'"
+      ],
+      "examiner_notes": "Some candidates were not clear about the terms like 'inguinal canal', 'sperm duct' and 'scrotum'. Spelling errors of 'inguinal canal' were committed by many.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(b)",
+      "question_text": "Read the explanation and name the structure: The part of the brain that regulates the peristaltic movement of the alimentary canal.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Medulla oblongata",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Medulla oblongata / Brainstem",
+      "total_marks": 1,
+      "key_points": [
+        "Medulla oblongata regulates peristaltic movements of the alimentary canal"
+      ],
+      "model_answer": "Medulla oblongata",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Brainstem"
+      ],
+      "common_errors": [
+        "Writing 'cerebellum' instead of 'medulla oblongata'"
+      ],
+      "examiner_notes": "Only few candidates were able to write the correct answer. Many candidates were confused and wrongly mentioned 'cerebellum' instead of 'medulla oblongata'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(c)",
+      "question_text": "Read the explanation and name the structure: A structure that collects the soundwaves and conducts them through the external auditory canal.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Pinna",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Pinna / Auricle / Auricula",
+      "total_marks": 1,
+      "key_points": [
+        "Pinna (auricle) collects sound waves and funnels them into the external auditory canal"
+      ],
+      "model_answer": "Pinna",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Auricle",
+        "Auricula"
+      ],
+      "common_errors": [
+        "Writing 'external auditory canal' instead of 'pinna'"
+      ],
+      "examiner_notes": "Majority of the candidates answered this part correctly. However, a few candidates wrote 'external auditory canal' instead of 'pinna'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(d)",
+      "question_text": "Read the explanation and name the structure: The point of attachment of two chromatids of a chromosome.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Centromere",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Centromere",
+      "total_marks": 1,
+      "key_points": [
+        "Centromere is the point where two sister chromatids are joined together on a chromosome"
+      ],
+      "model_answer": "Centromere",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusion with centrosome / chromatid / chromosome",
+        "Not mentioning centromere"
+      ],
+      "examiner_notes": "Many candidates were not clear about the difference among the similar sounding terms like centromere/chromatid/chromosome/centrosome.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(iv)(e)",
+      "question_text": "Read the explanation and name the structure: Regulation of the opening and closing of stomata.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Guard cells",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Guard cells",
+      "total_marks": 1,
+      "key_points": [
+        "Guard cells regulate the opening and closing of stomata by changing turgor pressure"
+      ],
+      "model_answer": "Guard cells",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'bean shaped cells' only instead of 'guard cell'",
+        "Spelling errors"
+      ],
+      "examiner_notes": "Most of the candidates correctly wrote the answer. However, spelling errors were observed in some answer scripts. Few candidates mentioned 'bean shaped cells' only instead of 'guard cell'.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(a)",
+      "question_text": "Given below is an outline of the human body showing important endocrine glands. Match the gland marked (a) [pituitary gland — at base of brain] with its correct function from the list:\n1. Prepares the body to face stress.\n2. Secretes tropic hormones\n3. Secretes Oestrogens\n4. Maintains blood sugar level\n5. Regulates basal metabolism\n6. Secretes Testosterone.",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "(a) – 2. Secretes tropic hormones",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) – 2. Secretes tropic hormones",
+      "total_marks": 1,
+      "key_points": [
+        "Pituitary gland (master gland) secretes tropic hormones that regulate other endocrine glands"
+      ],
+      "model_answer": "(a) – 2. Secretes tropic hormones",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inability to correlate endocrine glands with the hormones produced"
+      ],
+      "examiner_notes": "Many candidates did not follow the correct numbering pattern which lead to confusion while interpreting the answers. Due to the inability to correlate the endocrine glands with the hormones produced a large number of candidates failed to score in this part.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(b)",
+      "question_text": "Given below is an outline of the human body showing important endocrine glands. Match the gland marked (b) [thyroid gland] with its correct function from the list:\n1. Prepares the body to face stress.\n2. Secretes tropic hormones\n3. Secretes Oestrogens\n4. Maintains blood sugar level\n5. Regulates basal metabolism\n6. Secretes Testosterone.",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "(b) – 5. Regulates basal metabolism",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) – 5. Regulates basal metabolism",
+      "total_marks": 1,
+      "key_points": [
+        "Thyroid gland secretes thyroxine which regulates basal metabolic rate"
+      ],
+      "model_answer": "(b) – 5. Regulates basal metabolism",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inability to correlate endocrine glands with the hormones produced"
+      ],
+      "examiner_notes": "Many candidates did not follow the correct numbering pattern which led to confusion.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(c)",
+      "question_text": "Given below is an outline of the human body showing important endocrine glands. Match the gland marked (c) [adrenal gland] with its correct function from the list:\n1. Prepares the body to face stress.\n2. Secretes tropic hormones\n3. Secretes Oestrogens\n4. Maintains blood sugar level\n5. Regulates basal metabolism\n6. Secretes Testosterone.",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "(c) – 1. Prepares the body to face stress.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) – 1. Prepares the body to face stress.",
+      "total_marks": 1,
+      "key_points": [
+        "Adrenal gland secretes adrenaline which prepares the body to face stress (fight or flight response)"
+      ],
+      "model_answer": "(c) – 1. Prepares the body to face stress.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inability to correlate endocrine glands with the hormones produced"
+      ],
+      "examiner_notes": "Many candidates did not follow the correct numbering pattern which led to confusion.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(d)",
+      "question_text": "Given below is an outline of the human body showing important endocrine glands. Match the gland marked (d) [pancreas] with its correct function from the list:\n1. Prepares the body to face stress.\n2. Secretes tropic hormones\n3. Secretes Oestrogens\n4. Maintains blood sugar level\n5. Regulates basal metabolism\n6. Secretes Testosterone.",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "(d) – 4. Maintains blood sugar level",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) – 4. Maintains blood sugar level",
+      "total_marks": 1,
+      "key_points": [
+        "Pancreas (islets of Langerhans) secretes insulin and glucagon to maintain blood sugar level"
+      ],
+      "model_answer": "(d) – 4. Maintains blood sugar level",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inability to correlate endocrine glands with the hormones produced"
+      ],
+      "examiner_notes": "Many candidates did not follow the correct numbering pattern which led to confusion.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(v)(e)",
+      "question_text": "Given below is an outline of the human body showing important endocrine glands. Match the gland marked (e) [ovary] with its correct function from the list:\n1. Prepares the body to face stress.\n2. Secretes tropic hormones\n3. Secretes Oestrogens\n4. Maintains blood sugar level\n5. Regulates basal metabolism\n6. Secretes Testosterone.",
+      "is_subjective": false,
+      "question_type": "match",
+      "options": null,
+      "correct_answer": "(e) – 3. Secretes Oestrogens.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(e) – 3. Secretes Oestrogens.",
+      "total_marks": 1,
+      "key_points": [
+        "Ovary secretes oestrogens (female sex hormones)"
+      ],
+      "model_answer": "(e) – 3. Secretes Oestrogens.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inability to correlate endocrine glands with the hormones produced"
+      ],
+      "examiner_notes": "Many candidates did not follow the correct numbering pattern which led to confusion.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "Write the overall chemical equation for photosynthesis.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "6CO2 + 12H2O → C6H12O6 + 6H2O + 6O2 (in the presence of sunlight/light and chlorophyll)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "6CO2 + 12H2O → C6H12O6 + 6H2O + 6O2 with sunlight/light/solar energy/Photons above the arrow and Chlorophyll below the arrow.",
+      "total_marks": 1,
+      "key_points": [
+        "Balanced equation with correct reactants and products",
+        "Must include both conditions: sunlight and chlorophyll",
+        "Water must appear on both reactant and product sides"
+      ],
+      "model_answer": "6CO2 + 12H2O → (sunlight, chlorophyll) → C6H12O6 + 6H2O + 6O2",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missing water as a product",
+        "Unbalanced equation",
+        "Failing to mention one or both conditions (sunlight/chlorophyll)"
+      ],
+      "examiner_notes": "Most candidates answered this question correctly. However, some missed one of the products, such as water, or wrote an unbalanced equation. A few candidates also failed to mention one or both of the conditions required for photosynthesis.",
+      "topic": "Photosynthesis",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(ii)(a)",
+      "question_text": "Ramesh is a farmer who has a vineyard and cultivates grapes. To improve the shape of the grapes and make them elongated he sprays a particular phytohormone at the time of fruiting. Name the phytohormone that Ramesh sprays on the plant at the time of fruiting.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Gibberellins",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Gibberellins / Gibberellic acid / GA / GA3",
+      "total_marks": 1,
+      "key_points": [
+        "Gibberellins (gibberellic acid / GA3) promote elongation of fruits such as grapes"
+      ],
+      "model_answer": "Gibberellins (Gibberellic acid / GA3)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Gibberellic acid",
+        "GA",
+        "GA3"
+      ],
+      "common_errors": [
+        "Writing 'ethylene' due to confusion with fruit ripening"
+      ],
+      "examiner_notes": "Majority of the candidates wrote the answer correctly. However, a few candidates mentioned 'ethylene', as they misinterpreted the phytohormone in terms of fruit ripening.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(ii)(b)",
+      "question_text": "These grapes produced using the phytohormone are said to be seedless. What is the technical term for the formation of such fruits?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Parthenocarpy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Parthenocarpy",
+      "total_marks": 1,
+      "key_points": [
+        "Parthenocarpy is the development of fruit without fertilisation, resulting in seedless fruits"
+      ],
+      "model_answer": "Parthenocarpy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing parthenocarpy with pollination or fertilisation"
+      ],
+      "examiner_notes": "Many candidates could not recall the term 'parthenocarpy'. They confused it with 'pollination' / 'fertilisation'.",
+      "topic": "Chemical coordination in plants",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "Mention the two pairs of nitrogenous bases that are present in a DNA strand and pair with each other by hydrogen bonds.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Adenine – Thymine; Cytosine – Guanine",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Adenine – Thymine\nCytosine – Guanine",
+      "total_marks": 2,
+      "key_points": [
+        "Adenine pairs with Thymine (2 hydrogen bonds)",
+        "Cytosine pairs with Guanine (3 hydrogen bonds)"
+      ],
+      "model_answer": "Adenine – Thymine; Cytosine – Guanine",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Incorrect pairing of nitrogenous bases",
+        "Misspelling 'Thymine' as 'Thiamine' and 'Adenine' as 'Adenosine'"
+      ],
+      "examiner_notes": "Most candidates answered it correctly. However, some candidates, due to a lack of clarity about base pairing, were confused and presented incorrect pairing of the nitrogenous bases.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "State any two disadvantages of living close to an airport.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any two from: Lowers efficiency of work; Disturbs sleep, leads to fatigue; Damages ear drum, irritates lungs; Can lead to deafness, hearing problems; Causes depression, anxiety; High blood pressure, increased pulse rate; Leads to stress, heart attack, irritability; Speech interference; High BP, heart ailment, risk of stroke; Noise pollution, Air pollution; Traffic congestion.",
+      "total_marks": 2,
+      "key_points": [
+        "Noise pollution leading to specific health impacts (e.g., hearing damage, sleep disturbance, high BP, stress)",
+        "Air pollution from aircraft",
+        "Traffic congestion around airports"
+      ],
+      "model_answer": "(1) Living near an airport causes noise pollution which can disturb sleep, lead to fatigue and cause hearing damage or deafness. (2) Constant noise can increase blood pressure, cause stress, heart ailments and reduce efficiency of work.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Air pollution",
+        "Traffic congestion",
+        "Speech interference"
+      ],
+      "common_errors": [
+        "Vague answers like 'it is noisy' or 'pollution' without specifying type",
+        "Irrelevant answers like 'tall buildings cannot be built' or 'planes crash'"
+      ],
+      "examiner_notes": "Many candidates wrote some random answers like 'it is noisy' or 'pollution' without specifying 'noise pollution' or 'sleep disturbance'. Some candidates supplied vague answers.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(v)",
+      "question_text": "Draw a neat, labelled diagram of an animal cell showing Metaphase with four chromosomes.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": null,
+      "scheme_text": "Diagram should show: animal cell (no cell wall, has centrioles/asters), 4 duplicated chromosomes aligned at the equatorial plate, spindle fibres attached to centromeres, asters at poles, chromatids visible. Labels: Duplicated chromosomes, Spindle fibres, Aster, Chromatids.",
+      "total_marks": 3,
+      "key_points": [
+        "Animal cell (no cell wall)",
+        "Centrioles/asters at the poles",
+        "4 duplicated chromosomes at equatorial plane",
+        "Spindle fibres from poles to centromeres",
+        "Correct labels: duplicated chromosomes, spindle fibres, aster, chromatids"
+      ],
+      "model_answer": "A neat labelled diagram showing: circular animal cell with two asters/centrioles at poles, 4 duplicated X-shaped chromosomes aligned at the metaphase plate (equatorial plane), spindle fibres running from asters to chromosomal centromeres, with labels for duplicated chromosomes, spindle fibres, aster, and chromatids.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Drawing a plant cell instead of an animal cell",
+        "Failing to show duplicated chromosomes",
+        "Chromosomes not at equatorial plane",
+        "Absence of centrosome/centrioles",
+        "Missing labels",
+        "Drawing Anaphase instead of Metaphase"
+      ],
+      "examiner_notes": "Some common errors: supplying incomplete diagrams, drawing a plant cell instead of animal cell, failure to show duplicated chromosomes, inability to present chromosomes at equatorial plane, absence of centrosome/centrioles, missing labelling, presenting Anaphase instead of Metaphase.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": true
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "What is the structure of DNA as proposed by Watson and Crick?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Double helix",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Double helix / double helical structure",
+      "total_marks": 1,
+      "key_points": [
+        "DNA is a double helix — two polynucleotide strands wound around each other"
+      ],
+      "model_answer": "DNA has a double helical structure as proposed by Watson and Crick — two anti-parallel polynucleotide strands wound around a common axis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "double helical structure"
+      ],
+      "common_errors": [
+        "Writing 'spiral structure' instead of 'helical'",
+        "Describing with a diagram without stating 'double helical structure'",
+        "Writing 'ladder' or 'twisted ladder'"
+      ],
+      "examiner_notes": "Instead of 'helical structure', many candidates wrote 'spiral structure'. Some explained the structure of DNA with a diagram without mentioning the 'double helical structure'. A few vaguely wrote 'ladder', 'twisted ladder', etc.",
+      "topic": "Structure of chromosomes, Cell cycle and cell division",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(ii)(a)",
+      "question_text": "Name the white blood cells that show phagocytosis.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Neutrophils",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Neutrophils / Monocytes / Macrophages / mononuclear leukocytes / B Lymphocytes / Eosinophils",
+      "total_marks": 1,
+      "key_points": [
+        "Neutrophils are the primary phagocytic white blood cells; monocytes/macrophages also perform phagocytosis"
+      ],
+      "model_answer": "Neutrophils (also monocytes/macrophages)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Monocytes",
+        "Macrophages",
+        "mononuclear leukocytes",
+        "Eosinophils"
+      ],
+      "common_errors": [
+        "Writing 'lymphocytes' instead of 'neutrophils'",
+        "Writing 'WBCs' or 'leukocytes' in general without specifying the type"
+      ],
+      "examiner_notes": "Many candidates were confused about the types of WBCs and their corresponding functions. They wrongly wrote 'lymphocytes' instead of 'neutrophils'.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(ii)(b)",
+      "question_text": "Name the white blood cells that produce antibodies.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Lymphocytes",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Lymphocytes",
+      "total_marks": 1,
+      "key_points": [
+        "Lymphocytes (B-lymphocytes specifically) produce antibodies"
+      ],
+      "model_answer": "Lymphocytes",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'WBCs' or 'leukocytes' in general"
+      ],
+      "examiner_notes": "Many candidates were confused about the types of WBCs and their corresponding functions.",
+      "topic": "Circulatory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "question_text": "Complete the food chain: Maize → Mouse → (c) ____________ → (d) ____________. Name the organism in blank (c).",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Snake",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Snake / Cat / mongoose / eagles / hawks / owls / foxes / large lizards",
+      "total_marks": 1,
+      "key_points": [
+        "The organism in (c) must be a secondary carnivore that eats mice and is itself eaten by a top carnivore"
+      ],
+      "model_answer": "Snake",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Cat",
+        "Mongoose",
+        "Eagles",
+        "Hawks",
+        "Owls",
+        "Foxes",
+        "Large lizards"
+      ],
+      "common_errors": [
+        "Writing 'insects' in both blanks"
+      ],
+      "examiner_notes": "Majority of the candidates wrote the correct answer. However, a few wrote 'insects' in both the blanks.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(iii)(d)",
+      "question_text": "Complete the food chain: Maize → Mouse → (c) ____________ → (d) ____________. Name the organism in blank (d).",
+      "is_subjective": false,
+      "question_type": "fill_in_blank",
+      "options": null,
+      "correct_answer": "Hawk",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Hawk / Falcon / Kite / Eagle / Vulture / bears / wolves eat young ones of eagles and hawks",
+      "total_marks": 1,
+      "key_points": [
+        "The organism in (d) must be a top carnivore that feeds on the organism in (c)"
+      ],
+      "model_answer": "Hawk",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Falcon",
+        "Kite",
+        "Eagle",
+        "Vulture"
+      ],
+      "common_errors": [
+        "Writing 'insects' in both blanks"
+      ],
+      "examiner_notes": "Majority of the candidates wrote the correct answer.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "State any two harmful effects of acid rain.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any two from: Damage to plants, building materials, paints, monuments, statues, marble; Harms aquatic life, forests, leaves; Water bodies, soil become acidic; Decrease in agricultural production; Corrodes steel bridges, stone buildings; Harms human skin, eyes, lungs; Fertility of soil reduced; Alters pH of soil; Leaching of soil nutrients.",
+      "total_marks": 2,
+      "key_points": [
+        "Acid rain causes corrosion of monuments/building materials",
+        "Harms aquatic life by acidifying water bodies",
+        "Reduces soil fertility by leaching nutrients and altering pH",
+        "Damages plant life and reduces agricultural yield"
+      ],
+      "model_answer": "(1) Acid rain corrodes building materials, monuments, statues and marble structures. (2) It acidifies water bodies, harming aquatic life and reduces soil fertility by leaching nutrients.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Harms human skin, eyes, lungs",
+        "Damages forests and leaves"
+      ],
+      "common_errors": [
+        "Vague responses like 'pollution' or 'harms plants' without specifying the effect"
+      ],
+      "examiner_notes": "Almost all candidates answered this question correctly. Though vague responses like 'pollution' or 'harms plants' instead of specific effects like 'corrosion of monuments' or 'leaching of nutrients' were found in some answer scripts.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(a)",
+      "question_text": "Given below is a picture of a tree. Mention the scientific phenomena occurring in part (a) — the roots.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Absorption of water / endosmosis",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Absorption of water, endosmosis",
+      "total_marks": 1,
+      "key_points": [
+        "Roots absorb water from the soil by osmosis/endosmosis"
+      ],
+      "model_answer": "Absorption of water (endosmosis)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Osmosis",
+        "Endosmosis"
+      ],
+      "common_errors": [
+        "Failing to identify the phenomenon occurring in the roots"
+      ],
+      "examiner_notes": "Most of the candidates answered this part of the question correctly. However, some candidates failed to identify the three phenomena.",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(b)",
+      "question_text": "Given below is a picture of a tree. Mention the scientific phenomena occurring in part (b) — the stem/trunk.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Ascent of sap",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Ascent of sap / conduction, transport of water",
+      "total_marks": 1,
+      "key_points": [
+        "The stem conducts water upwards via ascent of sap through xylem"
+      ],
+      "model_answer": "Ascent of sap / conduction of water through xylem",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "conduction",
+        "transport of water"
+      ],
+      "common_errors": [
+        "Failing to identify the phenomenon occurring in the stem"
+      ],
+      "examiner_notes": "Most of the candidates answered this part of the question correctly. However, some candidates failed to identify the three phenomena.",
+      "topic": "Absorption by roots",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(v)(c)",
+      "question_text": "Given below is a picture of a tree. Mention the scientific phenomena occurring in part (c) — the leaves.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Transpiration",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Transpiration or explanation",
+      "total_marks": 1,
+      "key_points": [
+        "Leaves lose water vapour to the atmosphere through transpiration"
+      ],
+      "model_answer": "Transpiration",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Loss of water vapour through stomata"
+      ],
+      "common_errors": [
+        "Failing to identify the phenomenon in the leaves"
+      ],
+      "examiner_notes": "Most of the candidates answered this part of the question correctly. However, some candidates failed to identify the three phenomena.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "What is Micturition? Explain.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Elimination of urine from the body / passing urine from the body through the urethra under the control of the urinary bladder and sphincter muscles.",
+      "total_marks": 1,
+      "key_points": [
+        "Micturition is the process of elimination/passing of urine from the urinary bladder to outside the body via the urethra"
+      ],
+      "model_answer": "Micturition is the process by which urine is expelled from the urinary bladder to the outside of the body through the urethra, regulated by the relaxation of sphincter muscles.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'passing urine' without explaining the role of the urinary bladder and sphincter muscles",
+        "Writing 'removal of wastes from the body'"
+      ],
+      "examiner_notes": "Most of the candidates wrote the correct answer but a few candidates merely wrote 'passing urine' without explaining the role of the urinary bladder and sphincter muscles.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "What are biomedical wastes? Give an example.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any waste generated in hospital, clinic or lab, research labs, diagnostic centres is called biomedical waste. Examples: needles, syringes, dirty dressing, discarded medicinal tablets, sharp objects, used bandages, body fluids, human and animal tissues, body parts, placenta, umbilical cords, discarded gloves, expired drugs, Hg from broken thermometers, used glass slides, used swabs, etc.",
+      "total_marks": 2,
+      "key_points": [
+        "Biomedical waste is waste generated in hospitals, clinics, labs or diagnostic centres",
+        "Examples include used syringes, needles, body tissues, used bandages, expired drugs"
+      ],
+      "model_answer": "Biomedical wastes are wastes generated in hospitals, clinics, research laboratories and diagnostic centres during the treatment, diagnosis or research involving humans or animals. Example: used syringes, needles, used bandages, body tissues.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Vague answers like 'waste from medicals' without specifying hospitals/laboratories",
+        "Providing 'plastic' as example instead of specific medical waste",
+        "Confusing biomedical waste with biodegradable waste"
+      ],
+      "examiner_notes": "Most of the candidates wrote the answer correctly. However, some candidates wrote vague answers like 'waste from medicals' without including specific terms such as hospitals/laboratory/dispensary and provided vague examples like 'plastic' instead of 'used syringes' or 'body tissues'.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iii)",
+      "question_text": "Differentiate between the functions of Urethra and Uterus.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Urethra – Eliminates urine from the urinary bladder to outside the body.\nUterus – Houses the embryo, implantation of embryo, protects embryo, provides nourishment to embryo, provides suitable environment for foetal development, rhythmic contraction to transport sperms to oviduct, contracts leading to childbirth, sheds lining during menstruation.",
+      "total_marks": 2,
+      "key_points": [
+        "Urethra: eliminates urine from the urinary bladder to outside the body",
+        "Uterus: site of implantation and development of embryo/foetus; contracts during childbirth; sheds lining during menstruation"
+      ],
+      "model_answer": "Urethra: It carries urine from the urinary bladder to the outside of the body.\nUterus: It is the site of implantation of the embryo; it nourishes and protects the foetus during pregnancy and contracts during childbirth to expel the baby.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Interchanging functions",
+        "Writing anatomical location instead of function",
+        "Confusing uterus with ureter"
+      ],
+      "examiner_notes": "Many candidates interchanged the functions or wrote anatomical locations instead of functions. Some candidates were confused between 'uterus' and 'ureter' leading to the loss of marks.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iv)(a)",
+      "question_text": "Rachna is an expert gymnast on the balance beam. She has been experiencing dizziness and losing her balance during practise sessions. Which part of the membranous labyrinth is responsible for maintaining the body balance on the beam?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Semicircular canals",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Semicircular canals / vestibules / Utriculus / Sacculus",
+      "total_marks": 1,
+      "key_points": [
+        "Semicircular canals in the membranous labyrinth are responsible for maintaining dynamic balance/equilibrium"
+      ],
+      "model_answer": "Semicircular canals",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Vestibule",
+        "Utriculus",
+        "Sacculus"
+      ],
+      "common_errors": [
+        "Writing 'semicircular canals and static equilibrium' — incorrect pairing",
+        "Confusing structure with type of balance"
+      ],
+      "examiner_notes": "Majority of the candidates failed to understand that the answers for parts (a) and (b) are linked. They wrote incorrect answers like 'semicircular canals and static equilibrium', 'vestibule and dynamic equilibrium'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(iv)(b)",
+      "question_text": "Rachna is an expert gymnast on the balance beam. Which type of balance is maintained by the structure mentioned in (a)?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Dynamic balance",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Dynamic balance / equilibrium / static balance / equilibrium",
+      "total_marks": 1,
+      "key_points": [
+        "Semicircular canals maintain dynamic equilibrium (balance during movement)",
+        "Utriculus and sacculus maintain static equilibrium"
+      ],
+      "model_answer": "Dynamic balance (dynamic equilibrium)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Dynamic equilibrium",
+        "Static balance (if vestibule/utriculus/sacculus was given in (a))"
+      ],
+      "common_errors": [
+        "Inability to relate the type of balance to the structure mentioned in (a)"
+      ],
+      "examiner_notes": "Most of the candidates were unable to relate the type of balance to the structure mentioned in (a).",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(v)",
+      "question_text": "Draw a neat, labelled diagram to show that oxygen is released during photosynthesis.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": null,
+      "scheme_text": "Diagram should show: Beaker with water, inverted funnel over Hydrilla/Elodea plant, test tube (inverted) above funnel stem collecting oxygen gas, bubbles of oxygen rising, sunlight rays indicated. Labels: Sunlight, Oxygen gas, Water, Bubbles of oxygen, Hydrilla Plant / Elodea.",
+      "total_marks": 3,
+      "key_points": [
+        "Beaker with water containing Hydrilla / Elodea plant",
+        "Inverted funnel over the plant",
+        "Inverted test tube filled with water over funnel stem",
+        "Bubbles of oxygen rising from plant",
+        "Oxygen gas collecting in the test tube",
+        "Sunlight shown",
+        "Correct labels"
+      ],
+      "model_answer": "A neat diagram of the standard Hydrilla/Elodea experiment: a glass beaker containing water with a Hydrilla plant covered by an inverted funnel. An inverted test tube full of water sits over the funnel stem to collect oxygen gas. Sunlight rays are shown hitting the beaker. Bubbles of oxygen are shown rising from the plant. Labels: Sunlight, Hydrilla Plant/Elodea, Water, Bubbles of oxygen, Oxygen gas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Poor drawing",
+        "Missing labels",
+        "Merging funnel and test-tube",
+        "Not showing oxygen release from test tube",
+        "Showing water level below funnel stem",
+        "Not showing sunlight",
+        "Drawing unrelated diagrams such as stomatal apparatus or chloroplast"
+      ],
+      "examiner_notes": "Common errors: poor drawing, missing labels, merging funnel and test-tube, not showing oxygen release from test tube, wrongly showing water level below stem of funnel, not showing sunlight/light rays. Many unrelated diagrams drawn.",
+      "topic": "Photosynthesis",
+      "diagram_required": true
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "Where are Hydathodes located?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "At the ends of veins / margins of leaves / tips of leaves",
+      "marks_per_correct_point": 1,
+      "scheme_text": "At the ends of veins, margins of leaves / tips of leaves, coleoptiles, tendrils",
+      "total_marks": 1,
+      "key_points": [
+        "Hydathodes are located at the tips/margins of leaves at the ends of veins",
+        "They are the structures through which guttation occurs"
+      ],
+      "model_answer": "Hydathodes are located at the ends of veins at the margins or tips of leaves.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "coleoptiles",
+        "tendrils"
+      ],
+      "common_errors": [
+        "Writing simply 'leaves' instead of 'margins or tips of leaves'",
+        "Confusing hydathodes with stomata"
+      ],
+      "examiner_notes": "Most candidates answered it correctly. However, some candidates simply wrote 'leaves' instead of 'margins or tips of leaves.' Few candidates were confused between 'hydathodes' and 'stomata'.",
+      "topic": "Transpiration",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "What are Vestigial organs? Give one example of a vestigial structure in the human mouth.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Organs / structures which have lost their functions and exist in a reduced form. Example: Wisdom teeth / tooth (3rd molar).",
+      "total_marks": 2,
+      "key_points": [
+        "Vestigial organs are structures that have lost their original function through evolution and exist in a reduced form",
+        "Example in human mouth: Wisdom teeth (3rd molar)"
+      ],
+      "model_answer": "Vestigial organs are organs or structures that have lost their original function through the course of evolution and now exist in a reduced, non-functional form. Example in the human mouth: Wisdom teeth (3rd molar).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing vestigial organs with non-essential organs",
+        "Writing 'teeth/molar teeth' instead of 'wisdom teeth/3rd molar'",
+        "Giving examples of vestigial organs outside the mouth (pinna, appendix)",
+        "Describing vestigial organs as 'useless body parts'"
+      ],
+      "examiner_notes": "Due to lack of clarity, several candidates confused vestigial organs with non-essential organs. Many candidates wrote 'teeth/molar teeth' instead of 'wisdom teeth/3rd molar'. Some overlooked the phrase 'in the mouth'.",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iii)",
+      "question_text": "Ahmed had a severe throat infection. After a few days he developed an earache too. What could be the reason for the pain in his ears? Explain.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Ear and throat are connected by the eustachian tube. Germs can travel from throat to ear and cause the ear ache. / Irritation of nerves connecting ear and throat.",
+      "total_marks": 2,
+      "key_points": [
+        "Ear and throat are connected by the Eustachian tube",
+        "Pathogens/germs travel from the throat through the Eustachian tube to the middle ear causing infection and earache"
+      ],
+      "model_answer": "The ear and throat are connected by the Eustachian tube. During a throat infection, germs/pathogens can travel through the Eustachian tube from the throat to the middle ear, causing infection and resulting in earache.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Irritation of nerves connecting ear and throat"
+      ],
+      "common_errors": [
+        "Failing to mention the Eustachian tube",
+        "Attributing pain to cold or general infection without explaining the pathway"
+      ],
+      "examiner_notes": "Only a few candidates could answer this part correctly. Majority of the candidates failed to mention 'Eustachian tube' as the tube connecting the throat and middle ear, often attributing to the pain to cold or general infection.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iv)(a)",
+      "question_text": "Mr. Sharma is a 76-year-old man. His vision was gradually becoming blurred. He consulted an eye doctor and it was diagnosed as cataract. Which part of the eye does cataract affect?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Lens",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Lens",
+      "total_marks": 1,
+      "key_points": [
+        "Cataract affects the lens of the eye"
+      ],
+      "model_answer": "Lens",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'cornea', 'retina' or 'iris' instead of 'lens'"
+      ],
+      "examiner_notes": "Many candidates answered this sub-part correctly. However, some candidates incorrectly wrote 'cornea', 'retina' or 'iris' instead of 'Eye lens' and failed to score.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(iv)(b)",
+      "question_text": "Mr. Sharma has been diagnosed with cataract. Why does the vision become blurred?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "The lens becomes opaque",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Lens becomes opaque",
+      "total_marks": 1,
+      "key_points": [
+        "In cataract the eye lens becomes opaque/cloudy, preventing clear image formation on the retina, causing blurred vision"
+      ],
+      "model_answer": "The lens becomes opaque (cloudy), which prevents light from passing through clearly to form a sharp image on the retina, resulting in blurred vision.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Clouding of the lens"
+      ],
+      "common_errors": [
+        "Vague answers like 'the eye is weak'",
+        "Stating that cornea/pupil/iris becomes opaque"
+      ],
+      "examiner_notes": "Some candidates gave vague answers like 'the eye is weak' rather than mentioning 'loss of lens transparency/lens becomes opaque'. Additionally, few candidates mentioned that the 'Cornea/Pupil/Iris becomes opaque'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(v)",
+      "question_text": "Given below is the diagram of a plasmolysed cortical cell of a root. Copy the diagram and label the following parts: (a) Cytoplasm (b) Hypertonic solution (c) Plasma membrane.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Correctly labelled diagram showing: (a) Cytoplasm — the layer between the plasma membrane and the vacuole/cell wall (the shrunk protoplast material); (b) Hypertonic solution — the solution in the space between the plasma membrane and the cell wall (outside the shrunk protoplast); (c) Plasma membrane — the membrane surrounding the shrunken protoplast (inner boundary of the shrunken cell contents).",
+      "total_marks": 3,
+      "key_points": [
+        "Cytoplasm: the contents within the shrunken protoplast",
+        "Hypertonic solution: occupies the space between the plasma membrane and cell wall after plasmolysis",
+        "Plasma membrane: the membrane enclosing the shrunken protoplast"
+      ],
+      "model_answer": "Diagram of plasmolysed cell with: Cytoplasm labelled inside the shrunken protoplast, Hypertonic solution labelled in the space between the plasma membrane and cell wall, Plasma membrane labelled as the boundary of the shrunken protoplast.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Labelling nucleus as cytoplasm",
+        "Showing cytoplasm between cell wall and cell membrane",
+        "Marking cell sap of vacuole as hypertonic solution",
+        "Marking cell wall as plasma membrane"
+      ],
+      "examiner_notes": "Majority of the candidates failed to answer it correctly. Diagram was copied correctly by most of them, but the labels were misplaced. Some labelled nucleus as cytoplasm. Most candidates marked 'cell sap' of vacuole as 'hypertonic solution'. Many incorrectly marked cell wall as plasma membrane.",
+      "topic": "Absorption by roots",
+      "diagram_required": true
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "Define the term Allele.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Alternative forms of a gene / different forms of a gene / one or more possible forms of a gene (located at the same locus on homologous chromosomes).",
+      "total_marks": 1,
+      "key_points": [
+        "An allele is an alternative form of a gene",
+        "Alleles occupy the same locus on homologous chromosomes",
+        "They control the same trait but may produce different expressions"
+      ],
+      "model_answer": "An allele is an alternative form of a gene that occupies the same locus on homologous chromosomes and controls the same trait but may produce different phenotypic expressions.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "different forms of a gene",
+        "one or more possible forms of a gene"
+      ],
+      "common_errors": [
+        "Vague definitions like 'form of a gene/forms of traits or characters' without specifying they are alternative forms",
+        "Explaining as 'dominant or recessive traits'"
+      ],
+      "examiner_notes": "Many candidates wrote vague definitions such as 'form of a gene/forms of traits or characters' without specifying that alleles are alternative forms of a gene at the same locus.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(ii)(a)",
+      "question_text": "In the last century, the human population has increased tremendously. Death rate has reduced and life expectancy has increased. Mention any one reason for reduction in the death rate.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any one from: More medical facilities/ access to hospitals; Spread of education/ awareness of hygiene, quarantine measures; Control of epidemics/diseases; Balanced diet; Advancement in Science and technology/ development of Antibiotics; Improved standard of living/ sanitation; Mass immunisation, vaccinations; Better food storage; Food shortages minimized.",
+      "total_marks": 1,
+      "key_points": [
+        "Advances in medical care (antibiotics, vaccines)",
+        "Improved sanitation and hygiene",
+        "Mass immunisation programmes",
+        "Better nutrition and food storage"
+      ],
+      "model_answer": "The development of antibiotics and vaccines, along with improved medical facilities and mass immunisation programmes, have significantly controlled infectious diseases and reduced the death rate.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Improved standard of living/sanitation",
+        "Better food storage",
+        "Spread of education/awareness of hygiene"
+      ],
+      "common_errors": [
+        "Mentioning improved 'technology' or 'economy' without specifying medical care or vaccination",
+        "Writing 'increase in birth rate' as a reason"
+      ],
+      "examiner_notes": "Some candidates mentioned improved 'technology' or 'economy' instead of mentioning the specific reasons like 'advanced medical care' or 'vaccination'.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(ii)(b)",
+      "question_text": "This rapid population growth has placed significant pressure on resources. Name any one resource that is under pressure due to population explosion.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Food / Land / Water / Forests / Fossil fuels / minerals / wildlife / petroleum products",
+      "total_marks": 1,
+      "key_points": [
+        "Population explosion puts pressure on natural resources like food, water, land, forests, fossil fuels"
+      ],
+      "model_answer": "Water (or Food / Land / Forests / Fossil fuels)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Food",
+        "Land",
+        "Forests",
+        "Fossil fuels",
+        "Minerals",
+        "Wildlife",
+        "Petroleum products"
+      ],
+      "common_errors": [
+        "Vague answers like 'everything' or 'oxygen'"
+      ],
+      "examiner_notes": "Most of the candidates gave vague answers like 'everything' or 'oxygen'.",
+      "topic": "Population",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(iii)",
+      "question_text": "Mention any two functions of amniotic fluid.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any two from: Maintains even pressure and temperature around the foetus/baby; Protects foetus/baby from injuries and mechanical shocks; Keeps foetus moist; Allows foetal movement; Prevents sticking of foetus to amnion.",
+      "total_marks": 2,
+      "key_points": [
+        "Amniotic fluid protects the foetus from mechanical shocks/injuries",
+        "It maintains uniform temperature and pressure around the foetus",
+        "Keeps the foetus moist",
+        "Allows movement of the foetus",
+        "Prevents the foetus from sticking to the amnion"
+      ],
+      "model_answer": "(1) Amniotic fluid protects the foetus from mechanical shocks and injuries by acting as a cushion. (2) It maintains even pressure and temperature around the foetus and allows freedom of foetal movement.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing functions of amniotic fluid with functions of placenta",
+        "Writing 'nutrient supply' as a function of amniotic fluid"
+      ],
+      "examiner_notes": "Many Candidates were confused between 'amniotic fluid' and 'placenta'. Some candidates supplied wrong answer like 'nutrient supply'.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(iv)(a)",
+      "question_text": "Expand the following abbreviation: CFC",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Chlorofluoro Carbon",
+      "marks_per_correct_point": 1,
+      "scheme_text": "CFC – Chlorofluoro Carbon",
+      "total_marks": 1,
+      "key_points": [
+        "CFC stands for Chlorofluorocarbon"
+      ],
+      "model_answer": "CFC – Chlorofluorocarbon",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Expanding as 'compressed fluorocarbons'"
+      ],
+      "examiner_notes": "Majority of the candidates answered correctly. However, several candidates expanded CFC incorrectly as 'compressed fluorocarbons'.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(iv)(b)",
+      "question_text": "Expand the following abbreviation: CNG",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Compressed Natural Gas",
+      "marks_per_correct_point": 1,
+      "scheme_text": "CNG – Compressed Natural Gas",
+      "total_marks": 1,
+      "key_points": [
+        "CNG stands for Compressed Natural Gas"
+      ],
+      "model_answer": "CNG – Compressed Natural Gas",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing CNG with LPG",
+        "Self-created terms: 'Carbon Neutral Gas', 'Compressed Nature Gas', 'Central Natural Gas'"
+      ],
+      "examiner_notes": "Many candidates were confused between CNG and LPG. Some candidates used several self-created terms and lost marks.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(a)",
+      "question_text": "Vineet's day begins with a cup of piping hot coffee. Caffeine is a stimulant present in coffee which increases the circulation of Adrenaline in the body. Vineet feels refreshed, alert and focussed. Name the organ that is stimulated by caffeine which makes Vineet alert and focussed.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Brain",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Brain / cerebrum / cerebral hemispheres",
+      "total_marks": 1,
+      "key_points": [
+        "Caffeine stimulates the brain (cerebrum/cerebral hemispheres) to make a person alert and focused"
+      ],
+      "model_answer": "Brain (cerebrum)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Cerebrum",
+        "Cerebral hemispheres"
+      ],
+      "common_errors": [
+        "Writing 'adrenal gland / adrenal medulla' instead of 'brain'"
+      ],
+      "examiner_notes": "Only a few candidates answered it correctly. Some candidates wrote 'Adrenal Gland / Adrenal medulla' instead of writing the correct organ- 'brain'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(b)",
+      "question_text": "Vineet feels refreshed, alert and focussed after drinking coffee. Give the collective term for the protective membranes of the organ mentioned in (a) [brain].",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Meninges",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Meninges",
+      "total_marks": 1,
+      "key_points": [
+        "The three protective membranes of the brain are collectively called meninges (dura mater, arachnoid mater, pia mater)"
+      ],
+      "model_answer": "Meninges",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Listing the three layers (dura mater, arachnoid, pia mater) instead of giving the collective term 'meninges'"
+      ],
+      "examiner_notes": "Majority of the candidates mentioned the three layers covering the brain instead of coming up with the correct collective term 'meninges'.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(v)(c)",
+      "question_text": "Caffeine increases the circulation of Adrenaline in the body. Which part of the autonomic nervous system increases the secretion of Adrenaline?",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Sympathetic nervous system",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Sympathetic nervous system",
+      "total_marks": 1,
+      "key_points": [
+        "The sympathetic nervous system (part of the autonomic nervous system) stimulates the adrenal medulla to secrete adrenaline"
+      ],
+      "model_answer": "Sympathetic nervous system",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing with parasympathetic nervous system",
+        "Writing CNS / PNS / ANS instead of sympathetic"
+      ],
+      "examiner_notes": "Several candidates failed to recall the term 'sympathetic nervous system' or confused it with 'parasympathetic'. Many candidates came up with wrong answers like CNS / PNS / ANS.",
+      "topic": "Nervous",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "Explain the term Excretion.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "It is the elimination of nitrogenous wastes / urea from the body.",
+      "total_marks": 1,
+      "key_points": [
+        "Excretion is the process of removing metabolic waste products, especially nitrogenous wastes (urea, uric acid, ammonia), from the body"
+      ],
+      "model_answer": "Excretion is the biological process of elimination of metabolic waste products, particularly nitrogenous wastes such as urea, from the body.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confusing excretion with egestion or defecation",
+        "Failing to specify that the waste is nitrogenous"
+      ],
+      "examiner_notes": "Most candidates were able to answer it correctly. However, some candidates were confused with the terms 'excretion' 'egestion' and 'defecation'. Additionally, a few candidates failed to specify that excretion is the process of removing nitrogenous waste material from the body.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "State the difference between Nephron and Neuron.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Nephron – Structural and functional unit of kidneys.\nNeuron – Structural and functional unit of nervous system.",
+      "total_marks": 2,
+      "key_points": [
+        "Nephron is the structural and functional unit of the kidney",
+        "Neuron is the structural and functional unit of the nervous system"
+      ],
+      "model_answer": "Nephron: It is the structural and functional unit of the kidney, responsible for filtration and formation of urine.\nNeuron: It is the structural and functional unit of the nervous system, responsible for receiving and transmitting nerve impulses.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Providing only one difference",
+        "Confusing the two terms"
+      ],
+      "examiner_notes": "Most candidates answered this sub-part of the question correctly.",
+      "topic": "Excretory system",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(iii)",
+      "question_text": "Mention any two objectives of Swachh Bharat Abhiyan.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any two from: Clean streets, roads, cities, towns; Eliminate open defecation, promoting sanitation, hygiene; Construction of latrines/toilets, monitoring toilet use; Efficient management of solid and liquid wastes; Make India clean; Proper waste management; Cleaner environment.",
+      "total_marks": 2,
+      "key_points": [
+        "Elimination of open defecation and promotion of sanitation",
+        "Construction of toilets and proper sanitation facilities",
+        "Cleanliness of streets, roads, cities and towns",
+        "Proper management of solid and liquid waste"
+      ],
+      "model_answer": "(1) To eliminate open defecation by constructing and promoting the use of toilets, improving sanitation and hygiene. (2) To ensure proper management of solid and liquid wastes and clean streets, roads, cities and towns.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Vague objectives like 'to keep clean' without relating to specific goals like sanitation or waste disposal"
+      ],
+      "examiner_notes": "Majority of the candidates wrote vague objectives like 'to keep clean' without relating them to actual goals like sanitation or waste disposal.",
+      "topic": "Pollution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(iv)",
+      "question_text": "Give any two characteristic features of a Cro-Magnon man.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Any two from: perfect bipedalism; small canines; well developed chin; reduced body hair; broad forehead, large teeth, large skull; cranial capacity 1600 cc, larger brains; prominent browridges; Tall – 5.5'–5.7'; well built body.",
+      "total_marks": 2,
+      "key_points": [
+        "Perfect bipedalism",
+        "Well-developed chin",
+        "Cranial capacity of approximately 1600 cc",
+        "Broad forehead",
+        "Tall stature (5.5–5.7 feet)",
+        "Well-built body with reduced body hair"
+      ],
+      "model_answer": "(1) Cro-Magnon man had a well-developed chin and broad forehead with a cranial capacity of about 1600 cc. (2) They were tall (5.5–5.7 feet), showed perfect bipedalism and had reduced body hair.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing generic traits like 'used tools' or 'were intelligent' without mentioning specific physical features like 'broad nose' or 'prominent chin'"
+      ],
+      "examiner_notes": "Many candidates wrote generic traits like 'used tools' or 'were intelligent' without mentioning the specific features like 'broad nose' or 'prominent chin'.",
+      "topic": "Human evolution",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(a)",
+      "question_text": "A farmer crosses a homozygous tall plant bearing red fruits (TTRR) with a dwarf plant bearing yellow fruits (ttrr). The genotype of all F1 generation offsprings was TtRr. Explain the phenotype of the offsprings of the F1 generation obtained from the initial cross.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "All are tall plants bearing red fruits",
+      "marks_per_correct_point": 1,
+      "scheme_text": "All are tall plants bearing red fruits (Tall is dominant over dwarf; Red is dominant over yellow — all F1 are TtRr showing dominant phenotype).",
+      "total_marks": 1,
+      "key_points": [
+        "All F1 offspring have genotype TtRr",
+        "T (tall) is dominant over t (dwarf) so all appear tall",
+        "R (red) is dominant over r (yellow) so all have red fruits",
+        "All F1 phenotype: tall plants with red fruits"
+      ],
+      "model_answer": "All the F1 offspring are tall plants bearing red fruits, because T (tall) is dominant over t (dwarf) and R (red fruit) is dominant over r (yellow fruit). The genotype TtRr expresses the dominant phenotype for both traits.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing 'tall red' without justifying the hybrid nature",
+        "Writing simply 'Tall' without mentioning fruit colour"
+      ],
+      "examiner_notes": "Most of the candidates answered it correctly. However, some candidates wrote 'tall red' without justifying the hybrid nature or simply 'Tall'.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(b)",
+      "question_text": "The farmer crosses two F1 generation plants (TtRr). Mention the phenotypic ratio of the F2 generation offsprings.",
+      "is_subjective": false,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "9 : 3 : 3 : 1",
+      "marks_per_correct_point": 1,
+      "scheme_text": "9 : 3 : 3 : 1 (9 Tall Red : 3 Tall Yellow : 3 Dwarf Red : 1 Dwarf Yellow)",
+      "total_marks": 1,
+      "key_points": [
+        "Dihybrid cross TtRr × TtRr gives phenotypic ratio 9:3:3:1",
+        "9 Tall Red : 3 Tall Yellow : 3 Dwarf Red : 1 Dwarf Yellow"
+      ],
+      "model_answer": "9 : 3 : 3 : 1",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Writing incorrect phenotypic ratio",
+        "Reversing the order",
+        "Writing monohybrid ratio (3:1) instead of dihybrid ratio (9:3:3:1)"
+      ],
+      "examiner_notes": "Majority of the candidates answered it correctly. However, some common errors: writing the incorrect phenotypic ratio, reversing the order, writing the monohybrid ratio instead of dihybrid ratio.",
+      "topic": "Genetics",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(v)(c)",
+      "question_text": "State Mendel's Law of Independent Assortment.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When there are two pairs of characters, the distribution of alleles of one character is independent of the distribution of the alleles of the other character into the gametes. Genes for different traits are distributed into gametes independently. Alleles of 2 different genes are sorted into gametes independently.",
+      "total_marks": 1,
+      "key_points": [
+        "When two pairs of alleles are considered, the alleles of one gene assort independently of the alleles of another gene during gamete formation",
+        "Each pair of alleles segregates independently into gametes"
+      ],
+      "model_answer": "Mendel's Law of Independent Assortment states that when two pairs of contrasting characters are considered simultaneously, the alleles of one gene pair assort independently into gametes without influencing the assortment of alleles of another gene pair.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Stating Law of Segregation or Law of Dominance instead of Independent Assortment",
+        "Paraphrasing inaccurately and failing to capture the essence of independent assortment"
+      ],
+      "examiner_notes": "Only a few candidates answered this sub part correctly. Many candidates mentioned the laws of segregation or dominance instead of independent assortment. The most common mistake found was trying to write the law in their own words, which simply could not capture the essence of the law.",
+      "topic": "Genetics",
+      "diagram_required": false
+    }
+  ]
+}

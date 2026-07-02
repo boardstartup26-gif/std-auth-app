@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createBrowserClient } from "@supabase/ssr";
 import { authShell, backLink, btnPrimary, cardPadded, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
 
@@ -33,8 +34,9 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className={authShell}>
-      <div className="mb-8">
+      <div className="mb-8 flex items-center justify-between">
         <Link href="/login" className={backLink}>← Back to login</Link>
+        <ThemeToggle />
       </div>
 
       <div className={cardPadded}>

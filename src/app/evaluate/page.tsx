@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { PremiumGate, WaitlistCapture } from "@/app/_components/PremiumGate";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createClient } from "@/lib/supabase/client";
 import {
   backLink,
@@ -37,6 +39,7 @@ interface EvaluationResult {
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
   examiner_feedback: string;
+  improvement_tips: string[];
   // Objective-only
   is_objective?: boolean;
   correct_answer?: string;
@@ -134,6 +137,11 @@ export default function EvaluatePage() {
   const [result, setResult] = useState<EvaluationResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // Premium gate — single shared unlock state. One waitlist submission
+  // unlocks every PremiumGate on the page, and stays unlocked for the rest
+  // of the session across subsequent evaluations.
+  const [premiumUnlocked, setPremiumUnlocked] = useState(false);
+
   // Token display
   const [tokensRemaining, setTokensRemaining] = useState<number>(DAILY_TOKEN_LIMIT);
 
@@ -141,6 +149,9 @@ export default function EvaluatePage() {
   const [limitReached, setLimitReached] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
   const [feedbackSent, setFeedbackSent] = useState(false);
+
+  // Typing friction tracking
+  const questionOpenedAt = useRef<number | null>(null);
 
   // Evaluation quality feedback
   const [evalRating, setEvalRating] = useState<"up" | "down" | null>(null);
@@ -287,12 +298,39 @@ export default function EvaluatePage() {
     setStudentAnswer("");
     setResult(null);
     setError(null);
+
+    // Track question_opened for typing friction analysis
+    if (q) {
+      questionOpenedAt.current = Date.now();
+      supabase.from("events").insert({
+        event: "question_opened",
+        meta: { question_id: q.id, subject, year },
+      }).then(() => {});
+    }
   }, [questionNumber, questions]);
 
   // ─── Submit ───────────────────────────────────────────────────────────────
 
   async function handleSubmit() {
     if (!subject || !year || !questionNumber || !studentAnswer.trim()) return;
+
+    // Track answer_submitted — time_to_submit_ms measures typing friction
+    if (selectedQuestion) {
+      const timeToSubmit = questionOpenedAt.current
+        ? Date.now() - questionOpenedAt.current
+        : null;
+      supabase.from("events").insert({
+        event: "answer_submitted",
+        meta: {
+          question_id: selectedQuestion.id,
+          subject,
+          year,
+          answer_length: studentAnswer.trim().length,
+          time_to_submit_ms: timeToSubmit,
+          is_subjective: selectedQuestion.is_subjective,
+        },
+      }).then(() => {});
+    }
 
     setEvaluating(true);
     setResult(null);
@@ -394,9 +432,12 @@ export default function EvaluatePage() {
             Select a past paper question, write your answer, and receive examiner-style feedback.
           </p>
         </div>
-        <Link href="/dashboard" className={backLink}>
-          ← Dashboard
-        </Link>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <Link href="/dashboard" className={backLink}>
+            ← Dashboard
+          </Link>
+        </div>
       </div>
 
       {/* Question selector */}
@@ -712,25 +753,43 @@ export default function EvaluatePage() {
                   items={result.points_missed}
                   color="text-red-700 dark:text-red-400"
                 />
-                <Section
-                  title="Conceptual errors"
-                  items={result.conceptual_errors}
-                  color="text-amber-700 dark:text-amber-400"
-                />
 
-                <div>
-                  <div className="mb-3 flex flex-wrap items-center gap-2">
-                    <span className={sectionLabel}>Model answer</span>
-                    <span className="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
-                      {result.model_answer_source === "verified"
-                        ? "CISCE verified"
-                        : "AI generated"}
-                    </span>
+                <PremiumGate label="Conceptual errors" unlocked={premiumUnlocked}>
+                  <Section
+                    title="Conceptual errors"
+                    items={result.conceptual_errors}
+                    color="text-amber-700 dark:text-amber-400"
+                  />
+                </PremiumGate>
+
+                <PremiumGate label="Model answer" unlocked={premiumUnlocked}>
+                  <div>
+                    <div className="mb-3 flex flex-wrap items-center gap-2">
+                      <span className={sectionLabel}>Model answer</span>
+                      <span className="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-600 dark:border-zinc-700 dark:text-zinc-400">
+                        {result.model_answer_source === "verified"
+                          ? "CISCE verified"
+                          : "AI generated"}
+                      </span>
+                    </div>
+                    <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                      {result.model_answer}
+                    </p>
                   </div>
-                  <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-                    {result.model_answer}
-                  </p>
-                </div>
+                </PremiumGate>
+
+                <PremiumGate label="Improvement tips" unlocked={premiumUnlocked}>
+                  <Section
+                    title="How to improve"
+                    items={result.improvement_tips}
+                    color="text-sky-700 dark:text-sky-400"
+                  />
+                </PremiumGate>
+
+                <WaitlistCapture
+                  unlocked={premiumUnlocked}
+                  onUnlock={() => setPremiumUnlocked(true)}
+                />
               </>
             )}
 

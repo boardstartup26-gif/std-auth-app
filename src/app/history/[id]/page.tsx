@@ -1,5 +1,6 @@
 import { redirect, notFound } from "next/navigation";
 import Link from "next/link";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createClient, createAdminClient } from "@/lib/supabase/server";
 import {
   backLink,
@@ -109,13 +110,16 @@ export default async function HistoryDetailPage({
         <Link href="/history" className={backLink}>
           ← History
         </Link>
-        <span className="text-sm text-zinc-500 dark:text-zinc-400">
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <span className="text-sm text-zinc-500 dark:text-zinc-400">
           {new Date(row.submitted_at).toLocaleDateString("en-IN", {
             day: "numeric",
             month: "short",
             year: "numeric",
           })}
-        </span>
+          </span>
+        </div>
       </div>
 
       <div className="flex flex-wrap items-start justify-between gap-4">

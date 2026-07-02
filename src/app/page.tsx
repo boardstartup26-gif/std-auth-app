@@ -1,9 +1,13 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { btnPrimary, btnSecondary, pageShell, sectionLabel } from "@/lib/ui";
 
 export default function Home() {
   return (
-    <main className={`${pageShell} flex min-h-dvh flex-col justify-center py-20`}>
+    <main className={`${pageShell} relative flex min-h-dvh flex-col justify-center py-20`}>
+      <div className="absolute right-6 top-6">
+        <ThemeToggle />
+      </div>
       <div className="space-y-4">
         <p className={sectionLabel}>BoardEdge</p>
         <h1 className="text-4xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
