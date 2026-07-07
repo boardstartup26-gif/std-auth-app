@@ -1,41 +1,27 @@
 import { createClient } from "@/lib/supabase/server";
 import { signOut } from "@/app/(auth)/actions";
 import Link from "next/link";
-import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { btnPrimary, btnSecondary, cardPadded, pageShell, sectionLabel } from "@/lib/ui";
 
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
 
   return (
     <div className={pageShell}>
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--foreground)]/50">
-            BoardEdge
-          </p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-[var(--foreground)]">
-            Student dashboard
-          </h1>
+          <p className="text-xs font-semibold uppercase tracking-widest text-foreground/50">BoardEdge</p>
+          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">Student dashboard</h1>
         </div>
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <Link
-            href="/account"
-            className="h-10 rounded-xl border border-[var(--border)] px-4 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--border)] flex items-center"
-          >
+          <Link href="/account" className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-border flex items-center">
             Account
           </Link>
           <form action={signOut}>
-            <button
-              className="h-10 rounded-xl border border-[var(--border)] px-4 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--border)]"
-              type="submit"
-            >
+            <button className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-border" type="submit">
               Sign out
             </button>
           </form>
@@ -67,8 +53,8 @@ export default async function DashboardPage() {
               AI-powered marking
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-[var(--foreground)]/60">
-              Submit past paper answers against official board marking schemes for instant,
-              examiner-grade feedback.
+              Evaluated against the official ICSE marking scheme — marks, examiner feedback,
+              and exactly what the board expects you to write.
             </p>
           </div>
 

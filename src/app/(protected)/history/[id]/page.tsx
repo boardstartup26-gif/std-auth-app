@@ -1,0 +1,172 @@
+import { redirect, notFound } from "next/navigation";
+import Link from "next/link";
+import { createClient, createAdminClient } from "@/lib/supabase/server";
+import {
+  backLink,
+  cardPadded,
+  mutedPanel,
+  numericMono,
+  pageShell,
+  scoreBadgeClass,
+  sectionLabel,
+} from "@/lib/ui";
+
+type DetailRow = {
+  id: string;
+  answer_text: string;
+  submitted_at: string;
+  questions: {
+    question_number: string;
+    year: number;
+    question_text: string | null;
+    subjects: { name: string } | null;
+    marking_schemes: { total_marks: number; model_answer: string | null }[] | null;
+  } | null;
+  evaluations: {
+    marks_awarded: number;
+    points_hit: string[];
+    points_missed: string[];
+    conceptual_errors: string[];
+    examiner_feedback: string | null;
+    model_answer: string | null;
+    model_answer_source: string | null;
+    declared_marks: number | null;
+  }[] | null;
+};
+
+function FeedbackList({ items }: { items: string[] }) {
+  if (!items.length) {
+    return <p className="text-sm text-muted-foreground">None recorded.</p>;
+  }
+  return (
+    <ul className="space-y-2">
+      {items.map((point, i) => (
+        <li key={i} className="text-sm leading-relaxed text-foreground/90">— {point}</li>
+      ))}
+    </ul>
+  );
+}
+
+export default async function HistoryDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/login");
+
+  const admin = createAdminClient();
+
+  const { data, error } = await admin
+    .from("student_answers")
+    .select(`
+      id, answer_text, submitted_at,
+      questions (
+        question_number, year, question_text,
+        subjects ( name ),
+        marking_schemes ( total_marks, model_answer )
+      ),
+      evaluations (
+        marks_awarded, points_hit, points_missed, conceptual_errors,
+        examiner_feedback, model_answer, model_answer_source, declared_marks
+      )
+    `)
+    .eq("user_id", user.id)
+    .eq("id", id)
+    .single();
+
+  if (error || !data) notFound();
+
+  const row = data as unknown as DetailRow;
+  const q = row.questions;
+  const evaluation = row.evaluations?.[0];
+  const scheme = q?.marking_schemes?.[0];
+
+  const totalMarks = scheme?.total_marks ?? 0;
+  const awarded = evaluation?.marks_awarded ?? 0;
+  const modelAnswer = evaluation?.model_answer ?? scheme?.model_answer ?? null;
+  const modelAnswerSource = evaluation?.model_answer_source ?? "verified";
+
+  return (
+    <div className={`${pageShell} space-y-6`}>
+      <div className="flex items-center justify-between gap-4">
+        <Link href="/history" className={backLink}>← History</Link>
+        <span className={`text-sm text-muted-foreground ${numericMono}`}>
+          {new Date(row.submitted_at).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}
+        </span>
+      </div>
+
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className={sectionLabel}>Evaluation result</p>
+          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-foreground">
+            <span className="font-sans">{q?.subjects?.name ?? "Unknown Subject"}</span>
+            {" — "}
+            <span className={numericMono}>{q?.year ?? "—"} — Q{q?.question_number ?? "—"}</span>
+          </h1>
+        </div>
+        <span className={scoreBadgeClass(awarded, totalMarks, "lg")}>{awarded} / {totalMarks}</span>
+      </div>
+
+      {q?.question_text && (
+        <section className={cardPadded}>
+          <h2 className={sectionLabel}>Question</h2>
+          <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">{q.question_text}</p>
+        </section>
+      )}
+
+      <section className={cardPadded}>
+        <h2 className={sectionLabel}>Your answer</h2>
+        <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">{row.answer_text}</p>
+        {evaluation?.declared_marks != null && (
+          <p className={`mt-3 text-sm text-muted-foreground ${numericMono}`}>
+            Declared marks: {evaluation.declared_marks}
+          </p>
+        )}
+      </section>
+
+      <section className={cardPadded}>
+        <h2 className={sectionLabel}>Examiner feedback</h2>
+        <div className={`${mutedPanel} mt-3`}>
+          <p className="whitespace-pre-wrap text-sm italic leading-relaxed text-foreground/90">
+            {evaluation?.examiner_feedback ?? "—"}
+          </p>
+        </div>
+      </section>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <section className="rounded-xl border-l-4 border-emerald-700/50 bg-card p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-emerald-400">Points hit</h2>
+          <div className="mt-3"><FeedbackList items={evaluation?.points_hit ?? []} /></div>
+        </section>
+
+        <section className="rounded-xl border-l-4 border-border bg-card p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Points missed</h2>
+          <div className="mt-3"><FeedbackList items={evaluation?.points_missed ?? []} /></div>
+        </section>
+      </div>
+
+      {evaluation?.conceptual_errors && evaluation.conceptual_errors.length > 0 && (
+        <section className="rounded-xl border-l-4 border-amber-700/50 bg-card p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-amber-400">Conceptual errors</h2>
+          <div className="mt-3"><FeedbackList items={evaluation.conceptual_errors} /></div>
+        </section>
+      )}
+
+      {modelAnswer && (
+        <section className={cardPadded}>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className={sectionLabel}>Model answer</h2>
+            <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
+              {modelAnswerSource === "verified" ? "CISCE verified" : "AI generated"}
+            </span>
+          </div>
+          <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">{modelAnswer}</p>
+        </section>
+      )}
+    </div>
+  );
+}

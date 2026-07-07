@@ -1,59 +1,46 @@
 "use client";
 
-// ─── PremiumGate ──────────────────────────────────────────────────────────────
-// Presentational only. Blurs children until `unlocked` is true. Does NOT own
-// email state or fetch logic — that lives once in the parent (see
-// WaitlistCapture) so submitting one email unlocks every gated section on the
-// page in a single action, instead of each PremiumGate instance running its
-// own independent waitlist form.
-//
-// Usage:
-//   const [unlocked, setUnlocked] = useState(false);
-//   <PremiumGate label="Model answer" unlocked={unlocked}>
-//     <p>{result.model_answer}</p>
-//   </PremiumGate>
-//   <WaitlistCapture onUnlock={() => setUnlocked(true)} />
+import { useState } from "react";
+
+type GateVariant = "conceptual" | "model" | "tips";
+
+const VARIANT_STYLES: Record<GateVariant, { minHeight: string; borderAccent: string; icon: string }> = {
+  conceptual: { minHeight: "min-h-[110px]", borderAccent: "border-l-4 border-amber-700/60", icon: "⚠️" },
+  model:      { minHeight: "min-h-[150px]", borderAccent: "border-l-4 border-sky-700/60",   icon: "📘" },
+  tips:       { minHeight: "min-h-[130px]", borderAccent: "border-l-4 border-purple-400/60", icon: "✅" },
+};
 
 interface PremiumGateProps {
-  label: string; // e.g. "Model answer", "Conceptual errors"
+  label: string;
   unlocked: boolean;
+  variant: GateVariant;
   children: React.ReactNode;
 }
 
-export function PremiumGate({ label, unlocked, children }: PremiumGateProps) {
+export function PremiumGate({ label, unlocked, variant, children }: PremiumGateProps) {
+  const style = VARIANT_STYLES[variant];
+
   return (
-    <div className="relative min-h-[80px]">
+    <div className={`relative overflow-hidden rounded-xl bg-card ${style.borderAccent} ${style.minHeight}`}>
       <div
-        className={unlocked ? "" : "pointer-events-none select-none blur-sm"}
+        className={unlocked ? "p-4" : "pointer-events-none select-none p-4 blur-[6px] opacity-70"}
         aria-hidden={!unlocked}
       >
         {children}
       </div>
 
       {!unlocked && (
-        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-xl bg-white/80 px-4 py-5 dark:bg-zinc-900/80">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-white text-base dark:border-zinc-700 dark:bg-zinc-900">
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-1.5 bg-card/30 backdrop-blur-md">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full border border-purple-400/50 bg-card text-base">
             🔒
           </div>
-          <p className="mt-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-            {label} — Premium
-          </p>
-          <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
-            Free during beta — join the waitlist below to unlock.
-          </p>
+          <p className="text-sm font-semibold text-purple-400">{label} — Premium</p>
+          <p className="text-xs text-muted-foreground">{style.icon} Free during beta — unlock below.</p>
         </div>
       )}
     </div>
   );
 }
-
-// ─── WaitlistCapture ──────────────────────────────────────────────────────────
-// The single, shared email capture form. Render exactly ONE of these per
-// evaluation result (not one per PremiumGate). On success, calls onUnlock()
-// once — the parent flips one boolean that every PremiumGate on the page
-// reads.
-
-import { useState } from "react";
 
 interface WaitlistCaptureProps {
   onUnlock: () => void;
@@ -66,7 +53,7 @@ export function WaitlistCapture({ onUnlock, unlocked }: WaitlistCaptureProps) {
 
   if (unlocked || status === "success") {
     return (
-      <div className="flex items-center gap-1.5 text-xs font-medium text-emerald-600 dark:text-emerald-400">
+      <div className="flex items-center gap-1.5 text-xs font-medium text-emerald-400">
         <span>✓</span> You&apos;re on the waitlist — premium unlocked for beta.
       </div>
     );
@@ -75,7 +62,6 @@ export function WaitlistCapture({ onUnlock, unlocked }: WaitlistCaptureProps) {
   async function handleJoinWaitlist() {
     const trimmed = email.trim();
     if (!trimmed || !trimmed.includes("@")) return;
-
     setStatus("submitting");
     try {
       const res = await fetch("/api/waitlist", {
@@ -92,12 +78,12 @@ export function WaitlistCapture({ onUnlock, unlocked }: WaitlistCaptureProps) {
   }
 
   return (
-    <div className="flex w-full flex-col items-center gap-3 rounded-xl border border-zinc-200 px-4 py-5 text-center dark:border-zinc-700">
+    <div className="flex w-full flex-col items-center gap-3 rounded-xl border border-purple-400/40 px-4 py-5 text-center">
       <div>
-        <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <p className="text-sm font-semibold text-foreground">
           Unlock conceptual errors, model answer &amp; improvement tips
         </p>
-        <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="mt-0.5 text-xs text-muted-foreground">
           Free during beta — join the waitlist to unlock instantly.
         </p>
       </div>
@@ -108,17 +94,17 @@ export function WaitlistCapture({ onUnlock, unlocked }: WaitlistCaptureProps) {
           onChange={(e) => setEmail(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleJoinWaitlist()}
           placeholder="your@email.com"
-          className="h-9 w-full rounded-lg border border-zinc-200 bg-white px-3 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:focus:ring-zinc-100"
+          className="h-9 w-full rounded-lg border border-border bg-card px-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-premium"
         />
         <button
           onClick={handleJoinWaitlist}
           disabled={status === "submitting" || !email.trim().includes("@")}
-          className="h-9 w-full rounded-lg bg-zinc-900 text-xs font-semibold text-white transition-colors hover:bg-zinc-700 disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          className="h-9 w-full rounded-lg bg-premium px-3 text-xs font-semibold text-foreground transition-colors hover:opacity-90 disabled:opacity-50"
         >
           {status === "submitting" ? "Joining…" : "Join waitlist to unlock"}
         </button>
         {status === "error" && (
-          <p className="text-xs text-red-500">Something went wrong. Try again.</p>
+          <p className="text-xs text-red-400">Something went wrong. Try again.</p>
         )}
       </div>
     </div>

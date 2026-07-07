@@ -24,11 +24,24 @@ function withCookies(from: NextResponse, to: NextResponse) {
   return to;
 }
 
+// All routes that require an authenticated session.
+// Adding a new page? If it needs auth, add its prefix here — don't rely
+// on the page itself doing an auth check as the only protection.
+const PROTECTED_PREFIXES = [
+  "/dashboard",
+  "/evaluate",
+  "/history",
+  "/account",
+];
+
+function isProtectedRoute(pathname: string): boolean {
+  return PROTECTED_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+}
+
 export async function middleware(request: NextRequest) {
   const url = getSupabaseUrl();
   const key = getSupabaseKey();
 
-  // If env vars aren't set yet, don't block dev; just continue.
   if (!url || !key) {
     return NextResponse.next();
   }
@@ -58,11 +71,12 @@ export async function middleware(request: NextRequest) {
 
   const pathname = request.nextUrl.pathname;
   const isAuthRoute = pathname === "/login" || pathname === "/signup";
-  const isDashboardRoute = pathname.startsWith("/dashboard");
 
-  if (!user && isDashboardRoute) {
+  if (!user && isProtectedRoute(pathname)) {
     const redirectUrl = request.nextUrl.clone();
     redirectUrl.pathname = "/login";
+    // Preserve the intended destination so you can redirect back post-login.
+    redirectUrl.searchParams.set("next", pathname);
     return withCookies(response, NextResponse.redirect(redirectUrl));
   }
 
@@ -80,4 +94,3 @@ export const config = {
     "/((?!_next/|static/|favicon.ico).*)",
   ],
 };
-

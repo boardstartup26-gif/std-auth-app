@@ -2,19 +2,53 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/server";
 
-// ─── POST /api/waitlist ─────────────────────────────────────────────────────
-// Called by WaitlistCapture (see PremiumGate.tsx). Writes to a `waitlist`
-// table — see the SQL migration in this handoff for the schema.
-//
-// NOTE: I don't have visibility into whether a route already exists at this
-// path — if one does, diff it against this before overwriting.
+// ─── Rate limiting ──────────────────────────────────────────────────────────
+// In-memory counter: fine for a single Vercel instance during beta (2-3
+// testers). This resets if the server restarts/redeploys and does NOT work
+// correctly if you're running multiple serverless instances at once, because
+// each instance has its own memory. If traffic grows, replace this with
+// Upstash Redis (a hosted counter that all instances share) — flagging now
+// so it's not forgotten post-launch.
+const requestLog = new Map<string, number[]>();
+const RATE_LIMIT = 5; // max requests
+const WINDOW_MS = 60 * 1000; // per 1 minute
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = requestLog.get(ip) ?? [];
+  const recent = timestamps.filter((t) => now - t < WINDOW_MS);
+
+  if (recent.length >= RATE_LIMIT) {
+    requestLog.set(ip, recent);
+    return true;
+  }
+
+  recent.push(now);
+  requestLog.set(ip, recent);
+  return false;
+}
+
+// Basic RFC-5322-ish check — not perfect, but rejects "a@a", "x@x", trailing
+// junk, and missing TLDs, which the old `.includes("@")` check let through.
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 interface WaitlistRequestBody {
   email: string;
   feature?: string;
 }
 
+// ─── POST /api/waitlist ─────────────────────────────────────────────────────
 export async function POST(req: NextRequest) {
+  // Vercel sets this header; falls back to "unknown" for local dev.
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Try again in a minute." },
+      { status: 429 }
+    );
+  }
+
   let body: WaitlistRequestBody;
   try {
     body = await req.json();
@@ -25,14 +59,12 @@ export async function POST(req: NextRequest) {
   const email = body.email?.trim().toLowerCase();
   const feature = body.feature ?? "premium_bundle";
 
-  if (!email || !email.includes("@")) {
+  if (!email || !EMAIL_REGEX.test(email)) {
     return NextResponse.json({ error: "Valid email required" }, { status: 400 });
   }
 
   const supabase = createAdminClient();
 
-  // upsert on email so repeat submissions (e.g. re-triggering from a second
-  // browser tab) don't create duplicate rows — just bump last_seen_at.
   const { error } = await supabase
     .from("waitlist")
     .upsert(

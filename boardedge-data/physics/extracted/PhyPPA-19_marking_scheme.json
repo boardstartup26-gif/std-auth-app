@@ -1,0 +1,1882 @@
+{
+  "year": 2019,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)(i)",
+      "question_text": "The diagram below shows a claw hammer used to remove a nail: To which class of lever does it belong?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Class I lever",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Class I lever",
+      "total_marks": 1,
+      "key_points": [
+        "Class I lever"
+      ],
+      "model_answer": "Class I lever",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify position of fulcrum hence made a mistake"
+      ],
+      "examiner_notes": "Most of the candidates could identify the class of lever but some could not identify the position of fulcrum hence made a mistake.",
+      "topic": "Machines",
+      "diagram_required": true
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "question_text": "Give one more example of the same class of lever mentioned by you in (i) for which the mechanical advantage is greater than one.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Crow bar / pliers / any other correct example/diagram with name (only scissors not accepted), explanation to imply M.A. > 1",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Crow bar / pliers / any other correct example/diagram with name (only scissors not accepted), explanation to imply M A > 1.",
+      "total_marks": 1,
+      "key_points": [
+        "Correct example of class I lever",
+        "M.A. > 1 implied"
+      ],
+      "model_answer": "Crow bar or pliers, with explanation implying M.A. > 1",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Scissors not accepted"
+      ],
+      "common_errors": [
+        "Gave example of class two levers",
+        "Gave example of class I lever but its mechanical advantage was not greater than 1"
+      ],
+      "examiner_notes": "Gave example of class two levers. Some gave example of class I lever, but its mechanical advantage was not greater than 1.",
+      "topic": "Machines",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Two bodies A and B have masses in the ratio 5:1 and their kinetic energies are in the ratio 125:9. Find the ratio of their velocities.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "v1:v2 = 5:3",
+      "marks_per_correct_point": 1,
+      "scheme_text": "E1/E2 = 1/2 m1v1^2 / 1/2 m2v2^2 = (m1/m2) × (v1/v2)^2; 125/9 = (5/1) x (v1/v2)^2; (v1/v2)^2 = (125/9) x (1/5) = 25/9; (v1/v2) = 5/3",
+      "total_marks": 2,
+      "key_points": [
+        "Correct formula substitution",
+        "Final ratio in lowest terms 5:3"
+      ],
+      "model_answer": "E1/E2 = (m1/m2) × (v1/v2)^2 → 125/9 = 5 × (v1/v2)^2 → (v1/v2)^2 = 25/9 → v1/v2 = 5/3",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates could not do substitution in the ratio form",
+        "Did not express the final answer in the ratio form with lowest term"
+      ],
+      "examiner_notes": "Many candidates could not do substitution in the ratio form. Some candidates did not express the final answer in the ratio form with lowest term.",
+      "topic": "Work Energy and Power",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(c)(i)",
+      "question_text": "Name the physical quantity which is measured in calories.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Heat energy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Heat energy",
+      "total_marks": 1,
+      "key_points": [
+        "Heat energy"
+      ],
+      "model_answer": "Heat energy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote physical quantity as work or energy",
+        "Confused physical quantity with unit, wrote joule"
+      ],
+      "examiner_notes": "Most candidates named the physical quantity correctly. But some wrote work or energy. Some confused physical quantity and unit, wrote joule.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(c)(ii)",
+      "question_text": "How is calorie related to the S.I unit of that quantity?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "1 calorie = 4.2 J / 4.186 J / 4.18 J",
+      "marks_per_correct_point": 1,
+      "scheme_text": "1 calorie = 4.2 J / 4.186 J / 4.18 J",
+      "total_marks": 1,
+      "key_points": [
+        "1 calorie = 4.2 J"
+      ],
+      "model_answer": "1 calorie = 4.2 J",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "4.186 J",
+        "4.18 J"
+      ],
+      "common_errors": [
+        "Reversed relation, wrote 1 J = 4.2 calorie",
+        "Wrote incorrect values like 1 cal = 0.4 j/373K/336j"
+      ],
+      "examiner_notes": "Most wrote the relation correctly but some reversed it. Some wrote incorrect values.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(d)(i)",
+      "question_text": "Define couple.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Two equal and opposite parallel forces, not acting along the same line, form a couple.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Two equal and opposite parallel forces, not acting along the same line, form a couple.",
+      "total_marks": 1,
+      "key_points": [
+        "two",
+        "equal",
+        "parallel",
+        "opposite",
+        "not acting along same line"
+      ],
+      "model_answer": "Two equal and opposite parallel forces, not acting along the same line, form a couple.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Key words missing such as two, equal, parallel, opposite, not acting along same line",
+        "Some defined moment of couple or torque instead of couple"
+      ],
+      "examiner_notes": "In many answer scripts key words/terms were missing which made the definition incomplete or meaningless. Some defined moment of couple or torque instead of couple.",
+      "topic": "Force",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(d)(ii)",
+      "question_text": "State the S.I. unit of moment of couple.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "N m",
+      "marks_per_correct_point": 1,
+      "scheme_text": "N m",
+      "total_marks": 1,
+      "key_points": [
+        "N m"
+      ],
+      "model_answer": "N m",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote joule in place of Nm or N or dyn or N/m or N m-1"
+      ],
+      "examiner_notes": "Many candidates wrote the SI unit correctly, but some wrote joule instead.",
+      "topic": "Force",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(e)(i)",
+      "question_text": "Define critical angle.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Critical angle is the angle of incidence in the denser medium for which the angle of refraction in the rarer medium is 90°.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Critical angle is the angle of incidence in the denser medium for which the angle of refraction in the rarer medium is 90°.",
+      "total_marks": 1,
+      "key_points": [
+        "rarer/denser mentioned",
+        "angle of incidence",
+        "90 degrees"
+      ],
+      "model_answer": "Critical angle is the angle of incidence in the denser medium for which the angle of refraction in the rarer medium is 90°.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Key words such as rarer, denser were missing",
+        "Did not make it clear that it is the angle of incidence",
+        "90 degree was missing"
+      ],
+      "examiner_notes": "Many candidates defined critical angle correctly. But quite a number made errors as noted.",
+      "topic": "Refraction of light (plane surface)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "1(e)(ii)",
+      "question_text": "State one important factor which affects the critical angle of a given medium.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Colour / wavelength of light and temperature / refractive index / optical density of the medium/material/nature of the medium / pairing media / speed of light.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Colour / wavelength of light and temperature / refractive index/ optical density of the medium/material/nature of the medium/ pairing media /speed of light.",
+      "total_marks": 1,
+      "key_points": [
+        "colour/wavelength",
+        "temperature",
+        "refractive index"
+      ],
+      "model_answer": "Colour/wavelength of light, refractive index, or nature of medium",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote conditions of total internal reflection instead of factors",
+        "Factor as angle of incidence/frequency",
+        "Additional incorrect points"
+      ],
+      "examiner_notes": "Many candidates wrote it correctly but quite a number wrote conditions of TIR or incorrect factors.",
+      "topic": "Refraction of light (plane surface)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(a)(i)",
+      "question_text": "An electromagnetic radiation is used for photography in fog. Identify the radiation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Infra-Red",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Infra-Red",
+      "total_marks": 1,
+      "key_points": [
+        "Infra-Red"
+      ],
+      "model_answer": "Infra-Red",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote incorrect name of the radiation",
+        "Some wrote infar instead of infra"
+      ],
+      "examiner_notes": "Most wrote the correct radiation name but some wrote incorrect names.",
+      "topic": "Spectrum",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(a)(ii)",
+      "question_text": "Why is this radiation mentioned by you, ideal for this purpose?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "They have long wavelength hence less scattered and can travel through the fog.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "They have long wavelength hence less scattered and can travel through the fog.",
+      "total_marks": 1,
+      "key_points": [
+        "long wavelength",
+        "less scattered"
+      ],
+      "model_answer": "They have long wavelength hence less scattered and can travel through the fog.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "High penetrating power (vague)",
+        "Used generalized irrelevant words such as deviation, penetrate, dispersion",
+        "Gave uses of infrared radiations instead of reason"
+      ],
+      "examiner_notes": "In some scripts, reasons given were vague or irrelevant.",
+      "topic": "Spectrum",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(b)(i)",
+      "question_text": "What is the relation between the refractive index of water with respect to air (aμw) and the refractive index of air with respect to water (wμa).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "They are inversely proportional. aμw = 1/(wμa)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "They are inversely propotional. Or aμw = 1/(wμa)",
+      "total_marks": 1,
+      "key_points": [
+        "inversely proportional relation"
+      ],
+      "model_answer": "aμw = 1/(wμa); they are inversely proportional.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote separate expression or definition for each but did not give relation between the two"
+      ],
+      "examiner_notes": "Many candidates wrote separate expressions but did not give the relation between the two.",
+      "topic": "Refraction of light (plane surface)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(b)(ii)",
+      "question_text": "If the refractive index of water with respect to air (aμw) is 5/3. Calculate the refractive index of air with respect to water (wμa).",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "wμa = 1/(aμw) = 3/5 = 0.6",
+      "marks_per_correct_point": 1,
+      "scheme_text": "wμa = 1/(aμw) = 3/5 = 0.6",
+      "total_marks": 1,
+      "key_points": [
+        "correct formula",
+        "final decimal answer 0.6"
+      ],
+      "model_answer": "wμa = 1/(5/3) = 3/5 = 0.6",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote equation in terms of speed of light and did long calculations",
+        "Some wrote answer as 1"
+      ],
+      "examiner_notes": "In spite of incorrect first part, most gave correct answer in second part. Some did unnecessary long calculations.",
+      "topic": "Refraction of light (plane surface)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "The specific heat capacity of a substance A is 3,800 Jkg-1K-1 and that of a substance B is 400 Jkg-1K-1. Which of the two substances is a good conductor of heat? Give a reason for your answer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Substance B is a good conductor of heat because specific heat capacity of B is less than that of A and specific heat capacity is the heat energy required to raise the temperature of 1 kg of a substance by 1°C, so substance B gets heated faster.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Substance B is a good conductor of heat. Because specific heat capacity of B is less than that of A and specific heat capacity is the heat energy required to raise the temperature of 1 kg of a substance by 1°C, so substance B gets heated faster.",
+      "total_marks": 2,
+      "key_points": [
+        "Substance B identified",
+        "correct reasoning based on specific heat capacity"
+      ],
+      "model_answer": "Substance B is a good conductor of heat since its specific heat capacity is lower, meaning it heats up faster for the same heat input.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not name the good conductor of heat",
+        "Unable to write the reason based on specific heat capacities"
+      ],
+      "examiner_notes": "A large number of candidates did not name the good conductor of heat and were unable to give the reason.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(d)",
+      "question_text": "A man playing a flute is able to produce notes of different frequencies. If he closes the holes near his mouth, will the pitch of the note produced, increase or decrease? Give a reason.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Decrease. Frequency is inversely proportional to the length of the air column.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Decrease. Frequency is inversely proportional to the length of the air column.",
+      "total_marks": 2,
+      "key_points": [
+        "Decrease",
+        "frequency inversely proportional to length of air column"
+      ],
+      "model_answer": "The pitch will decrease because frequency is inversely proportional to the length of the air column, and closing holes near the mouth increases the effective length.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not relate holes on flute to frequency (pitch)",
+        "Related it to loudness instead of pitch",
+        "Answered first part correctly but failed to give explanation"
+      ],
+      "examiner_notes": "Very few candidates answered it correctly.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "2(e)",
+      "question_text": "The diagram below shows a light source P embedded in a rectangular glass block ABCD of critical angle 42°. Complete the path of the ray PQ till it emerges out of the block. [Write necessary angles.]",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Ray undergoes total internal reflection at Q (42° angle), travels to new surface, angle of incidence 48° at second surface, refracts out at 42° from normal.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram showing angle 42° at Q, total internal reflection, ray travels making angle 48° with second surface's normal complement, then refracts out with angle 42° marked.",
+      "total_marks": 2,
+      "key_points": [
+        "Total internal reflection at Q shown",
+        "angle of incidence calculated at new surface (48)",
+        "ray emerges with angle 42 marked",
+        "arrows on rays"
+      ],
+      "model_answer": "The ray undergoes total internal reflection at Q since 42° equals critical angle; it strikes the adjacent surface where angle of incidence is 48°, which is less than critical angle, so it refracts out making an angle of 42° with the normal.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Assumed 42° as angle of incidence at first surface and showed first refracted ray along the surface",
+        "Did not calculate angle of incidence at new surface, showed incorrect path",
+        "Angle of incidence not marked and written",
+        "Arrows missing on the rays"
+      ],
+      "examiner_notes": "Many candidates could complete the path of first reflected ray correctly but made a mistake in completing the path of the second ray after total internal reflection.",
+      "topic": "Refraction of light (plane surface)",
+      "diagram_required": true
+    },
+    {
+      "question_number": "3(a)(i)",
+      "question_text": "Refraction of light (lens)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "The focal length of the lens will increase in water (Focal length of the lens depends on the refractive index of the material of lens relative to its surrounding medium)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "The focal length of the lens will increase in water (Focal length of the lens depends on the refractive index of the material of lens relative to its surrounding medium)",
+      "total_marks": 1,
+      "key_points": [
+        "focal length increases in water"
+      ],
+      "model_answer": "The focal length of the lens will increase because it depends on the refractive index of the lens material relative to the surrounding medium.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not comprehend the question correctly",
+        "Answered that focal length changes but could not give correct reason",
+        "Could not write about the effect due to change in refractive index of outside medium"
+      ],
+      "examiner_notes": "Many candidates could not comprehend the question correctly.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(a)(ii)",
+      "question_text": "Which lens, thick or thin has greater focal length?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "thinner",
+      "marks_per_correct_point": 1,
+      "scheme_text": "thinner",
+      "total_marks": 1,
+      "key_points": [
+        "thin lens has greater focal length"
+      ],
+      "model_answer": "Thin lens",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote convex lens as thicker and concave as thinner instead of comparing thick/thin lens",
+        "Wrote thicker lens has greater focal length"
+      ],
+      "examiner_notes": "While many candidates answered it correctly, quite a few could not comprehend it.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(b)(i)",
+      "question_text": "Two waves of the same pitch have amplitudes in the ratio 1:3. What will be the ratio of their intensities?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "I1:I2 = 1:9",
+      "marks_per_correct_point": 1,
+      "scheme_text": "I1/I2 = (a1/a2)^2 = (1/3)^2 = 1/9 ∴ I1:I2 = 1:9",
+      "total_marks": 1,
+      "key_points": [
+        "Correct formula I∝a^2",
+        "Final ratio 1:9"
+      ],
+      "model_answer": "I1/I2 = (a1/a2)^2 = 1/9, so I1:I2 = 1:9",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Expressed the same ratio as amplitude",
+        "Expressed answer in fractional form",
+        "Wrote reverse ratio"
+      ],
+      "examiner_notes": "Most answered correctly but some made errors as noted.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(b)(ii)",
+      "question_text": "Two waves of the same pitch have amplitudes in the ratio 1:3. What will be the ratio of their frequencies?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "1:1 (because pitch is same)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "1:1 (because pitch is same)",
+      "total_marks": 1,
+      "key_points": [
+        "1:1 ratio",
+        "pitch is same reasoning"
+      ],
+      "model_answer": "1:1, since pitch is the same for both waves.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Expressed the same ratio incorrectly",
+        "Wrote reverse ratio"
+      ],
+      "examiner_notes": "Most answered it correctly but some made errors.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(c)(i)",
+      "question_text": "How does an increase in the temperature affect the specific resistance of a Metal?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Increases",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Increases",
+      "total_marks": 1,
+      "key_points": [
+        "Increases"
+      ],
+      "model_answer": "Increases",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote specific resistance of a metal does not change or decreases"
+      ],
+      "examiner_notes": "Most candidates wrote the correct answer but some gave incorrect answers.",
+      "topic": "Current Electricity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(c)(ii)",
+      "question_text": "How does an increase in the temperature affect the specific resistance of a Semiconductor?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Decreases",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Decreases",
+      "total_marks": 1,
+      "key_points": [
+        "Decreases"
+      ],
+      "model_answer": "Decreases",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote that specific resistance of a semiconductor increases or remains the same"
+      ],
+      "examiner_notes": "Most candidates answered it correctly but some gave incorrect answers.",
+      "topic": "Current Electricity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(d)(i)",
+      "question_text": "Define resonant vibrations.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Vibrations of greater amplitude when frequency of forced vibration is equal to the frequency of free vibration.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Vibrations of greater amplitude when frequency of forced vibration is equal to the frequency of free vibration.",
+      "total_marks": 1,
+      "key_points": [
+        "increase in amplitude",
+        "frequency of forced vibration equals frequency of free vibration"
+      ],
+      "model_answer": "Vibrations of greater amplitude when the frequency of forced vibration equals the frequency of free vibration.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Keyword such as increase in amplitude was missing",
+        "Natural frequency matching with forced vibration was written instead of frequency of forced vibration"
+      ],
+      "examiner_notes": "In the definition of resonant vibrations following glitches were observed.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(d)(ii)",
+      "question_text": "Which characteristic of sound, makes it possible to recognize a person by his voice without seeing him?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Quality / Timbre",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Quality / Timbre",
+      "total_marks": 1,
+      "key_points": [
+        "Quality/Timbre"
+      ],
+      "model_answer": "Quality (Timbre)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Timbre"
+      ],
+      "common_errors": [
+        "Wrote loudness, pitch, frequency instead of Quality"
+      ],
+      "examiner_notes": "Many candidates wrote it correctly as Quality but quite a number also wrote loudness, pitch, frequency.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "3(e)",
+      "question_text": "Is it possible for a hydrogen (1H1) nucleus to emit an alpha particle? Give a reason for your answer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "No. The nucleus does not contain two protons and two neutrons",
+      "marks_per_correct_point": 1,
+      "scheme_text": "No. The nucleus does not contain two protons and two neutrons",
+      "total_marks": 2,
+      "key_points": [
+        "No",
+        "reasoning that nucleus lacks two protons and two neutrons"
+      ],
+      "model_answer": "No, because the hydrogen nucleus does not contain two protons and two neutrons needed to emit an alpha particle.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Hydrogen is not a radioactive substance (irrelevant reasoning)",
+        "After alpha emission atomic number decreases by 2 and mass number decreases by 4 (irrelevant)",
+        "Hydrogen has one proton and one neutron (incorrect)",
+        "Hydrogen has one proton and one electron (irrelevant)",
+        "Very few attempted to explain with a nuclear reaction"
+      ],
+      "examiner_notes": "Most candidates wrote first part correctly as 'No' barring some who wrote 'Yes'. But they found it difficult to give reason for the same.",
+      "topic": "Radioactivity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Calculate the effective resistance across AB: [diagram shows 8Ω in series with parallel combination of (5Ω+3Ω=8Ω branch... actually resistors 5Ω, 4Ω, 3Ω arranged as triangle/star with 8Ω] with resistors 8Ω, 5Ω, 4Ω, 3Ω as shown between A and B.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "10.25 Ω",
+      "marks_per_correct_point": 1,
+      "scheme_text": "R1 = (9×3)/(9+3) = 27/12 = 9/4 Ω; ∴ R = 8 + 9/4 = (32+9)/4 = 41/4 = 10.25 Ω",
+      "total_marks": 2,
+      "key_points": [
+        "Correct identification of parallel combination",
+        "Correct final answer 10.25 Ω"
+      ],
+      "model_answer": "R1 = (9×3)/(9+3) = 9/4 Ω; R = 8 + 9/4 = 41/4 = 10.25 Ω",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused in understanding the series and parallel combination of resistors",
+        "Made calculation errors",
+        "Wrote incorrect expression at stage 1 (R instead of 1/R as LHS)",
+        "Left final answer in improper fraction"
+      ],
+      "examiner_notes": "Majority of the candidates answered this subpart correctly. However, some made errors as noted.",
+      "topic": "Current Electricity",
+      "diagram_required": true
+    },
+    {
+      "question_number": "4(b)(i)",
+      "question_text": "State whether the specific heat capacity of a substance remains the same when its state changes from solid to liquid.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "No, it changes",
+      "marks_per_correct_point": 1,
+      "scheme_text": "No, it changes",
+      "total_marks": 1,
+      "key_points": [
+        "No, it changes"
+      ],
+      "model_answer": "No, it changes",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote specific heat capacity remains the same",
+        "Got confused with latent heat and specific heat capacity",
+        "Got confused between specific heat capacity and specific resistance"
+      ],
+      "examiner_notes": "Most of the candidates answered it correctly but some made errors.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(b)(ii)",
+      "question_text": "Give one example to support your answer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Specific heat capacity of ice = 2.1 J/g°C and that of water is 4.2 J/g°C",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Specific heat capacity of ice = 2.1 J/g oC and that of water is 4.2 J/g oC",
+      "total_marks": 1,
+      "key_points": [
+        "Example of ice and water with correct values"
+      ],
+      "model_answer": "Ice has specific heat capacity 2.1 J/g°C while water has 4.2 J/g°C, showing the values differ across states.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote example of water and ice but did not mention the values"
+      ],
+      "examiner_notes": "Some of them wrote example of water and ice but they did not mention the values.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "A magnet kept at the centre of two coils A and B is moved to and fro as shown in the diagram. The two galvanometers show deflection. State with a reason whether x > y or x < y. [x and y are magnitudes of deflection.]",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "x < y. Induced e.m.f. is directly proportional to the number of turns of the coil.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "x < y. Induced e.m.f. is directly proportional to the number of turns of the coil.",
+      "total_marks": 2,
+      "key_points": [
+        "x < y stated",
+        "correct reasoning about number of turns"
+      ],
+      "model_answer": "x < y, because induced e.m.f. is directly proportional to the number of turns of the coil, and coil B has more turns than coil A.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Reason statement did not convey the correct meaning"
+      ],
+      "examiner_notes": "Almost all the candidates answered it correctly. But while giving reason some candidates wrote statements not conveying the correct meaning.",
+      "topic": "Electro-magnetism",
+      "diagram_required": true
+    },
+    {
+      "question_number": "4(d)(i)",
+      "question_text": "Why is a nuclear fusion reaction called a thermo nuclear reaction?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "It requires extremely high temperature to take place.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "It requires extremely high temperature to take place.",
+      "total_marks": 1,
+      "key_points": [
+        "requires extremely high temperature"
+      ],
+      "model_answer": "It is called a thermonuclear reaction because it requires extremely high temperature to take place.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about large amount of heat energy being released but did not talk about reaction taking place at very high temperature",
+        "Explained in terms of heat released instead of temperature required"
+      ],
+      "examiner_notes": "Majority of the candidates wrote about heat energy released but did not mention the high temperature requirement.",
+      "topic": "Radioactivity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(d)(ii)",
+      "question_text": "Complete the reaction: 3He2 + 2H1 → 4He2 + ……………. + Energy",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "3He2 + 2H1 → 4He2 + 1H1 + Energy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "3He2 + 2H1 → 4He2 + 1H1 + Energy",
+      "total_marks": 1,
+      "key_points": [
+        "Correctly balanced with 1H1"
+      ],
+      "model_answer": "3He2 + 2H1 → 4He2 + 1H1 + Energy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not apply principle of conservation of mass number and atomic number",
+        "Wrote He in place of H"
+      ],
+      "examiner_notes": "Some candidates could balance the reaction correctly but majority could not do so.",
+      "topic": "Radioactivity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "4(e)",
+      "question_text": "State two ways to increase the speed of rotation of a D.C. motor.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Increasing the number of turns of the coil; increasing the strength of the magnetic field; increasing the area of the coil; increasing the current through the coil (Any two points)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "– increasing the number of turns of the coil. – increasing the strength of the magnetic field. – increasing the area of the coil. – increasing the current through the coil (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two of: increase turns, increase magnetic field, increase area, increase current"
+      ],
+      "model_answer": "Increase the current through the coil, or increase the strength of the magnetic field.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Use of correct technical terms was missing",
+        "Got confused with induction",
+        "Wrote number of coils in place of number of turns of a coil"
+      ],
+      "examiner_notes": "Many candidates could answer correctly but some made errors as noted.",
+      "topic": "Electro-magnetism",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(a)(i)",
+      "question_text": "A body of mass 10 kg is kept at a height of 5 m. It is allowed to fall and reach the ground. What is the total mechanical energy possessed by the body at the height of 2 m assuming it is a frictionless medium?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "500 J",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Total mechanical energy possessed by the body at the height 2 m = P.E at the maximum height or principle of conservation of energy implied = 10 x 10 x 5 = 500 J",
+      "total_marks": 1.5,
+      "key_points": [
+        "Use of conservation of energy",
+        "Correct answer 500 J"
+      ],
+      "model_answer": "By conservation of energy, total mechanical energy = P.E. at maximum height = mgh = 10×10×5 = 500 J",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Took height as 2 m instead of 5 m for potential energy calculation",
+        "Did not mention use of principle of conservation of energy",
+        "Took distance travelled as 2 m instead of 3 m for finding velocity"
+      ],
+      "examiner_notes": "A large number of candidates answered correctly. However, some mistakes were observed as noted.",
+      "topic": "Work Energy and Power",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(a)(ii)",
+      "question_text": "What is the kinetic energy possessed by the body just before hitting the ground? Take g = 10 m/s².",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "500 J",
+      "marks_per_correct_point": 1,
+      "scheme_text": "K.E possessed by the body just before hitting the ground = P.E at the maximum height = 500 J",
+      "total_marks": 1.5,
+      "key_points": [
+        "Conservation of energy applied",
+        "Correct final answer 500 J"
+      ],
+      "model_answer": "By conservation of energy, K.E. just before hitting ground = P.E. at maximum height = 500 J",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Improper conversion of units, mass taken in gram in place of kg",
+        "Adopted longer method calculating velocity at bottom then KE",
+        "Substituted 5 metre in place of velocity in KE formula"
+      ],
+      "examiner_notes": "Some candidates made mistakes due to improper conversion of units or unnecessary long methods.",
+      "topic": "Work Energy and Power",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(b)(i)",
+      "question_text": "A uniform meter scale is in equilibrium as shown in the diagram (40 gf at 5cm, pivot at 30cm, scale from 0 to 100cm). Calculate the weight of the meter scale.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "50 gf",
+      "marks_per_correct_point": 1,
+      "scheme_text": "By principle of moments: 40 × 25 = w × 20 ∴ w = (40×25)/20 = 50 g",
+      "total_marks": 1.5,
+      "key_points": [
+        "Correct application of principle of moments",
+        "Correct final answer 50 gf"
+      ],
+      "model_answer": "By principle of moments: 40 × 25 = w × 20, so w = 1000/20 = 50 gf",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Used 100 cm in place of 50 cm for calculation of torque on the other side",
+        "Confused between unit of mass (g) and weight (gf)"
+      ],
+      "examiner_notes": "Many candidates used incorrect distance for the torque calculation on the other side.",
+      "topic": "Machines",
+      "diagram_required": true
+    },
+    {
+      "question_number": "5(b)(ii)",
+      "question_text": "Which of the following options is correct to keep the ruler in equilibrium when 40 gf wt is shifted to 0 cm mark? F is shifted towards 0 cm. or F is shifted towards 100 cm.",
+      "is_subjective": true,
+      "question_type": "mcq",
+      "options": [
+        "F is shifted towards 0 cm.",
+        "F is shifted towards 100 cm."
+      ],
+      "correct_answer": "F is shifted towards 0 cm",
+      "marks_per_correct_point": 1,
+      "scheme_text": "F is shifted towards 0 cm",
+      "total_marks": 1.5,
+      "key_points": [
+        "F shifted towards 0 cm"
+      ],
+      "model_answer": "F is shifted towards 0 cm",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote that F is shifted towards 100 cm, failing to understand torque arm adjustment"
+      ],
+      "examiner_notes": "Some candidates failed to understand that since the forces are the same, the moment can be equalised by adjusting their torque arms.",
+      "topic": "Machines",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(c)(i)",
+      "question_text": "The diagram below shows a pulley arrangement (movable pulley A supporting load, fixed pulley B, effort E). Copy the diagram and mark the direction of tension on each strand of the string.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Tension marked as T on all strands with correct directions (upward on strands supporting load/pulley A, and along string to effort E)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram with tension T marked on all strands in correct directions",
+      "total_marks": 1,
+      "key_points": [
+        "Correct tension direction on all strands"
+      ],
+      "model_answer": "Tension T acts upward on each of the two strands supporting movable pulley A, and along the same direction on the strand leading to effort E.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Marked arrows in two different directions on the two strands"
+      ],
+      "examiner_notes": "Most of them marked arrows correctly but some marked the arrows in two different directions on the two strands.",
+      "topic": "Machines",
+      "diagram_required": true
+    },
+    {
+      "question_number": "5(c)(ii)",
+      "question_text": "What is the velocity ratio of the arrangement?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "V.R. = 2 (No. of strands supporting load)",
+      "marks_per_correct_point": 1,
+      "scheme_text": "V.R. = No. of stands supporting load = 2",
+      "total_marks": 1,
+      "key_points": [
+        "V.R. = 2"
+      ],
+      "model_answer": "Velocity ratio = number of strands supporting the load = 2",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Some derived and obtained the answer through unnecessary long steps"
+      ],
+      "examiner_notes": "Majority of the candidates answered correctly.",
+      "topic": "Machines",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(c)(iii)",
+      "question_text": "If the tension acting on the string is T, then what is the relationship between T and effort E?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "E = T",
+      "marks_per_correct_point": 1,
+      "scheme_text": "E = T",
+      "total_marks": 1,
+      "key_points": [
+        "E = T"
+      ],
+      "model_answer": "E = T",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Answered as E = 2T due to lack of clarity",
+        "Some answered using inequality"
+      ],
+      "examiner_notes": "Most of them answered it as E = T but some due to lack of clarity answered it as E = 2T.",
+      "topic": "Machines",
+      "diagram_required": false
+    },
+    {
+      "question_number": "5(c)(iv)",
+      "question_text": "If the free end of the string moves through a distance x, find the distance by which the load is raised.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "dL = x/2",
+      "marks_per_correct_point": 1,
+      "scheme_text": "V.R. = dE/dL ∴ 2 = x/dL ∴ dL = x/2",
+      "total_marks": 1,
+      "key_points": [
+        "Correct formula using V.R.",
+        "Final answer x/2"
+      ],
+      "model_answer": "V.R. = dE/dL, so 2 = x/dL, giving dL = x/2",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote it as 2x instead of x/2",
+        "Wrote answer in terms of L",
+        "Missing concept that velocity ratio depends on number of strands supporting the load"
+      ],
+      "examiner_notes": "Many candidates answered correctly as x/2 but some wrote it as 2x.",
+      "topic": "Machines",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "How does the angle of deviation formed by a prism change with the increase in the angle of incidence? Draw a graph showing the variation in the angle of deviation with the angle of incidence at a prism surface.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Angle of deviation decreases, reaches a minimum value and then increases. Graph: U-shaped curve of ∠d vs ∠c (angle of incidence).",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Angle of deviation decreases, reaches to minimum value and then increases. [Graph: ∠d on y-axis vs ∠c on x-axis, U-shaped curve]",
+      "total_marks": 3,
+      "key_points": [
+        "Correct description: decreases then increases",
+        "Correct U-shaped graph",
+        "Correct axis labelling"
+      ],
+      "model_answer": "As the angle of incidence increases, the angle of deviation first decreases, reaches a minimum value (at minimum deviation), and then increases again, forming a U-shaped graph.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave incorrect relation between angle of incidence and angle of deviation",
+        "Drew diagram of prism instead of graph",
+        "Incorrect graph shape",
+        "Incorrect labelling on the graph"
+      ],
+      "examiner_notes": "Most candidates answered this subpart correctly. However, a few made errors as noted.",
+      "topic": "Spectrum",
+      "diagram_required": true
+    },
+    {
+      "question_number": "6(b)(i)",
+      "question_text": "A virtual, diminished image is formed when an object is placed between the optical centre and the principal focus of a lens. Name the type of lens which forms the above image.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Concave lens",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Concave lens",
+      "total_marks": 1,
+      "key_points": [
+        "Concave lens"
+      ],
+      "model_answer": "Concave lens",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Tricked by wording 'object between optical centre and principal focus' and did not attend to virtual/diminished characteristics, wrote convex lens instead"
+      ],
+      "examiner_notes": "Many candidates named the type of lens correctly as concave lens. Some were tricked by the wording.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(b)(ii)",
+      "question_text": "Draw a ray diagram to show the formation of the image with the above stated characteristics.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Ray diagram showing concave lens forming virtual, diminished, erect image with one ray through optical centre undeviated and another parallel ray refracting to appear to pass through principal focus, image shown with dotted lines.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Correct ray diagram with one ray passing through optical centre which goes undeviated. Another ray parallel to the principal axis undergoing refraction and appears to pass through the principal focus. (Dotted line for virtual image and extended refracted rays & arrows marked on the rays)",
+      "total_marks": 2,
+      "key_points": [
+        "Ray through optical centre undeviated",
+        "Ray parallel to axis appears to pass through focus after refraction",
+        "Virtual image shown with dotted lines",
+        "Arrows marked on rays"
+      ],
+      "model_answer": "A ray diagram for a concave lens showing the object between optical centre and focus, with one ray passing undeviated through the optical centre and another parallel ray diverging after refraction as if from the focus, producing a virtual, erect, diminished image shown with dotted lines.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Those who identified the lens incorrectly drew incorrect ray diagram",
+        "Did not draw arrows on the rays in the diagram"
+      ],
+      "examiner_notes": "Those who identified the lens correctly drew correct ray diagram but those who identified the lens incorrectly drew incorrect ray diagram.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": true
+    },
+    {
+      "question_number": "6(c)(i)",
+      "question_text": "An object is placed at a distance 24 cm in front of a convex lens of focal length 8 cm. What is the nature of the image so formed?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Real, inverted, diminished",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Real, inverted diminished",
+      "total_marks": 1,
+      "key_points": [
+        "Real",
+        "inverted",
+        "diminished"
+      ],
+      "model_answer": "Real, inverted, and diminished",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote as real and virtual, or real and erect, or real and magnified"
+      ],
+      "examiner_notes": "Many candidates identified the nature of image correctly but some made errors as noted.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(c)(ii)",
+      "question_text": "Calculate the distance of the image from the lens.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "v = 12 cm",
+      "marks_per_correct_point": 1,
+      "scheme_text": "1/v - 1/u = 1/f; 1/v = 1/8 + 1/(-24); 1/v = 3 - 1/24; v = 24/2 = 12 cm",
+      "total_marks": 1.5,
+      "key_points": [
+        "Correct lens formula application",
+        "Correct sign convention",
+        "Final answer 12 cm"
+      ],
+      "model_answer": "Using 1/v - 1/u = 1/f with u = -24 cm, f = 8 cm: 1/v = 1/8 - 1/24 = 2/24, v = 12 cm",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Several candidates applied mirror formula instead of lens formula",
+        "Not clear about sign convention",
+        "Unit missing in final answer"
+      ],
+      "examiner_notes": "Several candidates applied mirror formula in finding the distance of the image from the lens.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "6(c)(iii)",
+      "question_text": "Calculate the magnification of the image.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "m = -0.5",
+      "marks_per_correct_point": 1,
+      "scheme_text": "m = +v / -u = 12 / -24 = -1/2 = –0.5",
+      "total_marks": 1.5,
+      "key_points": [
+        "Correct formula for magnification",
+        "Final answer -0.5"
+      ],
+      "model_answer": "m = v/u = 12/(-24) = -0.5",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Got this part incorrect because previous answer was incorrect",
+        "Made calculation errors",
+        "Expressed answer in fraction instead of decimal"
+      ],
+      "examiner_notes": "Many candidates got this part incorrect because their previous answer was incorrect.",
+      "topic": "Refraction of light (lens)",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(a)(i)",
+      "question_text": "It is observed that during march-past we hear a base drum distinctly from a distance compared to the side drums. Name the characteristic of sound associated with the above observation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Loudness",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Loudness",
+      "total_marks": 1,
+      "key_points": [
+        "Loudness"
+      ],
+      "model_answer": "Loudness",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Majority wrote pitch or quality instead of loudness",
+        "Candidates seemed unaware about base drums and side drums"
+      ],
+      "examiner_notes": "Some candidates answered it correctly as loudness but majority wrote pitch or quality.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(a)(ii)",
+      "question_text": "Give a reason for the above observation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Base drum has greater surface area compared to the side drums. Loudness is increased with the increase in surface area of vibration.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Base drum has greater surface area compared to the side drums. Loudness is increased with the increase in surface area of vibration.",
+      "total_marks": 2,
+      "key_points": [
+        "Base drum has greater surface area",
+        "Loudness increases with surface area of vibration"
+      ],
+      "model_answer": "The base drum has a greater surface area than the side drums, and loudness increases with the surface area of vibration.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not relate answer to surface areas of the two drums",
+        "Wrote vague answers"
+      ],
+      "examiner_notes": "Very few could relate the answer to the surface areas of the two drums; majority wrote vague answers.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "A pendulum has a frequency of 4 vibrations per second. An observer starts the pendulum and fires a gun simultaneously. He hears the echo from the cliff after 6 vibrations of the pendulum. If the velocity of sound in air is 340 m/s, find the distance between the cliff and the observer.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "255 m",
+      "marks_per_correct_point": 1,
+      "scheme_text": "∵ 4 vibrations in 1s ∴ 6 vibrations => t = 6/4 = 3/2 = 1.5 s; V = 2d/t ∴ 340 = 2d/1.5 ∴ d = (340×1.5)/2 = 255 m",
+      "total_marks": 3,
+      "key_points": [
+        "Correct calculation of time from vibrations",
+        "Correct formula V=2d/t",
+        "Final answer 255 m with unit"
+      ],
+      "model_answer": "Time for 6 vibrations = 6/4 = 1.5 s. Using V = 2d/t: 340 = 2d/1.5, so d = 255 m",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not calculate the time taken from the number of oscillations of the pendulum",
+        "Applied formula v = d/t in place of v = 2d/t",
+        "Did not write the unit",
+        "Substituted velocity of sound as 320 m/s instead of 340 m/s"
+      ],
+      "examiner_notes": "Many candidates attempted it correctly but several errors were noticed as noted.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(c)(i)",
+      "question_text": "Two pendulums C and D are suspended from a wire as shown in the figure given below. Pendulum C is made to oscillate by displacing it from its mean position. It is seen that D also starts oscillating. Name the type of oscillation, C will execute.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Free vibration / damped vibrations",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Free vibration / damped vibrations",
+      "total_marks": 1,
+      "key_points": [
+        "Free vibration"
+      ],
+      "model_answer": "Free vibration (damped vibrations)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "damped vibrations"
+      ],
+      "common_errors": [
+        "Wrote forced oscillations instead of free oscillations"
+      ],
+      "examiner_notes": "Many candidates could identify it as free oscillations but some wrote forced oscillations.",
+      "topic": "Sound",
+      "diagram_required": true
+    },
+    {
+      "question_number": "7(c)(ii)",
+      "question_text": "Name the type of oscillation, D will execute.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Forced vibrations",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Forced vibrations",
+      "total_marks": 1,
+      "key_points": [
+        "Forced vibrations"
+      ],
+      "model_answer": "Forced vibrations",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote it as resonance instead of forced vibrations",
+        "Conceptual understanding missing between free and forced oscillations"
+      ],
+      "examiner_notes": "Several candidates answered it correctly as forced oscillation but some wrote resonance.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(c)(iii)",
+      "question_text": "If the length of D is made equal to C then what difference will you notice in the oscillations of D?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "D vibrates with the same amplitude as C or C and D vibrate with maximum amplitude alternately.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "D vibrates with the same amplitude as C or C and D vibrate with maximum amplitude alternately.",
+      "total_marks": 1,
+      "key_points": [
+        "Increased/maximum amplitude of D"
+      ],
+      "model_answer": "D will vibrate with the same (maximum) amplitude as C, with C and D vibrating with maximum amplitude alternately.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failed to write about increased amplitude but talked about increase in frequency",
+        "Mentioned that oscillations remain the same",
+        "Missed the keyword amplitude"
+      ],
+      "examiner_notes": "Many candidates failed to write about increased amplitude but talked about increase in frequency.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "7(c)(iv)",
+      "question_text": "What is the name of the phenomenon when the length of D is made equal to C?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Resonance",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Resonance.",
+      "total_marks": 1,
+      "key_points": [
+        "Resonance"
+      ],
+      "model_answer": "Resonance",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote it as forced oscillations instead of resonance"
+      ],
+      "examiner_notes": "Almost all the candidates wrote correctly as resonance but some wrote forced oscillations.",
+      "topic": "Sound",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(a)(i)",
+      "question_text": "Write one advantage of connecting electrical appliances in parallel combination.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Each appliance will be working at the same potential; each appliance can operate independently.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Each appliance will be working at the same potential; each appliance can operate independently.",
+      "total_marks": 1,
+      "key_points": [
+        "same potential",
+        "independent operation"
+      ],
+      "model_answer": "In parallel combination, each appliance works at the same potential and can operate independently of the others.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote advantages of series combination instead",
+        "Wrote current received is 220 volts (irrelevant)",
+        "Confused current with voltage",
+        "Wrote about advantages of ring system of wiring",
+        "Wrote same thickness of wire can be used",
+        "Wrote monthly power bill is reduced (irrelevant)"
+      ],
+      "examiner_notes": "Many candidates wrote one advantage correctly. However, some supplied vague answers.",
+      "topic": "Household Circuits",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(a)(ii)",
+      "question_text": "What characteristics should a fuse wire have?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "High resistivity and low melting point.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "high resistivity and low melting point.",
+      "total_marks": 1,
+      "key_points": [
+        "high resistivity",
+        "low melting point"
+      ],
+      "model_answer": "A fuse wire should have high resistivity and a low melting point.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote only one point instead of both characteristics",
+        "Answered high melting point (incorrect) and low resistivity (incorrect)",
+        "Wrote about good conductance or low specific heat capacity, which was irrelevant"
+      ],
+      "examiner_notes": "A large number of candidates wrote characteristics correctly but some made errors as noted.",
+      "topic": "Household Circuits",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(a)(iii)",
+      "question_text": "Which wire in a power circuit is connected to the metallic body of the appliance?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Earth wire",
+      "marks_per_correct_point": 1,
+      "scheme_text": "earth wire.",
+      "total_marks": 1,
+      "key_points": [
+        "Earth wire"
+      ],
+      "model_answer": "Earth wire",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about neutral and live wire and their combinations",
+        "Quite a few answered fuse wire"
+      ],
+      "examiner_notes": "Many candidates answered correctly as Earth wire but some wrote incorrect answers.",
+      "topic": "Household Circuits",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(b)(i)",
+      "question_text": "The diagram below shows a dual control switch circuit connected to a bulb. Copy the diagram and complete it so that the bulb is switched ON.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Circuit completed correctly with two two-way switches connecting live and neutral to complete the circuit through the bulb, labelled N/B and L/A.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram completed with correct connections between the two two-way switches; labelled N/B and L/A on the terminals (two possible correct configurations shown).",
+      "total_marks": 2,
+      "key_points": [
+        "Correct connection completing the circuit",
+        "Bulb switched ON shown",
+        "Correct labelling"
+      ],
+      "model_answer": "The two two-way switches are wired so that the strap wires connect corresponding terminals, allowing the bulb to switch ON with either switch, with 'L' (live) and 'N' (neutral) connections properly labelled.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Kept the circuit incomplete",
+        "Completed it incorrectly"
+      ],
+      "examiner_notes": "Several candidates copied and completed the circuit correctly but many kept it incomplete or completed it incorrectly.",
+      "topic": "Household Circuits",
+      "diagram_required": true
+    },
+    {
+      "question_number": "8(b)(ii)",
+      "question_text": "Out of A & B which one is the live wire, and which one is the neutral wire?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "A – Live and B – Neutral",
+      "marks_per_correct_point": 1,
+      "scheme_text": "A – Live and B – Neutral",
+      "total_marks": 1,
+      "key_points": [
+        "A - Live",
+        "B - Neutral"
+      ],
+      "model_answer": "A is the live wire and B is the neutral wire.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Interchanged the answer (A as neutral, B as live)",
+        "Made careless errors interchanging markings A and B while copying diagram"
+      ],
+      "examiner_notes": "Some candidates answered correctly, but quite a few interchanged this answer.",
+      "topic": "Household Circuits",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(c)(i)",
+      "question_text": "The diagram above shows a circuit with the key k open (2Ω and 3Ω in series with key k, parallel to 5Ω, connected to 3.3V, 0.5Ω cell). Calculate the resistance of the circuit when the key k is open.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "5.5 Ω",
+      "marks_per_correct_point": 1,
+      "scheme_text": "R = 5 + 0.5 = 5.5 Ω",
+      "total_marks": 1,
+      "key_points": [
+        "Correctly identifies only 5Ω branch active when key open",
+        "Adds internal resistance 0.5Ω",
+        "Final answer 5.5 Ω"
+      ],
+      "model_answer": "With key open, only the 5Ω branch is active. R = 5 + 0.5 (internal resistance) = 5.5 Ω",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not take into consideration the position of the key in the circuit",
+        "Did not realize resistance differs between key open and closed cases"
+      ],
+      "examiner_notes": "Some candidates solved this correctly but many could not comprehend it properly.",
+      "topic": "Current Electricity",
+      "diagram_required": true
+    },
+    {
+      "question_number": "8(c)(ii)",
+      "question_text": "Calculate the current drawn from the cell when the key k is open.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "0.6 A",
+      "marks_per_correct_point": 1,
+      "scheme_text": "I = 3.3/5.5 = 3/5 = 0.6 A",
+      "total_marks": 1,
+      "key_points": [
+        "Correct formula I=V/R",
+        "Final answer 0.6 A"
+      ],
+      "model_answer": "I = 3.3/5.5 = 0.6 A",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Many candidates blindly wrote current is zero when the key k is open",
+        "Did not write units for the answers"
+      ],
+      "examiner_notes": "Many candidates blindly wrote current is zero when the key k is open, showing confusion between open circuit and open key.",
+      "topic": "Current Electricity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(c)(iii)",
+      "question_text": "Calculate the resistance of the circuit when the key k is closed.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "3 Ω",
+      "marks_per_correct_point": 1,
+      "scheme_text": "R1 = (5×5)/(5+5) = 2.5 Ω; ∴ R = 2.5 + 0.5 = 3 Ω",
+      "total_marks": 1,
+      "key_points": [
+        "Correct parallel combination of 5Ω branches",
+        "Addition of internal resistance",
+        "Final answer 3 Ω"
+      ],
+      "model_answer": "With key closed, two 5Ω branches are in parallel: R1 = 2.5 Ω; total R = 2.5 + 0.5 = 3 Ω",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Candidates were not trained in dealing with the internal resistance"
+      ],
+      "examiner_notes": "Some candidates did not properly deal with the internal resistance of the cell.",
+      "topic": "Current Electricity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "8(c)(iv)",
+      "question_text": "Calculate the current drawn from the cell when the key k is closed.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "1.1 A",
+      "marks_per_correct_point": 1,
+      "scheme_text": "I = 3.3/3 = 1.1 A",
+      "total_marks": 1,
+      "key_points": [
+        "Correct formula I=V/R",
+        "Final answer 1.1 A"
+      ],
+      "model_answer": "I = 3.3/3 = 1.1 A",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write units for the final answer"
+      ],
+      "examiner_notes": "Some candidates did not write the units for the answers.",
+      "topic": "Current Electricity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "Define Calorimetry.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "The measurement of the quantity of heat is called Calorimetry",
+      "marks_per_correct_point": 1,
+      "scheme_text": "The measurement of the quantity of heat is called Calorimetry",
+      "total_marks": 1,
+      "key_points": [
+        "measurement of quantity of heat"
+      ],
+      "model_answer": "The measurement of the quantity of heat is called Calorimetry.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote key word 'study' in place of 'measurement'",
+        "Stated the principle of calorimetry instead of defining it"
+      ],
+      "examiner_notes": "Several candidates in the definition of calorimetry wrote the key word study in place of measurement.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "Name the material used for making a Calorimeter.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Copper",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Copper",
+      "total_marks": 1,
+      "key_points": [
+        "Copper"
+      ],
+      "model_answer": "Copper",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave options other than copper such as wood, mercury, iron and steel"
+      ],
+      "examiner_notes": "Almost all the candidates answered correctly. Very few gave incorrect options.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "9(a)(iii)",
+      "question_text": "Why is a Calorimeter made up of thin sheets of the above material answered in (ii)?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Specific heat capacity of copper is low and by making the vessel thin its mass and heat capacity becomes low therefore it takes a negligible amount of heat from the contents to attain the temperature.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Specific heat capacity of copper is low and by making the vessel thin its mass and heat capacity becomes low therefore it takes a negligible amount of heat from the contents to attain the temperature.",
+      "total_marks": 1,
+      "key_points": [
+        "low specific heat capacity of copper",
+        "thin sheet reduces mass and heat capacity",
+        "negligible heat absorbed from contents"
+      ],
+      "model_answer": "Since copper has low specific heat capacity, making the calorimeter thin reduces its mass and heat capacity, so it absorbs negligible heat from the contents while reaching thermal equilibrium.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote good conductor of electricity instead of good conductor of heat",
+        "Missed the keyword heat capacity",
+        "Did not take into consideration the word 'thin' sheet"
+      ],
+      "examiner_notes": "Many candidates answered this subpart correctly. Some made errors as noted.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "The melting point of naphthalene is 80°C and the room temperature is 30°C. A sample of liquid naphthalene at 100°C is cooled down to the room temperature. Draw a temperature time graph to represent this cooling. In the graph, mark the region which corresponds to the freezing process.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Graph showing temperature dropping from 100°C to 80°C, flat line at 80°C (freezing region marked), then dropping from 80°C to 30°C, plotted against time.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Graph: Temperature (y-axis) vs Time (x-axis) showing drop from 100 to 80, flat portion at 80°C labelled 'Freezing', then drop from 80 to 30°C.",
+      "total_marks": 3,
+      "key_points": [
+        "Correct shape showing initial cooling",
+        "Flat region at 80°C labelled as freezing",
+        "Further cooling to 30°C shown",
+        "Correct axis labelling"
+      ],
+      "model_answer": "The graph starts at 100°C, decreases to 80°C, remains constant at 80°C during freezing (marked on graph), then continues decreasing to the room temperature of 30°C.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Graph drawn was not correct",
+        "Some candidates showed the graph line parallel to x-axis three times instead of once"
+      ],
+      "examiner_notes": "Majority of the candidates could not attempt this question correctly.",
+      "topic": "Calorimetry",
+      "diagram_required": true
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "104 g of water at 30°C is taken in a calorimeter made of copper of mass 42 g. When a certain mass of ice at 0°C is added to it, the final steady temperature of the mixture after the ice has melted, was found to be 10°C. Find the mass of ice added. [Specific heat capacity of water = 4.2 Jg-1°C-1; Specific latent heat of fusion of ice = 336 Jg-1; Specific heat capacity of copper = 0.4 Jg-1°C-1]",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": "24 g",
+      "marks_per_correct_point": 1,
+      "scheme_text": "By principle of mixtures: m_iceL + m_icec_wt = m_wc_w*(ti-tf) + m_cuc_cu(ti-tf); m(336 + 4.2×10) = 104×4.2×(30-10) + 42×0.4×(30-10); ∴ m×4.2(80+10) = 4.2×(104+4)×20; ∴ m = (108×20)/90 = 24 g",
+      "total_marks": 4,
+      "key_points": [
+        "Correct principle of mixtures equation setup",
+        "Heat gained by ice (melting + warming) equated to heat lost by water and calorimeter",
+        "Correct substitution",
+        "Final answer 24 g with unit"
+      ],
+      "model_answer": "Heat gained by ice = Heat lost by water + Heat lost by calorimeter: m(336+42) = 104×4.2×20 + 42×0.4×20; 378m = 8736+336=9072; m=24g",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Substitution errors",
+        "Substitution correct but calculation mistakes",
+        "Considered only melting of ice and not the increase in temperature thereafter",
+        "Did not take into consideration the heat absorbed by the calorimeter",
+        "Did not write unit for the final answer"
+      ],
+      "examiner_notes": "A large number of the candidates solved this numerical correctly. However, several errors were noticed in many scripts.",
+      "topic": "Calorimetry",
+      "diagram_required": false
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Draw a neat labeled diagram of an A.C. generator.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": "Diagram showing field magnet (N-S), armature coil, soft iron core, slip rings (S1, S2) with brushes (B1, B2), connected to external load.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram: Field magnet (N pole, S pole), Armature coil with Soft iron core, Slip rings S1 and S2 connected to Brushes B1 and B2, connected to Load.",
+      "total_marks": 3,
+      "key_points": [
+        "Field magnet shown",
+        "Armature coil with soft iron core",
+        "Slip rings (not split rings)",
+        "Brushes correctly connected",
+        "Load shown",
+        "All parts labelled"
+      ],
+      "model_answer": "An A.C. generator diagram shows an armature coil with a soft iron core rotating between the poles of a field magnet (N and S), connected via two continuous slip rings and carbon brushes to an external load, all correctly labelled.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Drew battery in place of load",
+        "Drew split rings in place of slip rings",
+        "Drew transformer diagram instead",
+        "Drew slip rings correctly but labelled them as split ring",
+        "Drew DC motor diagram instead"
+      ],
+      "examiner_notes": "Some candidates drew correct diagram but many scripts showed the noted anomalies.",
+      "topic": "Electro-magnetism",
+      "diagram_required": true
+    },
+    {
+      "question_number": "10(b)(i)",
+      "question_text": "Define nuclear fission.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Splitting of a heavy nucleus into two or more lighter nuclei of comparable masses with release of energy.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(implied from question context - splitting of heavy nucleus)",
+      "total_marks": 1,
+      "key_points": [
+        "Splitting of heavy nucleus",
+        "into two or more lighter nuclei",
+        "release of energy"
+      ],
+      "model_answer": "Nuclear fission is the splitting of a heavy nucleus into two or more lighter nuclei of comparable mass, with the release of a large amount of energy.",
+      "model_answer_verified": false,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Related it to the size of the nucleus instead of mass of the nucleus",
+        "Splitting of an atom instead of nucleus",
+        "Defined nuclear fusion instead of fission"
+      ],
+      "examiner_notes": "Many candidates defined nuclear fission correctly but the common errors observed were as noted.",
+      "topic": "Radioactivity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "10(b)(ii)",
+      "question_text": "Rewrite and complete the following nuclear reaction by filling in the atomic number of Ba and mass number of Kr: 235/92 U + 1/0 n → 144/__ Ba + __/36 Kr + 3(1/0 n) + Energy",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "235/92 U + 1/0 n → 144/56 Ba + 89/36 Kr + 3(1/0 n) + Energy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "92U235 + 0n1 → 56Ba144 + 36Kr89 + 3 0n1 + Energy",
+      "total_marks": 2,
+      "key_points": [
+        "Atomic number of Ba = 56",
+        "Mass number of Kr = 89"
+      ],
+      "model_answer": "Atomic number of Ba = 56; Mass number of Kr = 89, giving: 235/92U + 1/0n → 144/56Ba + 89/36Kr + 3(1/0n) + Energy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Found atomic number correctly but did not take into consideration mass of three neutrons while finding mass number of Kr"
+      ],
+      "examiner_notes": "Atomic number of Ba = 56; Mass number of Kr = 89, giving: 235/92U + 1/0n → 144/56Ba + 89/36Kr + 3(1/0n) + Energy",
+      "topic": "Radioactivity",
+      "diagram_required": false
+    },
+    {
+      "question_number": "10(c)(i)",
+      "question_text": "The diagram below shows a magnetic needle kept just below the conductor AB which is kept in North South direction. In which direction will the needle deflect when the key is closed?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Towards east",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Towards east",
+      "total_marks": 1,
+      "key_points": [
+        "Towards east"
+      ],
+      "model_answer": "Towards east",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not apply right hand thumb rule correctly",
+        "Gave incorrect answers like North-South, South-East, West, North, clockwise etc."
+      ],
+      "examiner_notes": "Majority of the candidates could not apply right hand thumb rule correctly.",
+      "topic": "Electro-magnetism",
+      "diagram_required": true
+    },
+    {
+      "question_number": "10(c)(ii)",
+      "question_text": "Why is the deflection produced?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Magnetic effect of current",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Magnetic effect of current",
+      "total_marks": 1,
+      "key_points": [
+        "Magnetic effect of current"
+      ],
+      "model_answer": "Due to the magnetic effect of current flowing through the conductor.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote that current is flowing through the conductor (incomplete)",
+        "Wrote about electromagnetic induction (incorrect)",
+        "Wrote about Lorentz Force (incorrect)",
+        "Wrote about electric field instead of magnetic field"
+      ],
+      "examiner_notes": "Many candidates identified it as magnetic effect of current but quite a number wrote incorrect answers.",
+      "topic": "Electro-magnetism",
+      "diagram_required": false
+    },
+    {
+      "question_number": "10(c)(iii)",
+      "question_text": "What will be the change in the deflection if the magnetic needle is taken just above the conductor AB?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Deflection in the opposite direction / towards west",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Deflection in the opposite direction / towards west",
+      "total_marks": 1,
+      "key_points": [
+        "Deflection reverses / towards west"
+      ],
+      "model_answer": "The deflection will be in the opposite direction, i.e., towards west.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Depended on part (i); those who answered (i) incorrectly also got this wrong"
+      ],
+      "examiner_notes": "This part was dependent on the first part; candidates who wrote opposite or towards west were benefited.",
+      "topic": "Electro-magnetism",
+      "diagram_required": false
+    },
+    {
+      "question_number": "10(c)(iv)",
+      "question_text": "Name one device which works on this principle.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": "Electric Bell, Electromagnet",
+      "marks_per_correct_point": 1,
+      "scheme_text": "Electric Bell, Electromagnet",
+      "total_marks": 1,
+      "key_points": [
+        "Electric Bell or Electromagnet"
+      ],
+      "model_answer": "Electric Bell (or Electromagnet)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Electromagnet"
+      ],
+      "common_errors": [
+        "Failed to apply the principle correctly to the given situation despite knowing the device"
+      ],
+      "examiner_notes": "Almost all candidates gave correct example, showing they identified the magnetic effect of current but failed to apply it in the given situation.",
+      "topic": "Electro-magnetism",
+      "diagram_required": false
+    }
+  ]
+}

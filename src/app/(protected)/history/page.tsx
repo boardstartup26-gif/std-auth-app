@@ -1,12 +1,12 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createClient, createAdminClient } from "@/lib/supabase/server";
 import {
   backLink,
   btnPrimary,
   cardInteractive,
   errorAlert,
+  numericMono,
   pageShellWide,
   scoreBadgeClass,
   sectionLabel,
@@ -26,24 +26,15 @@ type HistoryRow = {
 
 export default async function HistoryPage() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
   const admin = createAdminClient();
-
   const { data, error } = await admin
     .from("student_answers")
     .select(`
-      id,
-      submitted_at,
-      questions (
-        question_number,
-        year,
-        subjects ( name ),
-        marking_schemes ( total_marks )
-      ),
+      id, submitted_at,
+      questions ( question_number, year, subjects ( name ), marking_schemes ( total_marks ) ),
       evaluations ( marks_awarded )
     `)
     .eq("user_id", user.id)
@@ -64,26 +55,15 @@ export default async function HistoryPage() {
       <div className="flex items-start justify-between gap-6">
         <div>
           <p className={sectionLabel}>Past submissions</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-            Evaluation history
-          </h1>
+          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">Evaluation history</h1>
         </div>
-        <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <Link href="/dashboard" className={backLink}>
-            ← Dashboard
-          </Link>
-        </div>
+        <Link href="/dashboard" className={backLink}>← Dashboard</Link>
       </div>
 
       {rows.length === 0 ? (
-        <div className="mt-12 rounded-2xl border border-dashed border-zinc-200 bg-white p-8 text-center dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            No evaluations yet. Submit your first answer to see results here.
-          </p>
-          <Link href="/evaluate" className={`${btnPrimary} mt-6`}>
-            Start evaluation
-          </Link>
+        <div className="mt-12 rounded-2xl border border-dashed border-border bg-card p-8 text-center">
+          <p className="text-sm text-muted-foreground">No evaluations yet. Submit your first answer to see results here.</p>
+          <Link href="/evaluate" className={`${btnPrimary} mt-6`}>Start evaluation</Link>
         </div>
       ) : (
         <div className="mt-10 space-y-4">
@@ -97,21 +77,18 @@ export default async function HistoryPage() {
               <Link key={row.id} href={`/history/${row.id}`} className={cardInteractive}>
                 <div className="flex items-center justify-between gap-6">
                   <div className="min-w-0">
-                    <p className="font-medium text-zinc-950 dark:text-zinc-50">
-                      {q?.subjects?.name ?? "Unknown Subject"} — {q?.year ?? "—"} — Q
-                      {q?.question_number ?? "—"}
+                    <p className="font-medium text-foreground">
+                      <span className="font-sans">{q?.subjects?.name ?? "Unknown Subject"}</span>
+                      {" — "}
+                      <span className={numericMono}>
+                        {q?.year ?? "—"} — Q{q?.question_number ?? "—"}
+                      </span>
                     </p>
-                    <p className="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400">
-                      {new Date(row.submitted_at).toLocaleDateString("en-IN", {
-                        day: "numeric",
-                        month: "short",
-                        year: "numeric",
-                      })}
+                    <p className="mt-1.5 text-sm text-muted-foreground">
+                      {new Date(row.submitted_at).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}
                     </p>
                   </div>
-                  <span className={scoreBadgeClass(awarded, totalMarks)}>
-                    {awarded} / {totalMarks}
-                  </span>
+                  <span className={scoreBadgeClass(awarded, totalMarks)}>{awarded} / {totalMarks}</span>
                 </div>
               </Link>
             );
