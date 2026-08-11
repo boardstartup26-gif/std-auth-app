@@ -4,7 +4,6 @@ import { createClient, createAdminClient } from "@/lib/supabase/server";
 import {
   backLink,
   cardPadded,
-  mutedPanel,
   numericMono,
   pageShell,
   scoreBadgeClass,
@@ -87,8 +86,10 @@ export default async function HistoryDetailPage({
 
   const totalMarks = scheme?.total_marks ?? 0;
   const awarded = evaluation?.marks_awarded ?? 0;
+
   const modelAnswer = evaluation?.model_answer ?? scheme?.model_answer ?? null;
   const modelAnswerSource = evaluation?.model_answer_source ?? "verified";
+  const conceptualErrors = evaluation?.conceptual_errors ?? [];
 
   return (
     <div className={`${pageShell} space-y-6`}>
@@ -128,38 +129,36 @@ export default async function HistoryDetailPage({
         )}
       </section>
 
-      <section className={cardPadded}>
-        <h2 className={sectionLabel}>Examiner feedback</h2>
-        <div className={`${mutedPanel} mt-3`}>
-          <p className="whitespace-pre-wrap text-sm italic leading-relaxed text-foreground/90">
-            {evaluation?.examiner_feedback ?? "—"}
-          </p>
-        </div>
+      <section className="rounded-xl border border-tag-examiner-feedback bg-tag-examiner-feedback-subtle p-5">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-tag-examiner-feedback">Examiner feedback</h2>
+        <p className="mt-3 whitespace-pre-wrap text-sm italic leading-relaxed text-foreground/90">
+          {evaluation?.examiner_feedback ?? "—"}
+        </p>
       </section>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <section className="rounded-xl border-l-4 border-emerald-700/50 bg-card p-5">
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-emerald-400">Points hit</h2>
+        <section className="rounded-xl border border-status-correct bg-status-correct-subtle p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-status-correct">Points hit</h2>
           <div className="mt-3"><FeedbackList items={evaluation?.points_hit ?? []} /></div>
         </section>
 
-        <section className="rounded-xl border-l-4 border-border bg-card p-5">
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Points missed</h2>
+        <section className="rounded-xl border border-status-wrong bg-status-wrong-subtle p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-status-wrong">Points missed</h2>
           <div className="mt-3"><FeedbackList items={evaluation?.points_missed ?? []} /></div>
         </section>
       </div>
 
-      {evaluation?.conceptual_errors && evaluation.conceptual_errors.length > 0 && (
-        <section className="rounded-xl border-l-4 border-amber-700/50 bg-card p-5">
-          <h2 className="text-xs font-semibold uppercase tracking-widest text-amber-400">Conceptual errors</h2>
-          <div className="mt-3"><FeedbackList items={evaluation.conceptual_errors} /></div>
+      {conceptualErrors.length > 0 && (
+        <section className="rounded-xl border border-tag-conceptual bg-tag-conceptual-subtle p-5">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-tag-conceptual">Conceptual errors</h2>
+          <div className="mt-3"><FeedbackList items={conceptualErrors} /></div>
         </section>
       )}
 
       {modelAnswer && (
-        <section className={cardPadded}>
+        <section className="rounded-xl border border-tag-model-answer bg-tag-model-answer-subtle p-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className={sectionLabel}>Model answer</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-tag-model-answer">Model answer</h2>
             <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
               {modelAnswerSource === "verified" ? "CISCE verified" : "AI generated"}
             </span>

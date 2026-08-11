@@ -46,9 +46,14 @@ export async function signup(
 ): Promise<AuthResult> {
   const email = String(formData.get("email") ?? "").trim();
   const password = String(formData.get("password") ?? "");
+  const firstName = String(formData.get("first_name") ?? "").trim();
+  const lastName = String(formData.get("last_name") ?? "").trim();
 
   if (!email || !password) {
     return { ok: false, message: "Email and password are required." };
+  }
+  if (!firstName || !lastName) {
+    return { ok: false, message: "First and last name are required." };
   }
 
   try {
@@ -56,6 +61,9 @@ export async function signup(
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        data: { first_name: firstName, last_name: lastName },
+      },
     });
 
     if (error) return { ok: false, message: error.message };

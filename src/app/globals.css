@@ -2,14 +2,43 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #0A1128;
-  --card: #101F42;
-  --foreground: #F4F1EA;
-  --muted-foreground: #94A3B8;
-  --border: #1E2F59;
-  --accent: #C5A880;
-  --premium: #7C3AED;
+:root.dark {
+  /* Base */
+  --background: #0B0E14;
+  --card: #181C24;
+  --surface-raised: #1F2430;
+  --foreground: #E8E9EC;
+  --muted-foreground: #8B8F98;
+  --border: #2A2F3D;
+
+  /* Brand accent — interactive only, see Gold Rule */
+  --accent: #F5A623;
+  --accent-hover: #E8960F;
+  --accent-subtle: #F5A6231A;
+
+  /* Semantic — shared History + Eval logic */
+  --status-correct: #3DDC84;
+  --status-correct-subtle: #3DDC8415;
+  --status-wrong: #F0553D;
+  --status-wrong-subtle: #F0553D15;
+  --status-partial: #F5D020;
+  --status-partial-subtle: #F5D02015;
+
+  /* Eval-page-only tags */
+  --tag-conceptual: #E8642A;
+  --tag-conceptual-subtle: #E8642A15;
+  --tag-model-answer: #3B82F6;
+  --tag-model-answer-subtle: #3B82F615;
+  --tag-examiner-feedback: #6B7280;
+  --tag-examiner-feedback-subtle: #6B728015;
+  --tag-improvement-tips: #A855F7;
+  --tag-improvement-tips-subtle: #A855F715;
+
+  /* History-only */
+  --status-attempted: #A855F7;
+
+  /* Glow (Landing hero / Auth image-half / Dashboard hero only) */
+  --glow-purple: #7C3AED;
 }
 
 @theme inline {
@@ -18,8 +47,26 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-card: var(--card);
   --color-border: var(--border);
+  --color-surface-raised: var(--surface-raised);
   --color-accent: var(--accent);
-  --color-premium: var(--premium);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-status-correct: var(--status-correct);
+  --color-status-correct-subtle: var(--status-correct-subtle);
+  --color-status-wrong: var(--status-wrong);
+  --color-status-wrong-subtle: var(--status-wrong-subtle);
+  --color-status-partial: var(--status-partial);
+  --color-status-partial-subtle: var(--status-partial-subtle);
+  --color-tag-conceptual: var(--tag-conceptual);
+  --color-tag-conceptual-subtle: var(--tag-conceptual-subtle);
+  --color-tag-model-answer: var(--tag-model-answer);
+  --color-tag-model-answer-subtle: var(--tag-model-answer-subtle);
+  --color-tag-examiner-feedback: var(--tag-examiner-feedback);
+  --color-tag-examiner-feedback-subtle: var(--tag-examiner-feedback-subtle);
+  --color-tag-improvement-tips: var(--tag-improvement-tips);
+  --color-tag-improvement-tips-subtle: var(--tag-improvement-tips-subtle);
+  --color-status-attempted: var(--status-attempted);
+  --color-glow-purple: var(--glow-purple);
 }
 
 @theme {

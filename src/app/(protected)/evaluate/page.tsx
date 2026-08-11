@@ -3,7 +3,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { PremiumGate, WaitlistCapture } from "@/app/_components/PremiumGate";
 import { createClient } from "@/lib/supabase/client";
 import {
   backLink,
@@ -58,6 +57,13 @@ const SUBJECTS = [
 
 const DAILY_TOKEN_LIMIT = 10;
 
+const NON_OCR_LOADING_MESSAGES = [
+  "Analyzing text structure…",
+  "Hunting for those precious keywords…",
+  "Evaluating conceptual clarity and depth…",
+  "Finalizing your score…",
+];
+
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function Section({ title, items, color }: { title: string; items: string[]; color: string }) {
@@ -76,7 +82,7 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
 
 function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; tokenCost: number }) {
   const pct = (tokensRemaining / DAILY_TOKEN_LIMIT) * 100;
-  const color = pct > 50 ? "text-emerald-400" : pct > 20 ? "text-amber-400" : "text-red-400";
+  const color = pct > 50 ? "text-status-correct" : pct > 20 ? "text-status-partial" : "text-status-wrong";
 
   return (
     <div className="flex items-center gap-1.5 text-xs font-medium">
@@ -114,7 +120,6 @@ export default function EvaluatePage() {
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
   const [error,             setError]             = useState<string | null>(null);
-  const [premiumUnlocked,   setPremiumUnlocked]   = useState(false);
   const [tokensRemaining,   setTokensRemaining]   = useState<number>(DAILY_TOKEN_LIMIT);
   const [limitReached,      setLimitReached]      = useState(false);
   const [feedbackText,      setFeedbackText]      = useState("");
@@ -123,6 +128,7 @@ export default function EvaluatePage() {
   const [evalRating,        setEvalRating]        = useState<"up" | "down" | null>(null);
   const [evalFeedbackText,  setEvalFeedbackText]  = useState("");
   const [evalFeedbackStatus, setEvalFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
 
   // ─── Auth ─────────────────────────────────────────────────────────────────
 
@@ -214,6 +220,16 @@ export default function EvaluatePage() {
       supabase.from("events").insert({ event: "question_opened", meta: { question_id: q.id, subject, year } }).then(() => {});
     }
   }, [questionNumber, questions]);
+
+  // ─── Loading message rotation (non-OCR path only — no upload path exists yet) ─
+
+  useEffect(() => {
+    if (!evaluating) { setLoadingMessageIndex(0); return; }
+    const interval = setInterval(() => {
+      setLoadingMessageIndex((i) => Math.min(i + 1, NON_OCR_LOADING_MESSAGES.length - 1));
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [evaluating]);
 
   // ─── Submit ───────────────────────────────────────────────────────────────
 
@@ -309,7 +325,10 @@ export default function EvaluatePage() {
     : [];
 
   const tokenCost = selectedQuestion ? (selectedQuestion.is_subjective ? 3 : 1) : 0;
-  const canSubmit = Boolean(subject && year && questionType && questionNumber && studentAnswer.trim() && !evaluating);
+  const canSubmit = Boolean(
+    subject && year && questionType && questionNumber && studentAnswer.trim() &&
+    !evaluating && !selectedQuestion?.diagram_required
+  );
 
   // ─── Auth gate ────────────────────────────────────────────────────────────
 
@@ -405,7 +424,6 @@ export default function EvaluatePage() {
               {filteredQuestions.map((q) => (
                 <option key={q.id} value={q.question_number}>
                   Q{q.question_number}
-                  {q.question_text?.trim() ? ` — ${q.question_text.slice(0, 60)}${q.question_text.length > 60 ? "…" : ""}` : ""}
                 </option>
               ))}
             </select>
@@ -419,12 +437,6 @@ export default function EvaluatePage() {
               Question reference{" "}
               <span className={numericMono}>{year} — Q{selectedQuestion.question_number}</span>
             </p>
-
-            {selectedQuestion.diagram_required && (
-              <div className="rounded-xl border border-amber-800 bg-amber-950/30 px-4 py-3 text-sm text-amber-300">
-                ⚠️ This question includes a diagram. Refer to your question paper for the figure.
-              </div>
-            )}
 
             {selectedQuestion.question_text?.trim() ? (
               <p className="text-sm leading-relaxed text-foreground/90">{selectedQuestion.question_text}</p>
@@ -441,6 +453,13 @@ export default function EvaluatePage() {
       {selectedQuestion && (
         <div className={`${cardPadded} mt-6`}>
           <h2 className={sectionLabel}>Your answer</h2>
+
+          {selectedQuestion.diagram_required ? (
+            <div className="mt-6 rounded-xl border border-border bg-card/60 px-4 py-4 text-sm leading-relaxed text-muted-foreground">
+              Diagram-based questions aren&apos;t available for evaluation yet — but they will be soon.
+              For now, try a text-based question from the same paper.
+            </div>
+          ) : (
           <div className="mt-6 flex flex-col gap-6">
 
             {/* MCQ */}
@@ -511,7 +530,13 @@ export default function EvaluatePage() {
             <button onClick={handleSubmit} disabled={!canSubmit} className={btnPrimary}>
               {evaluating ? "Evaluating…" : "Evaluate"}
             </button>
+            {evaluating && (
+              <p className="text-center text-xs text-muted-foreground">
+                {NON_OCR_LOADING_MESSAGES[loadingMessageIndex]}
+              </p>
+            )}
           </div>
+          )}
         </div>
       )}
 
@@ -522,7 +547,7 @@ export default function EvaluatePage() {
           {limitReached && (
             <div className={cardPadded}>
               {feedbackSent ? (
-                <p className="text-sm text-emerald-400">Thanks — we&apos;ll take a look.</p>
+                <p className="text-sm text-status-correct">Thanks — we&apos;ll take a look.</p>
               ) : (
                 <div className="flex flex-col gap-4">
                   <p className="text-xs font-medium text-muted-foreground">
@@ -568,8 +593,8 @@ export default function EvaluatePage() {
 
             {/* Objective */}
             {result.is_objective ? (
-              <div className={`rounded-xl border px-5 py-4 ${result.is_correct ? "border-emerald-800 bg-emerald-950/30" : "border-red-800 bg-red-950/30"}`}>
-                <p className={`text-sm font-medium ${result.is_correct ? "text-emerald-300" : "text-red-300"}`}>
+              <div className={`rounded-xl border px-5 py-4 ${result.is_correct ? "border-status-correct bg-status-correct-subtle" : "border-status-wrong bg-status-wrong-subtle"}`}>
+                <p className={`text-sm font-medium ${result.is_correct ? "text-status-correct" : "text-status-wrong"}`}>
                   {result.is_correct ? "✓ Correct" : "✗ Incorrect"}
                 </p>
                 {!result.is_correct && result.correct_answer && (
@@ -583,62 +608,64 @@ export default function EvaluatePage() {
             ) : (
               <>
                 {/* Examiner feedback quote */}
-                <div className={mutedPanel}>
+                <div className="rounded-xl border border-tag-examiner-feedback bg-tag-examiner-feedback-subtle p-5">
                   <p className="text-sm italic leading-relaxed text-foreground/90">&ldquo;{result.examiner_feedback}&rdquo;</p>
                 </div>
 
                 {/* Points awarded */}
-                <Section title="Points awarded" items={result.points_hit} color="text-emerald-400" />
+                <Section title="Points awarded" items={result.points_hit} color="text-status-correct" />
 
                 {/* Points missed */}
-                <Section title="Points missed" items={result.points_missed} color="text-red-400" />
+                <Section title="Points missed" items={result.points_missed} color="text-status-wrong" />
 
-                {/* Conceptual errors — premium */}
-                <PremiumGate label="Conceptual errors" unlocked={premiumUnlocked} variant="conceptual">
-                  <Section title="Conceptual errors" items={result.conceptual_errors} color="text-amber-400" />
-                </PremiumGate>
-
-                {/* Model answer — premium */}
-                <PremiumGate label="Model answer" unlocked={premiumUnlocked} variant="model">
-                  <div>
-                    <div className="mb-3 flex flex-wrap items-center gap-2">
-                      <span className={sectionLabel}>Model answer</span>
-                      <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
-                        {result.model_answer_source === "verified" ? "CISCE verified" : "AI generated"}
-                      </span>
+                {/* Conceptual errors */}
+                {result.conceptual_errors.length > 0 && (
+                  <div className="rounded-xl border border-tag-conceptual bg-tag-conceptual-subtle p-5">
+                    <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-conceptual">
+                      Conceptual errors
                     </div>
-                    <p className="text-sm leading-relaxed text-foreground/90">{result.model_answer}</p>
-                  </div>
-                </PremiumGate>
-
-                {/* Improvement tips — premium, ordered list */}
-                <PremiumGate label="Improvement tips" unlocked={premiumUnlocked} variant="tips">
-                  <div>
-                    <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-purple-400">
-                      How to improve
-                    </div>
-                    <ul className="space-y-3">
-                      {result.improvement_tips.map((tip, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-premium/10 font-mono text-xs font-bold text-purple-400">
-                            {i + 1}
-                          </span>
-                          <span className="text-sm leading-relaxed text-foreground/90">{tip}</span>
-                        </li>
+                    <ul className="space-y-2">
+                      {result.conceptual_errors.map((item, i) => (
+                        <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
                       ))}
                     </ul>
                   </div>
-                </PremiumGate>
+                )}
 
-                {/* Global upgrade CTA */}
-                <WaitlistCapture unlocked={premiumUnlocked} onUnlock={() => setPremiumUnlocked(true)} />
+                {/* Model answer */}
+                <div className="rounded-xl border border-tag-model-answer bg-tag-model-answer-subtle p-5">
+                  <div className="mb-3 flex flex-wrap items-center gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-tag-model-answer">Model answer</span>
+                    <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
+                      {result.model_answer_source === "verified" ? "CISCE verified" : "AI generated"}
+                    </span>
+                  </div>
+                  <p className="text-sm leading-relaxed text-foreground/90">{result.model_answer}</p>
+                </div>
+
+                {/* Improvement tips — ordered list */}
+                <div className="rounded-xl border border-tag-improvement-tips bg-tag-improvement-tips-subtle p-5">
+                  <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-improvement-tips">
+                    How to improve
+                  </div>
+                  <ul className="space-y-3">
+                    {result.improvement_tips.map((tip, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-tag-improvement-tips-subtle font-mono text-xs font-bold text-tag-improvement-tips">
+                          {i + 1}
+                        </span>
+                        <span className="text-sm leading-relaxed text-foreground/90">{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </>
             )}
 
             {/* Eval quality feedback */}
             <div className="border-t border-border pt-6">
               {evalFeedbackStatus === "success" ? (
-                <div className="flex items-center justify-center gap-2 rounded-xl bg-emerald-950/30 py-4 text-sm font-medium text-emerald-400">
+                <div className="flex items-center justify-center gap-2 rounded-xl bg-status-correct-subtle py-4 text-sm font-medium text-status-correct">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -670,13 +697,13 @@ export default function EvaluatePage() {
                         className={`${textareaClass} resize-none`} rows={2}
                       />
                       <div className="flex items-center justify-between">
-                        <span className="text-xs text-red-400">
+                        <span className="text-xs text-status-wrong">
                           {evalFeedbackStatus === "error" && "Something went wrong. Try again."}
                         </span>
                         <button
                           onClick={handleEvalFeedbackSubmit}
                           disabled={evalFeedbackText.trim().length < 3 || evalFeedbackStatus === "submitting"}
-                          className="rounded-lg bg-foreground px-4 py-2 text-xs font-medium text-background transition-colors hover:opacity-90 disabled:opacity-50"
+                          className="rounded-lg bg-accent px-4 py-2 text-xs font-medium text-background transition-colors hover:bg-accent-hover disabled:opacity-50"
                         >
                           {evalFeedbackStatus === "submitting" ? "Sending…" : "Submit feedback"}
                         </button>

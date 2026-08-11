@@ -3,12 +3,11 @@
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { createBrowserClient } from "@supabase/ssr";
 import {
-  authShell,
   backLink,
   btnPrimary,
-  cardPadded,
   errorAlert,
   inputBase,
   sectionLabel,
@@ -19,7 +18,7 @@ type AuthResult = { ok: true } | { ok: false; message: string };
 function SubmitButton({ label }: { label: string }) {
   const { pending } = useFormStatus();
   return (
-    <button className={btnPrimary} disabled={pending} type="submit">
+    <button className={`${btnPrimary} w-full`} disabled={pending} type="submit">
       {pending ? "Working…" : label}
     </button>
   );
@@ -41,7 +40,7 @@ function GoogleButton() {
     <button
       type="button"
       onClick={handleGoogleSignIn}
-      className="flex h-11 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border border-border bg-card text-sm font-medium text-foreground transition-colors hover:bg-border/40"
+      className="flex h-11 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border border-border bg-card text-sm font-medium text-foreground transition-colors hover:bg-surface-raised"
     >
       <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
@@ -54,68 +53,115 @@ function GoogleButton() {
   );
 }
 
+/**
+ * Left-half brand panel. `imageSrc` is a single swap point — pass a real
+ * photo/illustration path later and this panel switches from the CSS glow
+ * treatment to that image with no layout changes.
+ */
+export function BrandPanel({ imageSrc }: { imageSrc?: string }) {
+  return (
+    <div className="relative hidden overflow-hidden bg-card md:flex md:w-1/2 md:flex-col md:items-center md:justify-center">
+      {imageSrc ? (
+        <Image src={imageSrc} alt="" fill className="object-cover" priority />
+      ) : (
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,var(--glow-purple),transparent_65%)] opacity-25"
+        />
+      )}
+      <div className="relative flex flex-col items-center gap-4 px-10 text-center">
+        <Image src="/be-logo1.png" alt="BoardEdge" width={56} height={56} priority />
+        <span className="text-xl font-semibold tracking-tight text-foreground">BoardEdge</span>
+      </div>
+    </div>
+  );
+}
+
 export function AuthForm({
   title,
   action,
   submitLabel,
   alternate,
   showForgotPassword = false,
+  nameFields = false,
+  imageSrc,
 }: {
   title: string;
   action: (prevState: AuthResult | null, formData: FormData) => Promise<AuthResult>;
   submitLabel: string;
   alternate: { href: string; label: string };
   showForgotPassword?: boolean;
+  nameFields?: boolean;
+  imageSrc?: string;
 }) {
   const [state, formAction] = useActionState<AuthResult | null, FormData>(action, null);
   const inputClass = `${inputBase} h-11 w-full placeholder:text-muted-foreground`;
 
   return (
-    <div className={authShell}>
-      <div className="mb-8 flex items-center">
-        <Link href="/" className={backLink}>← Home</Link>
-      </div>
+    <div className="flex min-h-dvh flex-col bg-background text-foreground md:flex-row">
+      <BrandPanel imageSrc={imageSrc} />
 
-      <div className={cardPadded}>
-        <p className={sectionLabel}>BoardEdge</p>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
-
-        <div className="mt-8"><GoogleButton /></div>
-
-        <div className="relative my-6">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-border" />
-          </div>
-          <div className="relative flex justify-center">
-            <span className="bg-card px-3 text-xs text-muted-foreground">or</span>
-          </div>
-        </div>
-
-        <form action={formAction} className="space-y-5">
-          <div className="space-y-2">
-            <label className="text-xs font-medium text-muted-foreground" htmlFor="email">Email</label>
-            <input className={inputClass} id="email" name="email" type="email" autoComplete="email" required />
+      <div className="flex flex-1 flex-col justify-center px-6 py-12 md:px-16 lg:px-24">
+        <div className="mx-auto w-full max-w-sm">
+          <div className="mb-8 flex items-center justify-between md:hidden">
+            <Link href="/" className={backLink}>← Home</Link>
           </div>
 
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-medium text-muted-foreground" htmlFor="password">Password</label>
-              {showForgotPassword && (
-                <Link href="/forgot-password" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
-                  Forgot password?
-                </Link>
-              )}
+          <p className={sectionLabel}>BoardEdge</p>
+          <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
+
+          <div className="mt-8"><GoogleButton /></div>
+
+          <div className="relative my-6">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-border" />
             </div>
-            <input className={inputClass} id="password" name="password" type="password" autoComplete="current-password" required minLength={6} />
+            <div className="relative flex justify-center">
+              <span className="bg-background px-3 text-xs text-muted-foreground">or</span>
+            </div>
           </div>
 
-          {state?.ok === false ? <p className={errorAlert}>{state.message}</p> : null}
+          <form action={formAction} className="space-y-5">
+            {nameFields && (
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-2">
+                  <label className="text-xs font-medium text-muted-foreground" htmlFor="first_name">First name</label>
+                  <input className={inputClass} id="first_name" name="first_name" type="text" autoComplete="given-name" required />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-medium text-muted-foreground" htmlFor="last_name">Last name</label>
+                  <input className={inputClass} id="last_name" name="last_name" type="text" autoComplete="family-name" required />
+                </div>
+              </div>
+            )}
 
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
-            <SubmitButton label={submitLabel} />
-            <Link className={backLink} href={alternate.href}>{alternate.label}</Link>
-          </div>
-        </form>
+            <div className="space-y-2">
+              <label className="text-xs font-medium text-muted-foreground" htmlFor="email">Email</label>
+              <input className={inputClass} id="email" name="email" type="email" autoComplete="email" required />
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <label className="text-xs font-medium text-muted-foreground" htmlFor="password">Password</label>
+                {showForgotPassword && (
+                  <Link href="/forgot-password" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
+                    Forgot password?
+                  </Link>
+                )}
+              </div>
+              <input className={inputClass} id="password" name="password" type="password" autoComplete="current-password" required minLength={6} />
+            </div>
+
+            {state?.ok === false ? <p className={errorAlert}>{state.message}</p> : null}
+
+            <div className="space-y-3 pt-1">
+              <SubmitButton label={submitLabel} />
+              <p className="text-center text-sm text-muted-foreground">
+                <Link className="text-foreground underline-offset-2 hover:underline" href={alternate.href}>{alternate.label}</Link>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

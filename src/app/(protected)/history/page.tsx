@@ -50,6 +50,25 @@ export default async function HistoryPage() {
 
   const rows = (data ?? []) as unknown as HistoryRow[];
 
+  let correctCount = 0;
+  let wrongCount = 0;
+  let partialCount = 0;
+  for (const row of rows) {
+    const totalMarks = row.questions?.marking_schemes?.[0]?.total_marks ?? 0;
+    const awarded = row.evaluations?.[0]?.marks_awarded ?? 0;
+    if (!totalMarks) continue;
+    if (awarded === totalMarks) correctCount++;
+    else if (awarded === 0) wrongCount++;
+    else partialCount++;
+  }
+
+  const STAT_CARDS = [
+    { label: "Attempted", value: rows.length, colorClass: "text-status-attempted" },
+    { label: "Correct", value: correctCount, colorClass: "text-status-correct" },
+    { label: "Wrong", value: wrongCount, colorClass: "text-status-wrong" },
+    { label: "Partially Correct", value: partialCount, colorClass: "text-status-partial" },
+  ];
+
   return (
     <div className={pageShellWide}>
       <div className="flex items-start justify-between gap-6">
@@ -59,6 +78,17 @@ export default async function HistoryPage() {
         </div>
         <Link href="/dashboard" className={backLink}>← Dashboard</Link>
       </div>
+
+      {rows.length > 0 && (
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          {STAT_CARDS.map(({ label, value, colorClass }) => (
+            <div key={label} className="rounded-2xl border border-border bg-card p-5">
+              <p className={`text-2xl font-semibold ${numericMono} ${colorClass}`}>{value}</p>
+              <p className="mt-1 text-xs font-medium text-muted-foreground">{label}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
       {rows.length === 0 ? (
         <div className="mt-12 rounded-2xl border border-dashed border-border bg-card p-8 text-center">

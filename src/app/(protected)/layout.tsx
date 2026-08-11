@@ -4,9 +4,9 @@ import { MobileNav } from "@/app/_components/MobileNav";
 
 export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-dvh bg-background md:grid md:grid-cols-[15rem_1fr]">
+    <div className="min-h-dvh bg-background md:flex">
       <Sidebar />
-      <div className="flex flex-col">
+      <div className="flex min-w-0 flex-1 flex-col">
         <MobileNav />
         <main>{children}</main>
       </div>

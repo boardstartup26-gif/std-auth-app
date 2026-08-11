@@ -497,7 +497,6 @@ export async function POST(req: NextRequest) {
     tokens_remaining: tokensRemaining,
   };
 
-  // FIX: awaited, not fire-and-forget.
   try {
     await persistSubmission(supabase, {
       questionId: question.id,
@@ -531,7 +530,7 @@ async function persistSubmission(
     userId: string;
     evaluation: EvaluationOutput;
   }
-) {
+): Promise<void> {
   const { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
     .insert({

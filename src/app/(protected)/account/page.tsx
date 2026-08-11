@@ -16,14 +16,18 @@ export default async function AccountPage() {
     .select("*", { count: "exact", head: true })
     .eq("user_id", user.id);
 
+  const firstName = (user.user_metadata?.first_name as string | undefined)?.trim();
+  const lastName = (user.user_metadata?.last_name as string | undefined)?.trim();
+  const fullName = [firstName, lastName].filter(Boolean).join(" ");
+
   return (
     <div className={pageShell}>
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">BoardEdge</p>
+          <p className={sectionLabel}>BoardEdge</p>
           <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">Account</h1>
         </div>
-        <Link href="/dashboard" className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-border flex items-center">
+        <Link href="/dashboard" className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-surface-raised flex items-center">
           ← Dashboard
         </Link>
       </div>
@@ -32,6 +36,12 @@ export default async function AccountPage() {
         <div className={cardPadded}>
           <p className={sectionLabel}>Account details</p>
           <div className="mt-4 space-y-3">
+            {fullName && (
+              <div>
+                <p className="text-xs text-muted-foreground">Name</p>
+                <p className="mt-1 text-sm font-medium text-foreground">{fullName}</p>
+              </div>
+            )}
             <div>
               <p className="text-xs text-muted-foreground">Email</p>
               <p className="mt-1 text-sm font-medium text-foreground">{user.email}</p>

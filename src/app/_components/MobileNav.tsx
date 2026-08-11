@@ -33,7 +33,7 @@ export function MobileNav() {
           <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" onClick={() => setOpen(false)} />
           <div className="absolute left-0 top-0 flex h-full w-72 flex-col bg-card border-r border-border">
             <div className="flex items-center justify-between px-4 py-5">
-              <Image src="/logo.png" alt="BoardEdge" width={36} height={36} />
+              <Image src="/be-logo1.png" alt="BoardEdge" width={36} height={36} />
               <button onClick={() => setOpen(false)} aria-label="Close menu" className="text-muted-foreground">
                 <X size={20} />
               </button>
@@ -47,8 +47,8 @@ export function MobileNav() {
                     key={href}
                     href={href}
                     onClick={() => setOpen(false)}
-                    className={`flex items-center gap-3 rounded-r-lg px-4 py-3 text-sm font-medium border-l-[3px] ${
-                      active ? "bg-white/10 border-accent text-foreground" : "border-transparent text-muted-foreground hover:bg-white/5"
+                    className={`flex items-center gap-3 rounded-lg mx-1 px-4 py-3 text-sm font-medium transition-colors ${
+                      active ? "bg-accent-subtle text-accent" : "text-muted-foreground hover:bg-surface-raised hover:text-foreground"
                     }`}
                   >
                     <Icon size={18} strokeWidth={1.75} />
@@ -59,7 +59,7 @@ export function MobileNav() {
             </nav>
 
             <form action={signOut} className="border-t border-border px-2 py-4">
-              <button type="submit" className="flex w-full items-center gap-3 rounded-r-lg border-l-[3px] border-transparent px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-white/5">
+              <button type="submit" className="flex w-full items-center gap-3 rounded-lg mx-1 px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground">
                 <LogOut size={18} strokeWidth={1.75} />
                 Sign out
               </button>

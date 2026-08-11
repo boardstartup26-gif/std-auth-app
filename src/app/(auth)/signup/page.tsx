@@ -8,6 +8,7 @@ export default function SignupPage() {
       action={signup}
       submitLabel="Create account"
       alternate={{ href: "/login", label: "Already have an account?" }}
+      nameFields
     />
   );
 }

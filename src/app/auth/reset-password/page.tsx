@@ -3,9 +3,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ThemeToggle } from "@/app/_components/ThemeToggle";
 import { createBrowserClient } from "@supabase/ssr";
-import { authShell, btnPrimary, cardPadded, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
+import { BrandPanel } from "@/app/(auth)/_components/AuthForm";
+import { btnPrimary, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
 
 export default function ResetPasswordPage() {
   const router = useRouter();
@@ -36,53 +36,54 @@ export default function ResetPasswordPage() {
   };
 
   return (
-    <div className={authShell}>
-      <div className="mb-8 flex justify-end">
-        <ThemeToggle />
-      </div>
-      <div className={cardPadded}>
-        <p className={sectionLabel}>BoardEdge</p>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-          Set new password
-        </h1>
+    <div className="flex min-h-dvh flex-col bg-background text-foreground md:flex-row">
+      <BrandPanel />
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-          <div className="space-y-2">
-            <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400" htmlFor="password">
-              New password
-            </label>
-            <input
-              className={`${inputBase} h-11 w-full`}
-              id="password"
-              type="password"
-              required
-              minLength={6}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
+      <div className="flex flex-1 flex-col justify-center px-6 py-12 md:px-16 lg:px-24">
+        <div className="mx-auto w-full max-w-sm">
+          <p className={sectionLabel}>BoardEdge</p>
+          <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
+            Set new password
+          </h1>
 
-          <div className="space-y-2">
-            <label className="text-xs font-medium text-zinc-600 dark:text-zinc-400" htmlFor="confirm">
-              Confirm password
-            </label>
-            <input
-              className={`${inputBase} h-11 w-full`}
-              id="confirm"
-              type="password"
-              required
-              minLength={6}
-              value={confirm}
-              onChange={(e) => setConfirm(e.target.value)}
-            />
-          </div>
+          <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+            <div className="space-y-2">
+              <label className="text-xs font-medium text-muted-foreground" htmlFor="password">
+                New password
+              </label>
+              <input
+                className={`${inputBase} h-11 w-full`}
+                id="password"
+                type="password"
+                required
+                minLength={6}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
 
-          {error && <p className={errorAlert}>{error}</p>}
+            <div className="space-y-2">
+              <label className="text-xs font-medium text-muted-foreground" htmlFor="confirm">
+                Confirm password
+              </label>
+              <input
+                className={`${inputBase} h-11 w-full`}
+                id="confirm"
+                type="password"
+                required
+                minLength={6}
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+              />
+            </div>
 
-          <button className={btnPrimary} disabled={pending} type="submit">
-            {pending ? "Updating…" : "Update password"}
-          </button>
-        </form>
+            {error && <p className={errorAlert}>{error}</p>}
+
+            <button className={`${btnPrimary} w-full`} disabled={pending} type="submit">
+              {pending ? "Updating…" : "Update password"}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
