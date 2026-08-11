@@ -1,9 +1,16 @@
 import { createClient } from "@/lib/supabase/server";
 import { signOut } from "@/app/(auth)/actions";
 import Link from "next/link";
+import { Gauge, BarChart2, PieChart } from "lucide-react";
 import { btnPrimary, btnSecondary, cardPadded, pageShell, sectionLabel } from "@/lib/ui";
 
 export const dynamic = "force-dynamic";
+
+const ANALYTICS_PLACEHOLDERS = [
+  { icon: Gauge, label: "Accuracy Overview", desc: "Your overall accuracy score" },
+  { icon: BarChart2, label: "Chapter Breakdown", desc: "Bar chart by chapter/topic" },
+  { icon: PieChart, label: "Subject Completion", desc: "Completion donuts across subjects" },
+];
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -59,11 +66,10 @@ export default async function DashboardPage() {
           <div>
             <p className={sectionLabel}>Evaluation engine</p>
             <h2 className="mt-3 text-lg font-semibold tracking-tight text-foreground">
-              AI-powered marking
+              Start Marking
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-foreground/60">
-              Evaluated against the official ICSE marking scheme — marks, examiner feedback,
-              and exactly what the board expects you to write.
+              Choose a past paper question. Submit your answer. See exactly where you gained and lost marks.
             </p>
           </div>
 
@@ -76,6 +82,21 @@ export default async function DashboardPage() {
             </Link>
           </div>
         </div>
+      </div>
+
+      {/* Analytics placeholders — no charting library yet, structural placeholders only */}
+      <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        {ANALYTICS_PLACEHOLDERS.map(({ icon: Icon, label, desc }) => (
+          <div
+            key={label}
+            className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-border bg-card/40 p-8 text-center"
+          >
+            <Icon size={28} className="text-muted-foreground" />
+            <p className="text-sm font-semibold text-foreground">{label}</p>
+            <p className="text-xs text-muted-foreground">{desc}</p>
+            <p className="mt-2 text-xs text-muted-foreground">Analytics will appear here soon in the next update.</p>
+          </div>
+        ))}
       </div>
     </div>
   );

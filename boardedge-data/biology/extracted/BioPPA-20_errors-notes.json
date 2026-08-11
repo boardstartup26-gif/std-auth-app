@@ -1,0 +1,886 @@
+[
+  {
+    "question_number": "1(a)(i)",
+    "common_errors": [
+      "Writing 'condensation' alone without the qualifier 'polymerization'",
+      "Confusing the process with 'photosynthesis' since it involves glucose"
+    ],
+    "examiner_notes": "Both 'Polymerization' and 'Condensation polymerization' are accepted; a bare answer of 'condensation' alone is not given credit."
+  },
+  {
+    "question_number": "1(a)(ii)",
+    "common_errors": [
+      "Writing 'chromatin' instead of 'centromere'",
+      "Writing 'kinetochore' as a substitute term"
+    ],
+    "examiner_notes": "Only 'Centromere' is accepted; 'kinetochore' is a related but distinct structure and is not credited."
+  },
+  {
+    "question_number": "1(a)(iii)",
+    "common_errors": [
+      "Writing 'hemocyanin' (the respiratory pigment in some invertebrates) instead of haemoglobin",
+      "Spelling it as 'hemoglobin' without the iron-containing qualifier confusion, or writing just 'iron' as the answer"
+    ],
+    "examiner_notes": "Either British ('haemoglobin') or American ('hemoglobin') spelling is accepted."
+  },
+  {
+    "question_number": "1(a)(iv)",
+    "common_errors": [
+      "Confusing ureter with urethra",
+      "Writing 'renal vein' or 'renal artery' instead of the excretory duct"
+    ],
+    "examiner_notes": "Spelling precision is expected since 'ureter' and 'urethra' are commonly confused; examiners specifically watch for this mix-up."
+  },
+  {
+    "question_number": "1(a)(v)",
+    "common_errors": [
+      "Writing 'cerebellum' instead of 'cerebrum'",
+      "Writing 'hippocampus' (not part of the ICSE syllabus terminology at this level)"
+    ],
+    "examiner_notes": "Only 'Cerebrum' is accepted at this level; the cerebellum is associated with balance/coordination, not memory, in the ICSE syllabus."
+  },
+  {
+    "question_number": "1(b)(i)",
+    "common_errors": [
+      "Confusing allele with gene itself, or with genotype",
+      "Omitting that alleles occupy the same locus on homologous chromosomes",
+      "Describing alleles only as 'different genes' without mentioning they control the same trait"
+    ],
+    "examiner_notes": "Full credit requires both the 'alternative form of a gene' idea and the 'same locus on homologous chromosomes' idea; a one-line vague definition may only get partial credit at the examiner's discretion."
+  },
+  {
+    "question_number": "1(b)(ii)",
+    "common_errors": [
+      "Omitting direction of movement (high to low concentration)",
+      "Confusing diffusion with osmosis by mentioning a semi-permeable membrane",
+      "Writing 'movement of molecules' without specifying liquid or gas"
+    ],
+    "examiner_notes": "The phrase 'higher to lower concentration' is essential; answers describing only 'spreading out' without this direction are marked incomplete."
+  },
+  {
+    "question_number": "1(b)(iii)",
+    "common_errors": [
+      "Omitting that it occurs in the light reaction / requires sunlight",
+      "Confusing photolysis with hydrolysis",
+      "Forgetting to mention that oxygen is released as a product"
+    ],
+    "examiner_notes": "Examiners expect 'splitting of water' plus the condition 'in presence of sunlight'; omitting sunlight/chlorophyll usually costs the mark."
+  },
+  {
+    "question_number": "1(b)(iv)",
+    "common_errors": [
+      "Confusing phenotype with genotype",
+      "Describing phenotype only as 'physical appearance' without linking it to genotype-environment interaction"
+    ],
+    "examiner_notes": "The definition must reference both genotype and environment interaction; stating only 'visible characteristics' without this link may receive partial credit."
+  },
+  {
+    "question_number": "1(b)(v)",
+    "common_errors": [
+      "Omitting 'per unit area' and giving only 'number of individuals'",
+      "Confusing population density with birth rate or population growth rate"
+    ],
+    "examiner_notes": "Both 'number of individuals' and 'per unit area' must be present for the full mark."
+  },
+  {
+    "question_number": "1(c)(i)",
+    "common_errors": [
+      "Writing 'androgen' as a generic term instead of the specific hormone 'testosterone'",
+      "Writing 'adrenaline' by confusing it with a stress-response hormone"
+    ],
+    "examiner_notes": "Only the specific hormone name 'Testosterone' is accepted for the mark."
+  },
+  {
+    "question_number": "1(c)(ii)",
+    "common_errors": [
+      "Writing 'pleura' (the lung covering) instead of 'pericardium'",
+      "Writing 'endocardium' or 'myocardium' by confusing heart wall layers with the outer covering"
+    ],
+    "examiner_notes": "Only 'Pericardium' is accepted; confusing it with the lung's pleura is a very common analogy-based error in this question format."
+  },
+  {
+    "question_number": "1(c)(iii)",
+    "common_errors": [
+      "Writing 'Islets of Langerhans' generically instead of specifying 'Alpha cells'",
+      "Writing 'Beta cells' by mistake since it was mentioned earlier in the analogy"
+    ],
+    "examiner_notes": "The specific cell type 'Alpha cells' is required; naming only the pancreas or Islets of Langerhans without specifying alpha cells does not earn full credit."
+  },
+  {
+    "question_number": "1(c)(iv)",
+    "common_errors": [
+      "Writing 'hepatic portal vein' instead of 'hepatic artery'",
+      "Writing 'renal artery' by mistakenly copying the analogy term instead of applying it to the liver"
+    ],
+    "examiner_notes": "Only 'Hepatic artery' is accepted; the hepatic portal vein carries blood from the intestine, not oxygenated blood, so it is not credited here."
+  },
+  {
+    "question_number": "1(c)(v)",
+    "common_errors": [
+      "Writing 'implantation' by mistake, mirroring the analogy given for the uterus",
+      "Writing 'ovulation' instead of 'fertilization'"
+    ],
+    "examiner_notes": "Only 'Fertilization' is accepted since it is the process that occurs specifically in the fallopian tube."
+  },
+  {
+    "question_number": "1(d)(i)",
+    "common_errors": [
+      "Placing Effector before Spinal cord",
+      "Placing Response before Effector",
+      "Starting the sequence correctly but reversing Receptor and Spinal cord"
+    ],
+    "examiner_notes": "No partial credit is given for a partially correct order; the entire sequence must match exactly for the mark."
+  },
+  {
+    "question_number": "1(d)(ii)",
+    "common_errors": [
+      "Reproducing the sequence exactly as it appears in the jumbled question rather than reordering it",
+      "Placing Xylem before Endodermis, reversing the correct order of water entry"
+    ],
+    "examiner_notes": "The biologically correct pathway of water movement is Root hair, Epidermis, Cortex, Endodermis, Xylem; evaluators should accept this correct physiological order as the primary answer even though some reference sources list an incorrect sequence."
+  },
+  {
+    "question_number": "1(d)(iii)",
+    "common_errors": [
+      "Placing Pupil before Aqueous humor, reversing the correct order light passes through the eye",
+      "Placing Yellow spot before Vitreous humor"
+    ],
+    "examiner_notes": "The full correct order (Conjunctiva, Aqueous humor, Pupil, Vitreous humor, Yellow spot) is required for the mark; no partial credit for a partially correct sequence."
+  },
+  {
+    "question_number": "1(d)(iv)",
+    "common_errors": [
+      "Placing Neanderthal Man after Cro-Magnon Man, reversing the correct evolutionary order",
+      "Omitting Homo erectus or placing it after Neanderthal Man"
+    ],
+    "examiner_notes": "The full correct evolutionary sequence is required for the mark; students often confuse the relative order of Neanderthal and Cro-Magnon man."
+  },
+  {
+    "question_number": "1(d)(v)",
+    "common_errors": [
+      "Placing Capillaries directly after Artery, omitting Arteriole",
+      "Reversing the order of Venule and Vein"
+    ],
+    "examiner_notes": "The complete correct sequence (Artery, Arteriole, Capillaries, Venule, Vein) is required; no marks for a partially correct blood vessel order."
+  },
+  {
+    "question_number": "1(e)(i)",
+    "common_errors": [
+      "Selecting (a) Reproduction instead of the specific process (c) Fertilization",
+      "Selecting (d) Embryo, confusing the product with the process"
+    ],
+    "examiner_notes": "Only the option letter and/or term need be written; both are accepted."
+  },
+  {
+    "question_number": "1(e)(ii)",
+    "common_errors": [
+      "Selecting (c) Eosinophils, Basophils, confusing granulocytes with agranulocytes",
+      "Selecting (b) Lymphocytes, Basophils, mixing one correct and one incorrect cell type"
+    ],
+    "examiner_notes": "Students must know that agranulocytes (Lymphocytes, Monocytes) lack visible cytoplasmic granules, unlike Eosinophils and Basophils."
+  },
+  {
+    "question_number": "1(e)(iii)",
+    "common_errors": [
+      "Selecting (a) Knee-jerk, mistakenly thinking it is a learned response",
+      "Selecting (d) Sneezing, not recognizing it as an unconditioned/natural reflex"
+    ],
+    "examiner_notes": "Salivation at the sight of food is a conditioned reflex, not a natural (unconditioned) reflex, which is why it is the correct choice for 'not a natural reflex action'."
+  },
+  {
+    "question_number": "1(e)(iv)",
+    "common_errors": [
+      "Selecting (b) Bowman's capsule, confusing a component of the nephron with the nephron itself",
+      "Selecting (c) Renal pelvis, confusing a collecting structure with the functional unit"
+    ],
+    "examiner_notes": "Only (d) Nephron is correct as the structural and functional unit; Bowman's capsule is a part of the nephron, not the whole unit."
+  },
+  {
+    "question_number": "1(e)(v)",
+    "common_errors": [
+      "Selecting (a) 23 pairs of autosomes, forgetting that autosomes exclude sex chromosomes",
+      "Selecting (b), confusing the haploid ovum with the diploid somatic cell chromosome count"
+    ],
+    "examiner_notes": "Students must recall that the human ovum is haploid (23 chromosomes total: 22 autosomes + 1 X-chromosome), not diploid."
+  },
+  {
+    "question_number": "1(f)(i)",
+    "common_errors": [
+      "Naming the odd term without stating the category, or vice versa",
+      "Selecting a plant hormone (e.g. Ethylene) as the odd one out instead of Adrenaline"
+    ],
+    "examiner_notes": "Both the correct odd term AND the correct category name are required together for the single mark; one without the other earns no credit."
+  },
+  {
+    "question_number": "1(f)(ii)",
+    "common_errors": [
+      "Selecting Tympanum as the odd term instead of Ear ossicles",
+      "Naming the category as 'parts of the ear' instead of specifically 'outer ear'"
+    ],
+    "examiner_notes": "The category must be specified precisely as 'outer ear', not just 'ear', since Ear ossicles also belong to the ear but to the middle ear."
+  },
+  {
+    "question_number": "1(f)(iii)",
+    "common_errors": [
+      "Selecting Soiled dressings as the odd term instead of Household detergents",
+      "Naming the category as 'hospital items' instead of the more precise 'biomedical/hospital waste'"
+    ],
+    "examiner_notes": "The category is best phrased as 'biomedical waste' or 'hospital waste'; a vague answer like 'medical things' may receive partial credit at the examiner's discretion."
+  },
+  {
+    "question_number": "1(f)(iv)",
+    "common_errors": [
+      "Selecting Cretinism or Myxoedema as the odd term instead of Simple Goitre",
+      "Describing the shared category only as 'thyroid disorders' without noting they arise from hormone imbalance rather than iodine deficiency"
+    ],
+    "examiner_notes": "The category should specify 'disorders due to abnormal thyroxine secretion', distinguishing them from Simple Goitre which is specifically due to iodine deficiency."
+  },
+  {
+    "question_number": "1(f)(v)",
+    "common_errors": [
+      "Selecting one of the nitrogenous bases (e.g. Cytosine) as the odd term instead of Creatinine",
+      "Naming the category as 'DNA bases' without allowing for RNA, since Cytosine is common to both"
+    ],
+    "examiner_notes": "The category is best stated broadly as 'nitrogenous bases' to cover both DNA and RNA; overly narrow answers may still be credited if the odd term is correct."
+  },
+  {
+    "question_number": "1(g)(i)",
+    "common_errors": [
+      "Writing 'Darwin's finches' or another evolution example instead of the peppered moth",
+      "Misspelling or mistranslating the scientific name without recognizing it as the peppered moth"
+    ],
+    "examiner_notes": "Recognizing 'Biston betularia' as the scientific name of the peppered moth (used as the classic example of industrial melanism) is essential."
+  },
+  {
+    "question_number": "1(g)(ii)",
+    "common_errors": [
+      "Writing 'sex organ' instead of the precise term 'Gonad'",
+      "Writing 'testosterone' (the hormone produced) instead of the category term 'Gonad'"
+    ],
+    "examiner_notes": "The precise biological term 'Gonad' is expected rather than a descriptive phrase."
+  },
+  {
+    "question_number": "1(g)(iii)",
+    "common_errors": [
+      "Writing 'Vitamin K' instead of 'Calcium', confusing two different clotting factors",
+      "Writing 'Fibrinogen' instead of the specific ion 'Calcium'"
+    ],
+    "examiner_notes": "Only 'Calcium' (Factor IV) is accepted as the match; other clotting factors like Vitamin K or Fibrinogen are not credited here."
+  },
+  {
+    "question_number": "1(g)(iv)",
+    "common_errors": [
+      "Writing 'light reaction' instead of 'light independent reaction', reversing the two stages of photosynthesis",
+      "Writing 'grana' instead of 'stroma', confusing the two chloroplast compartments"
+    ],
+    "examiner_notes": "Students must correctly associate stroma with the light-independent (dark) reaction, as opposed to grana which is the site of the light reaction."
+  },
+  {
+    "question_number": "1(g)(v)",
+    "common_errors": [
+      "Writing 'transpiration' instead of the more general 'diffusion of gases'",
+      "Writing 'photosynthesis' since stomata are involved in gas exchange for that process specifically"
+    ],
+    "examiner_notes": "The expected general answer is 'diffusion of gases' (covering both O2/CO2 exchange and water vapour loss); 'transpiration' alone may be considered too narrow by some examiners."
+  },
+  {
+    "question_number": "1(h)(i)",
+    "common_errors": [
+      "Writing 'phototropism' by confusing it with light-based tropism rather than chemical",
+      "Writing 'hydrotropism' by confusing the pollen tube's water-related movement with chemical attraction"
+    ],
+    "examiner_notes": "Correct identification depends on interpreting the given diagram of pollen tube growth toward the ovule; only 'Chemotropism' is accepted."
+  },
+  {
+    "question_number": "1(h)(ii)",
+    "common_errors": [
+      "Giving a generic tropism definition without specifying 'chemical stimulus'",
+      "Failing to link the explanation back to a plant part such as the pollen tube"
+    ],
+    "examiner_notes": "The explanation must specifically mention 'chemical stimulus' to distinguish chemotropism from other tropisms."
+  },
+  {
+    "question_number": "1(h)(iii)",
+    "common_errors": [
+      "Writing 'pollen grain' instead of 'pollen tube'",
+      "Writing 'style' by confusing the structure with the pathway it grows through"
+    ],
+    "examiner_notes": "Correct labelling depends entirely on the given diagram; only 'Pollen tube' is accepted for part A."
+  },
+  {
+    "question_number": "1(h)(iv)",
+    "common_errors": [
+      "Writing that it is attracted to 'sunlight' instead of chemical substances from the ovule",
+      "Omitting mention that the attractants guide the tube specifically toward the ovary/ovule"
+    ],
+    "examiner_notes": "The answer must specify that the pollen tube is attracted to chemical substances (attractants) released by the ovule, not a generic stimulus."
+  },
+  {
+    "question_number": "1(h)(v)",
+    "common_errors": [
+      "Giving Mimosa pudica as the example when the intended answer per this scheme is a tendril-bearing climber",
+      "Naming a plant that shows a different tropism (e.g. sunflower for phototropism) by mistake"
+    ],
+    "examiner_notes": "Both a tendril-bearing climber (e.g. pea, cucumber, grapevine) and Mimosa pudica are commonly cited in textbooks; examiners generally accept either as thigmotropism examples, though the reference answer favours the touch-me-not plant."
+  },
+  {
+    "question_number": "2(a)(i)",
+    "common_errors": [
+      "Writing 'oxygen' instead of 'carbon dioxide', misreading the role of KOH in the setup",
+      "Writing 'sunlight' or 'chlorophyll' instead of recognizing the specific variable being tested"
+    ],
+    "examiner_notes": "Correct identification depends on recognizing that KOH (which absorbs CO2) is the key experimental variable shown in the diagram."
+  },
+  {
+    "question_number": "2(a)(ii)",
+    "common_errors": [
+      "Writing that KOH 'produces oxygen' instead of absorbing carbon dioxide",
+      "Omitting that the purpose is to deprive the enclosed leaf of CO2 for testing"
+    ],
+    "examiner_notes": "The answer must state that KOH absorbs carbon dioxide from the flask, not merely that it is present; linking this to depriving the leaf of CO2 strengthens the answer."
+  },
+  {
+    "question_number": "2(a)(iii)",
+    "common_errors": [
+      "Omitting either carbon dioxide or water as a raw material",
+      "Omitting the by-product oxygen or forgetting to mention chlorophyll/sunlight as conditions"
+    ],
+    "examiner_notes": "A complete definition requires raw materials (CO2 and water), conditions (sunlight and chlorophyll), and product (carbohydrate/food); partial definitions may receive partial credit."
+  },
+  {
+    "question_number": "2(a)(iv)",
+    "common_errors": [
+      "Stating the leaf 'turns blue-black' by mistakenly describing the control leaf instead of leaf A",
+      "Omitting the reason (absence of CO2) for the negative starch test"
+    ],
+    "examiner_notes": "The answer should state both the observation (no blue-black colour / remains colourless) and the reason (CO2 unavailable) for full credit."
+  },
+  {
+    "question_number": "2(a)(v)",
+    "common_errors": [
+      "Unbalanced equation; omitting the conditions (sunlight/chlorophyll) above the arrow",
+      "Forgetting to show water as both a reactant and, in the fuller equation, a product"
+    ],
+    "examiner_notes": "Both the simplified (6CO2 + 6H2O -> C6H12O6 + 6O2) and fuller (6CO2 + 12H2O -> C6H12O6 + 6O2 + 6H2O) balanced forms are accepted, provided sunlight and chlorophyll are indicated as conditions."
+  },
+  {
+    "question_number": "2(b)(i)",
+    "common_errors": [
+      "Confusing which numbered vessel carries oxygenated versus deoxygenated blood",
+      "Writing 'vein' or 'artery' generically instead of the specific named vessel"
+    ],
+    "examiner_notes": "All four labels must be correct, based on the given circulation flow diagram, for the mark to be awarded."
+  },
+  {
+    "question_number": "2(b)(ii)",
+    "common_errors": [
+      "Writing 'pulmonary artery' or 'pulmonary vein' instead of 'coronary artery'",
+      "Confusing blood supply to the lungs with blood supply to the heart's own muscle tissue"
+    ],
+    "examiner_notes": "The correct answer to this question about the heart's own muscle supply is coronary artery; a reference answer describing pulmonary veins is not biologically correct here, since pulmonary veins relate to lung-to-heart circulation, not the heart's own blood supply."
+  },
+  {
+    "question_number": "2(b)(iii)",
+    "common_errors": [
+      "Naming vessel 5 correctly but omitting that it carries nutrient-rich blood specifically from the small intestine",
+      "Confusing the hepatic portal vein with the hepatic artery or hepatic vein"
+    ],
+    "examiner_notes": "The answer should identify the vessel as the hepatic portal vein and explain its role in carrying nutrient-rich blood to the liver, not merely name it."
+  },
+  {
+    "question_number": "2(b)(iv)",
+    "common_errors": [
+      "Writing 'systemic circulation' instead of 'pulmonary circulation'",
+      "Writing 'double circulation' as a generic answer instead of the specific type between heart and lungs"
+    ],
+    "examiner_notes": "Only 'Pulmonary circulation' is accepted for the specific heart-lung pathway."
+  },
+  {
+    "question_number": "2(b)(v)",
+    "common_errors": [
+      "Omitting platelets; mislabelling granulocyte nuclei shapes",
+      "Drawing only erythrocytes and one or two leucocyte types instead of all five types"
+    ],
+    "examiner_notes": "All major blood cell types must be shown and correctly labelled for the mark; diagrams missing platelets or with incorrect nuclear shapes for granulocytes typically lose credit."
+  },
+  {
+    "question_number": "3(a)(i)",
+    "common_errors": [
+      "Naming the correct defect (Myopia) but the wrong lens (convex instead of concave)",
+      "Confusing Myopia with Hypermetropia based on the direction of the ray diagram"
+    ],
+    "examiner_notes": "Both the defect name and the corrective lens type must be correctly identified together, based on the given ray diagram, for the mark."
+  },
+  {
+    "question_number": "3(a)(ii)",
+    "common_errors": [
+      "Confusing the cause of Myopia with that of Hypermetropia (e.g. writing 'shortening of eyeball')",
+      "Omitting mention of where the image forms as a result of the cause"
+    ],
+    "examiner_notes": "Either elongation of the eyeball or excessive curvature of the lens/cornea is accepted as a valid cause."
+  },
+  {
+    "question_number": "3(a)(iii)",
+    "common_errors": [
+      "Writing 'behind the retina' instead of 'in front of the retina'",
+      "Writing 'on the retina', missing the point that the defect causes incorrect image formation"
+    ],
+    "examiner_notes": "Only 'In front of the retina' is accepted, consistent with the myopic defect described in part (i)."
+  },
+  {
+    "question_number": "3(a)(iv)",
+    "common_errors": [
+      "Naming the layers out of order or omitting the innermost layer (Retina)",
+      "Confusing Choroid with Cornea"
+    ],
+    "examiner_notes": "All three layers (Sclera, Choroid, Retina) must be named, ideally in order from outermost to innermost, for full credit."
+  },
+  {
+    "question_number": "3(a)(v)",
+    "common_errors": [
+      "Omitting the node of Ranvier or myelin sheath labels",
+      "Drawing the axon without showing branched dendrites at the cell body"
+    ],
+    "examiner_notes": "All key parts (dendrites, cyton with nucleus, axon, myelin sheath, node of Ranvier, axon terminal) must be present and labelled; unlabelled diagrams typically do not receive full credit."
+  },
+  {
+    "question_number": "3(b)(i)",
+    "common_errors": [
+      "Stating only that plants 'look nice' or 'purify water' without linking to oxygen release via photosynthesis",
+      "Omitting that the oxygen is used by fish/aquatic organisms for respiration"
+    ],
+    "examiner_notes": "The biological reason must explicitly connect photosynthesis, oxygen release, and its use by aquatic organisms for respiration."
+  },
+  {
+    "question_number": "3(b)(ii)",
+    "common_errors": [
+      "Giving only a general statement like 'it is harmful' without explaining the effect on organisms/ecosystems",
+      "Omitting that both humans and aquatic organisms are affected by contaminated water"
+    ],
+    "examiner_notes": "A complete answer should mention the introduction of harmful substances and their effect on both aquatic life and human health/ecosystem balance."
+  },
+  {
+    "question_number": "3(b)(iii)",
+    "common_errors": [
+      "Confusing rod cells and cone cells, attributing colour vision to rods",
+      "Omitting that rods function in dim light but cannot distinguish colour"
+    ],
+    "examiner_notes": "The reason must correctly attribute colour vision to cone cells (inactive in dim light) and distinguish their role from rod cells."
+  },
+  {
+    "question_number": "3(b)(iv)",
+    "common_errors": [
+      "Stating only that 'medicine improved health' without linking it to reduced death rate",
+      "Omitting the causal chain: fewer deaths from disease leads to population rise"
+    ],
+    "examiner_notes": "The answer should clearly state the causal link between reduced death rate (due to control of infectious disease) and the rise in population."
+  },
+  {
+    "question_number": "3(b)(v)",
+    "common_errors": [
+      "Describing only physical features (e.g. upright posture) without mentioning brain size/intelligence",
+      "Omitting comparison with earlier hominid species"
+    ],
+    "examiner_notes": "A strong answer links large brain size (relative to body) with intelligence, tool use, and language to justify the 'most highly evolved' status."
+  },
+  {
+    "question_number": "4(a)(i)",
+    "common_errors": [
+      "Writing 'medulla' instead of 'cortex', confusing the two regions of the kidney",
+      "Writing 'nephron' as the region instead of the region within the kidney"
+    ],
+    "examiner_notes": "Correct identification depends on recognizing the structure (e.g. glomerulus/Bowman's capsule) as being located in the cortex, based on the given diagram."
+  },
+  {
+    "question_number": "4(a)(ii)",
+    "common_errors": [
+      "Confusing afferent and efferent arterioles (reversing which carries blood in vs. out)",
+      "Writing 'renal artery' instead of 'afferent arteriole' for the specific labelled part"
+    ],
+    "examiner_notes": "All four labels must be correct, based on the given nephron diagram, for the mark to be awarded."
+  },
+  {
+    "question_number": "4(a)(iii)",
+    "common_errors": [
+      "Writing 'filtration' instead of the more precise technical term 'ultrafiltration'",
+      "Writing 'reabsorption', confusing it with the subsequent tubular process"
+    ],
+    "examiner_notes": "The precise ICSE-specified technical term 'Ultrafiltration' is expected rather than the general term 'filtration'."
+  },
+  {
+    "question_number": "4(a)(iv)",
+    "common_errors": [
+      "Stating only 'it is not concentrated enough' without naming the useful substances still present",
+      "Omitting that glucose and amino acids are examples of substances not yet reabsorbed"
+    ],
+    "examiner_notes": "A full answer should name specific useful substances (e.g. glucose, amino acids) still present in fluid X to justify why it isn't yet urine."
+  },
+  {
+    "question_number": "4(a)(v)",
+    "common_errors": [
+      "Omitting renal blood vessels or the urethra",
+      "Drawing only one kidney or missing one ureter"
+    ],
+    "examiner_notes": "All parts (kidneys, renal artery/vein, ureters, urinary bladder, urethra) must be shown and labelled for full credit."
+  },
+  {
+    "question_number": "4(b)(i)",
+    "common_errors": [
+      "Giving only one side of the comparison",
+      "Confusing hydathodes with stomata as the site of guttation"
+    ],
+    "examiner_notes": "Both sites of occurrence (stomata/lenticels for transpiration and hydathodes for guttation) must be stated for the mark."
+  },
+  {
+    "question_number": "4(b)(ii)",
+    "common_errors": [
+      "Giving an example that does not clearly belong to one category (e.g. mixed waste)",
+      "Reversing the examples, e.g. calling plastic biodegradable"
+    ],
+    "examiner_notes": "A valid example of each type is required together for the mark; any commonly accepted example is credited."
+  },
+  {
+    "question_number": "4(b)(iii)",
+    "common_errors": [
+      "Describing objectives too vaguely (e.g. 'to improve India') without specifying the actual goal",
+      "Confusing the objective of Swachh Bharat Abhiyan with general environmental conservation"
+    ],
+    "examiner_notes": "A correct objective must be stated for both programmes together for the mark; vague or generic statements may not be credited."
+  },
+  {
+    "question_number": "4(b)(iv)",
+    "common_errors": [
+      "Describing osmosis as movement of 'solutes' instead of specifically 'water molecules'",
+      "Omitting that active transport requires energy (ATP), a key distinguishing feature"
+    ],
+    "examiner_notes": "The substances involved (water for osmosis vs. solutes/ions for active transport) must be correctly stated for both processes for the mark."
+  },
+  {
+    "question_number": "4(b)(v)",
+    "common_errors": [
+      "Reversing the positions, e.g. describing chromosomes moving to poles as metaphase",
+      "Omitting the term 'equatorial plane' for metaphase"
+    ],
+    "examiner_notes": "Both chromosome positions (equatorial plane in metaphase; moving to poles in anaphase) must be correctly stated for the mark."
+  },
+  {
+    "question_number": "5(a)(i)",
+    "common_errors": [
+      "Stating the mercury level falls instead of rises",
+      "Naming the conducting tissue as phloem instead of xylem"
+    ],
+    "examiner_notes": "Both the direction of mercury movement (rises) and the correct tissue (xylem) must be stated together for the mark."
+  },
+  {
+    "question_number": "5(a)(ii)",
+    "common_errors": [
+      "Omitting 'excess' water, implying all water loss rather than surplus water",
+      "Omitting that it occurs mainly through stomata"
+    ],
+    "examiner_notes": "The definition should specify loss of water vapour from aerial parts, mainly via stomata, for full credit."
+  },
+  {
+    "question_number": "5(a)(iii)",
+    "common_errors": [
+      "Stating that low humidity decreases the rate of transpiration (reversed logic)",
+      "Giving only one of the two conditions asked for"
+    ],
+    "examiner_notes": "Both conditions (less humidity and high temperature) must be addressed, and both correctly stated as increasing the rate of transpiration, for the mark."
+  },
+  {
+    "question_number": "5(a)(iv)",
+    "common_errors": [
+      "Giving only one advantage instead of two",
+      "Describing a disadvantage (e.g. water loss) instead of an advantage"
+    ],
+    "examiner_notes": "Any two valid advantages (e.g. suction pull for water transport, cooling effect, gaseous exchange) are accepted; only one correct advantage earns partial credit at most."
+  },
+  {
+    "question_number": "5(a)(v)",
+    "common_errors": [
+      "Failing to show cell wall retaining shape while protoplast shrinks",
+      "Omitting the plasmolysing solution surrounding the cell in the diagram"
+    ],
+    "examiner_notes": "The diagram must clearly distinguish the rigid, unchanged cell wall from the shrunken protoplast pulled away from it, with correct labelling, for full credit."
+  },
+  {
+    "question_number": "5(b)(i)",
+    "common_errors": [
+      "Writing 'tympanum' or 'ear ossicles' instead of the sensory organ specifically within the cochlea",
+      "Writing 'cochlea' itself instead of the structure inside it"
+    ],
+    "examiner_notes": "Only 'Organ of Corti' is accepted as the precise sensory structure within the cochlea."
+  },
+  {
+    "question_number": "5(b)(ii)",
+    "common_errors": [
+      "Writing 'death rate' instead of 'birth rate'",
+      "Writing 'population growth rate', confusing it with the specific term for live births"
+    ],
+    "examiner_notes": "Only 'Birth rate' is accepted for this specific technical term."
+  },
+  {
+    "question_number": "5(b)(iii)",
+    "common_errors": [
+      "Writing 'neuron junction' instead of the precise term 'synapse'",
+      "Writing 'node of Ranvier', confusing it with the point of contact between neurons"
+    ],
+    "examiner_notes": "Only 'Synapse' is accepted as the precise technical term."
+  },
+  {
+    "question_number": "5(b)(iv)",
+    "common_errors": [
+      "Writing 'prostate gland' instead of 'bulbourethral gland (Cowper's gland)'",
+      "Writing 'seminal vesicle', confusing accessory gland functions"
+    ],
+    "examiner_notes": "Both 'Bulbourethral gland' and 'Cowper's gland' are accepted as correct terms."
+  },
+  {
+    "question_number": "5(b)(v)",
+    "common_errors": [
+      "Writing 'hyperglycemia' instead of 'hypoglycemia', reversing the prefix meaning",
+      "Writing 'diabetes' instead of the specific low-sugar condition"
+    ],
+    "examiner_notes": "Only 'Hypoglycemia' is accepted for a lowered blood sugar condition; students often confuse the hyper-/hypo- prefixes."
+  },
+  {
+    "question_number": "5(b)(vi)",
+    "common_errors": [
+      "Writing 'ciliary muscle' instead of 'iris', confusing structures involved in different eye functions",
+      "Writing 'pupil' itself instead of the structure that adjusts its size"
+    ],
+    "examiner_notes": "Only 'Iris' is accepted as the structure that adjusts pupil size."
+  },
+  {
+    "question_number": "5(b)(vii)",
+    "common_errors": [
+      "Writing 'tubectomy' instead of 'vasectomy', confusing the male and female surgical methods",
+      "Writing 'castration' incorrectly as a synonym for vasectomy"
+    ],
+    "examiner_notes": "Only 'Vasectomy' is accepted for the male surgical sterilization method; tubectomy is the female equivalent and is not credited."
+  },
+  {
+    "question_number": "5(b)(viii)",
+    "common_errors": [
+      "Writing 'phagocytosis' instead of 'diapedesis', confusing WBC functions",
+      "Writing 'osmosis' or 'diffusion' generically instead of the specific term"
+    ],
+    "examiner_notes": "Only 'Diapedesis' is accepted as the precise term for leucocyte migration through capillary walls."
+  },
+  {
+    "question_number": "5(b)(ix)",
+    "common_errors": [
+      "Writing 'variation' instead of 'mutation', confusing general genetic diversity with sudden change",
+      "Writing 'crossing over' instead of the specific term for gene change"
+    ],
+    "examiner_notes": "Only 'Mutation' is accepted for a sudden inheritable change in genes."
+  },
+  {
+    "question_number": "5(b)(x)",
+    "common_errors": [
+      "Writing 'G1 phase' or 'G2 phase' instead of 'S-phase', confusing the sub-phases of interphase",
+      "Writing 'interphase' generically instead of the specific sub-phase"
+    ],
+    "examiner_notes": "Only 'S-phase (Synthesis phase)' is accepted as the specific sub-phase of interphase where DNA replication occurs."
+  },
+  {
+    "question_number": "6(a)(i)",
+    "common_errors": [
+      "Naming only one function (hearing) and omitting balance/equilibrium",
+      "Confusing balance function with the cerebellum's role instead of the ear's"
+    ],
+    "examiner_notes": "Both functions (hearing and balance) must be stated for the mark; one alone earns only partial credit at most."
+  },
+  {
+    "question_number": "6(a)(ii)",
+    "common_errors": [
+      "Naming only fruit ripening and omitting the senescence/abscission function",
+      "Confusing ethylene's role with that of auxin (e.g. citing cell elongation)"
+    ],
+    "examiner_notes": "Both functions (fruit ripening and senescence/abscission) must be stated for the mark."
+  },
+  {
+    "question_number": "6(a)(iii)",
+    "common_errors": [
+      "Naming only the moistening/washing function and omitting the antibacterial (lysozyme) function",
+      "Omitting the specific mention of the enzyme lysozyme"
+    ],
+    "examiner_notes": "Both functions (mechanical washing/moistening and antibacterial action via lysozyme) must be stated for the mark."
+  },
+  {
+    "question_number": "6(a)(iv)",
+    "common_errors": [
+      "Naming only sperm production and omitting the hormone secretion function",
+      "Writing 'produces ova' by confusing testis with ovary"
+    ],
+    "examiner_notes": "Both functions (sperm production and testosterone secretion) must be stated for the mark."
+  },
+  {
+    "question_number": "6(a)(v)",
+    "common_errors": [
+      "Naming only balance/posture and omitting coordination of voluntary movements",
+      "Confusing cerebellum's function with that of the cerebrum (e.g. citing memory or intelligence)"
+    ],
+    "examiner_notes": "Both functions (posture/balance and coordination of voluntary movement) must be stated for the mark."
+  },
+  {
+    "question_number": "6(b)(i)",
+    "common_errors": [
+      "Writing 'glucagon' instead of 'insulin', reversing the two pancreatic hormones",
+      "Writing 'glycogen' (the storage product) instead of the hormone name"
+    ],
+    "examiner_notes": "Only 'Insulin' is accepted as the hormone that converts excess glucose to glycogen."
+  },
+  {
+    "question_number": "6(b)(ii)",
+    "common_errors": [
+      "Writing 'liver' instead of 'pancreas', confusing the site of glycogen storage with the site of hormone secretion",
+      "Writing 'Islets of Langerhans' without the broader gland name 'pancreas'"
+    ],
+    "examiner_notes": "'Pancreas' is expected; 'Islets of Langerhans' may be accepted as a more specific correct answer at the examiner's discretion."
+  },
+  {
+    "question_number": "6(b)(iii)",
+    "common_errors": [
+      "Writing 'hypothalamus' instead of 'pituitary gland', confusing the two brain-associated endocrine structures",
+      "Omitting the qualifier 'anterior' when naming the pituitary"
+    ],
+    "examiner_notes": "'Pituitary gland' is accepted generally; specifying 'anterior pituitary' shows more precise knowledge but is not strictly required."
+  },
+  {
+    "question_number": "6(b)(iv)",
+    "common_errors": [
+      "Describing a function of a different hormone (e.g. thyroxine) instead of growth hormone",
+      "Giving an overly vague answer like 'helps growth' without mentioning cells, muscles, or bones"
+    ],
+    "examiner_notes": "The function should specifically mention stimulation of growth in body cells, muscles, and bones for full credit."
+  },
+  {
+    "question_number": "6(b)(v)",
+    "common_errors": [
+      "Writing 'thyroid stimulating hormone (TSH)' instead of 'thyroxine', confusing the pituitary hormone that regulates the thyroid with the thyroid's own hormone",
+      "Misspelling 'thyroxine' as 'thyroxin' (both are generally accepted)"
+    ],
+    "examiner_notes": "Only 'Thyroxine' is accepted as the hormone secreted by the thyroid gland itself, not TSH which is secreted by the pituitary."
+  },
+  {
+    "question_number": "6(b)(vi)",
+    "common_errors": [
+      "Giving only 'controls metabolism' without mentioning brain development or bone maintenance",
+      "Confusing thyroxine's function with that of growth hormone"
+    ],
+    "examiner_notes": "A complete answer should mention regulation of metabolic rate along with its role in brain development and bone maintenance."
+  },
+  {
+    "question_number": "6(b)(vii)",
+    "common_errors": [
+      "Writing 'cortisol' instead of 'adrenaline', confusing the two adrenal hormones",
+      "Writing 'noradrenaline' instead of the more commonly expected 'adrenaline'"
+    ],
+    "examiner_notes": "'Adrenaline' is the expected answer; 'noradrenaline' may be accepted as a related hormone at the examiner's discretion."
+  },
+  {
+    "question_number": "6(b)(viii)",
+    "common_errors": [
+      "Writing 'pituitary gland' instead of 'adrenal gland', confusing which gland secretes emergency hormones",
+      "Omitting the qualifier 'medulla' when naming the adrenal gland"
+    ],
+    "examiner_notes": "'Adrenal gland' is accepted generally; specifying 'adrenal medulla' shows more precise knowledge but is not strictly required."
+  },
+  {
+    "question_number": "6(b)(ix)",
+    "common_errors": [
+      "Writing 'hypothalamus' instead of 'posterior pituitary', since oxytocin is released from the posterior pituitary though produced in the hypothalamus",
+      "Writing 'anterior pituitary' instead of the correct posterior lobe"
+    ],
+    "examiner_notes": "'Posterior pituitary' is the ICSE-expected answer for the gland that secretes/releases oxytocin."
+  },
+  {
+    "question_number": "6(b)(x)",
+    "common_errors": [
+      "Confusing oxytocin's function with that of prolactin (milk production) instead of uterine contractions",
+      "Giving a vague answer like 'helps in childbirth' without mentioning uterine contractions specifically"
+    ],
+    "examiner_notes": "The function should specifically mention stimulation of uterine contractions during childbirth (labour) for full credit."
+  },
+  {
+    "question_number": "7(a)(i)",
+    "common_errors": [
+      "Giving only the phenotype or only the genotype, omitting the other",
+      "Writing the genotype incorrectly as TTRr or TtRR instead of TtRr"
+    ],
+    "examiner_notes": "Both phenotype (tall, red flowers) and genotype (TtRr) must be stated together for the mark."
+  },
+  {
+    "question_number": "7(a)(ii)",
+    "common_errors": [
+      "Missing one or more of the four gamete combinations",
+      "Writing incorrect combinations such as TT or Rr instead of single-allele gametes"
+    ],
+    "examiner_notes": "All four gamete combinations (TR, Tr, tR, tr) must be listed for the mark; missing even one combination results in no credit."
+  },
+  {
+    "question_number": "7(a)(iii)",
+    "common_errors": [
+      "Writing '3:1' by mistakenly applying the monohybrid ratio instead of the dihybrid ratio",
+      "Writing the ratio in the wrong order (e.g. 1:3:3:9)"
+    ],
+    "examiner_notes": "Only the correct dihybrid ratio '9:3:3:1' in the correct order is accepted."
+  },
+  {
+    "question_number": "7(a)(iv)",
+    "common_errors": [
+      "Confusing the Law of Independent Assortment with the Law of Segregation",
+      "Omitting that the law applies specifically when two pairs of traits are considered together"
+    ],
+    "examiner_notes": "The statement must specify that it applies to two (or more) gene pairs assorting independently, distinguishing it from the Law of Segregation which concerns a single gene pair."
+  },
+  {
+    "question_number": "7(a)(v)",
+    "common_errors": [
+      "Naming an autosomal disorder (e.g. sickle cell anemia) instead of an X-linked one",
+      "Naming only one disorder instead of two"
+    ],
+    "examiner_notes": "Colour blindness and Haemophilia are the standard ICSE examples; Duchenne muscular dystrophy is also accepted as a valid alternative."
+  },
+  {
+    "question_number": "7(b)(i)",
+    "common_errors": [
+      "Confusing the umbilical cord with the placenta in labelling",
+      "Mislabelling amniotic fluid as the amniotic sac/membrane itself"
+    ],
+    "examiner_notes": "All three labels must be correct, based on the given foetus diagram, for the mark to be awarded."
+  },
+  {
+    "question_number": "7(b)(ii)",
+    "common_errors": [
+      "Naming only nutrient/oxygen supply and omitting waste removal",
+      "Confusing the placenta's function with that of the umbilical cord"
+    ],
+    "examiner_notes": "Two correct functions of the placenta (e.g. nutrient/oxygen supply and waste removal) are required together for the mark; secreting pregnancy hormones is also accepted as a valid alternative function."
+  },
+  {
+    "question_number": "7(b)(iii)",
+    "common_errors": [
+      "Describing amniotic fluid's role only as 'protection' without mentioning free movement of the foetus",
+      "Confusing amniotic fluid with the placenta's nutritive role"
+    ],
+    "examiner_notes": "A complete answer should mention both protection from mechanical shock and allowing free movement of the foetus."
+  },
+  {
+    "question_number": "7(b)(iv)",
+    "common_errors": [
+      "Defining gestation vaguely as 'pregnancy' without specifying it as the foetal development period from conception to birth",
+      "Giving an incorrect duration (e.g. 9 months only, without the more precise 280 days/40 weeks)"
+    ],
+    "examiner_notes": "Both the definition and the correct duration (about 280 days / 40 weeks / 9 months) must be given together for the mark."
+  },
+  {
+    "question_number": "7(b)(v)",
+    "common_errors": [
+      "Reversing XX and XY between male and female",
+      "Omitting the terms 'homogametic'/'heterogametic' though these are not strictly required"
+    ],
+    "examiner_notes": "Both combinations (XY for male, XX for female) must be stated correctly and clearly attributed to the correct sex for the mark."
+  }
+]
