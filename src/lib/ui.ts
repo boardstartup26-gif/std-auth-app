@@ -21,8 +21,13 @@ export const errorAlert = "p-4 rounded-xl border border-red-900/40 bg-red-950/30
 // Dedicated mono token — Geist Mono, for question IDs, marks, token counters
 export const numericMono = "font-mono tabular-nums";
 
-export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg" = "sm") {
-  const sizeClass = size === "lg" ? "px-3 py-1 text-sm font-semibold" : "px-2.5 py-0.5 text-xs font-semibold";
+export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg" | "xl" = "sm") {
+  const sizeClass =
+    size === "xl"
+      ? "px-8 py-3 text-4xl font-bold"
+      : size === "lg"
+      ? "px-3 py-1 text-sm font-semibold"
+      : "px-2.5 py-0.5 text-xs font-semibold";
   const base = `inline-flex items-center rounded-full border font-mono tabular-nums ${sizeClass}`;
 
   if (!total) {

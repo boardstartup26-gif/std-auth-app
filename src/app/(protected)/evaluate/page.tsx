@@ -17,7 +17,7 @@ import {
   scoreBadgeClass,
   sectionLabel,
 } from "@/lib/ui";
-import { WEEKLY_TOKEN_LIMIT } from "@/lib/constants";
+import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -168,6 +168,51 @@ function QuestionDropdown({
 
 const selectClass   = `${inputBase} h-10 w-full`;
 const textareaClass = `${inputBase} w-full px-3 py-2.5 disabled:bg-card/50`;
+
+// Every question_type value that actually occurs in the data (per the
+// `questions_question_type_check` DB constraint) must map to exactly one
+// bucket here. Falling through to a shared default label was the bug: it
+// silently merged unrelated types (fill_in_blank, diagram, long_answer)
+// under one "Objective" label while keeping them as separate dropdown
+// values — producing duplicate-looking "Objective" entries and hiding
+// genuinely subjective long_answer questions inside them.
+const QUESTION_TYPE_LABELS: Record<string, string> = {
+  subjective: "Subjective (written)",
+  mcq: "MCQ",
+  true_false: "True / False",
+  fill_in_blank: "Fill in the blank",
+  match: "Match the following",
+  short_answer: "Short answer",
+  diagram: "Diagram / drawing",
+  objective: "Objective",
+};
+
+function questionTypeLabel(category: string): string {
+  return QUESTION_TYPE_LABELS[category] ?? category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// Categorise strictly by question_type when it's set — is_subjective is only
+// a fallback for questions with no explicit type. Some "match the following"
+// / "name the following" style questions are mistakenly flagged
+// is_subjective: true in the source data; trusting is_subjective first would
+// lump them into the generic "Subjective (written)" bucket and lose their
+// real answer widget (match/fill-blank input instead of a free-text box).
+// long_answer is the one exception: it's always free-text and Claude-graded
+// exactly like "subjective", so it's merged into that bucket rather than
+// getting its own near-duplicate "Long answer" entry.
+function questionCategory(q: Question): string {
+  if (q.question_type === "long_answer") return "subjective";
+  return q.question_type ?? (q.is_subjective ? "subjective" : "objective");
+}
+
+// A question the student can't fully see/answer in-app yet — its question
+// content depends on an image (a sketch, graph, or table rendered as a
+// diagram) that we don't display. Covers both the explicit "diagram" type
+// and diagram_required, since the two flags don't always agree in the data
+// (some diagram-type rows have diagram_required left false).
+function isDiagramBlocked(q: Question): boolean {
+  return Boolean(q.diagram_required) || q.question_type === "diagram";
+}
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -374,31 +419,27 @@ export default function EvaluatePage() {
     const seen = new Set<string>();
     const types: { value: string; label: string }[] = [];
     for (const q of questions) {
-      const key = q.is_subjective ? "subjective" : (q.question_type ?? "objective");
+      const key = questionCategory(q);
       if (!seen.has(key)) {
         seen.add(key);
-        const label =
-          key === "subjective"   ? "Subjective (written)"
-          : key === "mcq"        ? "MCQ"
-          : key === "true_false" ? "True / False"
-          : key === "fill_blank" ? "Fill in the blank"
-          : key === "match"      ? "Match the following"
-          : key === "short_answer" ? "Short answer"
-          : "Objective";
-        types.push({ value: key, label });
+        types.push({ value: key, label: questionTypeLabel(key) });
       }
     }
     return types;
   })();
 
   const filteredQuestions = questionType
-    ? questions.filter((q) => (q.is_subjective ? "subjective" : (q.question_type ?? "objective")) === questionType)
+    ? questions.filter((q) => questionCategory(q) === questionType)
     : [];
 
-  const tokenCost = selectedQuestion ? (selectedQuestion.is_subjective ? 3 : 1) : 0;
+  const tokenCost = selectedQuestion
+    ? (selectedQuestion.is_subjective || selectedQuestion.question_type === "short_answer"
+        ? TOKEN_COST_SUBJECTIVE
+        : TOKEN_COST_OBJECTIVE)
+    : 0;
   const canSubmit = Boolean(
     subject && year && questionType && questionNumber && studentAnswer.trim() &&
-    !evaluating && !selectedQuestion?.diagram_required
+    !evaluating && !(selectedQuestion && isDiagramBlocked(selectedQuestion))
   );
 
   // ─── Auth gate ────────────────────────────────────────────────────────────
@@ -528,7 +569,7 @@ export default function EvaluatePage() {
             <div className={cardPadded}>
               <h2 className={sectionLabel}>Your answer</h2>
 
-              {selectedQuestion.diagram_required ? (
+              {isDiagramBlocked(selectedQuestion) ? (
                 <div className="mt-6 rounded-xl border border-border bg-card/60 px-4 py-4 text-sm leading-relaxed text-muted-foreground">
                   Diagram-based questions aren&apos;t available for evaluation yet — but they will be soon.
                   For now, try a text-based question from the same paper.
@@ -537,7 +578,7 @@ export default function EvaluatePage() {
               <div className="mt-6 flex flex-col gap-6">
 
                 {/* MCQ */}
-                {!selectedQuestion.is_subjective && selectedQuestion.question_type === "mcq" && selectedQuestion.options?.length ? (
+                {selectedQuestion.question_type === "mcq" && selectedQuestion.options?.length ? (
                   <div className="flex flex-col gap-3">
                     <label className="text-xs font-medium text-muted-foreground">Select the correct option</label>
                     <div className="space-y-2">
@@ -558,7 +599,7 @@ export default function EvaluatePage() {
                   </div>
 
                 /* True / False */
-                ) : !selectedQuestion.is_subjective && selectedQuestion.question_type === "true_false" ? (
+                ) : selectedQuestion.question_type === "true_false" ? (
                   <div className="flex flex-col gap-3">
                     <label className="text-xs font-medium text-muted-foreground">Select True or False</label>
                     <div className="flex gap-3">
@@ -575,8 +616,10 @@ export default function EvaluatePage() {
                     </div>
                   </div>
 
-                /* Fill-blank / match */
-                ) : !selectedQuestion.is_subjective ? (
+                /* Fill-blank / match / plain objective (no specific type) */
+                ) : selectedQuestion.question_type === "fill_in_blank" ||
+                    selectedQuestion.question_type === "match" ||
+                    (!selectedQuestion.question_type && !selectedQuestion.is_subjective) ? (
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-medium text-muted-foreground">
                       {selectedQuestion.question_type === "match" ? "Enter your answer as: A-1, B-2, C-3, D-4" : "Enter your answer"}
@@ -650,17 +693,17 @@ export default function EvaluatePage() {
           {/* Result */}
           {result && (
             <div className={cardPadded}>
-              <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-                <h2 className={sectionLabel}>{result.is_objective ? "Result" : "Examiner feedback"}</h2>
-                <div className="flex flex-wrap items-center gap-3">
-                  <span className="text-xs text-muted-foreground">
-                    <span className={numericMono}>{result.token_cost}</span> token{result.token_cost !== 1 ? "s" : ""} used ·{" "}
-                    <span className={numericMono}>{result.tokens_remaining}</span> remaining
-                  </span>
-                  <span className={scoreBadgeClass(result.marks_awarded, result.total_marks)}>
+              <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
+                <div className="flex flex-col items-start gap-2">
+                  <span className={scoreBadgeClass(result.marks_awarded, result.total_marks, "xl")}>
                     {result.marks_awarded} / {result.total_marks}
                   </span>
+                  <h2 className={sectionLabel}>{result.is_objective ? "Result" : "Examiner feedback"}</h2>
                 </div>
+                <span className="text-xs text-muted-foreground">
+                  <span className={numericMono}>{result.token_cost}</span> token{result.token_cost !== 1 ? "s" : ""} used ·{" "}
+                  <span className={numericMono}>{result.tokens_remaining}</span> remaining
+                </span>
               </div>
 
               <div className="space-y-8">
