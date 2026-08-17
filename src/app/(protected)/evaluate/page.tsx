@@ -17,6 +17,7 @@ import {
   scoreBadgeClass,
   sectionLabel,
 } from "@/lib/ui";
+import { WEEKLY_TOKEN_LIMIT } from "@/lib/constants";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -56,8 +57,6 @@ const SUBJECTS = [
   { name: "Geography",  available: true },
 ];
 
-const DAILY_TOKEN_LIMIT = 10;
-
 const NON_OCR_LOADING_MESSAGES = [
   "Analyzing text structure…",
   "Hunting for those precious keywords…",
@@ -82,13 +81,13 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
 }
 
 function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; tokenCost: number }) {
-  const pct = (tokensRemaining / DAILY_TOKEN_LIMIT) * 100;
+  const pct = (tokensRemaining / WEEKLY_TOKEN_LIMIT) * 100;
   const color = pct > 50 ? "text-status-correct" : pct > 20 ? "text-status-partial" : "text-status-wrong";
 
   return (
     <div className="flex flex-wrap items-center gap-1.5 text-xs font-medium">
       <span className={`${numericMono} ${color}`}>{tokensRemaining}</span>
-      <span className={color}>token{tokensRemaining !== 1 ? "s" : ""} remaining today</span>
+      <span className={color}>token{tokensRemaining !== 1 ? "s" : ""} remaining this week</span>
       {tokenCost > 0 && (
         <span className="text-muted-foreground">
           · this question costs <span className={numericMono}>{tokenCost}</span>
@@ -190,7 +189,7 @@ export default function EvaluatePage() {
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
   const [error,             setError]             = useState<string | null>(null);
-  const [tokensRemaining,   setTokensRemaining]   = useState<number>(DAILY_TOKEN_LIMIT);
+  const [tokensRemaining,   setTokensRemaining]   = useState<number>(WEEKLY_TOKEN_LIMIT);
   const [limitReached,      setLimitReached]      = useState(false);
   const [feedbackText,      setFeedbackText]      = useState("");
   const [feedbackSent,      setFeedbackSent]      = useState(false);
@@ -224,7 +223,7 @@ export default function EvaluatePage() {
         const res = await fetch("/api/usage");
         if (res.ok) {
           const data = await res.json();
-          setTokensRemaining(data.tokens_remaining ?? DAILY_TOKEN_LIMIT);
+          setTokensRemaining(data.tokens_remaining ?? WEEKLY_TOKEN_LIMIT);
         }
       } catch {}
     }

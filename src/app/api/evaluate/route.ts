@@ -2,12 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-
-// ─── Config ───────────────────────────────────────────────────────────────────
-
-const DAILY_TOKEN_LIMIT = 10;
-const TOKEN_COST_SUBJECTIVE = 3;
-const TOKEN_COST_OBJECTIVE = 1;
+import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
+import { getUsageDateIST } from "@/lib/usage-date";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -143,12 +139,6 @@ ${scheme.examiner_notes ? `Examiner Notes:\n${scheme.examiner_notes}` : ""}
 Evaluate the student's answer against the marking scheme above. Return valid JSON only.`;
 }
 
-// ─── Date Handling ─────────────────────────────────────────────────────────────
-
-function getUsageDateIST(): string {
-  return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" }); // YYYY-MM-DD
-}
-
 // ─── Objective Answer Matching ────────────────────────────────────────────────
 
 function normaliseAnswer(raw: string): string {
@@ -205,7 +195,7 @@ async function reserveTokens(
     p_user_id: userId,
     p_date: date,
     p_cost: cost,
-    p_limit: DAILY_TOKEN_LIMIT,
+    p_limit: WEEKLY_TOKEN_LIMIT,
   });
 
   if (error) {
@@ -350,7 +340,7 @@ export async function POST(req: NextRequest) {
       { status: 429 }
     );
   }
-  const tokensRemaining = Math.max(0, DAILY_TOKEN_LIMIT - reservation.newCount);
+  const tokensRemaining = Math.max(0, WEEKLY_TOKEN_LIMIT - reservation.newCount);
 
   // ─── OBJECTIVE PATH (no Claude call) ─────────────────────────────────────
 
