@@ -98,10 +98,13 @@ async function importFile(jsonPath, subjectId) {
     }
 
     try {
-      // Idempotency check
+      // Idempotency check — a question only counts as "done" if it has BOTH
+      // a questions row AND a matching marking_schemes row. A question left
+      // orphaned by a marking_schemes insert failure in a prior run must be
+      // retried, not silently skipped forever.
       const { data: existing, error: lookupErr } = await supabase
         .from('questions')
-        .select('id')
+        .select('id, marking_schemes(id)')
         .eq('subject_id', subjectId)
         .eq('year', Number(year))
         .eq('question_number', qNum)
@@ -109,9 +112,31 @@ async function importFile(jsonPath, subjectId) {
 
       if (lookupErr) throw new Error(`Lookup failed: ${lookupErr.message}`);
 
-      if (existing) {
+      if (existing && existing.marking_schemes?.length > 0) {
         console.log(`   ⏭   Skip (exists): ${label}`);
         skipped++;
+        continue;
+      }
+
+      if (existing && (!existing.marking_schemes || existing.marking_schemes.length === 0)) {
+        console.warn(`   🔧  ${label}: question exists but marking_scheme is missing — backfilling scheme only`);
+        const { error: msErr } = await supabase
+          .from('marking_schemes')
+          .insert({
+            question_id: existing.id,
+            scheme_text: entry.scheme_text ?? null,
+            total_marks: entry.total_marks ?? null,
+            key_points: entry.key_points ?? [],
+            model_answer: entry.model_answer ?? null,
+            model_answer_verified: entry.model_answer_verified ?? true,
+            accepted_alternatives: entry.accepted_alternatives ?? [],
+            common_errors: entry.common_errors ?? [],
+            examiner_notes: entry.examiner_notes ?? null,
+            marks_per_correct_point: entry.marks_per_correct_point ?? null,
+          });
+        if (msErr) throw new Error(`marking_schemes backfill: ${msErr.message}`);
+        console.log(`   ✅  Backfilled scheme: ${label}`);
+        inserted++;
         continue;
       }
 
