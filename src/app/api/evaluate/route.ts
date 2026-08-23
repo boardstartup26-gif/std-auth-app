@@ -257,6 +257,37 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "student_answer is empty" }, { status: 400 });
   }
 
+  // Cost control. The token charge is flat (3 for subjective), but the answer
+  // is pasted verbatim into the Claude prompt, so without a ceiling one
+  // reservation buys an arbitrarily large input — a megabyte of text costs the
+  // same 3 tokens as a paragraph. max_tokens caps the response, not the prompt.
+  // 12k characters is far beyond any real ICSE answer (the longest are worth
+  // 5 marks) while leaving generous headroom.
+  const MAX_ANSWER_CHARS = 12_000;
+  if (student_answer.length > MAX_ANSWER_CHARS) {
+    return NextResponse.json(
+      {
+        error: "Answer is too long",
+        detail: `Answers are limited to ${MAX_ANSWER_CHARS} characters; received ${student_answer.length}.`,
+      },
+      { status: 400 }
+    );
+  }
+
+  // Type-confusion guard. These land in .eq() filters, which Supabase
+  // parameterises — so this is not an injection risk — but a client sending
+  // {"year": {"gt": 0}} or an array should be rejected outright rather than
+  // producing a confusing downstream failure.
+  if (
+    typeof question_number !== "string" ||
+    typeof paper !== "string" ||
+    typeof subject !== "string" ||
+    typeof student_answer !== "string" ||
+    !Number.isInteger(year)
+  ) {
+    return NextResponse.json({ error: "Invalid field types" }, { status: 400 });
+  }
+
   const supabaseAuth = await createClient();
   const {
     data: { user },
