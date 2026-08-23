@@ -22,12 +22,15 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^1.0.7",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "canvas": "^3.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "pdfjs-dist": "^6.2.108",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

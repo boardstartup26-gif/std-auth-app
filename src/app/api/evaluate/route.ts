@@ -23,6 +23,8 @@ interface QuestionRow {
   options: string[] | null;
   correct_answer: string | null;
   diagram_required: boolean | null;
+  diagram_url: string | null;
+  diagram_source: "figure" | "physical_map" | "ocr_pending" | null;
 }
 
 interface MarkingScheme {
@@ -286,7 +288,7 @@ export async function POST(req: NextRequest) {
   const { data: questionRow, error: questionError } = await supabase
     .from("questions")
     .select(
-      "id, question_text, is_subjective, question_type, options, correct_answer, diagram_required"
+      "id, question_text, is_subjective, question_type, options, correct_answer, diagram_required, diagram_url, diagram_source"
     )
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
@@ -305,6 +307,30 @@ export async function POST(req: NextRequest) {
   }
 
   const question = questionRow as QuestionRow;
+
+  // Questions we can't grade are refused here, BEFORE the token reservation
+  // below — the evaluate page hides them, but that block is cosmetic and a
+  // direct POST would otherwise reserve (and on the Claude path, spend) tokens
+  // on an answer that was never gradeable. Mirrors diagramState() in
+  // src/app/(protected)/evaluate/page.tsx; keep the two in step.
+  if (question.diagram_source === "ocr_pending" || question.question_type === "diagram") {
+    return NextResponse.json(
+      {
+        error: "This question asks for a drawing, which can't be graded yet",
+        detail: "Diagram-drawing questions need handwriting recognition, which isn't implemented.",
+      },
+      { status: 400 }
+    );
+  }
+  if (question.diagram_required && !question.diagram_url && question.diagram_source !== "physical_map") {
+    return NextResponse.json(
+      {
+        error: "This question's figure isn't available yet",
+        detail: "The question depends on a figure we haven't sourced, so it can't be graded fairly.",
+      },
+      { status: 400 }
+    );
+  }
 
   const { data: schemeRow, error: schemeError } = await supabase
     .from("marking_schemes")

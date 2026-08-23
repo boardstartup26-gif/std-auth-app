@@ -42,3 +42,6 @@ next-env.d.ts
 
 # supabase
 supabase/.temp
+
+# one-off diagram pipeline reports
+diagram-flag-diff.json

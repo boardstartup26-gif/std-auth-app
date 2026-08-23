@@ -29,7 +29,13 @@ interface Question {
   question_type: string | null;
   options: string[] | null;
   diagram_required: boolean | null;
+  diagram_url: string | null;
+  diagram_source: DiagramSource;
 }
+
+// Why a question is diagram-related. Set by scripts/sync_diagram_figures.mjs;
+// see the migration that adds questions.diagram_source for the full contract.
+type DiagramSource = "figure" | "physical_map" | "ocr_pending" | null;
 
 interface EvaluationResult {
   marks_awarded: number;
@@ -205,13 +211,28 @@ function questionCategory(q: Question): string {
   return q.question_type ?? (q.is_subjective ? "subjective" : "objective");
 }
 
-// A question the student can't fully see/answer in-app yet — its question
-// content depends on an image (a sketch, graph, or table rendered as a
-// diagram) that we don't display. Covers both the explicit "diagram" type
-// and diagram_required, since the two flags don't always agree in the data
-// (some diagram-type rows have diagram_required left false).
+// How a question's figure affects answering. Three of the four states are
+// answerable — only a question asking the student to DRAW is truly blocked,
+// plus the residue of questions whose figure hasn't been captured yet.
+//
+//   "ok"          nothing in the way (with or without a figure to display)
+//   "map"         needs a Survey of India topographic sheet we can't ship
+//   "ocr"         student must draw; blocked until handwriting recognition
+//   "no-figure"   needs a figure that hasn't been sourced yet; blocked
+type DiagramState = "ok" | "map" | "ocr" | "no-figure";
+
+function diagramState(q: Question): DiagramState {
+  // Drawing beats everything: even where a figure exists for context, the
+  // answer itself is a drawing we can't grade yet.
+  if (q.diagram_source === "ocr_pending" || q.question_type === "diagram") return "ocr";
+  if (q.diagram_source === "physical_map") return "map";
+  if (q.diagram_required && !q.diagram_url) return "no-figure";
+  return "ok";
+}
+
 function isDiagramBlocked(q: Question): boolean {
-  return Boolean(q.diagram_required) || q.question_type === "diagram";
+  const s = diagramState(q);
+  return s === "ocr" || s === "no-figure";
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -315,7 +336,7 @@ export default function EvaluatePage() {
         .from("questions")
         // FIX: diagram_required was missing here — selectedQuestion.diagram_required
         // was always undefined, so the diagram-blocking UI never triggered.
-        .select("id, question_number, question_text, is_subjective, question_type, options, diagram_required")
+        .select("id, question_number, question_text, is_subjective, question_type, options, diagram_required, diagram_url, diagram_source")
         .eq("subject_id", subjectRow.id)
         .eq("year", year)
         .order("question_number", { ascending: true });
@@ -556,6 +577,29 @@ export default function EvaluatePage() {
                     Question text not yet available. Refer to your physical question paper.
                   </p>
                 )}
+
+                {selectedQuestion.diagram_url && (
+                  <div className="mt-3">
+                    {/* Figures are scans of printed exam papers — white-background
+                        line art. On the dark theme they need their own light plate
+                        rather than being dropped straight onto the panel. */}
+                    <img
+                      src={selectedQuestion.diagram_url}
+                      alt={`Figure for Q${selectedQuestion.question_number}`}
+                      className="max-w-full rounded-lg border border-border bg-white"
+                    />
+                  </div>
+                )}
+
+                {/* Survey of India topographic sheets are not publicly
+                    distributable, so there is no image to show — but the
+                    question is still answerable from the student's own copy. */}
+                {diagramState(selectedQuestion) === "map" && (
+                  <div className="mt-3 rounded-lg border border-border bg-card/60 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
+                    This question refers to a <span className="font-semibold text-foreground/90">Survey of India map extract</span>,
+                    which we can&apos;t reproduce here. Refer to your physical map sheet, then answer below.
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -571,8 +615,18 @@ export default function EvaluatePage() {
 
               {isDiagramBlocked(selectedQuestion) ? (
                 <div className="mt-6 rounded-xl border border-border bg-card/60 px-4 py-4 text-sm leading-relaxed text-muted-foreground">
-                  Diagram-based questions aren&apos;t available for evaluation yet — but they will be soon.
-                  For now, try a text-based question from the same paper.
+                  {diagramState(selectedQuestion) === "ocr" ? (
+                    <>
+                      This question asks you to <span className="font-semibold text-foreground/90">draw</span>, and
+                      grading a drawing needs handwriting recognition — which isn&apos;t built yet.
+                      For now, try a written question from the same paper.
+                    </>
+                  ) : (
+                    <>
+                      We haven&apos;t sourced the figure for this question yet, so it can&apos;t be graded fairly.
+                      For now, try another question from the same paper.
+                    </>
+                  )}
                 </div>
               ) : (
               <div className="mt-6 flex flex-col gap-6">
