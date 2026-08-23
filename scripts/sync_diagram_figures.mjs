@@ -95,6 +95,25 @@ const TEXT_NOT_FIGURE = [
 ];
 const looksTextual = (t) => TEXT_NOT_FIGURE.some((re) => re.test(t || ""));
 
+// The ANSWER is a drawing, whatever question_type says. Some of these are
+// typed long_answer/subjective — e.g. Physics 2025 Q6(i) ends "Draw a diagram
+// of the arrangement and calculate the weight of the ruler" — and a few are
+// sub-parts that inherited a reference figure from a sibling. Either way the
+// response can't be graded without handwriting recognition.
+//
+// Anchored on the imperative verb so that descriptive mentions ("the diagram
+// drawn below", "as shown in the sketch") don't match.
+const ASKS_TO_DRAW = [
+  /\bdraw (a|an|the|two|three|neat|labell?ed|ray|circuit|well)\b/i,
+  /\bdraw and label\b/i,
+  /\bsketch (a|an|the|graph)\b/i,
+  /\bplot (a|the) graph\b/i,
+  /\bcomplete the (diagram|figure|circuit|ray) (diagram|path)?\b/i,
+  /\bcopy and complete the (diagram|figure|circuit)\b/i,
+  /\btrace the (path|ray)\b/i,
+];
+const asksToDraw = (t) => ASKS_TO_DRAW.some((re) => re.test(t || ""));
+
 // ─── Storage helpers ────────────────────────────────────────────────────────
 
 async function listAllObjects(prefix = "") {
@@ -212,8 +231,9 @@ async function main() {
     let source = null;
     let required = Boolean(r.diagram_required);
 
-    if (r.question_type === "diagram") {
-      // Student must draw. Blocked regardless of anything else.
+    if (r.question_type === "diagram" || asksToDraw(r.question_text)) {
+      // Student must draw. Blocked regardless of anything else — including
+      // when a reference figure exists, which stays visible for context.
       source = "ocr_pending";
       required = true;
     } else if (MAP_RE.test(r.question_text || "")) {
