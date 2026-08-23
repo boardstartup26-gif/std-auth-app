@@ -39,6 +39,24 @@
 
   /* Glow (Landing hero / Auth image-half / Dashboard hero only) */
   --glow-purple: #7C3AED;
+
+  /* Question sheet — the printed-paper surface on /evaluate.
+     Figures are scans of real exam papers: black line art on white. Dropping
+     them straight onto the dark card leaves them floating in a hole, so the
+     question and its figure share one light "sheet" instead. These stay light
+     in every theme; they represent paper, not chrome. */
+  --paper: #FBFBF8;
+  --paper-ink: #16191F;
+  --paper-ink-soft: #6C6A5E;
+  --paper-rule: #DEDDD4;
+  --paper-head: #F2F1EA;
+  --paper-foot: #F6F5EE;
+
+  /* Pointer feedback. Deliberately NOT gold — gold means "chosen" (selected
+     option, active nav). This means "your cursor is here". Keeping them apart
+     stops a hover from reading as a selection. Per design system v2 §5. */
+  --cursor: #6BB8FF;
+  --cursor-wash: #6BB8FF1F;
 }
 
 @theme inline {
@@ -67,6 +85,14 @@
   --color-tag-improvement-tips-subtle: var(--tag-improvement-tips-subtle);
   --color-status-attempted: var(--status-attempted);
   --color-glow-purple: var(--glow-purple);
+  --color-paper: var(--paper);
+  --color-paper-ink: var(--paper-ink);
+  --color-paper-ink-soft: var(--paper-ink-soft);
+  --color-paper-rule: var(--paper-rule);
+  --color-paper-head: var(--paper-head);
+  --color-paper-foot: var(--paper-foot);
+  --color-cursor: var(--cursor);
+  --color-cursor-wash: var(--cursor-wash);
 }
 
 @theme {

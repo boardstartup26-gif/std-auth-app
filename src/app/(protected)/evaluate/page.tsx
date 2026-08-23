@@ -10,12 +10,22 @@ import {
   btnPrimary,
   cardPadded,
   errorAlert,
+  figCaption,
+  figPlate,
+  figTool,
   inputBase,
-  mutedPanel,
   numericMono,
-  pageShell,
+  pageShellWide,
   scoreBadgeClass,
   sectionLabel,
+  selectorLabel,
+  selectorStrip,
+  sheet,
+  sheetBody,
+  sheetFoot,
+  sheetQuestionText,
+  sheetTop,
+  tokenCountClass,
 } from "@/lib/ui";
 import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
 
@@ -31,6 +41,13 @@ interface Question {
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: DiagramSource;
+  topic: string | null;
+  // Marks come from the question_marks view, not marking_schemes directly —
+  // that table now only opens to a student who has already attempted the
+  // question, so the answer key can't be read ahead of time. The view carries
+  // total_marks and nothing else. Supabase types an embedded relation as an
+  // array even where it is 1:1, hence the union.
+  question_marks: { total_marks: number | null }[] | { total_marks: number | null } | null;
 }
 
 // Why a question is diagram-related. Set by scripts/sync_diagram_figures.mjs;
@@ -86,20 +103,18 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
   );
 }
 
+// Only the remaining count is coloured. The per-question cost beside it stays
+// neutral, so the colour always answers "how much do I have left", never
+// "what does this cost". Bands are absolute, not proportional: 13+ / 7–12 / <7.
 function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; tokenCost: number }) {
-  const pct = (tokensRemaining / WEEKLY_TOKEN_LIMIT) * 100;
-  const color = pct > 50 ? "text-status-correct" : pct > 20 ? "text-status-partial" : "text-status-wrong";
-
   return (
-    <div className="flex flex-wrap items-center gap-1.5 text-xs font-medium">
-      <span className={`${numericMono} ${color}`}>{tokensRemaining}</span>
-      <span className={color}>token{tokensRemaining !== 1 ? "s" : ""} remaining this week</span>
+    <p className="m-0 text-center font-mono text-[10px] font-semibold text-muted-foreground">
+      <span className={tokenCountClass(tokensRemaining)}>{tokensRemaining}</span>
+      {" "}token{tokensRemaining !== 1 ? "s" : ""} left this week
       {tokenCost > 0 && (
-        <span className="text-muted-foreground">
-          · this question costs <span className={numericMono}>{tokenCost}</span>
-        </span>
+        <> · costs <span className="font-semibold text-foreground">{tokenCost}</span></>
       )}
-    </div>
+    </p>
   );
 }
 
@@ -235,6 +250,128 @@ function isDiagramBlocked(q: Question): boolean {
   return s === "ocr" || s === "no-figure";
 }
 
+// Is there a figure to be wrong about? A plain text question has nothing to
+// report, so offering "Figure wrong or missing?" there is noise at best and
+// invites junk reports at worst.
+function hasFigureContext(q: Question): boolean {
+  return Boolean(q.diagram_url) || q.diagram_source !== null || Boolean(q.diagram_required);
+}
+
+function totalMarksOf(q: Question): number | null {
+  const ms = q.question_marks;
+  if (!ms) return null;
+  const row = Array.isArray(ms) ? ms[0] : ms;
+  return row?.total_marks ?? null;
+}
+
+// ─── Question sheet ───────────────────────────────────────────────────────────
+
+// The figure at full size, over the page. Crops are imperfect at the edges —
+// rather than chase perfection, every figure gets a way to be looked at
+// properly.
+function FigureViewer({ src, label, onClose }: { src: string; label: string; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    // The page behind must not scroll while the viewer owns the screen.
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={label}
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex flex-col gap-3 bg-black/95 p-4 sm:p-8"
+    >
+      <div className="flex items-center gap-3">
+        <span className="font-mono text-xs font-semibold text-muted-foreground">{label}</span>
+        <button
+          type="button"
+          onClick={onClose}
+          className="ml-auto rounded border border-border px-3 py-1.5 font-mono text-xs font-bold text-foreground transition-colors hover:border-cursor hover:text-cursor"
+        >
+          Close ✕
+        </button>
+      </div>
+      {/* Stop propagation so clicking the image itself doesn't dismiss. */}
+      <div className="flex min-h-0 flex-1 items-center justify-center overflow-auto">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={label}
+          onClick={(e) => e.stopPropagation()}
+          className="max-h-full max-w-full rounded-lg bg-white object-contain"
+        />
+      </div>
+    </div>
+  );
+}
+
+function FigureSlot({ q, onZoom }: { q: Question; onZoom: () => void }) {
+  const state = diagramState(q);
+
+  if (q.diagram_url) {
+    return (
+      <figure className="m-0 flex flex-col gap-2">
+        <div className={figPlate}>
+          <div className="absolute right-2 top-2 z-10">
+            <button type="button" onClick={onZoom} className={figTool}>⤢ Zoom</button>
+          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={q.diagram_url}
+            alt={`Figure for Q${q.question_number}`}
+            onClick={onZoom}
+            className="max-h-[260px] w-auto max-w-full cursor-zoom-in"
+          />
+        </div>
+        <figcaption className={figCaption}>
+          <span>Figure — Q{q.question_number}</span>
+          <span className="inline-flex items-center gap-1.5 text-[#2F6B3D] before:block before:h-[5px] before:w-[5px] before:rounded-full before:bg-[#2F8A46]">
+            From question paper
+          </span>
+        </figcaption>
+      </figure>
+    );
+  }
+
+  // No image, and an honest reason why. Never a silent blank.
+  if (state === "map") {
+    return (
+      <div className={`${figPlate} min-h-[88px]`}>
+        <p className="m-0 max-w-[280px] text-center font-mono text-[10px] leading-relaxed text-paper-ink-soft">
+          <span className="font-semibold text-paper-ink">Survey of India map extract</span>
+          <br />
+          These sheets aren&apos;t ours to reproduce. Refer to your
+          <br />
+          physical map, then answer below.
+        </p>
+      </div>
+    );
+  }
+
+  if (q.diagram_required) {
+    return (
+      <div className={`${figPlate} min-h-[88px]`}>
+        <p className="m-0 max-w-[240px] text-center font-mono text-[10px] leading-relaxed text-paper-ink-soft">
+          Figure not available yet
+          <br />
+          <span className="text-[#8A8878]">Refer to your printed paper.</span>
+        </p>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function EvaluatePage() {
@@ -264,6 +401,11 @@ export default function EvaluatePage() {
   const [evalFeedbackText,  setEvalFeedbackText]  = useState("");
   const [evalFeedbackStatus, setEvalFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
+  const [zoomedFigure,      setZoomedFigure]      = useState<string | null>(null);
+  const [reportOpen,        setReportOpen]        = useState(false);
+  const [reportText,        setReportText]        = useState("");
+  const [reportSent,        setReportSent]        = useState(false);
+  const resultRef = useRef<HTMLDivElement>(null);
 
   // ─── Auth ─────────────────────────────────────────────────────────────────
 
@@ -336,7 +478,7 @@ export default function EvaluatePage() {
         .from("questions")
         // FIX: diagram_required was missing here — selectedQuestion.diagram_required
         // was always undefined, so the diagram-blocking UI never triggered.
-        .select("id, question_number, question_text, is_subjective, question_type, options, diagram_required, diagram_url, diagram_source")
+        .select("id, question_number, question_text, is_subjective, question_type, options, diagram_required, diagram_url, diagram_source, topic, question_marks(total_marks)")
         .eq("subject_id", subjectRow.id)
         .eq("year", year)
         .order("question_number", { ascending: true });
@@ -352,6 +494,10 @@ export default function EvaluatePage() {
     const q = questions.find((q) => q.question_number === questionNumber) ?? null;
     setSelectedQuestion(q);
     setStudentAnswer(""); setResult(null); setError(null);
+    // Reset the figure-report form, or a report typed for one question would
+    // carry over — and worse, "Thanks, we'll review" would still be showing
+    // against a different figure.
+    setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
     if (q) {
       questionOpenedAt.current = Date.now();
       supabase.from("events").insert({ event: "question_opened", meta: { question_id: q.id, subject, year } }).then(() => {});
@@ -416,6 +562,27 @@ export default function EvaluatePage() {
 
   // ─── Eval quality feedback ────────────────────────────────────────────────
 
+  // Figure reports reuse /api/feedback rather than adding a table — the
+  // volume is low and what matters is that a wrong figure reaches us at all.
+  // The question is identified in the message body so it can be acted on.
+  async function handleReportFigure() {
+    if (!reportText.trim() || !selectedQuestion) return;
+    try {
+      const res = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: `[FIGURE REPORT] ${subject} ${year} Q${selectedQuestion.question_number} `
+            + `(source=${selectedQuestion.diagram_source ?? "none"}, url=${selectedQuestion.diagram_url ?? "none"}): `
+            + reportText.trim(),
+        }),
+      });
+      if (res.ok) setReportSent(true);
+    } catch (err) {
+      console.error("[BoardEdge] figure report failed:", err);
+    }
+  }
+
   async function handleEvalFeedbackSubmit() {
     if (!evalRating || evalFeedbackText.trim().length < 3) return;
     setEvalFeedbackStatus("submitting");
@@ -466,147 +633,189 @@ export default function EvaluatePage() {
   // ─── Auth gate ────────────────────────────────────────────────────────────
 
   if (!authChecked) {
-    return <div className={`${pageShell} text-sm text-muted-foreground`}>Checking session…</div>;
+    return <div className={`${pageShellWide} text-sm text-muted-foreground`}>Checking session…</div>;
   }
 
   // ─── Render ───────────────────────────────────────────────────────────────
 
   return (
-    <div className={pageShell}>
+    <div className={pageShellWide}>
+
+      {zoomedFigure && selectedQuestion && (
+        <FigureViewer
+          src={zoomedFigure}
+          label={`Figure — ${subject} ${year} Q${selectedQuestion.question_number}`}
+          onClose={() => setZoomedFigure(null)}
+        />
+      )}
 
       {/* Header */}
-      <div className="mb-10 flex items-start justify-between gap-6">
+      <div className="mb-6 flex items-start justify-between gap-6">
         <div>
           <p className={sectionLabel}>Evaluation engine</p>
           <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">New evaluation</h1>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Select a past paper question, write your answer, and receive examiner-style feedback.
-          </p>
         </div>
         <Link href="/dashboard" className={backLink}>← Dashboard</Link>
       </div>
 
-      {/* Two-column layout: selectors left, answer + results right — per §3 reference layout */}
-      <div className="grid gap-6 lg:grid-cols-[380px_1fr] lg:items-start">
+      {/* Selector strip. Four stacked dropdowns in a tall left card cost more
+          vertical space than the figure they pushed off screen, so they
+          collapse to one horizontal row above the sheet. */}
+      <div className={`${selectorStrip} mb-4`}>
+        <div className="flex min-w-0 flex-col gap-1">
+          <span className={selectorLabel}>Subject</span>
+          <select value={subject} onChange={(e) => setSubject(e.target.value)} className={selectClass}>
+            <option value="">Select</option>
+            {SUBJECTS.map((s) => (
+              <option key={s.name} value={s.name} disabled={!s.available}>
+                {s.name}{!s.available ? " — Coming soon" : ""}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        {/* Left column — question selector */}
-        <div className="lg:sticky lg:top-6">
-          <div className={cardPadded}>
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <h2 className={sectionLabel}>Select question</h2>
-            </div>
-            <div className="mt-2">
-              <TokenBadge tokensRemaining={tokensRemaining} tokenCost={tokenCost} />
-            </div>
+        <div className="flex min-w-0 flex-col gap-1">
+          <span className={selectorLabel}>Year</span>
+          <select
+            value={year}
+            onChange={(e) => {
+              setYear(e.target.value ? Number(e.target.value) : "");
+              setQuestionType(""); setQuestionNumber(""); setSelectedQuestion(null);
+            }}
+            disabled={!subject || loadingYears}
+            className={selectClass}
+          >
+            <option value="">{loadingYears ? "Loading…" : "Year"}</option>
+            {years.map((y) => (
+              <option key={y} value={y} className={numericMono}>{y}</option>
+            ))}
+          </select>
+        </div>
 
-            <div className="mt-6 flex flex-col gap-4">
-              {/* Subject */}
-              <div className="flex flex-col gap-2">
-                <label className="text-xs font-medium text-muted-foreground">Subject</label>
-                <select value={subject} onChange={(e) => setSubject(e.target.value)} className={selectClass}>
-                  <option value="">Select subject</option>
-                  {SUBJECTS.map((s) => (
-                    <option key={s.name} value={s.name} disabled={!s.available}>
-                      {s.name}{!s.available ? " — Coming soon" : ""}
-                    </option>
-                  ))}
-                </select>
-              </div>
+        <div className="flex min-w-0 flex-col gap-1">
+          <span className={selectorLabel}>Type</span>
+          <select
+            value={questionType}
+            onChange={(e) => { setQuestionType(e.target.value); setQuestionNumber(""); setSelectedQuestion(null); }}
+            disabled={!year || loadingQuestions || !questionTypes.length}
+            className={selectClass}
+          >
+            <option value="">{loadingQuestions ? "Loading…" : !year ? "Year first" : "Type"}</option>
+            {questionTypes.map((t) => (
+              <option key={t.value} value={t.value}>{t.label}</option>
+            ))}
+          </select>
+        </div>
 
-              {/* Year */}
-              <div className="flex flex-col gap-2">
-                <label className="text-xs font-medium text-muted-foreground">Year</label>
-                <select
-                  value={year}
-                  onChange={(e) => {
-                    setYear(e.target.value ? Number(e.target.value) : "");
-                    setQuestionType(""); setQuestionNumber(""); setSelectedQuestion(null);
-                  }}
-                  disabled={!subject || loadingYears}
-                  className={selectClass}
-                >
-                  <option value="">{loadingYears ? "Loading…" : "Select year"}</option>
-                  {years.map((y) => (
-                    <option key={y} value={y} className={numericMono}>{y}</option>
-                  ))}
-                </select>
-              </div>
+        {questionType && (
+          <div className="flex min-w-[180px] flex-1 flex-col gap-1">
+            <span className={selectorLabel}>Question</span>
+            <QuestionDropdown
+              questions={filteredQuestions}
+              value={questionNumber}
+              onChange={setQuestionNumber}
+              disabled={!filteredQuestions.length}
+            />
+          </div>
+        )}
+      </div>
 
-              {/* Question type */}
-              <div className="flex flex-col gap-2">
-                <label className="text-xs font-medium text-muted-foreground">Question type</label>
-                <select
-                  value={questionType}
-                  onChange={(e) => { setQuestionType(e.target.value); setQuestionNumber(""); setSelectedQuestion(null); }}
-                  disabled={!year || loadingQuestions || !questionTypes.length}
-                  className={selectClass}
-                >
-                  <option value="">{loadingQuestions ? "Loading…" : !year ? "Select year first" : "Select type"}</option>
-                  {questionTypes.map((t) => (
-                    <option key={t.value} value={t.value}>{t.label}</option>
-                  ))}
-                </select>
-              </div>
+      {!selectedQuestion && (
+        <div className={`${cardPadded} text-sm leading-relaxed text-muted-foreground`}>
+          Pick a subject, year, type and question above to begin.
+        </div>
+      )}
 
-              {/* Question — appears once type is selected */}
-              {questionType && (
-                <div className="flex flex-col gap-2">
-                  <label className="text-xs font-medium text-muted-foreground">Question</label>
-                  <QuestionDropdown
-                    questions={filteredQuestions}
-                    value={questionNumber}
-                    onChange={setQuestionNumber}
-                    disabled={!filteredQuestions.length}
-                  />
-                </div>
+      {/* Sheet on the left, answer on the right. The sheet is wider — it holds
+          the question and its figure, which is what the student reads. */}
+      <div className="grid gap-4 lg:grid-cols-[1.32fr_1fr] lg:items-start">
+
+        {/* ── The paper sheet ── */}
+        {selectedQuestion && (
+          <div className={sheet}>
+            <div className={sheetTop}>
+              <span className="font-mono text-xs font-medium tracking-tight text-paper-ink">
+                Q{selectedQuestion.question_number}
+              </span>
+              {selectedQuestion.topic && (
+                <span className="font-mono text-[10px] tracking-wide text-paper-ink-soft">
+                  {selectedQuestion.topic}
+                </span>
+              )}
+              {totalMarksOf(selectedQuestion) != null && (
+                <span className="ml-auto whitespace-nowrap rounded border border-[#BDBBAD] bg-paper px-2 py-0.5 font-mono text-[11px] font-semibold text-[#33322B]">
+                  {totalMarksOf(selectedQuestion)} mark{totalMarksOf(selectedQuestion) === 1 ? "" : "s"}
+                </span>
               )}
             </div>
 
-            {/* Question reference panel */}
-            {selectedQuestion && (
-              <div className={`${mutedPanel} mt-6 space-y-3`}>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Question reference{" "}
-                  <span className={numericMono}>{year} — Q{selectedQuestion.question_number}</span>
+            <div className={sheetBody}>
+              {selectedQuestion.question_text?.trim() ? (
+                <p className={sheetQuestionText}>{selectedQuestion.question_text}</p>
+              ) : (
+                <p className="m-0 text-sm italic leading-relaxed text-paper-ink-soft">
+                  Question text not yet available. Refer to your physical question paper.
                 </p>
+              )}
 
-                {selectedQuestion.question_text?.trim() ? (
-                  <p className="text-sm leading-relaxed text-foreground/90">{selectedQuestion.question_text}</p>
-                ) : (
-                  <p className="text-sm italic leading-relaxed text-muted-foreground">
-                    Question text not yet available. Refer to your physical question paper.
+              <FigureSlot
+                q={selectedQuestion}
+                onZoom={() => selectedQuestion.diagram_url && setZoomedFigure(selectedQuestion.diagram_url)}
+              />
+            </div>
+
+            <div className={sheetFoot}>
+              {hasFigureContext(selectedQuestion) && (
+                <span className="font-bold text-[#383730]">
+                  Figure wrong or missing?{" "}
+                  <button
+                    type="button"
+                    onClick={() => setReportOpen((v) => !v)}
+                    className="underline decoration-1 underline-offset-2 transition-colors hover:text-cursor"
+                  >
+                    Report it
+                  </button>
+                </span>
+              )}
+              <span className="ml-auto">
+                ICSE {subject} · {year}
+              </span>
+            </div>
+
+            {/* A student flagging a bad crop or a leaked answer is the only QA
+                loop that scales past manual re-audit of every figure. */}
+            {reportOpen && hasFigureContext(selectedQuestion) && (
+              <div className="border-t border-paper-rule bg-paper-foot px-4 py-3">
+                {reportSent ? (
+                  <p className="m-0 font-mono text-[10px] text-[#2F6B3D]">
+                    Thanks — we&apos;ll review this figure.
                   </p>
-                )}
-
-                {selectedQuestion.diagram_url && (
-                  <div className="mt-3">
-                    {/* Figures are scans of printed exam papers — white-background
-                        line art. On the dark theme they need their own light plate
-                        rather than being dropped straight onto the panel. */}
-                    <img
-                      src={selectedQuestion.diagram_url}
-                      alt={`Figure for Q${selectedQuestion.question_number}`}
-                      className="max-w-full rounded-lg border border-border bg-white"
+                ) : (
+                  <div className="flex flex-col gap-2">
+                    <textarea
+                      value={reportText}
+                      onChange={(e) => setReportText(e.target.value)}
+                      rows={2}
+                      placeholder="What's wrong? e.g. cut off, wrong figure, shows the answer…"
+                      className="w-full rounded border border-paper-rule bg-white px-2.5 py-2 text-xs text-paper-ink outline-none focus:border-cursor"
                     />
-                  </div>
-                )}
-
-                {/* Survey of India topographic sheets are not publicly
-                    distributable, so there is no image to show — but the
-                    question is still answerable from the student's own copy. */}
-                {diagramState(selectedQuestion) === "map" && (
-                  <div className="mt-3 rounded-lg border border-border bg-card/60 px-4 py-3 text-sm leading-relaxed text-muted-foreground">
-                    This question refers to a <span className="font-semibold text-foreground/90">Survey of India map extract</span>,
-                    which we can&apos;t reproduce here. Refer to your physical map sheet, then answer below.
+                    <button
+                      type="button"
+                      onClick={handleReportFigure}
+                      disabled={!reportText.trim()}
+                      className="self-start rounded border border-[#BDBBAD] bg-white px-3 py-1.5 font-mono text-[10px] font-bold text-[#2F2E28] transition-colors hover:border-cursor disabled:opacity-40"
+                    >
+                      Send report
+                    </button>
                   </div>
                 )}
               </div>
             )}
           </div>
-        </div>
+        )}
 
         {/* Right column — answer + results */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
 
           {/* Answer input */}
           {selectedQuestion && (
@@ -701,10 +910,22 @@ export default function EvaluatePage() {
                 <button onClick={handleSubmit} disabled={!canSubmit} className={btnPrimary}>
                   {evaluating ? "Evaluating…" : "Evaluate"}
                 </button>
+                <TokenBadge tokensRemaining={tokensRemaining} tokenCost={tokenCost} />
                 {evaluating && (
                   <p className="text-center text-xs text-muted-foreground">
                     {NON_OCR_LOADING_MESSAGES[loadingMessageIndex]}
                   </p>
+                )}
+                {/* The evaluation renders full-width below the fold, so without
+                    this the page looks like nothing happened on submit. */}
+                {result && !evaluating && (
+                  <button
+                    type="button"
+                    onClick={() => resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                    className="text-center text-xs font-semibold text-accent underline decoration-1 underline-offset-2 transition-colors hover:text-accent-hover"
+                  >
+                    ↓ Scroll down to see your evaluation
+                  </button>
                 )}
               </div>
               )}
@@ -744,9 +965,14 @@ export default function EvaluatePage() {
             </div>
           )}
 
-          {/* Result */}
-          {result && (
-            <div className={cardPadded}>
+        </div>
+      </div>
+
+      {/* Result — full width, below the split. The paired points-hit /
+          points-missed grid needs the whole page; inside the answer column it
+          collapsed into one cramped stack hugging the right edge. */}
+      {result && (
+        <div ref={resultRef} className={`${cardPadded} mt-6 scroll-mt-6`}>
               <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
                 <div className="flex flex-col items-start gap-2">
                   <span className={scoreBadgeClass(result.marks_awarded, result.total_marks, "xl")}>
@@ -886,10 +1112,8 @@ export default function EvaluatePage() {
                 </div>
 
               </div>
-            </div>
-          )}
         </div>
-      </div>
+      )}
     </div>
   );
 }
