@@ -38,6 +38,7 @@ interface Question {
   is_subjective: boolean;
   question_type: string | null;
   options: string[] | null;
+  paper: string;
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: DiagramSource;
@@ -74,10 +75,12 @@ interface EvaluationResult {
 // ─── Constants ────────────────────────────────────────────────────────────────
 
 const SUBJECTS = [
-  { name: "Chemistry",  available: true },
-  { name: "Physics",    available: true },
-  { name: "Biology",    available: true },
-  { name: "Geography",  available: true },
+  { name: "Chemistry",           available: true },
+  { name: "Physics",             available: true },
+  { name: "Biology",             available: true },
+  { name: "Geography",           available: true },
+  { name: "History & Civics",    available: true },
+  { name: "English Literature",  available: true },
 ];
 
 const NON_OCR_LOADING_MESSAGES = [
@@ -478,7 +481,7 @@ export default function EvaluatePage() {
         .from("questions")
         // FIX: diagram_required was missing here — selectedQuestion.diagram_required
         // was always undefined, so the diagram-blocking UI never triggered.
-        .select("id, question_number, question_text, is_subjective, question_type, options, diagram_required, diagram_url, diagram_source, topic, question_marks(total_marks)")
+        .select("id, question_number, question_text, is_subjective, question_type, options, paper, diagram_required, diagram_url, diagram_source, topic, question_marks(total_marks)")
         .eq("subject_id", subjectRow.id)
         .eq("year", year)
         .order("question_number", { ascending: true });
@@ -540,7 +543,7 @@ export default function EvaluatePage() {
       const res = await fetch("/api/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question_number: questionNumber, year: Number(year), paper: "1", subject, student_answer: studentAnswer }),
+        body: JSON.stringify({ question_number: questionNumber, year: Number(year), paper: selectedQuestion?.paper ?? "1", subject, student_answer: studentAnswer }),
       });
       const data = await res.json();
       if (!res.ok) {
