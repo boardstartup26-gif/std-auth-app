@@ -1,0 +1,2252 @@
+{
+  "subject": "history_civics",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "hcg_paper_1",
+  "year": 2025,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "hist-2025-sa-q1-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Collective Responsibility",
+      "period": null,
+      "question_number": "1(i)",
+      "question_text": "The Council of Ministers is collectively responsible to the ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Lok Sabha"
+        },
+        {
+          "key": "b",
+          "text": "President"
+        },
+        {
+          "key": "c",
+          "text": "Rajya Sabha"
+        },
+        {
+          "key": "d",
+          "text": "Prime Minister"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "Lok Sabha",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "The question was generally attempted well by the majority of the candidates; however, some candidates selected option (b) 'President' instead of the correct answer (a) 'Lok Sabha'. This response suggests a potential confusion between the concepts of individual and collective responsibility. A few candidates also seemed uncertain about the responsibility of ministers, while others chose the Prime Minister, indicating a partial understanding of the subject.",
+      "teacher_suggestion": "Bring clarity in the concept of individual and collective responsibility of the Council of Ministers and the Prime Minister. Focus on the fact that in collective responsibility Prime Minister is a part of the Council of Ministers to help students gain full credit in framing the responses.",
+      "common_error": "Confusion between individual responsibility (to President) and collective responsibility (to Lok Sabha)",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "table_based",
+      "evaluation_mode": "deterministic",
+      "topic": "Rajya Sabha Eligibility",
+      "period": null,
+      "question_number": "1(ii)",
+      "question_text": "Given below are details of a few Indian Citizens. Select the one who is eligible to be a member of the Rajya Sabha.",
+      "total_marks": 1,
+      "table_data": {
+        "headers": [
+          "Person",
+          "Age (In years)",
+          "Description"
+        ],
+        "rows": [
+          [
+            "W",
+            "25",
+            "Is a famous journalist"
+          ],
+          [
+            "X",
+            "45",
+            "Is an industrialist"
+          ],
+          [
+            "Y",
+            "35",
+            "Has declared insolvency"
+          ],
+          [
+            "Z",
+            "50",
+            "Has taken citizenship of another country"
+          ]
+        ]
+      },
+      "options": [
+        {
+          "key": "a",
+          "text": "X"
+        },
+        {
+          "key": "b",
+          "text": "W"
+        },
+        {
+          "key": "c",
+          "text": "Y"
+        },
+        {
+          "key": "d",
+          "text": "Z"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "X",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Most of the candidates attempted this part correctly. However, a few candidates confused options 'Y' and 'W'. It was also observed that the eligibility criteria for membership of the Rajya Sabha was not entirely clear to some candidates, which led to errors in their responses.",
+      "teacher_suggestion": "Ensure that students memorise the minimum age criteria for both Houses of Parliament, along with a good understanding of the words or terms such as insolvency, office of Profit, and so on, to identify the correct answer from all angles.",
+      "common_error": "Confusion about the eligibility criteria for Rajya Sabha membership, and mixing up options 'Y' and 'W'",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Supreme Court Judicial Review",
+      "period": null,
+      "question_number": "1(iii)",
+      "question_text": "With reference to the Supreme Court of India, complete the following: Advisory Jurisdiction : Advice the President : : Judicial Review : ___________",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Review its own judgements."
+        },
+        {
+          "key": "b",
+          "text": "Review the judgements of the High Court."
+        },
+        {
+          "key": "c",
+          "text": "Review the laws passed by the Parliament."
+        },
+        {
+          "key": "d",
+          "text": "Review the administration of the Government."
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Review the laws passed by the Parliament.",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Many candidates appeared confused and selected different options. It was evident that a significant number of candidates lacked clarity regarding the concept of Judicial Review, which affected the accuracy of their responses. On the contrary, only a few candidates attempted this question well.",
+      "teacher_suggestion": "Explain different jurisdictions of the Supreme Court with relevant examples to avoid any overlapping in concepts or confusion. Develop Academic Vocabulary of the particular subject through classroom discussions about the Supreme Court and provide real-life examples to understand the concept of Advisory Jurisdiction, Judicial review and how it is interrelated or connected to each other.",
+      "common_error": "Lack of clarity regarding the concept of Judicial Review versus other jurisdictions",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-iv",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "picture_based",
+      "evaluation_mode": "deterministic",
+      "topic": "Speaker's Powers",
+      "period": null,
+      "question_number": "1(iv)",
+      "question_text": "Observe the given picture. In case of a similar unruly situation in the Lok Sabha, choose the action that may be taken by the Speaker.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "adjourn the house for lack of quorum."
+        },
+        {
+          "key": "b",
+          "text": "dissolve the Lok Sabha."
+        },
+        {
+          "key": "c",
+          "text": "adjourn the house for lack of discipline."
+        },
+        {
+          "key": "d",
+          "text": "disqualify the members under Anti-defection law."
+        }
+      ],
+      "correct_option": [
+        "c",
+        "d"
+      ],
+      "correct_answer_text": "adjourn the house for lack of discipline / disqualify the members under Anti-defection law",
+      "has_image": true,
+      "image_description": "Cartoon illustration depicting unruly members in the Lok Sabha, with animated characters shown arguing, shouting and creating disturbance while the Speaker looks on",
+      "examiner_comment": "Almost all the candidates answered this question correctly.",
+      "teacher_suggestion": "Provide cartoon-based picture analysis and similar activities to students to incorporate entertainment, in an effective way for students to understand different concepts of the Lok Sabha. It encourages critical thinking and helps to visualise complex ideas in a simpler format.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-v",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Adjournment Motion",
+      "period": null,
+      "question_number": "1(v)",
+      "question_text": "If an Adjournment Motion is passed in the Lok Sabha ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "the Lok Sabha will be dissolved."
+        },
+        {
+          "key": "b",
+          "text": "the House will discuss a matter of urgent public importance."
+        },
+        {
+          "key": "c",
+          "text": "the President ends the session."
+        },
+        {
+          "key": "d",
+          "text": "the Government will fall."
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "the House will discuss a matter of urgent public importance.",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "This question was answered well by most candidates. However, a few candidates selected option '(a)', under the assumption that an Adjournment Motion could lead to the dissolution of the Lok Sabha, which reflected a need to strengthen conceptual clarity in terms of 'actual scope and implications'.",
+      "teacher_suggestion": "Explain the parliamentary procedures with relevant examples. Instruct students to read the questions carefully and answer as per the requirements. By providing a comprehensive understanding of the reasons for adjournment and addressing common misconceptions, students will develop a more nuanced and accurate perspective on parliamentary procedures.",
+      "common_error": "Assumption that Adjournment Motion could lead to dissolution of Lok Sabha",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-vi",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Types of Emergency",
+      "period": null,
+      "question_number": "1(vi)",
+      "question_text": "Which emergency will be declared by the President if the security of the Nation is under threat?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "General Emergency"
+        },
+        {
+          "key": "b",
+          "text": "Financial Emergency"
+        },
+        {
+          "key": "c",
+          "text": "Constitutional Emergency"
+        },
+        {
+          "key": "d",
+          "text": "President's Rule"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "General Emergency",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "A large number of candidates attempted this question properly; however, very few candidates chose incorrect distractors reflecting misconceptions related to the concepts.",
+      "teacher_suggestion": "Elucidate three kinds of emergencies and the circumstances of their proclamation with examples, for bringing better clarity among students. In addition to this, encourage students to read the questions properly related to all the emergencies declared by the President prior to selecting the correct answer.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-vii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "assertion_reason",
+      "evaluation_mode": "deterministic",
+      "topic": "Partition of Bengal",
+      "period": "Second Phase of the Indian National Movement (1905-1916)",
+      "question_number": "1(vii)",
+      "question_text": "Read the statements given below and select the option that shows the correct relationship between (A) and (R).",
+      "assertion": "Lord Curzon partitioned Bengal in 1905.",
+      "reason": "The Nationalists felt that the British wanted to divide the Hindus and the Muslims.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "(A) is true and (R) is false."
+        },
+        {
+          "key": "b",
+          "text": "(R) is true but (A) is false."
+        },
+        {
+          "key": "c",
+          "text": "Both (A) and (R) are independent of each other."
+        },
+        {
+          "key": "d",
+          "text": "(A) is the reason for (R)."
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "(A) is the reason for (R).",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Majority of the candidates attempted this part correctly. However, some candidates experienced difficulty in correctly connecting the assertion with the reason, which led to confusion in their responses.",
+      "teacher_suggestion": "Give practice to students to develop higher-order thinking skills of assertion and reason and guide them towards connecting the two statements logically.",
+      "common_error": "Difficulty in connecting the assertion with the reason logically",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-viii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Subsidiary Alliance",
+      "period": "British Expansion",
+      "question_number": "1(viii)",
+      "question_text": "Read the description and identify the person. He introduced the Subsidiary Alliance to expand the British control over India.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Lord Dalhousie"
+        },
+        {
+          "key": "b",
+          "text": "Lord Canning"
+        },
+        {
+          "key": "c",
+          "text": "Lord Wellesley"
+        },
+        {
+          "key": "d",
+          "text": "Lord Curzon"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Lord Wellesley",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Most of the candidates answered this part correctly, while a few candidates chose different options.",
+      "teacher_suggestion": "Bring together all the repressive policies in a tabular form to avoid confusion and explain Governors General and their influences and impacts with the help of a timeline. Accompany it by a flowchart of various policies introduced by different Governors General to help students understand them better.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-ix",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Assertive Nationalists",
+      "period": "Second Phase of the Indian National Movement (1905-1916)",
+      "question_number": "1(ix)",
+      "question_text": "Identify the odd one out of the following Assertive Nationalists Leaders.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Bipin Chandra Pal"
+        },
+        {
+          "key": "b",
+          "text": "Lala Lajpat Rai"
+        },
+        {
+          "key": "c",
+          "text": "Dadabhai Naoroji"
+        },
+        {
+          "key": "d",
+          "text": "Bal Gangadhar Tilak"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Dadabhai Naoroji",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Almost all the candidates attempted this part correctly. However, a few candidates missed out the word 'odd' and thus selected Bal Gangadhar Tilak as the answer.",
+      "teacher_suggestion": "Focus the attention of students towards the names of Early Nationalists (or moderates) and assertive leaders.",
+      "common_error": "Missing the word 'odd' in the question and selecting Bal Gangadhar Tilak instead",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-x",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "picture_based",
+      "evaluation_mode": "deterministic",
+      "topic": "Social Reformers - Women's Education",
+      "period": "Growth of Nationalism",
+      "question_number": "1(x)",
+      "question_text": "Who among the following is MOST associated with this picture?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Jyotiba Phule"
+        },
+        {
+          "key": "b",
+          "text": "Raja Ram Mohan Roy"
+        },
+        {
+          "key": "c",
+          "text": "Swami Dayanand Saraswati"
+        },
+        {
+          "key": "d",
+          "text": "Aurobindo Ghosh"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "Jyotiba Phule",
+      "has_image": true,
+      "image_description": "Photograph showing a young girl studying/writing, with the text 'EDUCATION FOR GIRLS' prominently displayed, representing the cause of women's education",
+      "examiner_comment": "Most of the candidates answered this part correctly. However, few candidates chose different options, as they were not clear about the contributions of Jyotiba Phule.",
+      "teacher_suggestion": "Give practice to students for selecting the most appropriate answer when the distractors are closely connected. Even though all the reformers worked for women's education, Jyotiba Phule was most significantly connected to it. Teach the contributions of the social reformers with special emphasis on their most significant reforms. Establish relationship between Ex-Abolition of Sati for Raja Rammohan Roy and girl education for Jyotiba Phule etc.",
+      "common_error": "Not distinguishing Jyotiba Phule's specific contribution to women's education from other reformers",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xi",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Subhash Chandra Bose",
+      "period": "Forward Bloc and INA",
+      "question_number": "1(xi)",
+      "question_text": "Identify the contributions of Subhash Chandra Bose: P. Was the Supreme Commander of INA Q. Signed the Lucknow Pact R. Led the Quit India Movement S. Founded the Forward Bloc",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "P and Q"
+        },
+        {
+          "key": "b",
+          "text": "Q and R"
+        },
+        {
+          "key": "c",
+          "text": "P and S"
+        },
+        {
+          "key": "d",
+          "text": "R and S"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "P and S",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "This question was appropriately attempted by majority of the candidates.",
+      "teacher_suggestion": "Explain the events in chronology along with the major leaders associated with them to help students connect the appropriate leaders with the suitable facts. Also accompany with the nested questions to practice the same.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Swadeshi Movement",
+      "period": "Second Phase of the Indian National Movement (1905-1916)",
+      "question_number": "1(xii)",
+      "question_text": "The market of a small industrial town X has been dominated by many products of foreign companies. The local residents decide to save the Indian industries by helping them increase their sales. Which method of the Assertive Nationalists must they follow to become self-reliant?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Passive Resistance"
+        },
+        {
+          "key": "b",
+          "text": "National Education"
+        },
+        {
+          "key": "c",
+          "text": "Swadeshi"
+        },
+        {
+          "key": "d",
+          "text": "Revivalism"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Swadeshi",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "Most of the candidates answered this question correctly, while some candidates chose option (d) 'Revivalism' instead of (c) 'Swadeshi'.",
+      "teacher_suggestion": "Teach about the Assertive Nationalists with relevant examples from current affairs to help the students understand the application of policies.",
+      "common_error": "Choosing 'Revivalism' instead of 'Swadeshi'",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xiii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "UN Objectives",
+      "period": "United Nations",
+      "question_number": "1(xiii)",
+      "question_text": "Which of the following is NOT an objective of the United Nations Organisation?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Disarm"
+        },
+        {
+          "key": "b",
+          "text": "Disengage"
+        },
+        {
+          "key": "c",
+          "text": "Decolonise"
+        },
+        {
+          "key": "d",
+          "text": "Develop"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Disengage",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "This question was well attempted by most of the candidates. However, some candidates missed the word 'not' and selected an incorrect answer (c) instead of the correct answer (b).",
+      "teacher_suggestion": "Train students to learn and remember specific objectives of various organisations and give ample practice of questions comprising a structure of a negative statement.",
+      "common_error": "Missing the word 'NOT' in the question",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xiv",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "picture_based",
+      "evaluation_mode": "deterministic",
+      "topic": "UN Agencies - UNESCO",
+      "period": "United Nations",
+      "question_number": "1(xiv)",
+      "question_text": "Which agency of the United Nations Organisation is associated with this picture?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "UNESCO"
+        },
+        {
+          "key": "b",
+          "text": "UNICEF"
+        },
+        {
+          "key": "c",
+          "text": "WHO"
+        },
+        {
+          "key": "d",
+          "text": "ILO"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "UNESCO",
+      "has_image": true,
+      "image_description": "Collage of Indian heritage sites including Taj Mahal, Qutub Minar, Red Fort, Sanchi Stupa, and other famous monuments and architectural structures, representing UNESCO World Heritage Sites",
+      "examiner_comment": "This question was well attempted by majority of the candidates.",
+      "teacher_suggestion": "Revise the functions of all organs of the UN with multiple illustrations for better clarity. Discuss the agencies of the United Nations through diverse teaching aids.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xv",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "standard",
+      "evaluation_mode": "deterministic",
+      "topic": "Rise of Dictatorships - Causes",
+      "period": "Rise of Dictatorships",
+      "question_number": "1(xv)",
+      "question_text": "Which of the following is a common cause for the rise of dictatorship?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Faith in Democracy"
+        },
+        {
+          "key": "b",
+          "text": "Economic Crisis"
+        },
+        {
+          "key": "c",
+          "text": "Freedom of Press"
+        },
+        {
+          "key": "d",
+          "text": "Political Stability"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Economic Crisis",
+      "has_image": false,
+      "image_description": null,
+      "examiner_comment": "A large proportion of candidates attempted this part of the question properly.",
+      "teacher_suggestion": "Simplify the dictatorship concept by making students prepare a consolidated table summary comprising similar causes and ideologies of the dictators. Teach the common causes for the rise of dictatorship, use methods such as timeline creation, cause-and-effect diagrams, historical simulations, debates, and analysis to promote critical thinking and deeper understanding among students.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q1-xvi",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "mcq",
+      "mcq_variant": "picture_based",
+      "evaluation_mode": "deterministic",
+      "topic": "Causes of World War I",
+      "period": "The First World War",
+      "question_number": "1(xvi)",
+      "question_text": "Which of the following causes of the First World War is connected to this headline?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Imperialism"
+        },
+        {
+          "key": "b",
+          "text": "Aggressive Nationalism"
+        },
+        {
+          "key": "c",
+          "text": "Armament Race"
+        },
+        {
+          "key": "d",
+          "text": "Sarajevo Crisis"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "Sarajevo Crisis",
+      "has_image": true,
+      "image_description": "Newspaper headline from The Washington Times reading 'SERB STUDENT ASSASSINATES ARCHDUKE AND HIS DUCHESS', dated Sunday Evening Edition, referring to the assassination of Archduke Franz Ferdinand",
+      "examiner_comment": "This question was well attempted by all the candidates.",
+      "teacher_suggestion": "Encourage students to collect newspaper headings from the world press regarding the events of the world wars.",
+      "common_error": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Powers of Prime Minister",
+      "period": null,
+      "question_number": "2(i)",
+      "question_text": "Mention any two powers of the Prime Minister with reference to the Cabinet.",
+      "total_marks": 2,
+      "key_points": [
+        "Leader of the cabinet",
+        "Power to allocate portfolio and to reshuffle the Council of Ministers",
+        "Power to select and dismiss Ministers",
+        "Direct and coordinate policies",
+        "Resignation of the Prime Minister means the resignation of the ministry",
+        "Formation of the cabinet",
+        "Ex officio Chairman of Council of Ministers",
+        "Link between the Cabinet and the President / coordinates with different departments",
+        "Presides over the meeting of the Cabinet",
+        "He is the pivot around which the cabinet revolves, or real head or Keystone of the Cabinet",
+        "He decides the agenda of the Cabinet meeting"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "scheme_text": "Leader of the cabinet. / Power to allocate portfolio and /to reshuffle the Council of Ministers. / Power to select /and dismiss Ministers. / Direct and coordinate policies / Resignation of the Prime Minister means the resignation of the ministry. / Formation of the cabinet / Ex officio Chairman of Council of Ministers. / Link between the Cabinet and the President/coordinates with different departments/ Presides over the meeting of the Cabinet./ He is the pivot around which the cabinet revolves, or real head or Keystone of the Cabinet./ He decides the agenda of the Cabinet meeting. (Any two)",
+      "model_answer": "Two powers of the Prime Minister with reference to the Cabinet are that he is its leader and decides the agenda of its meetings, and that he has the power to allocate portfolios among ministers and to reshuffle the Council of Ministers.",
+      "examiner_comment": "A large number of candidates answered this question properly; however, a few candidates mixed up the categories of powers and functions and provided varied answers.",
+      "teacher_suggestion": "Prepare a classification chart to teach candidates a clear overview of the key differences between the powers and functions of the Prime Minister with reference to the President, the Cabinet, the Lok Sabha, etc., to prevent overlapping of answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Early Nationalist Methods",
+      "period": "First Phase of the Indian National Movement (1885-1907)",
+      "question_number": "2(ii)",
+      "question_text": "Imagine you are an Early Nationalist leader. Mention any two methods you would follow to fight against the British.",
+      "total_marks": 2,
+      "key_points": [
+        "Prayer / Protest / Petition or 3Ps or methods of political mendicancy",
+        "Prepare memorandums",
+        "Give speeches",
+        "Send deputations or delegations to Britain",
+        "Hold meetings/distribution of pamphlets and leaflets/appeals",
+        "Constitutional methods/passing resolutions",
+        "Made use of the press, newspapers, and journals",
+        "Criticised government policies",
+        "Through constitutional methods / peaceful propaganda",
+        "Held discussions / held processions",
+        "United public opinion",
+        "A British Committee of the JNC was set up in London",
+        "Published a weekly journal 'India' to present India's case before the British Public"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "scheme_text": "Prayer / Protest / Petition or 3Ps or methods of political mendicancy./ Prepare memorandums / Give speeches / Send deputations or delegations to Britain /Hold meetings/distribution of pamphlets and leaflets/appeals/constitutional methods/passing resolutions/Made use of the press, newspapers, and journals./criticised government policies./ through constitutional methods./ peaceful propaganda/ held discussions/ held processions/. United public opinion/ A British Committee of the JNC was set up in London/ Published a weekly journal 'India' to present India's case before the British Public. (Any two)",
+      "model_answer": "Two methods an Early Nationalist leader would follow are sending deputations or delegations to Britain to place India's case before the British public, and using the press — newspapers and journals — to criticise government policies through peaceful, constitutional means.",
+      "examiner_comment": "Several candidates answered this question appropriately; however, few candidates mixed up the categories of powers and functions and gave diverse responses.",
+      "teacher_suggestion": "To teach the methods used by early nationalists, use approaches such as historical case studies, document analysis, interactive timelines, and debates to help students understand their strategies and contributions to the nationalist movement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Formation of Muslim League",
+      "period": "Second Phase of the Indian National Movement (1905-1916)",
+      "question_number": "2(iii)",
+      "question_text": "Mention any two factors that led to the formation of the Muslim League.",
+      "total_marks": 2,
+      "key_points": [
+        "Loss of sovereignty by Mughal rulers",
+        "British policy of divide and rule",
+        "Relative backwardness of Muslim community in education, trade, industry",
+        "Role of Sir Syed Ahmed Khan",
+        "Misinterpretation of History",
+        "Rise of Assertive Nationalism",
+        "Economic backwardness of the country",
+        "D & R policy",
+        "Hindu Urdu Controversy",
+        "Aligarh Movement",
+        "Deputation by Agha Khan or to Lord Minto",
+        "Partition of Bengal",
+        "Establishment of MAO College"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Sir Syed Ahmed Khan",
+          "required": false,
+          "context": "Key figure in the formation of Muslim League"
+        },
+        {
+          "type": "name",
+          "value": "MAO College",
+          "required": false,
+          "context": "Educational institution linked to Muslim political awakening"
+        }
+      ],
+      "scheme_text": "Loss of sovereignty by Mughal rulers./ British policy of divide and rule. / Relative backwardness of Muslim community in education, trade, industry./ Role of Sir Syed Ahmed Khan. / Misinterpretation of History. / Rise of Assertive Nationalism. / Economic backwardness of the country./ D & R policy/ Hindu Urdu Controversy./ Aligarh Movement./ Deputation by Agha Khan or to Lord Minto./ Partition of Bengal./ Establishment of MAO College. (Any two)",
+      "model_answer": "Two factors that led to the formation of the Muslim League were the British policy of divide and rule, and the relative backwardness of the Muslim community in education, trade, and industry compared to the Hindu community.",
+      "examiner_comment": "This question was well attempted by some candidates; however, most candidates were found to be confused between the objectives and factors of the Muslim League.",
+      "teacher_suggestion": "Discuss the clear distinction between the objectives, factors, and events related to the Muslim League. Follow the scope of the lesson and encourage students to refer to diverse sources to avoid confusion.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-iv",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Forward Bloc Objectives",
+      "period": "Forward Bloc and INA",
+      "question_number": "2(iv)",
+      "question_text": "Mention any two objectives of the Forward Bloc.",
+      "total_marks": 2,
+      "key_points": [
+        "To attain independence with the support of workers, peasants and youth",
+        "Work towards establishing a socialist state or society",
+        "Through reorganisation of agriculture and industry on socialist lines",
+        "Abolition of zamindari system",
+        "Introduction of new monetary and credit system",
+        "Making right to work the fundamental right of the citizens",
+        "Providing workers with benefits like payment of minimum wages and occupational safety",
+        "Freedom in matters of religious worship",
+        "Linguistic and cultural autonomy for all sections of the society",
+        "Application of the principle of equality and social justice in building up the new order",
+        "Social ownership and control of both production and distribution"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "scheme_text": "To attain independence with the support of workers, peasants and youth/ work towards establishing a socialist state or society/ through reorganisation of agriculture and industry on socialist lines/abolition of zamindari system/introduction of new monetary and credit system/making right to work the fundamental right of the citizens/providing workers with benefits like payment of minimum wages and occupational safety /freedom in matters of religious worship/linguistic and cultural autonomy for all sections of the society/application of the principle of equality and social justice in building up the new order / social ownership and control of both production/ and distribution. (Any two)",
+      "model_answer": "Two objectives of the Forward Bloc were to attain independence with the support of workers, peasants, and youth, and to work towards establishing a socialist state through the reorganisation of agriculture and industry, including the abolition of the zamindari system.",
+      "examiner_comment": "Majority of the candidates appeared confused between the 'objectives of the Forward Bloc' and those of the 'INA', and as a result, they mixed up their answer.",
+      "teacher_suggestion": "A tabular representation with the objectives of each organisation written in separate columns will help clear any confusion. This can be further clarified by explaining the basic difference between the structure of the Forward Bloc and the Indian National Army.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-v",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Treaty of Versailles - Military",
+      "period": "The First World War",
+      "question_number": "2(v)",
+      "question_text": "Mention any two ways in which the Treaty of Versailles affected the German Military Force.",
+      "total_marks": 2,
+      "key_points": [
+        "The German army was restricted to one lakh soldiers",
+        "Navy was restricted to 15,000 men",
+        "36 or 24 ships",
+        "The air force and submarines were banned",
+        "Germany could not make or purchase from outside tanks and armoured cars",
+        "Demilitarized Rhine Valley"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "100000",
+          "required": false,
+          "context": "German army restricted to one lakh soldiers"
+        },
+        {
+          "type": "number",
+          "value": "15000",
+          "required": false,
+          "context": "Navy restricted to 15,000 men"
+        },
+        {
+          "type": "place",
+          "value": "Rhine Valley",
+          "required": false,
+          "context": "Demilitarized zone"
+        }
+      ],
+      "scheme_text": "The German army was restricted to one lakh soldiers/ navy was restricted to 15,000 men /36 or 24 ships/the air force /and submarines were banned/ Germany could not make or purchase from outside tanks and armoured cars/demilitarized Rhine Valley. (Any two)",
+      "model_answer": "Two ways the Treaty of Versailles affected the German military force were that its army was restricted to one lakh soldiers, and its navy was restricted to 15,000 men and only 24 ships, while its air force and submarines were banned altogether.",
+      "examiner_comment": "Most of the candidates could answer this question correctly; however, a few candidates were not able to mention the 'specific numbers of men' that were required in the response.",
+      "teacher_suggestion": "Discuss in detail the main clauses of the Treaty of Versailles and explain their specific impact on Germany. Train students to mention the numerical details accurately (for instance: 1 lakh limit on army men, 15,000 in the navy, and so on). Encourage students to write the clauses or terms with specific details instead of giving random or generalised answers.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sa-q2-vi",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Non-Aligned Movement",
+      "period": "Non-Aligned Movement",
+      "question_number": "2(vi)",
+      "question_text": "What is meant by the term Non-Alignment?",
+      "total_marks": 2,
+      "key_points": [
+        "Non-Aligned Movement is a policy of a sovereign state according to which it will not align itself to any of the power blocs",
+        "But at the same time actively participates in the world affairs",
+        "And decides each issue on its own merits",
+        "It chooses its own policy or way of life",
+        "Preserve the freedom of new nations from colonial influence and end imperialism",
+        "To protect human rights and environment",
+        "To condemn racial discrimination",
+        "To save the new nations from the supremacy of the superpowers",
+        "To eliminate nuclear weapons and ensure peaceful co-existence based on the Panchsheel Agreement",
+        "To abolish imperialism and promote freedom to pursue a free domestic and foreign policy",
+        "To establish a new economic order",
+        "To strengthen the UN",
+        "To maintain International peace, harmony and Co-operation"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Panchsheel Agreement",
+          "required": false,
+          "context": "Basis for peaceful co-existence in NAM"
+        }
+      ],
+      "scheme_text": "Non-Aligned Movement is a policy of a sovereign state according to which it will not align itself to any of the power blocs/ but at the same time actively participates in the world affairs /and decides each issue on its own merits/. It chooses its own policy or way of life. Preserve the freedom of new nations from colonial influence and end imperialism./To protect human rights and environment/To condemn racial discrimination/To save the new nations from the supremacy of the superpowers/To eliminate nuclear weapons and ensure peaceful co-existence based on the Panchsheel Agreement/To abolish imperialism and promote freedom to pursue a free domestic and foreign policy./ To establish a new economic order./ To strengthen the UN./ To maintain International peace, harmony and/ Co-operation.",
+      "model_answer": "Non-Alignment means that a sovereign state does not align itself with any of the power blocs, but instead actively participates in world affairs and decides each issue on its own merits, choosing its own independent policy or way of life.",
+      "examiner_comment": "Almost all the candidates attempted this question properly.",
+      "teacher_suggestion": "To teach the meaning of the term non-alignment, adopt various teaching methods such as concept mapping, case study discussions, group activities, multimedia presentations, and help students understand its significance in international relations.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sa-q2-vii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Independence of Judiciary",
+      "period": null,
+      "question_number": "2(vii)",
+      "question_text": "From the passage, deduce and mention any two ways in which the Constitution ensures the independence of the Judiciary.",
+      "total_marks": 2,
+      "stimulus": {
+        "type": "passage",
+        "text": "When a judicial system is correctly calibrated, the law is applied by judges fearlessly, without favour or fear and with respect. That is why judicial security of tenure is so fundamental. It is also why judges must be properly paid without any interference from the Executive or Legislature.",
+        "source": "(The Need for Independent Judiciary) UNODC"
+      },
+      "key_points": [
+        "Appointment of judges",
+        "Security of tenure or can work till 65 years of age",
+        "Salaries are charged on the Consolidated fund of India",
+        "No discussion with respect of the conduct of the Judges",
+        "Punishment for the contempt of Court",
+        "Prohibition of practice after retirement",
+        "Removal of Judges only through impeachment",
+        "Freedom to announce decisions and decrees without any fear",
+        "Salaries are not put to vote or cannot be changed to their disadvantage",
+        "Security must be provided to the Judges",
+        "Salaries of judges can be reduced only during a Financial Emergency",
+        "Has full control over its establishment or procedure of work"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "65",
+          "required": false,
+          "context": "Retirement age of judges ensuring security of tenure"
+        }
+      ],
+      "scheme_text": "Appointment of judges. / Security of tenure or can work till 65 years of age. / Salaries are charged on the Consolidated fund of India / No discussion with respect of the conduct of the Judges / Punishment for the contempt of Court / Prohibition of practice after retirement / Removal of Judges only through impeachment./ Freedom to announce decisions and decrees without any fear / Salaries are not put to vote or cannot be changed to their disadvantage. / Security must be provided to the Judges./ Salaries of judges can be reduced only during a Financial Emergency/ has full control over its establishment or procedure of work. (Any two)",
+      "model_answer": "Two ways the Constitution ensures the independence of the Judiciary, as can be deduced from the passage, are the security of tenure given to judges, so that they can work without fear, and the charging of their salaries on the Consolidated Fund of India, so that these cannot be reduced to their disadvantage or made subject to a vote.",
+      "examiner_comment": "Several candidates were able to deduce the answer correctly and could identify the key words from the passage.",
+      "teacher_suggestion": "Provide exposure to students of varied relevant passages from newspapers and books for strengthening comprehension skills.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q3-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Parliament Law-Making on State List",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Parliament",
+        "process": "Law-making on State List subjects"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament of India comprises the President and the two houses. With reference to the Indian Parliament, answer the following questions:",
+      "question_number": "3(i)",
+      "question_text": "Mention any three circumstances under which the Parliament can make laws on subjects in the state list.",
+      "total_marks": 3,
+      "key_points": [
+        "During an emergency",
+        "When approved by 2/3 majority by the Rajya Sabha",
+        "When two or more states ask",
+        "When the state is under President's Rule or Emergency due to breakdown of constitutional Machinery"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "2/3",
+          "required": false,
+          "context": "Majority required by Rajya Sabha to authorize Parliament to legislate on State List"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "During an emergency/when approved by 2/3 majority by the Rajya Sabha/When two or more states ask./ When the state is under President's Rule or Emergency due to breakdown of constitutional Machinery. (Any three points)",
+      "model_answer": "Parliament can make laws on subjects in the State List during a national emergency, when the Rajya Sabha passes a resolution by a two-thirds majority authorising it to do so, and when two or more states themselves request Parliament to legislate on a State subject.",
+      "examiner_comment": "Majority of the candidates answered this question correctly. In general, candidates demonstrated a clear understanding of the concept of Parliament making laws on subjects in the State List. However, a few candidates could not provide a complete response and mentioned only one or two correct points. A number of candidates explained the term adequately. At the same time, the same number of candidates appeared unfamiliar with the concept altogether and showed confusion regarding the exclusive powers of the Rajya Sabha.",
+      "teacher_suggestion": "Explain the powers of the Parliament with relevant examples. Moreover, discuss the unitary features of the Indian Constitution, even though India has a federal structure. Prepare a classification chart to give students a clear overview of the key differences between the Lok Sabha and the Rajya Sabha, with particular focus on their respective powers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q3-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Parliamentary Terms",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Parliament",
+        "process": null
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament of India comprises the President and the two houses. With reference to the Indian Parliament, answer the following questions:",
+      "question_number": "3(ii)",
+      "question_text": "Explain the following terms: (a) Question Hour (b) Quorum (c) No Confidence Motion",
+      "total_marks": 3,
+      "key_points": [
+        "Question hour: The (first) hour or 11 a.m. of the house when questions are asked by the members / questions asked to obtain or seek information on matters of public importance / the right to interpellation in the house / Types of questions / a 10 day notice is given to ask questions",
+        "Quorum: Minimum number of members required to be present in order to enable the house to transact business / 1/10 or 10% of the total membership of each house",
+        "No-Confidence Motion: Moved by the opposition / If it is passed the Government falls / motion to express lack of confidence in the Government / It passed, the whole ministry has to resign / A motion can be moved only in the LS / A motion used by the LS to control the executive / 50 members need to support its introduction"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "1/10",
+          "required": false,
+          "context": "Quorum requirement — 10% of total membership"
+        },
+        {
+          "type": "number",
+          "value": "50",
+          "required": false,
+          "context": "Members needed to support introduction of No-Confidence Motion"
+        },
+        {
+          "type": "number",
+          "value": "10",
+          "required": false,
+          "context": "Days notice for asking questions in Question Hour"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(a) Question hour: The (first) hour or 11 a.m. of the house when questions are asked by the members./questions asked to obtain or seek information on matters of public importance/the right to interpellation in the house./ Types of questions/ a 10 day notice is given to ask questions. (Any one)\n(b) Quorum: Minimum number of members required to be present in order to enable the house to transact business / 1/10 or 10% of the total membership of each house. (Any one)\n(c) No-Confidence Motion: Moved by the opposition / If it is passed the Government falls./ motion to express lack of confidence in the Government./It passed, the whole ministry has to resign./A motion can be moved only in the LS./A motion used by the LS to control the executive. / 50 members need to support its introduction. (Any one)",
+      "model_answer": "Question Hour is the first hour of a sitting, usually at 11 a.m., when members ask questions to seek information on matters of public importance. Quorum is the minimum number of members — one-tenth of the total membership of the House — who must be present to enable it to transact business. A No-Confidence Motion is a motion moved by the opposition, only in the Lok Sabha, expressing a lack of confidence in the government; if passed, the entire Council of Ministers is bound to resign.",
+      "examiner_comment": "The question was attempted well by most candidates, although some were unable to answer all three subparts accurately. Of the three components, the majority responded correctly to questions on 'Question Hour' and 'Quorum'. However, a few candidates displayed uncertainty and confusion in explaining the concept and implications of a 'No Confidence Motion'.",
+      "teacher_suggestion": "Explain the parliamentary procedures and related terms with relevant examples to avoid confusion. Use real-life examples or case studies to illustrate each procedure. By providing a comprehensive understanding of these procedures and addressing common misconceptions, students will develop a more nuanced and accurate perspective on parliamentary functioning.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q3-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Lok Sabha Superiority",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Lok Sabha",
+        "process": null
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament of India comprises the President and the two houses. With reference to the Indian Parliament, answer the following questions:",
+      "question_number": "3(iii)",
+      "question_text": "When can the term of the Lok Sabha be extended? Mention any three powers of the Lok Sabha which show its superiority over the Rajya Sabha.",
+      "total_marks": 4,
+      "key_points": [
+        "During an emergency",
+        "Motion of No-Confidence against the government can only be introduced or passed in the Lok Sabha",
+        "The Council of Ministers is answerable to the Lok Sabha only",
+        "Money bills can be introduced only in the Lok Sabha",
+        "Budget is passed / or monetary controls the national purse / has complete control over finance",
+        "In case of a deadlock between the two houses, the will of the Lok Sabha prevails due to its higher numerical strength",
+        "Can pass an Adjournment Motion",
+        "Has a greater say in the election of the President & VC",
+        "Can pass supplementary grants",
+        "Vote on account",
+        "Directly elected by the People",
+        "Passing of grants",
+        "Cut motion",
+        "Increase or decrease of tax",
+        "Censure motion"
+      ],
+      "points_required": 4,
+      "points_selection": "reason_plus_any_3",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "During an emergency\nLok Sabha-Motion of No-Confidence against the government can only be introduced or passed in the Lok Sabha. / the Council of Ministers is answerable to the Lok Sabha only. / Money bills can be introduced only in the Lok Sabha. / Budget is passed./ or monetary controls the national purse/has complete control over finance. / In case of a deadlock between the two houses, the will of the Lok Sabha prevails due to its higher numerical strength. / Can pass an Adjournment Motion./ has a greater say in the election of the President & VC./ Can pass supplementary grants./ Vote on account./ Directly elected by the People./ Passing of grants./ Cut motion./ Increase or decrease of tax./ Censure motion. (Any three)",
+      "model_answer": "The term of the Lok Sabha can be extended during a national emergency. Three powers that show its superiority over the Rajya Sabha are that a Motion of No-Confidence can only be introduced and passed in the Lok Sabha; Money Bills can be introduced only in the Lok Sabha, giving it complete control over the national purse; and in case of a deadlock between the two Houses, the will of the Lok Sabha prevails because of its greater numerical strength.",
+      "examiner_comment": "This question was well attempted by majority of the candidates; however, some candidates could not answer the first part of the question about the extension of the term of the Lok Sabha, correctly.",
+      "teacher_suggestion": "Prepare a classification chart to help students understand the differences in the qualifications, term, composition, and functions of the Lok Sabha and the Rajya Sabha. Explain the exclusive powers of both Houses with examples and present them in a tabular format for easier recall. Highlight the specific roles of the Lok Sabha and Rajya Sabha within the Indian Parliamentary system.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q4-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Impeachment of President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Parliament",
+        "process": "Impeachment procedure"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the country is vested in the President and Vice President. With reference to this answer the following questions:",
+      "question_number": "4(i)",
+      "question_text": "Explain the impeachment process through which the Parliament can remove the President from power.",
+      "total_marks": 3,
+      "key_points": [
+        "On grounds of the violation of Constitution or misbehaviour or incapacity",
+        "Motion is introduced in either house",
+        "14 day notice in writing",
+        "Notice by 1/4 of the total number of members in the house",
+        "It has to be passed by the 2/3 majority in the house it is introduced",
+        "The first house frames charges",
+        "The other house investigates",
+        "The President or his representative can be present",
+        "If 2/3 majority agrees to the motion, it is passed",
+        "If any one house disagrees, the motion is dropped",
+        "There will be no joint session",
+        "Both houses have to pass the motion"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "1/4",
+          "required": false,
+          "context": "Members needed to initiate impeachment notice"
+        },
+        {
+          "type": "fraction",
+          "value": "2/3",
+          "required": false,
+          "context": "Majority needed to pass the impeachment motion"
+        },
+        {
+          "type": "number",
+          "value": "14",
+          "required": false,
+          "context": "Days notice in writing required"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": true,
+        "sequential_process": true,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "On grounds of the violation of Constitution or misbehaviour or incapacity. / Motion is introduced in either house. / 14 day notice in writing. / Notice by 1/4 of the total number of members in the house. / It has to be passed by the 2/3 majority in the house it is introduced. / the first house frames charges./The other house investigates. / The President or his representative can be present / If 2/3 majority agrees to the motion, it is passed / If any one house disagrees, the motion is dropped./ there will be no joint session./ Both houses have to pass the motion. (Any three)",
+      "model_answer": "The President can be impeached on the ground of violating the Constitution. The charge is introduced as a motion in either House, after a 14-day written notice signed by at least one-fourth of that House's members. The House in which the motion originates frames the charge, which the other House investigates; if it is passed by a two-thirds majority in both Houses separately, the President stands removed from office.",
+      "examiner_comment": "This question was well attempted by the candidates; however, some candidates did not follow the correct order of the impeachment procedure. A few candidates were not familiar with the concept of the impeachment process.",
+      "teacher_suggestion": "Explain the concept of impeachment using a flow chart to ensure students know the steps involved in impeachment in the sequential manner. Explain that impeachment is a process intended to remove the President for a 'violation of the Constitution'. Emphasise that impeachment is not the result of political disagreements but requires proven constitutional violations. Use a flowchart or visual timeline to simplify the steps for students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q4-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Vice President as RS Chairman",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Vice President / Rajya Sabha",
+        "process": null
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the country is vested in the President and Vice President. With reference to this answer the following questions:",
+      "question_number": "4(ii)",
+      "question_text": "Mention any three powers of the Vice President in her/his role as the Chairman of the Rajya Sabha.",
+      "total_marks": 3,
+      "key_points": [
+        "Maintains order in the house",
+        "Can suspend an unruly member",
+        "Can adjourn the house in case of grave disorder",
+        "Can expunge unparliamentary words",
+        "Decides if there is a contempt of House",
+        "Regulates debates and proceedings",
+        "Presides over the meetings",
+        "Admissibility of questions and resolutions",
+        "All bills passed in the house are authenticated by him",
+        "Casting vote or explanation of the casting vote",
+        "Interprets rules / Decision of the Chairman is final",
+        "Ex-officio Chairman of Committees",
+        "Appoints Chairpersons of Committees",
+        "If a secret document has to be brought up, it is only done so with the permission of the Chairman",
+        "Chairman communicates all decisions of the house to concerned authorities",
+        "Allows admissibility of strangers and press",
+        "Presides over conferences of presiding officers of Legislative bodies",
+        "Conducts the business of RS",
+        "Delegates are sent to foreign countries by consulting the Chairman",
+        "Can disqualify members under anti-defection law"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Maintains order in the house./Can suspend an unruly member./Can adjourn the house in case of grave disorder. /Can expunge unparliamentary words. /Decides if there is a contempt of House. / Regulates debates and proceedings. / Presides over the meetings. / Admissibility of questions and resolutions. / All bills passed in the house are authenticated by him. / Casting vote or explanation of the casting vote. / Interprets rules / Decision of the Chairman is final. / Ex-officio Chairman of Committees. / Appoints Chairpersons of Committees. / If a secret document has to be brought up, it is only done so with the permission of the Chairman. / Chairman communicates all decisions of the house to concerned authorities / Allows admissibility of strangers and press. / Presides over conferences of presiding officers of Legislative bodies./ Conducts the business of RS./ delegates are sent to foreign countries by consulting the Chairman./ Can disqualify members under anti-defection law. (Any three)",
+      "model_answer": "Three powers of the Vice President as Chairman of the Rajya Sabha are that he maintains order in the House and can suspend an unruly member; he decides all questions of procedure, since his decision on the rules is final; and he presides over the meetings of the House, authenticating all bills passed by it.",
+      "examiner_comment": "Most of the candidates answered this question well. However, some candidates were confused and mentioned the functions of the Vice President, while the question specified the latter's powers as the Chairman of the Rajya Sabha.",
+      "teacher_suggestion": "Explain the dual role played by the Vice President with examples to help the students distinguish between these two roles — one as the Vice President and the other as the Chairman of the Rajya Sabha. Parallels can be drawn between the functions of the Speaker of the Lok Sabha and the functions of the Rajya Sabha Chairman, for building conceptual clarity.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sb-q4-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Powers of President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "President",
+        "process": null
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the country is vested in the President and Vice President. With reference to this answer the following questions:",
+      "question_number": "4(iii)",
+      "question_text": "With reference to the powers of President, mention: (a) Any two Financial Powers (b) Any two Executive Powers",
+      "total_marks": 4,
+      "key_points": [
+        "Financial powers: A money bill cannot be introduced except on the recommendation of the President",
+        "Financial powers: Budget",
+        "Financial powers: Contingency funds",
+        "Financial powers: Annual financial statement",
+        "Financial powers: Appoints finance commission which makes recommendation to the President",
+        "Financial powers: Controls the consolidated Fund of India",
+        "Executive powers: Head of the Indian Union",
+        "Executive powers: Formation of the Council of Ministers",
+        "Executive powers: Power to appoint and remove high officials or dignitaries of State",
+        "Executive powers: The administration of Union Territories",
+        "Executive powers: Control over State Governments",
+        "Executive powers: Appointment of Governors / Judges / Attorney General / Chairman of Planning Commission / Comptroller Auditor General / Public Service Commission / Prime Minister / Ambassadors and Diplomats / Chief Election Commissioner / Lt. Governors or Chief Commissioners / Members of the Finance Commission",
+        "Executive powers: All executive orders are issued in his/her name"
+      ],
+      "points_required": 4,
+      "points_selection": "any_2_each",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "(a) Financial powers: A money bill cannot be introduced except on the recommendation of the President. / Budget / Contingency funds / Annual financial statement / Appoints finance commission which makes recommendation to the President./ Controls the consolidated Fund of India. (Any two)\n(b) Executive powers: Head of the Indian Union / Formation of the Council of Ministers / Power to appoint and remove high officials or dignitaries of State. / The administration of Union Territories / Control over State Governments / Appointment of Governors / Judges / Attorney General / Chairman of Planning Commission / Comptroller Auditor General / Public Service Commission / Prime Minister. / Ambassadors and Diplomats./ Chief Election Commissioner./ Lt. Governors. Or Chief Commissioners. / Members of the Finance Commission./ All executive orders are issued in his/her name. (Any two)",
+      "model_answer": "Two financial powers of the President are that a Money Bill cannot be introduced in Parliament except on his recommendation, and that the Budget is presented to Parliament in his name. Two executive powers of the President are that he is the head of the Indian Union in whose name all executive orders are issued, and that he appoints the Governors of States as well as the Judges of the Supreme Court and High Courts.",
+      "examiner_comment": "(a) This question was well attempted by most of the candidates. (b) Majority of the candidates answered this question appropriately, while some candidates mixed it up with Legislative functions.",
+      "teacher_suggestion": "Elucidate the difference between the various powers of the President. Clear the demarcation for the candidates. Explain with examples the meaning of the words Financial, Legislative, and Executive powers with reference to the President for better understanding. Discuss in class that Executive powers denote appointments and legislative powers are connected to Parliamentary functions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q5-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "High Court Original Jurisdiction",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "High Court",
+        "process": "Original Jurisdiction"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "The High Courts of India are the highest courts of appeal in each state. With reference to the High Courts of India, answer the following questions:",
+      "question_number": "5(i)",
+      "question_text": "What is meant by the term Original Jurisdiction of the High Court? Mention any two cases which fall under this jurisdiction.",
+      "total_marks": 3,
+      "key_points": [
+        "Original Jurisdiction: Extends to those cases which the High Court has authority to hear and decide in the first instance / Cases which come directly to High Court",
+        "Cases: Wills",
+        "Divorce",
+        "Marriage",
+        "Company law",
+        "Admiralty",
+        "Contempt of Court",
+        "Constitutional cases",
+        "Interprets the Constitution",
+        "Enforcement of Fundamental Rights or Issue of writs",
+        "Election petition",
+        "State revenue and its collection",
+        "Judicial review"
+      ],
+      "points_required": 3,
+      "points_selection": "definition_plus_any_2",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Original Jurisdiction: Extends to those cases which the High Court has authority to hear and decide in the first instance./ Cases which come directly to High Court.\nCases: Wills / Divorce / Marriage / Company law / Admiralty / Contempt of Court / Constitutional cases / Interprets the Constitution / Enforcement of Fundamental Rights or Issue of writs / Election petition / State revenue and its collection / Judicial review. (Any two)",
+      "model_answer": "Original Jurisdiction refers to those cases which the High Court has the authority to hear and decide in the first instance, rather than on appeal. Two cases that fall under this jurisdiction are matters relating to wills, divorce, and marriage, and cases involving the enforcement of Fundamental Rights through the issue of writs.",
+      "examiner_comment": "Most of the candidates answered this question correctly. However, some candidates were found to be confused between the High Court and the Supreme Court cases. The common error made by a large number of candidates was that they mentioned 'all civil cases' and 'all criminal cases' instead of specific examples of cases that are a part of the 'Original Jurisdiction of High Court'.",
+      "teacher_suggestion": "Explain the meaning of the Original Jurisdiction with relevant examples. Encourage students to make a comparative table of cases to distinguish between 'the Original Jurisdiction of the Supreme Court' and 'the High Court'. Guide students to mention specific examples of 'the types of cases' instead of 'general terms'.",
+      "common_error": "Mentioning 'all civil cases' and 'all criminal cases' instead of specific examples",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q5-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Lok Adalat and Subordinate Courts",
+      "period": null,
+      "constitutional_reference": null,
+      "parent_question_number": "5",
+      "parent_question_text": "The High Courts of India are the highest courts of appeal in each state. With reference to the High Courts of India, answer the following questions:",
+      "question_number": "5(ii)",
+      "question_text": "Mention any two advantages of the Lok Adalat. Mention any one difference between the Sessions Court and the Court of the District Judge.",
+      "total_marks": 3,
+      "key_points": [
+        "Spirit of compromise",
+        "Delivers speedy / fast or quick justice or Saves time",
+        "Inexpensive justice or cheap / economical / no court fee / the fee will be refunded if case is settled",
+        "Awards passed by Lok Adalats are final and binding, or No appeal in any court against decision",
+        "Reduce the workload of subordinate or other Courts or reduces backlog",
+        "Can pass awards at a pre-litigation stage",
+        "Promotes social justice",
+        "Settlement of families' disputes or between neighbours",
+        "Minor cases of assault / no ill feeling / can move the application on a plain paper",
+        "No need of lawyers",
+        "Free legal aid to weaker sections",
+        "People's court which can be arranged anywhere",
+        "Session Courts: Highest Criminal Court of the district / Presides by session Judge",
+        "Court of the District Judge: Highest Civil Court of the district / Presides by the District Judge / District Judge acts as the Deputy Commissioner and District Collector / Session Judge does not perform administrative functions"
+      ],
+      "points_required": 3,
+      "points_selection": "any_2_plus_any_1",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Spirit of compromise. / Delivers speedy speedy fast or quick justice or Saves time. /inexpensive justice or cheap/economical./no court fee/ the fee will be refunded if case is settled / Awards passed by Lok Adalats are final and binding, or No appeal in any court against decision. / Reduce the workload of subordinate or other Courts or reduces backlog. / Can pass awards at a pre-litigation stage. / Promotes social justice. / Settlement of families' disputes or between neighbours. / Minor cases of assault./no ill feeling/can move the application on a plain paper./ No need of lawyers./ Free legal aid to weaker sections./ People's court which can be arranged anywhere.\nSession Courts: Highest Criminal Court of the district./ Presides by session Judge.\nCourt of the District Judge: Highest Civil Court of the district./ Presides by the District Judge./ District Judge acts as the Deputy Commissioner and District Collector./ Session Judge does not perform administrative functions.",
+      "model_answer": "Two advantages of the Lok Adalat are that it settles disputes in the spirit of compromise, delivering speedy and inexpensive justice with no court fee, and that its awards are final and binding, with no appeal lying against them in any court. One difference between the two courts is that the Sessions Court is the highest criminal court of the district, while the Court of the District Judge is the highest civil court of the district.",
+      "examiner_comment": "This question was answered correctly by most of the candidates, but a few candidates wrote about village panchayats. In the second sub-part, majority of the candidates wrote appropriate answers; however, the difference between 'the Sessions Court' and 'the Court of the District Judge' was not understood by some of the candidates.",
+      "teacher_suggestion": "Focus on the topics namely 'definition of Lok Adalats' as a 'Court of People' and its advantages. Also, deliberate in class the 'advantages of the Lok Adalat' with some examples. Explain the difference between the 'Sessions Court' and 'the Court of the District Judge' with examples for better understanding. Guide students to write examples correctly to build conceptual clarity.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q5-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Revisory Jurisdiction, Court of Record",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "High Court",
+        "process": "Revisory Jurisdiction / Court of Record"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "The High Courts of India are the highest courts of appeal in each state. With reference to the High Courts of India, answer the following questions:",
+      "question_number": "5(iii)",
+      "question_text": "Explain the following with reference to the High Court: (a) Revisory Jurisdiction (b) Court of Record",
+      "total_marks": 4,
+      "key_points": [
+        "Revisory Jurisdiction: Subordinate Court has exercised a jurisdiction not vested in it",
+        "High Court may call for a record of any case heard by the subordinate court if an injustice or an error has happened",
+        "Violation of the principles of natural justice",
+        "Arbitrary decision leading to wrong judgement",
+        "Error in procedure",
+        "Sets aside the subordinate court's verdict if in error and announces a new judgement",
+        "Miscarriage of Judgement",
+        "Court of Record: Its judgments and orders are preserved as a record",
+        "This can be produced in any court as precedents / future references / testimony",
+        "If a person commits a contempt of court, the court has the authority to punish her/him for contempt",
+        "No authorities can deprive the court of this right",
+        "It is not applicable to other high courts",
+        "Subordinate courts have to follow the high courts of their respective statements while giving judgements in similar cases"
+      ],
+      "points_required": 4,
+      "points_selection": "any_2_each",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "(a) Revisory Jurisdiction: Subordinate Court has exercised a jurisdiction not vested in it. / High Court may call for a record of any case heard by the subordinate court if an injustice or an error has happened. / Violation of the principles of natural justice. / Arbitrary decision leading to wrong judgement. / Error in procedure. / Sets aside the subordinate court's verdict if in error and announces a new judgement./ Miscarriage of Judgement. (Any two)\n(b) The court of record. Its judgments and orders are preserved as a record/ This can be produced in any court as precedents/.future references/testimony/ If a person commits a contempt of court, the court has the authority to punish her/him for contempt. /No authorities can deprive the court of this right / It is not applicable to other high courts./ Subordinate courts have to follow the high courts of their respective statements while giving judgements in similar cases. (Any two)",
+      "model_answer": "Revisory Jurisdiction allows the High Court to call for the record of any case decided by a subordinate court if it has exercised a jurisdiction not vested in it, or if an injustice or error has occurred, and to set aside that court's verdict and pass a fresh judgement. The Court of Record means the High Court's judgements and orders are preserved as a record that can be produced in any court as a precedent, and that it has the authority to punish anyone who commits contempt of court.",
+      "examiner_comment": "(a) Several candidates were confused between 'the Revisory Jurisdiction' and 'Judicial Review'. The remaining candidates were confused between the 'Revisory Jurisdiction of the High Court' and 'the Supreme Court'. (b) This question was well attempted by a large number of candidates.",
+      "teacher_suggestion": "Explain the meaning of the term and the 'jurisdictions of the High Court' thoroughly to students with relevant examples from newspaper reports to avoid confusion between these two concepts i.e. 'Revisory Jurisdiction of the High Court' and 'the Supreme Court'. Provide a comparative table of the Jurisdictions of the High Courts and the Supreme Court for better clarity. Discuss and reiterate the Court of Record with valid points like those whose proceedings and judgements are recorded and preserved as evidence for future reference, testimony, and enforcing the legal rights based on established precedents.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sb-q6-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Doctrine of Lapse",
+      "period": "British Expansion",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Revolt of 1857 was conscious beginning of the independence struggle against the British. With reference to this, answer the following questions:",
+      "question_number": "6(i)",
+      "question_text": "What was the Doctrine of Lapse? Who introduced it?",
+      "total_marks": 3,
+      "key_points": [
+        "Doctrine of Lapse: The policy of expansion",
+        "Where if a king did not have a natural heir",
+        "The kingdom would lapse to the British",
+        "The adopted son would not be allowed to rule",
+        "Rulers had to take the permission of the British to adopt",
+        "Lord Dalhousie"
+      ],
+      "points_required": 3,
+      "points_selection": "any_2_plus_name",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lord Dalhousie",
+          "required": true,
+          "context": "Introduced the Doctrine of Lapse"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Doctrine of Lapse: The policy of expansion / where if a king did not have a natural heir / the kingdom would lapse to the British / the adopted son would not be allowed to rule./ Rulers had to take the permission of the British to adopt. (Any two)\nLord Dalhousie",
+      "model_answer": "The Doctrine of Lapse was a policy of expansion under which, if a ruler died without a natural heir, his kingdom would lapse to the British; an adopted son was not allowed to succeed to the throne unless the British had earlier sanctioned the adoption. It was introduced by Lord Dalhousie.",
+      "examiner_comment": "A large number of candidates could describe the Doctrine of Lapse correctly; however, some candidates were not able to mention the person who introduced the policy.",
+      "teacher_suggestion": "Present all the repressive policies in a tabular form to avoid confusion. Explain the Governor-Generals, their influences, and their impacts using a timeline. Use a flowchart to depict the various policies introduced by different Governor-Generals to help students understand them better.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q6-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Socio-Religious Causes of 1857",
+      "period": "The First War of Independence, 1857",
+      "date_range": "1857-1858",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Revolt of 1857 was conscious beginning of the independence struggle against the British. With reference to this, answer the following questions:",
+      "question_number": "6(ii)",
+      "question_text": "The British Government interfered in the social and religious matters of the Indians. Mention any three socio religious causes to justify this statement.",
+      "total_marks": 3,
+      "key_points": [
+        "Interference with social customs",
+        "Apprehensions about modern innovation",
+        "Policy of racial discrimination",
+        "Policy that interfered with religion",
+        "Corruption in administration",
+        "Oppression of the poor",
+        "Activities of the missionaries",
+        "Fears regarding Western Education",
+        "Taxing religious places",
+        "Law of property",
+        "Fears with regard to mass conversion to Christianity",
+        "Introduction of Railways and Telegraph",
+        "Fears on English Education",
+        "Indignities hurled at Indians",
+        "Abolition of sati",
+        "Widow Remarriage Act",
+        "Abolition of Child Marriage",
+        "Against female infanticide",
+        "Fear among Pandits and Maulvis"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Interference with social customs. / Apprehensions about modern innovation. / Policy of racial discrimination. / Policy that interfered with religion. / Corruption in administration. / Oppression of the poor. / Activities of the missionaries. / Fears regarding Western Education. / Taxing religious places. / Law of property. / Fears with regard to mass conversion to Christianity. / Introduction of Railways and Telegraph. / Fears on English Education. / Indignities hurled at Indians./ Abolition of sati./ Widow Remarriage Act./ Abolition of Child Marriage./ Against female infanticide./ Fear among Pandits and Maulvis. (Any three)",
+      "model_answer": "Three socio-religious causes of the Revolt of 1857 were the British policy of interfering with the social customs of Indians, apprehensions about Western innovations such as the introduction of railways and telegraph, and fears among the people, encouraged by the activities of Christian missionaries, of mass conversion to Christianity.",
+      "examiner_comment": "This question was well attempted by the candidates, as most of the candidates were able to accurately identify and explain the key features of the socio-religious causes that contributed to the First War of Independence. However, a few candidates could not give complete details of the question asked.",
+      "teacher_suggestion": "Use mind maps and other graphic organisers for better clarity and segregation while teaching the causes. Elucidate the policies with examples of Indians affected. Incorporate videos and role plays in class to make the topic more engaging. Draw parallels between society in 1857 and that of today to make the topic more relatable for students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q6-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Military Causes of 1857 Revolt",
+      "period": "The First War of Independence, 1857",
+      "date_range": "1857-1858",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Revolt of 1857 was conscious beginning of the independence struggle against the British. With reference to this, answer the following questions:",
+      "question_number": "6(iii)",
+      "question_text": "Mention any four military causes which led to this Revolt.",
+      "total_marks": 4,
+      "key_points": [
+        "Ill treatment of Indian soldiers",
+        "General Service Enlistment Act",
+        "Larger Proportion of Indians in the British army",
+        "Bleak prospects of promotions",
+        "Bhatta Deprivation of Allowances",
+        "Faulty distribution of troops",
+        "Poor performance of British troops or loss of prestige in Afghan war",
+        "Discontent or disaffection in the Bengal Army",
+        "Introduction of Enfield rifles or incident of greased cartridges",
+        "Soldiers were ill-fed / badly housed / poorly paid or less salaries",
+        "Soldiers were not allowed to wear caste or sect marks",
+        "Free postage was cancelled",
+        "Unemployment caused by the disbanding of armies"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Enfield rifles",
+          "required": false,
+          "context": "Greased cartridges incident"
+        },
+        {
+          "type": "name",
+          "value": "General Service Enlistment Act",
+          "required": false,
+          "context": "Forced overseas service"
+        },
+        {
+          "type": "name",
+          "value": "Bengal Army",
+          "required": false,
+          "context": "Main source of disaffection"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Ill treatment of Indian soldiers. / General Service Enlistment Act. / Larger Proportion of Indians in the British army. / Bleak prospects of promotions. / Bhatta Deprivation of Allowances. / Faulty distribution of troops. / Poor performance of British troops or loss of prestige in Afghan war. / Discontent or disaffection in the Bengal Army. / Introduction of Enfield rifles or incident of greased cartridges./ Soldiers were ill-fed./ badly housed./ poorly paid or less salaries./ Soldiers were not allowed to wear caste or sect marks./ Free postage was cancelled./ Unemployment caused by the disbanding of armies. (Any four)",
+      "model_answer": "Four military causes of the Revolt were the ill-treatment of Indian soldiers and the larger proportion of Indians relative to Europeans in the army; the General Service Enlistment Act, which threatened to send sepoys overseas against their religious beliefs; discontent in the Bengal Army over bleak prospects of promotion; and the introduction of the Enfield rifle, whose greased cartridges were rumoured to be coated with cow and pig fat.",
+      "examiner_comment": "This question was well attempted by the candidates.",
+      "teacher_suggestion": "Explain the causes of the Revolt of 1857 under subheadings such as Economic Causes, Military Causes, and Political Causes to avoid overlapping. Presenting them in a tabular form will help students gain better clarity.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q7-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Repressive Policies of Lord Lytton",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The oppressive British colonial rule led to the growth of nationalism in India. With reference to this, answer the following questions:",
+      "question_number": "7(i)",
+      "question_text": "The repressive policies of Lord Lytton became a catalyst to the growth of nationalism. Mention any three of his repressive policies to justify this statement.",
+      "total_marks": 3,
+      "key_points": [
+        "Removed import duties on cotton textiles",
+        "He reduced the age for appearing in the Indian Civil Service Examination (from 21 to 19)",
+        "Indian Arms Act",
+        "Vernacular Press Act",
+        "Organised the grand Delhi Darbar when India was facing famine"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Vernacular Press Act",
+          "required": false,
+          "context": "Repressive policy restricting Indian press"
+        },
+        {
+          "type": "name",
+          "value": "Indian Arms Act",
+          "required": false,
+          "context": "Prohibited Indians from possessing arms"
+        },
+        {
+          "type": "number",
+          "value": "19",
+          "required": false,
+          "context": "Reduced ICS exam age from 21 to 19"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Removed import duties on cotton textiles / He reduced the age for appearing in the Indian Civil Service Examination (from 21 to 19) / Indian Arms Act / Vernacular Press Act / Organised the grand Delhi Darbar when India was facing famine. (Any three)",
+      "model_answer": "Three repressive policies of Lord Lytton were the Vernacular Press Act, which curbed the freedom of the Indian language press; the Indian Arms Act, which restricted Indians from possessing arms; and lowering the age limit for the Indian Civil Service examination from twenty-one to nineteen, which made it harder for Indians to qualify.",
+      "examiner_comment": "This question was well attempted by the candidates. However, a few candidates mistakenly included 'Ilbert Bill' as a 'policy of Lord Lytton'.",
+      "teacher_suggestion": "Provide a clear historical context for the Grand Delhi Darbar and other policies, explaining their significance and purpose. Make a clear distinction between the repressive policies of Lord Lytton and the positive reforms by Sir Ilbert. Explain the power of Viceroys in their colonial actions, and policies in detail for better clarity.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q7-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Role of Press in Nationalism",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The oppressive British colonial rule led to the growth of nationalism in India. With reference to this, answer the following questions:",
+      "question_number": "7(ii)",
+      "question_text": "Mention any three ways in which the Press promoted nationalism.",
+      "total_marks": 3,
+      "key_points": [
+        "Developing Nationalism",
+        "Keeping people informed of the political developments",
+        "Journals and papers gave a national character",
+        "Struggle against press censorship",
+        "Modern liberal ideals of liberty, freedom, equality, home rule and independence spread",
+        "Patriotism",
+        "Daily criticism of the unjust policies of the British Government in India",
+        "Exposed the true nature of the British rule in India",
+        "Development of National literature",
+        "Exchange of views",
+        "Awareness to understand the political and social development of the outside world",
+        "To shape their policies and programmes",
+        "Spreading message of Natural Rights",
+        "Brought the leaders and the workers on a common platform",
+        "Helped in organising political movements",
+        "Names of newspapers and books"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Developing Nationalism. / Keeping people informed of the political developments. / Journals and papers gave a national character. / Struggle against press censorship. / Modern liberal ideals of liberty, freedom, equality, home rule and independence spread. / Patriotism / Daily criticism of the unjust policies of the British Government in India. / Exposed the true nature of the British rule in India. / Development of National literature. / Exchange of views. / Awareness to understand the political and social development of the outside world. / To shape their policies and programme.s / Spreading message of Natural Rights./ Brought the leaders and the workers on a common platform./ Helped in organising political movements./ Names of newspapers and books. (Any three)",
+      "model_answer": "Three ways the Press promoted nationalism were by keeping people informed of political developments and giving them a national character, by daily criticising the unjust policies of the British Government in India, and by spreading modern liberal ideals of liberty, freedom, and self-rule, which brought leaders and ordinary people onto a common platform.",
+      "examiner_comment": "A large number of candidates attempted this part correctly.",
+      "teacher_suggestion": "Illustrate the role of the Press by showing students various reports of the freedom movement reported by the newspapers during the period from 1857 to 1947. Discuss the role of the press in the Indian national movement to help students understand the way ideas sparked revolutions, and the way words became weapons against colonialism.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q7-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Indian National Congress Objectives",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The oppressive British colonial rule led to the growth of nationalism in India. With reference to this, answer the following questions:",
+      "question_number": "7(iii)",
+      "question_text": "Who presided over the second session of the Indian National Congress? Mention any three objectives of the Congress.",
+      "total_marks": 4,
+      "key_points": [
+        "Dadabhai Naoroji",
+        "To enable the national workers from all parts of India personally known to each other",
+        "To end all racial, religious and provincial prejudices",
+        "To train and organise public opinion in the country",
+        "To promote friendly relations between Nationalist Political workers from the different parts of the country",
+        "To develop the feeling of national unity",
+        "To formulate popular demands and present them to the Government",
+        "Decide upon political tasks or jobs to be undertaken during the year"
+      ],
+      "points_required": 4,
+      "points_selection": "name_plus_any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Dadabhai Naoroji",
+          "required": true,
+          "context": "Presided over the second session of the Indian National Congress"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Dadabhai Naoroji\nTo enable the national workers from all parts of India personally known to each other. / To end all racial, religious and provincial prejudices. / To train and organise public opinion in the country. / To promote friendly relations between Nationalist Political workers from the different parts of the country. / To develop the feeling of national unity. / To formulate popular demands and present them to the Government. / Decide upon political tasks or jobs to be undertaken during the year. (Any three)",
+      "model_answer": "Dadabhai Naoroji presided over the second session of the Indian National Congress. Three objectives of the Congress were to enable political workers from all parts of India to become personally known to one another, to train and organise public opinion in the country, and to formulate popular demands and present them to the Government.",
+      "examiner_comment": "Most of the candidates could not mention the name of the second President of the Congress. Moreover, several candidates wrote 'general objectives of the Early Nationalists' instead of 'the specific objectives of the Congress'.",
+      "teacher_suggestion": "Define the objectives of the various parties and organisations with examples to avoid confusion. Train students to write specific objectives as mentioned and not write generalised answers. Encourage students to mention the first two sessions of the Congress and the names of their respective Presidents. Provide a stimulus related to the second session of the INC and derive objectives from the information provided in the case studies.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q8-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Jallianwala Bagh / Non-Cooperation",
+      "period": "Mass Phase of the National Movement (1915-1947)",
+      "date_range": "1919-1922",
+      "constitutional_reference": null,
+      "stimulus": {
+        "type": "picture_with_headline",
+        "image_description": "Illustration depicting the Jallianwala Bagh massacre with soldiers firing upon a crowd of unarmed people trapped in an enclosed garden",
+        "headline": "Tears Of Blood: When 1,650 Bullets Changed India Forever",
+        "source": "The Times of India, April 2019",
+        "has_image": true
+      },
+      "parent_question_number": "8",
+      "parent_question_text": "Look at the given picture and answer the questions that follows:",
+      "question_number": "8(i)",
+      "question_text": "Identify the above incident. Which Gandhian movement did it lead to? Which incident led to the suspension of that movement?",
+      "total_marks": 3,
+      "key_points": [
+        "Jallianwala Bagh",
+        "Non-cooperation Movement",
+        "Chauri Chaura Incident"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Jallianwala Bagh",
+          "required": true,
+          "context": "The massacre depicted in the picture"
+        },
+        {
+          "type": "event",
+          "value": "Non-cooperation Movement",
+          "required": true,
+          "context": "The Gandhian movement it led to"
+        },
+        {
+          "type": "event",
+          "value": "Chauri Chaura Incident",
+          "required": true,
+          "context": "Caused suspension of the Non-cooperation Movement"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Jallianwala Bagh / Non-cooperation Movement / Chauri Chaura Incident.",
+      "model_answer": "The incident depicted is the Jallianwala Bagh massacre, which led to the Non-Cooperation Movement. The Chauri Chaura incident led to the suspension of that Movement.",
+      "examiner_comment": "This question was well attempted by the candidates. Some candidates, however, could not identify the movement correctly and mentioned 'Non-Cooperation Movement' as the response to the question.",
+      "teacher_suggestion": "Explain students the difference between the Civil Disobedience Movement and Non-Cooperation Movement with particular focus on causes and consequences in a tabular form. Develop the skill in students to identify pictures. Give students practice by giving them several pictures to identify.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q8-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Rowlatt Act Provisions",
+      "period": "Mass Phase of the National Movement (1915-1947)",
+      "date_range": "1919",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "Look at the given picture and answer the questions that follows:",
+      "question_number": "8(ii)",
+      "question_text": "Mention any three repressive provisions of the Rowlatt Act.",
+      "total_marks": 3,
+      "key_points": [
+        "The public and newspaper men not allowed to attend the trial or In-camera trial",
+        "No appeal against judgement",
+        "Search any place",
+        "Arrest anyone without giving any reason or warrant",
+        "Restriction on movement of individuals",
+        "Suspension of the Right of Habeas Corpus",
+        "No Dalil, No Vakil, No Appeal"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Rowlatt Act",
+          "required": true,
+          "context": "Repressive act of 1919"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "The public and newspaper men not allowed to attend the trial or In-camera trial / No appeal against judgement. / Search any place. / Arrest anyone without giving any reason or warrant. / Restriction on movement of individuals. / Suspension of the Right of Habeas Corpus. / No Dalil, No Vakil, No Appeal. (Any three)",
+      "model_answer": "Three repressive provisions of the Rowlatt Act were that a person could be arrested and imprisoned without a warrant or a stated reason; that the accused had no right of appeal against the judgement; and that the public and even the press were not allowed to attend the trial, which was held in-camera.",
+      "examiner_comment": "Majority of the candidates attempted this part appropriately; however, some candidates could not write three repressive provisions of the Rowlatt Act.",
+      "teacher_suggestion": "Deliberate in class the way the Rowlatt Act severely curtailed civil liberties and led to widespread protests and opposition across India. Emphasise the reason for the Act and the way it was viewed as highly repressive and unjust by Indians. Teach the repressive policies of the Rowlatt Act effectively by making students feel the injustice, understand its impact, and see its historical importance.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q8-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Causes of QIM and CDM",
+      "period": "Mass Phase of the National Movement (1915-1947)",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "Look at the given picture and answer the questions that follows:",
+      "question_number": "8(iii)",
+      "question_text": "Mention the following: (a) Any two causes of the Quit India Movement. (b) Any two causes of the Civil Disobedience Movement.",
+      "total_marks": 4,
+      "key_points": [
+        "(a) Failure of the Cripps Mission",
+        "(a) Japanese Threat",
+        "(b) Simon Commission",
+        "(b) Declaration of Purna Swaraj",
+        "(b) Lahore session of Congress"
+      ],
+      "points_required": 4,
+      "points_selection": "any_2_each",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Cripps Mission",
+          "required": false,
+          "context": "Its failure was a cause of the Quit India Movement"
+        },
+        {
+          "type": "event",
+          "value": "Simon Commission",
+          "required": false,
+          "context": "Cause of the Civil Disobedience Movement"
+        },
+        {
+          "type": "event",
+          "value": "Lahore session",
+          "required": false,
+          "context": "Declaration of Purna Swaraj leading to CDM"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "(a) Failure of the Cripps Mission / Japanese Threat.\n(b) Simon Commission / Declaration of Purna Swaraj/ Lahore session of Congress.",
+      "model_answer": "Two causes of the Quit India Movement were the failure of the Cripps Mission to satisfy Indian demands, and the threat of a Japanese invasion of India. Two causes of the Civil Disobedience Movement were the appointment of the all-White Simon Commission, and the declaration of Poorna Swaraj as the Congress's goal at its Lahore Session.",
+      "examiner_comment": "(a) Most candidates incorrectly answered this part as they did not have clarity on the exact causes. The candidates mentioned the events which led to the 'Movement' instead of 'causes of the Quit India Movement'. (b) A large number of candidates incorrectly included 'the Dandi March' and 'the Nehru Report' as causes of 'the Civil Disobedience Movement'.",
+      "teacher_suggestion": "Specify two key causes of the Quit India Movement as per the scope of the syllabus. Adopt a structured approach by incorporating the historical context, highlighting major causes and events, and discussing the relevant objectives of related movements. Follow the Scope of syllabus to ensure students do not lose out marks due to confusion.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sb-q9-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Japan's Invasion of Manchuria",
+      "period": "The Second World War",
+      "constitutional_reference": null,
+      "stimulus": {
+        "type": "passage",
+        "text": "In an effort to secure resources for its expanding industries, Japan invaded the northern Chinese province of Manchuria. Although Western nations protested the Japanese action, most members of the League of Nations, including Canada, opposed any form of military intervention to defend Chinese sovereignty. A League of Nations commission, headed by the British diplomat Lord Lytton, was dispatched to Manchuria to investigate.",
+        "source": "Loyal Edmonton Regiment Museum",
+        "has_image": false
+      },
+      "parent_question_number": "9",
+      "parent_question_text": "Read the passage given and answer the following questions:",
+      "question_number": "9(i)",
+      "question_text": "How did the incident being described above become a cause for the Second World War?",
+      "total_marks": 3,
+      "key_points": [
+        "Japan was determined to dominate the Far East",
+        "Japan left the League",
+        "Japan attacked China",
+        "Invaded Manchuria / Occupied it / set up a government there",
+        "It started an undeclared war against China",
+        "China appealed to the League of Nations but Britain and France paid no attention to this appeal",
+        "Japan joined Germany and Italy to form the Berlin-Rome-Tokyo AXIS",
+        "Continued its policy of expansion and conquest",
+        "Japan left the League of Nations and started occupying British and American properties in China",
+        "France and Britain followed the policy of appeasement",
+        "They wanted Japan to be used to weaken China"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "place",
+          "value": "Manchuria",
+          "required": true,
+          "context": "Region invaded by Japan"
+        },
+        {
+          "type": "name",
+          "value": "Berlin-Rome-Tokyo AXIS",
+          "required": false,
+          "context": "Alliance formed by Japan with Germany and Italy"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Japan was determined to dominate the Far East. / Japan left the League. / Japan attacked China. / Invaded Manchuria. / Occupied it. / set up a government there. It started an undeclared war against China. / China appealed to the League of Nations but Britain and France paid no attention to this appeal. / Japan joined Germany and Italy to form the Berlin-Rome-Tokyo AXIS./ continued its policy of expansion and conquest. / Japan left the League of Nations and started occupying British and American properties in China. / France, and Britain followed the policy of appeasement. / They wanted Japan to be used to weaken China. (Any three)",
+      "model_answer": "Japan's invasion of Manchuria became a cause of the Second World War because Japan set up its own government there in defiance of China's sovereignty and then continued its policy of expansion and conquest; when China appealed to the League of Nations, Britain and France paid little attention, and Japan went on to leave the League altogether and later joined Germany and Italy to form the Berlin-Rome-Tokyo Axis.",
+      "examiner_comment": "Most of the candidates were able to answer this question correctly as the key words were evident in the passage. However, a few candidates copied the lines from the passage which lead to loss in marks.",
+      "teacher_suggestion": "Give students adequate practice in answering passage-based questions and discourage them from lifting answers directly from the passage. Train them to infer answers based on understanding rather than copying. Encourage reading of diverse passages related to historical events.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q9-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Hitler's Attack on Poland",
+      "period": "The Second World War",
+      "date_range": "1939",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "Read the passage given and answer the following questions:",
+      "question_number": "9(ii)",
+      "question_text": "Mention any three reasons for Hitler's attack on Poland.",
+      "total_marks": 3,
+      "key_points": [
+        "Hitler wanted to recapture the Port of Danzing which Germany had lost",
+        "He wanted to regain all territories they had lost due to the Treaty of Versailles",
+        "Germany had been divided into two to give Poland a land-route to the sea",
+        "Danzing was inhabited mainly by Germans",
+        "Germany could connect with East Prussia by occupying Danzing corridor",
+        "Germany signed a Non-Aggression Pact with Russia",
+        "Poland was accused of committing atrocities against Germans living there",
+        "Polish independence after World War I irked Germany"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "place",
+          "value": "Danzing",
+          "required": false,
+          "context": "Port city Germany wanted to recapture"
+        },
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles",
+          "required": false,
+          "context": "Treaty that caused Germany's territorial losses"
+        },
+        {
+          "type": "treaty",
+          "value": "Non-Aggression Pact",
+          "required": false,
+          "context": "Pact signed with Russia before attacking Poland"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Hitler wanted to recapture the Port of Danzing which Germany had lost./He wanted to regain all territories they had lost due to the Treaty of Versailles./ Germany had been divided into two to give Poland a land-route to the sea./ Danzing was inhabited mainly by Germans. / Germany could connect with East Prussia by occupying Danzing corridor./ Germany signed a Non-Aggression Pact with Russia./ Poland was accused of committing atrocities against Germans living there./ Polish independence after World War I irked Germany. (Any three)",
+      "model_answer": "Three reasons for Hitler's attack on Poland were his wish to recapture the port of Danzig, which Germany had lost; his desire to regain all the territory Germany had lost under the Treaty of Versailles; and Germany's wish to reconnect with East Prussia by occupying the Polish or 'Danzig' Corridor, which had been created to give Poland access to the sea.",
+      "examiner_comment": "This question was well attempted by most of the candidates.",
+      "teacher_suggestion": "Draw students' attention to the importance of using precise points while answering instead of writing lengthy explanations for the reasons behind the attack. Discuss the context and consequences of Hitler's actions, helping students develop a comprehensive understanding of how these events led to the outbreak of war.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q9-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Failure of League of Nations",
+      "period": "The First World War",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "Read the passage given and answer the following questions:",
+      "question_number": "9(iii)",
+      "question_text": "Mention any four reasons for the failure of the League of Nations.",
+      "total_marks": 4,
+      "key_points": [
+        "USA did not join the League and countries which joined were not interested in collective security",
+        "It was unable to stop the rise of dictatorship",
+        "League was helpless when France attacked Lithuania",
+        "Japan seized Manchuria",
+        "Italy attacked Ethiopia and Hitler attacked Czechoslovakia and annexed Austria",
+        "In every crisis, the countries either defied or ignored the League",
+        "It did not have an army of its own",
+        "An economic sanction against aggressor nation was of no use as the member states were not willing to apply the sanctions which affected the economy",
+        "Countries lost faith in the League",
+        "Countries entered into mutual political and military alliances",
+        "Policy of appeasement",
+        "Germany was not allowed to be the member",
+        "Russia was not part of the League",
+        "Failed to maintain Peace or could not stop the world war",
+        "Could not stop acts of aggression by France and Italy"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "USA",
+          "required": false,
+          "context": "Did not join the League of Nations"
+        },
+        {
+          "type": "event",
+          "value": "Japan seized Manchuria",
+          "required": false,
+          "context": "League failed to prevent aggression"
+        },
+        {
+          "type": "event",
+          "value": "Italy attacked Ethiopia",
+          "required": false,
+          "context": "League failed to prevent aggression"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "USA did not join the League and/ countries which joined were not interested in collective security. / It was unable to stop the rise of dictatorship. / League was helpless when France attacked Lithuania. / Japan seized Manchuria. / Italy attacked Ethiopia and Hitler attacked Czechoslovakia and annexed Austria. / In every crisis, the countries either defied or ignored the League. / It did not have an army of its own. / An economic sanction against aggressor nation was of no use as the member states were not willing to apply the sanctions which affected the economy. / Countries lost faith in the League. / Countries entered into mutual political and military alliances./ Policy of appeasement./ Germany was not allowed to be the member./ Russia was not part of the League./ Failed to maintain Peace or could not stop the world war./ Could not stop acts of aggression by France and Italy. (Any four)",
+      "model_answer": "Four reasons for the failure of the League of Nations were that the USA never joined it, weakening its authority from the start; it had no army of its own with which to enforce its decisions; economic sanctions against aggressor states proved useless since member states were unwilling to apply them at cost to their own economies; and it stood helpless as Japan seized Manchuria and Italy attacked Ethiopia.",
+      "examiner_comment": "Majority of candidates could answer this question correctly, while some candidates wrote 'generalised answers' instead of 'specific points to explain the failure of the League of Nations'.",
+      "teacher_suggestion": "Encourage students to cite specific instances and reasons for failures, and avoid generalised responses. Discuss the League of Nations with reference to its formation, objectives, and failure to prevent aggression by rising powers such as Germany and Japan. Link it to the Second World War by explaining how the League's inefficacy and the breakdown of peace efforts contributed to the rise of totalitarian regimes.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2025-sb-q10-i",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "UN General Assembly Composition",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The organs and the agencies of the United Nation Organisation work towards the development of the world. With reference to this answer the following questions:",
+      "question_number": "10(i)",
+      "question_text": "What is the composition of the General Assembly?",
+      "total_marks": 3,
+      "key_points": [
+        "All members of the United Nations are members of the General Assembly",
+        "Each state has five representatives in the General Assembly",
+        "Each state has only one vote",
+        "It is a Parliament of Nations",
+        "Assembly elects a new President",
+        "21 Vice Presidents",
+        "Chairman of six main committees",
+        "The Presidency rotates each year among five groups of states",
+        "Decisions are taken by 2/3 majority",
+        "The members meet once in a year",
+        "Special sessions can be called"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "5",
+          "required": false,
+          "context": "Representatives per state in the General Assembly"
+        },
+        {
+          "type": "number",
+          "value": "21",
+          "required": false,
+          "context": "Number of Vice Presidents"
+        },
+        {
+          "type": "fraction",
+          "value": "2/3",
+          "required": false,
+          "context": "Majority required for decisions"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Composition of General Assembly\n- All members of the United Nations are members of the General Assembly.\n- Each state has five representatives in the General Assembly.\n- Each state has only one vote.\n- It is a Parliament of Nations.\n- Assembly elects a new President.\n- 21 Vice Presidents.\n- Chairman of six main committees.\n- The Presidency rotates each year among five groups of states.\n- Decisions are taken by 2/3 majority.\n- The members meet once in a year.\n- Special sessions can be called. (Any three)",
+      "model_answer": "The General Assembly is composed of all member states of the United Nations, each of which may send up to five representatives but has only one vote. It is often called the 'Parliament of Nations,' and it elects a new President each year, with the Presidency rotating among five groups of states.",
+      "examiner_comment": "This question was well attempted by most of the candidates, but some candidates were confused between 'the composition of the Security Council' and 'the General Assembly'.",
+      "teacher_suggestion": "For the conceptual clarity of the students, train them to prepare a chart reflecting comparative differences between the composition of the General Assembly, Security Council, and International Court of Justice.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sb-q10-ii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "International Court of Justice",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The organs and the agencies of the United Nation Organisation work towards the development of the world. With reference to this answer the following questions:",
+      "question_number": "10(ii)",
+      "question_text": "Mention any three functions of the International Court of Justice.",
+      "total_marks": 3,
+      "key_points": [
+        "Advisory opinion on legal matters to the organs of special agencies of the UN",
+        "Decides disputes between member states when referred",
+        "Disputes concerning interpretation of international law",
+        "Decides the compensation to be paid in case of breach of contract",
+        "Codification of International Law",
+        "Disputes regarding treaties signed between countries",
+        "Peaceful settlements of Disputes",
+        "Decides cases based on International Law",
+        "Legal advice is available only for member states"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Three functions of the International Court of Justice:\n- Advisory opinion on legal matters to the organs of special agencies of the UN.\n- Decides disputes between member states when referred.\n- Disputes concerning interpretation of international law.\n- Decides the compensation to be paid in case of breach of contract.\n- Codification of International Law.\n- Disputes regarding treaties signed between countries.\n- Peaceful settlements of Disputes.\n- Decides cases based on International Law.\n- Legal advice is available only for member states. (Any three)",
+      "model_answer": "Three functions of the International Court of Justice are to decide disputes between member states when a dispute is referred to it, to give advisory opinions on legal matters to the organs and special agencies of the UN, and to settle disputes concerning the interpretation of international law and treaties.",
+      "examiner_comment": "A large number of candidates were confused and could not mention three functions. Some candidates mentioned incomplete headings like Voluntary Jurisdiction, etc. without specifying the exact functions.",
+      "teacher_suggestion": "Train students to learn the functions in simple points instead of long explanations. Guide students to frame responses with complete and specific headings.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2025-sb-q10-iii",
+      "subject": "history_civics",
+      "year": 2025,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "UNICEF Full Form and Functions",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The organs and the agencies of the United Nation Organisation work towards the development of the world. With reference to this answer the following questions:",
+      "question_number": "10(iii)",
+      "question_text": "Give the full form of UNICEF. Mention any three of its functions.",
+      "total_marks": 4,
+      "key_points": [
+        "UNICEF – United Nations International Children's Emergency Fund or United Nations Children's Fund",
+        "Works for protection of children / survival of children / health and well being",
+        "Provides funds for training personnel / health and sanitation workers / teachers and nutritionists",
+        "Universal Child Immunisation against preventable diseases",
+        "Provides technical supplies / equipment and other aids / paper for textbooks / equipment and medicines to health clinics",
+        "Pipes and pumps to bring clean water to villages",
+        "Assists government to plan community based services / maternal and child health / nutrition / sanitation",
+        "Provides help to children and mothers in emergencies arising from natural calamities and epidemics",
+        "Makes effort to prevent diseases like Tuberculosis (TB) / malaria / eye diseases / skin diseases",
+        "Sole agency which speaks on behalf of children",
+        "Ensures children have access to education / clean water and toilets",
+        "Reduces infant mortality due to diarrhoea",
+        "Works to prevent iodine deficiency",
+        "Works for the rights of women",
+        "Reduces social inequalities based on gender, caste, ethnicity and region"
+      ],
+      "points_required": 4,
+      "points_selection": "name_plus_any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "UNICEF",
+          "required": true,
+          "context": "United Nations International Children's Emergency Fund"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "UNICEF – United Nations International Children's Emergency Fund\nOr United Nations Children's Fund\nFunctions of the UNICEF:\nWorks for protection of children./survival of children/health and well being./provides funds for training personnel./health and sanitation workers/teachers and nutritionists/Universal Child Immunisation against preventable diseases./provides technical supplies./equipment and other aids/paper for textbooks /equipment and medicines to health clinics/pipes and pumps to bring clean water to villages/assists government to plan community based services/maternal and child health/nutrition/sanitation/provides help to children and mothers in emergencies arising from natural calamities and epidemics/makes effort to prevent diseases like Tuberculosis (TB)/malaria/eye diseases/skin diseases/sole agency which speaks on behalf of children/ensures children have access to education/clean water and toilets/reduces infant mortality due to diarrhoea./works to prevent iodine deficiency/works for the rights of women/ reduces social inequalities based on gender, caste, ethnicity and region. (Any three)",
+      "model_answer": "UNICEF stands for the United Nations International Children's Emergency Fund, also known as the United Nations Children's Fund. Three of its functions are working for the protection, survival, and well-being of children; providing funds for training health and sanitation workers, teachers, and nutritionists; and ensuring children have access to education, clean water, and sanitation.",
+      "examiner_comment": "A large number of candidates attempted this question well. Most candidates wrote the functions correctly; however, a few were unable to write the full form of UNICEF correctly.",
+      "teacher_suggestion": "Advise students to learn the expansion of acronyms with correct spellings.",
+      "difficulty_flag": null
+    }
+  ]
+}

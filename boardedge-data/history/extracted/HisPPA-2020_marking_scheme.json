@@ -1,0 +1,2050 @@
+{
+  "subject": "history_civics",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "hcg_paper_1",
+  "year": 2020,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "hist-2020-sa-q1-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Indian Parliament",
+      "period": null,
+      "question_number": "1(a)",
+      "question_text": "Name the two Houses of the Indian Parliament.",
+      "total_marks": 1,
+      "key_points": [
+        "Lok Sabha and Rajya Sabha",
+        "House of People and Council of States",
+        "Upper House and Lower House"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lok Sabha",
+          "required": true,
+          "context": "one of the two Houses that must be named for full credit"
+        },
+        {
+          "type": "name",
+          "value": "Rajya Sabha",
+          "required": true,
+          "context": "the second House required to complete the answer"
+        }
+      ],
+      "scheme_text": "Lok Sabha and Rajya Sabha / House of People and Council of States / Upper House and Lower House.",
+      "model_answer": "The two Houses of the Indian Parliament are the Lok Sabha (House of the People) and the Rajya Sabha (Council of States).",
+      "examiner_comment": "Most candidates answered it correctly. Some candidates either mentioned the three constituents of the Indian Parliament or the houses of the State Legislature.",
+      "teacher_suggestion": "Explain the two sets of authority in a federal set up and the difference between the Union and the State governments.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Parliamentary Session",
+      "period": null,
+      "question_number": "1(b)",
+      "question_text": "What is meant by the term 'Session'?",
+      "total_marks": 1,
+      "key_points": [
+        "A period during which the House meets to conduct its business",
+        "Normally three sessions",
+        "The House meets at least twice",
+        "Budget or Summer Session, Winter Session and Monsoon Session"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "three sessions",
+          "required": false,
+          "context": "the standard count of parliamentary sessions in a year"
+        }
+      ],
+      "scheme_text": "The session means a period during which the House meets to conduct its business. / Normally three sessions. / The House meets at least twice. / Budget or Summer Session, Winter Session and Monsoon Session. [Any two sessions can be mentioned]",
+      "model_answer": "A Session is the period during which the House meets to conduct its business. Normally there are three sessions a year, and the House meets at least twice.",
+      "examiner_comment": "Many candidates mentioned the three terms or the gap between two sessions whereas the question sought an answer to the meaning of the term Session.",
+      "teacher_suggestion": "Discuss the meaning of the term 'Session' in detail.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Speaker of Lok Sabha",
+      "period": null,
+      "question_number": "1(c)",
+      "question_text": "How is the Speaker of the Lok Sabha elected?",
+      "total_marks": 1,
+      "key_points": [
+        "The speaker is elected by the members of the Lok Sabha",
+        "He should be one amongst the members",
+        "By simple majority of members present and voting"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "The speaker is elected by the members of the Lok Sabha / He should be one amongst the members / by simple majority of members present and voting.",
+      "model_answer": "The Speaker of the Lok Sabha is elected by the members of the Lok Sabha from amongst themselves, by a simple majority of the members present and voting.",
+      "examiner_comment": "Most candidates wrote the correct answer to this question.",
+      "teacher_suggestion": "Make it clear to the students that the Speaker is elected \"from among\" the members of the house and by simple majority.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-d",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Rajya Sabha Member Term",
+      "period": null,
+      "question_number": "1(d)",
+      "question_text": "What is the term of office of a Rajya Sabha member?",
+      "total_marks": 1,
+      "key_points": [
+        "6 years",
+        "One third of its members retire every two years"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "6 years",
+          "required": false,
+          "context": "the correct term of a Rajya Sabha member; a wrong figure loses the mark"
+        },
+        {
+          "type": "fraction",
+          "value": "one third",
+          "required": false,
+          "context": "the fraction of members retiring every two years"
+        }
+      ],
+      "scheme_text": "6 years. [One third of its members retire every two years.]",
+      "model_answer": "The term of office of a Rajya Sabha member is 6 years; one-third of its members retire every two years.",
+      "examiner_comment": "Majority of the candidates answered the question correctly. However, a few candidates either mentioned the term of office of a Lok Sabha member instead of a Rajya Sabha member or wrote that the Rajya Sabha being a permanent house, is not subjected to dissolution.",
+      "teacher_suggestion": "Apprise students that 5 years is the normal term of office of the Vice President of India and the tenure of the Lok Sabha.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-e",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Supreme Commander",
+      "period": null,
+      "question_number": "1(e)",
+      "question_text": "Who is the Supreme Commander of the Armed forces of India?",
+      "total_marks": 1,
+      "key_points": [
+        "President"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "President",
+          "required": true,
+          "context": "the sole correct office; any other answer is wrong"
+        }
+      ],
+      "scheme_text": "President",
+      "model_answer": "The President of India is the Supreme Commander of the Armed Forces.",
+      "examiner_comment": "This question was well attempted by most of the candidates.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-f",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Vice President Term",
+      "period": null,
+      "question_number": "1(f)",
+      "question_text": "What is the normal term of office of the Vice President of India?",
+      "total_marks": 1,
+      "key_points": [
+        "5 years"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "5 years",
+          "required": true,
+          "context": "the correct term of the Vice President; 6 years is the common error"
+        }
+      ],
+      "scheme_text": "5 years",
+      "model_answer": "The normal term of office of the Vice President of India is 5 years.",
+      "examiner_comment": "Most of the candidates wrote the correct answer barring a few who mentioned the normal term of office of the Vice President of India is 6 years.",
+      "teacher_suggestion": "Apprise students that 5 years is the normal term of office of the Vice President of India and the tenure of the Lok Sabha.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-g",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "PM Appointment",
+      "period": null,
+      "question_number": "1(g)",
+      "question_text": "Who appoints the Prime Minister of India?",
+      "total_marks": 1,
+      "key_points": [
+        "President"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "President",
+          "required": true,
+          "context": "the sole correct appointing authority"
+        }
+      ],
+      "scheme_text": "President",
+      "model_answer": "The President of India appoints the Prime Minister.",
+      "examiner_comment": "Majority of the candidates wrote the correct answer. However, a few candidates gave the answer as, 'Citizens of the country' or 'the Party he belongs to' or 'the Chief Justice of India'.",
+      "teacher_suggestion": "Explain the appointment procedure of the Prime Minister of India to the students in detail.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-h",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Government Policies",
+      "period": null,
+      "question_number": "1(h)",
+      "question_text": "State the body that decides the major policies of the Government.",
+      "total_marks": 1,
+      "key_points": [
+        "Cabinet",
+        "Senior ministers",
+        "Senior members of the Council of Ministers"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Cabinet",
+          "required": true,
+          "context": "the correct policy-deciding body; 'Council of Ministers' is the common error"
+        }
+      ],
+      "scheme_text": "Cabinet/senior ministers/senior members of the Council of Ministers",
+      "model_answer": "The Cabinet, consisting of the senior ministers, decides the major policies of the Government.",
+      "examiner_comment": "Most candidates wrote correct answers; however, a few wrote 'Council of Ministers'.",
+      "teacher_suggestion": "Explain to the students about the body that decides the major policies of the Government.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-i",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Writs for Fundamental Rights",
+      "period": null,
+      "question_number": "1(i)",
+      "question_text": "Name the Courts that are empowered to issue Writs for the enforcement of Fundamental Rights.",
+      "total_marks": 1,
+      "key_points": [
+        "Supreme Court",
+        "High Court"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Supreme Court",
+          "required": true,
+          "context": "one of the two writ-issuing courts required"
+        },
+        {
+          "type": "name",
+          "value": "High Court",
+          "required": true,
+          "context": "the second writ-issuing court required"
+        }
+      ],
+      "scheme_text": "Supreme Court & High Court",
+      "model_answer": "The Supreme Court and the High Courts are empowered to issue Writs for the enforcement of Fundamental Rights.",
+      "examiner_comment": "This was a well attempted question.",
+      "teacher_suggestion": "Familiarise students with the names of the Courts that are empowered to issue Writs for the enforcement of Fundamental Rights.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q1-j",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Lok Adalat Advantages",
+      "period": null,
+      "question_number": "1(j)",
+      "question_text": "Mention any one advantage of the Lok Adalat.",
+      "total_marks": 1,
+      "key_points": [
+        "Saves time/speedy justice/fast/quick",
+        "Saves money/inexpensive/cheap/economical/no court fee / the fee will be refunded if case is settled",
+        "Lessens the burdens on the other courts/reduces backlog",
+        "Works on a spirit of compromise/no ill feeling/decision is binding on both the parties",
+        "Can move application on a plain paper/can pass awards regarding those cases which are at pre-litigation stage",
+        "Decisions are final and binding/No appeal in any court against decision",
+        "Promotes social justice or justice for weaker sections"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "Advantages of the Lok Adalat: Saves time/speedy justice/fast/quick. / Saves money/inexpensive/cheap/economical/no court fee / the fee will be refunded if case is settled. / lessens the burdens on the other courts/reduces backlog. / Works on a spirit of compromise/no ill feeling/decision is binding on both the parties. / Can move application on a plain paper/can pass awards regarding those cases which are at pre-litigation stage. / Decisions are final and binding/No appeal in any court against decision / Promotes social justice or justice for weaker sections. (Any one point)",
+      "model_answer": "One advantage of the Lok Adalat is that it saves time and money, offering quick and inexpensive justice to the parties.",
+      "examiner_comment": "This question was attempted well by most candidates.",
+      "teacher_suggestion": "Discuss the advantages of the Lok Adalat. Emphasise on all points.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Bipin Chandra Pal",
+      "period": "Growth of Nationalism",
+      "question_number": "2(a)",
+      "question_text": "Mention any two contributions of Bipin Chandra Pal in promoting Nationalism.",
+      "total_marks": 2,
+      "key_points": [
+        "Role of journalist",
+        "Worked for Bengal Public Opinion",
+        "The Tribune / New India to propagate nationalism",
+        "Founder of Vande Mataram",
+        "Wrote New Economic Menace to India",
+        "Wrote Spirit of Indian Nationalism",
+        "Advocated National Education",
+        "Aroused nationalistic passions or patriotism",
+        "Wanted National Education to be the basis of the freedom movement",
+        "Opposed the Caste system/worked for social progress",
+        "Advocated widow remarriage",
+        "Educated women",
+        "Participated in several Congress Sessions",
+        "Pleaded for Arms Act to be repealed",
+        "Contributed to promote national consciousness",
+        "Played an active role in anti-partition movement",
+        "Participated in Swadeshi movement",
+        "Proposed remedies to eradicate poverty",
+        "Wanted Swadeshi and Boycott to become means of freedom",
+        "Was against only Non-Cooperation Movement / wanted more action or aggressive measures",
+        "Was called The Father of Revolutionary thought in India"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Bipin Chandra Pal",
+          "required": true,
+          "context": "the subject of the question; his specific contributions are being tested"
+        },
+        {
+          "type": "name",
+          "value": "Vande Mataram",
+          "required": false,
+          "context": "a specific journal founded by Pal, valid as a contribution point"
+        },
+        {
+          "type": "name",
+          "value": "New India",
+          "required": false,
+          "context": "a specific publication used by Pal to propagate nationalism"
+        }
+      ],
+      "scheme_text": "Any two contributions of Bipin Chandra Pal: Role of journalist / worked for Bengal Public Opinion. / The Tribune / New India to propagate nationalism. / Founder of Vande Mataram. / Wrote New Economic Menace to India. / Wrote Spirit of Indian Nationalism. / Advocated National Education. / aroused nationalistic passions or patriotism. / wanted National Education to be the basis of the freedom movement. / Opposed the Caste system/worked for social progress. / Advocated widow remarriage. / Educated women. / participated in several Congress Sessions. / Pleaded for Arms Act to be repealed. / contributed to promote national consciousness. / played an active role in anti-partition movement. / participated in Swadeshi movement. / proposed remedies to eradicate poverty. / wanted Swadeshi and Boycott to become means of freedom. / was against only Non-Cooperation Movement / wanted more action or aggressive measures. / Was called The Father of Revolutionary thought in India. (Any two points)",
+      "model_answer": "Bipin Chandra Pal worked as a journalist, writing for publications such as Bengal Public Opinion and The Tribune to spread nationalist ideas, and he founded Vande Mataram to propagate nationalism.",
+      "examiner_comment": "Majority of the candidates mentioned the contributions of Bipin Chandra Pal in promoting Nationalism correctly. However, a few got confused with the points of contribution of other nationalists.",
+      "teacher_suggestion": "Prepare a classification chart to teach students about the contributions of the 6 nationalists. Instruct them to specify the contributions of each of the nationalists under subheadings. Thus, a comparative study of the contribution of the nationalist leaders would be available for ready reference.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Early Nationalists Methods",
+      "period": "Growth of Nationalism",
+      "question_number": "2(b)",
+      "question_text": "State any two methods adopted by the Early Nationalists in the National Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Held meetings",
+        "Speeches were made",
+        "Made use of the press, newspapers and journals",
+        "Criticized government policies",
+        "Sent memorandums",
+        "Sent petitions to government officials and the British parliament",
+        "Petitions, prayers, and protest through constitutional methods / 3Ps",
+        "Peaceful propaganda",
+        "Adopted constitutional means",
+        "Held discussions",
+        "Held processions",
+        "Passed resolutions",
+        "United public opinion",
+        "Sent deputations and delegations",
+        "Distribution of leaflets and pamphlets"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "scheme_text": "Held meetings / Speeches were made / Made use of the press, newspapers and journals / Criticized government policies. / Sent memorandums / sent petitions to government officials and the British parliament. / Petitions, prayers, and protest through constitutional methods. / 3Ps / peaceful propaganda / adopted constitutional means / held discussions / held processions / passed resolutions / United public opinion / sent deputations and delegations / distribution of leaflets and pamphlets. (Any two points)",
+      "model_answer": "The Early Nationalists held meetings and made speeches to voice their demands, and they made use of the press, newspapers and journals to criticise government policies and mobilise public opinion.",
+      "examiner_comment": "This subpart was well attempted by most candidates. However, a few wrote 'objectives' or got confused with the methods adopted by the Aggressive Nationalists instead of methods adopted by Early Nationalists.",
+      "teacher_suggestion": "Clarify the distinction between the Early Nationalists and Assertive Nationalists in their methods, objectives and beliefs. A classification chart with 4 points of differences between the two would help students at a glance, to note the differences.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Partition of Bengal",
+      "period": "Growth of Nationalism",
+      "question_number": "2(c)",
+      "question_text": "Why is October 16, 1905 regarded as an important day in the history of the Indian National Movement?",
+      "total_marks": 2,
+      "key_points": [
+        "Partition of Bengal led to communal disharmony",
+        "Congress felt it was a scheme of divide and rule policy"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "October 16, 1905",
+          "required": true,
+          "context": "the specific date whose significance the question asks about"
+        },
+        {
+          "type": "event",
+          "value": "Partition of Bengal",
+          "required": true,
+          "context": "the event marked on that date; the core of the answer"
+        }
+      ],
+      "scheme_text": "Partition of Bengal led to communal disharmony, Congress felt it was a scheme of divide and rule policy.",
+      "model_answer": "The Partition of Bengal, effected on this date, led to communal disharmony between Hindus and Muslims, and the Congress regarded it as a deliberate scheme of divide-and-rule by the British.",
+      "examiner_comment": "This subpart was well attempted by most candidates.",
+      "teacher_suggestion": "Explain the Partition of Bengal as a chronological event.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-d",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Khilafat Movement Leaders",
+      "period": "Gandhian Movements",
+      "question_number": "2(d)",
+      "question_text": "Name any two leaders of the Khilafat Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Ali brothers",
+        "Mohammad Ali",
+        "Shaukat Ali"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Mohammad Ali",
+          "required": true,
+          "context": "one of the two Ali brothers who led the Khilafat Movement"
+        },
+        {
+          "type": "name",
+          "value": "Shaukat Ali",
+          "required": true,
+          "context": "the second Khilafat leader required"
+        }
+      ],
+      "scheme_text": "Ali brothers -/Mohammad Ali and Shaukat Ali. (Any two names)",
+      "model_answer": "Two leaders of the Khilafat Movement were the Ali brothers — Mohammad Ali and Shaukat Ali.",
+      "examiner_comment": "This part was attempted well by majority of the candidates.",
+      "teacher_suggestion": "Discuss the Khilafat movement, including the names of the two main leaders.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-e",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Non-Cooperation Causes",
+      "period": "Gandhian Movements",
+      "question_number": "2(e)",
+      "question_text": "State any two causes for the Non-Cooperation Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Khilafat movement",
+        "Rowlatt Act/Black Act or Black Bill",
+        "Jallianwala Bagh tragedy/Massacre at Amritsar"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Khilafat movement",
+          "required": false,
+          "context": "one accepted cause of the Non-Cooperation Movement"
+        },
+        {
+          "type": "event",
+          "value": "Rowlatt Act",
+          "required": false,
+          "context": "an accepted cause of the Non-Cooperation Movement"
+        },
+        {
+          "type": "event",
+          "value": "Jallianwala Bagh tragedy",
+          "required": false,
+          "context": "an accepted cause of the Non-Cooperation Movement"
+        }
+      ],
+      "scheme_text": "Khilafat movement. / Rowlatt Act/Black Act or Black Bill. / Jallianwala Bagh tragedy/Massacre at Amritsar. (Any two points)",
+      "model_answer": "Two causes of the Non-Cooperation Movement were the Khilafat Movement and the Rowlatt Act, also known as the Black Act.",
+      "examiner_comment": "Some candidates got confused and mixed up the causes of all mass movements by Mahatma Gandhi.",
+      "teacher_suggestion": "Emphasise on the causes, course, and consequences of the three important Gandhian events.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-f",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Forward Bloc Objectives",
+      "period": "Forward Bloc and INA",
+      "question_number": "2(f)",
+      "question_text": "Mention any two objectives of the Forward Bloc.",
+      "total_marks": 2,
+      "key_points": [
+        "Liberation of India /freedom of India",
+        "With the help of youth workers, peasants and radical organizations",
+        "Reorganization of agriculture and industry on socialist lines",
+        "Abolition of the zamindari system",
+        "Introduction of a new monetary and credit system",
+        "Establishment of a socialist society",
+        "Social ownership and control of both production and distribution"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Forward Bloc",
+          "required": true,
+          "context": "the organisation whose objectives the question asks for"
+        }
+      ],
+      "scheme_text": "Objectives of Forward Bloc: Liberation of India /freedom of India / With the help of youth workers, peasants and radical organizations / Reorganization of agriculture and industry on socialist lines / Abolition of the zamindari system / Introduction of a new monetary and credit system / Establishment of a socialist society / Social ownership and control of both production and distribution (Any two points)",
+      "model_answer": "Two objectives of the Forward Bloc were the liberation of India with the support of workers, peasants and youth, and the reorganisation of agriculture and industry on socialist lines.",
+      "examiner_comment": "Many candidates confused the objectives of the Forward Bloc with the objectives of the INA. A few mentioned only one objective.",
+      "teacher_suggestion": "Explain the objectives of INA and the Forward Bloc, clearly distinguishing between the two.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-g",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Imperialism as WWI Cause",
+      "period": "World War I",
+      "question_number": "2(g)",
+      "question_text": "What was meant by the term 'Imperialism', as a cause for World War I?",
+      "total_marks": 2,
+      "key_points": [
+        "A system by which a powerful nation used to establish its control over another country",
+        "By political pressure",
+        "Infiltration and annexation",
+        "By outright wars",
+        "Supremacy over weaker countries",
+        "Establish colonies",
+        "Mad scramble among European nations for new territories in Asia and Africa",
+        "Morocco Crisis/Any other example of conquests"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Morocco Crisis",
+          "required": false,
+          "context": "a valid example of imperial conquest illustrating the answer"
+        }
+      ],
+      "scheme_text": "A system by which a powerful nation used to establish its control over another country / By political pressure / Infiltration and annexation / By outright wars. / Supremacy over weaker countries / Establish colonies / Mad scramble among European nations for new territories in Asia and Africa / Morocco Crisis/Any other example of conquests. (Any one point)",
+      "model_answer": "Imperialism refers to a system by which a powerful nation established control over another country, through political pressure, infiltration, annexation, or outright war, in order to gain supremacy over weaker nations and establish colonies — as seen in the scramble for territories in Asia and Africa.",
+      "examiner_comment": "Many candidates confused 'imperialism' with 'aggressive nationalism'. A large number of candidates gave the meaning as \"extreme love for one's country and hatred for other.\"",
+      "teacher_suggestion": "Clarify Imperialism, its meaning and significance with examples for better comprehension.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-h",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Rise of Fascism",
+      "period": "Rise of Dictatorships",
+      "question_number": "2(h)",
+      "question_text": "Give any two reasons for the rise of Fascism.",
+      "total_marks": 2,
+      "key_points": [
+        "Discontentment after the Treaty of Versailles/Italy got nothing from the spoils of the war",
+        "Economic crisis",
+        "Political instability/Inefficient government/weak government/failure of democracy",
+        "Class conflicts",
+        "Threat of socialism or communism",
+        "Failure of the league of nations",
+        "Leadership provided by Mussolini"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Mussolini",
+          "required": false,
+          "context": "the leader whose emergence is a listed reason for the rise of Fascism"
+        },
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles",
+          "required": false,
+          "context": "dissatisfaction with it is a listed reason for the rise of Fascism"
+        }
+      ],
+      "scheme_text": "Rise of fascism: Discontentment after the Treaty of Versailles/Italy got nothing from the spoils of the war / Economic crisis / Political instability/Inefficient government/weak government/failure of democracy / Class conflicts / Threat of socialism or communism / Failure of the league of nations / Leadership provided by Mussolini. (Any two points)",
+      "model_answer": "Two reasons for the rise of Fascism were the economic crisis facing Italy after the First World War, and the political instability caused by weak and inefficient governments.",
+      "examiner_comment": "Most candidates answer this question correctly. However, a few did not write the reasons for the rise of Fascism.",
+      "teacher_suggestion": "Explain the meaning of Fascism and Nazism as well as the reasons for the rise of Fascism in Italy.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-i",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "International Organisations",
+      "period": "United Nations",
+      "question_number": "2(i)",
+      "question_text": "Name the two International Organisations that were formed, one as a consequence of World War I and the other after World War II.",
+      "total_marks": 2,
+      "key_points": [
+        "League of Nations",
+        "United Nations Organisation/UNO/UN"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "League of Nations",
+          "required": true,
+          "context": "the body formed after World War I; chronological order matters"
+        },
+        {
+          "type": "name",
+          "value": "United Nations",
+          "required": true,
+          "context": "the body formed after World War II; chronological order matters"
+        }
+      ],
+      "scheme_text": "League of Nations / United Nations Organisation/UNO/UN",
+      "model_answer": "The League of Nations was formed as a consequence of the First World War, and the United Nations Organisation was formed after the Second World War.",
+      "examiner_comment": "This was a well attempted question, though a few candidates wrote names of the two International Organisations that were formed in an incorrect chronological order, e.g.: United Nations after World War I, League of Nations after World War II.",
+      "teacher_suggestion": "Advise students to learn the expansion of acronyms with correct spellings.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sa-q2-j",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "UNICEF and WHO Full Forms",
+      "period": "United Nations",
+      "question_number": "2(j)",
+      "question_text": "Give the full form of UNICEF and WHO.",
+      "total_marks": 2,
+      "key_points": [
+        "UNICEF: United Nations International Children's Emergency Fund",
+        "WHO: World Health Organisation"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "UNICEF",
+          "required": true,
+          "context": "one of the two acronyms whose full form is being tested"
+        },
+        {
+          "type": "name",
+          "value": "WHO",
+          "required": true,
+          "context": "the second acronym whose full form is being tested"
+        }
+      ],
+      "scheme_text": "UNICEF: United Nations International Children's Emergency Fund / WHO: World Health Organisation",
+      "model_answer": "UNICEF stands for the United Nations International Children's Emergency Fund, and WHO stands for the World Health Organisation.",
+      "examiner_comment": "Most candidates attempted this part well. A few candidates misspelled words.",
+      "teacher_suggestion": "Advise students to learn the expansion of acronyms with correct spellings.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q3-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Legislative Powers of Parliament",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Parliament",
+        "process": "Legislation"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Legislature, answer the following questions:",
+      "question_number": "3(a)",
+      "question_text": "Explain any three Legislative powers of the Union Parliament.",
+      "total_marks": 3,
+      "key_points": [
+        "To make laws on the union list /97 subjects",
+        "Matters in the concurrent list/47 subjects",
+        "Residuary powers/matters not mentioned in 3 lists",
+        "Matters in the state list",
+        "During an emergency",
+        "Approved by 2/3 majority by the Rajya Sabha",
+        "When two or more states ask",
+        "President's Rule",
+        "Ordinances must be approved",
+        "Powers during emergency/67 subjects in state list"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "97 subjects",
+          "required": false,
+          "context": "the count of Union List subjects; a specific numeric anchor"
+        },
+        {
+          "type": "number",
+          "value": "47 subjects",
+          "required": false,
+          "context": "the count of Concurrent List subjects; a specific numeric anchor"
+        },
+        {
+          "type": "fraction",
+          "value": "2/3 majority",
+          "required": false,
+          "context": "the Rajya Sabha majority enabling Parliament to legislate on state subjects"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Legislative powers of the union parliament: To make laws on the union list /97 subjects / Matters in the concurrent list/47 subjects / Residuary powers/matters not mentioned in 3 lists / Matters in the state list / during an emergency / approved by 2/3 majority by the Rajya Sabha / when two or more states ask / President's Rule / Ordinances must be approved / Powers during emergency/67 subjects in state list. (Any three points)",
+      "model_answer": "The Union Parliament can make laws on subjects in the Union List, on subjects in the Concurrent List, and it also holds residuary powers over matters not mentioned in any of the three lists.",
+      "examiner_comment": "Most candidates wrote the three Legislative powers of the Union Parliament correctly. However, a few confused Legislative powers with Executive powers.",
+      "teacher_suggestion": "Explain the meaning of the words Legislation, Legislative and Executive powers of the Parliament in detail to students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q3-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Exclusive Powers of Lok Sabha",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Lok Sabha",
+        "process": "Exclusive Powers"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Legislature, answer the following questions:",
+      "question_number": "3(b)",
+      "question_text": "State any three exclusive powers of the Lok Sabha that is not enjoyed by the other House.",
+      "total_marks": 3,
+      "key_points": [
+        "Motions of No-Confidence against the government can only be introduced and passed in the Lok Sabha/answerable to the Lok Sabha only/ enjoy power only until they enjoy the trust of the house",
+        "Money bills can be introduced only in the Lok Sabha and the Rajya Sabha cannot reject or amend it /budget is passed/controls the national purse/has complete control over finance",
+        "In case of a deadlock between the two houses, the will of the Lok Sabha prevails due to its higher numerical strength",
+        "Can pass an Adjournment Motion"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lok Sabha",
+          "required": false,
+          "context": "the House whose exclusive powers are being tested"
+        },
+        {
+          "type": "name",
+          "value": "Rajya Sabha",
+          "required": false,
+          "context": "the contrasting House that does not enjoy these powers"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Motions of No-Confidence against the government can only be introduced and passed in the Lok Sabha/answerable to the Lok Sabha only/ enjoy power only until they enjoy the trust of the house / Money bills can be introduced only in the Lok Sabha and the Rajya Sabha cannot reject or amend it /budget is passed/controls the national purse/has complete control over finance / In case of a deadlock between the two houses, the will of the Lok Sabha prevails due to its higher numerical strength. / Can pass an Adjournment Motion. (Any three points)",
+      "model_answer": "Motions of No-Confidence against the government can only be introduced and passed in the Lok Sabha. Money Bills can be introduced only in the Lok Sabha, and the Rajya Sabha cannot reject or amend them. In case of a deadlock between the two Houses, the will of the Lok Sabha prevails owing to its higher numerical strength.",
+      "examiner_comment": "Majority of the candidates wrote the correct answer. A few candidates wrote about the general powers and got confused between the powers of the Lok Sabha and the Rajya Sabha. A few could not understand the word 'exclusive'.",
+      "teacher_suggestion": "Clarify the word 'exclusive' and explain the exclusive powers of both the Lok Sabha and the Rajya Sabha thoroughly to the students, giving reasons.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q3-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Functions of the Speaker",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Lok Sabha",
+        "process": "Speaker Functions"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Legislature, answer the following questions:",
+      "question_number": "3(c)",
+      "question_text": "List any four functions of the Speaker of the Lok Sabha.",
+      "total_marks": 4,
+      "key_points": [
+        "Regulate the proceedings of the house",
+        "Certifies a bill as money bill",
+        "Maintains discipline in the house",
+        "Puts issues to vote and announces results",
+        "Does not vote in the house except when there is a tie /casting vote",
+        "Presides over the joint session of the parliament",
+        "Presides over meetings",
+        "Recognises a member on the floor of the house",
+        "Asks a member to yield the floor",
+        "Preserves order in the house",
+        "Expunges unparliamentary words",
+        "Receives all petitions",
+        "Decides the order of speeches",
+        "Decides which questions to admit",
+        "Communicates the decision of the house to the authorities",
+        "Can adjourn the house",
+        "Decides whether there is any breach of privilege or contempt of house",
+        "Regulates the press and visitors",
+        "Appoints chairmen of various parliamentary committees",
+        "Disqualifies members under anti defection law",
+        "All bills are signed by him",
+        "Interprets the rules of the house"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Functions of the Speaker of Lok Sabha: Regulate the proceedings of the house / Certifies a bill as money bill / Maintains discipline in the house / Puts issues to vote and announces results / Does not vote in the house except when there is a tie /casting vote / Presides over the joint session of the parliament. / presides over meetings / recognises a member on the floor of the house / asks a member to yield the floor / preserves order in the house / expunges unparliamentary words / receives all petitions / decides the order of speeches / decides which questions to admit / communicates the decision of the house to the authorities / can adjourn the house / decides whether there is any breach of privilege or contempt of house / regulates the press and visitors / appoints chairmen of various parliamentary committees / disqualifies members under anti defection law / all bills are signed by him / interprets the rules of the house. (Any four points)",
+      "model_answer": "The Speaker regulates the proceedings of the House, certifies a bill as a Money Bill, maintains discipline in the House, and puts issues to vote and announces the results.",
+      "examiner_comment": "This question was answered well by the candidates in general.",
+      "teacher_suggestion": "Teach the general powers of the Speaker to the students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q4-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Election of the President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "President",
+        "process": "Election"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the Indian Union is vested in the President. In this context, answer the following:",
+      "question_number": "4(a)",
+      "question_text": "How is the President of India elected? State the composition of the Electoral College that elects him.",
+      "total_marks": 3,
+      "key_points": [
+        "President is elected indirectly by the members of an electoral college /single transferable vote/proportional representation",
+        "Elected members of both houses [LS and RS] of parliament",
+        "Elected members of the legislative assemblies of the states including the national capital territory of Delhi and the union territory of Puducherry",
+        "OR MPs and MLAs"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Electoral College",
+          "required": true,
+          "context": "the body electing the President; central to the answer"
+        },
+        {
+          "type": "place",
+          "value": "Delhi",
+          "required": false,
+          "context": "the National Capital Territory whose MLAs are part of the Electoral College"
+        },
+        {
+          "type": "place",
+          "value": "Puducherry",
+          "required": false,
+          "context": "the Union Territory whose MLAs are part of the Electoral College"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "1. President is elected indirectly by the members of an electoral college. /single transferable vote/proportional representation. 2. Composition of Electoral college: Elected members of both houses [LS and RS] of parliament / Elected members of the legislative assemblies of the states including the national capital territory of Delhi and the union territory of Puducherry. / OR MPs and MLAs",
+      "model_answer": "The President of India is elected indirectly by the members of an Electoral College, through a single transferable vote and proportional representation. This College is composed of the elected members of both Houses of Parliament and the elected members of the Legislative Assemblies of the States, including the National Capital Territory of Delhi and the Union Territory of Puducherry.",
+      "examiner_comment": "This subpart was attempted well by most candidates. Some wrote that the President is elected by Direct elections. Some candidates did not give the composition of the Electoral College correctly.",
+      "teacher_suggestion": "Identify technical terms such as Electoral College, etc. to be used in Civics and explain the meaning of these terms to the students in detail.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q4-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Discretionary Powers of President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "President",
+        "process": "Discretionary Powers"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the Indian Union is vested in the President. In this context, answer the following:",
+      "question_number": "4(b)",
+      "question_text": "Explain any three Discretionary Powers of the President.",
+      "total_marks": 3,
+      "key_points": [
+        "Where he uses his wisdom and judgement",
+        "Dissolution of Lok Sabha during constitutional crisis",
+        "Explore possibilities of alternative government at the centre",
+        "Dismissal of ministers when the government collapses due to No confidence",
+        "Appointment of the PM where no single party commands",
+        "Appointment of PM in case of death",
+        "May withhold assent to an ordinary bill or send it back for reconsideration",
+        "No time limit within which he is to declare his assent/refusal of bill"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "The discretionary powers: Where he uses his wisdom and judgement. / Dissolution of Lok Sabha during constitutional crisis / Explore possibilities of alternative government at the centre / Dismissal of ministers when the government collapses due to No confidence. / Appointment of the PM where no single party commands / Appointment of PM in case of death / May withhold assent to an ordinary bill or send it back for reconsideration / No time limit within which he is to declare his assent/refusal of bill. (Any three points)",
+      "model_answer": "The President's discretionary powers include the dissolution of the Lok Sabha during a constitutional crisis, the appointment of a Prime Minister when no single party commands a majority, and the power to withhold assent to an ordinary bill or send it back for reconsideration.",
+      "examiner_comment": "Many candidates did not write the Discretionary Powers of the President correctly.",
+      "teacher_suggestion": "Explain the meaning of the term 'Discretion', before explaining the powers of the President, under this category. Teach the discretionary powers of the President with instances.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2020-sb-q4-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Executive Powers of President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "President",
+        "process": "Executive Powers"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Executive Power of the Indian Union is vested in the President. In this context, answer the following:",
+      "question_number": "4(c)",
+      "question_text": "Mention any four Executive Powers of the President.",
+      "total_marks": 4,
+      "key_points": [
+        "Head of the Union administration/administration of the country runs in his house/All orders are issued in his name",
+        "Appointment of officials of the state",
+        "Appoints the Attorney General, Auditor General, Ambassador, Members of UPSC, Judges of High Court and Supreme Court, Members of the Planning Commission, Election Commissioner, Governors of State, PM and the Council of Ministers",
+        "Control over state governments during emergency",
+        "And Union territories and border areas/exercises power through an administrator appointed by the President"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Attorney General",
+          "required": false,
+          "context": "a valid example of an official appointed by the President"
+        },
+        {
+          "type": "name",
+          "value": "UPSC",
+          "required": false,
+          "context": "a valid example of a body whose members the President appoints"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "The Executive powers: Head of the Union administration/administration of the country runs in his house/All orders are issued in his name / Appointment of officials of the state / Appoints the Attorney General, Auditor General, Ambassador, Members of UPSC, Judges of High Court and Supreme Court, Members of the Planning Commission, Election Commissioner, Governors of State, PM and the Council of Ministers. / Control over state governments during emergency / And Union territories and border areas/exercises power through an administrator appointed by the President. (Any four points)",
+      "model_answer": "The President's Executive powers include heading the Union administration, with all orders issued in his name; appointing officials such as the Attorney General, the Auditor General and the judges of the High Courts and Supreme Court; and exercising control over State governments during an emergency and over Union Territories through an administrator.",
+      "examiner_comment": "A large number of candidates answered this part correctly. However, some candidates mixed up the Legislative and the Executive powers. A few candidates confused the Executive powers with the Emergency powers of the President.",
+      "teacher_suggestion": "Clarify the distinction between the Executive powers and Legislative powers of the President.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q5-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Original Jurisdiction of SC",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Supreme Court",
+        "process": "Original Jurisdiction"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "With reference to the Supreme Court as the Apex Court in our Indian Judiciary, explain the following:",
+      "question_number": "5(a)",
+      "question_text": "Any three cases that come under the Original Jurisdiction of the Supreme Court.",
+      "total_marks": 3,
+      "key_points": [
+        "Centre state",
+        "Interstate disputes",
+        "Union and state on one side and other states on other side",
+        "Protection of Fundamental rights",
+        "Transfer of cases from lower courts",
+        "Interpretation of constitution"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Original Jurisdiction: Centre state / interstate disputes / Union and state on one side and other states on other side / Protection of Fundamental rights / Transfer of cases from lower courts / Interpretation of constitution (Any three points)",
+      "model_answer": "The Original Jurisdiction of the Supreme Court covers disputes between the Centre and a State, disputes between two or more States, and cases involving the enforcement of Fundamental Rights.",
+      "examiner_comment": "Most candidates attempted this part of the question well. However, a few got confused with the Appellate and other jurisdictions.",
+      "teacher_suggestion": "Teach students the meaning of the Original Jurisdiction of the Supreme court.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q5-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Judicial Review",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Supreme Court",
+        "process": "Judicial Review"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "With reference to the Supreme Court as the Apex Court in our Indian Judiciary, explain the following:",
+      "question_number": "5(b)",
+      "question_text": "Power of Judicial Review.",
+      "total_marks": 3,
+      "key_points": [
+        "The Supreme Court is the interpreter of the Constitution",
+        "It has the power to review laws passed by the union or state legislatures or executive",
+        "The Supreme Court can declare a law ultra vires or null and void, if it is against the letter and spirit of the Constitution or contravenes any provision of the constitution"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Supreme Court",
+          "required": false,
+          "context": "the court exercising the power of judicial review"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Power of Judicial Review: The Supreme Court is the interpreter of the Constitution. / It has the power to review laws passed by the union or state legislatures or executive. / The Supreme Court can declare a law ultra vires or null and void, if it is against the letter and spirit of the Constitution or contravenes any provision of the constitution.",
+      "model_answer": "The Supreme Court, as the interpreter of the Constitution, has the power to review laws passed by the Union or State legislatures or the executive, and it can declare a law ultra vires — null and void — if it contravenes the letter or spirit of the Constitution.",
+      "examiner_comment": "Many candidates confused Judicial Review with Revisory Jurisdiction and hence could not explain the 'Power of the Judicial Review'.",
+      "teacher_suggestion": "Spell out the meaning of the term 'Judicial Review' and explain how this power of the Judiciary can invalidate both the Executive and the Legislature when they go against the Constitution.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2020-sb-q5-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Court of Record",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Supreme Court",
+        "process": "Court of Record"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "With reference to the Supreme Court as the Apex Court in our Indian Judiciary, explain the following:",
+      "question_number": "5(c)",
+      "question_text": "Supreme Court as a Court of Record.",
+      "total_marks": 4,
+      "key_points": [
+        "Its judgement and orders are preserved as a record",
+        "This can be produced in any court as precedents",
+        "Future references",
+        "Testimony",
+        "If a person commits a contempt of court, the court has the authority to punish contempt",
+        "The Supreme Court acts as the Guardian of the constitution"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "The court of record has two implications: Its judgement and orders are preserved as a record. / This can be produced in any court as precedents. / future references / testimony / If a person commits a contempt of court, the court has the authority to punish contempt. / The Supreme Court acts as the Guardian of the constitution. (Any two points)",
+      "model_answer": "As a Court of Record, the Supreme Court's judgements and orders are permanently preserved as a record and can be produced in any court as precedents. In addition, if any person commits a contempt of court, the Supreme Court has the authority to punish that contempt, upholding its position as the Guardian of the Constitution.",
+      "examiner_comment": "This was a well attempted question.",
+      "teacher_suggestion": "While explaining Supreme Court as a Court of Record, lay stress on the keywords as 'records' and 'future reference'.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q6-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Economic Causes of 1857 Revolt",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "By 1857, conditions were ripe for a mass uprising in the form of the Great Revolt of 1857. In this context, explain the following:",
+      "question_number": "6(a)",
+      "question_text": "Any three Economic causes for the revolt of 1857.",
+      "total_marks": 3,
+      "key_points": [
+        "Exploitation of economic resources",
+        "Drain of wealth",
+        "Decay of cottage industries and handicrafts",
+        "Economic decline of peasantry",
+        "Growing unemployment",
+        "Inhuman treatment of indigo cultivators",
+        "Poverty and famines",
+        "Decline of landed aristocracy",
+        "Heavy duties on Indian goods like silk and cotton",
+        "British imports with no nominal duty",
+        "Impoverishment of peasants/different revenue system",
+        "India was reduced to an agricultural colony",
+        "Annexation of rent-free lands and estates/Inam Commission",
+        "Drain of wealth to England",
+        "Spinning and weaving became extinct",
+        "Loss of livelihood"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "1857",
+          "required": false,
+          "context": "the year of the Revolt anchoring the question"
+        },
+        {
+          "type": "name",
+          "value": "Inam Commission",
+          "required": false,
+          "context": "a specific instrument of rent-free land annexation, a valid economic cause"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Exploitation of economic resources / Drain of wealth / Decay of cottage industries and handicrafts / Economic decline of peasantry / Growing unemployment / Inhuman treatment of indigo cultivators / Poverty and famines / Decline of landed aristocracy / Heavy duties on Indian goods like silk and cotton / British imports with no nominal duty / Impoverishment of peasants/different revenue system / India was reduced to an agricultural colony / Annexation of rent-free lands and estates/Inam Commission / Drain of wealth to England / Spinning and weaving became extinct / Loss of livelihood. (Any three points)",
+      "model_answer": "Economic causes of the Revolt of 1857 included the exploitation of India's economic resources and the drain of wealth to Britain, the decay of cottage industries and handicrafts due to British imports, and the growing poverty and famines that impoverished the peasantry.",
+      "examiner_comment": "The subparts (a), (b) and (c) of this question were attempted well by most of the candidates.",
+      "teacher_suggestion": "Explain the causes of the Revolt of 1857 under sub-headings such as, Economic causes, Military causes, and Political causes.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q6-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Military Causes of 1857 Revolt",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "By 1857, conditions were ripe for a mass uprising in the form of the Great Revolt of 1857. In this context, explain the following:",
+      "question_number": "6(b)",
+      "question_text": "Any three Military causes.",
+      "total_marks": 3,
+      "key_points": [
+        "Ill treatment of Indian soldiers/treated as servants/social distance between officers and Indian soldiers",
+        "General service enlistment act",
+        "Large proportion of Indians in the British army",
+        "Bleak prospects of promotions",
+        "Deprivation of allowances",
+        "Faulty distribution of troops",
+        "Poor performance of British troops",
+        "Lower salaries",
+        "Introduction of Enfield Rifles",
+        "Loss of prestige in Afghan War",
+        "Disbanding of troops [Awadh]"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Enfield Rifles",
+          "required": false,
+          "context": "the greased-cartridge rifle, a key military cause"
+        },
+        {
+          "type": "event",
+          "value": "Afghan War",
+          "required": false,
+          "context": "loss of prestige here is a listed military cause"
+        },
+        {
+          "type": "place",
+          "value": "Awadh",
+          "required": false,
+          "context": "disbanding of its troops is a listed military cause"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Ill treatment of Indian soldiers/treated as servants/social distance between officers and Indian soldiers / General service enlistment act / Large proportion of Indians in the British army / Bleak prospects of promotions / Deprivation of allowances / Faulty distribution of troops / Poor performance of British troops. / Lower salaries / Introduction of Enfield Rifles / Loss of prestige in Afghan War / Disbanding of troops [Awadh]. (Any three points)",
+      "model_answer": "Military causes included the ill-treatment of Indian soldiers, who were treated as servants with a wide social distance from their British officers; the bleak prospects of promotion for Indian soldiers; and the introduction of the Enfield rifles, whose greased cartridges caused deep resentment.",
+      "examiner_comment": "The subparts (a), (b) and (c) of this question were attempted well by most of the candidates.",
+      "teacher_suggestion": "Explain the causes of the Revolt of 1857 under sub-headings such as, Economic causes, Military causes, and Political causes.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q6-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Political Causes of 1857 Revolt",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "By 1857, conditions were ripe for a mass uprising in the form of the Great Revolt of 1857. In this context, explain the following:",
+      "question_number": "6(c)",
+      "question_text": "Any three Political causes of the revolt.",
+      "total_marks": 4,
+      "key_points": [
+        "Policy of expansion",
+        "Subsidiary Alliance",
+        "By outright wars/Sind/Punjab/Buxar/Anglo Maratha/Anglo Mysore/Anglo Sikh",
+        "By using the doctrine of lapse/Explanation of the policy/States affected like Satara/Jhansi",
+        "On the pretext of alleged misrule [Awadh]",
+        "Disrespect shown to Bahadur Shah",
+        "Absentee sovereignty of the British/India was governed from foreign land",
+        "Treatment given to Nana Sahib and Rani Lakshmi Bai"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Bahadur Shah",
+          "required": false,
+          "context": "disrespect shown to him is a listed political cause"
+        },
+        {
+          "type": "name",
+          "value": "Nana Sahib",
+          "required": false,
+          "context": "treatment given to him is a listed political cause"
+        },
+        {
+          "type": "name",
+          "value": "Rani Lakshmi Bai",
+          "required": false,
+          "context": "treatment given to her is a listed political cause"
+        },
+        {
+          "type": "name",
+          "value": "Doctrine of Lapse",
+          "required": false,
+          "context": "a key annexation policy cited as a political cause"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Policy of expansion / Subsidiary Alliance / By outright wars/Sind/Punjab/Buxar/Anglo Maratha/Anglo Mysore/Anglo Sikh / By using the doctrine of lapse/Explanation of the policy/States affected like Satara/Jhansi / On the pretext of alleged misrule [Awadh] / Disrespect shown to Bahadur Shah / Absentee sovereignty of the British/India was governed from foreign land. / Treatment given to Nana Sahib and Rani Lakshmi Bai. (Any four points)",
+      "model_answer": "Political causes included the British policy of expansion through the Subsidiary Alliance and outright wars; the use of the Doctrine of Lapse to annex states such as Satara and Jhansi; the disrespect shown to the Mughal emperor Bahadur Shah; and the harsh treatment given to rulers such as Nana Sahib and Rani Lakshmi Bai.",
+      "examiner_comment": "The subparts (a), (b) and (c) of this question were attempted well by most of the candidates.",
+      "teacher_suggestion": "Conduct role play in class to make the topic more interesting.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q7-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Dandi March",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the Mass Phase of the National Movement under the leadership of Gandhi, answer the following:",
+      "question_number": "7(a)",
+      "question_text": "Briefly explain the Dandi March of 1930.",
+      "total_marks": 3,
+      "key_points": [
+        "On 2nd March 1930, Gandhi wrote a letter to the Viceroy",
+        "Communicating his decision to start the Civil Disobedience Movement",
+        "On 12th March began Mahatma Gandhi's historic march from Sabarmati Ashram to Dandi, a village on the Gujarat seacoast",
+        "78 persons followed him",
+        "He reached Dandi on 5th April",
+        "On the morning of 6th of April, Gandhi violated the salt-laws by picking up some salt left by the sea-waves",
+        "Gandhi's signal to disobey the government law"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "2nd March 1930",
+          "required": false,
+          "context": "date Gandhi wrote to the Viceroy; a chronological anchor"
+        },
+        {
+          "type": "date",
+          "value": "12th March",
+          "required": false,
+          "context": "date the march began from Sabarmati; a chronological anchor"
+        },
+        {
+          "type": "date",
+          "value": "5th April",
+          "required": false,
+          "context": "date Gandhi reached Dandi; a chronological anchor"
+        },
+        {
+          "type": "date",
+          "value": "6th April",
+          "required": false,
+          "context": "date the salt law was violated; a chronological anchor"
+        },
+        {
+          "type": "number",
+          "value": "78 persons",
+          "required": false,
+          "context": "the number of marchers who followed Gandhi"
+        },
+        {
+          "type": "place",
+          "value": "Sabarmati Ashram",
+          "required": false,
+          "context": "the starting point of the march"
+        },
+        {
+          "type": "place",
+          "value": "Dandi",
+          "required": false,
+          "context": "the coastal destination of the march"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "On 2nd March 1930, Gandhi wrote a letter to the Viceroy / communicating his decision to start the Civil Disobedience Movement. / On 12th March began Mahatma Gandhi's historic march from Sabarmati Ashram to Dandi, a village on the Gujarat seacoast / 78 persons followed him. / He reached Dandi on 5th April. / On the morning of 6th of April, Gandhi violated the salt-laws by picking up some salt left by the sea-waves. / Gandhi's signal to disobey the government law. (Any three points)",
+      "model_answer": "On 2nd March 1930, Gandhi wrote to the Viceroy announcing his decision to launch the Civil Disobedience Movement. On 12th March, he began his historic march from Sabarmati Ashram to the coastal village of Dandi, accompanied by 78 followers, reaching Dandi on 5th April. On the morning of 6th April, he violated the salt laws by picking up salt left by the sea-waves, signalling to the nation to disobey the government's law.",
+      "examiner_comment": "Most candidates were able to narrate the Dandi March of 1930 well.",
+      "teacher_suggestion": "Narrate the event-the historic Dandi march from Sabarmati to Dandi and the subsequent violation of the salt Law point wise as it was an important day that marked the beginning of a non-violent Civil Disobedience Movement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q7-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Quit India Movement Reasons",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the Mass Phase of the National Movement under the leadership of Gandhi, answer the following:",
+      "question_number": "7(b)",
+      "question_text": "State any three reasons for the launching of the Quit India Movement.",
+      "total_marks": 3,
+      "key_points": [
+        "Failure of the Cripps Mission",
+        "Worsening of Communal Problem",
+        "Japan posed a serious threat to India"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Cripps Mission",
+          "required": false,
+          "context": "its failure is a listed reason for launching Quit India"
+        },
+        {
+          "type": "date",
+          "value": "1942",
+          "required": false,
+          "context": "the year of the Quit India Movement"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Reasons for launching the Quit India Movement: Failure of the Cripps Mission / Worsening of Communal Problem / Japan posed a serious threat to India. (Any two points)",
+      "model_answer": "Two significant reasons for launching the Quit India Movement were the failure of the Cripps Mission to satisfy Indian demands, and the growing threat posed by the Japanese advance towards India's borders.",
+      "examiner_comment": "Several candidates wrote the reasons for the launching of the Quit India Movement such as 'economic distress', while some wrote the causes of other mass movements led by Gandhi such as the Non-Cooperation Movement and the Civil Disobedience Movement.",
+      "teacher_suggestion": "Explain the political reasons in India as well as in the International arena during 1942 to help the students understand and comprehend the reasons for the passing of the Quit India Resolution and its significant effects.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q7-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Quit India Movement Effects",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the Mass Phase of the National Movement under the leadership of Gandhi, answer the following:",
+      "question_number": "7(c)",
+      "question_text": "Explain any four significant effects of the Quit India Movement.",
+      "total_marks": 4,
+      "key_points": [
+        "Important landmark - It saw disturbances practically all over India",
+        "It warned the British that they were not wanted in India/days were limited/collapse of authority",
+        "Demand from Indians that they could have nothing short of Independence",
+        "Quit India Movement strengthened the Congress Socialist Party",
+        "In the Quit India Movement, the Indian Revolution reached its climax",
+        "Led to political awakening",
+        "Indian problem attracted the attention of the world especially USA",
+        "Symbolic of new confidence among Indians",
+        "Demonstrated nationalistic feelings",
+        "Mass movement/last mass movement",
+        "United young and old and people of different religions and regions",
+        "No political activity till after the war ended in 1945"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Quit India Movement",
+          "required": false,
+          "context": "the movement whose effects are being tested"
+        },
+        {
+          "type": "date",
+          "value": "1945",
+          "required": false,
+          "context": "the year the war ended, after which political activity resumed"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Significant consequences of the Quit India Movement: Important landmark - It saw disturbances practically all over India. / It warned the British that they were not wanted in India/days were limited/collapse of authority / Demand from Indians that they could have nothing short of Independence / Quit India Movement strengthened the Congress Socialist Party. / In the Quit India Movement, the Indian Revolution reached its climax. / Led to political awakening / Indian problem attracted the attention of the world especially USA / Symbolic of new confidence among Indians / Demonstrated nationalistic feelings / Mass movement/last mass movement / United young and old and people of different religions and regions / No political activity till after the war ended in 1945. (Any four points)",
+      "model_answer": "The Quit India Movement was an important landmark, as it saw disturbances practically all over India and warned the British that their days in India were numbered. It led to political awakening and demonstrated a new sense of confidence and nationalist feeling among Indians, uniting people of different ages, religions and regions in a mass movement.",
+      "examiner_comment": "Most of the candidates answered this question correctly. However, a few jumbled up the parts with the impact of the Non-Cooperation Movement and the Civil Disobedience Movement. Some candidates wrote that the British quit India and we gained independence as the effect of the Quit India Movement.",
+      "teacher_suggestion": "Ensure that students understand the three major Gandhian movements - Causes, Course and Consequences. Enhance the understanding of this topic through a role play or a skit.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q8-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mountbatten Plan",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the Partition Plan, answer the following:",
+      "question_number": "8(a)",
+      "question_text": "(i) Name the last Viceroy of India. (ii) State any two reasons for him to come to India.",
+      "total_marks": 3,
+      "key_points": [
+        "Lord Mountbatten",
+        "He came to India for the purpose of taking necessary steps for the transfer of power to the Indians",
+        "To restore peace among the two sections of Congress and the League",
+        "To present a plan for the partition"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lord Mountbatten",
+          "required": true,
+          "context": "the last Viceroy; the required answer to part (i)"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) Lord Mountbatten (ii) He came to India for the purpose of taking necessary steps for the transfer of power to the Indians. /To restore peace among the two sections of Congress and the League. /To present a plan for the partition.",
+      "model_answer": "The last Viceroy of India was Lord Mountbatten. He came to India to take the necessary steps for the transfer of power to the Indians, and to restore peace between the Congress and the Muslim League by presenting a plan for the partition of the country.",
+      "examiner_comment": "This question was well attempted by the candidates.",
+      "teacher_suggestion": "Explain each and every event related to the Partition Plan of India thoroughly to the students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q8-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mountbatten Plan Proposals",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the Partition Plan, answer the following:",
+      "question_number": "8(b)",
+      "question_text": "Mention any three proposals under his plan.",
+      "total_marks": 3,
+      "key_points": [
+        "Partition - into two dominions",
+        "Relations between the two new Dominions - to decide what relation to have between each other and the commonwealth",
+        "A Boundary Commission - to settle the boundaries",
+        "Princely States - treaties would end, and they could decide to join either of the dominions or remain independent",
+        "Bengal & Punjab - legislative assemblies to decide",
+        "Sindh - legislative assembly to decide",
+        "N.W. Frontier Province - to decide by a referendum",
+        "District of Sylhet - to decide by a referendum",
+        "Constituent Assembly - separate Constituent assembly for both the parties",
+        "Transfer of Power - would take place before 1948"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "1948",
+          "required": false,
+          "context": "the deadline before which transfer of power was to occur"
+        },
+        {
+          "type": "name",
+          "value": "Boundary Commission",
+          "required": false,
+          "context": "a listed proposal under the Mountbatten Plan"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Three proposals under his Plan: Partition - into two dominions / Relations between the two new Dominions - to decide what relation to have between each other and the commonwealth / A Boundary Commission - to settle the boundaries / Princely States - treaties would end, and they could decide to join either of the dominions or remain independent / Bengal & Punjab - legislative assemblies to decide / Sindh - legislative assembly to decide / N.W. Frontier Province - to decide by a referendum / District of Sylhet - to decide by a referendum / Constituent Assembly - separate Constituent assembly for both the parties / Transfer of Power - would take place before 1948. (Any three points)",
+      "model_answer": "Under the Mountbatten Plan, India would be partitioned into two dominions; a Boundary Commission would be set up to settle the boundaries between them; and the legislative assemblies of Bengal and Punjab would decide whether their provinces should be partitioned.",
+      "examiner_comment": "Majority of the candidates answered this part of the question correctly. However, some candidates wrote about the Cabinet Mission Plan or the Provisions of the Indian Independence Act.",
+      "teacher_suggestion": "Ensure that students understand the Cabinet Mission Plan, the Mountbatten Plan and the Provisions of the Indian Independence Act of 1947.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q8-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Congress Acceptance of Partition",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the Partition Plan, answer the following:",
+      "question_number": "8(c)",
+      "question_text": "State any four reasons for the Congress to finally accept the Plan.",
+      "total_marks": 4,
+      "key_points": [
+        "Large scale communal riots",
+        "League joined Interim government to obstruct and not to cooperate",
+        "Only alternative to Partition was a Federation with a weak centre",
+        "Any further continuation of British rule would mean a greater calamity for India /People and leaders were fed up with their rule in India/wanted to get rid of the British rule by paying any price",
+        "Further delay could find India in a Civil War",
+        "Leaders felt that partition would aid the Constitutions of separate electorates /and other undemocratic procedures"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Acceptance of Plan: Large scale communal riots / League joined Interim government to obstruct and not to cooperate. / Only alternative to Partition was a Federation with a weak centre. / Any further continuation of British rule would mean a greater calamity for India. /People and leaders were fed up with their rule in India/wanted to get rid of the British rule by paying any price. / Further delay could find India in a Civil War. / Leaders felt that partition would aid the Constitutions of separate electorates. /and other undemocratic procedures. (Any four points)",
+      "model_answer": "The Congress finally accepted the Plan because large-scale communal riots had broken out across the country; the Muslim League had joined the interim government only to obstruct its functioning; the only alternative to partition was a federation with a weak centre; and any further delay threatened to plunge India into civil war.",
+      "examiner_comment": "Some candidates found it difficult to write four reasons why the Congress finally accepted the Plan.",
+      "teacher_suggestion": "Advise students to study the clauses of above-mentioned Plans /Act thoroughly and present them in a factual manner.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2020-sb-q9-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "United Nations Objectives",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": null,
+      "stimulus": {
+        "type": "picture",
+        "image_description": "The emblem of the United Nations - a world map projection surrounded by olive branches",
+        "headline": null,
+        "source": null,
+        "text": null,
+        "has_image": true
+      },
+      "question_number": "9(a)",
+      "question_text": "Name the organization associated with the above Emblem. Mention any two of its objectives.",
+      "total_marks": 3,
+      "key_points": [
+        "United Nations",
+        "Maintain international peace and security",
+        "To develop friendly relations among nations",
+        "To achieve international cooperation among nations",
+        "Solving problems of economic, social, cultural & humanitarian character",
+        "To be a centre for harmonizing the actions of nations",
+        "To disarm",
+        "Decolonize",
+        "And develop",
+        "Create faith in human rights",
+        "Establish conditions to maintain International law and international treaties",
+        "Save from scourge of war"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "United Nations",
+          "required": true,
+          "context": "the organisation identified from the emblem"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "United Nations. Objectives: Maintain international peace and security. / To develop friendly relations among nations. / To achieve international cooperation among nations / Solving problems of economic, social, cultural & humanitarian character. / To be a centre for harmonizing the actions of nations. / To disarm / Decolonize / And develop / Create faith in human rights. / Establish conditions to maintain International law and international treaties. / Save from scourge of war. (Any three points)",
+      "model_answer": "The organisation associated with the emblem is the United Nations. Two of its objectives are to maintain international peace and security, and to develop friendly relations among nations.",
+      "examiner_comment": "Most of the candidates named the organization associated with the Emblem correctly. However, a few candidates confused the emblem with that of the 'WHO'. A few candidates did not mention the two objectives correctly.",
+      "teacher_suggestion": "Develop the skills in students to identify pictures. Give them practice by giving several pictures, including emblems and logos, wherever necessary, within the scope of the syllabus.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q9-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Functions of WHO",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": null,
+      "question_number": "9(b)",
+      "question_text": "Mention any three functions of WHO, as its agency.",
+      "total_marks": 3,
+      "key_points": [
+        "Direct and coordinate health work on an international scale",
+        "Works in fields of communicable diseases",
+        "Maintains child health",
+        "Mental heath",
+        "Cancer",
+        "Diabetes",
+        "Eradicate scale /smallpox was eradicated by global campaign by WHO",
+        "Promote the provision of good health and living conditions of the people",
+        "To set international standards with regard to food and medicines",
+        "To provide safe drinking water",
+        "Vaccination/immunization against six major diseases like measles, diphtheria, tetanus, TB, polio & whooping cough/diarrheal deaths have reduced",
+        "Promote research, to cure and prevent diseases",
+        "Organizes conferences, research, seminars, etc.",
+        "Publishes health journals/ bulletins/magazines",
+        "Set international standards for biological products and pharmaceutical products such as rugs, medicines, vaccines",
+        "Bring about improvement in nutrition",
+        "Housing",
+        "Sanitation",
+        "Work conditions",
+        "Hygiene",
+        "Built medical sciences library in Geneva",
+        "Infant mortality rate has dropped",
+        "Organised malaria and polio eradication programmes globally"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "WHO",
+          "required": false,
+          "context": "the agency whose functions are being tested"
+        },
+        {
+          "type": "place",
+          "value": "Geneva",
+          "required": false,
+          "context": "location of the WHO medical sciences library, a specific function detail"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Functions of WHO: Direct and coordinate health work on an international scale. / Works in fields of communicable diseases / Maintains child health / Mental heath / Cancer / Diabetes / Eradicate scale /smallpox was eradicated by global campaign by WHO. / Promote the provision of good health and living conditions of the people. / To set international standards with regard to food and medicines. / To provide safe drinking water. / Vaccination/immunization against six major diseases like measles, diphtheria, tetanus, TB, polio & whooping cough/diarrheal deaths have reduced / Promote research, to cure and prevent diseases. / Organizes conferences, research, seminars, etc. / Publishes health journals/ bulletins/magazines / Set international standards for biological products and pharmaceutical products such as rugs, medicines, vaccines / Bring about improvement in nutrition / Housing / Sanitation / Work conditions / Hygiene / Built medical sciences library in Geneva / Infant mortality rate has dropped / Organised malaria and polio eradication programmes globally. (Any three points)",
+      "model_answer": "Three functions of WHO as a UN agency are to direct and coordinate international health work, to work in the field of communicable diseases such as cancer and diabetes, and to set international standards for food, medicines and other pharmaceutical products.",
+      "examiner_comment": "This part of the question was answered well by most candidates barring a few who mixed up the functions of WHO with the functions of UNICEF, as some health and hygiene related functions are similar.",
+      "teacher_suggestion": "Emphasise on the differences between the UNICEF and the WHO.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q9-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "International Court of Justice",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": null,
+      "question_number": "9(c)",
+      "question_text": "Name the Principal Judicial Organ of this organization and explain its composition.",
+      "total_marks": 4,
+      "key_points": [
+        "The International Court of Justice",
+        "Consists of 15 judges",
+        "Elected for a period of 9 years",
+        "Elected by the General Assembly and the Security Council",
+        "Each judge is from different country",
+        "Elects its President and Vice President for a period of 3 years",
+        "Appoints a registrar",
+        "Retiring judge may be elected"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "International Court of Justice",
+          "required": true,
+          "context": "the principal judicial organ; the required identification"
+        },
+        {
+          "type": "number",
+          "value": "15 judges",
+          "required": true,
+          "context": "the composition figure; a wrong number loses credit"
+        },
+        {
+          "type": "number",
+          "value": "9 years",
+          "required": false,
+          "context": "the tenure of ICJ judges"
+        },
+        {
+          "type": "number",
+          "value": "3 years",
+          "required": false,
+          "context": "the term of the ICJ President and Vice President"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "The International Court of Justice. Composition: Consists of 15 judges. / Elected for a period of 9 years. / Elected by the General Assembly and the Security Council. / Each judge is from different country. / Elects its President and Vice President for a period of 3 years. / Appoints a registrar. / Retiring judge may be elected. (Any three points)",
+      "model_answer": "The Principal Judicial Organ of this organisation is the International Court of Justice. It consists of 15 judges, elected for a period of 9 years by the General Assembly and the Security Council, with each judge coming from a different country.",
+      "examiner_comment": "Some candidates confused the Principal Judicial Organ of the United Nations with the General Assembly and the Security Council.",
+      "teacher_suggestion": "Discuss that the United Nations has six principal organs of which the International Court of Justice is the principal judicial organ. Explain its composition.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q10-a",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Treaty of Versailles Dissatisfaction",
+      "period": "World War I",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the Second World War and the Non-Aligned Movement, answer the following:",
+      "question_number": "10(a)",
+      "question_text": "Explain briefly three reasons for the Dissatisfaction with the Treaty of Versailles.",
+      "total_marks": 3,
+      "key_points": [
+        "Demanded annexation of German territories and creation of many states",
+        "Germans felt humiliated and helpless",
+        "Sowed the seeds of bitterness and conflict",
+        "All the German colonies were forcibly taken away and was divided into two parts for the benefit of Poland",
+        "Burdened with huge war indemnity which could never be paid",
+        "This humiliation gave rise to the spirit of revenge and Germany started looking for an opportunity to do away with the Treaty",
+        "This was not possible without aggressive policy and armaments. War became inevitable",
+        "Germany had to pay 33 billion dollars",
+        "It had to cede large territories to France, Belgium, Poland, and Denmark",
+        "Italians felt they won the war but lost the peace",
+        "Allies deserted her and she received no valuable addition to her territories",
+        "Germany was crippled",
+        "Danzig was internationalized"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles",
+          "required": true,
+          "context": "the treaty whose dissatisfaction the question addresses"
+        },
+        {
+          "type": "number",
+          "value": "33 billion dollars",
+          "required": false,
+          "context": "the reparations figure, a specific example of the war indemnity"
+        },
+        {
+          "type": "place",
+          "value": "Danzig",
+          "required": false,
+          "context": "its internationalisation is a listed source of dissatisfaction"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Demanded annexation of German territories and creation of many states. / Germans felt humiliated and helpless. / Sowed the seeds of bitterness and conflict. / All the German colonies were forcibly taken away and was divided into two parts for the benefit of Poland. / Burdened with huge war indemnity which could never be paid. / This humiliation gave rise to the spirit of revenge and Germany started looking for an opportunity to do away with the Treaty. / This was not possible without aggressive policy and armaments. War became inevitable. / Germany had to pay 33 billion dollars. / It had to cede large territories to France, Belgium, Poland, and Denmark. / Italians felt they won the war but lost the peace. / Allies deserted her and she received no valuable addition to her territories. / Germany was crippled. / Danzig was internationalized. (Any three points)",
+      "model_answer": "Candidates felt dissatisfaction with the Treaty of Versailles because Germany was made to pay a crippling war indemnity of 33 billion dollars, was stripped of all her colonies, and was forced to cede large territories to France, Belgium, Poland and Denmark — humiliating the German people and sowing the seeds of future conflict.",
+      "examiner_comment": "Some candidates mentioned all provisions of the Treaty of Versailles instead of the reasons for the dissatisfaction with the Treaty of Versailles.",
+      "teacher_suggestion": "Discuss in detail the Treaty of Versailles, its causes, main clauses and how it became a cause of World War II.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q10-b",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Consequences of WWII",
+      "period": "World War II",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the Second World War and the Non-Aligned Movement, answer the following:",
+      "question_number": "10(b)",
+      "question_text": "State any three consequences of the Second World War.",
+      "total_marks": 3,
+      "key_points": [
+        "Defeat of the Axis powers",
+        "Formation of the UN",
+        "Cold war/rise of communism",
+        "Germany was defeated and divided into four zones",
+        "Nazism came to end",
+        "Japan lost all territories acquired or seized by Japan were taken away",
+        "Italy defeated and surrendered",
+        "France was liberated/Germany army in Paris surrendered"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Cold War",
+          "required": false,
+          "context": "a listed consequence of World War II"
+        },
+        {
+          "type": "name",
+          "value": "United Nations",
+          "required": false,
+          "context": "its formation is a listed consequence of World War II"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Defeat of the Axis powers. / Formation of the UN. / Cold war/rise of communism. / Germany was defeated and divided into four zones. / Nazism came to end. / Japan lost all territories acquired or seized by Japan were taken away. / Italy defeated and surrendered. / France was liberated/Germany army in Paris surrendered. (Any three points)",
+      "model_answer": "Three consequences of the Second World War were the defeat of the Axis powers, the formation of the United Nations Organisation, and the beginning of the Cold War between the two new superpowers.",
+      "examiner_comment": "This subpart was attempted well by many candidates. However, some candidates focused only on the details of the defeat of the Axis powers.",
+      "teacher_suggestion": "Point out the consequences of the Second World War to the students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2020-sb-q10-c",
+      "subject": "history_civics",
+      "year": 2020,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "NAM Architects",
+      "period": "Non-Aligned Movement",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the Second World War and the Non-Aligned Movement, answer the following:",
+      "question_number": "10(c)",
+      "question_text": "Mention any four chief architects of the Non-Aligned Movement.",
+      "total_marks": 4,
+      "key_points": [
+        "Jawaharlal Nehru of India",
+        "Joseph B. Tito of Yugoslavia",
+        "Nasser of Egypt",
+        "Sukarno of Indonesia"
+      ],
+      "points_required": 4,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Jawaharlal Nehru",
+          "required": true,
+          "context": "one of the four required NAM architects"
+        },
+        {
+          "type": "name",
+          "value": "Joseph B. Tito",
+          "required": true,
+          "context": "one of the four required NAM architects"
+        },
+        {
+          "type": "name",
+          "value": "Nasser",
+          "required": true,
+          "context": "one of the four required NAM architects"
+        },
+        {
+          "type": "name",
+          "value": "Sukarno",
+          "required": true,
+          "context": "one of the four required NAM architects"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "The four architects of NAM are: Jawaharlal Nehru of India, / Joseph B. Tito of Yugoslavia / Nasser of Egypt / Sukarno of Indonesia",
+      "model_answer": "The four chief architects of the Non-Aligned Movement were Jawaharlal Nehru of India, Joseph B. Tito of Yugoslavia, Nasser of Egypt, and Sukarno of Indonesia.",
+      "examiner_comment": "Most candidates attempted this part well.",
+      "teacher_suggestion": "Train students to remember names in History for each movement and organization.",
+      "difficulty_flag": null
+    }
+  ]
+}

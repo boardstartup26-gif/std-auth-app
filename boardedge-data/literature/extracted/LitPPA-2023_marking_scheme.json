@@ -1,0 +1,2040 @@
+{
+  "subject": "english_literature",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "paper_2",
+  "year": 2023,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "eng-lit-2023-sa-q1-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Blue Bead",
+        "author": "Norah Burke",
+        "work_type": "short_story"
+      },
+      "question_number": "1(i)",
+      "question_text": "What was the blue bead?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "A piece of perforated glass"
+        },
+        {
+          "key": "b",
+          "text": "A round blue pebble"
+        },
+        {
+          "key": "c",
+          "text": "A blue marble"
+        },
+        {
+          "key": "d",
+          "text": "A blue river rock"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "A piece of perforated glass",
+      "examiner_comment": "Candidates were confused by the word 'blue' in the distractors. The right answer 'a piece of perforated glass' did not contain the word 'blue' in it.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Little Match Girl",
+        "author": "Hans Christian Andersen",
+        "work_type": "short_story"
+      },
+      "question_number": "1(ii)",
+      "question_text": "In H.C. Anderson's story, what forces the Little Match Girl to go about selling matches on the street?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Poverty"
+        },
+        {
+          "key": "b",
+          "text": "Greed"
+        },
+        {
+          "key": "c",
+          "text": "The weather"
+        },
+        {
+          "key": "d",
+          "text": "Desire for wealth"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "Poverty",
+      "examiner_comment": "Majority of the candidates answered it correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "My Greatest Olympic Prize",
+        "author": "Jesse Owens",
+        "work_type": "short_story"
+      },
+      "question_number": "1(iii)",
+      "question_text": "When Luz Long said, 'something must be eating you' he meant that Jesse Owens must be __________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "hungry for something"
+        },
+        {
+          "key": "b",
+          "text": "troubled by something"
+        },
+        {
+          "key": "c",
+          "text": "amused by something"
+        },
+        {
+          "key": "d",
+          "text": "ashamed of something"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "troubled by something",
+      "examiner_comment": "Most candidates got this answer right. A few found the idiomatic expression, 'something must be eating you' difficult to follow.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "question_number": "1(iv)",
+      "question_text": "\"We'll keep her a day or two longer; she is so weak and helpless.\" Who said these words? To whom?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Joe Thompson to his wife"
+        },
+        {
+          "key": "b",
+          "text": "Jane Thompson to her husband"
+        },
+        {
+          "key": "c",
+          "text": "William to his fellow 'rocket-children'"
+        },
+        {
+          "key": "d",
+          "text": "The people who saw the Little Match Girl sheltering from the cold"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Jane Thompson to her husband",
+      "examiner_comment": "Many candidates selected option (a) instead of the correct answer (b).",
+      "teacher_suggestion": null,
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "question_number": "1(v)",
+      "question_text": "What was the very first thing that the children noticed when it stopped raining on Venus in Ray Bradbury's story, 'All Summer in a Day'?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "The blazing blue sky"
+        },
+        {
+          "key": "b",
+          "text": "The smell of the vegetation"
+        },
+        {
+          "key": "c",
+          "text": "The silence"
+        },
+        {
+          "key": "d",
+          "text": "The brilliant sunshine"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "The silence",
+      "examiner_comment": "Many candidates were confused by three of the given distractors. Candidates were often confused because they had overlooked the clue words 'very first' in the stem of the question. Only those who noticed the clue words 'very first thing' in the question were able to correctly identify the right answer.",
+      "teacher_suggestion": null,
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-vi",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "question_number": "1(vi)",
+      "question_text": "Which of the following lines tells us that the poet Wordsworth carried a mental picture of the daffodils?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "'Ten thousand saw I at a glance'"
+        },
+        {
+          "key": "b",
+          "text": "'They flash upon that inward eye'"
+        },
+        {
+          "key": "c",
+          "text": "'I gazed - and gazed - but little thought'"
+        },
+        {
+          "key": "d",
+          "text": "'Fluttering and dancing in the breeze'"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "'They flash upon that inward eye'",
+      "examiner_comment": "Some candidates chose (a) and (c) while (b) was the right option. They failed to make the connection between 'mental picture' and 'inward eye'.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-vii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "question_number": "1(vii)",
+      "question_text": "Why, according to Maya Angelou, does the caged bird sing?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "To pass the time"
+        },
+        {
+          "key": "b",
+          "text": "Because he is hungry for 'fat worms'"
+        },
+        {
+          "key": "c",
+          "text": "To voice his protest"
+        },
+        {
+          "key": "d",
+          "text": "To communicate with the free bird"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "To voice his protest",
+      "examiner_comment": "Most candidates answered it correctly. Some who had not understood the poem chose option (d) 'to communicate with the free bird'.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-viii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Patriot",
+        "author": "Robert Browning",
+        "work_type": "poem"
+      },
+      "question_number": "1(viii)",
+      "question_text": "The line 'The house-roofs seemed to heave and sway,' in Browning's poem 'The Patriot' means __________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "'The roofs of the houses were swaying in the wind.'"
+        },
+        {
+          "key": "b",
+          "text": "'The roofs were so crowded with people that they appeared to be heaving and swaying.'"
+        },
+        {
+          "key": "c",
+          "text": "'The house-roofs were lifted off due to an earthquake.'"
+        },
+        {
+          "key": "d",
+          "text": "'The roofs of houses were blown away in the heavy rain and strong wind.'"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "'The roofs were so crowded with people that they appeared to be heaving and swaying.'",
+      "examiner_comment": "Several candidates responded to this question correctly. Some answered (a) instead of (b).",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-ix",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Abou Ben Adhem",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "question_number": "1(ix)",
+      "question_text": "Identify the list in which Abou Ben Adhem's name appeared right at the top.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Those who love God."
+        },
+        {
+          "key": "b",
+          "text": "Those who love their fellow human beings."
+        },
+        {
+          "key": "c",
+          "text": "Those who were blessed by the love of God."
+        },
+        {
+          "key": "d",
+          "text": "Those who were considered saints on earth."
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Those who were blessed by the love of God.",
+      "examiner_comment": "Several candidates chose option (b) but the correct response was (c). A few candidates seemed to be confused about the lists.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-x",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Nine Gold Medals",
+        "author": "David Roth",
+        "work_type": "poem"
+      },
+      "question_number": "1(x)",
+      "question_text": "What special human quality does the poem 'Nine Gold Medals' celebrate?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "empathy"
+        },
+        {
+          "key": "b",
+          "text": "jealousy"
+        },
+        {
+          "key": "c",
+          "text": "rivalry"
+        },
+        {
+          "key": "d",
+          "text": "selfishness"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "empathy",
+      "examiner_comment": "Most candidates got this answer right.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xi",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xi)",
+      "question_text": "To whom does Portia compare Bassanio as he steps forward to take the casket test?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Midas"
+        },
+        {
+          "key": "b",
+          "text": "Mercury"
+        },
+        {
+          "key": "c",
+          "text": "Hesione"
+        },
+        {
+          "key": "d",
+          "text": "Hercules"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "Hercules",
+      "examiner_comment": "Majority of the candidates answered it correctly. Candidates who were not thorough with textual detail were confused by the given options. Some of them wrote 'Midas' as the answer (probably because Bassanio mentions Midas in the Casket Scene when he rejects the golden casket).",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xii)",
+      "question_text": "__________ was Portia's faithful servant.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Bellario"
+        },
+        {
+          "key": "b",
+          "text": "Balthazar"
+        },
+        {
+          "key": "c",
+          "text": "Launcelot"
+        },
+        {
+          "key": "d",
+          "text": "Stephano"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Balthazar",
+      "examiner_comment": "Many candidates got this answer right. Three of the four given options were names of Portia's servants and some candidates who were not thorough with textual detail were confused – they chose Stephano instead of Balthazar.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xiii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xiii)",
+      "question_text": "Why does Portia ask Shylock if he had arranged for a surgeon to be present at Antonio's trial?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "She wanted to make sure that Antonio would not bleed to death."
+        },
+        {
+          "key": "b",
+          "text": "It was mentioned in the bond."
+        },
+        {
+          "key": "c",
+          "text": "She wanted to stop Bassanio from harming Shylock."
+        },
+        {
+          "key": "d",
+          "text": "She was afraid she would faint at the sight of blood."
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "She wanted to make sure that Antonio would not bleed to death.",
+      "examiner_comment": "Many candidates answered this question correctly. Some candidates chose option (b) and others chose (d).",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xiv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xiv)",
+      "question_text": "According to Lorenzo, a man who is unmoved by music is __________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "tone-deaf."
+        },
+        {
+          "key": "b",
+          "text": "not to be trusted."
+        },
+        {
+          "key": "c",
+          "text": "self-absorbed."
+        },
+        {
+          "key": "d",
+          "text": "not fit to live."
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "not to be trusted.",
+      "examiner_comment": "Most candidates answered it correctly. Candidates who were not thorough with textual detail were confused by the given options. Some chose option (a) and others (d). The right answer was (b).",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xv)",
+      "question_text": "\"A Daniel come to judgement! Yea a Daniel\" Who is being described in these words? By whom?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Shylock, by Portia"
+        },
+        {
+          "key": "b",
+          "text": "Bassanio, by Gratiano"
+        },
+        {
+          "key": "c",
+          "text": "Antonio, by Portia"
+        },
+        {
+          "key": "d",
+          "text": "Portia, by Shylock"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "Portia, by Shylock",
+      "examiner_comment": "A few candidates were confused and answered (a) 'Shylock, by Portia', but the right answer was (d) 'Portia, by Shylock'.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sa-q1-xvi",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(xvi)",
+      "question_text": "What reason does Portia give for refusing the Duke's invitation to dinner?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "She had to hurry back to Belmont before Bassanio's return."
+        },
+        {
+          "key": "b",
+          "text": "She already felt rewarded and satisfied at having saved Antonio."
+        },
+        {
+          "key": "c",
+          "text": "She was afraid of being found out."
+        },
+        {
+          "key": "d",
+          "text": "She had to return to Padua that night."
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "She had to return to Padua that night.",
+      "examiner_comment": "Candidates who were unsure of the text were confused by the given options. Many candidates selected option (a), instead of option (d).",
+      "teacher_suggestion": null,
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q2-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "PORTIA: … Lorenzo, I commit into your hands\nThe husbandry and manage of my house\nUntil my lord's return: for mine own part,\nI have toward heaven breathed a secret vow\nTo live in prayer and contemplation,\nOnly attended by Nerissa here,\nUntil her husband and my lord's return:",
+        "reference": "Act 3, Scene 4",
+        "speaker": "Portia",
+        "context_before": "Before leaving Belmont to help save Antonio, Portia entrusts the care of her house to Lorenzo, who has recently married Jessica."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(i)",
+      "question_text": "Who does Portia refer to as 'my lord'? Where is her lord? Why had he left in such haste?",
+      "total_marks": 3,
+      "key_points": [
+        "Bassanio/lover/husband/partner",
+        "Gone to Venice/to attend Antonio's trial/court of justice.",
+        "Antonio had in a letter asked Bassanio to come and see him one last time before his death/Portia urges him to marry her and leave immediately for Venice/to save Antonio/Bassanio felt responsible for Antonio's condition/Antonio's life was in danger … Shylock demanded a pound of flesh."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Bassanio/lover/husband/partner\nGone to Venice/to attend Antonio's trial/court of justice.\nAntonio had in a letter asked Bassanio to come and see him one last time before his death/Portia urges him to marry her and leave immediately for Venice/to save Antonio/Bassanio felt responsible for Antonio's condition/Antonio's life was in danger … Shylock demanded a pound of flesh.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly. In the second part, instead of 'Venice', some of them wrote 'Venus'. Many candidates answered that her lord was in Belmont.",
+      "teacher_suggestion": "The action in the play alternates between Venice and Belmont. Train students to be aware of the setting in each scene.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q2-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "PORTIA: … Lorenzo, I commit into your hands\nThe husbandry and manage of my house\nUntil my lord's return: for mine own part,\nI have toward heaven breathed a secret vow\nTo live in prayer and contemplation,\nOnly attended by Nerissa here,\nUntil her husband and my lord's return:",
+        "reference": "Act 3, Scene 4",
+        "speaker": "Portia",
+        "context_before": "Before leaving Belmont to help save Antonio, Portia entrusts the care of her house to Lorenzo, who has recently married Jessica."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(ii)",
+      "question_text": "What does Portia ask Lorenzo to do? Why does she make this request?",
+      "total_marks": 3,
+      "key_points": [
+        "To take charge of the 'husbandry/manage' of her house to be the master of the house/take care/until her lord returns.",
+        "Because Bassanio is away and she too is planning to go away from Belmont (or to a Monastery) for some days/She plans to travel to Venice, disguised as a lawyer, with Nerissa to assist at Antonio's trial."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "To take charge of the 'husbandry/ manage' of her house to be the master of the house/take care/until her lord returns. OR\nBecause Bassanio is away and she too is planning to go away from Belmont (or to a Monastery) for some days/She plans to travel to Venice, disguised as a lawyer, with Nerissa to assist at Antonio's trial.",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates answered all parts of the question correctly. The first part of the question was answered correctly by almost all candidates. But some candidates made a mistake while answering the second part. Many of them mentioned about Portia's visit to the monastery with Nerissa to spend their days in prayer and contemplation instead of Portia's plan to go to Venice to assist at Antonio's trial.",
+      "teacher_suggestion": "Reading of the extract with care is important for understanding what is being asked in the question.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q2-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "PORTIA: … Lorenzo, I commit into your hands\nThe husbandry and manage of my house\nUntil my lord's return: for mine own part,\nI have toward heaven breathed a secret vow\nTo live in prayer and contemplation,\nOnly attended by Nerissa here,\nUntil her husband and my lord's return:",
+        "reference": "Act 3, Scene 4",
+        "speaker": "Portia",
+        "context_before": "Before leaving Belmont to help save Antonio, Portia entrusts the care of her house to Lorenzo, who has recently married Jessica."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iii)",
+      "question_text": "Explain in your own words, the 'secret vow' that Portia speaks of.",
+      "total_marks": 3,
+      "key_points": [
+        "go to a Monastery/church that is two miles away",
+        "to live there in prayer and contemplation/meditation",
+        "accompanied only by Nerissa",
+        "remain there until their husbands' return"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "go to a Monastery/church that is two miles away\nto live there in prayer and contemplation/meditation\naccompanied only by Nerissa\nremain there until their husbands' return. (Any three)",
+      "model_answer": null,
+      "examiner_comment": "Although the words 'secret vow' and the answer itself are to be found in the given extract, many candidates misunderstood the word 'vow' to mean Portia's plan to disguise herself and travel to Venice to defend Antonio. Instead of explaining the secret vow, many candidates explained Portia's secret plan to save Antonio. Even candidates who answered correctly missed out on key details while explaining the 'secret vow'.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q2-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "PORTIA: … Lorenzo, I commit into your hands\nThe husbandry and manage of my house\nUntil my lord's return: for mine own part,\nI have toward heaven breathed a secret vow\nTo live in prayer and contemplation,\nOnly attended by Nerissa here,\nUntil her husband and my lord's return:",
+        "reference": "Act 3, Scene 4",
+        "speaker": "Portia",
+        "context_before": "Before leaving Belmont to help save Antonio, Portia entrusts the care of her house to Lorenzo, who has recently married Jessica."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iv)",
+      "question_text": "What instructions does Portia give to her servant, a little later in the scene?",
+      "total_marks": 3,
+      "key_points": [
+        "travel to Padua very quickly",
+        "deliver Portia's letter/to her cousin Dr. Bellario",
+        "bring back from Padua the notes/garments he (Dr. Bellario) gives",
+        "go/return as quickly as possible",
+        "meet her at the landing place (tranect) the boarding point for the ferry to Venice"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "travel to Padua very quickly\ndeliver Portia's letter/to her cousin Dr. Bellario\nbring back from Padua the notes/garments he (Dr. Bellario) gives\ngo/return as quickly as possible\nmeet her at the landing place (tranect) the boarding point for the ferry to Venice. (Any three)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly and earned marks for their responses. Several candidates failed to understand the question and they wrote about Portia giving instruction to her servants to take care of her house during her absence. Some candidates mentioned that Portia instructed her servant to follow Lorenzo and Jessica's orders in her absence. A few candidates lost marks as they misunderstood the context.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q2-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "PORTIA: … Lorenzo, I commit into your hands\nThe husbandry and manage of my house\nUntil my lord's return: for mine own part,\nI have toward heaven breathed a secret vow\nTo live in prayer and contemplation,\nOnly attended by Nerissa here,\nUntil her husband and my lord's return:",
+        "reference": "Act 3, Scene 4",
+        "speaker": "Portia",
+        "context_before": "Before leaving Belmont to help save Antonio, Portia entrusts the care of her house to Lorenzo, who has recently married Jessica."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(v)",
+      "question_text": "What do we learn of Portia's real intention from her conversation with Nerissa? Which Portia do you prefer - the modest Portia of the Casket scene or the business-like Portia we meet in this scene? Give one reason for your response.",
+      "total_marks": 4,
+      "key_points": [
+        "Portia plans they would disguise themselves as young men – herself as a lawyer and Nerissa as a lawyer's clerk",
+        "travel to Venice/to assist at Antonio's trial",
+        "meet with their husbands – (who would not be able to recognise the young ladies as they would be in disguise)",
+        "Accept either response 'modest Portia' (humble/generous/gracious/virtuous/demure – accept examples/quotes from the casket scene to show she is modest/humble)",
+        "Business-like Portia (strong, independent, smart, empowered, fearless, determined, quick thinking)"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "real_intention": {
+          "marks": 2,
+          "instruction": "State what we learn of Portia's real intention from her conversation with Nerissa.",
+          "selection": "any_2"
+        },
+        "preference_with_reason": {
+          "marks": 2,
+          "instruction": "State which Portia (modest or business-like) is preferred, and give one plausible reason/justification.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Portia plans they would disguise themselves as young men – herself as a lawyer and Nerissa as a lawyer's clerk\ntravel to Venice/to assist at Antonio's trial.\nmeet with their husbands – (who would not be able to recognise the young ladies as they would be in disguise). (Any two)\nAccept a plausible justification for either\nAccept either response 'modest Portia' (humble/generous/gracious/virtuous/demure – accept examples/quotes from the casket scene to show she is modest/humble)\nBusiness-like Portia (strong, independent, smart, empowered, fearless, determined, quick thinking)",
+      "model_answer": null,
+      "examiner_comment": "This question was answered correctly by most of the candidates. It was interesting to note that most of them stated that they preferred the 'business-like Portia' to the 'modest Portia'. Justification for this preference ranged from 'Portia is a strong woman', 'independent person', 'has a mind of her own, capable of independent thinking' to 'she dared to break gender stereotypes'. A few candidates chose both options ('business-like Portia' and 'modest Portia') but were unable to justify their choice. Most candidates provided an accurate description of Portia's real intention.",
+      "teacher_suggestion": "Discuss reason-based questions in the classroom. This will develop the ability to answer such questions in examinations with honesty and confidence. Create opportunities in the classroom for students to speak their minds, explore characters, and express their opinions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q3-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "SHYLOCK: Shall I not have barely my principal?\nPORTIA: Thou shalt have nothing but the forfeiture,\nTo be so taken at thy peril, Jew.",
+        "reference": "Act 4, Scene 1",
+        "speaker": "Shylock and Portia",
+        "context_before": "During the trial scene, having been denied his money, Shylock insists on taking his bond, and Portia warns him of the strict letter of the law."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(i)",
+      "question_text": "What is the 'principal' that Shylock asks for? Why does Portia refuse to give it to him?",
+      "total_marks": 3,
+      "key_points": [
+        "The three thousand ducats/sum/amount he had loaned to Bassanio.",
+        "Shylock (had been offered the sum/larger sums repeatedly in court and) he had refused the offer in open court.",
+        "Shylock had stubbornly demanded his bond/the forfeiture/Shylock said he wanted only justice."
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "scheme_text": "The three thousand ducats/sum/amount he had loaned to Bassanio.\nShylock (had been offered the sum/larger sums repeatedly in court and) he had refused the offer in open court.\nShylock had stubbornly demanded his bond/the forfeiture/Shylock said he wanted only justice. (Any two)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly and earned marks. Surprisingly many candidates didn't mention the 3000 ducats specifically. Some even confused the '3000 ducats' with the 'pound of flesh'. A number of candidates were unable to answer the second part of the question. Many gave the reason that Portia wanted to save Antonio. Quite a few candidates gave only one reason for Portia's refusal to give Shylock the principal amount.",
+      "teacher_suggestion": "Ask 'why' questions in the classroom to encourage students to explore and discuss alternative reasons for any given character's action. This will help them to think out of the box.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q3-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "SHYLOCK: Shall I not have barely my principal?\nPORTIA: Thou shalt have nothing but the forfeiture,\nTo be so taken at thy peril, Jew.",
+        "reference": "Act 4, Scene 1",
+        "speaker": "Shylock and Portia",
+        "context_before": "During the trial scene, having been denied his money, Shylock insists on taking his bond, and Portia warns him of the strict letter of the law."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(ii)",
+      "question_text": "What is the 'forfeiture' they are referring to? What danger ('peril') would Shylock be in if he took the forfeiture?",
+      "total_marks": 3,
+      "key_points": [
+        "A pound of Antonio's flesh (cut from nearest his heart)",
+        "If Shylock spilt even one drop of 'Christian' blood/Antonio's blood while cutting out his pound of flesh/if he cut more or less than a pound all his lands and property would be confiscated by the state of Venice/he will die."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "A pound of Antonio's flesh (cut from nearest his heart)\nIf Shylock spilt even one drop of 'Christian' blood/Antonio's blood while cutting out his pound of flesh/if he cut more or less than a pound all his lands and property would be confiscated by the state of Venice/he will die.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates who had studied their texts answered all parts of the question correctly. Some candidates did not understand the word 'forfeiture' and stated that it referred to the sum of three thousand ducats. Some were unable to clearly explain the danger that Shylock would face if he claimed his pound of flesh. Important details were missing from some of the answers to the second part of the question – most only wrote about the confiscation of Shylock's property. Only a few mentioned the possibility of Shylock being put to death if he caused Bassanio's blood to spill.",
+      "teacher_suggestion": "Teach the meanings of words, especially unfamiliar or archaic words, while teaching the text.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q3-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "SHYLOCK: Shall I not have barely my principal?\nPORTIA: Thou shalt have nothing but the forfeiture,\nTo be so taken at thy peril, Jew.",
+        "reference": "Act 4, Scene 1",
+        "speaker": "Shylock and Portia",
+        "context_before": "During the trial scene, having been denied his money, Shylock insists on taking his bond, and Portia warns him of the strict letter of the law."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iii)",
+      "question_text": "What further hold does the law of Venice have on Shylock?",
+      "total_marks": 3,
+      "key_points": [
+        "If it could be proved that an alien/foreigner",
+        "Had attempted (through direct/indirect means) to kill a citizen of Venice",
+        "The offender's wealth and property would be confiscated.",
+        "one half given to the State",
+        "the other half to his intended victim.",
+        "The offender's life lay at the mercy of the Duke – the Duke alone could pardon him, no matter what anyone else said."
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "According to the laws of Venice:\nIf it could be proved that an alien/foreigner\nHad attempted (through direct/indirect means) to kill a citizen of Venice\nThe offender's wealth and property would be confiscated.\none half given to the State\nthe other half to his intended victim.\nThe offender's life lay at the mercy of the Duke – the Duke alone could pardon him, no matter what anyone else said. (Any three)",
+      "model_answer": null,
+      "examiner_comment": "Some candidates understood the question correctly and could answer it correctly. Others were confused and wrote the answer to question (ii) instead. Instead of describing the Venetian law against aliens who conspired against native Venetians, some candidates mentioned about the conditions laid down by Antonio. Some of the candidates were confused between questions (iii) and (iv). Their answers to these questions overlapped. It was observed that many candidates struggled with phrasing the response to this question correctly. They had studied the text but could not recall the specific details.",
+      "teacher_suggestion": "Distinguish between confusing terminology (e.g., 'concession/condition', 'principal/forfeiture,' etc.) during classroom teaching.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q3-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "SHYLOCK: Shall I not have barely my principal?\nPORTIA: Thou shalt have nothing but the forfeiture,\nTo be so taken at thy peril, Jew.",
+        "reference": "Act 4, Scene 1",
+        "speaker": "Shylock and Portia",
+        "context_before": "During the trial scene, having been denied his money, Shylock insists on taking his bond, and Portia warns him of the strict letter of the law."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iv)",
+      "question_text": "What concession does Antonio offer to Shylock? On what condition does he make this offer?",
+      "total_marks": 3,
+      "key_points": [
+        "Antonio offers to drop the fine for one half of his possession/to return to Shylock a half of what Shylock had to give to him/Antonio will keep one half in use/give it to Lorenzo and Jessica.",
+        "Shylock was to become a Christian immediately",
+        "Shylock was to sign a deed stating that on his death, all his wealth would pass to Lorenzo/his son-in-law and Jessica/his daughter."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "concession": {
+          "marks": 1,
+          "instruction": "State the concession Antonio offers to Shylock.",
+          "selection": "all"
+        },
+        "conditions": {
+          "marks": 2,
+          "instruction": "State the two conditions on which Antonio makes this offer.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "Antonio offers to drop the fine for one half of his possession/to return to Shylock a half of what Shylock had to give to him/ Antonio will keep one half in use/ give it to Lorenzo and Jessica.\nConditions:\n1. Shylock was to become a Christian immediately\n2. Shylock was to sign a deed stating that on his death, all his wealth would pass to Lorenzo/his son-in-law and Jessica/his daughter.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly. Some had trouble recalling the concessions made by Antonio. Candidates were found confused with the meanings of the words 'concessions' and 'condition' although both words were from the text and they should have known their meaning.",
+      "teacher_suggestion": "Distinguish between confusing terminology (e.g., 'concession/condition', 'principal/forfeiture,' etc.) during classroom teaching.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q3-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "SHYLOCK: Shall I not have barely my principal?\nPORTIA: Thou shalt have nothing but the forfeiture,\nTo be so taken at thy peril, Jew.",
+        "reference": "Act 4, Scene 1",
+        "speaker": "Shylock and Portia",
+        "context_before": "During the trial scene, having been denied his money, Shylock insists on taking his bond, and Portia warns him of the strict letter of the law."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(v)",
+      "question_text": "Why is Shylock in a hurry to leave the courtroom after the trial? How far can Shylock be blamed for the outcome of the trial? Give one reason for your response.",
+      "total_marks": 4,
+      "key_points": [
+        "Shylock feels shamed and humiliated / he has lost face / defeated / he feels physically ill/ devastated/ angry/ frustrated/ shattered/ sad/ not happy/ disappointed.",
+        "Yes, he was largely to blame – stubbornly refused offers of money / refused to be merciful/ insisted on his bond/ tried to kill/ vindictive",
+        "OR No, he was shamed and humiliated / reacted in anger and desire for revenge / his was a human response."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "reason_for_hurry": {
+          "marks": 2,
+          "instruction": "Explain why Shylock is in a hurry to leave the courtroom after the trial.",
+          "selection": "any_2"
+        },
+        "blame_with_reason": {
+          "marks": 2,
+          "instruction": "State how far Shylock can be blamed for the outcome of the trial and give one reason for the response.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Shylock feels shamed and humiliated / he has lost face / defeated / he feels physically ill/ devastated/ angry/ frustrated/ shattered/ sad/ not happy/ disappointed.\nYes, he was largely to blame – stubbornly refused offers of money / refused to be merciful/ insisted on his bond/ tried to kill/ vindictive\nOR\nNo, he was shamed and humiliated / reacted in anger and desire for revenge / his was a human response.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered the question correctly. References to Shylock's guilt, shaming, humiliation were made. An inability to express their thoughts due to a lack of adequate vocabulary was observed in the candidates' response to this question. Few candidates could describe Shylock's feelings as devastated/frustrated/shattered/disappointed/humiliated. They simply stated that Shylock was unable to take revenge. The second part of the question was answered well with a proper reason. Most candidates felt that Shylock was to be blamed for the outcome of the trial. A few felt he was the victim and not the villain.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q4-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"What is to be done with the children?\" That was the chief question now. The dead mother would go underground, and be forever beyond all care or concern of the villagers. But the children must not be left to starve.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The story opens after the death of a poor, drunken woman, leaving the villagers of the town to decide what will become of her three children."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(i)",
+      "question_text": "Describe the way in which the children's mother died. What are the factors that led to her death?",
+      "total_marks": 3,
+      "key_points": [
+        "Fell on the threshold of her house/in a drunken fit (in the presence of her children)",
+        "Idleness / vice / intemperance"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "how_she_died": {
+          "marks": 1,
+          "instruction": "Describe the way in which the mother died.",
+          "selection": "all"
+        },
+        "factors": {
+          "marks": 2,
+          "instruction": "State the factors that led to her death.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Fell on the threshold of her house/ in a drunken fit (in the presence of her children)\nIdleness / vice / intemperance (Any two)",
+      "model_answer": null,
+      "examiner_comment": "The candidates could not distinguish between the two parts of the question. Candidates failed to describe the manner ('how') in which the mother had died. Instead, they listed the causes ('why') for her death. Most candidates named drinking as a factor. Only a few mentioned 'vice' and 'idleness'. They only wrote the mother died due to the excessive consumption of alcohol. They were not able to mention the factors that led to the death of the mother. Many candidates mentioned 'gate/edge/house door/front gate/stairs' instead of 'threshold'. Many candidates could not attempt the second sub-part correctly. They wrote only one factor that led to the lady's death while the question mentioned 'factors' - implying that they were required to list more than one.",
+      "teacher_suggestion": "Help students in distinguishing between 'HOW' and 'WHY'. Teach students to respond to each sub-question separately.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q4-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"What is to be done with the children?\" That was the chief question now. The dead mother would go underground, and be forever beyond all care or concern of the villagers. But the children must not be left to starve.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The story opens after the death of a poor, drunken woman, leaving the villagers of the town to decide what will become of her three children."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(ii)",
+      "question_text": "How do the people of the village treat the woman before her death? How does their manner change after she dies? What does their behaviour tell us about human nature?",
+      "total_marks": 3,
+      "key_points": [
+        "They scoffed at her/despised/denounced her while she was alive/looked down on her/treated her badly.",
+        "Pity / sorrow (replaced their anger and denunciation)",
+        "Death touches the spring of our common humanity/people are compassionate in the face of death/forgive and forget/fickleness of humans/fleeting sentiments."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "They scoffed at her /despised / denounced her while she was alive/ looked down on her/ treated her badly.\nPity / sorrow (replaced their anger and denunciation)\nDeath touches the spring of our common humanity/ people are compassionate in the face of death/ forgive and forget/ fickleness of humans / fleeting sentiments.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates were able to describe 'how the villagers treated the mother before/after her death'. However, many were unable to say why ['what this tells us of human nature…?'] there was a change in their manner after her death i.e., the candidates were unable/afraid to draw an inference/afraid to express an opinion. The first two parts of the question were answered well, but many candidates did not fully comprehend the words, 'death touches the spring of humanity' or 'people are compassionate in the face of death'. It was noticed that the candidate often did not know how to answer the sub questions specifically. Instead, they wrote responses that were a page long and the examiners had to wade through that to find the answers.",
+      "teacher_suggestion": "Encourage more discussion in class – create opportunities in the classroom for students to express their views and challenge/debate opinions that are different from their own.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q4-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"What is to be done with the children?\" That was the chief question now. The dead mother would go underground, and be forever beyond all care or concern of the villagers. But the children must not be left to starve.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The story opens after the death of a poor, drunken woman, leaving the villagers of the town to decide what will become of her three children."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iii)",
+      "question_text": "Name the woman's three children. State one fact about each of them that the author mentions at the very beginning of the story.",
+      "total_marks": 3,
+      "key_points": [
+        "John + Kate + Maggie",
+        "Description of ANY TWO children/ One child with full, correct description",
+        "John + oldest – boy of twelve – stout lad – able to earn his living with any farmer.",
+        "Kate – between ten and eleven – bright active girl – if in good hands she would blossom into a clever person.",
+        "Maggie – youngest – hopelessly diseased / injured spine after a fall from a window."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "names": {
+          "marks": 1,
+          "instruction": "Name the woman's three children.",
+          "selection": "all"
+        },
+        "facts": {
+          "marks": 2,
+          "instruction": "State one fact about each of any two children (or one child with full, correct description) that the author mentions at the beginning of the story.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "John + Kate + Maggie\nDescription of ANY TWO children/ One child with full, correct description\nJohn + oldest – boy of twelve – stout lad – able to earn his living with any farmer.\nKate – between ten and eleven – bright active girl – if in good hands she would blossom into a clever person.\nMaggie – youngest – hopelessly diseased / injured spine after a fall from a window.",
+      "model_answer": null,
+      "examiner_comment": "Candidates answered this as one single question. It was easy enough for them to write the names of the three children mentioning at least one fact about each one of them. Some candidates who were unfamiliar with the text struggled to recall the names and often managed only two correct names. Some candidates had trouble with naming the children correctly. Many candidates had trouble spelling the names of the children in the story. E.g., 'John' was spelt as 'Jhon' and 'Ellis' as 'Alis'.",
+      "teacher_suggestion": "Remembering the names of the characters in a story is a basic requirement. Regular quizzes on factual details often help students remember such details during the examinations. Dictation or Spell-Bee competitions should be held in schools to improve their spelling.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q4-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"What is to be done with the children?\" That was the chief question now. The dead mother would go underground, and be forever beyond all care or concern of the villagers. But the children must not be left to starve.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The story opens after the death of a poor, drunken woman, leaving the villagers of the town to decide what will become of her three children."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iv)",
+      "question_text": "What happens to each of the children after the mother's funeral?",
+      "total_marks": 3,
+      "key_points": [
+        "John/the boy/the brother was taken away by farmer (Jones) in his wagon.",
+        "Kate/the girl/sister was taken away by Mrs. Ellis",
+        "Maggie left alone/abandoned/eventually carried home by Joe Thompson/adopted and taken in by Joe Thompson."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "John/ the boy/ the brother was taken away by farmer (Jones) in his wagon.\nKate / the girl/ sister was taken away by Mrs. Ellis\nMaggie left alone / abandoned/ eventually carried home by Joe Thompson/ adopted and taken in by Joe Thompson.",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates answered it correctly. However, a few candidates confused the names of the children with the names of the villagers. Others used the word 'adopted' instead of 'taken away' for John and Kate. A few were confused by the names 'farmer Jones' and 'Mrs. Ellis' and used them interchangeably.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q4-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "An Angel in Disguise",
+        "author": "T.S. Arthur",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"What is to be done with the children?\" That was the chief question now. The dead mother would go underground, and be forever beyond all care or concern of the villagers. But the children must not be left to starve.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The story opens after the death of a poor, drunken woman, leaving the villagers of the town to decide what will become of her three children."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(v)",
+      "question_text": "Which of the three children can be considered the 'Angel in Disguise'? What does the term 'disguise' refer to in the context of this story? How does the child's arrival transform the home she enters?",
+      "total_marks": 4,
+      "key_points": [
+        "Maggie",
+        "Her disability / injured spine / she was bedridden and seemingly 'useless'/ a sick/ miserable/ helpless child.",
+        "Before Maggie's arrival, Jane Thompson was bad tempered / selfish / 'vinegar tempered'/ childless OR before her arrival the home was a dark, cold place",
+        "After Maggie arrives – her humility, gratitude and pathetic condition filled Jane's heart with love and tenderness OR the home was filled with blessing and light."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "identify_angel": {
+          "marks": 1,
+          "instruction": "Identify which child can be considered the 'Angel in Disguise'.",
+          "selection": "all"
+        },
+        "meaning_of_disguise": {
+          "marks": 1,
+          "instruction": "Explain what 'disguise' refers to in the context of the story.",
+          "selection": "all"
+        },
+        "home_transformation": {
+          "marks": 2,
+          "instruction": "Describe how the child's arrival transforms the home she enters (before and after).",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "Maggie\nHer disability / injured spine / she was bedridden and seemingly 'useless'/ a sick/ miserable/ helpless child.\nBefore Maggie's arrival, Jane Thompson was bad tempered / selfish / 'vinegar tempered'/ childless OR before her arrival the home was a dark, cold place\nAfter Maggie arrives – her humility, gratitude and pathetic condition filled Jane's heart with love and tenderness OR the home was filled with blessing and light.",
+      "model_answer": null,
+      "examiner_comment": "Almost all candidates named Maggie as the 'Angel in Disguise'. Many candidates struggled to explain the word 'disguise' in the context of the story; they failed to mention Maggie's disability, her sickness/her spinal injury and simply stated that Maggie came disguised as an angel. Most candidates failed to infer that the word 'disguise' was a reference to Maggie's disability/injured spine/bedridden/sick/wretched state. Many candidates took the question quite literally and provided the meaning of the word 'disguise'. Most candidates were able to describe the difference in the Thompson's home before/after Maggie's arrival. It was observed that candidates who were not so well-prepared mentioned all the three names in the first part of the question.",
+      "teacher_suggestion": "Students should be taught to think beyond the literal meaning. Explain important terms with multiple examples and situations.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q5-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"Margot\"\nThey stood as if someone had driven them like so many stakes into the floor. They looked at each other and then looked away. They glanced out at the world that was raining now and raining and raining steadily. They could not meet each other's glances. Their faces were solemn and pale. They looked at their hands and feet, their faces down.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "On planet Venus, where the sun appears only once every seven years, the other children resent Margot, who remembers Earth's sunshine and cannot stop talking about it."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(i)",
+      "question_text": "Who is Margot? How does the author describe her?",
+      "total_marks": 3,
+      "key_points": [
+        "Margot – 9-year-old girl / protagonist of 'All Summer in a Day' who lived on Venus/ moved from Earth to Venus 5 years ago/ as a four year-old.",
+        "Physical: frail; pale (washed out blue eyes, pale lips and light coloured hair)/like an old photograph that had lost all its colour/soft, faint voice/like a ghost.",
+        "Personality: withdrawn/ kept to herself/ incredibly passionate about the sun/ different from the others/ introvert/ victim of bullying/ alienated"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "identify_margot": {
+          "marks": 1,
+          "instruction": "Identify who Margot is.",
+          "selection": "all"
+        },
+        "description": {
+          "marks": 2,
+          "instruction": "Describe Margot, physical or personality traits.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Margot – 9-year-old girl / protagonist of 'All Summer in a Day' who lived on Venus/ moved from Earth to Venus 5 years ago/ as a four year-old.\nDescription (any two from either physical/ personality)\nPhysical: frail; pale (see text: washed out blue eyes, pale lips and light coloured hair) /like an old photograph that had lost all its colour/ soft, faint voice/ like a ghost.\nPersonality: withdrawn/ kept to herself/ incredibly passionate about the sun/ different from the others/ introvert/ victim of bullying/ alienated",
+      "model_answer": null,
+      "examiner_comment": "Candidates unfamiliar with textual detail, found it difficult to describe Margot. Some candidates were unable to say more than, 'a girl/ a little girl' in response to the first part of this question. Most candidates were able to provide a physical description of Margot, but very few mentioned about her personality. Some candidates did not describe her appearances/ personality; they only mentioned that she was a nine-year-old girl living on planet Venus. In the third part of the question, some candidates actually gave a factual description of the planet Venus (as the Earth's neighbouring planet, closer to sun, hotter than the Earth etc.) …! Students were expected to use words like 'withdrawn'/ 'alienated' / 'introvert' /'passionate about the Sun' in their descriptions of Margot.",
+      "teacher_suggestion": "Encourage students to pay close attention to textual detail – especially descriptive details.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q5-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"Margot\"\nThey stood as if someone had driven them like so many stakes into the floor. They looked at each other and then looked away. They glanced out at the world that was raining now and raining and raining steadily. They could not meet each other's glances. Their faces were solemn and pale. They looked at their hands and feet, their faces down.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "On planet Venus, where the sun appears only once every seven years, the other children resent Margot, who remembers Earth's sunshine and cannot stop talking about it."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(ii)",
+      "question_text": "Who are 'They'? Where do they live? Mention any one reality of the planet on which they live.",
+      "total_marks": 3,
+      "key_points": [
+        "'They' = children of the 'rocket men and women' / Margot's classmates/ other children on Venus",
+        "on Venus",
+        "it rained incessantly / violent storms/ they lived in underground tunnels / the sun only appeared once in 7 years/ sun shone very briefly"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "who": {
+          "marks": 1,
+          "instruction": "Identify who 'They' are.",
+          "selection": "all"
+        },
+        "where": {
+          "marks": 1,
+          "instruction": "State where they live.",
+          "selection": "all"
+        },
+        "reality": {
+          "marks": 1,
+          "instruction": "Mention any one reality of the planet on which they live.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "'They' = children of the 'rocket men and women' / Margot's classmates/ other children on Venus\non Venus\nit rained incessantly / violent storms/ they lived in underground tunnels / the sun only appeared once in 7 years/ sun shone very briefly. (Any other acceptable response – drawn from the text)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly. In many instances, the candidates misspelt 'Venus' as 'Venice'! Candidates who had studied the text used descriptions such as 'lived in underground tunnels / the sun appeared once in seven years.' To describe the lifestyle of the people on Venus. Candidates were expected to use phrases such as 'rained incessantly' and 'violent storms' to describe Venus, however, it was disappointing to note that most candidates lacked the vocabulary to express their thoughts.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q5-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"Margot\"\nThey stood as if someone had driven them like so many stakes into the floor. They looked at each other and then looked away. They glanced out at the world that was raining now and raining and raining steadily. They could not meet each other's glances. Their faces were solemn and pale. They looked at their hands and feet, their faces down.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "On planet Venus, where the sun appears only once every seven years, the other children resent Margot, who remembers Earth's sunshine and cannot stop talking about it."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iii)",
+      "question_text": "What two words would you use to describe what the children were experiencing in the above extract? Why does the mention of Margot's name affect them in this way?",
+      "total_marks": 3,
+      "key_points": [
+        "Guilt / shame / remorse / regret/ felt sorry/ felt bad for what they had done",
+        "They had locked Margot in a closet / bullied Margot / made her miss the brief summer (when they knew how much it meant to her)"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "two_words": {
+          "marks": 2,
+          "instruction": "Give two words to describe what the children were experiencing.",
+          "selection": "any_2"
+        },
+        "reason": {
+          "marks": 1,
+          "instruction": "Explain why the mention of Margot's name affects them in this way.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Guilt / shame / remorse / regret/ felt sorry/ felt bad for what they had done (any two)\nThey had locked Margot in a closet / bullied Margot / made her miss the brief summer (when they knew how much it meant to her) (any one)",
+      "model_answer": null,
+      "examiner_comment": "Many candidates answered all parts of the question correctly. Several candidates 'borrowed' the words 'solemn' and 'pale' from the extract to describe what the children were feeling. Once again this reflects the candidates' lack of appropriate vocabulary – 'pale' and 'solemn' cannot be used to describe an experience! It also reveals an inability on their part to think/ express an opinion/ infer meaning from the context. They had no trouble answering 'why' the children felt this way as this only required the ability to recall the answer. Candidates who had fared poorly in this question, struggled to write about the feelings of guilt, shame etc. Some candidates wrote about the children's excitement at the prospect of seeing the sun after 7 long years. Only a few could answer the second part of the question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q5-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"Margot\"\nThey stood as if someone had driven them like so many stakes into the floor. They looked at each other and then looked away. They glanced out at the world that was raining now and raining and raining steadily. They could not meet each other's glances. Their faces were solemn and pale. They looked at their hands and feet, their faces down.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "On planet Venus, where the sun appears only once every seven years, the other children resent Margot, who remembers Earth's sunshine and cannot stop talking about it."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iv)",
+      "question_text": "What event had the children awaited eagerly that day? What made this event special? Why did this event mean so much to Margot in particular?",
+      "total_marks": 3,
+      "key_points": [
+        "The appearance of the sun",
+        "It happened only once in 7 years/they were only two when the sun appeared last …. They did not remember seeing the sun",
+        "Margot had been living on the earth and she needed the sun/She was used to seeing the sun everyday/she could not bear to live without it/she was eagerly waiting to see the sun."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "The appearance of the sun\nIt happened only once in 7 years/ they were only two when the sun appeared last …. They did not remember seeing the sun\nMargot had been living on the earth and she needed the sun/ She was used to seeing the sun everyday/ she could not bear to live without it/ she was eagerly waiting to see the sun.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q5-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "All Summer in a Day",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"Margot\"\nThey stood as if someone had driven them like so many stakes into the floor. They looked at each other and then looked away. They glanced out at the world that was raining now and raining and raining steadily. They could not meet each other's glances. Their faces were solemn and pale. They looked at their hands and feet, their faces down.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "On planet Venus, where the sun appears only once every seven years, the other children resent Margot, who remembers Earth's sunshine and cannot stop talking about it."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(v)",
+      "question_text": "What is the central theme of Bradbury's story, 'All Summer in a Day'? What important lesson have the children learnt from this experience? Why do you suppose the story is said to end on a note of hope?",
+      "total_marks": 4,
+      "key_points": [
+        "Bullying / Cruelty of children/ importance of the sun/ darker side of human nature/ jealousy/ envy",
+        "What they considered 'fun' had seriously harmed/hurt Margot/wrong to bully someone / not to be swept along with their peers/ that they could never undo what they had done/ empathise/ realisation.",
+        "Ends on a note of hope because the children feel guilt / shame / remorse / sorry for their action – out of this comes repentance and a reforming of their lives/ empathy/ realization/ may treat her better."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "theme": {
+          "marks": 1,
+          "instruction": "State the central theme of the story.",
+          "selection": "all"
+        },
+        "lesson": {
+          "marks": 1,
+          "instruction": "State the important lesson the children have learnt from this experience.",
+          "selection": "all"
+        },
+        "note_of_hope": {
+          "marks": 2,
+          "instruction": "Explain why the story is said to end on a note of hope.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "Bullying / Cruelty of children/ importance of the sun/ darker side of human nature/ jealousy/ envy\nWhat they considered 'fun' had seriously harmed /hurt Margot/wrong to bully someone / not to be swept along with their peers/ that they could never undo what they had done/ empathise/ realisation.\nEnds on a note of hope because the children feel guilt / shame / remorse / sorry for their action – out of this comes repentance and a reforming of their lives/ empathy/ realization/ may treat her better.",
+      "model_answer": null,
+      "examiner_comment": "The central theme of 'bullying' was identified by most candidates. Most candidates answered all parts of the question correctly. Some missed the point of the story altogether and stated that the appearance of the sun on Venus was the theme. Others mentioned science as the theme of the story. Some candidates were unable to explain why the story ended on a note of hope. Most of them felt that the 'hope' was Margot's prospective return to the Earth/ that the children could look forward to seeing the sun again after seven years.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q6-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "When all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract from 'Daffodils', Wordsworth describes coming upon a vast field of golden daffodils while wandering alone near a lake."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(i)",
+      "question_text": "Wordsworth uses the words, 'wandered' and 'lonely' to describe himself in the opening lines of the poem. What mood do these words convey? What led to a change in his mood?",
+      "total_marks": 3,
+      "key_points": [
+        "aimless / without direction/ alone / solitude / sad / depressed/ dejected/ pensive/ melancholic",
+        "The sight of a field of golden daffodils."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "mood": {
+          "marks": 2,
+          "instruction": "State the mood conveyed by the words 'wandered' and 'lonely'.",
+          "selection": "any_2"
+        },
+        "change_in_mood": {
+          "marks": 1,
+          "instruction": "State what led to a change in his mood.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "aimless / without direction/ alone / solitude / sad / depressed/ dejected/ pensive/ melancholic (any two)\nThe sight of a field of golden daffodils.",
+      "model_answer": null,
+      "examiner_comment": "Candidates were unable to correctly identify Wordsworth's mood at the start of the poem. They simply repeated the words- 'wandered' and 'lonely' from the question to describe the poet's mood. They were unable to elaborate further on these words. This might indicate a poor vocabulary or simply the fact that they study without much thought. They readily identified the reason for the poet's change in mood – simple recall. Again, this points to an inability/ unwillingness to apply their minds and imaginations while answering questions. Many candidates failed to give specific reasons to explain the words 'wandered' and 'lonely' used by the poet.",
+      "teacher_suggestion": "Encourage students to recognize and justify the mood/ tone used by the poet.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q6-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "When all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract from 'Daffodils', Wordsworth describes coming upon a vast field of golden daffodils while wandering alone near a lake."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(ii)",
+      "question_text": "How does Wordsworth describe the sight that met his eyes? Give a brief description of what the poet saw.",
+      "total_marks": 3,
+      "key_points": [
+        "Flowers everywhere/crowd/host of flowers/thousands of daffodils/growing beside the lake/beneath the trees/along the margin of a bay",
+        "the golden flowers appeared to be dancing/fluttering/tossing their heads in the breeze",
+        "never-ending line/beside the sparkling waves",
+        "compares them to stars/makes use of similes/hyperbole/imagery to describe"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Flowers everywhere/ crowd/ host of flowers/ thousands of daffodils/ growing beside the lake/ beneath the trees/ along the margin of a bay/ the golden flowers appeared to be dancing/ fluttering/ tossing their heads in the breeze/ never-ending line/ beside the sparkling waves/ compares them to stars / makes use of similes /hyperbole/imagery to describe. (any three)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered both parts of the question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q6-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "When all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract from 'Daffodils', Wordsworth describes coming upon a vast field of golden daffodils while wandering alone near a lake."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iii)",
+      "question_text": "To what does the poet compare this sight? How is this comparison appropriate?",
+      "total_marks": 3,
+      "key_points": [
+        "stars in Milky Way Galaxy/stars in the sky",
+        "because Milky Way is so full of stars all crowded together that it seems like milk splashed across the universe/continuous/never ending line",
+        "Similarly, the field was so crowded with daffodils that it looked like a galaxy of golden stars/thousands of daffodils",
+        "Stars twinkle and shine…. Daffodils are shiny and golden"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "stars in Milky Way Galaxy/ stars in the sky\nbecause Milky Way is so full of stars all crowded together that it seems like milk splashed across the universe/ continuous/ never ending line\nSimilarly, the field was so crowded with daffodils that it looked like a galaxy of golden stars/ thousands of daffodils\nStars twinkle and shine…. Daffodils are shiny and golden",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates answered all parts of the question correctly. A few said that the poet compared the daffodils to the 'dancing waves.'",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q6-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "When all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract from 'Daffodils', Wordsworth describes coming upon a vast field of golden daffodils while wandering alone near a lake."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iv)",
+      "question_text": "What does the poet mean when he says, 'Ten thousand saw I at a glance'? Find two other words in the given extract that create the impression of large numbers.",
+      "total_marks": 3,
+      "key_points": [
+        "(Hyperbole) not literally ten thousand, he means that he saw countless flowers / thousands and thousands of flowers.",
+        "Host",
+        "Crowd"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "meaning": {
+          "marks": 1,
+          "instruction": "Explain what the poet means by 'Ten thousand saw I at a glance'.",
+          "selection": "all"
+        },
+        "two_words": {
+          "marks": 2,
+          "instruction": "Find two other words in the extract that create the impression of large numbers.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "(Hyperbole) not literally ten thousand, he means that he saw countless flowers / thousands and thousands of flowers.\nHost\nCrowd",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly and scored full marks for their responses. Quite a few candidates added that Wordsworth was comparing the daffodils to the waves. Many candidates simply mentioned that it was an example of a hyperbole only. They did not explain the line. A few candidates wrote the answer for the second sub-part incorrectly, as they identified 'ten-thousand' as one of the words that creates the impression of large numbers.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q6-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Daffodils",
+        "author": "William Wordsworth",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "When all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract from 'Daffodils', Wordsworth describes coming upon a vast field of golden daffodils while wandering alone near a lake."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(v)",
+      "question_text": "What immediate effect did this sight have on Wordsworth? How did it affect him in the long-term? What does this poem tell us about Wordsworth's attitude to Nature?",
+      "total_marks": 4,
+      "key_points": [
+        "Uplifted / spirit soared /happy lifted him out of sadness and depression instantly/A poet could not but be gay in such jocund company/ cheerful/ joyous / calming and restorative.",
+        "Long term – every time he felt low, depressed he would call to mind/ recall/ remember/ imagine/ the field of golden daffodils and the mental picture/ 'inward eye' of the dancing flowers lifted his mood and made his heart 'dance with pleasure' like the daffodils / peaceful (before… after effect).",
+        "Wordsworth considered Nature his inspiration/ He believed that Nature could inspire/ heal/ and restore the human mind/ Nature lover."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "immediate_effect": {
+          "marks": 1,
+          "instruction": "State the immediate effect the sight had on Wordsworth.",
+          "selection": "all"
+        },
+        "long_term_effect": {
+          "marks": 2,
+          "instruction": "State how it affected him in the long-term.",
+          "selection": "all"
+        },
+        "attitude_to_nature": {
+          "marks": 1,
+          "instruction": "State what the poem tells us about Wordsworth's attitude to Nature.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "Uplifted / spirit soared /happy lifted him out of sadness and depression instantly/A poet could not but be gay in such jocund company/ cheerful/ joyous / calming and restorative.\nLong term – every time he felt low, depressed he would call to mind/ recall/ remember/ imagine/ the field of golden daffodils and the mental picture/ 'inward eye' of the dancing flowers lifted his mood and made his heart 'dance with pleasure' like the daffodils / peaceful (before… after effect).\nWordsworth considered Nature his inspiration/ He believed that Nature could inspire/ heal/ and restore the human mind/ Nature lover.",
+      "model_answer": null,
+      "examiner_comment": "Several candidates answered all parts of the question correctly. They were aware that Wordsworth was a nature poet - that Nature was his inspiration and that he believed in Nature's restorative powers/ it heals. A few candidates had trouble differentiating between 'immediate' effect and 'long term' effect.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q7-i",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "But a caged bird stands on the grave of dreams\nhis shadow shouts on a nightmare scream\nhis wings are clipped and his feet are tied\nso he opens his throat to sing.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract, Angelou contrasts the free bird's untroubled flight with the caged bird's restricted, sorrow-filled existence, using the cage as a metaphor for oppression."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(i)",
+      "question_text": "How does Angelou describe the state of the free bird in the opening lines of the poem?",
+      "total_marks": 3,
+      "key_points": [
+        "Leaps on the back of the wind",
+        "Floats downstream till the current ends",
+        "Dips his wing in the orange sun rays",
+        "Dares to claim the sky/exploring the sky for freedom"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "A free bird:\nLeaps on the back of the wind\nFloats downstream till the current ends\nDips his wing in the orange sun rays\nDares to claim the sky/ exploring the sky for freedom (Any three)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered the question correctly. A few candidates described the 'caged bird' instead of the 'free bird'. Perhaps they had only studied a description of the 'caged bird'. A few candidates mentioned 'fat worms' and 'trade winds soft' which are mentioned later in the poem and not in the opening lines.",
+      "teacher_suggestion": "Train students to read the question carefully and understand it—avoid answering in haste.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q7-ii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "But a caged bird stands on the grave of dreams\nhis shadow shouts on a nightmare scream\nhis wings are clipped and his feet are tied\nso he opens his throat to sing.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract, Angelou contrasts the free bird's untroubled flight with the caged bird's restricted, sorrow-filled existence, using the cage as a metaphor for oppression."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(ii)",
+      "question_text": "Give a brief description of the caged bird's physical and mental condition.",
+      "total_marks": 3,
+      "key_points": [
+        "Physical condition: clipped wings/tied feet/Restricted movement/narrow cage",
+        "Mental Condition: filled with rage/furious/angry/frustrated/fear of the unknown/restricted movement/dreams of/yearns for freedom"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Physical condition: clipped wings/ tied feet/ Restricted movement/ narrow cage\nMental Condition:  filled with rage / furious/ angry/ frustrated /fear of the unknown/ restricted movement / dreams of / yearns for freedom",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered the question correctly. However, some candidates described the physical condition (wings clipped/feet tied/locked in small cage etc.) but did not describe the bird's mental condition. The question required them to describe both.",
+      "teacher_suggestion": "Advise students to read all parts of the question very carefully and respond accordingly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q7-iii",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "But a caged bird stands on the grave of dreams\nhis shadow shouts on a nightmare scream\nhis wings are clipped and his feet are tied\nso he opens his throat to sing.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract, Angelou contrasts the free bird's untroubled flight with the caged bird's restricted, sorrow-filled existence, using the cage as a metaphor for oppression."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iii)",
+      "question_text": "Explain the phrase, 'grave of dreams' in your own words. What does the caged bird sing about?",
+      "total_marks": 3,
+      "key_points": [
+        "grave of dreams – state of utter despair / even dreams have died and been buried/hopelessness/desperate (any synonym)",
+        "unknown things/things it longs for/yearns for/freedom/dreams"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "explain_phrase": {
+          "marks": 1,
+          "instruction": "Explain the phrase 'grave of dreams' in your own words.",
+          "selection": "all"
+        },
+        "sings_about": {
+          "marks": 2,
+          "instruction": "State what the caged bird sings about.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "grave of dreams – state of utter despair / even dreams have died and been buried/ hopelessness/ desperate (any synonym)\nunknown things/ things it longs for / yearns for/ freedom/ dreams  (any two)",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered all parts of the question correctly. Some candidates had difficulty in explaining the phrase 'grave of dreams.' As the phrase wasn't clearly understood by them, a few did not attempt this question.",
+      "teacher_suggestion": "Provide a brief background on the poet/writer, highlighting aspects of their life relevant to a proper study and understanding of the poem/story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q7-iv",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "But a caged bird stands on the grave of dreams\nhis shadow shouts on a nightmare scream\nhis wings are clipped and his feet are tied\nso he opens his throat to sing.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract, Angelou contrasts the free bird's untroubled flight with the caged bird's restricted, sorrow-filled existence, using the cage as a metaphor for oppression."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iv)",
+      "question_text": "The 'free bird' and the 'caged bird' in the poem represent different groups of people. Name them. Name any one group of people that you would call 'caged birds' in today's world.",
+      "total_marks": 3,
+      "key_points": [
+        "Free bird – People who enjoyed unrestricted freedom in society e.g., men / white people/ privileged",
+        "Caged bird – People who had their freedom restricted, curtailed e.g., People of colour / African – Americans / not so privileged/ Women",
+        "Other 'Caged birds': accept any plausible response such as women / poor / persons belonging to low caste/ child labourers/ transgenders/ prisoners etc."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "represented_groups": {
+          "marks": 2,
+          "instruction": "Name the groups of people represented by the free bird and the caged bird.",
+          "selection": "all"
+        },
+        "todays_caged_birds": {
+          "marks": 1,
+          "instruction": "Name any one group of people that could be called 'caged birds' in today's world.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Free bird – People who enjoyed unrestricted freedom in society\ne.g., men / white people/ privileged\nCaged bird – People who had their freedom restricted, curtailed\ne.g., People of colour / African – Americans / not so privileged/ Women\nOther 'Caged birds': Please accept any plausible response such as women / poor / persons belonging to low caste/ child labourers/ transgenders/ prisoners etc.",
+      "model_answer": null,
+      "examiner_comment": "The candidates' responses to this question were both gratifying and enlightening. The responses showed that our young people are thinking critically and responding with sensitivity. Their response to 'Name one group of people that you would call caged birds today' elicited a range of insightful answers that included, 'transgender', 'gay people', 'Dalits', 'girls', 'village women', 'Ukrainians' etc.",
+      "teacher_suggestion": "Discuss such questions in the classroom to provide students with an opportunity to share their points of view. Encourage meaningful, associative, and active learning.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2023-sb-q7-v",
+      "subject": "english_literature",
+      "year": 2023,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "I Know Why the Caged Bird Sings",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "But a caged bird stands on the grave of dreams\nhis shadow shouts on a nightmare scream\nhis wings are clipped and his feet are tied\nso he opens his throat to sing.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "In this extract, Angelou contrasts the free bird's untroubled flight with the caged bird's restricted, sorrow-filled existence, using the cage as a metaphor for oppression."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(v)",
+      "question_text": "What does the title of the poem, 'I Know Why the Caged Bird Sings', tell us about Maya Angelou's life? Mention two ways in which the world of the caged bird differs from that of the free bird.",
+      "total_marks": 4,
+      "key_points": [
+        "Title tells us she has first-hand experience ('I Know Why…') of being caged/she was abused/victim of gender/racial discrimination/traumatic childhood",
+        "She has experience and can therefore empathise",
+        "Caged bird: Can only walk about its cage / Limited movement / Dreams have been crushed / Can only sing of freedom, 'things unknown but longed for still' – not really experience it / Bars limit its world / Has no access to resources/opportunities / No choices.",
+        "Free bird: Can fly freely / Unrestricted access to all it wishes for / Can dream / Experience freedom / No cage to limit its freedom / Has access to resources like trade winds/fat worms / Plenty of choices."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "title_meaning": {
+          "marks": 2,
+          "instruction": "State what the title tells us about Maya Angelou's life.",
+          "selection": "all"
+        },
+        "two_ways_differ": {
+          "marks": 2,
+          "instruction": "Mention two ways in which the world of the caged bird differs from that of the free bird.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Title tells us she has first-hand experience ('I Know Why…') of being caged/ she was abused/ victim of gender/ racial discrimination/ traumatic childhood\nShe has experience and can therefore empathise\nCaged bird | Free bird\nCan only walk about its cage. | Can fly freely.\nLimited movement. | Unrestricted access to all it wishes for.\nDreams have been crushed. | Can dream.\nCan only sing of freedom, 'things unknown but longed for still' – not really experience it. | Experience freedom\nBars limit its world. | No cage to limit its freedom.\nHas no access to resources/ opportunities. | Has access to resources like trade winds/ fat worms.\nNo choices. | Plenty of choices",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered both parts of the question correctly. They were familiar with details of Angelou's early years and her struggle as an activist, feminist and a person of colour and made references to all this in their responses. Some candidates mentioned only one difference instead of two in response to the second part of this question. Several candidates mentioned the differences between white Americans and African Americans.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    }
+  ]
+}

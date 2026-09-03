@@ -1,0 +1,2170 @@
+{
+  "subject": "english_literature",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "paper_2",
+  "year": 2025,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "eng-lit-2025-sa-q1-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(i)",
+      "question_text": "What does Antony describe as, 'thou bleeding piece of earth,'?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Caesar's robe that was stained with his blood"
+        },
+        {
+          "key": "b",
+          "text": "The blood-soaked spot on which Caesar lies"
+        },
+        {
+          "key": "c",
+          "text": "The bloodied pedestal on which Caesar fell"
+        },
+        {
+          "key": "d",
+          "text": "Caesar's lifeless body covered in blood"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "Caesar's lifeless body covered in blood",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(ii)",
+      "question_text": "When Brutus says, 'ambition's debt is paid', he means that ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Caesar's greed for power and possession had resulted in his death"
+        },
+        {
+          "key": "b",
+          "text": "Caesar had left seventy-five drachmas for every citizen of Rome"
+        },
+        {
+          "key": "c",
+          "text": "Mark Antony would be permitted to speak at Caesar's funeral"
+        },
+        {
+          "key": "d",
+          "text": "The conspirators would be punished for assassinating Caesar"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "Caesar's greed for power and possession had resulted in his death",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(iii)",
+      "question_text": "After Antony's speech following Caesar's assassination, the angry mob kills ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Cinna the conspirator"
+        },
+        {
+          "key": "b",
+          "text": "Cinna the poet"
+        },
+        {
+          "key": "c",
+          "text": "Decius Brutus"
+        },
+        {
+          "key": "d",
+          "text": "Cicero"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Cinna the poet",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(iv)",
+      "question_text": "When Antony says, 'He must be taught, and train'd, and bid go forth: A barren-spirited fellow;' he refers to ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Octavius"
+        },
+        {
+          "key": "b",
+          "text": "Lucilius"
+        },
+        {
+          "key": "c",
+          "text": "Lucius"
+        },
+        {
+          "key": "d",
+          "text": "Lepidus"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "Lepidus",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(v)",
+      "question_text": "Who were the members of the Second Triumvirate, formed to rule over Rome after Caesar's assassination?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Julius Caesar, Crassus, Pompey"
+        },
+        {
+          "key": "b",
+          "text": "Marcus Brutus, Caius Cassius, Casca"
+        },
+        {
+          "key": "c",
+          "text": "Mark Antony, Octavius Caesar, Lepidus"
+        },
+        {
+          "key": "d",
+          "text": "Octavius Caesar, Julius Caesar, Mark Antony"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "Mark Antony, Octavius Caesar, Lepidus",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-vi",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "question_number": "1(vi)",
+      "question_text": "Which of the following words best describes Cassius's mood when he says:\n'Come, Antony, and young Octavius, come,\nRevenge yourselves alone on Cassius,'",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "anxious"
+        },
+        {
+          "key": "b",
+          "text": "regretful"
+        },
+        {
+          "key": "c",
+          "text": "fearful"
+        },
+        {
+          "key": "d",
+          "text": "frustrated"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "frustrated",
+      "examiner_comment": "Most candidates were able to answer this question correctly. However, many students struggled with comprehension and were influenced by the distractors, leading to incorrect responses.",
+      "teacher_suggestion": "This should be a part of the Teaching-Learning process where through formative assessment Qs, the students' ability to read mood/ detect tone/ identify character trait is built up.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-vii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "Haunted Houses",
+        "author": "Henry Wadsworth Longfellow",
+        "work_type": "poem"
+      },
+      "question_number": "1(vii)",
+      "question_text": "In the poem, 'Haunted Houses', what does the speaker see at his fireside that the stranger cannot?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "the speaker only sees what is physically present"
+        },
+        {
+          "key": "b",
+          "text": "the stranger can see the spirits while the speaker cannot"
+        },
+        {
+          "key": "c",
+          "text": "the speaker sees both the present and the past"
+        },
+        {
+          "key": "d",
+          "text": "the stranger sees both the present and the future"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "the speaker sees both the present and the past",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-viii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "question_number": "1(viii)",
+      "question_text": "In the poem, 'The Glove and the Lions', who does Count de Lorge 'sigh for'?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "The lions that ramped and roared"
+        },
+        {
+          "key": "b",
+          "text": "King Francis who loved a royal sport"
+        },
+        {
+          "key": "c",
+          "text": "The nobles who filled the benches"
+        },
+        {
+          "key": "d",
+          "text": "The beauteous lively dame"
+        }
+      ],
+      "correct_option": "d",
+      "correct_answer_text": "The beauteous lively dame",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-ix",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "When Great Trees Fall",
+        "author": "Maya Angelou",
+        "work_type": "poem"
+      },
+      "question_number": "1(ix)",
+      "question_text": "Select the option that shows the correct relationship between Statements (1) and (2) from Maya Angelou's poem, 'When Great Trees Fall':\nStatement 1: When great trees fall, the world is left permanently unstable.\nStatement 2: In the poem, the natural world is depicted as reacting with fear and uncertainty when great trees fall.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "(1) is false, but (2) is true."
+        },
+        {
+          "key": "b",
+          "text": "Both (1) and (2) are false."
+        },
+        {
+          "key": "c",
+          "text": "(1) is true, but (2) is false."
+        },
+        {
+          "key": "d",
+          "text": "Both (1) and (2) are true."
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "(1) is false, but (2) is true.",
+      "examiner_comment": "Many candidates struggled to identify the underlying connection between the two sentences or grasp the concept, leading to incorrect responses.",
+      "teacher_suggestion": "Provide ample practice in identifying relationships between two statements, such as: cause and effect, true or false, contradictions, inferences or implicit connections.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-x",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "question_number": "1(x)",
+      "question_text": "The poem, A Considerable Speck, expresses Frost's ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "love for the little organism"
+        },
+        {
+          "key": "b",
+          "text": "respect for intelligent life"
+        },
+        {
+          "key": "c",
+          "text": "indifference to the tiny creature"
+        },
+        {
+          "key": "d",
+          "text": "anger at the mite's escape"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "respect for intelligent life",
+      "examiner_comment": "Several candidates who understood the theme of the poem were able to answer correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xi",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Power of Music",
+        "author": "Sukumar Ray",
+        "work_type": "poem"
+      },
+      "question_number": "1(xi)",
+      "question_text": "Which of the given options contains the figure of speech that appears in the following line from the poem, 'The Power of Music'?\nAnd in the sky the feathered fly turn turtle while\nThey're winging,",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "You're one month on in the middle of May"
+        },
+        {
+          "key": "b",
+          "text": "Rainbow-tinted circles of light"
+        },
+        {
+          "key": "c",
+          "text": "And life is too much like a pathless wood"
+        },
+        {
+          "key": "d",
+          "text": "The wind lies asleep in the arms of the dawn"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "You're one month on in the middle of May",
+      "examiner_comment": "Many candidates struggled to identify figures of speech accurately, leading to incorrect choices.",
+      "teacher_suggestion": "Teach students to correctly identify common figures of speech in the poems, stories, and plays they study. Reinforce learning by providing multiple examples of the same figure of speech from texts beyond the prescribed syllabus. Familiarise students to a range of literary devices and how it can be interpreted in different contexts.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "With the Photographer",
+        "author": "Stephen Leacock",
+        "work_type": "short_story"
+      },
+      "question_number": "1(xii)",
+      "question_text": "In the short story, 'With the Photographer', the narrator asks the photographer, \"Is it me?\" because ___________.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "He is delighted with the photographer's skill"
+        },
+        {
+          "key": "b",
+          "text": "He looks very handsome in the photograph"
+        },
+        {
+          "key": "c",
+          "text": "He is unable to recognise his own face"
+        },
+        {
+          "key": "d",
+          "text": "He is ashamed of how he looks in the picture"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "He is unable to recognise his own face",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xiii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "question_number": "1(xiii)",
+      "question_text": "In the short story, 'The Elevator', which of the following does Martin's father NOT do when Martin expresses his fear of the elevator?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "He dismisses Martin's concerns"
+        },
+        {
+          "key": "b",
+          "text": "He encourages Martin to use the stairs"
+        },
+        {
+          "key": "c",
+          "text": "He tells Martin to grow up and be brave"
+        },
+        {
+          "key": "d",
+          "text": "He watches TV and ignores Martin's fear"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "He encourages Martin to use the stairs",
+      "examiner_comment": "Most candidates answered this question correctly, though some overlooked the word \"NOT\" in the question and consequently lost a mark.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xiv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Pedestrian",
+        "author": "Ray Bradbury",
+        "work_type": "short_story"
+      },
+      "question_number": "1(xiv)",
+      "question_text": "Choose the option that lists the sequence of events from Ray Bradbury's short story, 'The Pedestrian':\n1. One night, as he was nearing home, he was stopped by a police car.\n2. Since his answers were considered odd and unacceptable, he was forced to enter the car and taken away.\n3. Leonard Mead loved to walk through the empty streets at night.\n4. A metallic voice from the car asked him a series of questions.",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "2, 1, 3, 4"
+        },
+        {
+          "key": "b",
+          "text": "1, 3, 4, 2"
+        },
+        {
+          "key": "c",
+          "text": "3, 1, 4, 2"
+        },
+        {
+          "key": "d",
+          "text": "4, 1, 2, 3"
+        }
+      ],
+      "correct_option": "c",
+      "correct_answer_text": "3, 1, 4, 2",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Girl Who Can",
+        "author": "Ama Ata Aidoo",
+        "work_type": "short_story"
+      },
+      "question_number": "1(xv)",
+      "question_text": "Where was Adjoa born?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "Nigeria"
+        },
+        {
+          "key": "b",
+          "text": "Ghana"
+        },
+        {
+          "key": "c",
+          "text": "Ethiopia"
+        },
+        {
+          "key": "d",
+          "text": "Kenya"
+        }
+      ],
+      "correct_option": "b",
+      "correct_answer_text": "Ghana",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sa-q1-xvi",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_a",
+      "section_label": "A",
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "question_number": "1(xvi)",
+      "question_text": "Why did M. Hamel have to leave the school after forty years of service?",
+      "total_marks": 1,
+      "options": [
+        {
+          "key": "a",
+          "text": "He was not allowed to teach French any longer"
+        },
+        {
+          "key": "b",
+          "text": "He had grown tired of his job as a schoolteacher"
+        },
+        {
+          "key": "c",
+          "text": "He was thought to be too strict in his ways"
+        },
+        {
+          "key": "d",
+          "text": "He wanted to retire and take up farming"
+        }
+      ],
+      "correct_option": "a",
+      "correct_answer_text": "He was not allowed to teach French any longer",
+      "examiner_comment": "Most candidates were able to answer this question correctly.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q2-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.\nThe evil that men do lives after them,\nThe good is oft interred with their bones;\nSo let it be with Caesar. The noble Brutus\nHath told you Caesar was ambitious;\nIf it were so, it was a grievous fault,\nAnd grievously hath Caesar answer'd it.\nHere, under leave of Brutus and the rest–\nFor Brutus is an honourable man;\nSo are they all, all honourable men–\nCome I to speak in Caesar's funeral.",
+        "reference": "Act 3, Scene 2",
+        "speaker": "Antony",
+        "context_before": "Brutus has just addressed the citizens justifying Caesar's assassination, and Antony now takes the stage to deliver his funeral oration."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(i)",
+      "question_text": "What does Antony say he is there for?\nWhat does he say he is not there for?\nWhat do you think he is actually there for?",
+      "total_marks": 3,
+      "key_points": [
+        "To bury (perform last rites) Caesar/ to speak (talk) at Caesar's funeral/ mourn Caesar's death/ pay homage to Julius Caesar/ pay tribute/ last respects to Julius Caesar",
+        "(NOT) to praise Caesar / glorify",
+        "To provoke/ infuriate/ incite/ instigate/ inflame/ the citizens to mutiny/ to turn the people against the conspirators/ manipulate the mob",
+        "To expose the conspirators for who they are/ reveal their true nature"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "says_there_for": {
+          "marks": 1,
+          "instruction": "To bury Caesar/ to speak at Caesar's funeral/ mourn Caesar's death/ pay homage/ pay tribute/ last respects to Julius Caesar.",
+          "selection": "any_1"
+        },
+        "says_not_there_for": {
+          "marks": 1,
+          "instruction": "(NOT) to praise Caesar / glorify.",
+          "selection": "any_1"
+        },
+        "actually_there_for": {
+          "marks": 1,
+          "instruction": "To provoke/ incite/ inflame the citizens to mutiny/ to turn the people against the conspirators/ manipulate the mob/ to expose the conspirators.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "To bury (perform last rites) Caesar/ to speak (talk) at Caesar's funeral/ mourn Caesar's death/ pay homage to Julius Caesar/ pay tribute/ last respects to Julius Caesar / (NOT) to praise Caesar / glorify / To provoke/ infuriate/ incite/ instigate/ inflame/ the citizens to mutiny/ to turn the people against the conspirators/ manipulate the mob / To expose the conspirators for who they are/ reveal their true nature",
+      "model_answer": null,
+      "examiner_comment": "This was a straightforward question testing recall, comprehension, and simple analysis, and was correctly answered by most of the candidates.",
+      "teacher_suggestion": "Train students to read between the lines and infer implied meanings while studying the text.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q2-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.\nThe evil that men do lives after them,\nThe good is oft interred with their bones;\nSo let it be with Caesar. The noble Brutus\nHath told you Caesar was ambitious;\nIf it were so, it was a grievous fault,\nAnd grievously hath Caesar answer'd it.\nHere, under leave of Brutus and the rest–\nFor Brutus is an honourable man;\nSo are they all, all honourable men–\nCome I to speak in Caesar's funeral.",
+        "reference": "Act 3, Scene 2",
+        "speaker": "Antony",
+        "context_before": "Brutus has just addressed the citizens justifying Caesar's assassination, and Antony now takes the stage to deliver his funeral oration."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(ii)",
+      "question_text": "What were the three conditions that Brutus had laid down before allowing Antony to speak to the citizens of Rome?",
+      "total_marks": 3,
+      "key_points": [
+        "Brutus would speak first",
+        "Antony would say that he was speaking with the permission of the conspirators",
+        "Antony would not blame the conspirators",
+        "could speak well of Caesar",
+        "Antony would speak from the same pulpit as Brutus"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Brutus would speak first / Antony would say that he was speaking with the permission of the conspirators / Antony would not blame the conspirators / could speak well of Caesar / Antony would speak from the same pulpit as Brutus [Any 3]",
+      "model_answer": null,
+      "examiner_comment": "Most candidates were able to list the three conditions laid down by Brutus. Some struggled to recall all three and managed to recall only one or two condition(s).",
+      "teacher_suggestion": "Encourage them to note or mark important details in point form during lessons.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q2-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.\nThe evil that men do lives after them,\nThe good is oft interred with their bones;\nSo let it be with Caesar. The noble Brutus\nHath told you Caesar was ambitious;\nIf it were so, it was a grievous fault,\nAnd grievously hath Caesar answer'd it.\nHere, under leave of Brutus and the rest–\nFor Brutus is an honourable man;\nSo are they all, all honourable men–\nCome I to speak in Caesar's funeral.",
+        "reference": "Act 3, Scene 2",
+        "speaker": "Antony",
+        "context_before": "Brutus has just addressed the citizens justifying Caesar's assassination, and Antony now takes the stage to deliver his funeral oration."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iii)",
+      "question_text": "List the three arguments that Antony uses immediately after he speaks these lines to prove conclusively that Julius Caesar was not ambitious.",
+      "total_marks": 3,
+      "key_points": [
+        "Caesar brought many captives home (their ransoms filled general coffers)",
+        "Caesar wept with the poor",
+        "Refused the crown (three times at the Lupercalia)"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Caesar brought many captives home (their ransoms filled general coffers) / Caesar wept with the poor / Refused the crown (three times at the Lupercalia)",
+      "model_answer": null,
+      "examiner_comment": "Several candidates ignored the word 'immediately after' and instead wrote about Caesar's Will, which is mentioned much later in the scene because of which they were marked low.",
+      "teacher_suggestion": "Emphasise more towards interpreting the intent and development of a character in a given text. Additionally, encourage plot analysis during discussions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q2-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.\nThe evil that men do lives after them,\nThe good is oft interred with their bones;\nSo let it be with Caesar. The noble Brutus\nHath told you Caesar was ambitious;\nIf it were so, it was a grievous fault,\nAnd grievously hath Caesar answer'd it.\nHere, under leave of Brutus and the rest–\nFor Brutus is an honourable man;\nSo are they all, all honourable men–\nCome I to speak in Caesar's funeral.",
+        "reference": "Act 3, Scene 2",
+        "speaker": "Antony",
+        "context_before": "Brutus has just addressed the citizens justifying Caesar's assassination, and Antony now takes the stage to deliver his funeral oration."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iv)",
+      "question_text": "Antony repeatedly uses certain words in his speech to describe Brutus. What are they?\nWhy does he do this?",
+      "total_marks": 3,
+      "key_points": [
+        "Brutus is an honourable man",
+        "Cannot openly criticize/ speak ill of Brutus and the conspirators",
+        "To mock B/ to undermine B",
+        "To manipulate the mob",
+        "Uses sarcasm and irony to get his message across/ to prove that B was not actually honourable"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "what_words": {
+          "marks": 1,
+          "instruction": "Brutus is an 'honourable' man.",
+          "selection": "any_1"
+        },
+        "why": {
+          "marks": 2,
+          "instruction": "Cannot openly criticize Brutus / To mock/undermine Brutus / To manipulate the mob / Uses sarcasm and irony to prove Brutus was not actually honourable.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Brutus is an honourable man / Cannot openly criticize/ speak ill of Brutus and the conspirators / To mock B/ to undermine B / To manipulate the mob / Uses sarcasm and irony to get his message across/ to prove that B was not actually honourable",
+      "model_answer": null,
+      "examiner_comment": "Most candidates correctly mentioned 'honourable man' as the frequently used words. However, they were no able to correctly state why Antony used these words. Very few used words like 'sarcasm' and 'irony' to explain Antony's use of the phrase.",
+      "teacher_suggestion": "Familiarise students with a wide range of literary devices especially to help effectively engage with classical literary texts like Julius Caesar.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q2-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Friends, Romans, countrymen, lend me your ears;\nI come to bury Caesar, not to praise him.\nThe evil that men do lives after them,\nThe good is oft interred with their bones;\nSo let it be with Caesar. The noble Brutus\nHath told you Caesar was ambitious;\nIf it were so, it was a grievous fault,\nAnd grievously hath Caesar answer'd it.\nHere, under leave of Brutus and the rest–\nFor Brutus is an honourable man;\nSo are they all, all honourable men–\nCome I to speak in Caesar's funeral.",
+        "reference": "Act 3, Scene 2",
+        "speaker": "Antony",
+        "context_before": "Brutus has just addressed the citizens justifying Caesar's assassination, and Antony now takes the stage to deliver his funeral oration."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(v)",
+      "question_text": "Which one argument of Antony's do you think had the greatest impact on his listeners? Give a reason to support your answer.\nWhat were the citizens' feelings towards Antony before he began his speech?\nHow do their feelings towards him change at the end of his speech?",
+      "total_marks": 4,
+      "key_points": [
+        "Caesar was not ambitious (reason: he wept when the poor cried/ he refused the crown/ he enriched Rome's coffers with ransoms of captives)",
+        "Caesar wept when the poor cried/ Caesar refused the crown/ Caesar enriched Rome's coffers with ransoms of captives (reason: Caesar was NOT ambitious)",
+        "Caesar's mutilated body (reason: Plebians shocked/ moved by the sight)",
+        "Caesar's blood-stained robe (Reason: Caesar was courageous/ great General/ didn't deserve such a death)",
+        "Caesar's will that proved his love for the citizens (reason: Caesar was generous/ loved the people of Rome)",
+        "At first resentful and suspicious/ angry/ hostile (accept synonyms)",
+        "Later loyal and supportive (accept synonyms)"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "argument_with_reason": {
+          "marks": 2,
+          "instruction": "Accept any ONE plausible argument from Antony's speech + a reason that logically aligns with the stated argument.",
+          "selection": "any_1"
+        },
+        "feelings_before": {
+          "marks": 1,
+          "instruction": "Citizens were resentful / suspicious / angry / hostile towards Antony before his speech.",
+          "selection": "any_1"
+        },
+        "feelings_after": {
+          "marks": 1,
+          "instruction": "Citizens became loyal / supportive of Antony after his speech.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Personal Response Q: Plausible responses such as: Caesar was not ambitious (reason: he wept when the poor cried/ he refused the crown/ he enriched Rome's coffers with ransoms of captives) / Caesar's mutilated body (reason: Plebians shocked/ moved by the sight) / Caesar's blood-stained robe (Reason: Caesar was courageous/ great General/ didn't deserve such a death) / Caesar's will that proved his love for the citizens (reason: Caesar was generous/ loved the people of Rome) [Any 1] + At first resentful and suspicious/ angry/ hostile (accept synonyms) + Later loyal and supportive (accept synonyms)",
+      "model_answer": null,
+      "examiner_comment": "Many candidates could not respond well, as the reasoning given did not align with the stated argument. Some candidates misinterpreted the intent of the question (before and after), leading to vague or incorrect answers such as \"The people favoured Brutus\" and \"The people turned against Brutus at the end.\" Instead of analysing the plebeians' reactions to Antony, several wrote about the mob or the conspirators, which was not what the question aimed to assess.",
+      "teacher_suggestion": "Help students develop the ability to construct logical arguments by pausing to understand what each question truly requires before answering.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q3-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Cassius: Then, if we lose this battle,\nYou are contented to be led in triumph\nThrough the streets of Rome?\n\nBrutus: No, Cassius, no: think not, thou noble Roman,\nThat ever Brutus will go bound to Rome;\nHe bears too great a mind. But this same day\nMust end that work the ides of March begun;\nAnd whether we shall meet again I know not.\nTherefore our everlasting farewell take:\nForever, and forever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then, this parting was well made.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Cassius and Brutus",
+        "context_before": "Before the Battle of Philippi, Cassius and Brutus exchange farewells, uncertain whether they will survive the coming battle against Antony and Octavius."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(i)",
+      "question_text": "Why does Brutus say, 'No, Cassius, no'?\nWhat conditions may force Brutus to go bound to Rome?\nBrutus says, 'And whether we shall meet again I know not.' What do these words imply?",
+      "total_marks": 3,
+      "key_points": [
+        "In response to question posed by Cassius/was not willing to accept the humiliation of defeat/ to be led as captive/ prisoner through Rome",
+        "If they lose the battle/ defeated/ taken captive",
+        "Implies uncertainty/ unsure/ doubtful of outcome of battle/ one or the other might die in the battle/ resigned to their fate"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "why_no": {
+          "marks": 1,
+          "instruction": "In response to Cassius's question / was not willing to accept the humiliation of defeat / to be led as captive / prisoner through Rome.",
+          "selection": "any_1"
+        },
+        "conditions": {
+          "marks": 1,
+          "instruction": "If they lose the battle / defeated / taken captive.",
+          "selection": "any_1"
+        },
+        "implication": {
+          "marks": 1,
+          "instruction": "Implies uncertainty / unsure / doubtful of outcome of battle / one or the other might die in the battle / resigned to their fate.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "In response to question posed by Cassius/was not willing to accept the humiliation of defeat/ to be led as captive/ prisoner through Rome / If they lose the battle/ defeated/ taken captive / Implies uncertainty/ unsure/ doubtful of outcome of battle/ one or the other might die in the battle/ resigned to their fate",
+      "model_answer": null,
+      "examiner_comment": "Many candidates struggled to provide accurate and precise responses, leading to a significant loss of marks. Several copied details verbatim from the passage instead of demonstrating comprehension and analysis. In particular, many were unable to answer the second part of the question on 'go bound' correctly, which further contributed to mark deductions.",
+      "teacher_suggestion": "Incorporate questions that promote higher-order thinking (HOTS) to regular classroom teaching and learning. Train students to read questions carefully, paying attention to specific clue words that indicate what is expected.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q3-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Cassius: Then, if we lose this battle,\nYou are contented to be led in triumph\nThrough the streets of Rome?\n\nBrutus: No, Cassius, no: think not, thou noble Roman,\nThat ever Brutus will go bound to Rome;\nHe bears too great a mind. But this same day\nMust end that work the ides of March begun;\nAnd whether we shall meet again I know not.\nTherefore our everlasting farewell take:\nForever, and forever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then, this parting was well made.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Cassius and Brutus",
+        "context_before": "Before the Battle of Philippi, Cassius and Brutus exchange farewells, uncertain whether they will survive the coming battle against Antony and Octavius."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(ii)",
+      "question_text": "To what does Brutus refer when he says, 'the work which the ides of March begun'?\nHow was 'that work' begun?\nWhat political change would take place in Rome if Brutus and Cassius lose this battle?",
+      "total_marks": 3,
+      "key_points": [
+        "To free Rome of tyranny/ Caesar's power/restore liberty (freedom)/ establish Rome as Republic",
+        "Caesar's assassination/ putting Caesar to death/ killing/ murder",
+        "Antony and Octavius would take over Rome / second Triumvirate would be established"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "what_work": {
+          "marks": 1,
+          "instruction": "To free Rome of tyranny / Caesar's power / restore liberty (freedom) / establish Rome as Republic.",
+          "selection": "any_1"
+        },
+        "how_begun": {
+          "marks": 1,
+          "instruction": "Caesar's assassination / putting Caesar to death / killing / murder.",
+          "selection": "any_1"
+        },
+        "political_change": {
+          "marks": 1,
+          "instruction": "Antony and Octavius would take over Rome / second Triumvirate would be established.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "To free Rome of tyranny/ Caesar's power/restore liberty (freedom)/ establish Rome as Republic / Caesar's assassination/ putting Caesar to death/ killing/ murder / Antony and Octavius would take over Rome / second Triumvirate would be established",
+      "model_answer": null,
+      "examiner_comment": "Most candidates found this higher-order thinking (HOTS) question challenging, as it required both understanding and analysis. A common response pattern was observed, with many mentioning the assassination of Julius Caesar for the first part and the conspiracy for the second. The third part, however, was generally answered correctly.",
+      "teacher_suggestion": "Encourage students to highlight or mark important lines in their textbooks for better recall and understanding. Enable students to analyse, evaluate, compare and contrast characters and thematic inter-textuality for more thorough reading of literary texts.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q3-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Cassius: Then, if we lose this battle,\nYou are contented to be led in triumph\nThrough the streets of Rome?\n\nBrutus: No, Cassius, no: think not, thou noble Roman,\nThat ever Brutus will go bound to Rome;\nHe bears too great a mind. But this same day\nMust end that work the ides of March begun;\nAnd whether we shall meet again I know not.\nTherefore our everlasting farewell take:\nForever, and forever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then, this parting was well made.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Cassius and Brutus",
+        "context_before": "Before the Battle of Philippi, Cassius and Brutus exchange farewells, uncertain whether they will survive the coming battle against Antony and Octavius."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iii)",
+      "question_text": "Earlier in this scene, Cassius had confided to Messala a strange occurrence that he had observed when his army was on its way from Sardis to Philippi. Describe this strange occurrence.",
+      "total_marks": 3,
+      "key_points": [
+        "At first (two) eagles travelled with them (perched on the ensign accepted food from the soldiers)",
+        "That morning, the eagles had fled/ disappeared/ vanished",
+        "Were replaced by ravens, crows and kites / scavenging birds"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "At first (two) eagles travelled with them… (perched on the ensign accepted food from the soldiers) / That morning, the eagles had fled/ disappeared/ vanished / Were replaced by ravens, crows and kites / scavenging birds",
+      "model_answer": null,
+      "examiner_comment": "Although this was a straightforward recall question, many candidates were unable to remember the required details to secure full marks.",
+      "teacher_suggestion": "Explain every literary allusion in the play, whether Classical or Biblical, while teaching the text. Familiarise students with the complete story and discuss it in class for better understanding.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q3-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Cassius: Then, if we lose this battle,\nYou are contented to be led in triumph\nThrough the streets of Rome?\n\nBrutus: No, Cassius, no: think not, thou noble Roman,\nThat ever Brutus will go bound to Rome;\nHe bears too great a mind. But this same day\nMust end that work the ides of March begun;\nAnd whether we shall meet again I know not.\nTherefore our everlasting farewell take:\nForever, and forever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then, this parting was well made.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Cassius and Brutus",
+        "context_before": "Before the Battle of Philippi, Cassius and Brutus exchange farewells, uncertain whether they will survive the coming battle against Antony and Octavius."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iv)",
+      "question_text": "How does Brutus die?\nHow does his manner of dying contradict the philosophy by which he had lived his life?",
+      "total_marks": 3,
+      "key_points": [
+        "(assisted) suicide/ runs on his sword/ threw himself on the sword held by Strato",
+        "Stoic philosophy /accept suffering (defeat) and joy (success) with equanimity but Brutus unwilling to accept humiliation(defeat) kills himself",
+        "Stoicism considers suicide an act of cowardice – Brutus said he was a Stoic yet he killed himself",
+        "Cato was a Stoic – he committed suicide – Brutus condemned Cato for this yet Brutus killed himself"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "(assisted) suicide/ runs on his sword/ threw himself on the sword held by Strato / Stoic philosophy /accept suffering (defeat) and joy (success) with equanimity but Brutus unwilling to accept humiliation(defeat) kills himself / Stoicism considers suicide an act of cowardice – Brutus said he was a Stoic yet he killed himself / Cato was a Stoic – he committed suicide – Brutus condemned Cato for this yet Brutus killed himself [Any 3]",
+      "model_answer": null,
+      "examiner_comment": "Many candidates overlooked the word 'contradict' in the second part of the question and focused instead on explaining Brutus's philosophy. Only a few correctly identified and explained the contradiction, resulting in a loss of marks.",
+      "teacher_suggestion": "Allow students to watch the play after completing each Act to consolidate their learning and help them grasp the sequence of events clearly.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q3-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Julius Caesar",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Cassius: Then, if we lose this battle,\nYou are contented to be led in triumph\nThrough the streets of Rome?\n\nBrutus: No, Cassius, no: think not, thou noble Roman,\nThat ever Brutus will go bound to Rome;\nHe bears too great a mind. But this same day\nMust end that work the ides of March begun;\nAnd whether we shall meet again I know not.\nTherefore our everlasting farewell take:\nForever, and forever, farewell, Cassius.\nIf we do meet again, why, we shall smile;\nIf not, why then, this parting was well made.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Cassius and Brutus",
+        "context_before": "Before the Battle of Philippi, Cassius and Brutus exchange farewells, uncertain whether they will survive the coming battle against Antony and Octavius."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(v)",
+      "question_text": "At the end of the play, Antony calls Brutus, 'the noblest Roman of them all'. Why does he say this?\nWhat does this reveal of Antony's character?",
+      "total_marks": 4,
+      "key_points": [
+        "Brutus was the only conspirator who participated in the assassination without envy of Caesar",
+        "Motivated by 'common good'",
+        "Elements mixed in perfect balance",
+        "Nature would say 'This was a man!'",
+        "Noble – willing to recognise and acknowledge goodness / greatness in his enemy/ rival",
+        "Antony is a statesman who valued honour"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "why_noblest": {
+          "marks": 3,
+          "instruction": "Brutus was the only conspirator who participated without envy / Motivated by 'common good' / Elements mixed in perfect balance / Nature would say 'This was a man!'",
+          "selection": "any_3"
+        },
+        "antony_character": {
+          "marks": 1,
+          "instruction": "Noble – willing to recognise and acknowledge goodness / greatness in his enemy/rival / Antony is a statesman who valued honour.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Brutus was the only conspirator who participated in the assassination without envy of Caesar / Motivated by 'common good' / Elements mixed in perfect balance / Nature would say 'This was a man!' [Any 3] / Noble – willing to recognise and acknowledge goodness / greatness in his enemy/ rival / Antony is a statesman who valued honour",
+      "model_answer": null,
+      "examiner_comment": "Many candidates lost marks in the first part as they failed to provide a complete answer. Only a few correctly identified and named the three distinct qualities of Brutus mentioned by Antony or explained why he referred to Brutus as 'the noblest Roman.'",
+      "teacher_suggestion": "Encourage students to connect the text's themes with contemporary world issues to deepen understanding and relevance.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q4-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Martin felt nervous when he got back to the building after school. But why should he be afraid of an old lady? He felt ashamed of himself. He pressed the button and stepped into the elevator, hoping that it would not stop, but it stopped on the third floor. Martin watched the door slide open ...",
+        "reference": null,
+        "speaker": null,
+        "context_before": "Martin returns to his apartment building after school, feeling nervous about the elevator and the unsettling old lady he encountered previously."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(i)",
+      "question_text": "Who entered the elevator when the door slid open?\nDescribe this person.",
+      "total_marks": 3,
+      "key_points": [
+        "The fat lady/ the lady he had seen in the elevator the previous day/ the lady in the green overcoat/ the old lady",
+        "Fat/ green overcoat / piggish face / tiny/ sharp/ blue eyes / large fleshy cheeks / no chin / mass of neck"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "who": {
+          "marks": 1,
+          "instruction": "The fat lady / the lady he had seen in the elevator the previous day / the lady in the green overcoat / the old lady.",
+          "selection": "any_1"
+        },
+        "description": {
+          "marks": 2,
+          "instruction": "Fat / green overcoat / piggish face / tiny / sharp / blue eyes / large fleshy cheeks / no chin / mass of neck.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "The fat lady/ the lady he had seen in the elevator the previous day/ the lady in the green overcoat/ the old lady [Any 1] / Fat/ green overcoat / piggish face / tiny/ sharp/ blue eyes / large fleshy cheeks / no chin / mass of neck [Any 2]",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates were able to answer correctly.",
+      "teacher_suggestion": "Conduct frequent quizzes focusing on small details to help students develop attentiveness.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q4-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Martin felt nervous when he got back to the building after school. But why should he be afraid of an old lady? He felt ashamed of himself. He pressed the button and stepped into the elevator, hoping that it would not stop, but it stopped on the third floor. Martin watched the door slide open ...",
+        "reference": null,
+        "speaker": null,
+        "context_before": "Martin returns to his apartment building after school, feeling nervous about the elevator and the unsettling old lady he encountered previously."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(ii)",
+      "question_text": "Why was Martin afraid of using this elevator?",
+      "total_marks": 3,
+      "key_points": [
+        "Poorly lit",
+        "Dirty walls",
+        "Cramped/ small",
+        "felt claustrophobic/ afraid of being trapped in it",
+        "Doors closed quickly with clanging noise",
+        "Shuddered each time it moved",
+        "Old/ could fall"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Poorly lit / Dirty walls / Cramped/ small / felt claustrophobic/ afraid of being trapped in it / Doors closed quickly with clanging noise / Shuddered each time it moved / Old/ could fall [Any 3]",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates were able to answer correctly.",
+      "teacher_suggestion": "Train students to read and comprehend questions carefully and to answer them precisely and to the point.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q4-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Martin felt nervous when he got back to the building after school. But why should he be afraid of an old lady? He felt ashamed of himself. He pressed the button and stepped into the elevator, hoping that it would not stop, but it stopped on the third floor. Martin watched the door slide open ...",
+        "reference": null,
+        "speaker": null,
+        "context_before": "Martin returns to his apartment building after school, feeling nervous about the elevator and the unsettling old lady he encountered previously."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iii)",
+      "question_text": "What led to Martin's fall down the stairs?\nWhat did it result in?",
+      "total_marks": 3,
+      "key_points": [
+        "The lady was waiting in the elevator",
+        "Martin (terrified) turned and ran down the stairs",
+        "Broken leg/ fractured/ injured leg"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "The lady was waiting in the elevator / Martin (terrified) turned and ran down the stairs / Broken leg/ fractured/ injured leg",
+      "model_answer": null,
+      "examiner_comment": "Majority of the candidates were able to answer correctly. A few candidates overlooked details such as, 'Martin ran down the stairs/ the stairs were dark and he missed his footing'.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q4-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Martin felt nervous when he got back to the building after school. But why should he be afraid of an old lady? He felt ashamed of himself. He pressed the button and stepped into the elevator, hoping that it would not stop, but it stopped on the third floor. Martin watched the door slide open ...",
+        "reference": null,
+        "speaker": null,
+        "context_before": "Martin returns to his apartment building after school, feeling nervous about the elevator and the unsettling old lady he encountered previously."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iv)",
+      "question_text": "How does the story end?\nBring out the element of horror in the ending.",
+      "total_marks": 3,
+      "key_points": [
+        "Martin is alone with lady in elevator",
+        "tries to escape – cannot",
+        "Elevator door closes – fat lady pushes stop button",
+        "Cliff-hanger/ open-ended/ uncertain ending/ reader doesn't know what happens next/Martin is trapped in elevator with lady",
+        "Sinister laugh / Any other plausible reason"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "how_ends": {
+          "marks": 2,
+          "instruction": "Martin is alone with lady in elevator / tries to escape – cannot / Elevator door closes – fat lady pushes stop button.",
+          "selection": "any_2"
+        },
+        "horror_element": {
+          "marks": 1,
+          "instruction": "Cliff-hanger / open-ended / uncertain ending / reader doesn't know what happens next / Martin is trapped in elevator with lady / Sinister laugh.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Martin is alone with lady in elevator / tries to escape – cannot / Elevator door closes – fat lady pushes stop button [Any 2] / Cliff-hanger/ open-ended/ uncertain ending/ reader doesn't know what happens next/Martin is trapped in elevator with lady / Sinister laugh / Any other plausible reason",
+      "model_answer": null,
+      "examiner_comment": "While most candidates successfully included the horror element in their responses, some could not explain how the story ended, leading to a loss of marks.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q4-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Elevator",
+        "author": "William Sleator",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Martin felt nervous when he got back to the building after school. But why should he be afraid of an old lady? He felt ashamed of himself. He pressed the button and stepped into the elevator, hoping that it would not stop, but it stopped on the third floor. Martin watched the door slide open ...",
+        "reference": null,
+        "speaker": null,
+        "context_before": "Martin returns to his apartment building after school, feeling nervous about the elevator and the unsettling old lady he encountered previously."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(v)",
+      "question_text": "What was Martin's father's opinion of him?\nWhat does this reveal to us about his father's character?",
+      "total_marks": 4,
+      "key_points": [
+        "Weak",
+        "Cowardly",
+        "Effeminate/ girly",
+        "Poor at sports",
+        "Afraid (of old ladies)/ timid/ scared",
+        "Foolish/ immature",
+        "Insensitive /lacking in affection/ compassion/ emotionally distant/ indifferent"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "fathers_opinion": {
+          "marks": 3,
+          "instruction": "Weak / Cowardly / Effeminate / girly / Poor at sports / Afraid (of old ladies) / timid / scared / Foolish / immature.",
+          "selection": "any_3"
+        },
+        "fathers_character": {
+          "marks": 1,
+          "instruction": "Insensitive / lacking in affection / compassion / emotionally distant / indifferent.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Weak / Cowardly / Effeminate/ girly / Poor at sports / Afraid (of old ladies)/ timid/ scared / Foolish/ immature [Any 3] / (What does this reveal to us about his father's character?) Insensitive /lacking in affection/ compassion/ emotionally distant/ indifferent [Any 1]",
+      "model_answer": null,
+      "examiner_comment": "Many candidates responded with a focus on the father-son relationship or described the father's character in general. However, the word 'this' in the question 'What does this reveal to us about his father's character?' was misunderstood, resulting in incorrect or incomplete answers.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q5-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"My children, this is the last lesson I shall give you. The order has come from Berlin to teach only German in the schools of Alsace and Lorraine. The new master comes tomorrow. This is your last French lesson. I want you to be very attentive.\"\nWhat a thunder-clap these words were to me!\nOh, the wretches; that was what they had put up at the town-hall!",
+        "reference": null,
+        "speaker": "M. Hamel",
+        "context_before": "M. Hamel, the French teacher, announces to his class that this is their final French lesson as the Prussian authorities have ordered that only German will be taught in the schools of Alsace and Lorraine."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(i)",
+      "question_text": "What does the word, 'that' in the extract refer to?\nWhat other 'bad news' had the villagers received from the bulletin board outside the town-hall?",
+      "total_marks": 3,
+      "key_points": [
+        "The news that only German was to be taught in the schools of Alsace and Lorraine/ French was no longer to be taught in their schools/ German was to replace French in Schools",
+        "Lost battles",
+        "The draft",
+        "Orders of the commanding officer"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "what_that_refers_to": {
+          "marks": 1,
+          "instruction": "The news that only German was to be taught in the schools of Alsace and Lorraine / French was no longer to be taught / German was to replace French in Schools.",
+          "selection": "any_1"
+        },
+        "other_bad_news": {
+          "marks": 2,
+          "instruction": "Lost battles / The draft / Orders of the commanding officer.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "The news that only German was to be taught in the schools of Alsace and Lorraine/ French was no longer to be taught in their schools/ German was to replace French in Schools / Lost battles / The draft / Orders of the commanding officer [Any 2]",
+      "model_answer": null,
+      "examiner_comment": "Many candidates misinterpreted the word 'that' in the question, assuming it referred to the notice board or the crowd. Additionally, several candidates answered the first part of the question in the second part, where they were expected to mention 'other bad news.'",
+      "teacher_suggestion": "Train students to read and understand the question fully before attempting to answer it.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q5-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"My children, this is the last lesson I shall give you. The order has come from Berlin to teach only German in the schools of Alsace and Lorraine. The new master comes tomorrow. This is your last French lesson. I want you to be very attentive.\"\nWhat a thunder-clap these words were to me!\nOh, the wretches; that was what they had put up at the town-hall!",
+        "reference": null,
+        "speaker": "M. Hamel",
+        "context_before": "M. Hamel, the French teacher, announces to his class that this is their final French lesson as the Prussian authorities have ordered that only German will be taught in the schools of Alsace and Lorraine."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(ii)",
+      "question_text": "How does the narrator describe the daily bustle at the start of a typical school day?",
+      "total_marks": 3,
+      "key_points": [
+        "Noise of opening and closing desks",
+        "Lessons repeated in unison",
+        "Teacher rapping with his great iron ruler"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Noise of opening and closing desks / Lessons repeated in unison / Teacher rapping with his great iron ruler",
+      "model_answer": null,
+      "examiner_comment": "Many candidates, instead of describing the 'daily bustle at the start of a typical school day,' wrote about what the boy saw on his way to school, mentioning details such as birds chirping, Prussian soldiers, and other irrelevant details, which led to reduced scores.",
+      "teacher_suggestion": "Teach students to pay special attention to detail while reading the text. Teach students to infer meaning from the text.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q5-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"My children, this is the last lesson I shall give you. The order has come from Berlin to teach only German in the schools of Alsace and Lorraine. The new master comes tomorrow. This is your last French lesson. I want you to be very attentive.\"\nWhat a thunder-clap these words were to me!\nOh, the wretches; that was what they had put up at the town-hall!",
+        "reference": null,
+        "speaker": "M. Hamel",
+        "context_before": "M. Hamel, the French teacher, announces to his class that this is their final French lesson as the Prussian authorities have ordered that only German will be taught in the schools of Alsace and Lorraine."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iii)",
+      "question_text": "What was different on that morning when he arrived late for school?",
+      "total_marks": 3,
+      "key_points": [
+        "Still/ motionless/ quiet",
+        "Classmates all seated",
+        "M.Hamel walking up and down",
+        "Teacher in Sunday best (beautiful green coat, frilled shirt, little black silk hat all embroidered; teacher only wore these clothes on special days (inspection/ Prize Days))",
+        "Village elders (former mayor and postmaster) seated at back of class",
+        "Narrator not scolded for being late",
+        "Air of sadness/ solemnity"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Still/ motionless/ quiet / Classmates all seated / M.Hamel walking up and down / Teacher in Sunday best (beautiful green coat, frilled shirt, little black silk hat all embroidered; teacher only wore these clothes on special days (inspection/ Prize Days)) / Village elders (former mayor and postmaster) seated at back of class / Narrator not scolded for being late / Air of sadness/ solemnity [Any 3]",
+      "model_answer": null,
+      "examiner_comment": "Some candidates overlooked the phrase 'arrived late,' leading to vague and generalised answers. They were unable to identify the specific differences required.",
+      "teacher_suggestion": "Teachers need to point out the sequence of events in class.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q5-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"My children, this is the last lesson I shall give you. The order has come from Berlin to teach only German in the schools of Alsace and Lorraine. The new master comes tomorrow. This is your last French lesson. I want you to be very attentive.\"\nWhat a thunder-clap these words were to me!\nOh, the wretches; that was what they had put up at the town-hall!",
+        "reference": null,
+        "speaker": "M. Hamel",
+        "context_before": "M. Hamel, the French teacher, announces to his class that this is their final French lesson as the Prussian authorities have ordered that only German will be taught in the schools of Alsace and Lorraine."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iv)",
+      "question_text": "What thoughts filled the narrator's head when he heard the above announcement?",
+      "total_marks": 3,
+      "key_points": [
+        "Narrator regrets having played truant",
+        "Narrator regrets not learning lessons",
+        "Narrator regrets looking for bird's eggs",
+        "Narrator regrets sliding on the Saar",
+        "Narrator regrets resenting the weight of the schoolbag",
+        "Unwilling to give up grammar and history of the saints",
+        "That he would never have a chance to learn anymore",
+        "Sad that M. Hamel was leaving"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "scheme_text": "Narrator regrets: having played truant / Not learning lessons / Looking for bird's eggs / Sliding on the Saar / Resenting the weight of the schoolbag / Unwilling to give up grammar and history of the saints / that he would never have a chance to learn anymore [Any 3] / Sad that M. Hamel was leaving",
+      "model_answer": null,
+      "examiner_comment": "Many candidates were unable to recall even three of the narrator's thoughts, despite the text providing several clear examples, and thus could not answer the question adequately.",
+      "teacher_suggestion": "Ask practice questions to gauge the students' ability to correctly infer meaning from context.",
+      "difficulty_flag": "high",
+      "marking_logic": {
+        "regrets": {
+          "marks": 2,
+          "instruction": "Narrator regrets: having played truant / not learning lessons / looking for bird's eggs / sliding on the Saar / resenting the weight of the schoolbag / unwilling to give up grammar and history of the saints / that he would never have a chance to learn anymore.",
+          "selection": "any_2"
+        },
+        "sad_hamel_leaving": {
+          "marks": 1,
+          "instruction": "Sad that M. Hamel was leaving.",
+          "selection": "any_1"
+        }
+      }
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q5-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Last Lesson",
+        "author": "Alphonse Daudet",
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "\"My children, this is the last lesson I shall give you. The order has come from Berlin to teach only German in the schools of Alsace and Lorraine. The new master comes tomorrow. This is your last French lesson. I want you to be very attentive.\"\nWhat a thunder-clap these words were to me!\nOh, the wretches; that was what they had put up at the town-hall!",
+        "reference": null,
+        "speaker": "M. Hamel",
+        "context_before": "M. Hamel, the French teacher, announces to his class that this is their final French lesson as the Prussian authorities have ordered that only German will be taught in the schools of Alsace and Lorraine."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(v)",
+      "question_text": "What does M. Hamel urge his listeners never to forget?\nM. Hamel writes a few words on the board at the end of the lesson. What were they?\nWhat does he hope to inspire through his words and actions on that day?",
+      "total_marks": 4,
+      "key_points": [
+        "Their mother tongue/ language/ French language/ importance of language",
+        "When people are enslaved, their language sets them free/ it is the key to their prison",
+        "Vive la France!/ Long live France!",
+        "Patriotism for country/ love for language"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "never_forget": {
+          "marks": 2,
+          "instruction": "Their mother tongue / language / French language / importance of language + When people are enslaved, their language sets them free / it is the key to their prison.",
+          "selection": "all"
+        },
+        "words_on_board": {
+          "marks": 1,
+          "instruction": "Vive la France! / Long live France!",
+          "selection": "any_1"
+        },
+        "hope_to_inspire": {
+          "marks": 1,
+          "instruction": "Patriotism for country / love for language.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Their mother tongue/ language/ French language/ importance of language / When people are enslaved, their language sets them free/ it is the key to their prison / Vive la France!/ Long live France! / Patriotism for country/ love for language",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered this question correctly, though some failed to understand the third sub-question, 'What does he hope to inspire through his words and actions on that day?' A few candidates also repeated the first answer in the second part.",
+      "teacher_suggestion": "Provide students with relevant background information about the text and its author or poet to help them understand the work better. Use group discussions, debates, and quizzes to engage students in analysing characters and defending their views.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q6-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "And truly 'twas a gallant thing to see that crowning show,\nValour and love, and a king above, and the royal beasts below.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "At a royal gathering, King Francis and his court watch lions fighting in a pit below, while Count de Lorge sighs for his beloved lady."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(i)",
+      "question_text": "Describe the scene at the beginning of the poem.",
+      "total_marks": 3,
+      "key_points": [
+        "King Francis, nobles, ladies seated together",
+        "Watching the lions fight in pit",
+        "Count de Lorge sighing for his beloved"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "King Francis, nobles, ladies seated together / Watching the lions fight in pit / Count de Lorge sighing for his beloved",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered this straightforward recall question well, though a few wrote only 'king' instead of 'King Francis.'",
+      "teacher_suggestion": "Teach students to notice and value small details in the text.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q6-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": true,
+      "response_type": "textual_reference",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "And truly 'twas a gallant thing to see that crowning show,\nValour and love, and a king above, and the royal beasts below.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "At a royal gathering, King Francis and his court watch lions fighting in a pit below, while Count de Lorge sighs for his beloved lady."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(ii)",
+      "question_text": "\"Leigh Hunt uses vivid sound and visual images to describe the contest between the royal beasts in the pit.\" Justify with close reference to the text.",
+      "total_marks": 3,
+      "key_points": [
+        "Visual images: Laughing jaws/ glared/ gave blows like beams/ rolled on one another/ bloody foam whisked through the air",
+        "Sound images: Lions roared/ stifled roar/ thunderous smother"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "visual_images": {
+          "marks": 2,
+          "instruction": "Visual images: Laughing jaws / glared / gave blows like beams / rolled on one another / bloody foam whisked through the air.",
+          "selection": "any_2"
+        },
+        "sound_images": {
+          "marks": 1,
+          "instruction": "Sound images: Lions roared / stifled roar / thunderous smother.",
+          "selection": "any_1"
+        }
+      },
+      "expected_references": [
+        {
+          "quote_fragment": "Laughing jaws",
+          "category": "visual"
+        },
+        {
+          "quote_fragment": "glared",
+          "category": "visual"
+        },
+        {
+          "quote_fragment": "gave blows like beams",
+          "category": "visual"
+        },
+        {
+          "quote_fragment": "rolled on one another",
+          "category": "visual"
+        },
+        {
+          "quote_fragment": "bloody foam whisked through the air",
+          "category": "visual"
+        },
+        {
+          "quote_fragment": "Lions roared",
+          "category": "sound"
+        },
+        {
+          "quote_fragment": "stifled roar",
+          "category": "sound"
+        },
+        {
+          "quote_fragment": "thunderous smother",
+          "category": "sound"
+        }
+      ],
+      "scheme_text": "Visual images: Laughing jaws/ glared/ gave blows like beams/ rolled on one another/ bloody foam whisked through the air / Sound images: Lions roared/ stifled roar/ thunderous smother",
+      "model_answer": null,
+      "examiner_comment": "Many candidates identified visual or sound imagery but failed to include specific words from the poem, as required. A few gave broad summaries of the poem and its climax instead of focusing on the imagery.",
+      "teacher_suggestion": "Provide ample practice in answering similar question types.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q6-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "And truly 'twas a gallant thing to see that crowning show,\nValour and love, and a king above, and the royal beasts below.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "At a royal gathering, King Francis and his court watch lions fighting in a pit below, while Count de Lorge sighs for his beloved lady."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iii)",
+      "question_text": "Who was the 'beauteous lively dame' mentioned in the poem?\nWhat did she do?\nWhat prompted her to do this?",
+      "total_marks": 3,
+      "key_points": [
+        "De Lorge's beloved/ girl/ girlfriend/ lady love/ lover",
+        "Dropped her glove in the pit",
+        "Seeing the opportunity to test de Lorge's love/ to win attention- admiration for herself/ to attain glory/vanity",
+        "She overheard the King say, 'Faith, gentlemen, we're better here than there.'"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "who": {
+          "marks": 1,
+          "instruction": "De Lorge's beloved / girl / girlfriend / lady love / lover.",
+          "selection": "any_1"
+        },
+        "what_she_did": {
+          "marks": 1,
+          "instruction": "Dropped her glove in the pit.",
+          "selection": "any_1"
+        },
+        "what_prompted": {
+          "marks": 1,
+          "instruction": "Seeing the opportunity to test de Lorge's love / to win attention-admiration for herself / to attain glory/vanity / She overheard the King say, 'Faith, gentlemen, we're better here than there.'",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "De Lorge's beloved/ girl/ girlfriend/ lady love/ lover / Dropped her glove in the pit / Seeing the opportunity to test de Lorge's love/ to win attention- admiration for herself/ to attain glory/vanity / She overheard the King say, 'Faith, gentlemen, we're better here than there.'",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered this simple recall question well.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q6-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "And truly 'twas a gallant thing to see that crowning show,\nValour and love, and a king above, and the royal beasts below.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "At a royal gathering, King Francis and his court watch lions fighting in a pit below, while Count de Lorge sighs for his beloved lady."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iv)",
+      "question_text": "Explain the following lines in your own words:\n(a) 'smiling lips and sharp bright eyes which always seemed the same'\n(b) 'the occasion is divine'\n(c) 'Faith, gentlemen, we're better here than there'",
+      "total_marks": 3,
+      "key_points": [
+        "(a) Artificial/fake smile/ expressionless/ shrewd/ cunning, sharp eyes",
+        "(b) The perfect/ heaven-sent/ heavenly/right opportunity/ chance",
+        "(c) Safer in the gallery than in the pit (with the lions)"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "line_a": {
+          "marks": 1,
+          "instruction": "Artificial / fake smile / expressionless / shrewd / cunning, sharp eyes.",
+          "selection": "any_1"
+        },
+        "line_b": {
+          "marks": 1,
+          "instruction": "The perfect / heaven-sent / heavenly / right opportunity / chance.",
+          "selection": "any_1"
+        },
+        "line_c": {
+          "marks": 1,
+          "instruction": "Safer in the gallery than in the pit (with the lions).",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "(a) Artificial/fake smile/ expressionless/ shrewd/ cunning, sharp eyes / (b) The perfect/ heaven-sent/ heavenly/right opportunity/ chance / (c) Safer in the gallery than in the pit (with the lions)",
+      "model_answer": null,
+      "examiner_comment": "(a) Many candidates merely rephrased the lines without analysing their deeper meaning. They struggled to explain the ideas in their own words and were unable to express their thoughts clearly. (b) Many candidates restated the lines in different words but did not explore their deeper meaning. The word 'divine' was often misunderstood, leading to incorrect interpretations. (c) Some candidates failed to clearly explain why the King felt they were safer 'here' (seated in the gallery, away from the lions in the pit) than 'there' (in the arena among the fighting lions).",
+      "teacher_suggestion": "Emphasise word meanings in context, not in isolation, and encourage inference and interpretation while teaching the text. Guide students to read and understand every line of a poem rather than relying on summaries. Reinforce careful reading and clear understanding of each question before answering.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q6-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "The Glove and the Lions",
+        "author": "Leigh Hunt",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "And truly 'twas a gallant thing to see that crowning show,\nValour and love, and a king above, and the royal beasts below.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "At a royal gathering, King Francis and his court watch lions fighting in a pit below, while Count de Lorge sighs for his beloved lady."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(v)",
+      "question_text": "When King Francis exclaims, \"rightly done!\", what action of Count de Lorge does he applaud?\nWhy do you think the Count behaved the way he did?",
+      "total_marks": 4,
+      "key_points": [
+        "Flinging/ throwing the glove",
+        "in the lady's face/ at the lady",
+        "Disillusioned/ no longer finds her attractive/ sees through her vanity/ cunning motive/ realized that this was not true love/angry with her",
+        "To humiliate/ shame her"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "action": {
+          "marks": 2,
+          "instruction": "Flinging / throwing the glove + in the lady's face / at the lady.",
+          "selection": "all"
+        },
+        "why": {
+          "marks": 2,
+          "instruction": "Disillusioned / no longer finds her attractive / sees through her vanity / cunning motive / realized that this was not true love / angry with her / To humiliate / shame her.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Flinging/ throwing the glove / in the lady's face/ at the lady / Disillusioned/ no longer finds her attractive/ sees through her vanity/ cunning motive/ realized that this was not true love/angry with her / To humiliate/ shame her [Any 2]",
+      "model_answer": null,
+      "examiner_comment": "Most candidates answered this question correctly. However, some misunderstood the question 'What action of the Count did the King applaud?' and incorrectly stated that it was his gallantry in leaping among the lions to retrieve his beloved's glove.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q7-i",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "This was no dust speck by my breathing blown,\nBut unmistakably a living mite\nWith inclinations it could call its own.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The narrator notices a tiny speck on his manuscript paper while writing, which turns out to be a living mite rather than a dust particle."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(i)",
+      "question_text": "What did the narrator first imagine the 'speck' to be?\nWhat does his use of the words 'speck' and 'mite' tell us about it?",
+      "total_marks": 3,
+      "key_points": [
+        "A dust particle",
+        "Little/ tiny/ small",
+        "Insignificant/ unimportant",
+        "Living creature"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "first_imagine": {
+          "marks": 1,
+          "instruction": "A dust particle.",
+          "selection": "any_1"
+        },
+        "words_meaning": {
+          "marks": 2,
+          "instruction": "Little / tiny / small / Insignificant / unimportant + Living creature. The words 'speck' suggests something tiny/insignificant and 'mite' suggests a living creature.",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "A dust particle / (What does his use of the words 'speck' and 'mite' tell us about it?) Little/ tiny/ small / Insignificant/ unimportant / Living creature",
+      "model_answer": null,
+      "examiner_comment": "This question was generally well-attempted, with many candidates providing accurate responses. However, some candidates struggled to distinguish between the words 'speck' and 'mite'.",
+      "teacher_suggestion": "Teach the nuances and shades of differences in word meaning while teaching the text.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q7-ii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "This was no dust speck by my breathing blown,\nBut unmistakably a living mite\nWith inclinations it could call its own.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The narrator notices a tiny speck on his manuscript paper while writing, which turns out to be a living mite rather than a dust particle."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(ii)",
+      "question_text": "What was the narrator doing when he spotted the speck?\nWhich two words from the poem helped you come to this conclusion?",
+      "total_marks": 3,
+      "key_points": [
+        "Writing",
+        "Paper/ ink/ manuscript/ pen"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "what_doing": {
+          "marks": 1,
+          "instruction": "Writing.",
+          "selection": "any_1"
+        },
+        "two_words": {
+          "marks": 2,
+          "instruction": "Paper / ink / manuscript / pen.",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Writing / Paper/ ink/ manuscript/ pen [Any 2]",
+      "model_answer": null,
+      "examiner_comment": "Several candidates failed to adhere to the rubric of the question: i.e. mentioning exactly two words. Instead they listed phrases or answered in complete sentences. Furthermore, several candidates selected incorrect words, demonstrating either a lack of comprehension or insufficient familiarity with key textual details.",
+      "teacher_suggestion": "Train the students to read the question carefully and mindfully, and also make a note of exactly what the response is meant to be.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q7-iii",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "This was no dust speck by my breathing blown,\nBut unmistakably a living mite\nWith inclinations it could call its own.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The narrator notices a tiny speck on his manuscript paper while writing, which turns out to be a living mite rather than a dust particle."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iii)",
+      "question_text": "What made him realise that he was dealing with 'an intelligence'?",
+      "total_marks": 3,
+      "key_points": [
+        "paused suspicious of his pen",
+        "raced wildly",
+        "loathing for the smell/ taste of ink",
+        "ran terrified",
+        "crept cunningly",
+        "faltered",
+        "cowered",
+        "desperate to survive"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Response to stimulus: paused suspicious of his pen / raced wildly / loathing for the smell/ taste of ink / ran terrified / crept cunningly / faltered / cowered / desperate to survive [Any 3]",
+      "model_answer": null,
+      "examiner_comment": "Most candidates focussed solely on the creature's attempts to save its life and its escape from the narrator's pen, while neglecting other significant textual details ('loathing', 'smelling', 'drinking', 'suspicion'). This resulted in incomplete responses that failed to capture the essence of the poem.",
+      "teacher_suggestion": "Inculcate in students the habit of paying close attention to descriptive details. Encourage close reading of the text and help them learn to make simple, accurate inferences.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q7-iv",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "This was no dust speck by my breathing blown,\nBut unmistakably a living mite\nWith inclinations it could call its own.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The narrator notices a tiny speck on his manuscript paper while writing, which turns out to be a living mite rather than a dust particle."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iv)",
+      "question_text": "Why did the narrator conclude that the mite had feet?",
+      "total_marks": 3,
+      "key_points": [
+        "Movement",
+        "Ran (with terror)/ raced",
+        "Crept",
+        "Faltered",
+        "tried to get away",
+        "escape death / turned to fly/ fled"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Movement / Ran (with terror)/ raced / Crept / Faltered / tried to get away / escape death / turned to fly/ fled",
+      "model_answer": null,
+      "examiner_comment": "Most of the candidates' responses were vague, lacking precise textual references. Many candidates simply mentioned that the mite had no feet and described its frantic movement, without incorporating specific words from the text. Key descriptive terms such as 'crept', 'cowered', and 'racing wildly', which provide deeper insight into the poem were often overlooked.",
+      "teacher_suggestion": "Teach students to read each question carefully and understand it before answering. Guide them to note exactly what the question is asking for.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2025-sb-q7-v",
+      "subject": "english_literature",
+      "year": 2025,
+      "section": "section_b",
+      "section_label": "D",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "A Considerable Speck",
+        "author": "Robert Frost",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "This was no dust speck by my breathing blown,\nBut unmistakably a living mite\nWith inclinations it could call its own.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The narrator notices a tiny speck on his manuscript paper while writing, which turns out to be a living mite rather than a dust particle."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(v)",
+      "question_text": "Describe the narrator's initial response to the speck.\nWhat did he eventually decide to do about it?\nWhy does he make this decision?\nWhat does this decision reveal of his character?",
+      "total_marks": 4,
+      "key_points": [
+        "He wanted to stop it with his pen/ drop of ink",
+        "Let it lie there, till it slept",
+        "respect for intelligent life/ it was harmless/ not evil/ had mind of its own",
+        "Sensitive to life forms no matter how small/Appreciates intelligence/Respect for life"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "initial_response": {
+          "marks": 1,
+          "instruction": "He wanted to stop it with his pen / drop of ink.",
+          "selection": "any_1"
+        },
+        "eventual_decision": {
+          "marks": 1,
+          "instruction": "Let it lie there, till it slept.",
+          "selection": "any_1"
+        },
+        "why": {
+          "marks": 1,
+          "instruction": "Respect for intelligent life / it was harmless / not evil / had mind of its own.",
+          "selection": "any_1"
+        },
+        "character": {
+          "marks": 1,
+          "instruction": "Sensitive to life forms no matter how small / Appreciates intelligence / Respect for life.",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "He wanted to stop it with his pen/ drop of ink / Let it lie there, till it slept / respect for intelligent life/ it was harmless/ not evil/ had mind of its own / Sensitive to life forms no matter how small/Appreciates intelligence/Respect for life",
+      "model_answer": null,
+      "examiner_comment": "Most of the candidates failed to address the first part of the question, particularly regarding the initial reaction. This omission resulted in the loss of marks.",
+      "teacher_suggestion": "Encourage discussions and the sharing of viewpoints as often as possible in the classroom. Create an atmosphere of enquiry and exploration in the class room. Encourage the students to express opinions and to challenge each other's points of view.",
+      "difficulty_flag": "high"
+    }
+  ]
+}

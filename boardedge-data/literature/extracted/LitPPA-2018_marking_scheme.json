@@ -1,0 +1,2040 @@
+{
+  "subject": "english_literature",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "paper_2",
+  "year": 2018,
+  "total_marks": 192,
+  "questions": [
+    {
+      "question_id": "eng-lit-2018-sb-q1-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Portia: Go draw aside the curtains, and discover\nThe several caskets to this noble prince —\nNow make your choice.\nMorocco: The first, of gold, who this inscription bears,\n\"Who chooseth me shall gain what many men desire\";",
+        "reference": "Act 2, Scene 7",
+        "speaker": "Portia and the Prince of Morocco",
+        "context_before": "The Prince of Morocco, one of Portia's suitors, has come to Belmont to try his luck at the casket test to win her hand in marriage."
+      },
+      "parent_question_number": "1",
+      "question_number": "1(i)",
+      "question_text": "Who is Morocco? How did he introduce himself to Portia when they first met in an earlier scene?",
+      "total_marks": 3,
+      "key_points": [
+        "Prince of Morocco/ suitor",
+        "He says 'do not mislike me for my complexion/ it is the shadowed livery of the burnished sun/ where he was born and brought up'",
+        "He says that – his blood is as red as that of 'the fairest creature northward born' – that the best regarded virgins' of his land find him most attractive – that his appearance inspired fear in the most courageous men. He urges Portia not to judge him by his skin colour."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Prince of Morocco/ suitor\nHe says 'do not mislike me for my complexion/ it is the shadowed livery of the burnished sun/ where he was born and brought up'\nHe says that – his blood is as red as that of 'the fairest creature northward born' – that the best regarded virgins' of his land find him most attractive – that his appearance inspired fear in the most courageous men. He urges Portia not to judge him by his skin colour.",
+      "model_answer": null,
+      "examiner_comment": "This question was answered correctly by most candidates. Some candidates wrote that Morocco was a King instead of a Prince. The second part of the question was also answered well. Some candidates misunderstood the question and wrote about Morocco's acts of bravery instead of how he introduces himself.",
+      "teacher_suggestion": "Do a detailed study of the characters in the play. Advise students to pay close attention to the key ideas and phrases from the play. Train students to learn the sequence of events. Instruct students to read the question carefully. Expose students to an array of questions. Explain the text thoroughly. A meticulous and in-depth study of each line is essential.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q1-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Portia: Go draw aside the curtains, and discover\nThe several caskets to this noble prince —\nNow make your choice.\nMorocco: The first, of gold, who this inscription bears,\n\"Who chooseth me shall gain what many men desire\";",
+        "reference": "Act 2, Scene 7",
+        "speaker": "Portia and the Prince of Morocco",
+        "context_before": "The Prince of Morocco, one of Portia's suitors, has come to Belmont to try his luck at the casket test to win her hand in marriage."
+      },
+      "parent_question_number": "1",
+      "question_number": "1(ii)",
+      "question_text": "How would Morocco know that he had made the right choice? What would his reward be?",
+      "total_marks": 3,
+      "key_points": [
+        "One of the three caskets contained a picture of Portia. If he chose that casket, then he would have made the right choice.",
+        "His reward – Portia's hand in marriage."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "One of the three caskets contained a picture of Portia. If he chose that casket, then he would have made the right choice.\nHis reward – Portia's hand in marriage.",
+      "model_answer": null,
+      "examiner_comment": "Although most candidates answered well, some got confused. Hence, instead of writing that finding Portia's portrait was an indication of the right casket, they wrote about the inscriptions on the casket.",
+      "teacher_suggestion": "Do a detailed study of the characters in the play. Advise students to pay close attention to the key ideas and phrases from the play. Train students to learn the sequence of events. Instruct students to read the question carefully. Expose students to an array of questions. Explain the text thoroughly. A meticulous and in-depth study of each line is essential.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q1-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Portia: Go draw aside the curtains, and discover\nThe several caskets to this noble prince —\nNow make your choice.\nMorocco: The first, of gold, who this inscription bears,\n\"Who chooseth me shall gain what many men desire\";",
+        "reference": "Act 2, Scene 7",
+        "speaker": "Portia and the Prince of Morocco",
+        "context_before": "The Prince of Morocco, one of Portia's suitors, has come to Belmont to try his luck at the casket test to win her hand in marriage."
+      },
+      "parent_question_number": "1",
+      "question_number": "1(iii)",
+      "question_text": "Which casket did Morocco finally choose? What reasons did he give for rejecting the casket made of lead?",
+      "total_marks": 3,
+      "key_points": [
+        "Casket made of gold.",
+        "He felt that men would be prepared to take a risk only if there was a chance of winning 'fair returns'.",
+        "Says- This casket threatens\nIt is damnation to think so base a thought.",
+        "The lead casket is too gross to even rib Portia's cerecloth."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Casket made of gold.\nHe felt that men would be prepared to take a risk only if there was a chance of winning 'fair returns'.\nSays- This casket threatens\nIt is damnation to think so base a thought.\nThe lead casket is too gross to even rib Portia's cerecloth.",
+      "model_answer": null,
+      "examiner_comment": "Candidates were able to answer the first part of the question correctly. Some candidates could not write all the reasons for rejecting the lead casket. Some even quoted the inscription on the lead casket instead of mentioning the reasons.",
+      "teacher_suggestion": "Do a detailed study of the characters in the play. Advise students to pay close attention to the key ideas and phrases from the play. Train students to learn the sequence of events. Instruct students to read the question carefully. Expose students to an array of questions. Explain the text thoroughly. A meticulous and in-depth study of each line is essential.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q1-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Portia: Go draw aside the curtains, and discover\nThe several caskets to this noble prince —\nNow make your choice.\nMorocco: The first, of gold, who this inscription bears,\n\"Who chooseth me shall gain what many men desire\";",
+        "reference": "Act 2, Scene 7",
+        "speaker": "Portia and the Prince of Morocco",
+        "context_before": "The Prince of Morocco, one of Portia's suitors, has come to Belmont to try his luck at the casket test to win her hand in marriage."
+      },
+      "parent_question_number": "1",
+      "question_number": "1(iv)",
+      "question_text": "What two objects does Morocco find in the casket of his choice? What reason does he give to Portia for leaving in haste?",
+      "total_marks": 3,
+      "key_points": [
+        "A carrion Death [skull] and a scroll [letter, schedule]",
+        "He was too heartbroken (at having made the wrong choice and lost the chance of winning her hand) to bid her a lengthy (tedious) farewell.",
+        "He is sad, disappointed",
+        "Says- labour lost/ farewell heat, welcome frost/ his hopes are dead"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "A carrion Death [skull]and a scroll [letter, schedule]\nHe was too heartbroken (at having made the wrong choice and lost the chance of winning her hand) to bid her a lengthy (tedious) farewell.\nHe is sad, disappointed\nSays- labour lost/ farewell heat, welcome frost/ his hopes are dead",
+      "model_answer": null,
+      "examiner_comment": "Instead of skull and scroll as the two objects that Morocco finds, some candidates wrote - fools head, blinking idiot or a skeleton, which were incorrect. Some candidates could not write the reasons for Morocco leaving in haste.",
+      "teacher_suggestion": "Do a detailed study of the characters in the play. Advise students to pay close attention to the key ideas and phrases from the play. Train students to learn the sequence of events. Instruct students to read the question carefully. Expose students to an array of questions. Explain the text thoroughly. A meticulous and in-depth study of each line is essential.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q1-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Portia: Go draw aside the curtains, and discover\nThe several caskets to this noble prince —\nNow make your choice.\nMorocco: The first, of gold, who this inscription bears,\n\"Who chooseth me shall gain what many men desire\";",
+        "reference": "Act 2, Scene 7",
+        "speaker": "Portia and the Prince of Morocco",
+        "context_before": "The Prince of Morocco, one of Portia's suitors, has come to Belmont to try his luck at the casket test to win her hand in marriage."
+      },
+      "parent_question_number": "1",
+      "question_number": "1(v)",
+      "question_text": "How does Portia respond to Morocco's parting words? What does this reveal of her nature?",
+      "total_marks": 4,
+      "key_points": [
+        "Portia says \"A gentle riddance… Let all of his complexion [kind, personality] choose me so\"/ She is happy to see him go.",
+        "She judges a person by outward appearances – she does not wish to marry Morocco because of his dark skin/ racist/ racial prejudice/ biased/ does not like vain boastful men/ considerate of his feelings/ tactful."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "portias_response": {
+          "marks": 2,
+          "instruction": "Identify Portia's response upon Morocco's departure",
+          "selection": "all"
+        },
+        "personal_response_on_nature": {
+          "marks": 2,
+          "instruction": "Personal response on what this reveals about Portia's nature",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Portia says \"A gentle riddance… Let all of his complexion [kind, personality] choose me so\"/ She is happy to see him go.\nPersonal Response:\nShe judges a person by outward appearances – she does not wish to marry Morocco because of his dark skin/ racist/ racial prejudice/ biased/ does not like vain boastful men/ considerate of his feelings/ tactful.",
+      "model_answer": null,
+      "examiner_comment": "Portia's response was not explicitly mentioned. Some candidates projected Portia in a negative light, for example, cunning or crafty.",
+      "teacher_suggestion": "Do a detailed study of the characters in the play. Advise students to pay close attention to the key ideas and phrases from the play. Train students to learn the sequence of events. Instruct students to read the question carefully. Expose students to an array of questions. Explain the text thoroughly. A meticulous and in-depth study of each line is essential.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q2-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Bassanio: Were you the doctor, and I knew you not?\nGratiano: Were you the clerk?\nAntonio: Sweet lady, you have given me life and living;\nFor here I read for certain that my ships\nAre safely come to road.\nPortia: How now, Lorenzo!\nMy clerk hath some good comforts too for you.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Bassanio, Gratiano, Antonio and Portia",
+        "context_before": "After the trial in which the disguised Portia and Nerissa save Antonio's life, they return to Belmont and reveal to Bassanio and Gratiano that they were the lawyer and clerk in disguise."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(i)",
+      "question_text": "Where does this scene take place? What had Portia directed Antonio to give to Bassanio just moments before the above words were spoken?",
+      "total_marks": 3,
+      "key_points": [
+        "Avenue in Belmont, outside Portia's house",
+        "The ring that Portia had given to Bassanio at their wedding – the ring Bassanio had given to the young 'doctor' of law for saving Antonio's life."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Avenue in Belmont, outside Portia's house\nThe ring that Portia had given to Bassanio at their wedding – the ring Bassanio had given to the young 'doctor' of law for saving Antonio's life.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates got confused and wrote 'Belmont' instead of 'Venice'. Those who had read and understood the text, wrote well.",
+      "teacher_suggestion": "While teaching, point out the location of each scene in every act. Give regular practice of reference to context questions. Stress upon a study of the original text. Let students enact the play – this will aid memory and create interest in the play. Students can also watch a performance of the play. Ask students to read the play and not to depend on a summary. If they read a summary or some prepared notes, they are likely to miss the key words. Train students to read the questions carefully. Vocabulary exercises with particular attention to synonyms should be done.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q2-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Bassanio: Were you the doctor, and I knew you not?\nGratiano: Were you the clerk?\nAntonio: Sweet lady, you have given me life and living;\nFor here I read for certain that my ships\nAre safely come to road.\nPortia: How now, Lorenzo!\nMy clerk hath some good comforts too for you.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Bassanio, Gratiano, Antonio and Portia",
+        "context_before": "After the trial in which the disguised Portia and Nerissa save Antonio's life, they return to Belmont and reveal to Bassanio and Gratiano that they were the lawyer and clerk in disguise."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(ii)",
+      "question_text": "Portia had just given Antonio, Bassanio and Gratiano a letter to read. Who had written this letter? What does Bassanio learn about Portia from this letter?",
+      "total_marks": 3,
+      "key_points": [
+        "Bellario",
+        "That Portia had been the learned 'doctor' / lawyer at Antonio's trial."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Bellario\nThat Portia had been the learned 'doctor' / lawyer at Antonio's trial.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates mentioned Balthazar as the writer of the letter instead of Bellario. In the second part, candidates wrote about Portia's character traits for example they wrote that Portia was intelligent. It was expected that candidates should write about Portia, who was the lawyer in disguise, but the question was misunderstood.",
+      "teacher_suggestion": "While teaching, point out the location of each scene in every act. Give regular practice of reference to context questions. Stress upon a study of the original text. Let students enact the play – this will aid memory and create interest in the play. Students can also watch a performance of the play. Ask students to read the play and not to depend on a summary. If they read a summary or some prepared notes, they are likely to miss the key words. Train students to read the questions carefully. Vocabulary exercises with particular attention to synonyms should be done.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q2-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Bassanio: Were you the doctor, and I knew you not?\nGratiano: Were you the clerk?\nAntonio: Sweet lady, you have given me life and living;\nFor here I read for certain that my ships\nAre safely come to road.\nPortia: How now, Lorenzo!\nMy clerk hath some good comforts too for you.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Bassanio, Gratiano, Antonio and Portia",
+        "context_before": "After the trial in which the disguised Portia and Nerissa save Antonio's life, they return to Belmont and reveal to Bassanio and Gratiano that they were the lawyer and clerk in disguise."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iii)",
+      "question_text": "What good news does Portia have for Antonio? How does he respond to it?",
+      "total_marks": 3,
+      "key_points": [
+        "Three of Antonio's merchant ships (argosies) full of riches (richly) had come to harbour quite unexpectedly (suddenly)",
+        "Antonio says, 'I am dumb' (speechless) / Says- 'You have given me my life and my livelihood.' / He is happy"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Three of Antonio's merchant ships (argosies) full of riches (richly) had come to harbour quite unexpectedly (suddenly)\nAntonio says, 'I am dumb' (speechless) / Says- 'You have given me my life and my livelihood.' / He is happy",
+      "model_answer": null,
+      "examiner_comment": "Return of 'Three' ships not mentioned by most candidates. The second part was answered correctly.",
+      "teacher_suggestion": "While teaching, point out the location of each scene in every act. Give regular practice of reference to context questions. Stress upon a study of the original text. Let students enact the play – this will aid memory and create interest in the play. Students can also watch a performance of the play. Ask students to read the play and not to depend on a summary. If they read a summary or some prepared notes, they are likely to miss the key words. Train students to read the questions carefully. Vocabulary exercises with particular attention to synonyms should be done.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q2-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Bassanio: Were you the doctor, and I knew you not?\nGratiano: Were you the clerk?\nAntonio: Sweet lady, you have given me life and living;\nFor here I read for certain that my ships\nAre safely come to road.\nPortia: How now, Lorenzo!\nMy clerk hath some good comforts too for you.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Bassanio, Gratiano, Antonio and Portia",
+        "context_before": "After the trial in which the disguised Portia and Nerissa save Antonio's life, they return to Belmont and reveal to Bassanio and Gratiano that they were the lawyer and clerk in disguise."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(iv)",
+      "question_text": "To whom does Portia refer as 'My clerk'? What 'good comforts' does the 'clerk' have for Lorenzo?",
+      "total_marks": 3,
+      "key_points": [
+        "Nerissa, her lady – in waiting",
+        "Nerissa tells Lorenzo that he and Jessica would inherit all Shylock's wealth after his (Shylock) death."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Nerissa, her lady – in waiting\nNerissa tells Lorenzo that he and Jessica would inherit all Shylock's wealth after his (Shylock) death.",
+      "model_answer": null,
+      "examiner_comment": "This question was answered well by most candidates.",
+      "teacher_suggestion": "While teaching, point out the location of each scene in every act. Give regular practice of reference to context questions. Stress upon a study of the original text. Let students enact the play – this will aid memory and create interest in the play. Students can also watch a performance of the play. Ask students to read the play and not to depend on a summary. If they read a summary or some prepared notes, they are likely to miss the key words. Train students to read the questions carefully. Vocabulary exercises with particular attention to synonyms should be done.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q2-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Merchant of Venice",
+        "author": "William Shakespeare",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Bassanio: Were you the doctor, and I knew you not?\nGratiano: Were you the clerk?\nAntonio: Sweet lady, you have given me life and living;\nFor here I read for certain that my ships\nAre safely come to road.\nPortia: How now, Lorenzo!\nMy clerk hath some good comforts too for you.",
+        "reference": "Act 5, Scene 1",
+        "speaker": "Bassanio, Gratiano, Antonio and Portia",
+        "context_before": "After the trial in which the disguised Portia and Nerissa save Antonio's life, they return to Belmont and reveal to Bassanio and Gratiano that they were the lawyer and clerk in disguise."
+      },
+      "parent_question_number": "2",
+      "question_number": "2(v)",
+      "question_text": "How was Bassanio persuaded to give away the ring that Portia had given him at the time of their marriage? What does this reveal of Bassanio's relationship with Antonio?",
+      "total_marks": 4,
+      "key_points": [
+        "At Antonio's urging 'My Lord Bassanio, let him have the ring; Let his deserving [He deserves the ring because he saved Antonio] and my love withal / Be valued against your wife's commandment'",
+        "Bassanio valued Antonio's friendship highly – could not refuse him – was prepared to risk Portia's anger/ dearest friends/ ready to make sacrifices for one another."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "persuasion": {
+          "marks": 2,
+          "instruction": "Explain how Antonio persuaded Bassanio to part with the ring",
+          "selection": "all"
+        },
+        "relationship_analysis": {
+          "marks": 2,
+          "instruction": "Explain what this reveals of Bassanio and Antonio's relationship",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "At Antonio's urging 'My Lord Bassanio, let him have the ring;\nLet his deserving [He deserves the ring because he saved Antonio] and my love withal / Be valued against your wife's commandment'\nBassanio valued Antonio's friendship highly – could not refuse him – was prepared to risk Portia's anger/ dearest friends/ ready to make sacrifices for one another.",
+      "model_answer": null,
+      "examiner_comment": "Instead of writing that Antonio's words prevailed over Bassanio's reluctance to give away the ring, many candidates wrote the entire episode of the ring.",
+      "teacher_suggestion": "While teaching, point out the location of each scene in every act. Give regular practice of reference to context questions. Stress upon a study of the original text. Let students enact the play – this will aid memory and create interest in the play. Students can also watch a performance of the play. Ask students to read the play and not to depend on a summary. If they read a summary or some prepared notes, they are likely to miss the key words. Train students to read the questions carefully. Vocabulary exercises with particular attention to synonyms should be done.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q3-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Margaret: Here's the wind!\nWinsor: What's the move now, General?\nCanynge: You and I had better see the Inspector in De Levis's room, Winsor. [To the others] If you'll all be handy, in case he wants to put questions for himself.\nMargaret: I hope he'll want me; it's just too thrilling.\nDancy: I hope he won't want me; I am dog-tired. Come on Mabel.\n[He puts his arm in his wife's]\nCanynge: Just a minute, Charles.",
+        "reference": "Act 1, Scene 1",
+        "speaker": "Margaret, Winsor, Canynge and Dancy",
+        "context_before": "At Meldon Court, a robbery has just taken place and the household awaits the arrival of the police inspector to investigate."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(i)",
+      "question_text": "Who is Margaret? Why does she say, 'Here's the wind!'?",
+      "total_marks": 3,
+      "key_points": [
+        "Margaret Orme – A society girl / guest at Meldon Court / A friend of Winsor or Adela",
+        "Margaret says this mockingly when she hears the sound of the policeman's motorbike.",
+        "Earlier that evening when Lady Adela had called the Police Station at New Market to report the theft, Inspector Dede had said he was 'coming like the wind on his motor cycle'."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Margaret Orme – A society girl / guest at Meldon Court / A friend of Winsor or Adela\nMargaret says this mockingly when she hears the sound of the policeman's motorbike.\nEarlier that evening when Lady Adela had called the Police Station at New Market to report the theft, Inspector Dede had said he was 'coming like the wind on his motor cycle'.",
+      "model_answer": null,
+      "examiner_comment": "The first part of the question was done well. Some candidates could not explain the second part properly. They did not write that Margaret uses the phrase \"Here's the wind!\" mockingly.",
+      "teacher_suggestion": "Do a detailed analysis of each character. Students must be made aware of the tone in which a statement is made. Encourage students to enact the play in class – this will help them to recollect the time, the place or the reasons why the words were spoken. Ask students to read the text thoroughly. Thorough reading of the play and adequate revision will ensure that the students remember all the events from the play. Clarify the sequence of events to the students. Teach students to write each part in a separate paragraph to ensure that they do not leave anything out. Allow students to memorise the key ideas and facts.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q3-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Margaret: Here's the wind!\nWinsor: What's the move now, General?\nCanynge: You and I had better see the Inspector in De Levis's room, Winsor. [To the others] If you'll all be handy, in case he wants to put questions for himself.\nMargaret: I hope he'll want me; it's just too thrilling.\nDancy: I hope he won't want me; I am dog-tired. Come on Mabel.\n[He puts his arm in his wife's]\nCanynge: Just a minute, Charles.",
+        "reference": "Act 1, Scene 1",
+        "speaker": "Margaret, Winsor, Canynge and Dancy",
+        "context_before": "At Meldon Court, a robbery has just taken place and the household awaits the arrival of the police inspector to investigate."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(ii)",
+      "question_text": "Why does Canynge suggest that they see the Inspector in De Levis' room? What does Margaret find 'thrilling'?",
+      "total_marks": 3,
+      "key_points": [
+        "Canynge wants the Inspector to see the scene of the crime before talking to anyone. / he wants to speak privately to the inspector/ to see the handprints and the footprints",
+        "Margaret finds the entire experience thrilling – the theft, the arrival of the police, the investigation, the possibility of being questioned by the police."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Canynge wants the Inspector to see the scene of the crime before talking to anyone. / he wants to speak privately to the inspector/ to see the handprints and the footprints\nMargaret finds the entire experience thrilling – the theft, the arrival of the police, the investigation, the possibility of being questioned by the police.",
+      "model_answer": null,
+      "examiner_comment": "Most candidates found the first part of the question easy to answer. Some candidates were unable to recollect and write correctly what Margaret found thrilling.",
+      "teacher_suggestion": "Do a detailed analysis of each character. Students must be made aware of the tone in which a statement is made. Encourage students to enact the play in class – this will help them to recollect the time, the place or the reasons why the words were spoken. Ask students to read the text thoroughly. Thorough reading of the play and adequate revision will ensure that the students remember all the events from the play. Clarify the sequence of events to the students. Teach students to write each part in a separate paragraph to ensure that they do not leave anything out. Allow students to memorise the key ideas and facts.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q3-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Margaret: Here's the wind!\nWinsor: What's the move now, General?\nCanynge: You and I had better see the Inspector in De Levis's room, Winsor. [To the others] If you'll all be handy, in case he wants to put questions for himself.\nMargaret: I hope he'll want me; it's just too thrilling.\nDancy: I hope he won't want me; I am dog-tired. Come on Mabel.\n[He puts his arm in his wife's]\nCanynge: Just a minute, Charles.",
+        "reference": "Act 1, Scene 1",
+        "speaker": "Margaret, Winsor, Canynge and Dancy",
+        "context_before": "At Meldon Court, a robbery has just taken place and the household awaits the arrival of the police inspector to investigate."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iii)",
+      "question_text": "Who enters soon after? What had this person been asked to do earlier?",
+      "total_marks": 3,
+      "key_points": [
+        "Treisure, Winsor's butler enters the room.",
+        "Treisure had been asked to check if the stable ladder had been moved/ to bring up Robert"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Treisure, Winsor's butler enters the room.\nTreisure had been asked to check if the stable ladder had been moved/ to bring up Robert",
+      "model_answer": null,
+      "examiner_comment": "Candidates answered this question well.",
+      "teacher_suggestion": "Do a detailed analysis of each character. Students must be made aware of the tone in which a statement is made. Encourage students to enact the play in class – this will help them to recollect the time, the place or the reasons why the words were spoken. Ask students to read the text thoroughly. Thorough reading of the play and adequate revision will ensure that the students remember all the events from the play. Clarify the sequence of events to the students. Teach students to write each part in a separate paragraph to ensure that they do not leave anything out. Allow students to memorise the key ideas and facts.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q3-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Margaret: Here's the wind!\nWinsor: What's the move now, General?\nCanynge: You and I had better see the Inspector in De Levis's room, Winsor. [To the others] If you'll all be handy, in case he wants to put questions for himself.\nMargaret: I hope he'll want me; it's just too thrilling.\nDancy: I hope he won't want me; I am dog-tired. Come on Mabel.\n[He puts his arm in his wife's]\nCanynge: Just a minute, Charles.",
+        "reference": "Act 1, Scene 1",
+        "speaker": "Margaret, Winsor, Canynge and Dancy",
+        "context_before": "At Meldon Court, a robbery has just taken place and the household awaits the arrival of the police inspector to investigate."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(iv)",
+      "question_text": "How does De Levis happen to have such a large sum of money on that particular day? What steps does he take to keep the money safe?",
+      "total_marks": 3,
+      "key_points": [
+        "De Levis had sold a horse (Rosemary's filly) – for a thousand pounds in cash that day.",
+        "De Levis had placed the money in his boot and had locked the boot in his suitcase before he went down for dinner.",
+        "After dinner he had counted the money, had placed it under his pillow and locked the door when he went for his bath."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "De Levis had sold a horse (Rosemary's filly) – for a thousand pounds in cash that day.\nDe Levis had placed the money in his boot and had locked the boot in his suitcase before he went down for dinner.\nAfter dinner he had counted the money, had placed it under his pillow and locked the door when he went for his bath.",
+      "model_answer": null,
+      "examiner_comment": "Here too, candidates found the first part of the question easy to answer and wrote well. Some candidates could not remember where De Levis had kept the money.",
+      "teacher_suggestion": "Do a detailed analysis of each character. Students must be made aware of the tone in which a statement is made. Encourage students to enact the play in class – this will help them to recollect the time, the place or the reasons why the words were spoken. Ask students to read the text thoroughly. Thorough reading of the play and adequate revision will ensure that the students remember all the events from the play. Clarify the sequence of events to the students. Teach students to write each part in a separate paragraph to ensure that they do not leave anything out. Allow students to memorise the key ideas and facts.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q3-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Margaret: Here's the wind!\nWinsor: What's the move now, General?\nCanynge: You and I had better see the Inspector in De Levis's room, Winsor. [To the others] If you'll all be handy, in case he wants to put questions for himself.\nMargaret: I hope he'll want me; it's just too thrilling.\nDancy: I hope he won't want me; I am dog-tired. Come on Mabel.\n[He puts his arm in his wife's]\nCanynge: Just a minute, Charles.",
+        "reference": "Act 1, Scene 1",
+        "speaker": "Margaret, Winsor, Canynge and Dancy",
+        "context_before": "At Meldon Court, a robbery has just taken place and the household awaits the arrival of the police inspector to investigate."
+      },
+      "parent_question_number": "3",
+      "question_number": "3(v)",
+      "question_text": "Whom does De Levis suspect of having stolen his money? What leads Canynge to suspect the same person? What is Canynge's opinion of this person?",
+      "total_marks": 4,
+      "key_points": [
+        "De Levis suspects Dancy",
+        "When Canynge touches Dancy's sleeve he notices that it was wet – he realises that Dancy had been out in the rain/ Dancy told them he had been indoors all the time",
+        "Canynge believes that Dancy is an officer and a gentleman / that Dancy would never stoop to steal money/ he is gallant/ has a fine record as a soldier/ he was very innocent/ has done daring, risky things"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "suspect_identity": {
+          "marks": 1,
+          "instruction": "Identify who De Levis suspects",
+          "selection": "all"
+        },
+        "canynges_clue": {
+          "marks": 2,
+          "instruction": "Explain what leads Canynge to suspect the same person",
+          "selection": "all"
+        },
+        "canynges_opinion": {
+          "marks": 1,
+          "instruction": "State Canynge's opinion of Dancy",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "De Levis suspects Dancy\nWhen Canynge touches Dancy's sleeve he notices that it was wet – he realises that Dancy had been out in the rain/ Dancy told them he had been indoors all the time\nCanynge believes that Dancy is an officer and a gentleman / that Dancy would never stoop to steal money/ he is gallant/ has a fine record as a soldier/ he was very innocent/ has done daring, risky things",
+      "model_answer": null,
+      "examiner_comment": "First part was done well. In the second part candidates have written that Canynge noticed Dancy's sleeve was wet, but they omitted writing that Dancy had lied about being indoors all the time.",
+      "teacher_suggestion": "Do a detailed analysis of each character. Students must be made aware of the tone in which a statement is made. Encourage students to enact the play in class – this will help them to recollect the time, the place or the reasons why the words were spoken. Ask students to read the text thoroughly. Thorough reading of the play and adequate revision will ensure that the students remember all the events from the play. Clarify the sequence of events to the students. Teach students to write each part in a separate paragraph to ensure that they do not leave anything out. Allow students to memorise the key ideas and facts.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q4-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Mabel: A prosecution? Prison? Oh, go! Don't wait a minute! Go!\nDancy: Blast them!\nMabel: Oh, Ronny! Please! Please! Think what you'll want. I'll pack. Quick! No! Don't wait to take things. Have you got money?",
+        "reference": "Act 3, Scene 3",
+        "speaker": "Mabel and Dancy",
+        "context_before": "Dancy has just confessed to Mabel that he stole De Levis's money to pay off a woman who was blackmailing him."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(i)",
+      "question_text": "Where is this scene set? What had Dancy just confessed to Mabel?",
+      "total_marks": 3,
+      "key_points": [
+        "The Dancy's sitting room/ flat Dancy's",
+        "He had confessed that he had stolen the money.",
+        "He had also confessed that, he had given a thousand pounds to a woman – who was blackmailing him — It was a debt of honour that he had to pay."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "The Dancy's sitting room/ flat Dancy's\nHe had confessed that he had stolen the money.\nHe had also confessed that, he had given a thousand pounds to a woman – who was blackmailing him — It was a debt of honour that he had to pay.",
+      "model_answer": null,
+      "examiner_comment": "This question was answered well by most candidates.",
+      "teacher_suggestion": "Ask students to note the stage directions as well as the setting of each scene. Encourage students to read the question carefully, identify the points asked and present them correctly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q4-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Mabel: A prosecution? Prison? Oh, go! Don't wait a minute! Go!\nDancy: Blast them!\nMabel: Oh, Ronny! Please! Please! Think what you'll want. I'll pack. Quick! No! Don't wait to take things. Have you got money?",
+        "reference": "Act 3, Scene 3",
+        "speaker": "Mabel and Dancy",
+        "context_before": "Dancy has just confessed to Mabel that he stole De Levis's money to pay off a woman who was blackmailing him."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(ii)",
+      "question_text": "What had Dancy's lawyer suggested he should do? Why had he made this suggestion?",
+      "total_marks": 3,
+      "key_points": [
+        "His lawyer wanted him to run away to Morocco, and join the army there/There was a war going on in Morocco",
+        "Lawyer felt he was a fine soldier / he could start over again.",
+        "If Dancy remained in England he would be arrested by police/ Him cannot save his wife's peace of mind/His case has collapsed/ his honour is gone"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "His lawyer wanted him to run away to Morocco, and join the army there/There was a war going on in Morocco\nLawyer felt he was a fine soldier / he could start over again.\nIf Dancy remained in England he would be arrested by police/ Him cannot save his wife's peace of mind/His case has collapsed/ his honour is gone",
+      "model_answer": null,
+      "examiner_comment": "Some candidates were not very sure of the answer. They could not write that the lawyer had suggested that Dancy should run away to Morocco. The reasons for the suggestion were not explained well.",
+      "teacher_suggestion": "Ask students to note the stage directions as well as the setting of each scene. Encourage students to read the question carefully, identify the points asked and present them correctly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q4-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Mabel: A prosecution? Prison? Oh, go! Don't wait a minute! Go!\nDancy: Blast them!\nMabel: Oh, Ronny! Please! Please! Think what you'll want. I'll pack. Quick! No! Don't wait to take things. Have you got money?",
+        "reference": "Act 3, Scene 3",
+        "speaker": "Mabel and Dancy",
+        "context_before": "Dancy has just confessed to Mabel that he stole De Levis's money to pay off a woman who was blackmailing him."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iii)",
+      "question_text": "How does Mabel express her loyalty to Dancy soon after he had made the confession? Who knocks at the door at this point?",
+      "total_marks": 3,
+      "key_points": [
+        "Mabel promises to keep loving him /to be by his side, always. [She will stick with him/ I don't care what you did, I'm just the same/ Later she will join him]",
+        "If he were imprisoned, she would wait for him.",
+        "Inspector Dede / a young constable knocks at the door."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Mabel promises to keep loving him /to be by his side, always. [She will stick with him/ I don't care what you did, I'm just the same/ Later she will join him]\nIf he were imprisoned, she would wait for him.\nInspector Dede / a young constable knocks at the door.",
+      "model_answer": null,
+      "examiner_comment": "This part was answered correctly by most candidates.",
+      "teacher_suggestion": "Ask students to note the stage directions as well as the setting of each scene. Encourage students to read the question carefully, identify the points asked and present them correctly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q4-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Mabel: A prosecution? Prison? Oh, go! Don't wait a minute! Go!\nDancy: Blast them!\nMabel: Oh, Ronny! Please! Please! Think what you'll want. I'll pack. Quick! No! Don't wait to take things. Have you got money?",
+        "reference": "Act 3, Scene 3",
+        "speaker": "Mabel and Dancy",
+        "context_before": "Dancy has just confessed to Mabel that he stole De Levis's money to pay off a woman who was blackmailing him."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(iv)",
+      "question_text": "Who else enters the house? What sound do they all hear? Why does Mabel faint?",
+      "total_marks": 3,
+      "key_points": [
+        "Margaret Orme / Major Colford.",
+        "They hear the sound of a pistol shot (in the bedroom).",
+        "Mabel faints when she enters the bedroom and finds her husband (Dancy) had shot himself."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Margaret Orme / Major Colford.\nThey hear the sound of a pistol shot (in the bedroom).\nMabel faints when she enters the bedroom and finds her husband (Dancy) had shot himself.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates could not write the names of the people who arrive on the scene. Although the second and the third parts of the question were easy, some candidates did not read the question properly and left out a part of the answer.",
+      "teacher_suggestion": "Ask students to note the stage directions as well as the setting of each scene. Encourage students to read the question carefully, identify the points asked and present them correctly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q4-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "A",
+      "sub_section": "drama",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "Loyalties",
+        "author": "John Galsworthy",
+        "work_type": "play"
+      },
+      "extract": {
+        "text": "Mabel: A prosecution? Prison? Oh, go! Don't wait a minute! Go!\nDancy: Blast them!\nMabel: Oh, Ronny! Please! Please! Think what you'll want. I'll pack. Quick! No! Don't wait to take things. Have you got money?",
+        "reference": "Act 3, Scene 3",
+        "speaker": "Mabel and Dancy",
+        "context_before": "Dancy has just confessed to Mabel that he stole De Levis's money to pay off a woman who was blackmailing him."
+      },
+      "parent_question_number": "4",
+      "question_number": "4(v)",
+      "question_text": "What message did Dancy's letter contain? What is your opinion of Dancy at the end of the play?",
+      "total_marks": 4,
+      "key_points": [
+        "Dancy's letter said – This (suicide) was the only decent thing he could do. The situation was unfair to Mabel (his wife). The only way he could keep faith was by using his pistol. Asks Colford to look after Mabel.",
+        "Personal response (e.g. Dancy did love Mabel in his own way etc.) [reckless, foolish, egoistic, selfish]."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "letter_content": {
+          "marks": 2,
+          "instruction": "State the content of Dancy's letter",
+          "selection": "all"
+        },
+        "personal_opinion": {
+          "marks": 2,
+          "instruction": "Give personal opinion of Dancy's character at the end of the play with justification",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Dancy's letter said – This (suicide) was the only decent thing he could do. The situation was unfair to Mabel (his wife). The only way he could keep faith was by using his pistol. Asks Colford to look after Mabel.\nPersonal response (e.g. Dancy did love Mabel in his own way etc.) [reckless, foolish, egoistic, selfish].",
+      "model_answer": null,
+      "examiner_comment": "Dancy's letter was quoted correctly by most candidates. The second part was also written well.",
+      "teacher_suggestion": "Ask students to note the stage directions as well as the setting of each scene. Encourage students to read the question carefully, identify the points asked and present them correctly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q5-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Small Pain in My Chest",
+        "author": "Michael Mack",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "\"I'm grateful, Sir\", he whispered, as I handed my canteen\nAnd smiled a smile that was, I think, the brightest that I've seen.\n\"Seems silly a man my size so full of vim and zest\nCould find himself defeated by a small pain in his chest.\"",
+        "reference": null,
+        "speaker": "the wounded soldier, addressing the narrator",
+        "context_before": "The poem's narrator, a soldier, comes across a young, badly wounded comrade on the battlefield after a night of fighting."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(i)",
+      "question_text": "Where is 'he' when the narrator encounters him? Describe the scene around him.",
+      "total_marks": 3,
+      "key_points": [
+        "underneath the tree / on the battlefield.",
+        "Scores of dead bodies [dead figures, soldiers] lay all over the battle field/ Big deep craters on the earth"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "underneath the tree / on the battlefield.\nScores of dead bodies [dead figures, soldiers] lay all over the battle field/ Big deep craters on the earth",
+      "model_answer": null,
+      "examiner_comment": "This question was answered correctly by most candidates. A few, however, missed the actual textual reference i.e. \"craters\". Some wrote the whole sequence of war that took place.",
+      "teacher_suggestion": "Stress upon the need to read and revise the poem thoroughly. Some students merely study the summary of the poem. However, the knowledge of the key words from the poem is as important as its analysis. Although it is not necessary to quote from the text, yet the key ideas and phrases as well as the sequence should be memorized. Give practice to students in writing their personal response to questions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q5-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Small Pain in My Chest",
+        "author": "Michael Mack",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "\"I'm grateful, Sir\", he whispered, as I handed my canteen\nAnd smiled a smile that was, I think, the brightest that I've seen.\n\"Seems silly a man my size so full of vim and zest\nCould find himself defeated by a small pain in his chest.\"",
+        "reference": null,
+        "speaker": "the wounded soldier, addressing the narrator",
+        "context_before": "The poem's narrator, a soldier, comes across a young, badly wounded comrade on the battlefield after a night of fighting."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(ii)",
+      "question_text": "What does 'he' ask the narrator for? What reasons does he give for his request?",
+      "total_marks": 3,
+      "key_points": [
+        "A sip of water",
+        "he had fought all day and all night without rest/ it will surely do him good/ will ease the pain/ it will quench his thirst",
+        "he was wounded (had a small pain in his chest)/ and weary."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "A sip of water\nhe had fought all day and all night without rest/ it will surely do him good/ will ease the pain/ it will quench his thirst\nhe was wounded (had a small pain in his chest)/ and weary.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates wrote \"canteen\" instead of \"water\".",
+      "teacher_suggestion": "Stress upon the need to read and revise the poem thoroughly. Some students merely study the summary of the poem. However, the knowledge of the key words from the poem is as important as its analysis. Although it is not necessary to quote from the text, yet the key ideas and phrases as well as the sequence should be memorized. Give practice to students in writing their personal response to questions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q5-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Small Pain in My Chest",
+        "author": "Michael Mack",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "\"I'm grateful, Sir\", he whispered, as I handed my canteen\nAnd smiled a smile that was, I think, the brightest that I've seen.\n\"Seems silly a man my size so full of vim and zest\nCould find himself defeated by a small pain in his chest.\"",
+        "reference": null,
+        "speaker": "the wounded soldier, addressing the narrator",
+        "context_before": "The poem's narrator, a soldier, comes across a young, badly wounded comrade on the battlefield after a night of fighting."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iii)",
+      "question_text": "What does the narrator see when he looks at him? How do we know that 'he' is very young and completely unaware of the seriousness of his injury?",
+      "total_marks": 3,
+      "key_points": [
+        "A large reddish-brown patch on his shirt / stain of the warm blood mixed with the dust of Asia.",
+        "The poet calls him 'soldier boy'/ he is full of vim and zest",
+        "The soldier refers to his fatal wound repeatedly as 'a small pain in my chest'/ he smiled/ jokes: it must be fatigue/ he's getting old/says, 'I count myself lucky'. / Says '..before I travel on'"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "wound_description": {
+          "marks": 1,
+          "instruction": "Describe what the narrator sees",
+          "selection": "all"
+        },
+        "youth_and_unawareness": {
+          "marks": 2,
+          "instruction": "Explain how we know he is young and unaware of the seriousness of his injury",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "A large reddish-brown patch on his shirt / stain of the warm blood mixed with the dust of Asia.\nThe poet calls him 'soldier boy'/ he is full of vim and zest\nThe soldier refers to his fatal wound repeatedly as 'a small pain in my chest'/ he smiled/ jokes: it must be fatigue/ he's getting old/says, 'I count myself lucky'. / Says '..before I travel on'",
+      "model_answer": null,
+      "examiner_comment": "Candidates were required to write about the wound on the soldier's chest. Some gave an account of the setting of the scene instead. The second part of the question was not answered correctly by most.",
+      "teacher_suggestion": "Stress upon the need to read and revise the poem thoroughly. Some students merely study the summary of the poem. However, the knowledge of the key words from the poem is as important as its analysis. Although it is not necessary to quote from the text, yet the key ideas and phrases as well as the sequence should be memorized. Give practice to students in writing their personal response to questions.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q5-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Small Pain in My Chest",
+        "author": "Michael Mack",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "\"I'm grateful, Sir\", he whispered, as I handed my canteen\nAnd smiled a smile that was, I think, the brightest that I've seen.\n\"Seems silly a man my size so full of vim and zest\nCould find himself defeated by a small pain in his chest.\"",
+        "reference": null,
+        "speaker": "the wounded soldier, addressing the narrator",
+        "context_before": "The poem's narrator, a soldier, comes across a young, badly wounded comrade on the battlefield after a night of fighting."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(iv)",
+      "question_text": "How does 'he' describe the battle that had been fought the night before and his role in it?",
+      "total_marks": 3,
+      "key_points": [
+        "Two hundred soldiers climbed the hill.",
+        "There was an explosion [the night exploded]/ as they cleared the crest and he was wounded.",
+        "he looked around for aid / but only saw big craters / and dead bodies on the ground/ He kept on firing at them/ he tried to do his best."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Two hundred soldiers climbed the hill.\nThere was an explosion [ the night exploded]/ as they cleared the crest and he was wounded.\nhe looked around for aid / but only saw big craters / and dead bodies on the ground/ He kept on firing at them/ he tried to do his best.",
+      "model_answer": null,
+      "examiner_comment": "Candidates performed well in this question.",
+      "teacher_suggestion": "Stress upon the need to read and revise the poem thoroughly. Some students merely study the summary of the poem. However, the knowledge of the key words from the poem is as important as its analysis. Although it is not necessary to quote from the text, yet the key ideas and phrases as well as the sequence should be memorized. Give practice to students in writing their personal response to questions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q5-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "personal_response",
+      "literary_work": {
+        "title": "Small Pain in My Chest",
+        "author": "Michael Mack",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "\"I'm grateful, Sir\", he whispered, as I handed my canteen\nAnd smiled a smile that was, I think, the brightest that I've seen.\n\"Seems silly a man my size so full of vim and zest\nCould find himself defeated by a small pain in his chest.\"",
+        "reference": null,
+        "speaker": "the wounded soldier, addressing the narrator",
+        "context_before": "The poem's narrator, a soldier, comes across a young, badly wounded comrade on the battlefield after a night of fighting."
+      },
+      "parent_question_number": "5",
+      "question_number": "5(v)",
+      "question_text": "What feelings do you think the narrator must have experienced when he 'put his arms around him'? What is the central theme of this poem?",
+      "total_marks": 4,
+      "key_points": [
+        "Personal response: example – guilt, shame, sorrow, anger, tenderness, regret, empathy, remorse; compassion; disappointment; misery; he feels their wounds pressed the large one in his heart and the small one of the soldier, etc.",
+        "Theme: Devastation caused by war and the senseless loss of young lives/ agony of brave soldiers/ horrors of war/ sense of duty/ highlights the sacrifice made by soldiers/ soldiers have to suffer in a war they did not cause/ / The narrator represents the collective guilt of mankind/ the theme of the poem is courage and bravery/never give up."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "narrators_feelings": {
+          "marks": 2,
+          "instruction": "Give personal response on the feelings the narrator must have experienced",
+          "selection": "any_1"
+        },
+        "central_theme": {
+          "marks": 2,
+          "instruction": "State the central theme of the poem",
+          "selection": "any_1"
+        }
+      },
+      "scheme_text": "Personal response: example – guilt, shame, sorrow, anger, tenderness, regret, empathy, remorse; compassion; disappointment; misery; he feels their wounds pressed the large one in his heart and the small one of the soldier, etc.\nTheme: Devastation caused by war and the senseless loss of young lives/ agony of brave soldiers/ horrors of war/ sense of duty/ highlights the sacrifice made by soldiers/ soldiers have to suffer in a war they did not cause/ / The narrator represents the collective guilt of mankind/ the theme of the poem is courage and bravery/never give up.",
+      "model_answer": null,
+      "examiner_comment": "Some could not assess the feelings of the narrator. Candidates wrote the theme for both parts of the question.",
+      "teacher_suggestion": "Stress upon the need to read and revise the poem thoroughly. Some students merely study the summary of the poem. However, the knowledge of the key words from the poem is as important as its analysis. Although it is not necessary to quote from the text, yet the key ideas and phrases as well as the sequence should be memorized. Give practice to students in writing their personal response to questions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q6-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Professor",
+        "author": "Nissim Ezekiel",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "I am going out rarely, now and then\nOnly, this is price of old age\nBut my health is O.K.",
+        "reference": null,
+        "speaker": "Professor Sheth",
+        "context_before": "In this satirical poem, retired Professor Sheth meets a former student and updates him about his family and health in comically ungrammatical Indian English."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(i)",
+      "question_text": "Who is the speaker? What relationship did he share with the listener?",
+      "total_marks": 3,
+      "key_points": [
+        "Professor Sheth – (retired Geography teacher)/ He is a professor/",
+        "He had taught him (the listener) Geography in school/The listener is a student"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Professor Sheth – (retired Geography teacher)/ He is a professor/\nHe had taught him (the listener) Geography in school/The listener is a student",
+      "model_answer": null,
+      "examiner_comment": "This was a simple question, answered well by candidates.",
+      "teacher_suggestion": "Stress upon learning the key ideas and phrases, unaltered. Instruct students to tackle each part of the question and to be clear in their responses. Train students to write precise and to the point answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q6-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "The Professor",
+        "author": "Nissim Ezekiel",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "I am going out rarely, now and then\nOnly, this is price of old age\nBut my health is O.K.",
+        "reference": null,
+        "speaker": "Professor Sheth",
+        "context_before": "In this satirical poem, retired Professor Sheth meets a former student and updates him about his family and health in comically ungrammatical Indian English."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(ii)",
+      "question_text": "How many sons does the speaker have? What does he say about them?",
+      "total_marks": 3,
+      "key_points": [
+        "Three",
+        "One is a Sales Manager, another a Bank Manager – both own cars.",
+        "Third is not doing so well (financially) – 'Blacksheep' of the family."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Three\nOne is a Sales Manager, another a Bank Manager – both own cars.\nThird is not doing so well (financially) – 'Blacksheep' of the family.",
+      "model_answer": null,
+      "examiner_comment": "This part was answered correctly by most candidates.",
+      "teacher_suggestion": "Stress upon learning the key ideas and phrases, unaltered. Instruct students to tackle each part of the question and to be clear in their responses. Train students to write precise and to the point answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q6-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Professor",
+        "author": "Nissim Ezekiel",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "I am going out rarely, now and then\nOnly, this is price of old age\nBut my health is O.K.",
+        "reference": null,
+        "speaker": "Professor Sheth",
+        "context_before": "In this satirical poem, retired Professor Sheth meets a former student and updates him about his family and health in comically ungrammatical Indian English."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iii)",
+      "question_text": "What are the names of the speaker's daughters? Why does the speaker believe that his daughters are 'well settled in life'?",
+      "total_marks": 3,
+      "key_points": [
+        "Sarala and Tarala",
+        "They are both married.",
+        "Their husbands are 'very nice boys'."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Sarala and Tarala\nThey are both married.\nTheir husbands are 'very nice boys'.",
+      "model_answer": null,
+      "examiner_comment": "Many variations of the names 'Sarala and Tarala' were written by the candidates. Second part of the question was written well.",
+      "teacher_suggestion": "Stress upon learning the key ideas and phrases, unaltered. Instruct students to tackle each part of the question and to be clear in their responses. Train students to write precise and to the point answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q6-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "The Professor",
+        "author": "Nissim Ezekiel",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "I am going out rarely, now and then\nOnly, this is price of old age\nBut my health is O.K.",
+        "reference": null,
+        "speaker": "Professor Sheth",
+        "context_before": "In this satirical poem, retired Professor Sheth meets a former student and updates him about his family and health in comically ungrammatical Indian English."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(iv)",
+      "question_text": "How old is the speaker? Why does he say that his health is 'OK'? What reason does he give to explain his state of health?",
+      "total_marks": 3,
+      "key_points": [
+        "Sixty-nine",
+        "No major health conditions – free from diabetes, blood pressure, heart attack.",
+        "'Sound habit in youth'"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Sixty-nine\nNo major health conditions – free from diabetes, blood pressure, heart attack.\n'Sound habit in youth'",
+      "model_answer": null,
+      "examiner_comment": "This was a simple text-based question, answered well by almost all.",
+      "teacher_suggestion": "Stress upon learning the key ideas and phrases, unaltered. Instruct students to tackle each part of the question and to be clear in their responses. Train students to write precise and to the point answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q6-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "B",
+      "sub_section": "poetry",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "The Professor",
+        "author": "Nissim Ezekiel",
+        "work_type": "poem"
+      },
+      "extract": {
+        "text": "I am going out rarely, now and then\nOnly, this is price of old age\nBut my health is O.K.",
+        "reference": null,
+        "speaker": "Professor Sheth",
+        "context_before": "In this satirical poem, retired Professor Sheth meets a former student and updates him about his family and health in comically ungrammatical Indian English."
+      },
+      "parent_question_number": "6",
+      "question_number": "6(v)",
+      "question_text": "What characteristics typical of Indian speech and thought does the poet make fun of through this poem?",
+      "total_marks": 4,
+      "key_points": [
+        "By God's Grace",
+        "How many issues you have?",
+        "I am not against",
+        "Our progress is progressing",
+        "Health is OK",
+        "I am 69, hope to score a century.",
+        "You were so thin, like stick",
+        "If you are coming again this side, by chance",
+        "Visit please my humble residence",
+        "I am living just on opposite house's backside.",
+        "Incorrect use of present continuous tense",
+        "Omission of articles",
+        "Grammatical errors",
+        "Direct translation from Hindi to English",
+        "Success in life means owning a car",
+        "Having many children / grandchildren is a matter of pride.",
+        "Daughters are a matter of concern unless they are married off… to 'nice boys'",
+        "A prosperous person has to look prosperous (overweight)",
+        "False humility ('humble house')/ Human achievement is measured by economic success/ Judges by materialistic possessions/ women should be married and confined to their homes/ Judges sons and daughters differently/ Obsession with cricket- hope to score a century/ Pride in speaking in English"
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "indian_speech_examples": {
+          "marks": 2,
+          "instruction": "Mention any two examples of Indian speech",
+          "selection": "any_2"
+        },
+        "indian_thought_examples": {
+          "marks": 2,
+          "instruction": "Mention any two examples of Indian thought",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "Mention any two from examples of Indian Speech and two from examples of Indian thought\nExamples of Indian Speech:\nBy God's Grace\nHow many issues you have?\nI am not against\nOur progress is progressing\nHealth is OK\nI am 69, hope to score a century.\nYou were so thin, like stick\nIf you are coming again this side, by chance\nVisit please my humble residence\nI am living just on opposite house's backside.\n* Incorrect use of present continuous tense\n* Omission of articles\n* Grammatical errors\n* Direct translation from Hindi to English\nExamples of Indian thought:\nSuccess in life means owning a car\nHaving many children / grandchildren is a matter of pride.\nDaughters are a matter of concern unless they are married off… to 'nice boys'\nA prosperous person has to look prosperous (overweight)\nFalse humility ('humble house')/ Human achievement is measured by economic success/ Judges by materialistic possessions/ women should be married and confined to their homes/ Judges sons and daughters differently/ Obsession with cricket- hope to score a century/ Pride in speaking in English",
+      "model_answer": null,
+      "examiner_comment": "The question had two parts, but most candidates mixed them up to one idea and did not write a comprehensive answer. They had to highlight the portrayal of Indian speech and thought separately.",
+      "teacher_suggestion": "Stress upon learning the key ideas and phrases, unaltered. Instruct students to tackle each part of the question and to be clear in their responses. Train students to write precise and to the point answers.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q7-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": null,
+        "author": null,
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Sher Singh could feel immediately the heat of the boy's body burning through the cotton cloth.\nHe felt the weight too, and he wondered how he was going to manage.\n'He is too big for you' said the mother. She spoke in the whisper of despair. 'You will never get there.'\nSher Singh said nothing.\nHe set off.",
+        "reference": null,
+        "speaker": "Sher Singh and his mother",
+        "context_before": "Sher Singh, a young boy, must carry his gravely ill baby brother through the jungle to reach the nearest hospital."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(i)",
+      "question_text": "Who was the 'boy'? Why was Sher Singh sure that the little boy would die?",
+      "total_marks": 3,
+      "key_points": [
+        "Kunwar, Sher Singh's younger brother/Sher Singh Bahadur's younger son",
+        "When Sher Singh's mother said the little boy had to be taken to the hospital he was convinced that he would die – the hospital was the last resort of the doomed/ Whoever went to the hospital never came back/ He could see death in his eyes"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Kunwar, Sher Singh's younger brother/Sher Singh Bahadur's younger son\nWhen Sher Singh's mother said the little boy had to be taken to the hospital he was convinced that he would die – the hospital was the last resort of the doomed/ Whoever went to the hospital never came back/ He could see death in his eyes",
+      "model_answer": null,
+      "examiner_comment": "Some candidates wrote the age of the 'boy' instead of identifying him as Sher Singh's brother. Many candidates failed to write the expected response to the second part correctly.",
+      "teacher_suggestion": "Instruct students to write precise and to the point answers. Revise the story thoroughly so that the students remember the minutest details. Learning merely the gist of the story is not enough. Do written work regularly in class. Train students to pay attention to important details in the story and also, to development of character.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q7-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": null,
+        "author": null,
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Sher Singh could feel immediately the heat of the boy's body burning through the cotton cloth.\nHe felt the weight too, and he wondered how he was going to manage.\n'He is too big for you' said the mother. She spoke in the whisper of despair. 'You will never get there.'\nSher Singh said nothing.\nHe set off.",
+        "reference": null,
+        "speaker": "Sher Singh and his mother",
+        "context_before": "Sher Singh, a young boy, must carry his gravely ill baby brother through the jungle to reach the nearest hospital."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(ii)",
+      "question_text": "What did Sher Singh's father do for a living? Mention any two acts of courage he had performed that had earned him the title 'Bahadur'.",
+      "total_marks": 3,
+      "key_points": [
+        "He grazed animals / and cultivated his bit of land/ He was a shikari/ Whenever there was an expedition he was called.",
+        "He had a scar down his skull and back and shoulders from rescuing a comrade from a tiger.",
+        "He had a wound on his leg to mark the spot where he had cut and burned his flesh where a snake had bitten him.",
+        "Two fingers missing, and face marked.",
+        "Reputed to have walked 5 miles through the jungle with his puggree tied around his stomach to stop everything from falling out through the torn skin."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "occupation": {
+          "marks": 1,
+          "instruction": "State the father's occupation",
+          "selection": "all"
+        },
+        "acts_of_courage": {
+          "marks": 2,
+          "instruction": "Mention any two acts of courage that earned him the title 'Bahadur'",
+          "selection": "any_2"
+        }
+      },
+      "scheme_text": "He grazed animals / and cultivated his bit of land/ He was a shikari/ Whenever there was an expedition he was called.\nAny two of the following:\nHe had a scar down his skull and back and shoulders from rescuing a comrade from a tiger.\nHe had a wound on his leg to mark the spot where he had cut and burned his flesh where a snake had bitten him.\nTwo fingers missing, and face marked.\nReputed to have walked 5 miles through the jungle with his puggree tied around his stomach to stop everything from falling out through the torn skin.",
+      "model_answer": null,
+      "examiner_comment": "The second part of the question was misunderstood by some who mentioned other points instead of writing about Sher Singh's father's acts of bravery.",
+      "teacher_suggestion": "Instruct students to write precise and to the point answers. Revise the story thoroughly so that the students remember the minutest details. Learning merely the gist of the story is not enough. Do written work regularly in class. Train students to pay attention to important details in the story and also, to development of character.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q7-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": null,
+        "author": null,
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Sher Singh could feel immediately the heat of the boy's body burning through the cotton cloth.\nHe felt the weight too, and he wondered how he was going to manage.\n'He is too big for you' said the mother. She spoke in the whisper of despair. 'You will never get there.'\nSher Singh said nothing.\nHe set off.",
+        "reference": null,
+        "speaker": "Sher Singh and his mother",
+        "context_before": "Sher Singh, a young boy, must carry his gravely ill baby brother through the jungle to reach the nearest hospital."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iii)",
+      "question_text": "How does his mother use her skill as a hill woman to prepare Sher Singh for his long and dangerous journey?",
+      "total_marks": 3,
+      "key_points": [
+        "Sher Singh's mother knew how to carry loads.",
+        "How to sling a load from a band round the forehead and down the back so that the shoulders and the strong muscles of the neck could take heavy weights up and down hills.",
+        "She used her saree / to make a sling for Sher Singh to carry Kunwar in."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Sher Singh's mother knew how to carry loads.\nHow to sling a load from a band round the forehead and down the back so that the shoulders and the strong muscles of the neck could take heavy weights up and down hills.\nShe used her saree / to make a sling for Sher Singh to carry Kunwar in.",
+      "model_answer": null,
+      "examiner_comment": "Candidates wrote that Sher Singh's mother prepared a sling to help him carry his brother, but some failed to describe how she makes the contraption.",
+      "teacher_suggestion": "Instruct students to write precise and to the point answers. Revise the story thoroughly so that the students remember the minutest details. Learning merely the gist of the story is not enough. Do written work regularly in class. Train students to pay attention to important details in the story and also, to development of character.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q7-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": null,
+        "author": null,
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Sher Singh could feel immediately the heat of the boy's body burning through the cotton cloth.\nHe felt the weight too, and he wondered how he was going to manage.\n'He is too big for you' said the mother. She spoke in the whisper of despair. 'You will never get there.'\nSher Singh said nothing.\nHe set off.",
+        "reference": null,
+        "speaker": "Sher Singh and his mother",
+        "context_before": "Sher Singh, a young boy, must carry his gravely ill baby brother through the jungle to reach the nearest hospital."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(iv)",
+      "question_text": "Mention any three challenges that Sher Singh encountered on his way to the hospital.",
+      "total_marks": 3,
+      "key_points": [
+        "a cobra sunning itself – Sher Singh backed away and the snake slid away without harming him.",
+        "Bear tracks – he was nervous and quickened his steps – managed to avoid an encounter with the bear.",
+        "Herd of wild elephants – the tusker almost discovered the boys – Sher Singh stayed still and prayed fervently. The elephant trumpeted and hurried away.",
+        "Tiger pug marks – indicating the presence of the predator in the vicinity.",
+        "Crossed two icy cold rivers – the second in flood – tied his brother to himself with a grass rope he made and courageously entered the river – almost swept away by the floods."
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "scheme_text": "Any three of the following:\na cobra sunning itself – Sher Singh backed away and the snake slid away without harming him.\nBear tracks – he was nervous and quickened his steps – managed to avoid an encounter with the bear.\nHerd of wild elephants – the tusker almost discovered the boys – Sher Singh stayed still and prayed fervently. The elephant trumpeted and hurried away.\nTiger pug marks – indicating the presence of the predator in the vicinity.\nCrossed two icy cold rivers – the second in flood – tied his brother to himself with a grass rope he made and courageously entered the river – almost swept away by the floods.",
+      "model_answer": null,
+      "examiner_comment": "This part was answered well by most candidates.",
+      "teacher_suggestion": "Instruct students to write precise and to the point answers. Revise the story thoroughly so that the students remember the minutest details. Learning merely the gist of the story is not enough. Do written work regularly in class. Train students to pay attention to important details in the story and also, to development of character.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q7-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": null,
+        "author": null,
+        "work_type": "short_story"
+      },
+      "extract": {
+        "text": "Sher Singh could feel immediately the heat of the boy's body burning through the cotton cloth.\nHe felt the weight too, and he wondered how he was going to manage.\n'He is too big for you' said the mother. She spoke in the whisper of despair. 'You will never get there.'\nSher Singh said nothing.\nHe set off.",
+        "reference": null,
+        "speaker": "Sher Singh and his mother",
+        "context_before": "Sher Singh, a young boy, must carry his gravely ill baby brother through the jungle to reach the nearest hospital."
+      },
+      "parent_question_number": "7",
+      "question_number": "7(v)",
+      "question_text": "How does the doctor at the hospital address Sher Singh at the end of the story? Why do you think he refers to him in this way?",
+      "total_marks": 4,
+      "key_points": [
+        "The doctor calls him Sher Singh Bahadur",
+        "To acknowledge the boy's courage and determination to bring his little brother to the hospital etc./will power/ bravery/ just 12 years old/ all alone/ never gave up/ sense of responsibility and duty."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "how_addressed": {
+          "marks": 1,
+          "instruction": "State how the doctor addresses Sher Singh",
+          "selection": "all"
+        },
+        "reason_for_title": {
+          "marks": 3,
+          "instruction": "Explain why the doctor refers to him this way",
+          "selection": "any_3"
+        }
+      },
+      "scheme_text": "The doctor calls him Sher Singh Bahadur\nTo acknowledge the boy's courage and determination to bring his little brother to the hospital etc./will power/ bravery/ just 12 years old/ all alone/ never gave up/ sense of responsibility and duty.",
+      "model_answer": null,
+      "examiner_comment": "The first part of the question was easily answered correctly by all. The second part carried three marks and the candidates had to expand and analyse their answer. Writing that Sher Singh is addressed as 'Bahadur' because he is brave does not cover all the points.",
+      "teacher_suggestion": "Instruct students to write precise and to the point answers. Revise the story thoroughly so that the students remember the minutest details. Learning merely the gist of the story is not enough. Do written work regularly in class. Train students to pay attention to important details in the story and also, to development of character.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q8",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": true,
+      "response_type": "textual_reference",
+      "literary_work": {
+        "title": "The Lost Dollar",
+        "author": "Stephen Leacock",
+        "work_type": "essay"
+      },
+      "extract": null,
+      "parent_question_number": "8",
+      "question_number": "8",
+      "question_text": "With close reference to the text, show how Stephen Leacock makes effective use of humour and exaggeration to describe his attempts to get back his 'Lost Dollar'.",
+      "total_marks": 16,
+      "key_points": [
+        "Exaggeration: the entire anecdote revolves around a SINGLE DOLLAR that the author Stephen Leacock had lent his friend.",
+        "Leacock is sure he is never going to get it back.",
+        "He will never forget this lost dollar – he would carry the recollection of it to his grave.",
+        "Humour: Every time Leacock meets his friend Todd (the one who borrowed the dollar) he remembers the lost dollar, but the friend has forgotten all about it.",
+        "Leacock expects the dollar to be returned at every encounter – growing frustration when this does not happen.",
+        "When Todd writes to him from Berunda – all Leacock expects is to find the dollar in the envelope – disappointed to find that it is not.",
+        "Leacock goes to meet Todd at the station on his return from Berunda (says the dollar was not on his mind but it was!)",
+        "Leacock drops blatant hints – suggests they take a taxi to the club – later asks Todd if the American Dollar goes at par in Berunda (Stressing the words, hoping Todd would remember – this strategy fails)",
+        "In another context Todd speaks of Poland not repaying her debts – Leacock comments on the irony on this – since Todd still had not returned his dollar.",
+        "Leacock is then troubled by another thought – What if he, like Todd had borrowed a dollar off someone and then forgotten all about it?!",
+        "He plans to start a 'Back to Honesty' movement… more humour in how he plans to go about it.",
+        "The concluding lines urge the reader not to leave a copy of this piece of writing where Major Todd of the University Club, Montreal may come across it – It is all too evident that the narrator means exactly the opposite – why else would he supply all of Todd's contact details?"
+      ],
+      "points_required": null,
+      "points_selection": "all",
+      "scheme_text": "Exaggeration\nthe entire anecdote revolves around a SINGLE DOLLAR that the author Stephen Leacock had lent his friend.\nLeacock is sure he is never going to get it back.\nHe will never forget this lost dollar – he would carry the recollection of it to his grave.\nHumour\nEvery time Leacock meets his friend Todd (the one who borrowed the dollar) he remembers the lost dollar, but the friend has forgotten all about it.\nLeacock expects the dollar to be returned at every encounter – growing frustration when this does not happen.\nWhen Todd writes to him from Berunda – all Leacock expects is to find the dollar in the envelope – disappointed to find that it is not.\nLeacock goes to meet Todd at the station on his return from Berunda (says the dollar was not on his mind but it was!)\nLeacock drops blatant hints – suggests they take a taxi to the club – later asks Todd if the American Dollar goes at par in Berunda (Stressing the words, hoping Todd would remember – this strategy fails)\nIn another context Todd speaks of Poland not repaying her debts – Leacock comments on the irony on this – since Todd still had not returned his dollar.\nLeacock is then troubled by another thought – What if he, like Todd had borrowed a dollar off someone and then forgotten all about it?!\nHe plans to start a 'Back to Honesty' movement… more humour in how he plans to go about it.\nThe concluding lines urge the reader not to leave a copy of this piece of writing where Major Todd of the University Club, Montreal may come across it – It is all too evident that the narrator means exactly the opposite – why else would he supply all of Todd's contact details?",
+      "model_answer": null,
+      "examiner_comment": "Many candidates wrote a brief summary and failed to highlight the 'humour and exaggeration'. The points were not written in detail. Answers were disorganized and jumbled up. Some candidates did not specify all the hints given by the narrator to remind his friend about the lost dollar. Some candidates did not write about the 'Back to Honesty' movement which is a humorous part of the story.",
+      "teacher_suggestion": "Include all important points from the story in the answer in detail. Ensure that students practice writing detailed answers. Guide students to study language and literature, in conjunction with each other.",
+      "difficulty_flag": "high",
+      "expected_references": [
+        {
+          "quote_fragment": "Back to Honesty movement",
+          "category": null
+        },
+        {
+          "quote_fragment": "does the American Dollar go at par in Berunda",
+          "category": null
+        },
+        {
+          "quote_fragment": "Major Todd of the University Club, Montreal",
+          "category": null
+        }
+      ]
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q9-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "It was just after the sheep had returned, on a pleasant evening when the animals had finished work and were making their way back to the farm buildings, that the terrified neighing of a horse sounded from the yard. Startled, the animals stopped in their tracks.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The pigs have gradually seized more power and privileges on Animal Farm since the rebellion against Mr Jones, altering the Seven Commandments to suit themselves."
+      },
+      "parent_question_number": "9",
+      "question_number": "9(i)",
+      "question_text": "From where did the sheep return? Under whose supervision were they? What were they taught while they were in this place?",
+      "total_marks": 3,
+      "key_points": [
+        "The sheep returned from a piece of waste ground at the other end of the farm/ overgrown with birch saplings.",
+        "Squealer supervised them.",
+        "They were taught to sing – 'four legs good, two legs better'."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "The sheep returned from a piece of waste ground at the other end of the farm/ overgrown with birch saplings.\nSquealer supervised them.\nThey were taught to sing – 'four legs good, two legs better'.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates did not write the first part well. They did not mention that the place was 'overgrown with birch saplings'. The second part was answered correctly.",
+      "teacher_suggestion": "Stress upon a thorough reading of the text. Knowledge of figures of speech is an integral part of understanding literature. Make students aware of these and give practice in spotting and analysing figures of speech.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q9-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "It was just after the sheep had returned, on a pleasant evening when the animals had finished work and were making their way back to the farm buildings, that the terrified neighing of a horse sounded from the yard. Startled, the animals stopped in their tracks.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The pigs have gradually seized more power and privileges on Animal Farm since the rebellion against Mr Jones, altering the Seven Commandments to suit themselves."
+      },
+      "parent_question_number": "9",
+      "question_number": "9(ii)",
+      "question_text": "Whose voice was it that startled the animals? What did the horse see that caused it to neigh in terror?",
+      "total_marks": 3,
+      "key_points": [
+        "Clover's voice.",
+        "The sight of Squealer walking on hind legs. / After that, there came a long file of pigs also walking on their hind legs.",
+        "Finally, Napoleon – walking upright majestically and carrying a whip."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Clover's voice.\nThe sight of Squealer walking on hind legs. / After that, there came a long file of pigs also walking on their hind legs.\nFinally, Napoleon – walking upright majestically and carrying a whip.",
+      "model_answer": null,
+      "examiner_comment": "This question was answered correctly by most.",
+      "teacher_suggestion": "Stress upon a thorough reading of the text. Knowledge of figures of speech is an integral part of understanding literature. Make students aware of these and give practice in spotting and analysing figures of speech.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q9-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "It was just after the sheep had returned, on a pleasant evening when the animals had finished work and were making their way back to the farm buildings, that the terrified neighing of a horse sounded from the yard. Startled, the animals stopped in their tracks.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The pigs have gradually seized more power and privileges on Animal Farm since the rebellion against Mr Jones, altering the Seven Commandments to suit themselves."
+      },
+      "parent_question_number": "9",
+      "question_number": "9(iii)",
+      "question_text": "How did the animals react to this sight at first? Why were they not able to protest?",
+      "total_marks": 3,
+      "key_points": [
+        "At first there was a deadly silence. Amazed/ terrified/ huddling together, / the animals watched in silent bewilderment.",
+        "Before they could utter some word of protest, the sheep burst into a tremendous bleating of – 'four legs good, two legs better'. It went on or five minutes without stopping;",
+        "The chance to utter any protest had passed as the pigs had marched back into the farmhouse."
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "At first there was a deadly silence. Amazed/ terrified/ huddling together, / the animals watched in silent bewilderment.\nBefore they could utter some word of protest, the sheep burst into a tremendous bleating of – 'four legs good, two legs better'. It went on or five minutes without stopping;\nThe chance to utter any protest had passed as the pigs had marched back into the farmhouse.",
+      "model_answer": null,
+      "examiner_comment": "The reaction of the animals was not described in detail by many candidates. Some candidates could not recall the diversion created by the sheep.",
+      "teacher_suggestion": "Stress upon a thorough reading of the text. Knowledge of figures of speech is an integral part of understanding literature. Make students aware of these and give practice in spotting and analysing figures of speech.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q9-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "It was just after the sheep had returned, on a pleasant evening when the animals had finished work and were making their way back to the farm buildings, that the terrified neighing of a horse sounded from the yard. Startled, the animals stopped in their tracks.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The pigs have gradually seized more power and privileges on Animal Farm since the rebellion against Mr Jones, altering the Seven Commandments to suit themselves."
+      },
+      "parent_question_number": "9",
+      "question_number": "9(iv)",
+      "question_text": "Why did Clover lead Benjamin gently to the end of the barn immediately after this? What did they find written on the wall?",
+      "total_marks": 3,
+      "key_points": [
+        "Clover wanted Benjamin to read the Seven Commandments and tell her if they were the same as they had always been.",
+        "'All animals are equal, / but some animals are more equal than others' / was written there where the Seven Commandments had stood."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Clover wanted Benjamin to read the Seven Commandments and tell her if they were the same as they had always been.\n'All animals are equal, / but some animals are more equal than others' / was written there where the Seven Commandments had stood.",
+      "model_answer": null,
+      "examiner_comment": "Candidates wrote correctly that Clover wanted Benjamin to read the seven commandments, but they could not recall the exact words that were written on the wall.",
+      "teacher_suggestion": "Stress upon a thorough reading of the text. Knowledge of figures of speech is an integral part of understanding literature. Make students aware of these and give practice in spotting and analysing figures of speech.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q9-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "It was just after the sheep had returned, on a pleasant evening when the animals had finished work and were making their way back to the farm buildings, that the terrified neighing of a horse sounded from the yard. Startled, the animals stopped in their tracks.",
+        "reference": null,
+        "speaker": null,
+        "context_before": "The pigs have gradually seized more power and privileges on Animal Farm since the rebellion against Mr Jones, altering the Seven Commandments to suit themselves."
+      },
+      "parent_question_number": "9",
+      "question_number": "9(v)",
+      "question_text": "What strange and disturbing change did the animals observe in the pigs when they peered in at the dining room window later that evening? Comment on the irony of the situation.",
+      "total_marks": 4,
+      "key_points": [
+        "The faces of the pigs seemed to be melting and changing.",
+        "The animals could not distinguish between pig and man.",
+        "The difference had blurred it was impossible to say which was which.",
+        "The irony lies in the fact that the pigs had spearheaded the rebellion to liberate the farm animals from human tyranny – they had now become tyrants themselves – They even looked like the humans they had overthrown. Things had come full circle nothing had really changed for the animals on the farm."
+      ],
+      "points_required": null,
+      "points_selection": "compound",
+      "marking_logic": {
+        "observed_change": {
+          "marks": 2,
+          "instruction": "Describe the strange and disturbing change observed in the pigs",
+          "selection": "all"
+        },
+        "irony_comment": {
+          "marks": 2,
+          "instruction": "Comment on the irony of the situation",
+          "selection": "all"
+        }
+      },
+      "scheme_text": "The faces of the pigs seemed to be melting and changing.\nThe animals could not distinguish between pig and man.\nThe difference had blurred it was impossible to say which was which.\nThe irony lies in the fact that the pigs had spearheaded the rebellion to liberate the farm animals from human tyranny – they had now become tyrants themselves – They even looked like the humans they had overthrown. Things had come full circle nothing had really changed for the animals on the farm.",
+      "model_answer": null,
+      "examiner_comment": "The first part was written correctly. Some candidates did not understand the meaning of 'irony'. They merely summarized the rest of the story.",
+      "teacher_suggestion": "Stress upon a thorough reading of the text. Knowledge of figures of speech is an integral part of understanding literature. Make students aware of these and give practice in spotting and analysing figures of speech.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q10",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "work_type": "novel"
+      },
+      "extract": null,
+      "parent_question_number": "10",
+      "question_number": "10",
+      "question_text": "Give a brief account of the Battle of the Cowshed and Snowball's role in it.",
+      "total_marks": 16,
+      "key_points": [
+        "Early October when corn had been harvested.",
+        "Pigeons warn of the arrival of Jones and his men and half a dozen others from Foxwood and Pinchfield.",
+        "Men were armed with sticks… Jones in the lead with a gun.",
+        "Animals had anticipated that the men would attempt to recapture the farm.",
+        "Snowball was in charge of defence… he had studied Julius Caesar's Campaigns and employed similar tactics.",
+        "First attack by birds (pigeons and Geese) – was meant to create disorder… the men beat them off easily.",
+        "Second line of attack Muriel, Benjamin and all the sheep led by Snowball rushed forward – prodded and butted the men. Again, the men were too strong.",
+        "At a signal from Snowball all the animals retreated. The men followed shouting in triumph. It was an ambush. As soon as the men entered the yard the three horses, three cows and rest of the pigs that were lying in wait emerged – cut off their retreat.",
+        "Snowball personally attacked Jones – Jones fired wounding Snowball and killing a sheep.",
+        "Boxer reared up and struck a stable boy with his hooves – the boy fell motionless.",
+        "Every animal participated in the attack – even the cat.",
+        "Within 5 minutes the men were driven off",
+        "The animals reassembled in excitement – raised the flag – sang 'Beasts of England' many times.",
+        "The sheep that had been killed was given a solemn funeral. Snowball made a speech at the graveside.",
+        "Two military decorations created – Animal Hero, First Class…. awarded to Snowball and Boxer; Animal Hero, Second Class… conferred posthumously on dead sheep.",
+        "Animals unanimously decided to call the battle 'The battle of the Cowshed' as that was where the ambush had been sprung."
+      ],
+      "points_required": null,
+      "points_selection": "all",
+      "scheme_text": "Early October when corn had been harvested.\nPigeons warn of the arrival of Jones and his men and half a dozen others from Foxwood and Pinchfield.\nMen were armed with sticks… Jones in the lead with a gun.\nAnimals had anticipated that the men would attempt to recapture the farm.\nSnowball was in charge of defence… he had studied Julius Caesar's Campaigns and employed similar tactics.\nFirst attack by birds (pigeons and Geese) – was meant to create disorder… the men beat them off easily.\nSecond line of attack Muriel, Benjamin and all the sheep led by Snowball rushed forward – prodded and butted the men. Again, the men were too strong.\nAt a signal from Snowball all the animals retreated. The men followed shouting in triumph. It was an ambush. As soon as the men entered the yard the three horses, three cows and rest of the pigs that were lying in wait emerged – cut off their retreat.\nSnowball personally attacked Jones – Jones fired wounding Snowball and killing a sheep.\nBoxer reared up and struck a stable boy with his hooves – the boy fell motionless.\nEvery animal participated in the attack – even the cat.\nWithin 5 minutes the men were driven off\nThe animals reassembled in excitement – raised the flag – sang 'Beasts of England' many times.\nThe sheep that had been killed was given a solemn funeral. Snowball made a speech at the graveside.\nTwo military decorations created –\nAnimal Hero, First Class…. awarded to Snowball and Boxer\nAnimal Hero, Second Class… conferred posthumously on dead sheep.\nAnimals unanimously decided to call the battle 'The battle of the Cowshed' as that was where the ambush had been sprung.",
+      "model_answer": null,
+      "examiner_comment": "Candidates described the battle but did not emphasise Snowball's role in it. Some wrote very brief answers and missed out important points. Some mixed up the role of each animal in the battle.",
+      "teacher_suggestion": "Train students to answer such questions with close reference to the text. Drill students to present the points in a coherent manner. The sequence of events should not be jumbled up. Role play and enacting of incidents will make the story enjoyable as well as help in memorizing and understanding it.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q11-i",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "As the bus moved slowly on, a bright-eyed little boy in school cap and blazer paused momentarily beside the vacant seat and then quickly moved a little way on ….\nThe conductor approached with his cheery 'Any more fares, please, free ride only after midnight.'",
+        "reference": null,
+        "speaker": "the bus conductor",
+        "context_before": "Braithwaite, a black teacher newly arrived in London, is riding a bus and observes an incident of racial prejudice involving a white woman."
+      },
+      "parent_question_number": "11",
+      "question_number": "11(i)",
+      "question_text": "Why did the school boy not occupy the vacant seat? What was he puzzled by?",
+      "total_marks": 3,
+      "key_points": [
+        "the little boy noticed that there was a lady on the bus and politely waited for her to take the seat.",
+        "he is puzzled when she hesitates, moves forward and prefers to stand in the aisle of the moving bus."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "the little boy noticed that there was a lady on the bus and politely waited for her to take the seat.\nhe is puzzled when she hesitates, moves forward and prefers to stand in aisle of the moving bus.",
+      "model_answer": null,
+      "examiner_comment": "This answer was written correctly by most candidates.",
+      "teacher_suggestion": "Train students to write precise answers. They should write only what is asked for. Do a thorough revision of the text. Lay emphasis on repeated reading of the text. Stress upon reading of the original story and ask student to highlight the important incidents. Most questions from this section are based on the text. Reading a summary does not help in answering such questions. Analyse each character in the story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q11-ii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "As the bus moved slowly on, a bright-eyed little boy in school cap and blazer paused momentarily beside the vacant seat and then quickly moved a little way on ….\nThe conductor approached with his cheery 'Any more fares, please, free ride only after midnight.'",
+        "reference": null,
+        "speaker": "the bus conductor",
+        "context_before": "Braithwaite, a black teacher newly arrived in London, is riding a bus and observes an incident of racial prejudice involving a white woman."
+      },
+      "parent_question_number": "11",
+      "question_number": "11(ii)",
+      "question_text": "Who was preparing to take the seat? What did the person do instead? Why?",
+      "total_marks": 3,
+      "key_points": [
+        "a slim, smartly dressed woman.",
+        "She is about to sit – quickly changed her mind preferring to stand in aisle of the bus – because she suddenly notices that the other occupant of the seat was a coloured man."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "a slim, smartly dressed woman.\nShe is about to sit – quickly changed her mind preferring to stand in aisle of the bus – because she suddenly notices that the other occupant of the seat was a coloured man.",
+      "model_answer": null,
+      "examiner_comment": "Some candidates could not recall the incident clearly and made errors.",
+      "teacher_suggestion": "Train students to write precise answers. They should write only what is asked for. Do a thorough revision of the text. Lay emphasis on repeated reading of the text. Stress upon reading of the original story and ask student to highlight the important incidents. Most questions from this section are based on the text. Reading a summary does not help in answering such questions. Analyse each character in the story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q11-iii",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "recall",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "As the bus moved slowly on, a bright-eyed little boy in school cap and blazer paused momentarily beside the vacant seat and then quickly moved a little way on ….\nThe conductor approached with his cheery 'Any more fares, please, free ride only after midnight.'",
+        "reference": null,
+        "speaker": "the bus conductor",
+        "context_before": "Braithwaite, a black teacher newly arrived in London, is riding a bus and observes an incident of racial prejudice involving a white woman."
+      },
+      "parent_question_number": "11",
+      "question_number": "11(iii)",
+      "question_text": "What efforts did the conductor make to get this person to sit in the vacant seat?",
+      "total_marks": 3,
+      "key_points": [
+        "Conductor repeatedly points out the empty seat",
+        "'Empty seat, beside you lady'",
+        "'Seat here for you, lady'",
+        "'No standing on the bus, lady'"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "scheme_text": "Conductor repeatedly points out the empty seat\n'Empty seat, beside you lady'\n'Seat here for you, lady'\n'No standing on the bus, lady'",
+      "model_answer": null,
+      "examiner_comment": "Candidates mentioned that the conductor asked the lady to take the empty seat, but they could not recall the repeated reminders to the lady.",
+      "teacher_suggestion": "Train students to write precise answers. They should write only what is asked for. Do a thorough revision of the text. Lay emphasis on repeated reading of the text. Stress upon reading of the original story and ask student to highlight the important incidents. Most questions from this section are based on the text. Reading a summary does not help in answering such questions. Analyse each character in the story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q11-iv",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "As the bus moved slowly on, a bright-eyed little boy in school cap and blazer paused momentarily beside the vacant seat and then quickly moved a little way on ….\nThe conductor approached with his cheery 'Any more fares, please, free ride only after midnight.'",
+        "reference": null,
+        "speaker": "the bus conductor",
+        "context_before": "Braithwaite, a black teacher newly arrived in London, is riding a bus and observes an incident of racial prejudice involving a white woman."
+      },
+      "parent_question_number": "11",
+      "question_number": "11(iv)",
+      "question_text": "What does the author do to help ease the situation? How does the conductor view the author's action?",
+      "total_marks": 3,
+      "key_points": [
+        "Author is embarrassed / as a black person – quickly rose from the seat – said he had to get off at the next stop – alighted from the bus.",
+        "Conductor seemed to feel betrayed – author felt conductor wanted to confront the woman / challenge her racist attitude and shame her."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Author is embarrassed / as a black person – quickly rose from the seat – said he had to get off at the next stop – alighted from the bus.\nConductor seemed to feel betrayed – author felt conductor wanted to confront the woman / challenge her racist attitude and shame her.",
+      "model_answer": null,
+      "examiner_comment": "The first part of the question was answered well. In the second part, some candidates got confused with the conductor's reaction. Some wrote that the conductor got angry.",
+      "teacher_suggestion": "Train students to write precise answers. They should write only what is asked for. Do a thorough revision of the text. Lay emphasis on repeated reading of the text. Stress upon reading of the original story and ask student to highlight the important incidents. Most questions from this section are based on the text. Reading a summary does not help in answering such questions. Analyse each character in the story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q11-v",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "comprehension",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": {
+        "text": "As the bus moved slowly on, a bright-eyed little boy in school cap and blazer paused momentarily beside the vacant seat and then quickly moved a little way on ….\nThe conductor approached with his cheery 'Any more fares, please, free ride only after midnight.'",
+        "reference": null,
+        "speaker": "the bus conductor",
+        "context_before": "Braithwaite, a black teacher newly arrived in London, is riding a bus and observes an incident of racial prejudice involving a white woman."
+      },
+      "parent_question_number": "11",
+      "question_number": "11(v)",
+      "question_text": "What was the author's intended destination? What is his state of mind as he approaches this place?",
+      "total_marks": 4,
+      "key_points": [
+        "Author was on his way to Greenslade Secondary School – he was to join the teaching staff there.",
+        "The encounter on the bus upset him – he felt depressed – the surroundings (London East End) made him feel even worse. All his positive and optimistic feelings drained away."
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "scheme_text": "Author was on his way to Greenslade Secondary School – he was to join the teaching staff there.\nThe encounter on the bus upset him – he felt depressed – the surroundings (London East End) made him feel even worse. All his positive and optimistic feelings drained away.",
+      "model_answer": null,
+      "examiner_comment": "Although the candidates wrote the name of the destination, i.e. Greenslade School correctly, they could not elaborate the second part adequately.",
+      "teacher_suggestion": "Train students to write precise answers. They should write only what is asked for. Do a thorough revision of the text. Lay emphasis on repeated reading of the text. Stress upon reading of the original story and ask student to highlight the important incidents. Most questions from this section are based on the text. Reading a summary does not help in answering such questions. Analyse each character in the story.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "eng-lit-2018-sb-q12",
+      "subject": "english_literature",
+      "year": 2018,
+      "section": "section_b",
+      "section_label": "C",
+      "sub_section": "prose",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "requires_textual_evidence": false,
+      "response_type": "analysis",
+      "literary_work": {
+        "title": "To Sir, With Love",
+        "author": "E.R. Braithwaite",
+        "work_type": "novel"
+      },
+      "extract": null,
+      "parent_question_number": "12",
+      "question_number": "12",
+      "question_text": "Give a brief description of Brathwaite's encounter with a stranger at St. James Park. How did this meeting change the course of his life?",
+      "total_marks": 16,
+      "key_points": [
+        "Braithwaite was sitting watching the ducks beside the lake at St. James Park – felt angry and dejected because he had not succeeded at securing a job – had been repeatedly turned down on account of his race and colour.",
+        "A thin, bespectacled old man was sitting beside him – the old man tried to engage him in conversation – but Braithwaite was in no mood for polite conversation – dismissed him as a garrulous old crank.",
+        "The old man was undeterred – addressed Braithwaite directly – asked if he had been in London long – author tries to be distant – found the topic painful – author continued to ignore him",
+        "Old man spoke kindly, comfortingly – pointed out that life in a big city could get lonesome and difficult … his words caught the author's attention– author looked closely at him and found he looked scholarly – like a professor – the old man continued to talk – he said that a city was like a battlefield and in order to survive in a city you needed to be a fighter….anyone could exist in a city….the real challenge was to live life and find excitement.",
+        "author was still in no mood for philosophising – he retorts that being a negro, he found existence itself an enormous challenge!",
+        "At this the old man burst out laughing – the author laughed along too. The old man encouraged the author to talk about his troubles - his kind words struck a chord within the author and he suddenly found himself confiding all his troubles in him.",
+        "After listening to the author's experiences, the old man declared that teaching was the best career option for the author – author pointed out that he had no formal teachers' training, but old man said that his University degree would do – he added that the author's experience and ability would see him through.",
+        "The old man said that the author's colour and race would not be such a problem in the teaching profession because there was a desperate need for teachers!... especially in the East End – a really tough neighbourhood – so most teachers preferred to seek jobs elsewhere – when the author misinterpreted this observation to be a racist comment the old man chided him for his 'snobbish' attitude – author apologised",
+        "the old man urged the author to apply for a teaching position but not to mention the colour of his skin in his application",
+        "after this they chatted amiably about many things – only after they had parted did the author realise that they had not introduced themselves to each other – he didn't even know the name of the kindly stranger whose wise words and understanding manner had changed the entire course of his life!",
+        "Author followed the old man's advice – applied for a teacher's post – was called for an interview – was accepted and sent to the East London Divisional office – from there to Greenslade school"
+      ],
+      "points_required": null,
+      "points_selection": "all",
+      "scheme_text": "Braithwaite was sitting watching the ducks beside the lake at St. James Park – felt angry and dejected because he had not succeeded at securing a job – had been repeatedly turned down on account of his race and colour.\nA thin, bespectacled old man was sitting beside him – the old man tried to engage him in conversation – but Braithwaite was in no mood for polite conversation – dismissed him as a garrulous old crank.\nThe old man was undeterred – addressed Braithwaite directly – asked if he had been in London long – author tries to be distant – found the topic painful – author continued to ignore him\nOld man spoke kindly, comfortingly – pointed out that life in a big city could get lonesome and difficult … his words caught the author's attention– author looked closely at him and found he looked scholarly – like a professor – the old man continued to talk  – he said that a city was like a battlefield and in order to survive in a city you needed to be a fighter….anyone could exist in a city….the real challenge was to live life and find excitement.\nauthor was still in no mood for philosophising – he retorts that being a negro, he found existence itself an enormous challenge!\nAt this the old man burst out laughing – the author laughed along too. The old man encouraged the author to talk about his troubles - his kind words struck a chord within the author and he suddenly found himself confiding all his troubles in him.\nAfter listening to the author's experiences, the old man declared that teaching was the best career option for the author – author pointed out that he had no formal teachers' training, but old man said that his University degree would do – he added that the author's experience and ability would see him through.\nThe old man said that the author's colour and race would not be such a problem in the teaching profession because there was a desperate need for teachers!... especially in the East End – a really tough neighbourhood – so most teachers preferred to seek jobs elsewhere – when the author misinterpreted this observation to be a racist comment the old man chided him for his 'snobbish' attitude – author apologised\nthe old man urged the author to apply for a teaching position but not to mention the colour of his skin in his application\nafter this they chatted amiably about many things – only after they had parted did the author realise that they had not introduced themselves to each other – he didn't even know the name of the kindly stranger whose wise words and understanding manner had changed the entire course of his life!\nAuthor followed the old man's advice – applied for a teacher's post – was called for an interview – was accepted and sent to the East London Divisional office – from there to Greenslade school",
+      "model_answer": null,
+      "examiner_comment": "Very few candidates attempted this question. The entire conversation with the stranger had to be written in detail. Some candidates wrote other details of Braithwaite's life instead of the actual conversation.",
+      "teacher_suggestion": "Analysis of each chapter helps the students recall the important details.",
+      "difficulty_flag": "high"
+    }
+  ]
+}

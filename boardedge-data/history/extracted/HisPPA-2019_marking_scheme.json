@@ -1,0 +1,1979 @@
+{
+  "subject": "history_civics",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "hcg_paper_1",
+  "year": 2019,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "hist-2019-sa-q1-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Lok Sabha (Ordinary and Money Bills)",
+      "period": null,
+      "question_number": "1(a)",
+      "question_text": "What is the normal term of office of the Lok Sabha?",
+      "total_marks": 1,
+      "key_points": [
+        "5 years"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "5 years"
+        }
+      ],
+      "scheme_text": "5 years",
+      "model_answer": "5 years.",
+      "examiner_comment": "Majority of the candidates were able to answer this question very well. However, a few candidates confused the term of office of the Lok Sabha with that of the Rajya Sabha and wrote, six years.",
+      "teacher_suggestion": "A comparative study of the Lok Sabha and the Rajya Sabha will ensure better clarity of the topic in the minds of students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Lok Sabha (Question Hour)",
+      "period": null,
+      "question_number": "1(b)",
+      "question_text": "State the meaning of the term Question Hour.",
+      "total_marks": 1,
+      "key_points": [
+        "The first hour of every working day of the house (11:00 a.m. - 12:00 noon)",
+        "The members can ask questions from the government",
+        "On matters of public interests (Scrutiny)"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Question Hour"
+        }
+      ],
+      "scheme_text": "Question hour represents / the first hour of every working day of the house (11:00 a.m. - 12:00 noon) / the members can ask questions from the government / on matters of public interests (Scrutiny) (Any one point)",
+      "model_answer": "Question Hour is the first hour of every working day of the House (11:00 a.m.–12:00 noon), during which members can ask the government questions on matters of public interest.",
+      "examiner_comment": "Majority of the candidates were able to answer this question correctly. Some candidates, however, seemed to have no idea of what Question Hour meant.",
+      "teacher_suggestion": "Clarify different procedures of the Parliament by organising a mock session of the Parliament in the school which will help students in appreciating the parliamentary procedures like Question Hour, Zero Hour, etc.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Lok Sabha (Speaker)",
+      "period": null,
+      "question_number": "1(c)",
+      "question_text": "Name the Presiding officer of the Lok Sabha.",
+      "total_marks": 1,
+      "key_points": [
+        "Speaker"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Speaker"
+        }
+      ],
+      "scheme_text": "Speaker",
+      "model_answer": "The Speaker.",
+      "examiner_comment": "Most of the candidates wrote the correct answer which was, the Speaker. However, a few candidates mentioned Prime Minister.",
+      "teacher_suggestion": "Specify that the presiding officer of the Lok Sabha is not the Prime Minister, but the Speaker and that the Prime Minister presides over the meetings of the Council of Ministers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-iv",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Powers of Union Parliament (Legislative)",
+      "period": null,
+      "question_number": "1(d)",
+      "question_text": "State any one condition when the Parliament can legislate on subjects in the State List.",
+      "total_marks": 1,
+      "key_points": [
+        "During an emergency or President's rule in a State",
+        "When two or more States request the Parliament",
+        "When the Rajya Sabha declares by 2/3rd majority that a subject has assumed national importance"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "2/3rd majority"
+        }
+      ],
+      "scheme_text": "(i) During an emergency or President's rule in a State / (ii) When two or more States request the Parliament / (iii) When the Rajya Sabha declares by 2/3rd majority that a subject has assumed national importance (One point)",
+      "model_answer": "Parliament can legislate on a State List subject when the Rajya Sabha declares by a two-thirds majority that the subject has assumed national importance.",
+      "examiner_comment": "A few candidates were not able to specify that during an emergency, or on the request of two or more states, the Parliament could make a law on the State list.",
+      "teacher_suggestion": "Explain the various conditions under which the Parliament can make a law on the State List.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-v",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > The President (Emergency Powers)",
+      "period": null,
+      "question_number": "1(e)",
+      "question_text": "Write any one circumstance when the President can declare a National Emergency.",
+      "total_marks": 1,
+      "key_points": [
+        "Danger of foreign aggression or war",
+        "Danger to peace and security of the country",
+        "Civil war (Internal disturbance)",
+        "Insurgency",
+        "Armed rebellion"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "(i) Danger of foreign aggression or war / (ii) Danger to peace and security of the country / (iii) Civil war (Internal disturbance) / (iv) Insurgency / (v) Armed rebellion (One point)",
+      "model_answer": "When there is a danger of foreign aggression or war.",
+      "examiner_comment": "A few candidates mentioned natural calamities, floods or earthquakes as the circumstances for declaring the National Emergency.",
+      "teacher_suggestion": "Explain three types of emergencies that can be declared by the President and the circumstance under which these emergencies can be declared.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-vi",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > Prime Minister and Council of Ministers (Collective Responsibility)",
+      "period": null,
+      "question_number": "1(f)",
+      "question_text": "What happens when a motion of 'No-Confidence' is passed against a Minister?",
+      "total_marks": 1,
+      "key_points": [
+        "The entire Ministry resigns en bloc (the government will resign)"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [],
+      "scheme_text": "The entire Ministry resigns en bloc (the government will resign). (Full answer)",
+      "model_answer": "The entire Ministry resigns en bloc — the government falls.",
+      "examiner_comment": "Majority of the candidates were able to answer this question correctly. However, a few candidates, instead of resign wrote removed.",
+      "teacher_suggestion": "Discuss the principle of collective responsibility in detail.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-vii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > Prime Minister and Council of Ministers (Appointment)",
+      "period": null,
+      "question_number": "1(g)",
+      "question_text": "On whose advice can the President appoint the Council of Ministers?",
+      "total_marks": 1,
+      "key_points": [
+        "Prime Minister advises President in appointment of Council of Ministers"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Prime Minister"
+        }
+      ],
+      "scheme_text": "Prime Minister advises President in appointment of Council of Ministers.",
+      "model_answer": "On the advice of the Prime Minister.",
+      "examiner_comment": "Majority of the candidates were able to write the correct answer.",
+      "teacher_suggestion": "Explain that the leader of the majority party i.e. the Prime Minister suggests the names of his Council of Ministers and they are then appointed by the President on his advice.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-viii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > The Supreme Court (Appellate Jurisdiction)",
+      "period": null,
+      "question_number": "1(h)",
+      "question_text": "What is meant by Appellate Jurisdiction of the Supreme Court?",
+      "total_marks": 1,
+      "key_points": [
+        "Hears Appeals from a person / organisation when they are not satisfied",
+        "Special Leave of Appeal",
+        "Appeals from the judgements of High Court or Lower court can be filed in the Supreme Court"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "(i) Hears Appeals from a person / organisation when they are not satisfied. / (ii) Special Leave of Appeal / (iii) Appeals from the judgements of High Court or Lower court can be filed in the Supreme Court (One point)",
+      "model_answer": "Appellate Jurisdiction means the Supreme Court hears appeals from persons or organisations dissatisfied with the judgements of the High Court or a lower court.",
+      "examiner_comment": "Most of the candidates did not have a clear concept of the term Appellate Jurisdiction. A few candidates mixed it with the original jurisdiction of the Supreme Court.",
+      "teacher_suggestion": "Explain that the word appellate has been derived from the word appeal. It means if a person is not satisfied with judgement of the High Court, he can file an appeal in the Supreme Court against the judgement of the High Court.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2019-sa-q1-ix",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > The Supreme Court (Removal of Judges)",
+      "period": null,
+      "question_number": "1(i)",
+      "question_text": "On what grounds can a Supreme Court Judge be removed from office?",
+      "total_marks": 1,
+      "key_points": [
+        "Charges of proven misbehavior",
+        "Incapacity",
+        "Violation of constitution/grave mis-conduct"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "Charges of proven misbehavior / Incapacity / Violation of constitution/grave mis-conduct (One point)",
+      "model_answer": "Proven misbehaviour or incapacity.",
+      "examiner_comment": "A few candidates explained Impeachment (Process) for the removal of a judge of Supreme Court instead of giving specific grounds like, grave misconduct etc. for the removal.",
+      "teacher_suggestion": "Differentiate between impeachment and the grounds of removal of a Supreme Court Judge.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q1-x",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > Subordinate Courts (District Judge vs Sessions Judge)",
+      "period": null,
+      "question_number": "1(j)",
+      "question_text": "State one point of distinction between a District Judge and a Sessions Judge.",
+      "total_marks": 1,
+      "key_points": [
+        "Sessions Court - Criminal cases (robbery, dacoities and murder)",
+        "Court of the District Judge - Civil Cases (Land and Property disputes and money transactions)",
+        "District Judge presides over District Court and Sessions Judge over Session Courts",
+        "Session Judge has no administrative power but District Judge has"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "Sessions Court- Criminal cases (robbery, dacoities and murder). / Court of the District Judge- Civil Cases (Land and Property disputes and money transactions) / District Judge presides over District Court and Sessions Judge over Session Courts. / Session Judge has no administrative power but District Judge has.",
+      "model_answer": "A Sessions Court tries criminal cases (robbery, dacoity, murder), while a District Judge's court tries civil cases (land, property and money disputes).",
+      "examiner_comment": "Most of the candidates wrote the correct answer. However, a few candidates got confused and wrote the functions of a District Judge as that of a Sessions Judge and vice-versa.",
+      "teacher_suggestion": "Explain, in a tabular form, the powers and functions of a District Judge and Session Judge and the types of cases they are supposed to deal.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > The First War of Independence, 1857",
+      "period": "First War of Independence",
+      "question_number": "2(a)",
+      "question_text": "What was the General Service Enlistment Act?",
+      "total_marks": 2,
+      "key_points": [
+        "Passed in 1856",
+        "According to this Act, the Indian Soldier in the East India Company could be sent overseas on duty",
+        "It was a taboo for Indian Soldiers, especially the Brahmins to go overseas",
+        "To go overseas went against their religious sentiments"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "1856"
+        },
+        {
+          "type": "name",
+          "value": "General Service Enlistment Act"
+        },
+        {
+          "type": "name",
+          "value": "East India Company"
+        }
+      ],
+      "scheme_text": "Passed in 1856. / According to this Act, the Indian Soldier in the East India Company could be sent overseas on duty. / It was a taboo for Indian Soldiers, especially the Brahmins to go overseas / To go overseas went against their religious sentiments. (Any one point)",
+      "model_answer": "It was passed in 1856, and under it Indian soldiers of the East India Company could be sent overseas on duty.",
+      "examiner_comment": "Majority of the candidates answered the question correctly. A few candidates mentioned other Acts also passed by the British.",
+      "teacher_suggestion": "Explain the General Service Enlistment Act clearly with its consequences and the reaction of the Indian soldiers to it.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > Growth of Nationalism (Socio-religious Reform)",
+      "period": "Growth of Nationalism",
+      "question_number": "2(b)",
+      "question_text": "Name the two books that Dadabhai Naoroji authored explaining the 'Drain of India's Wealth'.",
+      "total_marks": 2,
+      "key_points": [
+        "Poverty and Un-British Rule in India"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Dadabhai Naoroji"
+        },
+        {
+          "type": "name",
+          "value": "Poverty and Un-British Rule in India"
+        }
+      ],
+      "scheme_text": "Poverty and Un-British Rule in India",
+      "model_answer": "Poverty and Un-British Rule in India.",
+      "examiner_comment": "Most of the candidates wrote the name of only one book which was Poverty and Un-British Rule in India.",
+      "teacher_suggestion": "Teach the names of famous books written by the leaders as mentioned in the scope of the syllabus.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > Growth of Nationalism (Socio-religious Reform)",
+      "period": "Social Reform Movement",
+      "question_number": "2(c)",
+      "question_text": "Name each of the organizations founded by Jyothiba Phule and Raja Rammohan Roy.",
+      "total_marks": 2,
+      "key_points": [
+        "Satya Shodhak Samaj - Jyothiba Phule",
+        "Brahmo Samaj - Raja Rammohan Roy"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Satya Shodhak Samaj"
+        },
+        {
+          "type": "name",
+          "value": "Jyothiba Phule"
+        },
+        {
+          "type": "name",
+          "value": "Brahmo Samaj"
+        },
+        {
+          "type": "name",
+          "value": "Raja Rammohan Roy"
+        }
+      ],
+      "scheme_text": "(i) Satya Shodhak Samaj - Jyothiba Phule / (ii) Brahmo Samaj - Raja Rammohan Roy.",
+      "model_answer": "Satya Shodhak Samaj was founded by Jyotiba Phule; Brahmo Samaj was founded by Raja Rammohan Roy.",
+      "examiner_comment": "Most of the candidates wrote the correct answer. However, a few candidates, instead of mentioning Brahmo Samaj, wrote Arya Samaj.",
+      "teacher_suggestion": "While teaching socio-religious reform movements, lay stress on the contributions made by the reformers and also the organizations founded by them.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-iv",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > First Phase — Early Nationalists (Contributions)",
+      "period": "Growth of Nationalism",
+      "question_number": "2(d)",
+      "question_text": "Write any two contributions of Lala Lajpat Rai to the National Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Founded Punjabi",
+        "Vande Mataram (Urdu Daily)",
+        "People (English Weekly)",
+        "Young India (monthly magazine)",
+        "Inspired the youth through his prolific writing",
+        "Joined the Congress in 1888",
+        "Elected as the President of Congress in 1920",
+        "Was the first President of the All-Indian Trade Union Congress (in 1920)",
+        "Founded the 'Servants of People Society' for welfare of the downtrodden",
+        "Laid the foundation of the D.A.V. College, Lahore",
+        "Went to America and joined the Ghadar Party to mobilise opinion in favour of Indian freedom struggle",
+        "Opened orphanages, hospitals and schools",
+        "Led a protest against the Simon Commission and succumbed to injuries inflicted upon him in a lathi charge",
+        "Fought against the partition of Bengal",
+        "Advocated Swadeshi (Separate Government) and Boycott"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lala Lajpat Rai"
+        },
+        {
+          "type": "date",
+          "value": "1888"
+        },
+        {
+          "type": "date",
+          "value": "1920"
+        },
+        {
+          "type": "name",
+          "value": "D.A.V. College"
+        }
+      ],
+      "scheme_text": "Founded Punjabi / Vande Mataram (Urdu Daily) / People (English Weekly) / Young India (monthly magazine) / Inspired the youth through his prolific writing / Joined the Congress in 1888 / Elected as the President of Congress in 1920 / Was the first President of the All-Indian Trade Union Congress (in 1920) / Founded the 'Servants of People Society' for welfare of the downtrodden / Laid the foundation of the D.A.V. College, Lahore / Went to America and joined the Ghadar Party to mobilise opinion in favour of Indian freedom struggle / Opened orphanages, hospitals and schools / Led a protest against the Simon Commission and succumbed to injuries inflicted upon him in a lathi charge / Fought against the partition of Bengal / Advocated Swadeshi (Separate Government) and Boycott (Any two points)",
+      "model_answer": "(i) Founded the newspapers Punjabi and Young India to inspire the youth. (ii) Founded the D.A.V. College, Lahore, and the 'Servants of the People Society' for the welfare of the downtrodden.",
+      "examiner_comment": "Most candidates wrote the correct answer. A few candidates, however, mixed up the contributions of Lala Lajpat Rai with that of Bal Gangadhar Tilak.",
+      "teacher_suggestion": "Ensure that the students have a clear understanding of the contributions of the leaders in the national movement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-v",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Independence and Partition of India > Indian Independence Act, 1947",
+      "period": "Growth of Nationalism",
+      "question_number": "2(e)",
+      "question_text": "State any two provisions of the Indian Independence Act of 1947 that was to decide the fate of the Princely States?",
+      "total_marks": 2,
+      "key_points": [
+        "The Princely States would become Independent from the British authority",
+        "All treaties and agreements made by the British with reference to the States would lapse",
+        "States could remain independent or",
+        "Join either India or Pakistan"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Indian Independence Act of 1947"
+        },
+        {
+          "type": "date",
+          "value": "1947"
+        }
+      ],
+      "scheme_text": "(i) The Princely States would become Independent from the British authority. / (ii) All treaties and agreements made by the British with reference to the States would lapse. / (iii) States could remain independent or / (iv) Join either India or Pakistan. (Any two points)",
+      "model_answer": "(i) The Princely States would become independent of British authority and all existing treaties with the British would lapse. (ii) The States could remain independent or accede to either India or Pakistan.",
+      "examiner_comment": "Some candidates mentioned the provisions of the Indian Independence Act other than the ones deciding the fate of the Princely States, as asked for in the question. A few candidates mixed up the provisions of the Indian Independence Act with the provisions of the Cabinet Mission or the Mountbatten Plan.",
+      "teacher_suggestion": "Explain the provisions of the Indian Independence Act point-wise and with separate headings for each point.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-vi",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Independence and Partition of India > Mountbatten Plan (Acceptance)",
+      "period": "Growth of Nationalism",
+      "question_number": "2(f)",
+      "question_text": "Write any two reasons for the acceptance of the Mountbatten Plan by the Congress.",
+      "total_marks": 2,
+      "key_points": [
+        "It was the only solution to the communal problem / no other option",
+        "The League had joined the Interim Government to obstruct and not to cooperate",
+        "The only alternative was a federation with a weak centre",
+        "Any further continuation of the British rule would mean greater calamity",
+        "Further delay would cause a civil war",
+        "Partition would rid the Constitution of separate electorates",
+        "A smaller India with a strong central authority was better than a bigger state with a weak centre"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Mountbatten Plan"
+        }
+      ],
+      "scheme_text": "(i) It was the only solution to the communal problem/ no other option. / (ii) The League had joined the Interim Government to obstruct and not to cooperate. / (iii) The only alternative was a federation with a weak centre. / (iv) Any further continuation of the British rule would mean greater calamity. / (v) Further delay would cause a civil war. / (vi) Partition would rid the Constitution of separate electorates. / (vii) A smaller India with a strong central authority was better than a bigger state with a weak centre. (Any two points)",
+      "model_answer": "(i) It was the only workable solution to the communal problem, with no other realistic option available. (ii) Further delay would have caused a civil war, so a smaller India with a strong centre was preferred to a bigger state with a weak one.",
+      "examiner_comment": "Instead of mentioning the reasons for the acceptance of the Mountbatten Plan, a few candidates explained the provisions of the Plan.",
+      "teacher_suggestion": "Clearly explain the reasons for the Congress to accept the Mountbatten Plan.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-vii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > The First World War (Results — Treaty of Versailles)",
+      "period": "World War I",
+      "question_number": "2(g)",
+      "question_text": "State any two objections imposed by the Treaty of Versailles on the German military power.",
+      "total_marks": 2,
+      "key_points": [
+        "The army was restricted to a force of 1 lakh soldiers",
+        "The navy was limited to 15,000 men and 24 ships",
+        "Air force and submarines were banned",
+        "Rhine valley was demilitarized"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles"
+        },
+        {
+          "type": "number",
+          "value": "1 lakh soldiers"
+        },
+        {
+          "type": "number",
+          "value": "15,000 men and 24 ships"
+        },
+        {
+          "type": "place",
+          "value": "Rhine valley"
+        }
+      ],
+      "scheme_text": "(i) The army was restricted to a force of 1 lakh soldiers. / (ii) The navy was limited to 15,000 men and 24 ships / (iii) Air force and submarines were banned. / (iv) Rhine valley was demilitarized. (Any two points)",
+      "model_answer": "(i) The German army was restricted to 1 lakh soldiers. (ii) The German air force and submarines were banned, and the Rhine valley was demilitarised.",
+      "examiner_comment": "Some candidates could not comprehend the question correctly and wrote those provisions of the Treaty of Versailles which were not related to the crippling of the German military power.",
+      "teacher_suggestion": "Clarify to the students all clauses of the Treaty of Versailles as each one of them sought to curb the power of Germany.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-viii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > The First World War (Alliances)",
+      "period": "World War I",
+      "question_number": "2(h)",
+      "question_text": "Name the Signatory Countries of the Triple Alliance.",
+      "total_marks": 2,
+      "key_points": [
+        "Germany",
+        "Austria-Hungary",
+        "Italy"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Germany"
+        },
+        {
+          "type": "name",
+          "value": "Austria-Hungary"
+        },
+        {
+          "type": "name",
+          "value": "Italy"
+        }
+      ],
+      "scheme_text": "Germany, Austria-Hungary & Italy (All three countries)",
+      "model_answer": "Germany, Austria-Hungary and Italy.",
+      "examiner_comment": "Many candidates, instead of naming the signatory countries of the Triple Alliance, named those of the Triple Entente.",
+      "teacher_suggestion": "With the help of a flow chart, teach the signatory countries according to their respective groups, during both the world wars.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-ix",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > United Nations (Security Council — Veto Power)",
+      "period": "United Nations",
+      "question_number": "2(i)",
+      "question_text": "What is meant by the term 'Veto' power?",
+      "total_marks": 2,
+      "key_points": [
+        "The Permanent members of Security Council have veto power i.e. a negative vote that is exercised to make strong decisions or raise objections from any of the five members",
+        "Council is powerless to act if any of the five members uses the Veto power"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "five permanent members"
+        }
+      ],
+      "scheme_text": "The Permanent members of Security Council have veto power i.e. a negative vote that is exercised to make strong decisions or raise objections from any of the five members. / Council is powerless to act if any of the five members uses the Veto power. (One point)",
+      "model_answer": "Veto power is the negative vote that any one of the five permanent members of the Security Council can exercise to block a decision; the Council becomes powerless to act if it is used.",
+      "examiner_comment": "Majority of the candidates explained the Veto Power correctly. A few candidates mentioned the names of the permanent members of the Security Council.",
+      "teacher_suggestion": "Make it clear to the students that a veto power is actually a negative vote by any of the permanent members of the Security Council.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sa-q2-x",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > The First World War (Results — League of Nations)",
+      "period": "World War I",
+      "question_number": "2(j)",
+      "question_text": "Why was the League of Nations established?",
+      "total_marks": 2,
+      "key_points": [
+        "For Peace and Security",
+        "To avoid future wars",
+        "To maintain just and honourable relations",
+        "All States were to respect each other's independence",
+        "All States were to refer their disputes to the League of Nations for a peaceful settlement",
+        "Member States were not supposed to maintain huge armies, warships and destructive armaments",
+        "To enforce corrective action against member States for disobeying treaties and disturbing world peace and order"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "League of Nations"
+        }
+      ],
+      "scheme_text": "(i) For Peace and Security. / (ii) To avoid future wars. / (iii) To maintain just and honourable relations / (iv) All States were to respect each other's independence / (v) All States were to refer their disputes to the League of Nations for a peaceful settlement. / (vi) Member States were not supposed to maintain huge armies, warships and destructive armaments. / (vii) To enforce corrective action against member States for disobeying treaties and disturbing world peace and order (Two points)",
+      "model_answer": "(i) To preserve peace and security and avoid future wars. (ii) To ensure member states referred their disputes to the League for peaceful settlement rather than resorting to war.",
+      "examiner_comment": "Majority of the candidates wrote the correct answer.",
+      "teacher_suggestion": "Explain to the students that the League of Nations was a peace keeping organization formed after the First World War. It was established to maintain international peace and security.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q3-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Rajya Sabha (Election)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Rajya Sabha",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament is the body of people's representatives who have Supreme power in a democracy. With reference to the Union Legislature answer the following:",
+      "question_number": "3(a)",
+      "question_text": "How are the members of the Rajya Sabha elected?",
+      "total_marks": 3,
+      "key_points": [
+        "Elected by the members of elected Legislative Assemblies",
+        "Indirectly elected on the basis of proportional representation with a single transferable vote"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": true,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Elected by the members of elected Legislative Assemblies. / Indirectly elected on the basis of proportional representation with a single transferable vote.",
+      "model_answer": "Members of the Rajya Sabha are elected indirectly by the members of the State Legislative Assemblies, on the basis of proportional representation by means of a single transferable vote.",
+      "examiner_comment": "Some candidates, instead of writing the manner of the election of the members of the Rajya Sabha, wrote about its composition. A few candidates were confused between the direct and indirect elections.",
+      "teacher_suggestion": "Explain the direct and indirect method of elections, emphasizing that the members of the Lok Sabha are elected by direct elections while Rajya Sabha members are elected indirectly by members of the State Assemblies.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q3-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Rajya Sabha (Permanent House)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Rajya Sabha",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament is the body of people's representatives who have Supreme power in a democracy. With reference to the Union Legislature answer the following:",
+      "question_number": "3(b)",
+      "question_text": "Why is it called a Permanent house?",
+      "total_marks": 3,
+      "key_points": [
+        "1/3 of its members retire every two years",
+        "The house is never dissolved as a whole"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "1/3"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "1/3 of its members retire every two years / The house is never dissolved as a whole",
+      "model_answer": "It is called a Permanent House because it can never be dissolved as a whole — only one-third of its members retire every two years, and new members are elected in their place.",
+      "examiner_comment": "Majority of the candidates answered this question very well by writing the required points.",
+      "teacher_suggestion": "Teach the students that the Rajya Sabha is a permanent house as it cannot be dissolved by the President. One third of its members retire every second year and new members are elected but the house is never dissolved.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q3-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Legislature > Powers of Union Parliament (Financial and Legislative)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Parliament",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "The Parliament is the body of people's representatives who have Supreme power in a democracy. With reference to the Union Legislature answer the following:",
+      "question_number": "3(c)",
+      "question_text": "State any two Financial and any two Legislative powers of the Indian Parliament.",
+      "total_marks": 4,
+      "key_points": [
+        "Financial Powers: Passes the Budget of the Union Parliament",
+        "Financial Powers: Determines the Salaries & Allowances of the members of Parliament",
+        "Financial Powers: No taxes can be imposed unless approved by the Parliament",
+        "Financial Powers: Passes the Supplementary grants",
+        "Financial Powers: Vote on account",
+        "Financial Powers: Passes the Money Bill",
+        "Legislative Powers: Makes laws on subjects in the Union List",
+        "Legislative Powers: Makes laws on subjects in the State List (under certain conditions)",
+        "Legislative Powers: Makes laws on subjects in the Concurrent list",
+        "Legislative Powers: Possesses Residuary power",
+        "Legislative Powers: Approves Ordinances",
+        "Legislative Powers: Power during an Emergency",
+        "Legislative Powers: Makes amendments to the Constitution"
+      ],
+      "points_required": 4,
+      "points_selection": "2_per_category",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "Financial Powers: Passes the Budget of the Union Parliament / Determines the Salaries & Allowances of the members of Parliament / No taxes can be imposed unless approved by the Parliament / Passes the Supplementary grants / Vote on account / Passes the Money Bill. (Any two points) / Legislative Powers: Makes laws on subjects in the Union List / Makes laws on subjects in the State List (under certain conditions) / Makes laws on subjects in the Concurrent list / Possesses Residuary power. / Approves Ordinances. / Power during an Emergency / Makes amendments to the Constitution (Any two points)",
+      "model_answer": "Financial powers (any two): passes the Union Budget; determines the salaries and allowances of MPs. Legislative powers (any two): makes laws on subjects in the Union List; makes laws on subjects in the Concurrent List.",
+      "examiner_comment": "Some candidates could not distinguish between Financial and Legislative powers of the Indian Parliament and mixed up the points in their answers.",
+      "teacher_suggestion": "Explain the meaning of financial and legislative powers of the Indian Parliament.",
+      "difficulty_flag": "high",
+      "category_groups": {
+        "financial": {
+          "required": 2,
+          "points": [
+            "Passes the Budget of the Union Parliament",
+            "Determines the Salaries & Allowances of the members of Parliament",
+            "No taxes can be imposed unless approved by the Parliament",
+            "Passes the Supplementary grants",
+            "Vote on account",
+            "Passes the Money Bill"
+          ]
+        },
+        "legislative": {
+          "required": 2,
+          "points": [
+            "Makes laws on subjects in the Union List",
+            "Makes laws on subjects in the State List (under certain conditions)",
+            "Makes laws on subjects in the Concurrent list",
+            "Possesses Residuary power",
+            "Approves Ordinances",
+            "Power during an Emergency",
+            "Makes amendments to the Constitution"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "hist-2019-sb-q4-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > Prime Minister and Council of Ministers (Position and Powers)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Council of Ministers",
+        "process": "Parliamentary system",
+        "article": null
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Council of Ministers headed by the Prime Minister, is the most Powerful Institution in the Indian Polity. In this context, answer the following:",
+      "question_number": "4(a)",
+      "question_text": "State briefly the position of the Prime Minister in the Parliamentary system of Government. State any two powers the Prime Minister has as a leader of the Nation.",
+      "total_marks": 3,
+      "key_points": [
+        "Position: The Prime Minister is the de facto or the real leader of the nation",
+        "He is the Leader of the Lok Sabha",
+        "He is the chief spokesperson of the Government",
+        "He is the defender of Government policies",
+        "He intervenes in case of controversial issues",
+        "Addresses nation during emergency or on important occasions",
+        "Represents and visits countries - for economic and social issues of the nation",
+        "Chairman of Niti Aayog and Atomic Energy Commission",
+        "Decides what kind of relations India would have with other countries",
+        "Keeps President informed of the decision of the Cabinet"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Prime Minister"
+        },
+        {
+          "type": "name",
+          "value": "Niti Aayog"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Position: The Prime Minister is the de facto or the real leader of the nation. / He is the Leader of the Lok Sabha. / He is the chief spokesperson of the Government. / He is the defender of Government policies. / He intervenes in case of controversial issues. / Addresses nation during emergency or on important occasions. / Represents and visits countries - for economic and social issues of the nation. / Chairman of Niti Aayog and Atomic Energy Commission / Decides what kind of relations India would have with other countries. / Keeps President informed of the decision of the Cabinet. (Any three points)",
+      "model_answer": "The Prime Minister is the de facto (real) head of government under the Parliamentary system — he is the Leader of the Lok Sabha and the chief spokesperson of the Government. As leader of the nation, he decides India's relations with other countries and addresses the nation during an emergency or on important occasions.",
+      "examiner_comment": "Most of the candidates were able to write the correct answer. However, some candidates were not clear regarding the powers of the Prime Minister as a leader of the Nation. A few candidates mentioned his functions in relation with the Council of Ministers and the President.",
+      "teacher_suggestion": "Clearly explain the students the power, position and functions of the Prime Minister and that he is the real head of the nation and has an important role as the leader of the nation.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2019-sb-q4-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > Prime Minister and Council of Ministers (Council of Ministers vs Cabinet)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Council of Ministers",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Council of Ministers headed by the Prime Minister, is the most Powerful Institution in the Indian Polity. In this context, answer the following:",
+      "question_number": "4(b)",
+      "question_text": "Distinguish between the Council of Ministers and the Cabinet.",
+      "total_marks": 3,
+      "key_points": [
+        "Council of Ministers consists of all the three categories of ministers / Cabinet is a group of senior ministers holding important portfolios",
+        "The PM may or may not consult them / The PM always consults them",
+        "Rarely meets as a whole / Meets as frequently as possible",
+        "Does not advise the President / Advises the President through the PM",
+        "Larger Group / Smaller Group",
+        "May or may not hold important portfolios / Hold important portfolios"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "1. Consists of all the three categories of ministers / Is a group of senior ministers holding important portfolios / 2. The PM may or may not consult them / The PM always consults them. / 3. Rarely meets as a whole / Meets as frequently as possible / 4. Does not advise the President / Advises the President through the PM / 5. Larger Group / Smaller Group / 6. May or may not hold important portfolios / Hold important portfolios (Any three points)",
+      "model_answer": "The Council of Ministers includes all three categories of ministers and rarely meets as a whole, whereas the Cabinet is a smaller group of senior ministers holding important portfolios who meet frequently and are always consulted by the PM. The Council of Ministers does not advise the President directly, while the Cabinet advises the President through the Prime Minister.",
+      "examiner_comment": "A few candidates could not distinguish between the Cabinet and the Council of ministers and explained the three categories of ministers.",
+      "teacher_suggestion": "Ensure that the students are able to differentiate between the Cabinet and Council of Ministers. Emphasize on the meaning of terms like portfolio of ministers and the reasons for the importance of the cabinet ministers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q4-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Union Executive > Prime Minister and Council of Ministers (Cabinet Functions)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "Cabinet",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The Council of Ministers headed by the Prime Minister, is the most Powerful Institution in the Indian Polity. In this context, answer the following:",
+      "question_number": "4(c)",
+      "question_text": "Write any four functions of the 'Cabinet'.",
+      "total_marks": 4,
+      "key_points": [
+        "Formulates policies and implements them",
+        "Coordinates the functioning of various Ministers",
+        "Introduces Bills",
+        "Amends the Constitution",
+        "Advises the President to summon the Houses of Parliament",
+        "Prepares President's Special Address",
+        "Advices President to issues Ordinances",
+        "Prepare Money and Non-Money Bills",
+        "Recommends proclamation of Emergency to the President",
+        "Decides all major appointments made by the President",
+        "Preparation of annual budget",
+        "Acts as source of information"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Powers of the Cabinet: Formulates policies and implements them. / Coordinates the functioning of various Ministers. / Introduces Bills / Amends the Constitution / Advises the President to summon the Houses of Parliament. / Prepares President's Special Address / Advices President to issues Ordinances / Prepare Money and Non-Money Bills (This is a separate point) / Recommends proclamation of Emergency to the President. / Decides all major appointments made by the President. / Preparation of annual budget / Acts as source of information (Any four points)",
+      "model_answer": "(i) Formulates government policies and coordinates their implementation across Ministries. (ii) Introduces Bills in Parliament and advises the President to issue Ordinances. (iii) Prepares the annual budget. (iv) Recommends the proclamation of Emergency to the President.",
+      "examiner_comment": "While many candidates scored well in this question. However, a few candidates were confused between the features and the functions of the Cabinet.",
+      "teacher_suggestion": "Teach the difference between the functions of the Cabinet and its features. Train students to read & understand the question and answer as per its requirement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q5-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > The High Courts (Appointment and Qualifications)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "High Court",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "India has a single integrated judicial system that is Independent and Supreme. With reference to the Judiciary, answer the following:",
+      "question_number": "5(a)",
+      "question_text": "(i) Who appoints the Judges of the High Court? (ii) State any two qualifications required for a person to be appointed as a High Court judge.",
+      "total_marks": 3,
+      "key_points": [
+        "President appoints the Judges of the High Court",
+        "One should be a citizen of India",
+        "One should have held a judicial office in India for at least 10 years",
+        "One should have been advocate of a High Court for at least 10 years",
+        "He should not be over 62 years of age"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "President",
+          "required": true
+        },
+        {
+          "type": "number",
+          "value": "10 years"
+        },
+        {
+          "type": "number",
+          "value": "62 years"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) President / (ii) 1. One should be a citizen of India. / 2. One should have held a judicial office in India for at least 10 years. / 3. One should have been advocate of a High Court for at least 10 years. / 4. He should not be over 62 years of age. (Any three points)",
+      "model_answer": "(i) The President appoints the Judges of the High Court. (ii) Any two qualifications: he must be a citizen of India, and he must have held a judicial office in India for at least 10 years (or been an advocate of a High Court for at least 10 years).",
+      "examiner_comment": "(i) Most of the candidates were able to answer this question correctly. However, a few candidates, instead of the President mentioned the Governor. (ii) A number of candidates gave the correct qualifications of a High Court Judge.",
+      "teacher_suggestion": "Explain the Executive powers of the President clearly. Tell the students that all major appointments, including the appointments of the judges of the Supreme Court and High Courts are made by the President. Highlight the major qualifications required for the appointment of judges.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q5-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > The High Courts (Court of Record)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "High Court",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "India has a single integrated judicial system that is Independent and Supreme. With reference to the Judiciary, answer the following:",
+      "question_number": "5(b)",
+      "question_text": "Explain briefly the term 'Court of Record' with reference to the High Court.",
+      "total_marks": 3,
+      "key_points": [
+        "A Court of Record is one whose judgements are recorded or for evidence and testimony (For future references)",
+        "They are not to be questioned when they are produced before any court",
+        "The judgements are in the nature of 'precedents' that is the High Court and other Courts are bound to give a similar decision in a similar case",
+        "The law laid down by the High Court is binding on all subordinate courts and administrative tribunals in the State",
+        "The Court has the power to punish anyone who commits contempt of the court"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "1. A Court of Record is one whose judgements are recorded or for evidence and testimony. (For future references) / 2. They are not to be questioned when they are produced before any court. / 3. The judgements are in the nature of 'precedents' that is the High Court and other Courts are bound to give a similar decision in a similar case. / 4. The law laid down by the High Court is binding on all subordinate courts and administrative tribunals in the State. / 5. The Court has the power to punish anyone who commits contempt of the court. (Any two points)",
+      "model_answer": "A Court of Record is one whose judgements are recorded as evidence and precedent, cannot be questioned when produced before any other court, and are binding on all subordinate courts and tribunals in the State.",
+      "examiner_comment": "Most of the candidates were able to answer this question quite well. However, a few candidates missed some important points regarding Court of Record with reference to the High Court.",
+      "teacher_suggestion": "Emphasise that a complete answer, including the statement that the record of cases is kept for future references and precedents by the lower courts, is imperative in a question on Court of Records. Simply writing that the court keeps the record of all cases, is insufficient.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2019-sb-q5-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Judiciary > The High Courts (Enforcement of Fundamental Rights and Writs)",
+      "period": null,
+      "constitutional_reference": {
+        "body": "High Court",
+        "article": null,
+        "process": null
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "India has a single integrated judicial system that is Independent and Supreme. With reference to the Judiciary, answer the following:",
+      "question_number": "5(c)",
+      "question_text": "List any four writs that the High Court can issue for the enforcement of Fundamental Rights.",
+      "total_marks": 4,
+      "key_points": [
+        "Habeas Corpus",
+        "Mandamus",
+        "Prohibition",
+        "Quo Warranto",
+        "Certiorari"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Habeas Corpus"
+        },
+        {
+          "type": "name",
+          "value": "Mandamus"
+        },
+        {
+          "type": "name",
+          "value": "Prohibition"
+        },
+        {
+          "type": "name",
+          "value": "Quo Warranto"
+        },
+        {
+          "type": "name",
+          "value": "Certiorari"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Habeas Corpus, Mandamus, Prohibition, Quo Warranto and Certiorari. (Any two writs)",
+      "model_answer": "Any four of: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto.",
+      "examiner_comment": "Most of the candidates were able to answer this question correctly.",
+      "teacher_suggestion": "Teach the examples of writs emphasising on the correct spellings of all the writs.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q6-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > Growth of Nationalism (Repressive Colonial Policies)",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Second half of the 19th century witnessed the growth of a strong feeling of Nationalism. With reference to the statement, answer the following:",
+      "question_number": "6(a)",
+      "question_text": "Write any three repressive Colonial policies of the British.",
+      "total_marks": 3,
+      "key_points": [
+        "Organised the Grand Delhi Durbar",
+        "Introduced the Vernacular Press Act",
+        "Introduced the Indian Arms Act",
+        "Reduced the maximum age to take up the ICS examination from 21 to 19 years",
+        "Removed the import duties on the British goods and harmed the Indian industry",
+        "Ilbert Bill Controversy"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Vernacular Press Act"
+        },
+        {
+          "type": "event",
+          "value": "Indian Arms Act"
+        },
+        {
+          "type": "event",
+          "value": "Ilbert Bill Controversy"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) Organised the Grand Delhi Durbar / (ii) Introduced the Vernacular Press Act / (iii) Introduced the Indian Arms Act / (iv) Reduced the maximum age to take up the ICS examination from 21 to 19 years. / (v) Removed the import duties on the British goods and harmed the Indian industry. / (vi) Ilbert Bill Controversy (Any three points)",
+      "model_answer": "Any three of: the Vernacular Press Act, the Indian Arms Act, reduction of the maximum age for the ICS examination from 21 to 19, and removal of import duties on British goods harming Indian industry.",
+      "examiner_comment": "Most of the candidates were able to attempt this question quite well. However, some candidates were not sure whether to write the repressive policies of Lord Curzon or Lord Lytton. The Universities Act and Partition of Bengal were also given as examples of this policy in a few answer scripts.",
+      "teacher_suggestion": "Clarify to the students, the time frame of repressive policies during the early part and later part of the 19th century. The students should be able to recall that Lord Curzon belonged to the early part of the 20th century.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q6-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > Growth of Nationalism (Role of the Press)",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Second half of the 19th century witnessed the growth of a strong feeling of Nationalism. With reference to the statement, answer the following:",
+      "question_number": "6(b)",
+      "question_text": "State any three ways in which the Press played an important role in developing nationalism amongst Indians.",
+      "total_marks": 3,
+      "key_points": [
+        "Spread the message of patriotism",
+        "Spread the ideals of liberty, freedom and equality",
+        "Popularised the ideas of Home Rule and Independence",
+        "Carried on daily criticism of the British policies",
+        "Exposed the true nature of British rule in India",
+        "Helped in the exchange of views among people from different parts of the country",
+        "Made the Indians aware of what was happening in the world",
+        "Aroused public opinion in the country"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "The press: (i) Spread the message of patriotism / (ii) Spread the ideals of liberty, freedom and equality / (iii) Popularised the ideas of Home Rule and Independence / (iv) Carried on daily criticism of the British policies / (v) Exposed the true nature of British rule in India / (vi) Helped in the exchange of views among people from different parts of the country / (vii) Made the Indians aware of what was happening in the world. / (viii) Aroused public opinion in the country (Any two points)",
+      "model_answer": "(i) The press spread the message of patriotism and the ideals of liberty, freedom and equality. (ii) It carried on daily criticism of British policies and exposed the true nature of British rule. (iii) It aroused public opinion and helped the exchange of nationalist ideas across the country.",
+      "examiner_comment": "Most of the candidates were able to answer this question correctly. A few candidates, however, only mentioned the names of the books and the newspapers.",
+      "teacher_suggestion": "Explain the role of books and newspapers in developing nationalism amongst Indians.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q6-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Indian National Movement (1857-1917) > First and Second Phase (Early Nationalists and Radicals)",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "The Second half of the 19th century witnessed the growth of a strong feeling of Nationalism. With reference to the statement, answer the following:",
+      "question_number": "6(c)",
+      "question_text": "Explain briefly any three differences in the methods adopted between the Early Nationalists and Radicals, in the National Movement.",
+      "total_marks": 4,
+      "key_points": [
+        "Early Nationalists: They believed in the policy of constitutional agitation within the legal framework, and slow orderly political progress",
+        "Early Nationalists: They held meetings where speeches were made and resolutions for popular demands were passed",
+        "Early Nationalists: They made use of the press to criticise government policies",
+        "Early Nationalists: They sent memorandums and petitions",
+        "Early Nationalists: They made use of three P's - Petitions, Prayers and Protests",
+        "Early Nationalists: A British Committee of the Indian National Congress was set up in London in 1889, which published a weekly journal, India, to present India's case before the British public",
+        "Early Nationalists: Deputations of Indian leaders were sent to Britain for active propaganda",
+        "Radicals: Swadeshi",
+        "Radicals: Boycott",
+        "Radicals: National Education",
+        "Radicals: Passive Resistance",
+        "Radicals: Revivalism",
+        "Radicals: Personal Sacrifices",
+        "Radicals: Mass movement",
+        "Radicals: Aggressive or assertive method"
+      ],
+      "points_required": 6,
+      "points_selection": "3_per_category",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "1889"
+        },
+        {
+          "type": "name",
+          "value": "British Committee of INC"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "Early Nationalists (Any two points): (i) They believed in the policy of constitutional agitation within the legal framework, and slow orderly political progress. / (ii) They held meetings where speeches were made and resolutions for popular demands were passed. / (iii) They made use of the press to criticise government policies, / (iv) They sent memorandums and petitions. / (v) They made use of three P's - Petitions, Prayers and Protests. / (vi) A British Committee of the Indian National Congress was set up in London in 1889, which published a weekly journal, India, to present India's case before the British public. / (vii) Deputations of Indian leaders were sent to Britain. These political leaders carried on active propaganda in Britain. / Radicals: Methods (Any two points): (i) Swadeshi / (ii) Boycott / (iii) National Education / (iv) Passive Resistance / (v) Revivalism / (vi) Personal Sacrifices / (vii) Mass movement / (viii) Aggressive or assertive method",
+      "model_answer": "Early Nationalists (any three): they believed in constitutional agitation within the legal framework and slow, orderly progress; they held meetings and passed resolutions for popular demands; they used the press to criticise government policy and sent memorandums and petitions to the government. Radicals (any three): they adopted Swadeshi and Boycott; they promoted National Education and Passive Resistance; they believed in mass movement and a more aggressive, assertive method of struggle.",
+      "examiner_comment": "Majority of the candidates mentioned the beliefs and aims of the Early Nationalists and Radicals rather than mentioning the methods adopted by them in the National Movement. Most of the candidates were not clear regarding the objectives, beliefs and methods of both the groups.",
+      "teacher_suggestion": "Train the students to read and understand the question carefully. The demand of the question must be understood before writing its answer.",
+      "difficulty_flag": "high",
+      "category_groups": {
+        "early_nationalist": {
+          "required": 3,
+          "points": [
+            "They believed in the policy of constitutional agitation within the legal framework, and slow orderly political progress",
+            "They held meetings where speeches were made and resolutions for popular demands were passed",
+            "They made use of the press to criticise government policies",
+            "They sent memorandums and petitions",
+            "They made use of three P's - Petitions, Prayers and Protests",
+            "A British Committee of the Indian National Congress was set up in London in 1889, which published a weekly journal, India, to present India's case before the British public",
+            "Deputations of Indian leaders were sent to Britain for active propaganda"
+          ]
+        },
+        "radical": {
+          "required": 3,
+          "points": [
+            "Swadeshi",
+            "Boycott",
+            "National Education",
+            "Passive Resistance",
+            "Revivalism",
+            "Personal Sacrifices",
+            "Mass movement",
+            "Aggressive or assertive method"
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "hist-2019-sb-q7-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mass Phase of the National Movement (1915-1947) > Non-Cooperation Movement (Jallianwala Bagh)",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "stimulus": {
+        "type": "picture",
+        "description": "Picture of Jallianwala Bagh Memorial"
+      },
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the picture given below, answer the following questions:",
+      "question_number": "7(a)",
+      "question_text": "(i) Identify the Memorial built for those who were killed in this incident. (ii) Where did this incident take place? (iii) Name the movement launched by Gandhi in 1920 as a consequence.",
+      "total_marks": 3,
+      "key_points": [
+        "Jallianwala Bagh Memorial",
+        "Jallianwala Bagh in Amritsar",
+        "Non-Cooperation Movement"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "place",
+          "value": "Jallianwala Bagh"
+        },
+        {
+          "type": "place",
+          "value": "Amritsar"
+        },
+        {
+          "type": "event",
+          "value": "Non-Cooperation Movement"
+        },
+        {
+          "type": "date",
+          "value": "1920"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Jallianwala Bagh Memorial / Jallianwala Bagh in Amritsar / Non-Cooperation Movement.",
+      "model_answer": "The Jallianwala Bagh Memorial; the incident took place at Jallianwala Bagh in Amritsar; Gandhi launched the Non-Cooperation Movement in 1920 as a consequence.",
+      "examiner_comment": "(i) Majority of the candidates could identify the given picture. (ii) Most of the candidates wrote the correct place in which the incident occurred. Some candidates, however, mentioned Punjab instead of Amritsar. (iii) Majority of the candidates named the movement correctly barring a few candidates, who wrote named it as the Civil Disobedience Movement.",
+      "teacher_suggestion": "Train students to identify the pictures of not only the monuments, but also of leaders along with their importance. Highlight the important events connected with the incidents. Ensure that students understand the impact of each movement launched by Mahatma Gandhi clearly.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q7-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mass Phase of the National Movement (1915-1947) > Non-Cooperation Movement (Suspension)",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the picture given below, answer the following questions:",
+      "question_number": "7(b)",
+      "question_text": "Explain briefly the reason for the suspension of this particular movement by Gandhi in 1922.",
+      "total_marks": 3,
+      "key_points": [
+        "The tragedy at Chauri Chaura, a village in Gorakhpur district in Uttar Pradesh",
+        "A procession of about 3,000 peasants marched to the police station to protest against the police officer",
+        "Police fired at the peasants",
+        "Peasants reacted and set the police station on fire",
+        "22 policemen were killed",
+        "Gandhiji, who believed in Ahimsa was greatly shocked and withdrew the movement on February 12, 1922",
+        "A police officer had beaten some farmers picketing a liquor shop"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "place",
+          "value": "Chauri Chaura"
+        },
+        {
+          "type": "place",
+          "value": "Gorakhpur"
+        },
+        {
+          "type": "number",
+          "value": "3,000 peasants"
+        },
+        {
+          "type": "number",
+          "value": "22 policemen"
+        },
+        {
+          "type": "date",
+          "value": "February 12, 1922"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": true,
+        "sequential_process": true,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "The tragedy at Chauri Chaura, a village in Gorakhpur district in Uttar Pradesh. / A procession of about 3,000 peasants marched to the police station to protest against the police officer. / Police fired at the peasants. / Peasants reacted and set the police station on fire. / 22 policemen were killed. / Gandhiji, who believed in Ahimsa was greatly shocked and withdrew the movement on February 12, 1922. / A police officer had beaten some farmers picketing a liquor shop. (Narration of Incident with any of the three points cited in the answer)",
+      "model_answer": "The Non-Cooperation Movement was suspended after the Chauri Chaura incident, where a procession of peasants protesting police brutality set fire to a police station, killing 22 policemen. Gandhi, who believed in Ahimsa, was shocked and withdrew the movement on 12 February 1922.",
+      "examiner_comment": "The reason for the suspension was explained correctly as the Chauri Chaura incident by almost all the candidates.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q7-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mass Phase of the National Movement (1915-1947) > Non-Cooperation Movement (Impact)",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "With reference to the picture given below, answer the following questions:",
+      "question_number": "7(c)",
+      "question_text": "State any four impacts of the movement.",
+      "total_marks": 4,
+      "key_points": [
+        "The National Movement became a Mass Movement (Gave a national base to the Congress Party)",
+        "Instilled Confidence, Patriotism among people",
+        "Congress became a revolutionary party",
+        "Undermined the power and prestige of British government",
+        "Fostered Hindu-Muslim unity",
+        "Promoted Social reforms (like removal of untouchability/promotion of khadi/setting up of national schools)",
+        "Promoted the cult of Swaraj",
+        "Showed the true nature of the British",
+        "Spread Nationalism to every part of the country",
+        "Affected British trade",
+        "Showed power of passive resistance"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Impact of Non-Cooperation Movement: The National Movement became a Mass Movement (Gave a national base to the Congress Party) / Instilled Confidence, Patriotism among people. / Congress became a revolutionary party / Undermined the power and prestige of British government / Fostered Hindu-Muslim unity. / Promoted Social reforms (like removal of untouchability/promotion of khadi/setting up of national schools) / Promoted the cult of Swaraj. / Showed the true nature of the British / Spread Nationalism to every part of the country / Affected British trade / Showed power of passive resistance (Any four points)",
+      "model_answer": "Any four of: it gave the National Movement a mass base; it fostered Hindu-Muslim unity; it promoted social reforms such as the removal of untouchability and the promotion of khadi; and it undermined the power and prestige of the British government.",
+      "examiner_comment": "The impact of the movement was written correctly by most of the candidates. However, a few candidates got confused with the other movements launched by Mahatma Gandhi and mixed up the points.",
+      "teacher_suggestion": null,
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q8-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mass Phase of the National Movement (1915-1947) > Civil Disobedience Movement (Programme)",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the National Movement from 1930 to 1947, answer the following:",
+      "question_number": "8(a)",
+      "question_text": "State any three features of the Programme of the Civil Disobedience Movement launched in 1930.",
+      "total_marks": 3,
+      "key_points": [
+        "Gandhi reached Dandi on 5th April, 1930 and next morning Gandhi violated the salt-laws by picking up some salt left by the sea waves. Gandhi's campaign against the salt-laws was a signal to disobey civil laws.",
+        "Defiance of salt laws",
+        "Boycott of liquor/schools and colleges/ Government jobs",
+        "Boycott of foreign cloth and British goods of all kinds",
+        "It also involved non-payment of taxes and land-revenue and violation of laws of different kinds, including forest laws",
+        "Spread to NWFP where Khan Abdul Gaffar Khan took the campaign against the government and he was called as Frontier Gandhi",
+        "Paralysed the British Government"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "5th April, 1930"
+        },
+        {
+          "type": "place",
+          "value": "Dandi"
+        },
+        {
+          "type": "name",
+          "value": "Khan Abdul Gaffar Khan"
+        },
+        {
+          "type": "name",
+          "value": "Frontier Gandhi"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Gandhi reached Dandi on 5th April,1930 and next morning Gandhi violated the salt-laws by picking up some salt left by the sea waves. Gandhi's campaign against the salt-laws was a signal to disobey - civil laws. / Civil Disobedience campaign involved: Defiance of salt laws. / Boycott of liquor/schools and colleges/ Government jobs. / Boycott of foreign cloth and British goods of all kinds. / It also involved non-payment of taxes and land-revenue and violation of laws of different kinds, including forest laws. / Spread to NWFP where Khan Abdul Gaffar Khan took the campaign against the government and he was called as Frontier Gandhi. / Paralysed the British Government. (Any three points)",
+      "model_answer": "Any three of: defiance of the salt laws (Dandi March); boycott of foreign cloth, liquor and British goods; non-payment of taxes and land revenue; and the spread of the movement to the NWFP under Khan Abdul Ghaffar Khan.",
+      "examiner_comment": "Most of the candidates were able to write the correct features of the Programme of the Civil Disobedience Movement. However, a few candidates mentioned the features of the programmes of Non-cooperation and the Quit India Movement.",
+      "teacher_suggestion": "Explain to the students the reasons for the launch of each movement. Train the students to highlight at least ten points of the various movements and to underline the key words.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q8-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Mass Phase of the National Movement (1915-1947) > Civil Disobedience Movement (Second Round Table Conference)",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the National Movement from 1930 to 1947, answer the following:",
+      "question_number": "8(b)",
+      "question_text": "What was the significance of the Second Round Table Conference held in 1931?",
+      "total_marks": 3,
+      "key_points": [
+        "Gandhi was chosen as the sole representative of the Congress for the Second Round Table Conference",
+        "The Second Round Conference devoted most of its time to the communal question and the representation of minorities-the Muslims, Sikhs, the Christians and Anglo-Indians-in legislatures both at the Centre and in the Provinces",
+        "Gandhi was disgusted to find that most leaders were concerned only about seats in the legislatures for their respective communities",
+        "The question of Independence or of setting up a Responsible Government receded into background",
+        "Gandhi returned 'empty handed' as he could not persuade the British government to grant Freedom or even the Dominion Status to India"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Second Round Table Conference"
+        },
+        {
+          "type": "date",
+          "value": "1931"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": true,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Gandhi was chosen as the sole representative of the Congress for the Second Round Table Conference. / The Second Round Conference devoted most of its time to the communal question and the representation of minorities-the Muslims, Sikhs, the Christians and Anglo-Indians-in legislatures both at the Centre and in the Provinces. / Gandhi was disgusted to find that most leaders were concerned only about seats in the legislatures for their respective communities. / The question of Independence or of setting up a Responsible Government receded into background. / Gandhi returned 'empty handed' as he could not persuade the British government to grant Freedom or even the Dominion Status to India. (Any three points)",
+      "model_answer": "Gandhi, as the sole Congress representative, found the Conference dominated by the communal question and minority representation rather than the demand for independence, and returned 'empty-handed' without securing Dominion Status or freedom for India.",
+      "examiner_comment": "The explanation given by several candidates was incomplete. Instead of writing the significance of the Second Round Table Conference, many candidates wrote on the Gandhi-Irwin Pact.",
+      "teacher_suggestion": "Explain the main points of the Second Round Table Conference and also the reasons for its failure.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q8-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Independence and Partition of India > Cabinet Mission Plan",
+      "period": "Growth of Nationalism",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "With reference to the National Movement from 1930 to 1947, answer the following:",
+      "question_number": "8(c)",
+      "question_text": "State any four clauses of the Cabinet Mission Plan of 1946.",
+      "total_marks": 4,
+      "key_points": [
+        "There would be a Federal Union comprising the British Provinces and the Princely states",
+        "The Union government would be empowered to deal with defense, foreign affairs and communications",
+        "The Union would have its own executive and legislature composed of members elected by all provinces",
+        "A Constituent Assembly comprising 389 members would be set up to frame the new Constitution of the Indian Union. Of these members, 296 would be elected from the British Provinces and 93 members from the Princely States",
+        "The British Provinces would be divided into three groups on communal basis - Group A, B and C. The provinces could opt out of the groups and join another by majority of votes (Provincial autonomy)",
+        "The Provinces would enjoy full autonomy for all subjects of administration other than the Union subjects",
+        "An Interim Government would be formed at the Centre with 14 members",
+        "India would be free to remain within the British Commonwealth or secede from it (Freedom to join Commonwealth)"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Cabinet Mission Plan"
+        },
+        {
+          "type": "date",
+          "value": "1946"
+        },
+        {
+          "type": "number",
+          "value": "389 members"
+        },
+        {
+          "type": "number",
+          "value": "14 members"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) There would be a Federal Union comprising the British Provinces and the Princely states. / (ii) The Union government would be empowered to deal with defense, foreign affairs and communications. / (iii) The Union would have its own executive and legislature composed of members elected by all provinces. / (iv) A Constituent Assembly comprising 389 members would be set up to frame the new Constitution of the Indian Union. Of these members, 296 would be elected from the British Provinces and 93 members from the Princely States. / (v) The British Provinces would be divided into three groups on communal basis - Group A, B and C. The provinces could opt out of the groups and join another by majority of votes (Provincial autonomy). / (vi) The Provinces would enjoy full autonomy for all subjects of administration other than the Union subjects. / (vii) An Interim Government would be formed at the Centre with 14 members. / (viii) India would be free to remain within the British Commonwealth or secede from it.(Freedom to join Commonwealth) (Any four points)",
+      "model_answer": "Any four of: a Federal Union of British Provinces and Princely States; the Union government to control only defence, foreign affairs and communications; a 389-member Constituent Assembly to frame the new Constitution; and provinces grouped into three communal groups (A, B and C) with the freedom to opt out.",
+      "examiner_comment": "Majority of the candidates correctly wrote four clauses of the Cabinet Mission Plan of 1946, barring a few candidates, who mentioned the clauses of the Mountbatten Plan and the Indian Independence Act.",
+      "teacher_suggestion": "Explain to the students the clauses of the Cabinet Mission Plan of 1946, the clauses of Mountbatten Plan and the Indian Independence Act and emphasize that clauses cannot be misquoted and should be presented in a factual manner.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2019-sb-q9-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > Rise of Dictatorships (Fascism in Italy)",
+      "period": "Rise of Dictatorships",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Rise of Dictatorships and the Second World War, answer the following:",
+      "question_number": "9(a)",
+      "question_text": "State any three reasons for the Rise of Fascism in Italy.",
+      "total_marks": 3,
+      "key_points": [
+        "Dissatisfaction with the treaty of Versailles",
+        "Economic crisis",
+        "Political instability (Failure of democracy/corrupt democratic)",
+        "Class conflicts",
+        "Failure of League of Nations",
+        "Leadership provided by Mussolini",
+        "Fear of Communism",
+        "Rise of Dictatorship (Totalitarianism)"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles"
+        },
+        {
+          "type": "name",
+          "value": "Mussolini"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Rise of Fascism in Italy: Dissatisfaction with the treaty of Versailles / Economic crisis / Political instability (Failure of democracy/corrupt democratic) / Class conflicts / Failure of League of Nations / Leadership provided by Mussolini / Fear of Communism / Rise of Dictatorship (Totalitarianism) (Any three points)",
+      "model_answer": "Any three of: dissatisfaction with the Treaty of Versailles; economic crisis and political instability; class conflicts and fear of Communism; and the strong leadership provided by Mussolini.",
+      "examiner_comment": "Many candidates confused the Rise of Fascism with the Rise of Nazism. A few candidates mentioned the causes of the Second World War.",
+      "teacher_suggestion": "Explain in detail, the Rise of Fascism and Nazism, laying stress on the definitions of Fascism and Nazism. Clearly bring out while teaching, the distinction between the consequences of World War I and World War II.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q9-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > The Second World War (Consequences)",
+      "period": "World War II",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Rise of Dictatorships and the Second World War, answer the following:",
+      "question_number": "9(b)",
+      "question_text": "Explain any three consequences of World War II.",
+      "total_marks": 3,
+      "key_points": [
+        "Destruction of life and property",
+        "Defeat of the Axis Powers by the Allied Powers",
+        "Many new weapons of mass destruction were invented and used",
+        "Formation of the UN",
+        "The world was divided into two power blocs - the Democratic or Capitalist bloc led by the USA and the Communist bloc led by the erstwhile Soviet Union",
+        "Beginning of Cold War between two power blocs",
+        "Division of Germany",
+        "Japan became weak and its emperor reduced to constitutional head",
+        "Imperialism came to an end",
+        "Fall of dictatorship",
+        "Decolonisation",
+        "USA and the Soviet Union became super powers"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "World War II"
+        },
+        {
+          "type": "name",
+          "value": "United Nations"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Consequences of Second World War: Destruction of life and property. / Defeat of the Axis Powers by the Allied Powers. / Many new weapons of mass destruction were invented and used. / Formation of the UN. / The world was divided into two power blocs - the Democratic or Capitalist bloc led by the USA and the Communist bloc led by the erstwhile Soviet Union. / Beginning of Cold War between two power blocs. / Division of Germany / Japan became weak and its emperor reduced to constitutional head. / Imperialism came to an end. / Fall of dictatorship / Decolonisation / USA and the Soviet Union became super powers. (Any three points)",
+      "model_answer": "Any three of: destruction of life and property; the world was divided into a Capitalist bloc led by the USA and a Communist bloc led by the USSR, beginning the Cold War; the formation of the United Nations; and the emergence of the USA and USSR as superpowers.",
+      "examiner_comment": "Majority of the candidates answered the question correctly. A few candidates mentioned the consequences of the World War I instead of World War II.",
+      "teacher_suggestion": "Ensure students have a clear concept about the rival blocs during the two world wars and that they correctly remember the names of the member countries of the two rival blocs.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q9-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > The Second World War (Axis and Allied Powers)",
+      "period": "World War II",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Rise of Dictatorships and the Second World War, answer the following:",
+      "question_number": "9(c)",
+      "question_text": "Name the two rival blocs that fought against each other during World War II and state its signatory countries.",
+      "total_marks": 4,
+      "key_points": [
+        "Axis Powers",
+        "Germany",
+        "Italy",
+        "Japan",
+        "Allied Powers",
+        "Britain",
+        "France",
+        "USSR",
+        "USA"
+      ],
+      "points_required": 9,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Axis Powers",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "Germany",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "Italy",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "Japan",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "Allied Powers",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "Britain",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "France",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "USSR",
+          "required": true
+        },
+        {
+          "type": "name",
+          "value": "USA",
+          "required": true
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Axis - Germany Italy & Japan / Allies - Britain, France, USSR and later USA joined the Allies. (Any three countries)",
+      "model_answer": "The two rival blocs were the Axis Powers — Germany, Italy and Japan — and the Allied Powers — Britain, France, the USSR, and later the USA.",
+      "examiner_comment": "Some candidates, instead of writing Axis and Allied Powers, mentioned Capitalist and Communist blocs. A few candidates also mixed up the names of the signatory countries.",
+      "teacher_suggestion": "Instruct the students to read and understand the question before making any attempt to answer it.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2019-sb-q10-i",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > United Nations (UNESCO — Cultural Heritage)",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The necessity to maintain International peace led to the establishment of the United Nations Organisation. With reference to the statement, answer the following:",
+      "question_number": "10(a)",
+      "question_text": "Write any three functions of UNESCO that preserves our 'Cultural Heritage'.",
+      "total_marks": 3,
+      "key_points": [
+        "UNESCO provides technical advice and assistance, equipment and funds for the preservation of monuments and other works of art. It has prepared a World Heritage List to identify the monuments and sites which are to be protected",
+        "It aims to protect the world inheritance of books, works of art and rare manuscripts",
+        "It gives encouragement to artistic creations in literature and fine arts",
+        "It pays attention towards the cultural development through the medium of films",
+        "It sends cultural missions to different countries so that there would be development of contacts which may promote peace and prosperity",
+        "It helps the member states in the preservation of their cultural heritage",
+        "It encourages translation of rare manuscripts",
+        "It plays a vital role in distributing knowledge about Human Rights"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "UNESCO"
+        },
+        {
+          "type": "name",
+          "value": "World Heritage List"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Preservation of Cultural Heritage: UNESCO provides technical advice and assistance, equipment and funds for the preservation of monuments and other works of art. It has prepared a World Heritage List to identify the monuments and sites which are to be protected. / It aims to protect the world inheritance of books, works of art and rare manuscripts. / It gives encouragement to artistic creations in literature and fine arts. / It pays attention towards the cultural development through the medium of films. / It sends cultural missions to different countries so that there would be development of contacts which may promote peace and prosperity. / It helps the member states in the preservation of their cultural heritage. / It encourages translation of rare manuscripts. / It plays a vital role in distributing knowledge about Human Rights. (Any three points)",
+      "model_answer": "Any three of: UNESCO prepares a World Heritage List to identify monuments and sites for protection; it provides technical advice, funds and equipment for the preservation of monuments and works of art; and it encourages the translation of rare manuscripts and protects the world's inheritance of books and art.",
+      "examiner_comment": "Many candidates instead of writing the functions of the UNESCO which preserve our Cultural Heritage, wrote its general functions relating to education and science.",
+      "teacher_suggestion": "Explain with examples, the functions of UNESCO regarding education, science and culture. Train students to present facts while answering questions relating to composition of the Security Council.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q10-ii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > United Nations (Security Council — Composition)",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The necessity to maintain International peace led to the establishment of the United Nations Organisation. With reference to the statement, answer the following:",
+      "question_number": "10(b)",
+      "question_text": "State the Composition of the Security Council.",
+      "total_marks": 3,
+      "key_points": [
+        "The Council consists of 15 members",
+        "It has five permanent members - China, France, Russia, Britain and the United States of America",
+        "The regional representation of the ten non-permanent members is: Afro-Asian Countries - 5, Latin American Countries - 2, West European and other Countries - 2, East European Countries - 1",
+        "The ten non-permanent members are elected by the General Assembly by a two-third majority for a term of two years",
+        "A retiring member is not eligible for immediate re-election",
+        "The Presidency of the Council rotates monthly, according to the English alphabetical listing of its member states"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "15 members"
+        },
+        {
+          "type": "number",
+          "value": "5 permanent members"
+        },
+        {
+          "type": "number",
+          "value": "10 non-permanent members"
+        },
+        {
+          "type": "name",
+          "value": "China"
+        },
+        {
+          "type": "name",
+          "value": "France"
+        },
+        {
+          "type": "name",
+          "value": "Russia"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Composition: The Council consists of 15 members. / It has five permanent members - China, France, Russia, Britain and the United States of America. / The regional representation of the ten non-permanent members is: (i) Afro-Asian Countries - 5 / (ii) Latin American Countries - 2 / (iii) West European and other Countries - 2 / (iv) East European Countries - 1 / The ten non-permanent members are elected by the General Assembly by a two-third majority for a term of two years. / A retiring member is not eligible for immediate re-election. / The Presidency of the Council rotates monthly, according to the English alphabetical listing of its member states. (Any three points)",
+      "model_answer": "Any three of: the Security Council has 15 members, of which five are permanent (China, France, Russia, Britain and the USA); the ten non-permanent members are elected by the General Assembly for a two-year term by a two-thirds majority; and the Council's presidency rotates monthly.",
+      "examiner_comment": "Majority of the candidates stated the composition of the Security Council correctly, barring a few candidates who wrote the composition of the General Assembly.",
+      "teacher_suggestion": "By means of a flow chart, distinguish between the Permanent and Non-Permanent members of the Security Council.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2019-sb-q10-iii",
+      "subject": "history_civics",
+      "year": 2019,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "The Contemporary World > United Nations (General Assembly — Functions)",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "The necessity to maintain International peace led to the establishment of the United Nations Organisation. With reference to the statement, answer the following:",
+      "question_number": "10(c)",
+      "question_text": "Write any four functions of the General Assembly.",
+      "total_marks": 4,
+      "key_points": [
+        "To make recommendations for the peaceful settlement of disputes",
+        "To promote political, social and economic cooperation",
+        "To receive and consider reports from the Security Council and other organs of UN",
+        "To consider and approve the budget of the UN",
+        "To regulate the working of other organs and agencies of UN",
+        "To elect the non-permanent members of the Security Council",
+        "To elect judges of the ICJ",
+        "To appoint Secretary General on the recommendation of Security Council",
+        "To amend the UN Charter",
+        "Functions under 'Uniting for Peace Resolution' 1950",
+        "New members are admitted by the General Assembly on the recommendation of Security Council"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "General Assembly"
+        },
+        {
+          "type": "name",
+          "value": "ICJ"
+        },
+        {
+          "type": "date",
+          "value": "1950"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Functions of General Assembly: To make recommendations for the peaceful settlement of disputes / To promote political, social and economic cooperation / To receive and consider reports from the Security Council and other organs of UN. / To consider and approve the budget of the UN. / To regulate the working of other organs and agencies of UN. / To elect the non-permanent members of the Security Council. / To elect judges of the ICJ. / To appoint Secretary General on the recommendation of Security Council. / To amend the UN Charter. / Functions under 'Uniting for Peace Resolution' 1950. / New members are admitted by the General Assembly on the recommendation of Security Council. (Any four points)",
+      "model_answer": "Any four of: makes recommendations for the peaceful settlement of disputes; considers and approves the UN budget; elects the non-permanent members of the Security Council and the judges of the ICJ; and appoints the Secretary-General on the Security Council's recommendation.",
+      "examiner_comment": "Attempted well by most of the candidates. However, a few candidates mixed up the functions of the General Assembly with that of the Security Council.",
+      "teacher_suggestion": "Ensure that students learn at least five notable functions of the General Assembly and other organs of the UN. Advise students to write answers emphasising on key words and points.",
+      "difficulty_flag": null
+    }
+  ]
+}

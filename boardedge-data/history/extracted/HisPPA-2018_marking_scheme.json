@@ -1,0 +1,1872 @@
+{
+  "subject": "history_civics",
+  "board": "ICSE",
+  "class": 10,
+  "paper": "hcg_paper_1",
+  "year": 2018,
+  "total_marks": 80,
+  "questions": [
+    {
+      "question_id": "hist-2018-sa-q1-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Money Bill",
+      "period": null,
+      "question_number": "1(a)",
+      "question_text": "Name the bill that cannot originate in the Rajya Sabha.",
+      "total_marks": 1,
+      "key_points": [
+        "Money Bill"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Money Bill"
+        },
+        {
+          "type": "name",
+          "value": "Rajya Sabha"
+        }
+      ],
+      "scheme_text": "Money Bill",
+      "model_answer": "Money Bill.",
+      "examiner_comment": "Majority of the candidates named the bill that cannot originate in the Rajya Sabha correctly.",
+      "teacher_suggestion": "Explain to students the difference between Money Bill and Non-Money Bill and the powers of the two Houses over these Bills in detail.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Quorum",
+      "period": null,
+      "question_number": "1(b)",
+      "question_text": "What is meant by the term 'quorum'?",
+      "total_marks": 1,
+      "key_points": [
+        "A quorum is the minimum number of members required to be present before a meeting is allowed to begin",
+        "The quorum to constitute a meeting of the House is one-tenth of the total strength of the House"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "fraction",
+          "value": "one-tenth"
+        }
+      ],
+      "scheme_text": "A quorum is the minimum number of members required to be present before a meeting is allowed to begin. The quorum to constitute a meeting of the House is one-tenth of the total strength of the House.",
+      "model_answer": "A quorum is the minimum number of members required to be present before a meeting of the House can begin. It is one-tenth of the total strength of the House.",
+      "examiner_comment": "Some candidates wrote incorrect interpretations of the term quorum.",
+      "teacher_suggestion": "Interpret different procedures of Parliament clearly. Organize a mock session of Parliament in school which will help the students in appreciating the parliamentary procedures.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Parliamentary Sessions",
+      "period": null,
+      "question_number": "1(c)",
+      "question_text": "What is the maximum gap allowed between the two parliamentary sessions?",
+      "total_marks": 1,
+      "key_points": [
+        "Maximum 6 months / less than six months / Not more than six months"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "6 months"
+        }
+      ],
+      "scheme_text": "Maximum 6 months / less than six months / Not more than six months.",
+      "model_answer": "Not more than six months.",
+      "examiner_comment": "This part was generally answered correct by most of the candidates, but a few mentioned six weeks maximum gap allowed between the two parliamentary sessions instead of six months.",
+      "teacher_suggestion": "Tell the students the number of times the Indian Parliament meets in a year and the gap between these sessions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-iv",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Oath of Office to Ministers",
+      "period": null,
+      "question_number": "1(d)",
+      "question_text": "Who administers the oath of office to the Council of Ministers?",
+      "total_marks": 1,
+      "key_points": [
+        "President"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "President"
+        }
+      ],
+      "scheme_text": "President",
+      "model_answer": "The President of India.",
+      "examiner_comment": "Majority of the candidates answered this question correctly. However, a few candidates, instead of writing the President of India, wrote either the Prime Minister or the Chief Justice of the Supreme Court.",
+      "teacher_suggestion": "Spell out the different powers of the President like He appoints the Prime Minister and the Council of Ministers, also administers oath to them.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-v",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Ordinance",
+      "period": null,
+      "question_number": "1(e)",
+      "question_text": "What is an Ordinance?",
+      "total_marks": 1,
+      "key_points": [
+        "When Parliament is not in session or emergency, an Ordinance is used",
+        "It is a temporary law/an order issued by the President"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "President"
+        }
+      ],
+      "scheme_text": "When Parliament is not in session or emergency, an Ordinance is used. It is a temporary law/an order issued by the President.",
+      "model_answer": "An Ordinance is a temporary law or order issued by the President when Parliament is not in session (or during an emergency).",
+      "examiner_comment": "Most candidates wrote the correct answer although a few explained Ordinance vaguely. Some candidates wrote Command, which is more verbal and may not have an authority of law.",
+      "teacher_suggestion": "Clarify students that an ordinance is a law, decree or an order issued by the President during the recess of Parliament.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-vi",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Indirect Election of President",
+      "period": null,
+      "question_number": "1(f)",
+      "question_text": "State any one reason why the President is elected indirectly.",
+      "total_marks": 1,
+      "key_points": [
+        "Become a rival center of power to the Council of ministers, would be against the parliamentary system",
+        "Would become a nominee of the ruling party and would not represent the constituent states of the union",
+        "His indirect election by Electoral college makes the President the elected representative of the whole nation",
+        "He is the nominal head. The real power lies in the hands of Prime Minister and the parliament",
+        "Election to be quiet and dignified affair",
+        "Loss of time, energy and money"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Electoral college"
+        }
+      ],
+      "scheme_text": "Become a rival center of power to the Council of ministers, would be against the parliamentary system, would become a nominee of the ruling party and would not represent the constituent states of the union, His indirect election by Electoral college makes the President the elected representative of the whole nation. He is the nominal head. The real power lies in the hands of Prime Minister and the parliament. Election to be quiet and dignified affair. Loss of time, energy and money.",
+      "model_answer": "The President is elected indirectly so that he remains the nominal head representing the whole nation, while real power stays with the Prime Minister and Parliament, and does not become a rival centre of power to the Council of Ministers.",
+      "examiner_comment": "A few candidates misunderstood the question and instead of giving the reason for the President being elected indirectly, wrote on how the President is elected.",
+      "teacher_suggestion": "Point out students that the President of India is not elected directly by the people since India has a Parliamentary form of Government.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-vii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Administrative Function of Cabinet",
+      "period": null,
+      "question_number": "1(g)",
+      "question_text": "State any one administrative function of the Cabinet.",
+      "total_marks": 1,
+      "key_points": [
+        "The Cabinet is a policy framing body, after it determines on a policy, the appropriate Ministry carries it out",
+        "The President makes all major appointments with the aid and advice of the Ministers",
+        "Implementation and coordination policy"
+      ],
+      "points_required": 1,
+      "points_selection": "any_1",
+      "factual_anchors": [],
+      "scheme_text": "(i) The Cabinet is a policy framing body, after it determines on a policy, the appropriate Ministry like Ministry of Agriculture or Civil Aviation and others carries it out. Each Ministry or Department faithfully follows the directives of the Cabinet. (ii) The President makes all major appointments with the aid and advice of the Ministers. Appointment of the Attorney-General of India, the Governor of a State, the Chief Election Commissioner, the Election Commissioners. Implementation and coordination policy.",
+      "model_answer": "The Cabinet is a policy-framing body: once it decides a policy, the concerned Ministry (e.g. Agriculture or Civil Aviation) implements it, faithfully following the Cabinet's directives.",
+      "examiner_comment": "Quite a few candidates stated the relations of the cabinet with the President and the Prime Minister instead of stating any one administrative function of the Cabinet.",
+      "teacher_suggestion": "Clearly bring out the distinction between the administrative and legislative functions of the Cabinet. Tell the students that the administrative function of the Cabinet involves framing of policies & its implementation.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-viii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Writs of the Supreme Court",
+      "period": null,
+      "question_number": "1(h)",
+      "question_text": "Name any two writs issued by the Supreme Court.",
+      "total_marks": 1,
+      "key_points": [
+        "Habeas corpus",
+        "Mandamus",
+        "Prohibition",
+        "Certiorari",
+        "Quo-warranto"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Habeas corpus"
+        },
+        {
+          "type": "name",
+          "value": "Mandamus"
+        },
+        {
+          "type": "name",
+          "value": "Prohibition"
+        },
+        {
+          "type": "name",
+          "value": "Certiorari"
+        },
+        {
+          "type": "name",
+          "value": "Quo-warranto"
+        }
+      ],
+      "scheme_text": "Habeas corpus, Mandamus, Prohibition, Certiorari, Quo-warranto.",
+      "model_answer": "Any two of: Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo-Warranto.",
+      "examiner_comment": "Some candidates instead of naming two writs issued by the Supreme Court explained the Fundamental Rights. There were spelling errors in a few answer scripts.",
+      "teacher_suggestion": "Describe writs issued by the courts in detail. Also advise students to learn the spellings of the writs.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-ix",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Highest Criminal Court in a District",
+      "period": null,
+      "question_number": "1(i)",
+      "question_text": "Name the highest criminal court in a district.",
+      "total_marks": 1,
+      "key_points": [
+        "Sessions Court / Court of Session Judge"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Sessions Court"
+        }
+      ],
+      "scheme_text": "Sessions Court/Court of Session Judge",
+      "model_answer": "The Sessions Court (Court of the Sessions Judge).",
+      "examiner_comment": "Majority of the candidates were able to answer this question correctly. However, a few candidates, instead of writing Session Court mentioned either District Court or Civil Court.",
+      "teacher_suggestion": "Clarify students the structure of the subordinate courts. Teach the students the difference between the Sessions Court and the District Court.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q1-x",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Lok Adalats",
+      "period": null,
+      "question_number": "1(j)",
+      "question_text": "What is meant by Lok Adalats?",
+      "total_marks": 1,
+      "key_points": [
+        "People's Court"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lok Adalat"
+        }
+      ],
+      "scheme_text": "People's Court",
+      "model_answer": "Lok Adalats are People's Courts.",
+      "examiner_comment": "Many candidates, instead of writing the meaning of Lok Adalat, explained its advantages.",
+      "teacher_suggestion": "Make students understand the meaning of the word Lok Adalat. Advise students to read and understand the questions before attempting them.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Economic Factors of Nationalism",
+      "period": "Growth of Nationalism",
+      "question_number": "2(a)",
+      "question_text": "Mention any two economic factors responsible for the growth of nationalism in India.",
+      "total_marks": 2,
+      "key_points": [
+        "Economic Exploitation",
+        "Peasants: The government took away a large part of their produce",
+        "British economic policies were against the interests of Indian trade and industry",
+        "Working class were exploited by the factory owners",
+        "Educated Indians were denied promotions and employment",
+        "Did nothing to promote the welfare of the people",
+        "Heavy duties on Indian Goods",
+        "India was reduced to an agricultural glory of the British"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [],
+      "scheme_text": "Economic Exploitation: (i) Peasants: The government took away a large part of their produce. (ii) British economic policies were against the interests of Indian trade and industry. (iii) Working class were exploited by the factory owners. (iv) Educated Indians were denied promotions and employment. (v) Did nothing to promote the welfare of the people. (vi) Heavy duties on Indian Goods. (vii) India was reduced to an agricultural glory of the British.",
+      "model_answer": "(i) Peasants lost a large part of their produce to the government. (ii) British economic policies worked against the interests of Indian trade and industry.",
+      "examiner_comment": "Most of the candidates answered this question well. However, a few candidates were confused between economic and political factors of the growth of nationalism.",
+      "teacher_suggestion": "Teach the factors responsible for the growth of nationalism by making a flow chart, with separate headings - economic, social, religions and political etc. This will aid in conceptual clarity.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Indian National Congress Sessions",
+      "period": "Growth of Nationalism",
+      "question_number": "2(b)",
+      "question_text": "Name the two Presidents under whom the first two sessions of the Indian National Congress were held.",
+      "total_marks": 2,
+      "key_points": [
+        "W.C. Banerjee",
+        "Dadabhai Naroji"
+      ],
+      "points_required": 2,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "W.C. Banerjee"
+        },
+        {
+          "type": "name",
+          "value": "Dadabhai Naroji"
+        }
+      ],
+      "scheme_text": "(i) W.C. Banerjee (ii) Dadabhai Naroji",
+      "model_answer": "First session – W.C. Banerjee; Second session – Dadabhai Naoroji.",
+      "examiner_comment": "Answered correctly by majority of the candidates. However, a few candidates mentioned the name of Surendra Nath Banerjee.",
+      "teacher_suggestion": "Emphasize the first two sessions of the Indian National Congress and the names of the Presidents who presided over the sessions.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Contributions of Bal Gangadhar Tilak",
+      "period": "Growth of Nationalism",
+      "question_number": "2(c)",
+      "question_text": "Name the nationalist who said, 'Swaraj is my birthright and I shall have it'. State any one of his contributions to the National Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Bal Gangadhar Tilak",
+        "Close contact with masses, demand for swaraj",
+        "Inculcate courage, self-defence, patriotism by organizing Akharas & lathi clubs",
+        "Started Ganapati and Shivaji festivals",
+        "Two newspapers - Maratha and Kesari",
+        "Two books - Gita Rahasya and the Arctic Home of the Vedas",
+        "Establish Home Rule league in 1916",
+        "Forerunner of Mahatma Gandhi, preached the ideas of Swadeshi, Boycott and Prohibition",
+        "His role in the anti-partition movement"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Bal Gangadhar Tilak",
+          "required": true
+        },
+        {
+          "type": "event",
+          "value": "Home Rule League"
+        },
+        {
+          "type": "date",
+          "value": "1916"
+        }
+      ],
+      "scheme_text": "Bal Gangadhar Tilak. Close contact with masses, demand for swaraj inculcate courage, self-defence, patriotism by organizing Akharas & lathi clubs, started Ganapati and Shivaji festivals, two newspapers- Maratha and kesari, two books- Gita Rahasya and the Artic Home of the Vedas. Establish Home Rule league in 1916, forerunner of Mahatma Gandhi, preached the ideas of Swadeshi, Boycott and Prohibition. His role in the anti-partition movement. (Any two points)",
+      "model_answer": "Bal Gangadhar Tilak. Contribution: he brought the masses into the movement by starting the Ganapati and Shivaji festivals and by publishing the newspapers Maratha and Kesari to spread nationalist ideas.",
+      "examiner_comment": "Most candidates identified the nationalist correctly but were confused between his contributions with that of the other leaders.",
+      "teacher_suggestion": "Do a comparative study of the leaders/groups/associations with their slogans etc.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-iv",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Objectives of the Muslim League",
+      "period": "Growth of Nationalism",
+      "question_number": "2(d)",
+      "question_text": "State any two objectives of the Muslim League.",
+      "total_marks": 2,
+      "key_points": [
+        "To promote among the Indian Muslim support for British rule",
+        "To remove misconceptions between the British government in relation to Indian Muslims",
+        "To protect and advance the political rights and interests of the Muslims",
+        "To represent the needs and aspirations to the government in mild and moderate way",
+        "To prevent the rise of feelings of hostility between the Muslims and other communities"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Muslim League"
+        }
+      ],
+      "scheme_text": "To promote among the Indian Muslim support for British rule, to remove misconceptions between the British government in relation to Indian Muslims, to protect and advance the political rights and interests of the Muslims, to represent the needs and aspirations to the government in mild and moderate way. To prevent the rise of feelings of hostility between the Muslims and other communities.",
+      "model_answer": "(i) To protect and advance the political rights and interests of the Muslims. (ii) To promote loyalty among Indian Muslims towards British rule and to represent their needs to the government in a moderate way.",
+      "examiner_comment": "Majority of the candidates were unable to write the objectives of the Muslim League. Instead of writing its objectives in 1906, they wrote about the demands made by it later for Pakistan and for the introduction of the Urdu language.",
+      "teacher_suggestion": "Clearly differentiate between the objectives of Muslim League at the time of its formation in 1906 and the demands made by it later on.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sa-q2-v",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Causes of the Civil Disobedience Movement",
+      "period": "Gandhian Movements",
+      "question_number": "2(e)",
+      "question_text": "State any two causes that led to the Civil Disobedience Movement in 1930.",
+      "total_marks": 2,
+      "key_points": [
+        "Simon Commission",
+        "Declaration of Poorna swaraj at Lahore session (1929)",
+        "Nehru report",
+        "Viceroy declaration",
+        "Gandhi's eleven demands",
+        "Salt satyagraha"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Simon Commission"
+        },
+        {
+          "type": "event",
+          "value": "Lahore session"
+        },
+        {
+          "type": "date",
+          "value": "1929"
+        },
+        {
+          "type": "date",
+          "value": "1930"
+        }
+      ],
+      "scheme_text": "Simon Commission, Declaration of Poorna swaraj at Lahore session (1929), Nehru report, Viceroy declaration, Gandhi's eleven demands, Salt satyagraha.",
+      "model_answer": "(i) The boycott of the all-white Simon Commission. (ii) The declaration of Poorna Swaraj at the Lahore Session (1929), followed by Gandhi's Salt Satyagraha.",
+      "examiner_comment": "Most of the candidates could write the causes that led to the Civil Disobedience Movement in 1930 correctly. However, a few candidates mentioned the causes that led to the launching of Non-Cooperation Movement.",
+      "teacher_suggestion": "Explain students the difference between the Civil Disobedience Movement and Non-Cooperation Movement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-vi",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Indian Independence Act, 1947",
+      "period": "Gandhian Movements",
+      "question_number": "2(f)",
+      "question_text": "Name the last Viceroy of India. State any one of the provisions of the Indian Independence Act of 1947.",
+      "total_marks": 2,
+      "key_points": [
+        "Lord Mountbatten",
+        "Two new Dominions",
+        "Provisions of Partition",
+        "Governor general for each dominion",
+        "Constituent assemblies to serve as central legislatives",
+        "End of jurisdiction of the Pre-Parliament",
+        "Princely states",
+        "Treaties and Agreements",
+        "Division of the army and the Assets",
+        "Bringing the act into operation",
+        "Office of secretary of state of interest of existing officers"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Lord Mountbatten",
+          "required": true
+        },
+        {
+          "type": "event",
+          "value": "Indian Independence Act"
+        },
+        {
+          "type": "date",
+          "value": "1947"
+        }
+      ],
+      "scheme_text": "Lord Mountbatten. 1. Two new Dominions. 2. Provisions of Partition. 3. Governor general for each dominion. 4. Constituent assemblies to serve as central legislatives. 5. End of jurisdiction of the Pre-Parliament. 6. Princely states. 7. Treaties and Agreements. 8. Division of the army and the Assets. 9. Bringing the act into operation. 10. Office of secretary of state of interest of existing officers. (Any two points)",
+      "model_answer": "Lord Mountbatten. Provision: two new independent Dominions – India and Pakistan – were created, each with its own Governor-General.",
+      "examiner_comment": "Answered correctly by majority of the candidates. However, a few candidates mentioned the name of C. Rajagopalachari who was the last Governor-General of India.",
+      "teacher_suggestion": "Clarify to the students the difference between the Indian Independence Act, 1947 and the Mountbatten Plan.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-vii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Ideologies of Fascism and Nazism",
+      "period": "Rise of Dictatorships",
+      "question_number": "2(g)",
+      "question_text": "Give any two similarities between the ideologies of Nazism and Fascism.",
+      "total_marks": 2,
+      "key_points": [
+        "Faith in Totalitarian rule (dictatorship)",
+        "To despise democracy, communism, socialism, internationalism",
+        "One party one Leader",
+        "Belief in aggressive nationalism, imperialism, war",
+        "Policy of expansion",
+        "Believe in supremacy of state rather than Individual use of force",
+        "Anti-intellectualism",
+        "Belief in racial supremacy"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Nazism"
+        },
+        {
+          "type": "name",
+          "value": "Fascism"
+        }
+      ],
+      "scheme_text": "Faith in Totalitarian rule (dictatorship), to despise democracy, communism, socialism, internationalism. One party one Leader, Belief in aggressive nationalism, imperialism, war, policy of expansion, believe in supremacy of state rather than Individual use of force. Anti-intellectualism, belief in racial supremacy.",
+      "model_answer": "(i) Both had faith in totalitarian, one-party dictatorship and despised democracy and communism. (ii) Both believed in aggressive nationalism, imperialism and a policy of expansion through war.",
+      "examiner_comment": "Many candidates mixed up the causes and ideologies of Nazism and Fascism with the causes that led to the rise of dictatorship in Germany and Italy.",
+      "teacher_suggestion": "Interpret the main difference between the causes and ideologies of Nazism and Fascism.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sa-q2-viii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Axis Powers",
+      "period": "World War II",
+      "question_number": "2(h)",
+      "question_text": "Name the countries that formed the Axis Bloc, during World War II.",
+      "total_marks": 2,
+      "key_points": [
+        "Germany",
+        "Italy",
+        "Japan"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Germany"
+        },
+        {
+          "type": "name",
+          "value": "Italy"
+        },
+        {
+          "type": "name",
+          "value": "Japan"
+        },
+        {
+          "type": "event",
+          "value": "Berlin-Rome-Tokyo axis"
+        }
+      ],
+      "scheme_text": "Germany, Italy, Japan (Berlin-Rome-Tokyo axis)",
+      "model_answer": "Germany, Italy and Japan (the Berlin-Rome-Tokyo Axis).",
+      "examiner_comment": "Some candidates got baffled between Axis and Allied powers. A few candidates mixed up the names of the countries.",
+      "teacher_suggestion": "Encourage students to prepare flash cards to learn and retain the names of the countries and the alliances formed during the two world wars.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-ix",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "UNESCO",
+      "period": "United Nations",
+      "question_number": "2(i)",
+      "question_text": "Give the full form of UNESCO.",
+      "total_marks": 2,
+      "key_points": [
+        "United Nations Educational, Scientific, Cultural organization"
+      ],
+      "points_required": 1,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "UNESCO"
+        }
+      ],
+      "scheme_text": "UNESCO - United Nations Educational, Scientific, Cultural organization.",
+      "model_answer": "United Nations Educational, Scientific and Cultural Organization.",
+      "examiner_comment": "Most of the candidates answered well except for a few, who wrote Social instead of Scientific.",
+      "teacher_suggestion": "Give adequate practice, through quizzes and written tests, to the students to expand acronyms.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sa-q2-x",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_a",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Panchsheel Principles",
+      "period": "Non-Aligned Movement",
+      "question_number": "2(j)",
+      "question_text": "State any two principles of 'Panchsheel' in the Non-Aligned Movement.",
+      "total_marks": 2,
+      "key_points": [
+        "Mutual non-interference in each other's internal affairs",
+        "Mutual non-aggression",
+        "Equality for mutual benefit",
+        "Mutual respect for each other's territorial integrity and sovereignty",
+        "Peaceful co-existence"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Panchsheel"
+        }
+      ],
+      "scheme_text": "(i) Mutual non-interference in each other's internal affairs. (ii) Mutual non-aggression. (iii) Equality for mutual benefit. (iv) Mutual respect for each other's territorial integrity and sovereignty. (v) Peaceful co-existence.",
+      "model_answer": "(i) Mutual respect for each other's territorial integrity and sovereignty. (ii) Mutual non-aggression and non-interference in each other's internal affairs.",
+      "examiner_comment": "Some candidates were confused between the objectives of NAM and the principles of Panchsheel.",
+      "teacher_suggestion": "Elucidate the difference between Panchsheel and the objectives of Non-Aligned Movement.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q3-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Nomination to Parliament",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Parliament",
+        "process": "nomination"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Parliament, answer the following questions:",
+      "question_number": "3(a)",
+      "question_text": "How many members may be nominated to the Lok Sabha and the Rajya Sabha? Give one reason as to why they may be nominated to the Lok Sabha.",
+      "total_marks": 3,
+      "key_points": [
+        "Two to Lok Sabha from the Anglo-Indian community",
+        "Twelve to Rajya Sabha of those who have special knowledge and practical experience in the fields of literature, art, science/social service",
+        "Two from the Anglo-Indian Community if they are not adequately represented"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "2"
+        },
+        {
+          "type": "number",
+          "value": "12"
+        },
+        {
+          "type": "name",
+          "value": "Anglo-Indian community"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Two to Lok Sabha from the Anglo-Indian community, Twelve to Rajya Sabha of those who have special knowledge and practical experience in the fields of literature, art, science/social service. Two from the Anglo-Indian Community if they are not adequately represented.",
+      "model_answer": "Two members may be nominated to the Lok Sabha and twelve to the Rajya Sabha. The two Lok Sabha members are nominated from the Anglo-Indian community if it is not adequately represented in the House.",
+      "examiner_comment": "Most of the candidates were able to write the number of members who can be nominated to the Lok Sabha and the Rajya Sabha but were unable to give a reason for their nomination to the Lok Sabha.",
+      "teacher_suggestion": "Stress on the number of members nominated to the Lok Sabha and Rajya Sabha and the reasons for their nominations to both the houses.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q3-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Lok Sabha Membership Qualifications",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Lok Sabha",
+        "process": "election qualifications"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Parliament, answer the following questions:",
+      "question_number": "3(b)",
+      "question_text": "Mention any three qualifications required for a member to be elected to the Lok Sabha.",
+      "total_marks": 3,
+      "key_points": [
+        "A citizen of India",
+        "Must not be less than 25 years of age",
+        "Must not hold an office of profit",
+        "Should not be an insolvent. Unsound mind, criminal"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "25 years"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) A citizen of India. (ii) Must not be less than 25 years of age. (iii) Must not hold an office of profit. (iv) Should not be an insolvent. Unsound mind, criminal.",
+      "model_answer": "(i) Must be a citizen of India. (ii) Must not be less than 25 years of age. (iii) Must not hold any office of profit under the government.",
+      "examiner_comment": "This question was correctly answered by most candidates.",
+      "teacher_suggestion": "Explain to the students, in a tabular form, the differences in qualifications required for election to the Lok Sabha, Rajya Sabha and the President of India.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q3-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Sessions of the Union Parliament",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Parliament",
+        "process": "sessions"
+      },
+      "parent_question_number": "3",
+      "parent_question_text": "With reference to the Union Parliament, answer the following questions:",
+      "question_number": "3(c)",
+      "question_text": "What is meant by the term 'Session'? Name the three Sessions of the Union Parliament.",
+      "total_marks": 4,
+      "key_points": [
+        "Sessions: The President summons each house of Parliament when the members meet for deliberations",
+        "Normally there are three sessions in the year",
+        "Budget Session (February - May)",
+        "Monsoon Session (July - August)",
+        "Winter Session (November - December)"
+      ],
+      "points_required": 4,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Budget Session"
+        },
+        {
+          "type": "name",
+          "value": "Monsoon Session"
+        },
+        {
+          "type": "name",
+          "value": "Winter Session"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Sessions: The President summons each house of Parliament when the members meet for deliberations. Normally there are three sessions in the year. Budget Session (February - May). Monsoon Session (July - August). Winter Session (November - December).",
+      "model_answer": "A Session is the period during which the President summons each House of Parliament to meet for deliberations. The three sessions are the Budget Session (February–May), the Monsoon Session (July–August) and the Winter Session (November–December).",
+      "examiner_comment": "Majority of the candidates wrote the meaning of the term session correctly. However, a few candidates could not name the three sessions of the Union Parliament correctly.",
+      "teacher_suggestion": "Clarify students that although the Parliament should hold at least two sessions within a gap of six months, the Indian Parliament holds three sessions in a year.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q4-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Vice-President Qualifications",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Executive",
+        "process": "Vice-President election"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The President and the Vice-President are part of the Union Executive. In this context, answer the following questions:",
+      "question_number": "4(a)",
+      "question_text": "State any three qualifications required for a candidate to be elected as the Vice-President of India.",
+      "total_marks": 3,
+      "key_points": [
+        "Is a citizen of India",
+        "Is not less than 35 years of age",
+        "Is qualified for election as a member of the Rajya Sabha",
+        "Must not hold any office of profit either under Union Government or under State Government"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "35 years"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "A person is eligible for election as Vice-President if he: (i) is a citizen of India (ii) is not less than 35 years of age. (iii) is qualified for election as a member of the Rajya Sabha (iv) must not hold any office of profit either under Union Government or under State Government.",
+      "model_answer": "(i) Must be a citizen of India. (ii) Must not be less than 35 years of age. (iii) Must be qualified for election as a member of the Rajya Sabha.",
+      "examiner_comment": "Most of the candidates answered the question correctly. However, a few candidates, instead of writing the qualifications of the Vice-President wrote the qualifications required for membership of the Lok Sabha.",
+      "teacher_suggestion": "Explain the qualifications for the election of the Vice-President of India, his term of the office, functions and powers thoroughly to the students.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q4-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Functions of the Vice-President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Executive",
+        "process": "Vice-President functions"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The President and the Vice-President are part of the Union Executive. In this context, answer the following questions:",
+      "question_number": "4(b)",
+      "question_text": "State the three functions of the Vice-President.",
+      "total_marks": 3,
+      "key_points": [
+        "Chairman of the Rajya Sabha, acts as the Ex-Officio Chairman of the Rajya Sabha, he regulates debates and proceedings of the house",
+        "Decides the orders of speech admissibility of resolution or of question suspend or adjourn the house in case of grave disorder",
+        "Takes over the office of the President in case of the president's death, resignation or removal"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Rajya Sabha"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) Chairman of the Rajya Sabha, acts as the Ex-Officio Chairman of the Rajya Sabha, he regulates debates and proceedings of the house. (ii) Decides the orders of speech admissibility of resolution or of question suspend or adjourn the house in case of grave disorder. (iii) Takes over the office of the President in case of the president's death, resignation or removal.",
+      "model_answer": "(i) He is the ex-officio Chairman of the Rajya Sabha and regulates its debates and proceedings. (ii) He decides the order of speeches and the admissibility of resolutions and questions. (iii) He takes over as President on the President's death, resignation or removal.",
+      "examiner_comment": "Most candidates wrote the three functions of the Vice-President correctly.",
+      "teacher_suggestion": "Draw a flow chart to explain the executive powers and legislative powers of the President. Emphasize that the power of appointments is included in the executive powers while legislative powers include the law-making powers or powers concerning the Parliament.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q4-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Legislative and Executive Powers of the President",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Union Executive",
+        "process": "Presidential powers"
+      },
+      "parent_question_number": "4",
+      "parent_question_text": "The President and the Vice-President are part of the Union Executive. In this context, answer the following questions:",
+      "question_number": "4(c)",
+      "question_text": "Explain briefly any two Legislative and any two Executive powers of the President.",
+      "total_marks": 4,
+      "key_points": [
+        "Legislative power: Addresses Sessions of Parliament, Message to Parliament, summons and prorogue the house, dissolve the Lok Sabha",
+        "Legislative power: Nomination of Members (2 Lok Sabha, 12 Rajya Sabha)",
+        "Legislative power: Assent to Bills, Issue Ordinances, Assent to state bills, Formation of New States",
+        "Executive Powers: Head of the Union Administration, Appointment of officials of the State",
+        "Executive Powers: Appoints Prime Minister, Council of Ministers, Chief Justice and Judges of Supreme Court and the High Courts, Governors of the State, The Lt. Governors and the Chief Commissioners of the Union Territories, The Attorney General of India, The comptroller and Auditor General of India, The Chairman and Members of Planning Commissions and Economic Commission, Chief Election Commissioners",
+        "Executive Powers: Control over the state (President's rule) Administration of Union Territories and Border Areas"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "2 Lok Sabha"
+        },
+        {
+          "type": "number",
+          "value": "12 Rajya Sabha"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "Legislative power: Addresses Sessions of Parliament, Message to Parliament, summons and prorogue the house, dissolve the Lok Sabha, Nomination of Members (2 Lok Sabha, 12 Rajya Sabha). Assent to Bills, Issue Ordinances, Assent to state bills, Formation of New States. Executive Powers: Head of the Union Administration, Appointment of officials of the State - Appoints Prime Minister, Council of Ministers, Chief Justice and Judges of Supreme Court and the High Courts, Governors of the State, The Lt. Governors and the Chief Commissioners of the Union Territories, The Attorney General of India, The comptroller and Auditor General of India, The Chairman and Members of Planning Commissions and Economic Commission, Chief Election Commissioners, control over the state (President's rule) Administration of Union Territories and Border Areas.",
+      "model_answer": "Legislative powers: (i) He summons, prorogues and dissolves Parliament and addresses its sessions. (ii) He gives assent to Bills and can issue Ordinances when Parliament is not in session. Executive powers: (i) He is the head of the Union administration and appoints the Prime Minister and Council of Ministers. (ii) He appoints the Chief Justice and Judges of the Supreme Court and High Courts, State Governors and the Attorney-General.",
+      "examiner_comment": "A number of candidates muddled up the executive and the legislative powers of the President.",
+      "teacher_suggestion": "Draw a flow chart to explain the executive powers and legislative powers of the President. Emphasize that the power of appointments is included in the executive powers while legislative powers include the law-making powers or powers concerning the Parliament.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q5-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Original Jurisdiction of the Supreme Court",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Supreme Court",
+        "process": "Original Jurisdiction"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "Our Judicial system has a Supreme Court at its Apex, followed by the High Court and other subordinate Courts. In the light of this statement, explain the following:",
+      "question_number": "5(a)",
+      "question_text": "Any three types of cases in which the Supreme Court exercises its Original Jurisdiction.",
+      "total_marks": 3,
+      "key_points": [
+        "The Supreme Court has original jurisdiction in all disputes between the Union and States as well as between the states",
+        "Protection of Fundamental Rights",
+        "Final Interpretation of the Constitution",
+        "Transfer of cases from lower court",
+        "In a dispute between the union and state on one side and any other state on the other side"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [],
+      "analytical_criteria": null,
+      "scheme_text": "Original Jurisdiction: (i) The Supreme Court has original jurisdiction in all disputes between the Union and States as well as between the states. (ii) Protection of Fundamental Rights. (iii) Final Interpretation of the Constitution. (iv) Transfer of cases from lower court. (v) In a dispute between the union and state on one side and any other state on the other side.",
+      "model_answer": "(i) Disputes between the Union and one or more States. (ii) Disputes between two or more States. (iii) Matters involving the protection of Fundamental Rights and the final interpretation of the Constitution.",
+      "examiner_comment": "Most of the candidates answered this question correctly. However, a few candidates, instead of writing on the cases in which the Supreme Court exercises its Original Jurisdiction, wrote on cases which come under other jurisdictions of the Supreme Court.",
+      "teacher_suggestion": "Lay emphasis on the key words and explain their meaning with concrete examples. Stress on the word original while explaining Original Jurisdiction of the Supreme Court so that students are clear on the type of cases under it.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q5-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Independence of the Judiciary",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Judiciary",
+        "process": "independence"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "Our Judicial system has a Supreme Court at its Apex, followed by the High Court and other subordinate Courts. In the light of this statement, explain the following:",
+      "question_number": "5(b)",
+      "question_text": "Any three ways by which the Constitution ensures the Independence of the Judiciary.",
+      "total_marks": 3,
+      "key_points": [
+        "Appointment of Judges: Neither political bias nor personal favouritism would play any part in the appointment of Judges",
+        "Security of Tenure: A Judge can remain in office till he has attained the age of 65 years. He can be removed by the President on the ground of proven misbehaviour or incapacity",
+        "Salaries are charged on the Consolidated Fund of India: Judge's salaries and allowances shall not be varied to their disadvantage during their term of office",
+        "No discussion shall take place in Parliament with respect to the conduct of any Judge in the discharge of his duties",
+        "Genuine criticism of a Judgement is allowed, but nothing should be done to lower the authority or dignity of the Court",
+        "Prohibition of practice after Retirement: A retired judge of the Supreme Court cannot plead any case in any court or tribunal in India"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "65 years"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) Appointment of Judges: Neither political bias nor personal favouritism would play any part in the appointment of Judges. It has enhanced independence of the judiciary. (ii) Security of Tenure: A Judge can remain in office till he has attained the age of 65 years. He can be removed by the President on the ground of 'proven misbehaviour or incapacity'. It means that an Address can only be presented after an allegation has been thoroughly examined by some impartial tribunal. (iii) Salaries are charged on the Consolidated Fund of India: Judge's salaries and allowances shall not be varied to their disadvantage during their term of office. (iv) No discussion shall take place in Parliament with respect to the conduct of any Judge: in the discharge of his duties. (v) Genuine criticism of a Judgement is allowed, but nothing should be done to lower the authority or dignity of the Court. (vi) Prohibition of practice after Retirement: A retired judge of the Supreme Court cannot plead any case in any court or tribunal in India.",
+      "model_answer": "(i) Judges are appointed on merit, free of political bias or favouritism. (ii) Judges enjoy security of tenure and can be removed only for proven misbehaviour or incapacity. (iii) Their salaries are charged on the Consolidated Fund of India and cannot be varied to their disadvantage during their term.",
+      "examiner_comment": "Most of the candidates answered three ways by which the Constitution ensures the Independence of the Judiciary correctly.",
+      "teacher_suggestion": "Explain to the students how and why the independence of Supreme Court is essential for the functioning of democracy. To prove the independent status of the Supreme Court, give examples like security of tenure and appointment of judges.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q5-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "civics",
+      "domain": "civics",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Advisory and Revisory Jurisdiction",
+      "period": null,
+      "constitutional_reference": {
+        "article": null,
+        "body": "Supreme Court",
+        "process": "Advisory and Revisory Jurisdiction"
+      },
+      "parent_question_number": "5",
+      "parent_question_text": "Our Judicial system has a Supreme Court at its Apex, followed by the High Court and other subordinate Courts. In the light of this statement, explain the following:",
+      "question_number": "5(c)",
+      "question_text": "'Advisory' and 'Revisory' Jurisdiction of the Supreme Court.",
+      "total_marks": 4,
+      "key_points": [
+        "Advisory: The President may obtain the opinion/advice of the Supreme Court on a question of law or fact, which is of public importance. Questions must be specific and not general or vague",
+        "The Supreme Court may report its opinion, after such hearing as it thinks fit",
+        "The Supreme Court is not bound to express any opinion on the questions submitted to it",
+        "The advisory opinion of the Supreme Court is not binding on the President or on other courts, because it is not a 'judicial decision'",
+        "Revisory: The Supreme Court has power to review any judgement pronounced by it",
+        "This provision reflects that human judgement is fallible and the Court may rectify something that was misjudged",
+        "The Supreme Court cannot allow errors to continue indefinitely. It causes harm or damage to the general welfare of the public"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "The President may obtain the opinion / advice of the Supreme Court on a question of law or fact, which is of public importance. Questions must be specific and not general or vague. The Supreme Court may report its opinion, after such hearing as it thinks fit. First, the Supreme Court is not bound to express any opinion on the questions submitted to it. Second, the advisory opinion of the Supreme Court is not binding on the President or on other courts, because it is not a 'judicial decision'. The Supreme Court has power to review any judgement pronounced by it. This provision reflects that human judgement is fallible and the Court may rectify something that was misjudged. The Supreme Court cannot allow errors to continue indefinitely. It causes harm or damage to the general welfare of the public.",
+      "model_answer": "Advisory Jurisdiction: the President may seek the Supreme Court's opinion on a question of law or fact of public importance; the Court is not bound to give an opinion and its advice is not binding. Revisory Jurisdiction: the Supreme Court has the power to review any judgement it has pronounced, since human judgement is fallible and errors should not be allowed to continue.",
+      "examiner_comment": "Some candidates got confused between the Advisory and Revisory Jurisdiction of the Supreme Court.",
+      "teacher_suggestion": "Clarify to the students, the difference between the terms Revise and Review with reference to the powers of the Supreme Court.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q6-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Political Causes of the 1857 Revolt",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "Numerous causes gave rise to the First War of Independence and its consequences led to several changes in the British Government in India. In this context, answer the following:",
+      "question_number": "6(a)",
+      "question_text": "Explain any three political causes of the Revolt of 1857.",
+      "total_marks": 3,
+      "key_points": [
+        "Policy of expansion",
+        "Outright wars",
+        "Doctrine of lapse",
+        "Subsidiary alliance",
+        "Annexations",
+        "Discourtesy to the Mughal emperor",
+        "Treatment to Nana Sahib",
+        "Unpopular administration",
+        "Absentee Sovereignty"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Revolt of 1857"
+        },
+        {
+          "type": "name",
+          "value": "Doctrine of lapse"
+        },
+        {
+          "type": "name",
+          "value": "Nana Sahib"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Political Causes: Policy of expansion / Outright wars / Doctrine of lapse / Subsidiary alliance / Annexations / Discourtesy to the Mughal emperor / Treatment to Nana Sahib / Unpopular administration / Absentee Sovereignty.",
+      "model_answer": "(i) The British policy of expansion through the Doctrine of Lapse and Subsidiary Alliance annexed many Indian states. (ii) Discourtesy shown to the Mughal Emperor. (iii) The unpopular treatment of Nana Sahib and the generally unpopular administration.",
+      "examiner_comment": "Most of the candidates wrote three causes of the Revolt of 1857 correctly. However, a few mentioned other causes instead of political causes.",
+      "teacher_suggestion": "Train students to write on what the question asks for and to be specific in their answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q6-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Immediate Cause of the 1857 Revolt",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "Numerous causes gave rise to the First War of Independence and its consequences led to several changes in the British Government in India. In this context, answer the following:",
+      "question_number": "6(b)",
+      "question_text": "Briefly explain the immediate cause of the Great Revolt.",
+      "total_marks": 3,
+      "key_points": [
+        "Introduction of the Enfield Rifle",
+        "Greased the cartridge with animal fat and sepoys had to bite it off",
+        "Went against their religious sentiments"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Enfield Rifle"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": true,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Immediate cause: Introduction of the Enfield Rifle: Greased the cartridge with animal fat and sepoys had to bite it off. Went against their religious sentiments. (Narration / Explanation)",
+      "model_answer": "The immediate cause was the introduction of the Enfield rifle. Its cartridges were greased with animal fat and had to be bitten off by the sepoys, which offended the religious sentiments of both Hindu and Muslim soldiers and sparked the revolt.",
+      "examiner_comment": "Majority of the candidates explained the immediate cause of the Great Revolt correctly barring a few exceptions who explained the immediate causes of the First World War instead of the Great Revolt.",
+      "teacher_suggestion": "Instruct students to read and understand the question before attempting it.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q6-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Administrative Changes after 1857",
+      "period": "First War of Independence",
+      "constitutional_reference": null,
+      "parent_question_number": "6",
+      "parent_question_text": "Numerous causes gave rise to the First War of Independence and its consequences led to several changes in the British Government in India. In this context, answer the following:",
+      "question_number": "6(c)",
+      "question_text": "State any four changes in the administration of the British Government as a consequence of the Revolt.",
+      "total_marks": 4,
+      "key_points": [
+        "End of Company's rule and the power transferred to the Crown",
+        "Company's Board of Control and the Court of Directors were abolished",
+        "The Secretary of State to be assisted by the Indian Council of 15 members",
+        "Appointments to the Civil Service to be made by open competition under rules made by the Secretary of State",
+        "The Viceroy took over the administration of the British Government in India",
+        "Salary and allowance were to be found out of revenue of India",
+        "The Governor General received the additional title of Viceroy"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "15 members"
+        },
+        {
+          "type": "name",
+          "value": "Secretary of State"
+        },
+        {
+          "type": "name",
+          "value": "Viceroy"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "(i) End of Company's rule and the power transferred to the Crown. (ii) Company's Board of Control and the Court of Directors were abolished. (iii) The Secretary of State to be assisted by the Indian Council of 15 members. (iv) Appointments to the Civil Service to be made by open competition under rules made by the Secretary of State. (v) The Viceroy took over the administration of the British Government in India. (vi) Salary and allowance were to be found out of revenue of India. (vii) The Governor General received the additional title of Viceroy.",
+      "model_answer": "(i) The rule of the East India Company ended and power passed to the British Crown. (ii) The Company's Board of Control and Court of Directors were abolished. (iii) A Secretary of State for India, assisted by a 15-member Indian Council, was appointed. (iv) The Governor-General was given the additional title of Viceroy.",
+      "examiner_comment": "Majority of the candidates stated all the changes brought about by the British after the Revolt of 1857 rather than stating the administrative changes only as asked in the question.",
+      "teacher_suggestion": "Clarify to the students that the results of the Revolt of 1857 are different from the administrative changes. Thereby, all changes introduced by the British are not the part of administrative changes.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q7-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Causes of the Quit India Movement",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The Quit India Resolution in 1942 was one of the final calls given by Gandhi for the British to leave India. Moving towards Independence, Lord Mountbatten's Plan was significant. In this context, answer the following:",
+      "question_number": "7(a)",
+      "question_text": "State two reasons for the launching of the Quit India Movement.",
+      "total_marks": 3,
+      "key_points": [
+        "Failure of the Cripps mission",
+        "Japanese Threat",
+        "Worsening of Communal problem of new confidence that the people had attained",
+        "The movement hastened the British decision to quit India"
+      ],
+      "points_required": 2,
+      "points_selection": "any_2",
+      "factual_anchors": [
+        {
+          "type": "event",
+          "value": "Cripps mission"
+        },
+        {
+          "type": "date",
+          "value": "1942"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "(i) Failure of the Cripps mission. (ii) Japanese Threat. (iii) Worsening of Communal problem of new confidence that the people had attained. (iv) The movement hastened the British decision to quit India. (Any two points)",
+      "model_answer": "(i) The failure of the Cripps Mission. (ii) The threat of a Japanese invasion of India during the Second World War.",
+      "examiner_comment": "Several candidates, instead of stating the reasons for the launching of the Quit India Movement, wrote the reasons for launching the other movements like Civil Disobedience Movement and Non-Cooperation Movement.",
+      "teacher_suggestion": "Explain clearly to the students the causes and consequences of all the movements launched by Mahatma Gandhi.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q7-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Significance of the Quit India Movement",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The Quit India Resolution in 1942 was one of the final calls given by Gandhi for the British to leave India. Moving towards Independence, Lord Mountbatten's Plan was significant. In this context, answer the following:",
+      "question_number": "7(b)",
+      "question_text": "Give any three effects of the Quit India Movement launched by Gandhi in 1942 that was significant to the last phase of the National Movement of India.",
+      "total_marks": 3,
+      "key_points": [
+        "It demonstrated the depth of the nationalist feelings in India and the capacity of Indians for struggle of sacrifice",
+        "Undermined the strength of the British in India",
+        "It once again became a mass movement",
+        "The movement was symbolic"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "date",
+          "value": "1942"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "(i) It demonstrated the depth of the nationalist feelings in India and the capacity of Indians for struggle of sacrifice. (ii) Undermined the strength of the British in India. (iii) It once again became a mass movement. (iv) The movement was symbolic.",
+      "model_answer": "(i) It demonstrated the depth of nationalist feeling and the Indians' capacity for struggle and sacrifice. (ii) It undermined the strength of British rule in India. (iii) It once again turned the freedom struggle into a mass movement.",
+      "examiner_comment": "Most of the candidates were able to write the correct answer. Some candidates wrote only two effects and repeated the same points in different forms.",
+      "teacher_suggestion": "Elucidate to the students about the Cabinet Mission Plan, Mountbatten Plan and the Indian Independence Act.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q7-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Clauses of the Mountbatten Plan",
+      "period": "Gandhian Movements",
+      "constitutional_reference": null,
+      "parent_question_number": "7",
+      "parent_question_text": "The Quit India Resolution in 1942 was one of the final calls given by Gandhi for the British to leave India. Moving towards Independence, Lord Mountbatten's Plan was significant. In this context, answer the following:",
+      "question_number": "7(c)",
+      "question_text": "Give any four clauses of the Mountbatten Plan of 1947.",
+      "total_marks": 4,
+      "key_points": [
+        "Two new dominions",
+        "Provisions of Partition (Sindh, NWFP, Sylhet, Bengal and Punjab)",
+        "Governor General for each dominion",
+        "Constituent Assemblies to serve as central legislatives",
+        "End of British Parliament",
+        "Princely states",
+        "Treaties and Agreements",
+        "Division of the army and assets",
+        "Bringing the act into operation",
+        "Office of Secretary of state of interest of existing officers",
+        "Creation of a Boundary commission",
+        "Transfer of Power",
+        "Relations with commonwealth"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Mountbatten Plan"
+        },
+        {
+          "type": "date",
+          "value": "1947"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": false,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Mountbatten's Plan: (i) Two new dominions. (ii) Provisions of Partition (Sindh, NWFP, Sylhet, Bengal and Punjab). (iii) Governor General for each dominion. (iv) Constituent Assemblies to serve as central legislatives. (v) End of British Parliament. (vi) Princely states. (vii) Treaties and Agreements. (viii) Division of the army and assets. (ix) Bringing the act into operation. (x) Office of Secretary of state of interest of existing officers. (xi) Creation of a Boundary commission. (xii) Transfer of Power. (xiii) Relations with commonwealth.",
+      "model_answer": "(i) Two new Dominions (India and Pakistan) were to be created. (ii) Provinces such as Bengal and Punjab were to be partitioned. (iii) A Boundary Commission was to be set up. (iv) A separate Governor-General was provided for each Dominion.",
+      "examiner_comment": "Most of the candidates wrote the correct clauses of the Mountbatten Plan of 1947. A few candidates got confused between the Mountbatten Plan and the Indian Independence Act / the Cabinet Mission Plan.",
+      "teacher_suggestion": "Tell the students that the country was divided according to the Mountbatten Plan and finally British Parliament passed the Indian Independence Act which provided the basis for the creation of India and Pakistan.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q8-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Subhas Chandra Bose",
+      "period": "Forward Bloc and INA",
+      "constitutional_reference": null,
+      "stimulus": {
+        "type": "picture",
+        "description": "A picture of Subhas Chandra Bose in military uniform"
+      },
+      "parent_question_number": "8",
+      "parent_question_text": "Study the picture given below and answer the following questions:",
+      "question_number": "8(a)",
+      "question_text": "Identify the leader given in the picture. Name the Political party and the Military Organisation that he formed.",
+      "total_marks": 3,
+      "key_points": [
+        "Subhas Chandra Bose",
+        "Forward Bloc",
+        "Indian National Army"
+      ],
+      "points_required": 3,
+      "points_selection": "all",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Subhas Chandra Bose"
+        },
+        {
+          "type": "name",
+          "value": "Forward Bloc"
+        },
+        {
+          "type": "name",
+          "value": "Indian National Army"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Subhas Chandra Bose. Forward Bloc. Indian National Army.",
+      "model_answer": "The leader is Subhas Chandra Bose. Political party – the Forward Bloc; Military organisation – the Indian National Army (INA).",
+      "examiner_comment": "All the candidates were able to identify the leader given in the picture. They were also able to name the political party and the Military Organization founded by Subhas Chandra Bose.",
+      "teacher_suggestion": "Train students to identify the pictures of important leaders and teach them the contributions of these leaders in the freedom struggle.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q8-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Objectives of the Forward Bloc",
+      "period": "Forward Bloc and INA",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "Study the picture given below and answer the following questions:",
+      "question_number": "8(b)",
+      "question_text": "State any three objectives of the Political party that he founded.",
+      "total_marks": 3,
+      "key_points": [
+        "Reorganization of agriculture and industry on socialist lines",
+        "Abolition of the Zamindari system",
+        "Introduction of a new monetary and credit system",
+        "Liberation of India",
+        "Making Right to work as Fundamental",
+        "Providing workers several kinds of benefits"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Forward Bloc"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Forward Bloc Objectives: 1. Reorganization of agriculture and industry on socialist lines. 2. Abolition of the Zamindari system. 3. Introduction of a new monetary and credit system. 4. Liberation of India. 5. Making Right to work as Fundamental. 6. Providing workers several kinds of benefits.",
+      "model_answer": "(i) Reorganisation of agriculture and industry on socialist lines. (ii) Abolition of the Zamindari system. (iii) The complete liberation of India.",
+      "examiner_comment": "Majority of the candidates, instead of stating the objectives of the Forward Bloc, mentioned the objectives of the Indian National Army.",
+      "teacher_suggestion": "Clearly differentiate between the objectives of the Forward Bloc and the Indian National Army.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q8-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Objectives of the INA",
+      "period": "Forward Bloc and INA",
+      "constitutional_reference": null,
+      "parent_question_number": "8",
+      "parent_question_text": "Study the picture given below and answer the following questions:",
+      "question_number": "8(c)",
+      "question_text": "Mention any four objectives of the Military Organisation that he formed.",
+      "total_marks": 4,
+      "key_points": [
+        "To organize an armed resolution and to fight the British army with modern arms",
+        "To use the Indians living abroad in East Asia and then to confront the British",
+        "To organize a provisional government of free India",
+        "Total mobilization of Indian man-power and money for a total war",
+        "The motto of the INA was 'unity, faith, sacrifice'",
+        "To train people for armed struggle inside and outside the country",
+        "To throw the British out of the country"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Indian National Army"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "(i) To organize an armed resolution and to fight the British army with modern arms. (ii) To use the Indians living abroad in East Asia and then to confront the British. (iii) To organize a provisional government of free India. (iv) Total mobilization of Indian man-power and money for a total war. (v) The motto of the INA was 'unity, faith, sacrifice'. (vi) To train people for armed struggle inside and outside the country. (vii) To throw the British out of the country.",
+      "model_answer": "(i) To organise an armed struggle and fight the British army with modern arms. (ii) To mobilise Indians living abroad in East Asia against the British. (iii) To set up a Provisional Government of Free India. (iv) To throw the British out of the country.",
+      "examiner_comment": "Many candidates, instead of mentioning the objectives of the Indian National Army either mentioned the objectives of the Forward Bloc or a mix of the objectives of both Forward Bloc and the Indian National Army.",
+      "teacher_suggestion": "Emphasize on keywords and create mind maps and train the students also to make their own mind maps for better retention.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q9-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Causes of the First World War",
+      "period": "World War I",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Two Major World Wars in the 20th century, answer the following questions:",
+      "question_number": "9(a)",
+      "question_text": "Explain briefly the causes of World War I with reference to Nationalism and Imperialism.",
+      "total_marks": 3,
+      "key_points": [
+        "Aggressive nationalism - Military strength became the same with national prestige and every country began to increase her military power. e.g. Serbia, France and Italy",
+        "Imperialism was a system by which a powerful nation used to establish its control over another country / dispute over Morocco",
+        "England and France built up a huge colonial empire in Asia and Africa",
+        "Each nation thought about its national interest and did not care for the interest of other nations",
+        "France wanted to get back Alsace-Lorraine",
+        "Unsatisfied nation spirit of Balkans/discontent among Italians / Franco-Prussian war / Germany wanted to be the leader of the world"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "place",
+          "value": "Alsace-Lorraine"
+        },
+        {
+          "type": "place",
+          "value": "Morocco"
+        },
+        {
+          "type": "place",
+          "value": "Balkans"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": true
+      },
+      "scheme_text": "(i) Aggressive nationalism - Military strength became the same with national prestige and every country began to increase her military power. e.g. Serbia, France and Italy. (ii) Imperialism was a system by which a powerful nation used to establish its control over another country/ dispute over Morocco. (iii) England and France built up a huge colonial empire in Asia and Africa. (iv) Each nation thought about its national interest and did not care for the interest of other nations. (v) France wanted to get back Alsace-Lorraine. (vi) Unsatisfied nation spirit of Balkans/discontent among Italians/ Franco-Prussian war/Germany wanted to be the leader of the world.",
+      "model_answer": "Nationalism: aggressive nationalism made every nation equate military strength with prestige and race to build up its armed power (e.g. Serbia, France, Italy). Imperialism: powerful nations competed to control other countries and colonies (as in the disputes over Morocco), and England and France built vast empires in Asia and Africa.",
+      "examiner_comment": "Most of the candidates could not distinguish between Nationalism and Imperialism and hence were unable to write the correct answer. In many answer scripts there was overlapping of points. A few candidates mentioned the other causes of the First World War.",
+      "teacher_suggestion": "Point out to the students about the difference between Nationalism and Imperialism. Clarify to the students about the causes and results of the First World War and the Second World War in detail.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q9-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Results of the First World War",
+      "period": "World War I",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Two Major World Wars in the 20th century, answer the following questions:",
+      "question_number": "9(b)",
+      "question_text": "Explain briefly the territorial rearrangements as a result of World War I.",
+      "total_marks": 3,
+      "key_points": [
+        "Three ruling dynasties were destroyed - Romanov in Russia, Hohenzollern in Germany and Hapsburg in Austria-Hungary",
+        "Ottomans rule came to an end",
+        "Czechoslovakia and Yugoslavia emerged as independent states (Romani, Finland)",
+        "Alsace-Lorraine was restored to France",
+        "Schleswig-Holstein was given to Denmark",
+        "Austria-Hungry separated",
+        "USA emerged as World Power",
+        "Germany had to surrender the areas of Eupen and Malmedy to Belgium"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "Romanov"
+        },
+        {
+          "type": "name",
+          "value": "Hohenzollern"
+        },
+        {
+          "type": "name",
+          "value": "Hapsburg"
+        },
+        {
+          "type": "place",
+          "value": "Alsace-Lorraine"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Territorial rearrangement: (i) Three ruling dynasties were destroyed - Romanov in Russia, Hohenzollern in Germany and Hapsburg in Austria-Hungary. (ii) Ottomans rule came to an end. (iii) Czechoslovakia and Yugoslavia emerged as independent states (Romani, Finland). (iv) Alsace-Lorraine was restored to France. (v) Schleswig-Holstein was given to Denmark. (vi) Austria-Hungry separated. (vii) USA emerged as World Power. (viii) Germany had to surrender the areas of Eupen and Malmedy to Belgium.",
+      "model_answer": "(i) Three ruling dynasties fell – the Romanovs (Russia), Hohenzollerns (Germany) and Habsburgs (Austria-Hungary). (ii) New independent states such as Czechoslovakia and Yugoslavia emerged. (iii) Alsace-Lorraine was restored to France.",
+      "examiner_comment": "Majority of the candidates could not write the specific territorial rearrangements as a result of World War I. Some candidates wrote Treaty of Versailles also as a territorial rearrangement.",
+      "teacher_suggestion": "Stress upon that the Treaty of Versailles does not come under the territorial rearrangements.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q9-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Causes of the Second World War",
+      "period": "World War II",
+      "constitutional_reference": null,
+      "parent_question_number": "9",
+      "parent_question_text": "With reference to the Two Major World Wars in the 20th century, answer the following questions:",
+      "question_number": "9(c)",
+      "question_text": "State any four causes that led to the Second World War.",
+      "total_marks": 4,
+      "key_points": [
+        "Dissatisfaction with the Treaty of Versailles",
+        "Rise of Fascism and Nazism",
+        "Policy of Appeasement",
+        "Japanese invasion of China",
+        "Failure of League of Nations",
+        "Hitler's invasion of Poland",
+        "Arms race",
+        "Non-interference of USA in the world affairs"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "treaty",
+          "value": "Treaty of Versailles"
+        },
+        {
+          "type": "event",
+          "value": "Hitler's invasion of Poland"
+        },
+        {
+          "type": "name",
+          "value": "League of Nations"
+        }
+      ],
+      "analytical_criteria": {
+        "cause_effect_expected": true,
+        "chronological_accuracy": false,
+        "sequential_process": false,
+        "multiple_perspectives": false
+      },
+      "scheme_text": "Causes of the Second World war: (i) Dissatisfaction with the Treaty of Versailles. (ii) Rise of Fascism and Nazism. (iii) Policy of Appeasement. (iv) Japanese invasion of China. (v) Failure of League of Nations. (vi) Hitler's invasion of Poland. (vii) Arms race. (viii) Non-interference of USA in the world affairs.",
+      "model_answer": "(i) Dissatisfaction with the Treaty of Versailles. (ii) The rise of Fascism and Nazism. (iii) The policy of appeasement. (iv) Hitler's invasion of Poland.",
+      "examiner_comment": "Most of the candidates wrote the correct causes that led to the Second World War. A few candidates, however, mixed up the causes of the First and the Second World War.",
+      "teacher_suggestion": "Draw a flow chart to explain the causes of the two World Wars. Train students to write on what the question asks for and to be specific in their answers.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q10-i",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Functions of the International Court of Justice",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the United Nations and its Specialized Agencies, answer the following:",
+      "question_number": "10(a)",
+      "question_text": "Mention any three functions of the International Court of Justice.",
+      "total_marks": 3,
+      "key_points": [
+        "Advisory opinion on legal matters to the organs of special agencies of the UN",
+        "Decides disputes between member states when referred",
+        "Disputes concerning interpretation of international law",
+        "Compensation for breeding international law & treaty/agreements",
+        "Certification of International law",
+        "To suggest methods for peaceful settlement of disputes"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "International Court of Justice"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Three functions of the International Court of Justice: (i) Advisory opinion on legal matters to the organs of special agencies of the UN. (ii) Decides disputes between member states when referred. (iii) Disputes concerning interpretation of international law. (iv) Compensation for breeding international law & treaty/agreements. (v) Certification of International law. (vi) To suggest methods for peaceful settlement of disputes.",
+      "model_answer": "(i) Gives advisory opinions on legal matters to UN organs and specialised agencies. (ii) Decides disputes between member states referred to it. (iii) Settles disputes concerning the interpretation of international law.",
+      "examiner_comment": "Several candidates did not write three functions of the International Court of Justice correctly. They mixed-up the functions of the United Nations and the Security Council.",
+      "teacher_suggestion": "Explain to the students thoroughly the functions of the International Court of Justice.",
+      "difficulty_flag": "high"
+    },
+    {
+      "question_id": "hist-2018-sb-q10-ii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Composition of the General Assembly",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the United Nations and its Specialized Agencies, answer the following:",
+      "question_number": "10(b)",
+      "question_text": "State the composition of the General Assembly.",
+      "total_marks": 3,
+      "key_points": [
+        "All members of the United Nations are members of the General Assembly",
+        "Each state has five representatives in the General Assembly",
+        "Each state has only one vote",
+        "It is a kind of Parliament",
+        "At the starting of each session the assembly elects a new President, 21 vice Presidents. The Presidency rotates each year among five groups of state"
+      ],
+      "points_required": 3,
+      "points_selection": "any_3",
+      "factual_anchors": [
+        {
+          "type": "number",
+          "value": "five representatives"
+        },
+        {
+          "type": "number",
+          "value": "21 vice Presidents"
+        },
+        {
+          "type": "name",
+          "value": "General Assembly"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "1. All members of the United Nations are members of the General Assembly. 2. Each state has five representatives in the General Assembly. 3. Each state has only one vote. 4. It is a kind of Parliament. 5. At the starting of each session the assembly elects a new President, 21 vice Presidents. The Presidency rotates each year among five groups of state.",
+      "model_answer": "(i) All members of the United Nations are members of the General Assembly. (ii) Each state may have up to five representatives but has only one vote. (iii) At the start of each session it elects a President and 21 Vice-Presidents, the presidency rotating among five groups of states.",
+      "examiner_comment": "Majority of the candidates stated the composition of the General Assembly correctly. A few candidates, however, wrote the composition of the Security Council.",
+      "teacher_suggestion": "Teach the composition and functions of the organs of United Nations by drawing a flow chart.",
+      "difficulty_flag": null
+    },
+    {
+      "question_id": "hist-2018-sb-q10-iii",
+      "subject": "history_civics",
+      "year": 2018,
+      "section": "section_b",
+      "sub_section": "history",
+      "domain": "history",
+      "question_type": "subjective",
+      "evaluation_mode": "point_based",
+      "topic": "Functions of UNICEF and WHO",
+      "period": "United Nations",
+      "constitutional_reference": null,
+      "parent_question_number": "10",
+      "parent_question_text": "With reference to the United Nations and its Specialized Agencies, answer the following:",
+      "question_number": "10(c)",
+      "question_text": "State any two functions of the UNICEF and any two functions of WHO.",
+      "total_marks": 4,
+      "key_points": [
+        "UNICEF: To render assistance in providing protective food like milk, meat, fish and fats to the children. It takes care of interests of women and pregnant mothers",
+        "UNICEF: To provide funds for the training of health and sanitation workers nutritionist and creche workers",
+        "UNICEF: Universal Child Immunization against preventable diseases by 1990",
+        "UNICEF: To extend support to programmes such as suppression of traffic in women and children and prevention of crimes committed by children",
+        "UNICEF: To provide instant help to children and women when some disaster like earthquake happens or overtaken by an epidemic",
+        "UNICEF: To supply paper to publish textbooks",
+        "UNICEF: Technical supplies, equipment and other aids for medicines and pipes and pumps for bringing clean water to villages",
+        "WHO: Direct and coordinate health work on an international scale",
+        "WHO: Eradicate disease",
+        "WHO: Promote the provision of good health and living conditions of the people",
+        "WHO: To set international standards for food and medicines",
+        "WHO: To provide safe drinking water",
+        "WHO: Vaccination/immunization against six major diseases",
+        "WHO: It promotes research to cure and prevent disease",
+        "WHO: To organize conferences and seminars",
+        "WHO: It publishes magazines and bulletins"
+      ],
+      "points_required": 4,
+      "points_selection": "any_4",
+      "factual_anchors": [
+        {
+          "type": "name",
+          "value": "UNICEF"
+        },
+        {
+          "type": "name",
+          "value": "WHO"
+        }
+      ],
+      "analytical_criteria": null,
+      "scheme_text": "Functions of UNICEF: 1. To render assistance in providing protective food like milk, meat, fish and fats to the children. It takes care of interests of women and pregnant mothers. 2. To provide funds for the training of health and sanitation workers nutritionist and creche workers. 3. Universal Child Immunization against preventable diseases by 1990. 4. To extend support to programmes such as suppression of traffic in women and children and prevention of crimes committed by children. 5. To provide instant help to children and women when some disaster like earthquake happens or overtaken by an epidemic. 6. To supply paper to publish textbooks. 7. Technical supplies, equipment and other aids for medicines and pipes and pumps for bringing clean water to villages. Functions of WHO: 1. Direct and coordinate health work on an international scale. 2. Eradicate disease. 3. Promote the provision of good health and living conditions of the people. 4. To set international standards for food and medicines. 5. To provide safe drinking water. 6. Vaccination/immunization against six major diseases. 7. It promotes research to cure and prevent disease. 8. To organize conferences and seminars. 9. It publishes magazines and bulletins.",
+      "model_answer": "UNICEF: (i) provides protective food (milk, fish, fats) to children and cares for women and expectant mothers; (ii) runs universal child immunisation against preventable diseases. WHO: (i) directs and coordinates health work on an international scale; (ii) works to eradicate disease and sets international standards for food and medicines.",
+      "examiner_comment": "Most of the candidates stated the functions of the UNICEF and WHO correctly. However, some candidates, instead of writing the functions of UNICEF wrote the functions of UNESCO.",
+      "teacher_suggestion": "Ask students to make flash cards to retain all the functions of the major agencies of the U.N. Give sufficient written practice to the students that will help them to remember key words and formulate better answers.",
+      "difficulty_flag": null
+    }
+  ]
+}
