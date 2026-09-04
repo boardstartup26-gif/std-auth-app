@@ -16,12 +16,19 @@ interface EvaluateRequestBody {
   student_answer: string;
 }
 
+// Two import batches shaped MCQ options differently: chemistry/physics/
+// biology/geography store plain option strings (correct_answer is the full
+// matching string); history & civics / english literature store {key, text}
+// objects (correct_answer is just the key letter, e.g. "d"). Both shapes
+// have to be supported here.
+type McqOption = string | { key: string; text: string };
+
 interface QuestionRow {
   id: string;
   question_text: string;
   is_subjective: boolean;
   question_type: string | null;
-  options: string[] | null;
+  options: McqOption[] | null;
   correct_answer: string | null;
   diagram_required: boolean | null;
   diagram_url: string | null;
@@ -151,6 +158,18 @@ function matchObjectiveAnswer(
   }
 
   return userNorm === correctNorm;
+}
+
+// Resolves a raw MCQ answer (a full option string, or a bare key like "d")
+// to the human-readable option text for display. Falls through to the raw
+// value when options are plain strings, no options are on record, or the
+// key doesn't resolve — never blocks showing feedback to the student.
+function resolveOptionText(raw: string, options: McqOption[] | null): string {
+  if (!options) return raw;
+  const match = options.find(
+    (opt) => typeof opt !== "string" && opt.key.toLowerCase() === raw.trim().toLowerCase()
+  );
+  return match && typeof match !== "string" ? match.text : raw;
 }
 
 // ─── Token Accounting (atomic) ─────────────────────────────────────────────────
@@ -389,24 +408,29 @@ export async function POST(req: NextRequest) {
 
     const marksAwarded = isCorrect ? scheme.total_marks : 0;
 
+    // MCQ correct_answer is a bare key letter ("d") for history & civics /
+    // english literature questions — resolve it to the option's display
+    // text so the student sees the actual answer, not a lone letter.
+    const correctAnswerDisplay = resolveOptionText(question.correct_answer, question.options);
+
     const evaluation: EvaluationOutput = {
       marks_awarded: marksAwarded,
       total_marks: scheme.total_marks,
-      points_hit: isCorrect ? [question.correct_answer] : [],
-      points_missed: isCorrect ? [] : [question.correct_answer],
+      points_hit: isCorrect ? [correctAnswerDisplay] : [],
+      points_missed: isCorrect ? [] : [correctAnswerDisplay],
       conceptual_errors: [],
       icse_style_issues: [],
       unassessable_components: [],
-      model_answer: question.correct_answer,
+      model_answer: correctAnswerDisplay,
       model_answer_source: "verified",
       examiner_feedback: isCorrect
         ? "Correct."
-        : `Incorrect. The correct answer is: ${question.correct_answer}`,
+        : `Incorrect. The correct answer is: ${correctAnswerDisplay}`,
       improvement_tips: isCorrect
         ? []
-        : [`Revisit this exact question — the correct answer was "${question.correct_answer}".`],
+        : [`Revisit this exact question — the correct answer was "${correctAnswerDisplay}".`],
       is_objective: true,
-      correct_answer: question.correct_answer,
+      correct_answer: correctAnswerDisplay,
       is_correct: isCorrect,
       token_cost: tokenCost,
       tokens_remaining: tokensRemaining,

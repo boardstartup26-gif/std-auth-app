@@ -31,13 +31,19 @@ import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from 
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
+// Two import batches shaped MCQ options differently: chemistry/physics/
+// biology/geography store plain option strings; history & civics / english
+// literature store {key, text} objects (their correct_answer is the bare
+// key letter). Both shapes have to render and submit correctly.
+type McqOption = string | { key: string; text: string };
+
 interface Question {
   id: string;
   question_number: string;
   question_text: string;
   is_subjective: boolean;
   question_type: string | null;
-  options: string[] | null;
+  options: McqOption[] | null;
   paper: string;
   diagram_required: boolean | null;
   diagram_url: string | null;
@@ -82,6 +88,16 @@ const SUBJECTS = [
   { name: "History & Civics",    available: true },
   { name: "English Literature",  available: true },
 ];
+
+// The submitted value must match how correct_answer is stored for that
+// question: full option text for chemistry/physics/biology/geography, bare
+// key letter for history & civics/english literature.
+function mcqOptionValue(opt: McqOption): string {
+  return typeof opt === "string" ? opt : opt.key;
+}
+function mcqOptionLabel(opt: McqOption): string {
+  return typeof opt === "string" ? opt : opt.text;
+}
 
 const NON_OCR_LOADING_MESSAGES = [
   "Analyzing text structure…",
@@ -848,19 +864,23 @@ export default function EvaluatePage() {
                   <div className="flex flex-col gap-3">
                     <label className="text-xs font-medium text-muted-foreground">Select the correct option</label>
                     <div className="space-y-2">
-                      {selectedQuestion.options.map((opt, i) => (
+                      {selectedQuestion.options.map((opt, i) => {
+                        const value = mcqOptionValue(opt);
+                        const label = mcqOptionLabel(opt);
+                        return (
                         <label
                           key={i}
                           className={`flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${
-                            studentAnswer === opt
+                            studentAnswer === value
                               ? "border-accent bg-accent/10 text-accent"
                               : "border-border bg-card text-foreground/90 hover:bg-border/40"
                           }`}
                         >
-                          <input type="radio" name="mcq_answer" value={opt} checked={studentAnswer === opt} onChange={(e) => setStudentAnswer(e.target.value)} className="sr-only" />
-                          {opt}
+                          <input type="radio" name="mcq_answer" value={value} checked={studentAnswer === value} onChange={(e) => setStudentAnswer(e.target.value)} className="sr-only" />
+                          {label}
                         </label>
-                      ))}
+                        );
+                      })}
                     </div>
                   </div>
 
