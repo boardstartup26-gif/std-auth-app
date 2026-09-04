@@ -27,6 +27,16 @@ function withCookies(from: NextResponse, to: NextResponse) {
 // All routes that require an authenticated session.
 // Adding a new page? If it needs auth, add its prefix here — don't rely
 // on the page itself doing an auth check as the only protection.
+//
+// "/admin" is deliberately NOT in this list, and must not be added.
+//
+// Everything here redirects an unauthenticated visitor to /login, which
+// confirms the route exists — fine for /dashboard, wrong for /admin. The
+// admin routes instead return an ordinary 404 to anyone who isn't an admin
+// (see src/lib/analytics/admin.ts), so a prober cannot tell /admin apart from
+// a mistyped URL. Adding the prefix here would trade that away for nothing:
+// the server layout, the page and the aggregator each re-check the role, so
+// no unauthorised request gets data either way.
 const PROTECTED_PREFIXES = [
   "/dashboard",
   "/evaluate",

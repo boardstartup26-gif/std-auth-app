@@ -34,6 +34,17 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - `src/app/(protected)/*` — dashboard, evaluate, history, account pages (route group, requires auth per middleware). `src/app/(auth)/*` — login/signup/forgot-password. `src/app/api/*` — evaluate, usage (daily token count), feedback.
 - [src/lib/ui.ts](src/lib/ui.ts) — shared Tailwind class-string constants (buttons, cards, inputs, score-badge coloring) and [boardedge-design-system-v2.md](boardedge-design-system-v2.md) — the authoritative color-token spec (dark-navy/gold theme, semantic colors for points-hit/missed/conceptual-errors/etc). Check this doc before hand-picking colors for eval/history UI.
 
+### Telemetry & the admin dashboard
+
+- `src/lib/analytics/*` is the whole product-analytics pipeline, writing to `public.analytics_events` (created in [supabase/migrations/20260904120000_analytics_events_and_profiles.sql](supabase/migrations/20260904120000_analytics_events_and_profiles.sql)):
+  - [events.ts](src/lib/analytics/events.ts) — the event-name vocabulary and failure-stage enum, shared by browser, ingest route and aggregator. Add a new event here first; the ingest allowlist is built from it, so an event not in this file is silently dropped.
+  - [track.ts](src/lib/analytics/track.ts) — browser dispatcher (`sendBeacon`, fetch-keepalive fallback). Owns the anon/session ids and first-touch UTM/referrer capture.
+  - [server.ts](src/lib/analytics/server.ts) — server-side `recordServerEvent()`. Always call it inside `after()` so it never sits in front of a response.
+  - [aggregate.ts](src/lib/analytics/aggregate.ts) — dashboard aggregation. Pages through PostgREST 1000-row responses; a bare `.limit()` here silently truncates and every figure comes out wrong.
+  - [admin.ts](src/lib/analytics/admin.ts) — `requireAdmin()`, the only authorisation gate for `/admin`.
+- [src/app/api/track/route.ts](src/app/api/track/route.ts) is an unauthenticated write endpoint. It answers `204` to everything — accepted, dropped, rate-limited — so probing it reveals nothing, and `user_id` comes from the verified JWT, never the body.
+- `/admin` returns **404**, not 403, to non-admins, and is deliberately absent from `PROTECTED_PREFIXES` in [middleware.ts](middleware.ts) — a redirect to `/login` would confirm the route exists.
+
 ## Code style & conventions
 
 - Path alias `@/*` → `src/*` (see [tsconfig.json](tsconfig.json)).
@@ -59,6 +70,9 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - `createAdminClient()` usage — it bypasses RLS. Don't swap a `createClient()` (user-scoped) call for the admin client to "make something work" without confirming the RLS bypass is intended.
 - The Claude system/user prompt construction in `buildSystemPrompt()`/`buildUserMessage()` — rubric wording changes affect real student grades.
 - [boardedge-design-system-v2.md](boardedge-design-system-v2.md) semantic color mappings — treat as a locked spec, not a suggestion.
+- The three independent `requireAdmin()` calls guarding `/admin` (layout → page → `getDashboardMetrics`). They look redundant and are not: App Router layouts render in parallel with pages and don't re-run on every client navigation, and `aggregate.ts` reads through the service-role client, so its own check is the last thing standing between a missed guard elsewhere and the full telemetry dataset.
+- The RLS on `public.analytics_events` — INSERT open to clients, SELECT admin-only, no UPDATE/DELETE policy at all. Keep it append-only.
+- `public.profiles.role` has no client-facing write grant or policy on purpose, and `handle_new_user()` deliberately ignores `raw_user_meta_data` when setting it — that object is browser-supplied, so sourcing the role from it would let anyone self-promote at signup.
 
 ## Known gotchas
 
@@ -66,4 +80,6 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - **Dead file, intentionally excluded**: `src/app/(protected)/evaluate/page_scc.tsx` is excluded in `tsconfig.json`'s `exclude` list — it's a backup/scratch copy of the evaluate page, not in use. Don't "fix" type errors in it; it's meant to stay out of the build.
 - **Schema migrations**: [supabase/migrations/](supabase/migrations/) holds a baseline schema dump pulled from the linked Supabase project (`xjbyjaxuwcfzfssykkds`) via `supabase db pull`. Schema changes should now go through `supabase migration new <name>` (edit the generated SQL, then `supabase db push`) rather than editing the Supabase dashboard directly, so the migration history stays in sync with this repo.
 - Supabase env var lookups fall back through multiple names (`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` → `NEXT_PUBLIC_SUPABASE_ANON_KEY` → ...) in three separate places ([middleware.ts](middleware.ts), [server.ts](src/lib/supabase/server.ts), [client.ts](src/lib/supabase/client.ts)) — `.env.example` only documents the first pair; check `.env.local`'s actual keys (`SUPABASE_SERVICE_ROLE_KEY`, `ANTHROPIC_API_KEY` are also required, not in `.env.example`).
+- **No admin exists until one is promoted.** The analytics migration ships the promotion SQL commented out; until `public.profiles.role = 'admin'` is set for some account, `/admin` 404s for everyone and `analytics_events` reads return zero rows. That is the intended fail-closed state, not a bug.
+- **`react-hooks/set-state-in-effect` errors in `src/app/(protected)/evaluate/page.tsx` are pre-existing** (4 of them, from the cascading-dropdown effects). `npm run lint` is not clean on `main`; don't assume a new change caused them.
 - `boardedge-data/` holds raw/extracted past-paper source material (by subject) used by the one-off `scripts/*` importers — it's data, not app code; large PDF/JSON content here isn't meant to be read wholesale into context.

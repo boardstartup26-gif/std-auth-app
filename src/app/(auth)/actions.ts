@@ -1,7 +1,10 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { EVENTS } from "@/lib/analytics/events";
+import { recordServerEvent } from "@/lib/analytics/server";
 
 type AuthResult =
   | { ok: true }
@@ -28,11 +31,32 @@ export async function login(
 
   try {
     const supabase = await createClient();
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
-    if (error) return { ok: false, message: error.message };
+    if (error) {
+      // after() keeps telemetry off the critical path — the student's error
+      // message is already decided by this point.
+      after(() =>
+        recordServerEvent({
+          eventName: EVENTS.AUTH_FAILED,
+          properties: { action: "login", method: "password", reason: error.message },
+          path: "/login",
+        }),
+      );
+      return { ok: false, message: error.message };
+    }
+
+    const userId = data.user?.id ?? null;
+    after(() =>
+      recordServerEvent({
+        eventName: EVENTS.LOGIN_COMPLETED,
+        userId,
+        properties: { method: "password" },
+        path: "/login",
+      }),
+    );
   } catch (e) {
     return { ok: false, message: asMessage(e, "Login failed.") };
   }
@@ -66,7 +90,31 @@ export async function signup(
       },
     });
 
-    if (error) return { ok: false, message: error.message };
+    if (error) {
+      after(() =>
+        recordServerEvent({
+          eventName: EVENTS.AUTH_FAILED,
+          properties: { action: "signup", method: "password", reason: error.message },
+          path: "/signup",
+        }),
+      );
+      return { ok: false, message: error.message };
+    }
+
+    // Recorded whether or not a session came back: an account that exists but
+    // is awaiting email confirmation is still a conversion, and the
+    // `confirmation_pending` flag is what makes the gap between the two
+    // visible on the dashboard.
+    const newUserId = data.user?.id ?? null;
+    const confirmationPending = !data.session;
+    after(() =>
+      recordServerEvent({
+        eventName: EVENTS.SIGNUP_COMPLETED,
+        userId: newUserId,
+        properties: { method: "password", confirmation_pending: confirmationPending },
+        path: "/signup",
+      }),
+    );
 
     if (!data.session) {
       return {

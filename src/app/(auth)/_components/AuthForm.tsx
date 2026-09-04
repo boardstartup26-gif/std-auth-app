@@ -12,8 +12,17 @@ import {
   inputBase,
   sectionLabel,
 } from "@/lib/ui";
+import { EVENTS } from "@/lib/analytics/events";
+import { track } from "@/lib/analytics/track";
 
 type AuthResult = { ok: true } | { ok: false; message: string };
+
+/**
+ * Which side of the auth funnel this form is on. Only the signup flow emits
+ * SIGNUP_STARTED — firing it from the login page too would make the
+ * signup-intent → signup-completed step look far worse than it is.
+ */
+type AuthFlow = "login" | "signup";
 
 function SubmitButton({ label }: { label: string }) {
   const { pending } = useFormStatus();
@@ -24,8 +33,13 @@ function SubmitButton({ label }: { label: string }) {
   );
 }
 
-function GoogleButton() {
+function GoogleButton({ flow }: { flow: AuthFlow }) {
   const handleGoogleSignIn = async () => {
+    if (flow === "signup") {
+      // Beacon dispatch: the OAuth redirect tears this document down
+      // immediately after, and a plain fetch would be cancelled with it.
+      track(EVENTS.SIGNUP_STARTED, { method: "google" }, { beacon: true });
+    }
     const supabase = createBrowserClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
@@ -96,6 +110,9 @@ export function AuthForm({
 }) {
   const [state, formAction] = useActionState<AuthResult | null, FormData>(action, null);
   const inputClass = `${inputBase} h-11 w-full placeholder:text-muted-foreground`;
+  // The name fields are what distinguish the signup form from the login form;
+  // no caller has to pass the flow separately and get it out of step.
+  const flow: AuthFlow = nameFields ? "signup" : "login";
 
   return (
     <div className="flex min-h-dvh flex-col bg-background text-foreground md:flex-row">
@@ -110,7 +127,7 @@ export function AuthForm({
           <p className={sectionLabel}>BoardEdge</p>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
 
-          <div className="mt-8"><GoogleButton /></div>
+          <div className="mt-8"><GoogleButton flow={flow} /></div>
 
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
@@ -121,7 +138,16 @@ export function AuthForm({
             </div>
           </div>
 
-          <form action={formAction} className="space-y-5">
+          <form
+            action={formAction}
+            onSubmit={() => {
+              // Intent, not success. The matching SIGNUP_COMPLETED is recorded
+              // server-side in (auth)/actions.ts, so the gap between the two is
+              // exactly the drop-off this step is meant to expose.
+              if (flow === "signup") track(EVENTS.SIGNUP_STARTED, { method: "password" });
+            }}
+            className="space-y-5"
+          >
             {nameFields && (
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-2">

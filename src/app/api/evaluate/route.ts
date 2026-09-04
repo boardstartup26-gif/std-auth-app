@@ -1,10 +1,12 @@
-import { NextRequest, NextResponse } from "next/server";
+import { after, NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
+import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
+import { recordServerEvent } from "@/lib/analytics/server";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -224,9 +226,75 @@ async function refundTokens(
   }
 }
 
+// ─── Telemetry ────────────────────────────────────────────────────────────────
+//
+// Recorded here rather than in the browser because this is the only place that
+// knows what actually happened. A client can report that it *sent* an answer;
+// only the server knows whether Anthropic timed out, the JSON came back
+// malformed, or the row failed to persist — and a client that gave up mid-
+// request reports nothing at all.
+//
+// Every call is wrapped in after() so telemetry never sits in front of the
+// student's response.
+
+function trackEvaluationFailure(
+  stage: FailureStage,
+  properties: Record<string, unknown>,
+): void {
+  after(() =>
+    recordServerEvent({
+      eventName: EVENTS.EVALUATION_FAILED,
+      userId: (properties.user_id as string | null) ?? null,
+      properties: { ...properties, user_id: undefined, failure_stage: stage },
+      path: "/api/evaluate",
+    }),
+  );
+}
+
+/**
+ * Counts the user's lifetime submissions to derive `eval_index` — 1 for a
+ * first-ever evaluation, 2 for the second, and so on. That single number is
+ * what makes "did they come back and do another one" answerable, which is the
+ * activation question this whole funnel exists for.
+ *
+ * Runs after the response, so the row just written by persistSubmission is
+ * already counted.
+ */
+function trackEvaluationCompleted(
+  supabase: ReturnType<typeof createAdminClient>,
+  userId: string,
+  properties: Record<string, unknown>,
+): void {
+  after(async () => {
+    let evalIndex: number | null = null;
+    try {
+      const { count } = await supabase
+        .from("student_answers")
+        .select("id", { count: "exact", head: true })
+        .eq("user_id", userId);
+      evalIndex = count ?? null;
+    } catch {
+      // A missing index is worth less than a missing event — record anyway.
+    }
+
+    await recordServerEvent({
+      eventName: EVENTS.EVALUATION_COMPLETED,
+      userId,
+      properties: {
+        ...properties,
+        eval_index: evalIndex,
+        is_first_evaluation: evalIndex === 1,
+      },
+      path: "/api/evaluate",
+    });
+  });
+}
+
 // ─── Route Handler ────────────────────────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
+  const startedAt = Date.now();
+
   let body: EvaluateRequestBody;
   try {
     body = await req.json();
@@ -255,6 +323,13 @@ export async function POST(req: NextRequest) {
   // 5 marks) while leaving generous headroom.
   const MAX_ANSWER_CHARS = 12_000;
   if (student_answer.length > MAX_ANSWER_CHARS) {
+    // The one 400 a real student can trip. The others below only fire for
+    // hand-rolled clients, so instrumenting them would add noise, not signal.
+    trackEvaluationFailure(FAILURE_STAGES.BAD_REQUEST, {
+      subject, year, question_number,
+      reason: "answer_too_long",
+      answer_length: student_answer.length,
+    });
     return NextResponse.json(
       {
         error: "Answer is too long",
@@ -300,6 +375,9 @@ export async function POST(req: NextRequest) {
     .single();
 
   if (subjectError || !subjectRow) {
+    trackEvaluationFailure(FAILURE_STAGES.QUESTION_NOT_FOUND, {
+      user_id: userId, subject, year, paper, reason: "subject_not_found",
+    });
     return NextResponse.json({ error: `Subject not found: ${subject}` }, { status: 404 });
   }
 
@@ -318,6 +396,9 @@ export async function POST(req: NextRequest) {
     .single();
 
   if (questionError || !questionRow) {
+    trackEvaluationFailure(FAILURE_STAGES.QUESTION_NOT_FOUND, {
+      user_id: userId, subject, year, paper, question_number,
+    });
     return NextResponse.json(
       {
         error: "Question not found",
@@ -335,6 +416,10 @@ export async function POST(req: NextRequest) {
   // on an answer that was never gradeable. Mirrors diagramState() in
   // src/app/(protected)/evaluate/page.tsx; keep the two in step.
   if (question.diagram_source === "ocr_pending" || question.question_type === "diagram") {
+    trackEvaluationFailure(FAILURE_STAGES.UNGRADABLE_QUESTION, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id, reason: "diagram_drawing_required",
+    });
     return NextResponse.json(
       {
         error: "This question asks for a drawing, which can't be graded yet",
@@ -344,6 +429,10 @@ export async function POST(req: NextRequest) {
     );
   }
   if (question.diagram_required && !question.diagram_url && question.diagram_source !== "physical_map") {
+    trackEvaluationFailure(FAILURE_STAGES.UNGRADABLE_QUESTION, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id, reason: "figure_missing",
+    });
     return NextResponse.json(
       {
         error: "This question's figure isn't available yet",
@@ -362,6 +451,9 @@ export async function POST(req: NextRequest) {
     .single();
 
   if (schemeError || !schemeRow) {
+    trackEvaluationFailure(FAILURE_STAGES.SCHEME_NOT_FOUND, {
+      user_id: userId, subject, year, question_number, question_id: question.id,
+    });
     return NextResponse.json(
       { error: "Marking scheme not found for this question" },
       { status: 404 }
@@ -378,6 +470,10 @@ export async function POST(req: NextRequest) {
   // increment pattern that allowed concurrent requests to both pass the cap.
   const reservation = await reserveTokens(supabase, userId, today, tokenCost);
   if (!reservation.ok) {
+    trackEvaluationFailure(FAILURE_STAGES.QUOTA_EXCEEDED, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id, token_cost: tokenCost,
+    });
     return NextResponse.json(
       {
         error: `Not enough tokens. This question costs ${tokenCost} token${tokenCost > 1 ? "s" : ""}.`,
@@ -394,6 +490,9 @@ export async function POST(req: NextRequest) {
   if (!isSubjective) {
     if (!question.correct_answer) {
       await refundTokens(supabase, userId, today, tokenCost);
+      trackEvaluationFailure(FAILURE_STAGES.ANSWER_KEY_MISSING, {
+        user_id: userId, subject, year, question_number, question_id: question.id,
+      });
       return NextResponse.json(
         { error: "Answer key for this question hasn't been added yet. Try a different question." },
         { status: 404 }
@@ -448,11 +547,30 @@ export async function POST(req: NextRequest) {
       });
     } catch (err) {
       console.error("[BoardEdge] Persist error:", err);
+      trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
+        user_id: userId, subject, year, question_number,
+        question_id: question.id, is_subjective: false,
+      });
       return NextResponse.json(
         { error: "Evaluation succeeded but could not be saved. Please retry." },
         { status: 500 }
       );
     }
+
+    trackEvaluationCompleted(supabase, userId, {
+      subject,
+      year,
+      paper,
+      question_id: question.id,
+      question_number,
+      question_type: question.question_type,
+      is_subjective: false,
+      is_correct: isCorrect,
+      marks_awarded: marksAwarded,
+      total_marks: scheme.total_marks,
+      token_cost: tokenCost,
+      duration_ms: Date.now() - startedAt,
+    });
 
     return NextResponse.json(evaluation, { status: 200 });
   }
@@ -488,6 +606,15 @@ export async function POST(req: NextRequest) {
     await refundTokens(supabase, userId, today, tokenCost);
     console.error("[BoardEdge] Claude API error:", claudeError);
     const message = claudeError instanceof Error ? claudeError.message : "Unknown error";
+    trackEvaluationFailure(FAILURE_STAGES.ANTHROPIC_ERROR, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id,
+      // The message distinguishes a timeout from an overload from a 401 in
+      // the dashboard's error panel; it is our own provider's text, not a
+      // student's, so there is nothing sensitive in it.
+      reason: message.slice(0, 200),
+      duration_ms: Date.now() - startedAt,
+    });
     return NextResponse.json(
       { error: "Evaluation failed — Claude API error", detail: message },
       { status: 502 }
@@ -496,6 +623,11 @@ export async function POST(req: NextRequest) {
 
   // Parse + validate Claude's output
   let claudeEval: z.infer<typeof ClaudeEvalSchema>;
+  // Which of the two failure modes below actually fired. They look identical
+  // from the catch block but mean very different things: bad JSON is usually a
+  // truncated or prose-wrapped response, while a schema failure means the
+  // model answered in the wrong shape.
+  let parseFailureStage: FailureStage = FAILURE_STAGES.JSON_PARSE_ERROR;
   try {
     const cleaned = rawContent
       .replace(/^```json\s*/i, "")
@@ -505,12 +637,19 @@ export async function POST(req: NextRequest) {
     const parsedJson = JSON.parse(cleaned);
     const validated = ClaudeEvalSchema.safeParse(parsedJson);
     if (!validated.success) {
+      parseFailureStage = FAILURE_STAGES.SCHEMA_VALIDATION_ERROR;
       throw new Error(`Schema validation failed: ${validated.error.message}`);
     }
     claudeEval = validated.data;
   } catch (err) {
     await refundTokens(supabase, userId, today, tokenCost);
     console.error("[BoardEdge] Failed to parse/validate Claude output:", rawContent, err);
+    trackEvaluationFailure(parseFailureStage, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id,
+      raw_length: rawContent.length,
+      duration_ms: Date.now() - startedAt,
+    });
     return NextResponse.json(
       { error: "Evaluation failed — could not parse model response" },
       { status: 500 }
@@ -550,11 +689,33 @@ export async function POST(req: NextRequest) {
     });
   } catch (err) {
     console.error("[BoardEdge] Persist error:", err);
+    trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
+      user_id: userId, subject, year, question_number,
+      question_id: question.id, is_subjective: true,
+    });
     return NextResponse.json(
       { error: "Evaluation succeeded but could not be saved. Please retry." },
       { status: 500 }
     );
   }
+
+  trackEvaluationCompleted(supabase, userId, {
+    subject,
+    year,
+    paper,
+    question_id: question.id,
+    question_number,
+    question_type: question.question_type,
+    is_subjective: true,
+    marks_awarded: clampedMarks,
+    total_marks: scheme.total_marks,
+    // A clamp means the model returned a mark outside [0, total]. Rare, but
+    // worth being able to count without grepping logs.
+    marks_clamped: flaggedForReview,
+    model_answer_source: evaluation.model_answer_source,
+    token_cost: tokenCost,
+    duration_ms: Date.now() - startedAt,
+  });
 
   return NextResponse.json(evaluation, { status: 200 });
 }

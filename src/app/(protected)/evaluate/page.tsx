@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
@@ -28,6 +28,21 @@ import {
   tokenCountClass,
 } from "@/lib/ui";
 import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
+import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
+import { track } from "@/lib/analytics/track";
+
+// ─── Feedback issue tags ──────────────────────────────────────────
+// Fixed vocabulary, mirrored by the allowlist in /api/feedback. Free text still
+// goes in the comment box; these exist so the same complaint can be counted
+// across hundreds of submissions instead of read one at a time.
+const ISSUE_TAGS = [
+  { value: "wrong_marks",        label: "Wrong marks" },
+  { value: "wrong_model_answer", label: "Model answer wrong" },
+  { value: "missed_my_point",    label: "Missed my point" },
+  { value: "too_harsh",          label: "Too harsh" },
+  { value: "too_lenient",        label: "Too lenient" },
+  { value: "confusing_feedback", label: "Confusing" },
+] as const;
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -418,6 +433,7 @@ export default function EvaluatePage() {
   const questionOpenedAt = useRef<number | null>(null);
   const [evalRating,        setEvalRating]        = useState<"up" | "down" | null>(null);
   const [evalFeedbackText,  setEvalFeedbackText]  = useState("");
+  const [evalIssueTags,     setEvalIssueTags]     = useState<string[]>([]);
   const [evalFeedbackStatus, setEvalFeedbackStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
   const [zoomedFigure,      setZoomedFigure]      = useState<string | null>(null);
@@ -425,6 +441,82 @@ export default function EvaluatePage() {
   const [reportText,        setReportText]        = useState("");
   const [reportSent,        setReportSent]        = useState(false);
   const resultRef = useRef<HTMLDivElement>(null);
+
+  // ─── Abandonment tracking ───────────────────────────────────
+  //
+  // The interesting drop-off is not the one we can see — it is the student who
+  // opened a question, maybe typed a little, and left. That never reaches the
+  // server, so it has to be caught here, and in a ref rather than state: the
+  // pagehide and unmount handlers below run outside React's render cycle and
+  // would otherwise close over a stale snapshot.
+  const attemptRef = useRef<{
+    questionId: string;
+    questionNumber: string;
+    subject: string;
+    year: number | "";
+    openedAt: number;
+    typedChars: number;
+    startedTyping: boolean;
+    submitted: boolean;
+    reported: boolean;
+  } | null>(null);
+
+  const flushAbandonment = useCallback((reason: string) => {
+    const attempt = attemptRef.current;
+    if (!attempt || attempt.submitted || attempt.reported) return;
+    // Latched, so a page that both unmounts and fires pagehide reports once.
+    attempt.reported = true;
+
+    track(
+      EVENTS.EVALUATION_ABANDONED,
+      {
+        stage: attempt.startedTyping ? "answer_started" : "question_selected",
+        reason,
+        question_id: attempt.questionId,
+        question_number: attempt.questionNumber,
+        subject: attempt.subject,
+        year: attempt.year || null,
+        chars_typed: attempt.typedChars,
+        dwell_ms: Date.now() - attempt.openedAt,
+      },
+      // The document may be going away; only a beacon is guaranteed to leave.
+      { beacon: true },
+    );
+  }, []);
+
+  useEffect(() => {
+    // pagehide only — not visibilitychange. Switching tabs is not abandoning a
+    // question, and treating it as one would drown the real signal.
+    const onPageHide = () => flushAbandonment("page_hidden");
+    window.addEventListener("pagehide", onPageHide);
+    return () => {
+      window.removeEventListener("pagehide", onPageHide);
+      flushAbandonment("navigated_away");
+    };
+  }, [flushAbandonment]);
+
+  /**
+   * Every answer input routes through here so the first keystroke (or first
+   * option click) is recorded exactly once per question. "Selected a question"
+   * and "actually attempted it" are different funnel steps, and the gap between
+   * them is worth seeing.
+   */
+  const handleAnswerChange = useCallback((value: string) => {
+    setStudentAnswer(value);
+    const attempt = attemptRef.current;
+    if (!attempt) return;
+    attempt.typedChars = value.length;
+    if (!attempt.startedTyping && value.trim().length > 0) {
+      attempt.startedTyping = true;
+      track(EVENTS.ANSWER_TYPING_STARTED, {
+        question_id: attempt.questionId,
+        question_number: attempt.questionNumber,
+        subject: attempt.subject,
+        year: attempt.year || null,
+        time_to_first_input_ms: Date.now() - attempt.openedAt,
+      });
+    }
+  }, []);
 
   // ─── Auth ─────────────────────────────────────────────────────────────────
 
@@ -517,9 +609,34 @@ export default function EvaluatePage() {
     // carry over — and worse, "Thanks, we'll review" would still be showing
     // against a different figure.
     setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
+    // Moving to another question without submitting is itself a drop-off, and
+    // has to be reported before the ref is overwritten.
+    flushAbandonment("switched_question");
+
     if (q) {
       questionOpenedAt.current = Date.now();
-      supabase.from("events").insert({ event: "question_opened", meta: { question_id: q.id, subject, year } }).then(() => {});
+      attemptRef.current = {
+        questionId: q.id,
+        questionNumber: q.question_number,
+        subject,
+        year,
+        openedAt: Date.now(),
+        typedChars: 0,
+        startedTyping: false,
+        submitted: false,
+        reported: false,
+      };
+      track(EVENTS.QUESTION_SELECTED, {
+        question_id: q.id,
+        question_number: q.question_number,
+        subject,
+        year,
+        paper: q.paper,
+        question_type: q.question_type,
+        is_subjective: q.is_subjective,
+      });
+    } else {
+      attemptRef.current = null;
     }
   }, [questionNumber, questions]);
 
@@ -540,20 +657,26 @@ export default function EvaluatePage() {
 
     if (selectedQuestion) {
       const timeToSubmit = questionOpenedAt.current ? Date.now() - questionOpenedAt.current : null;
-      supabase.from("events").insert({
-        event: "answer_submitted",
-        meta: {
-          question_id: selectedQuestion.id, subject, year,
-          answer_length: studentAnswer.trim().length,
-          time_to_submit_ms: timeToSubmit,
-          is_subjective: selectedQuestion.is_subjective,
-        },
-      }).then(() => {});
+      // Closes the abandonment window for this question before any await, so a
+      // slow evaluation cannot be reported as a walk-away.
+      if (attemptRef.current) attemptRef.current.submitted = true;
+
+      track(EVENTS.ANSWER_SUBMITTED, {
+        question_id: selectedQuestion.id,
+        question_number: selectedQuestion.question_number,
+        subject,
+        year,
+        paper: selectedQuestion.paper,
+        question_type: selectedQuestion.question_type,
+        is_subjective: selectedQuestion.is_subjective,
+        answer_length: studentAnswer.trim().length,
+        time_to_submit_ms: timeToSubmit,
+      });
     }
 
     setEvaluating(true); setResult(null); setError(null);
     setLimitReached(false); setFeedbackText(""); setFeedbackSent(false);
-    setEvalRating(null); setEvalFeedbackText(""); setEvalFeedbackStatus("idle");
+    setEvalRating(null); setEvalFeedbackText(""); setEvalIssueTags([]); setEvalFeedbackStatus("idle");
 
     try {
       const res = await fetch("/api/evaluate", {
@@ -573,6 +696,16 @@ export default function EvaluatePage() {
         if (data.tokens_remaining !== undefined) setTokensRemaining(data.tokens_remaining);
       }
     } catch {
+      // The only failure the server cannot see for itself. Every other stage —
+      // quota, Anthropic, parse, persist — is recorded in /api/evaluate, where
+      // the actual cause is known; reporting those here too would double-count
+      // them in the error panel.
+      track(EVENTS.EVALUATION_FAILED, {
+        failure_stage: FAILURE_STAGES.NETWORK_ERROR,
+        question_id: selectedQuestion?.id ?? null,
+        subject,
+        year,
+      });
       setError("Network error. Check your connection.");
     } finally {
       setEvaluating(false);
@@ -610,7 +743,14 @@ export default function EvaluatePage() {
       const res = await fetch("/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: formattedMessage }),
+        // rating and tags travel as structured fields as well as inside the
+        // message, so they can be counted without parsing prose back out.
+        body: JSON.stringify({
+          message: formattedMessage,
+          rating: evalRating,
+          tags: evalIssueTags,
+          source: "evaluation_result",
+        }),
       });
       if (!res.ok) throw new Error();
       setEvalFeedbackStatus("success");
@@ -876,7 +1016,7 @@ export default function EvaluatePage() {
                               : "border-border bg-card text-foreground/90 hover:bg-border/40"
                           }`}
                         >
-                          <input type="radio" name="mcq_answer" value={value} checked={studentAnswer === value} onChange={(e) => setStudentAnswer(e.target.value)} className="sr-only" />
+                          <input type="radio" name="mcq_answer" value={value} checked={studentAnswer === value} onChange={(e) => handleAnswerChange(e.target.value)} className="sr-only" />
                           {label}
                         </label>
                         );
@@ -891,7 +1031,7 @@ export default function EvaluatePage() {
                     <div className="flex gap-3">
                       {["True", "False"].map((opt) => (
                         <button
-                          key={opt} type="button" onClick={() => setStudentAnswer(opt)}
+                          key={opt} type="button" onClick={() => handleAnswerChange(opt)}
                           className={`flex-1 rounded-xl border px-4 py-3 text-sm font-medium transition-colors ${
                             studentAnswer === opt ? "border-accent bg-accent/10 text-accent" : "border-border bg-card text-foreground/90 hover:bg-border/40"
                           }`}
@@ -911,7 +1051,7 @@ export default function EvaluatePage() {
                       {selectedQuestion.question_type === "match" ? "Enter your answer as: A-1, B-2, C-3, D-4" : "Enter your answer"}
                     </label>
                     <input
-                      type="text" value={studentAnswer} onChange={(e) => setStudentAnswer(e.target.value)}
+                      type="text" value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)}
                       placeholder={selectedQuestion.question_type === "match" ? "e.g. A-3, B-1, C-4, D-2" : "Type your answer…"}
                       className={`${inputBase} h-10 w-full px-3`}
                     />
@@ -922,7 +1062,7 @@ export default function EvaluatePage() {
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-medium text-muted-foreground">Write your answer</label>
                     <textarea
-                      value={studentAnswer} onChange={(e) => setStudentAnswer(e.target.value)} rows={8}
+                      value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)} rows={8}
                       disabled={!selectedQuestion.question_text?.trim()}
                       placeholder={selectedQuestion.question_text?.trim() ? "Write your detailed answer here…" : "Question text not available — evaluation unavailable until added."}
                       className={textareaClass}
@@ -1111,6 +1251,37 @@ export default function EvaluatePage() {
 
                       {evalRating && (
                         <div className="flex flex-col gap-3">
+                          {/* Only shown on a thumbs-down: asking a happy
+                              student to categorise what went wrong reads as an
+                              accusation that something did. */}
+                          {evalRating === "down" && (
+                            <div className="flex flex-wrap gap-2">
+                              {ISSUE_TAGS.map((tag) => {
+                                const active = evalIssueTags.includes(tag.value);
+                                return (
+                                  <button
+                                    key={tag.value}
+                                    type="button"
+                                    aria-pressed={active}
+                                    onClick={() =>
+                                      setEvalIssueTags((prev) =>
+                                        prev.includes(tag.value)
+                                          ? prev.filter((t) => t !== tag.value)
+                                          : [...prev, tag.value],
+                                      )
+                                    }
+                                    className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                                      active
+                                        ? "border-accent bg-accent/10 text-accent"
+                                        : "border-border bg-card text-muted-foreground hover:bg-border/40"
+                                    }`}
+                                  >
+                                    {tag.label}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          )}
                           <textarea
                             value={evalFeedbackText} onChange={(e) => setEvalFeedbackText(e.target.value)}
                             placeholder="What did the AI get right or wrong?"
