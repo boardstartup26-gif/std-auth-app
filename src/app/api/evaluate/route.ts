@@ -32,6 +32,12 @@ interface QuestionRow {
   question_type: string | null;
   options: McqOption[] | null;
   correct_answer: string | null;
+  // JSONB — populated only for the ~96 evaluation_mode='deterministic' MCQ
+  // rows (English Literature / History & Civics). Single string for a
+  // single correct option, array for a multi-accepted-answer MCQ (e.g. a
+  // picture-based question where either of two options earns the mark).
+  // Null everywhere else, in which case correct_answer is used instead.
+  correct_option: string | string[] | null;
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: "figure" | "physical_map" | "ocr_pending" | null;
@@ -131,7 +137,7 @@ function normaliseAnswer(raw: string): string {
     .replace(/\s+/g, " ");
 }
 
-function matchObjectiveAnswer(
+function matchesSingleAnswer(
   userAnswer: string,
   correctAnswer: string,
   questionType: string | null
@@ -162,6 +168,21 @@ function matchObjectiveAnswer(
   return userNorm === correctNorm;
 }
 
+// correctAnswer is an array only for the handful of multi-accepted-answer
+// MCQs (correct_option holds e.g. ["c", "d"]) — the student can still only
+// submit one option (single-select UI), so a match against any element
+// earns the mark.
+function matchObjectiveAnswer(
+  userAnswer: string,
+  correctAnswer: string | string[],
+  questionType: string | null
+): boolean {
+  if (Array.isArray(correctAnswer)) {
+    return correctAnswer.some((opt) => matchesSingleAnswer(userAnswer, opt, questionType));
+  }
+  return matchesSingleAnswer(userAnswer, correctAnswer, questionType);
+}
+
 // Resolves a raw MCQ answer (a full option string, or a bare key like "d")
 // to the human-readable option text for display. Falls through to the raw
 // value when options are plain strings, no options are on record, or the
@@ -172,6 +193,17 @@ function resolveOptionText(raw: string, options: McqOption[] | null): string {
     (opt) => typeof opt !== "string" && opt.key.toLowerCase() === raw.trim().toLowerCase()
   );
   return match && typeof match !== "string" ? match.text : raw;
+}
+
+// Array case: a multi-accepted-answer MCQ, displayed the same way the
+// import data itself joins alternatives (see correct_answer_text, e.g.
+// "adjourn the house for lack of discipline / disqualify the members
+// under Anti-defection law").
+function resolveAnswerDisplay(raw: string | string[], options: McqOption[] | null): string {
+  if (Array.isArray(raw)) {
+    return raw.map((r) => resolveOptionText(r, options)).join(" / ");
+  }
+  return resolveOptionText(raw, options);
 }
 
 // ─── Token Accounting (atomic) ─────────────────────────────────────────────────
@@ -387,7 +419,7 @@ export async function POST(req: NextRequest) {
   const { data: questionRow, error: questionError } = await supabase
     .from("questions")
     .select(
-      "id, question_text, is_subjective, question_type, options, correct_answer, diagram_required, diagram_url, diagram_source"
+      "id, question_text, is_subjective, question_type, options, correct_answer, correct_option, diagram_required, diagram_url, diagram_source"
     )
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
@@ -488,7 +520,13 @@ export async function POST(req: NextRequest) {
   // ─── OBJECTIVE PATH (no Claude call) ─────────────────────────────────────
 
   if (!isSubjective) {
-    if (!question.correct_answer) {
+    // correct_option (JSONB, string | string[]) is populated only for the
+    // deterministic MCQ rows and takes precedence there — it's what
+    // actually carries a multi-accepted-answer MCQ correctly; correct_answer
+    // is the long-standing fallback for every other objective question type.
+    const correctAnswerSource = question.correct_option ?? question.correct_answer;
+
+    if (!correctAnswerSource) {
       await refundTokens(supabase, userId, today, tokenCost);
       trackEvaluationFailure(FAILURE_STAGES.ANSWER_KEY_MISSING, {
         user_id: userId, subject, year, question_number, question_id: question.id,
@@ -501,16 +539,17 @@ export async function POST(req: NextRequest) {
 
     const isCorrect = matchObjectiveAnswer(
       student_answer,
-      question.correct_answer,
+      correctAnswerSource,
       question.question_type
     );
 
     const marksAwarded = isCorrect ? scheme.total_marks : 0;
 
-    // MCQ correct_answer is a bare key letter ("d") for history & civics /
-    // english literature questions — resolve it to the option's display
-    // text so the student sees the actual answer, not a lone letter.
-    const correctAnswerDisplay = resolveOptionText(question.correct_answer, question.options);
+    // MCQ correct_answer/correct_option is a bare key letter ("d"), or an
+    // array of them, for history & civics / english literature questions —
+    // resolve to the option's display text so the student sees the actual
+    // answer(s), not a lone letter.
+    const correctAnswerDisplay = resolveAnswerDisplay(correctAnswerSource, question.options);
 
     const evaluation: EvaluationOutput = {
       marks_awarded: marksAwarded,

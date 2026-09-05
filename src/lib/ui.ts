@@ -48,6 +48,31 @@ export const figTool =
 export const figCaption =
   "flex flex-wrap items-baseline gap-2 font-mono text-[9.5px] tracking-wide text-paper-ink-soft";
 
+// ─── Question context (extract/stimulus) ────────────────────────────────────
+// Renders above question_text inside the same paper sheet — the literary
+// extract, historical passage, or reference table a question refers to.
+// Pictures are NOT part of this: a History & Civics picture question is a
+// diagram like any other subject's and uses figPlate/figCaption above via
+// FigureSlot, not this block. Deliberately never touches --accent: this is
+// reference material to read, not something to act on, so it stays in the
+// same neutral paper tones as the sheet itself rather than the gold reserved
+// for CTAs.
+export const contextWrapper =
+  "flex flex-col gap-2.5 rounded-lg border border-paper-rule bg-paper-head/60 px-3.5 py-3";
+export const contextItem = "flex flex-col gap-1.5";
+export const contextMeta =
+  "m-0 font-mono text-[10px] font-semibold uppercase tracking-wide text-paper-ink-soft";
+export const contextItalic = "m-0 text-[13px] italic leading-relaxed text-paper-ink-soft";
+export const contextExtractText =
+  "m-0 whitespace-pre-line text-[14px] leading-relaxed text-paper-ink";
+export const contextBlockquote =
+  "m-0 border-l-2 border-paper-rule pl-3 text-[14px] italic leading-relaxed text-paper-ink";
+export const contextSource = "m-0 font-mono text-[9.5px] tracking-wide text-paper-ink-soft";
+export const contextTable =
+  "w-full border-collapse text-[12px] text-paper-ink " +
+  "[&_th]:border [&_th]:border-paper-rule [&_th]:bg-paper-head [&_th]:px-2 [&_th]:py-1 [&_th]:text-left [&_th]:font-semibold " +
+  "[&_td]:border [&_td]:border-paper-rule [&_td]:px-2 [&_td]:py-1";
+
 // Selector strip — four stacked dropdowns in a tall card cost more vertical
 // space than the figure they push off screen.
 export const selectorStrip =

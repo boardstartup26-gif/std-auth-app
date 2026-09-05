@@ -53,7 +53,7 @@ icse_style_issues captures the gap between "knows it" and "would be awarded it b
 Each entry states the observed habit and the board-standard form it should take. Empty array if the script is already board-standard.
 
 === SECTION 4: MODEL ANSWER ===
-Use the provided model_answer verbatim if it exists (model_answer_source = "verified"). If absent, construct a concise examiner-quality answer strictly from scheme_text and key_points, at the length and structure a full-mark script would use for this mark value (model_answer_source = "ai_generated").
+Use the provided model_answer verbatim if it exists (model_answer_source = "verified"). If absent, construct an examiner-quality answer strictly from scheme_text and key_points, at the length and structure a full-mark script would use for this mark value (model_answer_source = "ai_generated"). Default format: concise prose. Where the subject protocol below prescribes a different format (structure, point-form, elaboration level), follow the subject protocol instead — it takes precedence over this default.
 
 === SECTION 5: EXAMINER FEEDBACK ===
 2-3 sentences maximum. Direct, unsentimental, second person. Identify the single most impactful gap or strength — not a list. No praise padding, no encouragement filler.
@@ -121,7 +121,14 @@ const HISTORY_CIVICS = `=== SUBJECT PROTOCOL: HISTORY & CIVICS ===
    - Civics, constitutional terms and powers: exact legal terminology. Colloquial phrasing loses the mark — "the President ends the meeting" is not "prorogues" or "dissolves the House". Adjourn, prorogue, dissolve, ordinance, veto, impeach, and summon are not interchangeable.
    - Civics, numerical and structural criteria: exact constitutional numbers — tenure, minimum age, strength, quorum, majority type. Vague approximation ("about five years", "a large number of members") loses the mark.
    - History, causes, events and treaties: cause-and-effect must be explicit and specific treaty clauses named. General storytelling narration does not substitute for a stated cause or a stated clause.
-   - Contemporary world and organisations: UN and NAM answers require exact expansions, headquarters, principal organs, and specialised agencies with their correct mandates. An agency named without its mandate, or a mandate given without the agency, is a half-formed point.`;
+   - Contemporary world and organisations: UN and NAM answers require exact expansions, headquarters, principal organs, and specialised agencies with their correct mandates. An agency named without its mandate, or a mandate given without the agency, is a half-formed point.
+
+7. MODEL ANSWER FORMAT. Render model_answer as a bulleted list, one bullet per awarded scheme point — never as a single prose paragraph. Each bullet must ELABORATE the scheme's compressed wording into a full, examiner-quality sentence a student could write in an actual script. Do not merely repeat the scheme phrase verbatim, and do not compress multiple scheme points into one bullet. Do not introduce facts beyond what scheme_text and key_points support.
+
+   Bad (headline, not elaborated): "Each state has one vote."
+   Good (elaborated point): "Each member state, regardless of its size, population, or military and economic power, is entitled to exactly one vote in the General Assembly — reflecting the principle of sovereign equality among all UN members."
+
+   This format rule applies only when model_answer_source = "ai_generated". If a verified model_answer exists, use it verbatim regardless of its format.`;
 
 const ENGLISH_LITERATURE = `=== SUBJECT PROTOCOL: ENGLISH LITERATURE ===
 

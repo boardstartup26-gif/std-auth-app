@@ -40,7 +40,16 @@ config({ path: ".env.local" });
 const APPLY = process.argv.includes("--apply");
 const RESET = process.argv.includes("--reset");
 const BUCKET = "question-diagrams";
-const SUBJECTS = ["biology", "chemistry", "geography", "physics"];
+// folder under boardedge-data/ -> exact subjects.name. Only History & Civics
+// needs the mapping (its folder is "history", its DB name has a space and an
+// ampersand); every other subject's folder name already equals its DB name.
+const SUBJECT_FOLDERS = {
+  biology: "biology",
+  chemistry: "chemistry",
+  geography: "geography",
+  physics: "physics",
+  history: "history & civics",
+};
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -185,11 +194,11 @@ async function main() {
   const figureUpdates = new Map(); // question id -> url
   let files = 0, orphans = [];
 
-  for (const subject of SUBJECTS) {
-    const base = `boardedge-data/${subject}/diagram-screenshots`;
+  for (const [folder, subjectName] of Object.entries(SUBJECT_FOLDERS)) {
+    const base = `boardedge-data/${folder}/diagram-screenshots`;
     if (!existsSync(base)) continue;
-    const subjectId = idByName[subject];
-    if (!subjectId) { console.error(`  ✗ no subject row named "${subject}"`); continue; }
+    const subjectId = idByName[subjectName];
+    if (!subjectId) { console.error(`  ✗ no subject row named "${subjectName}"`); continue; }
 
     for (const year of readdirSync(base)) {
       for (const file of readdirSync(`${base}/${year}`)) {
@@ -199,9 +208,9 @@ async function main() {
         const hits = rows.filter(
           (r) => r.subject_id === subjectId && String(r.year) === year && covers(stem, segsQN(r.question_number))
         );
-        if (!hits.length) { orphans.push(`${subject}/${year}/${file}`); continue; }
+        if (!hits.length) { orphans.push(`${folder}/${year}/${file}`); continue; }
 
-        const storagePath = `${subject}/${year}/${file}`;
+        const storagePath = `${folder}/${year}/${file}`;
         if (APPLY) {
           const { error } = await supabase.storage
             .from(BUCKET)
