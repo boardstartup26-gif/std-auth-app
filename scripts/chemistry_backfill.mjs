@@ -121,6 +121,7 @@ async function backfillFile(jsonPath, subjectId) {
           options: entry.options ?? null,
           correct_answer: entry.correct_answer ?? null,
           topic: entry.topic ?? null,
+          chapter: entry.chapter ?? null,
           is_subjective: entry.is_subjective ?? false,
           diagram_required: entry.diagram_required ?? false,
         })

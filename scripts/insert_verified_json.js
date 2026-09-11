@@ -47,6 +47,7 @@ async function insertQuestion(subjectId, year, paper, questionNumber, questionTe
       question_number: questionNumber,
       question_text: questionText,
       topic_id: null,
+      chapter: null,
     })
     .select('id')
     .single();

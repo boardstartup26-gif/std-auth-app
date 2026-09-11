@@ -38,6 +38,13 @@ import {
 import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
 import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
+import {
+  ANSWER_FORMAT_LABELS,
+  DIAGRAM_FORMAT_DISABLED,
+  isSubjectiveGraded,
+  normalizeAnswerFormat,
+  type AnswerFormat,
+} from "@/lib/question-format";
 
 // ─── Feedback issue tags ──────────────────────────────────────────
 // Fixed vocabulary, mirrored by the allowlist in /api/feedback. Free text still
@@ -99,6 +106,8 @@ interface Question {
   question_type: string | null;
   options: McqOption[] | null;
   paper: string;
+  year: number;
+  chapter: string | null;
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: DiagramSource;
@@ -220,7 +229,7 @@ function QuestionDropdown({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const selected = questions.find((q) => q.question_number === value) ?? null;
+  const selected = questions.find((q) => q.id === value) ?? null;
 
   return (
     <div ref={ref} className="relative">
@@ -232,7 +241,7 @@ function QuestionDropdown({
       >
         <span className={`line-clamp-2 text-sm ${selected ? "text-foreground" : "text-muted-foreground"}`}>
           {selected
-            ? `Q${selected.question_number}${selected.question_text?.trim() ? ` — ${selected.question_text}` : ""}`
+            ? `${selected.year} P${selected.paper} · Q${selected.question_number}${selected.question_text?.trim() ? ` — ${selected.question_text}` : ""}`
             : questions.length
               ? "Select question"
               : "No questions available"}
@@ -249,12 +258,12 @@ function QuestionDropdown({
             <button
               key={q.id}
               type="button"
-              onClick={() => { onChange(q.question_number); setOpen(false); }}
+              onClick={() => { onChange(q.id); setOpen(false); }}
               className={`block w-full border-b border-border/60 px-3 py-2.5 text-left text-sm leading-relaxed transition-colors last:border-b-0 hover:bg-surface-raised ${
-                q.question_number === value ? "bg-accent-subtle text-accent" : "text-foreground/90"
+                q.id === value ? "bg-accent-subtle text-accent" : "text-foreground/90"
               }`}
             >
-              <span className={numericMono}>Q{q.question_number}</span>
+              <span className={numericMono}>{q.year} P{q.paper} · Q{q.question_number}</span>
               {q.question_text?.trim() ? ` — ${q.question_text}` : ""}
             </button>
           ))}
@@ -267,41 +276,13 @@ function QuestionDropdown({
 const selectClass   = `${inputBase} h-10 w-full`;
 const textareaClass = `${inputBase} w-full px-3 py-2.5 disabled:bg-card/50`;
 
-// Every question_type value that actually occurs in the data (per the
-// `questions_question_type_check` DB constraint) must map to exactly one
-// bucket here. Falling through to a shared default label was the bug: it
-// silently merged unrelated types (fill_in_blank, diagram, long_answer)
-// under one "Objective" label while keeping them as separate dropdown
-// values — producing duplicate-looking "Objective" entries and hiding
-// genuinely subjective long_answer questions inside them.
-const QUESTION_TYPE_LABELS: Record<string, string> = {
-  subjective: "Subjective (written)",
-  mcq: "MCQ",
-  true_false: "True / False",
-  fill_in_blank: "Fill in the blank",
-  match: "Match the following",
-  short_answer: "Short answer",
-  diagram: "Diagram / drawing",
-  objective: "Objective",
-};
-
-function questionTypeLabel(category: string): string {
-  return QUESTION_TYPE_LABELS[category] ?? category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-// Categorise strictly by question_type when it's set — is_subjective is only
-// a fallback for questions with no explicit type. Some "match the following"
-// / "name the following" style questions are mistakenly flagged
-// is_subjective: true in the source data; trusting is_subjective first would
-// lump them into the generic "Subjective (written)" bucket and lose their
-// real answer widget (match/fill-blank input instead of a free-text box).
-// long_answer is the one exception: it's always free-text and Claude-graded
-// exactly like "subjective", so it's merged into that bucket rather than
-// getting its own near-duplicate "Long answer" entry.
-function questionCategory(q: Question): string {
-  if (q.question_type === "long_answer") return "subjective";
-  return q.question_type ?? (q.is_subjective ? "subjective" : "objective");
-}
+// Sentinel bucket for questions with no chapter/subtopic value at that level
+// — coverage varies by subject as the chapter backfill (see
+// scripts/backfill_*.mjs and scripts/chapter-maps/) fills in over time.
+// Keeping it a distinct value (rather than "") lets it coexist with real
+// chapter/subtopic names in the same dropdown instead of colliding with the
+// "not selected" state.
+const OTHER_BUCKET = "__other__";
 
 // How a question's figure affects answering. Three of the four states are
 // answerable — only a question asking the student to DRAW is truly blocked,
@@ -553,14 +534,15 @@ export default function EvaluatePage() {
 
   const [authChecked,       setAuthChecked]       = useState(false);
   const [subject,           setSubject]           = useState("");
-  const [year,              setYear]              = useState<number | "">("");
-  const [questionType,      setQuestionType]      = useState<string>("");
-  const [questionNumber,    setQuestionNumber]    = useState("");
+  const [chapter,           setChapter]           = useState<string>("");
+  const [subtopic,          setSubtopic]          = useState<string>("");
+  const [answerFormat,      setAnswerFormat]      = useState<AnswerFormat | "">("");
+  const [yearFilter,        setYearFilter]        = useState<number | "">("");
+  const [questionSearch,    setQuestionSearch]    = useState("");
+  const [selectedQuestionId, setSelectedQuestionId] = useState("");
   const [selectedQuestion,  setSelectedQuestion]  = useState<Question | null>(null);
   const [studentAnswer,     setStudentAnswer]     = useState("");
-  const [years,             setYears]             = useState<number[]>([]);
   const [questions,         setQuestions]         = useState<Question[]>([]);
-  const [loadingYears,      setLoadingYears]      = useState(false);
   const [loadingQuestions,  setLoadingQuestions]  = useState(false);
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
@@ -592,7 +574,7 @@ export default function EvaluatePage() {
     questionId: string;
     questionNumber: string;
     subject: string;
-    year: number | "";
+    year: number;
     openedAt: number;
     typedChars: number;
     startedTyping: boolean;
@@ -688,38 +670,24 @@ export default function EvaluatePage() {
     fetchTokens();
   }, [authChecked]);
 
-  // ─── Cascading dropdowns ──────────────────────────────────────────────────
+  // ─── Cascading selection: Subject → Chapter/Topic → Answer Format → Question ─
+  //
+  // Year is no longer a manual pre-filter — all of a subject's questions
+  // (every year/paper) load in one query, and year/paper surface as metadata
+  // on each row in the Browse Questions list instead.
 
   useEffect(() => {
     if (!subject) {
-      setYears([]); setYear(""); setQuestions([]); setQuestionNumber(""); setSelectedQuestion(null);
-      return;
-    }
-    async function fetchYears() {
-      setLoadingYears(true);
-      setYear(""); setQuestionType(""); setQuestions([]); setQuestionNumber("");
-      setSelectedQuestion(null); setResult(null); setError(null);
-
-      const { data: subjectRow } = await supabase.from("subjects").select("id").eq("name", subject).single();
-      if (!subjectRow) { setLoadingYears(false); return; }
-
-      const { data } = await supabase
-        .from("questions").select("year").eq("subject_id", subjectRow.id).order("year", { ascending: false });
-
-      setYears([...new Set((data ?? []).map((r: { year: number }) => r.year))]);
-      setLoadingYears(false);
-    }
-    fetchYears();
-  }, [subject, supabase]);
-
-  useEffect(() => {
-    if (!subject || !year) {
-      setQuestions([]); setQuestionNumber(""); setSelectedQuestion(null);
+      setQuestions([]); setChapter(""); setSubtopic(""); setAnswerFormat("");
+      setYearFilter(""); setQuestionSearch("");
+      setSelectedQuestionId(""); setSelectedQuestion(null);
       return;
     }
     async function fetchQuestions() {
       setLoadingQuestions(true);
-      setQuestionType(""); setQuestionNumber(""); setSelectedQuestion(null); setResult(null); setError(null);
+      setChapter(""); setSubtopic(""); setAnswerFormat("");
+      setYearFilter(""); setQuestionSearch("");
+      setSelectedQuestionId(""); setSelectedQuestion(null); setResult(null); setError(null);
 
       const { data: subjectRow } = await supabase.from("subjects").select("id").eq("name", subject).single();
       if (!subjectRow) { setLoadingQuestions(false); return; }
@@ -728,20 +696,20 @@ export default function EvaluatePage() {
         .from("questions")
         // FIX: diagram_required was missing here — selectedQuestion.diagram_required
         // was always undefined, so the diagram-blocking UI never triggered.
-        .select("id, question_number, question_text, is_subjective, question_type, options, paper, diagram_required, diagram_url, diagram_source, topic, extract, stimulus, literary_work, table_data, question_marks(total_marks)")
+        .select("id, question_number, question_text, is_subjective, question_type, options, paper, year, chapter, diagram_required, diagram_url, diagram_source, topic, extract, stimulus, literary_work, table_data, question_marks(total_marks)")
         .eq("subject_id", subjectRow.id)
-        .eq("year", year)
+        .order("year", { ascending: false })
         .order("question_number", { ascending: true });
 
       setQuestions((data ?? []) as Question[]);
       setLoadingQuestions(false);
     }
     fetchQuestions();
-  }, [subject, year, supabase]);
+  }, [subject, supabase]);
 
   useEffect(() => {
-    if (!questionNumber) { setSelectedQuestion(null); return; }
-    const q = questions.find((q) => q.question_number === questionNumber) ?? null;
+    if (!selectedQuestionId) { setSelectedQuestion(null); return; }
+    const q = questions.find((q) => q.id === selectedQuestionId) ?? null;
     setSelectedQuestion(q);
     setStudentAnswer(""); setResult(null); setError(null);
     // Reset the figure-report form, or a report typed for one question would
@@ -758,7 +726,7 @@ export default function EvaluatePage() {
         questionId: q.id,
         questionNumber: q.question_number,
         subject,
-        year,
+        year: q.year,
         openedAt: Date.now(),
         typedChars: 0,
         startedTyping: false,
@@ -769,7 +737,7 @@ export default function EvaluatePage() {
         question_id: q.id,
         question_number: q.question_number,
         subject,
-        year,
+        year: q.year,
         paper: q.paper,
         question_type: q.question_type,
         is_subjective: q.is_subjective,
@@ -777,7 +745,7 @@ export default function EvaluatePage() {
     } else {
       attemptRef.current = null;
     }
-  }, [questionNumber, questions]);
+  }, [selectedQuestionId, questions]);
 
   // ─── Loading message rotation (non-OCR path only — no upload path exists yet) ─
 
@@ -792,26 +760,24 @@ export default function EvaluatePage() {
   // ─── Submit ───────────────────────────────────────────────────────────────
 
   async function handleSubmit() {
-    if (!subject || !year || !questionNumber || !studentAnswer.trim()) return;
+    if (!subject || !selectedQuestion || !studentAnswer.trim()) return;
 
-    if (selectedQuestion) {
-      const timeToSubmit = questionOpenedAt.current ? Date.now() - questionOpenedAt.current : null;
-      // Closes the abandonment window for this question before any await, so a
-      // slow evaluation cannot be reported as a walk-away.
-      if (attemptRef.current) attemptRef.current.submitted = true;
+    const timeToSubmit = questionOpenedAt.current ? Date.now() - questionOpenedAt.current : null;
+    // Closes the abandonment window for this question before any await, so a
+    // slow evaluation cannot be reported as a walk-away.
+    if (attemptRef.current) attemptRef.current.submitted = true;
 
-      track(EVENTS.ANSWER_SUBMITTED, {
-        question_id: selectedQuestion.id,
-        question_number: selectedQuestion.question_number,
-        subject,
-        year,
-        paper: selectedQuestion.paper,
-        question_type: selectedQuestion.question_type,
-        is_subjective: selectedQuestion.is_subjective,
-        answer_length: studentAnswer.trim().length,
-        time_to_submit_ms: timeToSubmit,
-      });
-    }
+    track(EVENTS.ANSWER_SUBMITTED, {
+      question_id: selectedQuestion.id,
+      question_number: selectedQuestion.question_number,
+      subject,
+      year: selectedQuestion.year,
+      paper: selectedQuestion.paper,
+      question_type: selectedQuestion.question_type,
+      is_subjective: selectedQuestion.is_subjective,
+      answer_length: studentAnswer.trim().length,
+      time_to_submit_ms: timeToSubmit,
+    });
 
     setEvaluating(true); setResult(null); setError(null);
     setLimitReached(false); setFeedbackText(""); setFeedbackSent(false);
@@ -821,7 +787,13 @@ export default function EvaluatePage() {
       const res = await fetch("/api/evaluate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question_number: questionNumber, year: Number(year), paper: selectedQuestion?.paper ?? "1", subject, student_answer: studentAnswer }),
+        body: JSON.stringify({
+          question_number: selectedQuestion.question_number,
+          year: selectedQuestion.year,
+          paper: selectedQuestion.paper,
+          subject,
+          student_answer: studentAnswer,
+        }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -841,9 +813,9 @@ export default function EvaluatePage() {
       // them in the error panel.
       track(EVENTS.EVALUATION_FAILED, {
         failure_stage: FAILURE_STAGES.NETWORK_ERROR,
-        question_id: selectedQuestion?.id ?? null,
+        question_id: selectedQuestion.id,
         subject,
-        year,
+        year: selectedQuestion.year,
       });
       setError("Network error. Check your connection.");
     } finally {
@@ -863,7 +835,7 @@ export default function EvaluatePage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          message: `[FIGURE REPORT] ${subject} ${year} Q${selectedQuestion.question_number} `
+          message: `[FIGURE REPORT] ${subject} ${selectedQuestion.year} Q${selectedQuestion.question_number} `
             + `(source=${selectedQuestion.diagram_source ?? "none"}, url=${selectedQuestion.diagram_url ?? "none"}): `
             + reportText.trim(),
         }),
@@ -898,34 +870,89 @@ export default function EvaluatePage() {
     }
   }
 
-  // ─── Derived state ────────────────────────────────────────────────────────
+  // ─── Derived state: Chapter → Subtopic → Answer Format → Browse Questions ──
+  //
+  // Chapter and Subtopic are always-visible independent dropdowns — each
+  // always includes an "Other" (OTHER_BUCKET) entry whenever at least one
+  // in-scope question lacks that field, rather than hiding the dropdown when
+  // nothing is backfilled yet. Coverage varies by subject (see the chapter
+  // backfill scripts under scripts/backfill_*.mjs and scripts/chapter-maps/).
 
-  const questionTypes: { value: string; label: string }[] = (() => {
+  const chapterOptions: { value: string; label: string }[] = (() => {
     if (!questions.length) return [];
     const seen = new Set<string>();
-    const types: { value: string; label: string }[] = [];
+    const opts: { value: string; label: string }[] = [];
     for (const q of questions) {
-      const key = questionCategory(q);
+      const key = q.chapter ?? OTHER_BUCKET;
       if (!seen.has(key)) {
         seen.add(key);
-        types.push({ value: key, label: questionTypeLabel(key) });
+        opts.push({ value: key, label: q.chapter ?? "Other" });
       }
     }
-    return types;
+    return opts.sort((a, b) => (a.value === OTHER_BUCKET ? 1 : b.value === OTHER_BUCKET ? -1 : a.label.localeCompare(b.label)));
   })();
 
-  const filteredQuestions = questionType
-    ? questions.filter((q) => questionCategory(q) === questionType)
+  const questionsInChapter = chapter
+    ? questions.filter((q) => (q.chapter ?? OTHER_BUCKET) === chapter)
     : [];
 
+  const subtopicOptions: { value: string; label: string }[] = (() => {
+    if (!questionsInChapter.length) return [];
+    const seen = new Set<string>();
+    const opts: { value: string; label: string }[] = [];
+    for (const q of questionsInChapter) {
+      const t = q.topic?.trim();
+      const key = t || OTHER_BUCKET;
+      if (!seen.has(key)) {
+        seen.add(key);
+        opts.push({ value: key, label: t || "Other" });
+      }
+    }
+    return opts.sort((a, b) => (a.value === OTHER_BUCKET ? 1 : b.value === OTHER_BUCKET ? -1 : a.label.localeCompare(b.label)));
+  })();
+
+  const questionsInSubtopic = subtopic
+    ? questionsInChapter.filter((q) => (q.topic?.trim() || OTHER_BUCKET) === subtopic)
+    : [];
+
+  const answerFormatOptions: { value: AnswerFormat; label: string; disabled: boolean }[] = (() => {
+    if (!questionsInSubtopic.length) return [];
+    const seen = new Set<AnswerFormat>();
+    const opts: { value: AnswerFormat; label: string; disabled: boolean }[] = [];
+    for (const q of questionsInSubtopic) {
+      const fmt = normalizeAnswerFormat(q);
+      if (!seen.has(fmt)) {
+        seen.add(fmt);
+        opts.push({ value: fmt, label: ANSWER_FORMAT_LABELS[fmt], disabled: fmt === "diagram" && DIAGRAM_FORMAT_DISABLED });
+      }
+    }
+    return opts;
+  })();
+
+  const filteredQuestions = answerFormat
+    ? questionsInSubtopic.filter((q) => normalizeAnswerFormat(q) === answerFormat)
+    : [];
+
+  // Year filter is optional (defaults to "all years") and question search is
+  // a "starts with" match on question_text — both are refinements over the
+  // already-filtered Browse Questions list, not funnel steps of their own.
+  const yearOptions = [...new Set(filteredQuestions.map((q) => q.year))].sort((a, b) => b - a);
+
+  const questionsForYear = yearFilter
+    ? filteredQuestions.filter((q) => q.year === yearFilter)
+    : filteredQuestions;
+
+  const searchedQuestions = questionSearch.trim()
+    ? questionsForYear.filter((q) =>
+        q.question_text?.trim().toLowerCase().startsWith(questionSearch.trim().toLowerCase()))
+    : questionsForYear;
+
   const tokenCost = selectedQuestion
-    ? (selectedQuestion.is_subjective || selectedQuestion.question_type === "short_answer"
-        ? TOKEN_COST_SUBJECTIVE
-        : TOKEN_COST_OBJECTIVE)
+    ? (isSubjectiveGraded(selectedQuestion) ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE)
     : 0;
   const canSubmit = Boolean(
-    subject && year && questionType && questionNumber && studentAnswer.trim() &&
-    !evaluating && !(selectedQuestion && isDiagramBlocked(selectedQuestion))
+    subject && selectedQuestion && studentAnswer.trim() &&
+    !evaluating && !isDiagramBlocked(selectedQuestion)
   );
 
   // ─── Auth gate ────────────────────────────────────────────────────────────
@@ -942,7 +969,7 @@ export default function EvaluatePage() {
       {zoomedFigure && selectedQuestion && (
         <FigureViewer
           src={zoomedFigure}
-          label={`Figure — ${subject} ${year} Q${selectedQuestion.question_number}`}
+          label={`Figure — ${subject} ${selectedQuestion.year} Q${selectedQuestion.question_number}`}
           onClose={() => setZoomedFigure(null)}
         />
       )}
@@ -956,9 +983,12 @@ export default function EvaluatePage() {
         <Link href="/dashboard" className={backLink}>← Dashboard</Link>
       </div>
 
-      {/* Selector strip. Four stacked dropdowns in a tall left card cost more
-          vertical space than the figure they pushed off screen, so they
-          collapse to one horizontal row above the sheet. */}
+      {/* Selector strip: Subject → Chapter → Topic → Answer Format → Question.
+          Chapter and Topic skip rendering entirely when nothing in scope
+          carries a real value yet — the flow degrades to a flat list rather
+          than forcing a dead "Other" click. Stacked dropdowns in a tall left
+          card cost more vertical space than the figure they pushed off
+          screen, so they collapse to one horizontal row above the sheet. */}
       <div className={`${selectorStrip} mb-4`}>
         <div className="flex min-w-0 flex-col gap-1">
           <span className={selectorLabel}>Subject</span>
@@ -972,47 +1002,111 @@ export default function EvaluatePage() {
           </select>
         </div>
 
-        <div className="flex min-w-0 flex-col gap-1">
-          <span className={selectorLabel}>Year</span>
-          <select
-            value={year}
-            onChange={(e) => {
-              setYear(e.target.value ? Number(e.target.value) : "");
-              setQuestionType(""); setQuestionNumber(""); setSelectedQuestion(null);
-            }}
-            disabled={!subject || loadingYears}
-            className={selectClass}
-          >
-            <option value="">{loadingYears ? "Loading…" : "Year"}</option>
-            {years.map((y) => (
-              <option key={y} value={y} className={numericMono}>{y}</option>
-            ))}
-          </select>
-        </div>
+        {subject && (
+          <div className="flex min-w-0 flex-col gap-1">
+            <span className={selectorLabel}>Chapter</span>
+            <select
+              value={chapter}
+              onChange={(e) => {
+                setChapter(e.target.value);
+                setSubtopic(""); setAnswerFormat("");
+                setYearFilter(""); setQuestionSearch("");
+                setSelectedQuestionId(""); setSelectedQuestion(null);
+              }}
+              disabled={loadingQuestions || !chapterOptions.length}
+              className={selectClass}
+            >
+              <option value="">{loadingQuestions ? "Loading…" : "Chapter"}</option>
+              {chapterOptions.map((c) => (
+                <option key={c.value} value={c.value}>{c.label}</option>
+              ))}
+            </select>
+          </div>
+        )}
 
-        <div className="flex min-w-0 flex-col gap-1">
-          <span className={selectorLabel}>Type</span>
-          <select
-            value={questionType}
-            onChange={(e) => { setQuestionType(e.target.value); setQuestionNumber(""); setSelectedQuestion(null); }}
-            disabled={!year || loadingQuestions || !questionTypes.length}
-            className={selectClass}
-          >
-            <option value="">{loadingQuestions ? "Loading…" : !year ? "Year first" : "Type"}</option>
-            {questionTypes.map((t) => (
-              <option key={t.value} value={t.value}>{t.label}</option>
-            ))}
-          </select>
-        </div>
+        {chapter && (
+          <div className="flex min-w-0 flex-col gap-1">
+            <span className={selectorLabel}>Subtopic</span>
+            <select
+              value={subtopic}
+              onChange={(e) => {
+                setSubtopic(e.target.value);
+                setAnswerFormat("");
+                setYearFilter(""); setQuestionSearch("");
+                setSelectedQuestionId(""); setSelectedQuestion(null);
+              }}
+              disabled={!subtopicOptions.length}
+              className={selectClass}
+            >
+              <option value="">Subtopic</option>
+              {subtopicOptions.map((t) => (
+                <option key={t.value} value={t.value}>{t.label}</option>
+              ))}
+            </select>
+          </div>
+        )}
 
-        {questionType && (
-          <div className="flex min-w-[180px] flex-1 flex-col gap-1">
+        {subtopic && (
+          <div className="flex min-w-0 flex-col gap-1">
+            <span className={selectorLabel}>Answer format</span>
+            <select
+              value={answerFormat}
+              onChange={(e) => {
+                setAnswerFormat(e.target.value as AnswerFormat);
+                setYearFilter(""); setQuestionSearch("");
+                setSelectedQuestionId(""); setSelectedQuestion(null);
+              }}
+              disabled={!answerFormatOptions.length}
+              className={selectClass}
+            >
+              <option value="">{answerFormatOptions.length ? "Format" : "No questions"}</option>
+              {answerFormatOptions.map((f) => (
+                <option key={f.value} value={f.value} disabled={f.disabled}>
+                  {f.label}{f.disabled ? " — Coming soon" : ""}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {answerFormat && (
+          <div className="flex min-w-0 flex-col gap-1">
+            <span className={selectorLabel}>Year</span>
+            <select
+              value={yearFilter}
+              onChange={(e) => {
+                setYearFilter(e.target.value ? Number(e.target.value) : "");
+                setSelectedQuestionId(""); setSelectedQuestion(null);
+              }}
+              disabled={!yearOptions.length}
+              className={selectClass}
+            >
+              <option value="">All years</option>
+              {yearOptions.map((y) => (
+                <option key={y} value={y} className={numericMono}>{y}</option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {answerFormat && (
+          <div className="flex min-w-[220px] flex-1 flex-col gap-1">
             <span className={selectorLabel}>Question</span>
+            <input
+              type="text"
+              value={questionSearch}
+              onChange={(e) => {
+                setQuestionSearch(e.target.value);
+                setSelectedQuestionId(""); setSelectedQuestion(null);
+              }}
+              placeholder="Search question text…"
+              className={`${inputBase} h-10 w-full px-3 text-sm`}
+            />
             <QuestionDropdown
-              questions={filteredQuestions}
-              value={questionNumber}
-              onChange={setQuestionNumber}
-              disabled={!filteredQuestions.length}
+              questions={searchedQuestions}
+              value={selectedQuestionId}
+              onChange={setSelectedQuestionId}
+              disabled={!searchedQuestions.length}
             />
           </div>
         )}
@@ -1020,7 +1114,7 @@ export default function EvaluatePage() {
 
       {!selectedQuestion && (
         <div className={`${cardPadded} text-sm leading-relaxed text-muted-foreground`}>
-          Pick a subject, year, type and question above to begin.
+          Pick a subject, chapter, subtopic, answer format and question above to begin.
         </div>
       )}
 
@@ -1078,7 +1172,7 @@ export default function EvaluatePage() {
                 </span>
               )}
               <span className="ml-auto">
-                ICSE {subject} · {year}
+                ICSE {subject} · {selectedQuestion.year}
               </span>
             </div>
 

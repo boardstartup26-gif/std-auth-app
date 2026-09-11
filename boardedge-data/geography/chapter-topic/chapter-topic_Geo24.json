@@ -1,0 +1,507 @@
+[
+  {
+    "question_number": "1(i)(a)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(i)(b)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(ii)(a)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(ii)(b)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(iii)(a)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(iii)(b)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(iv)(a)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(iv)(b)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "1(v)",
+    "chapter": "Interpretation of Topographical Maps",
+    "topic": "Interpretation of Topographical Maps"
+  },
+  {
+    "question_number": "2(i)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(ii)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(iii)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(iv)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(v)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(vi)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(vii)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(viii)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(ix)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "2(x)",
+    "chapter": "Map Marking",
+    "topic": "Map Marking"
+  },
+  {
+    "question_number": "3(i)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "3(ii)",
+    "chapter": "Soil Resources",
+    "topic": "Soil Conservation"
+  },
+  {
+    "question_number": "3(iii)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "3(iv)",
+    "chapter": "Natural Vegetation",
+    "topic": "Types of Vegetation"
+  },
+  {
+    "question_number": "3(v)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "3(vi)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "3(vii)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "3(viii)",
+    "chapter": "Agriculture",
+    "topic": "Types of farming in India"
+  },
+  {
+    "question_number": "3(ix)",
+    "chapter": "Transport",
+    "topic": "Airways"
+  },
+  {
+    "question_number": "3(x)",
+    "chapter": "Waste Management",
+    "topic": "Methods of safe disposal"
+  },
+  {
+    "question_number": "4(i)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(ii)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iii)(a)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iii)(b)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iii)(c)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iv)(a)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iv)(b)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "4(iv)(c)",
+    "chapter": "Climate",
+    "topic": "Climate"
+  },
+  {
+    "question_number": "5(i)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(ii)(a)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(ii)(b)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(iii)(a)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(iii)(b)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(iii)(c)",
+    "chapter": "Soil Resources",
+    "topic": "Types of Soil"
+  },
+  {
+    "question_number": "5(iv)(a)",
+    "chapter": "Soil Resources",
+    "topic": "Soil Erosion"
+  },
+  {
+    "question_number": "5(iv)(b)",
+    "chapter": "Soil Resources",
+    "topic": "Soil Conservation"
+  },
+  {
+    "question_number": "6(i)",
+    "chapter": "Natural Vegetation",
+    "topic": "Importance of Forests"
+  },
+  {
+    "question_number": "6(ii)",
+    "chapter": "Natural Vegetation",
+    "topic": "Types of Vegetation"
+  },
+  {
+    "question_number": "6(iii)(a)",
+    "chapter": "Natural Vegetation",
+    "topic": "Types of Vegetation"
+  },
+  {
+    "question_number": "6(iii)(b)",
+    "chapter": "Natural Vegetation",
+    "topic": "Types of Vegetation"
+  },
+  {
+    "question_number": "6(iii)(c)",
+    "chapter": "Natural Vegetation",
+    "topic": "Types of Vegetation"
+  },
+  {
+    "question_number": "6(iv)(a)",
+    "chapter": "Natural Vegetation",
+    "topic": "Forest Conservation"
+  },
+  {
+    "question_number": "6(iv)(b)",
+    "chapter": "Natural Vegetation",
+    "topic": "Forest Conservation"
+  },
+  {
+    "question_number": "7(i)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(ii)(a)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(ii)(b)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(iii)(a)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(iii)(b)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(iii)(c)",
+    "chapter": "Water Resources",
+    "topic": "Irrigation"
+  },
+  {
+    "question_number": "7(iv)(a)",
+    "chapter": "Water Resources",
+    "topic": "Rainwater Harvesting & its importance"
+  },
+  {
+    "question_number": "7(iv)(b)",
+    "chapter": "Water Resources",
+    "topic": "Rainwater Harvesting & its importance"
+  },
+  {
+    "question_number": "7(iv)(c)",
+    "chapter": "Water Resources",
+    "topic": "Need for Conservation"
+  },
+  {
+    "question_number": "8(i)(a)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(i)(b)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(ii)(a)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(ii)(b)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(iii)(a)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(iii)(b)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(iv)(a)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(iv)(b)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "8(iv)(c)",
+    "chapter": "Mineral & Energy Resources",
+    "topic": "Mineral & Energy Resources"
+  },
+  {
+    "question_number": "9(i)",
+    "chapter": "Agriculture",
+    "topic": "Indian Agriculture – importance, problems and benefits"
+  },
+  {
+    "question_number": "9(ii)(a)",
+    "chapter": "Agriculture",
+    "topic": "Types of farming in India"
+  },
+  {
+    "question_number": "9(ii)(b)",
+    "chapter": "Agriculture",
+    "topic": "Types of farming in India"
+  },
+  {
+    "question_number": "9(iii)(a)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "9(iii)(b)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "9(iii)(c)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "9(iv)(a)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "9(iv)(b)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "9(iv)(c)",
+    "chapter": "Agriculture",
+    "topic": "Crops"
+  },
+  {
+    "question_number": "10(i)(a)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "10(i)(b)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "10(ii)(a)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Agro-based Industry"
+  },
+  {
+    "question_number": "10(ii)(b)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "10(iii)(a)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "10(iii)(b)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Agro-based Industry"
+  },
+  {
+    "question_number": "10(iii)(c)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "10(iv)(a)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Agro-based Industry"
+  },
+  {
+    "question_number": "10(iv)(b)",
+    "chapter": "Manufacturing Industries",
+    "topic": "Mineral-based Industry"
+  },
+  {
+    "question_number": "11(i)",
+    "chapter": "Transport",
+    "topic": "Roadways"
+  },
+  {
+    "question_number": "11(ii)(a)",
+    "chapter": "Transport",
+    "topic": "Railways"
+  },
+  {
+    "question_number": "11(ii)(b)",
+    "chapter": "Transport",
+    "topic": "Railways"
+  },
+  {
+    "question_number": "11(iii)",
+    "chapter": "Transport",
+    "topic": "Waterways"
+  },
+  {
+    "question_number": "11(iv)",
+    "chapter": "Transport",
+    "topic": "Airways"
+  },
+  {
+    "question_number": "12(i)(a)",
+    "chapter": "Waste Management",
+    "topic": "Methods of safe disposal"
+  },
+  {
+    "question_number": "12(i)(b)",
+    "chapter": "Waste Management",
+    "topic": "Methods of safe disposal"
+  },
+  {
+    "question_number": "12(ii)",
+    "chapter": "Waste Management",
+    "topic": "Impact of waste accumulation"
+  },
+  {
+    "question_number": "12(iii)(a)",
+    "chapter": "Waste Management",
+    "topic": "Need and methods for reducing, reusing and recycling waste"
+  },
+  {
+    "question_number": "12(iii)(b)",
+    "chapter": "Waste Management",
+    "topic": "Need and methods for reducing, reusing and recycling waste"
+  },
+  {
+    "question_number": "12(iii)(c)",
+    "chapter": "Waste Management",
+    "topic": "Need and methods for reducing, reusing and recycling waste"
+  },
+  {
+    "question_number": "12(iv)(a)",
+    "chapter": "Waste Management",
+    "topic": "Methods of safe disposal"
+  },
+  {
+    "question_number": "12(iv)(b)",
+    "chapter": "Waste Management",
+    "topic": "Methods of safe disposal"
+  }
+]

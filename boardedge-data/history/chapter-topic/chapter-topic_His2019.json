@@ -1,0 +1,142 @@
+[
+  {
+    "chapter": "The Union Legislature",
+    "topic": "Lok Sabha",
+    "question_numbers": [
+      "1(a)",
+      "1(b)",
+      "1(c)",
+      "1(d)",
+      "3(c)"
+    ]
+  },
+  {
+    "chapter": "The Union Legislature",
+    "topic": "Rajya Sabha",
+    "question_numbers": [
+      "3(a)",
+      "3(b)"
+    ]
+  },
+  {
+    "chapter": "The Union Executive",
+    "topic": "The President",
+    "question_numbers": [
+      "1(e)"
+    ]
+  },
+  {
+    "chapter": "The Union Executive",
+    "topic": "Prime Minister & Council of Ministers",
+    "question_numbers": [
+      "1(f)",
+      "1(g)",
+      "4(a)",
+      "4(b)",
+      "4(c)"
+    ]
+  },
+  {
+    "chapter": "The Judiciary",
+    "topic": "The Supreme Court",
+    "question_numbers": [
+      "1(h)",
+      "1(i)"
+    ]
+  },
+  {
+    "chapter": "The Judiciary",
+    "topic": "The High Courts",
+    "question_numbers": [
+      "5(a)",
+      "5(b)",
+      "5(c)"
+    ]
+  },
+  {
+    "chapter": "The Judiciary",
+    "topic": "The Subordinate Courts",
+    "question_numbers": [
+      "1(j)"
+    ]
+  },
+  {
+    "chapter": "The Indian National Movement (1857 - 1917)",
+    "topic": "The 1st War of Independence",
+    "question_numbers": [
+      "2(a)"
+    ]
+  },
+  {
+    "chapter": "The Indian National Movement (1857 - 1917)",
+    "topic": "Factors leading to the growth of Nationalism",
+    "question_numbers": [
+      "2(b)",
+      "2(c)",
+      "6(a)",
+      "6(b)"
+    ]
+  },
+  {
+    "chapter": "The Indian National Movement (1857 - 1917)",
+    "topic": "1st Phase of the Indian National Movement",
+    "question_numbers": [
+      "2(d)",
+      "6(c)"
+    ]
+  },
+  {
+    "chapter": "Mass Phase of the National Movement (1915 - 1947)",
+    "topic": "Mahatma Gandhi",
+    "question_numbers": [
+      "7(a)",
+      "7(b)",
+      "7(c)",
+      "8(a)",
+      "8(b)"
+    ]
+  },
+  {
+    "chapter": "Mass Phase of the National Movement (1915 - 1947)",
+    "topic": "Independence and Partition of India",
+    "question_numbers": [
+      "2(e)",
+      "2(f)",
+      "8(c)"
+    ]
+  },
+  {
+    "chapter": "The Contemporary World",
+    "topic": "1st World War",
+    "question_numbers": [
+      "2(g)",
+      "2(h)",
+      "2(j)"
+    ]
+  },
+  {
+    "chapter": "The Contemporary World",
+    "topic": "Rise of Dictatorships",
+    "question_numbers": [
+      "9(a)"
+    ]
+  },
+  {
+    "chapter": "The Contemporary World",
+    "topic": "2nd World War",
+    "question_numbers": [
+      "9(b)",
+      "9(c)"
+    ]
+  },
+  {
+    "chapter": "The Contemporary World",
+    "topic": "The United Nations",
+    "question_numbers": [
+      "2(i)",
+      "10(a)",
+      "10(b)",
+      "10(c)"
+    ]
+  }
+]

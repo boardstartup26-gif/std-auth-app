@@ -1,0 +1,50 @@
+[
+  {
+    "chapter": "Heat",
+    "topic": "Calorimetry"
+  },
+  {
+    "chapter": "Electricity & Magnetism",
+    "topic": "Current Electricity"
+  },
+  {
+    "chapter": "Electricity & Magnetism",
+    "topic": "Electro-magnetism"
+  },
+  {
+    "chapter": "Force, Work, Power & Energy",
+    "topic": "Force"
+  },
+  {
+    "chapter": "Electricity & Magnetism",
+    "topic": "Household Circuits"
+  },
+  {
+    "chapter": "Force, Work, Power & Energy",
+    "topic": "Machines"
+  },
+  {
+    "chapter": "Modern Physics",
+    "topic": "Radioactivity"
+  },
+  {
+    "chapter": "Light",
+    "topic": "Refraction of light (lens)"
+  },
+  {
+    "chapter": "Light",
+    "topic": "Refraction of light (plane surface)"
+  },
+  {
+    "chapter": "Sound",
+    "topic": "Sound"
+  },
+  {
+    "chapter": "Light",
+    "topic": "Spectrum"
+  },
+  {
+    "chapter": "Force, Work, Power & Energy",
+    "topic": "Work Energy and Power"
+  }
+]

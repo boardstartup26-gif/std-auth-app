@@ -168,6 +168,7 @@ async function insertQuestionAndScheme(supabase, row, year) {
       question_number: row.question_number,
       question_text: row.question_text,
       topic_id: null,
+      chapter: null,
     })
     .select("id")
     .single();

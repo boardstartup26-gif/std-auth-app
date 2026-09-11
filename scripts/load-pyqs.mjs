@@ -225,6 +225,7 @@ function mapQuestionRow(q, { subjectId, paper }) {
     // History & Civics
     domain: q.domain ?? null,
     topic: q.topic ?? null,
+    chapter: q.chapter ?? null,
     period: q.period ?? null,
     date_range: q.date_range ?? null,
     mcq_variant: q.mcq_variant ?? null,

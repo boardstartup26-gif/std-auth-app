@@ -1,0 +1,466 @@
+{
+  "year": 2024,
+  "paper": "1",
+  "chapter_topic_mapping": [
+    {
+      "question_number": "1(i)",
+      "chapter": "Organic Chemistry",
+      "topic": "Organic Compounds"
+    },
+    {
+      "question_number": "1(ii)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "1(iii)",
+      "chapter": "Metallurgy",
+      "topic": "Alloys"
+    },
+    {
+      "question_number": "1(iv)",
+      "chapter": "Analytical Chemistry",
+      "topic": "Action of alkalis (NaOH, KOH)"
+    },
+    {
+      "question_number": "1(v)",
+      "chapter": "Organic Chemistry",
+      "topic": "Carboxylic Acids"
+    },
+    {
+      "question_number": "1(vi)",
+      "chapter": "Organic Chemistry",
+      "topic": "Alcohols"
+    },
+    {
+      "question_number": "1(vii)",
+      "chapter": "Study of Compounds",
+      "topic": "Sulphuric Acid"
+    },
+    {
+      "question_number": "1(viii)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "1(ix)",
+      "chapter": "Metallurgy",
+      "topic": "Extraction of Aluminum"
+    },
+    {
+      "question_number": "1(x)",
+      "chapter": "Study of Compounds",
+      "topic": "Ammonia"
+    },
+    {
+      "question_number": "1(xi)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "1(xii)",
+      "chapter": "Study of Compounds",
+      "topic": "Ammonia"
+    },
+    {
+      "question_number": "1(xiii)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Relative Atomic Mass, Relative Molecular Mass & Mole Concept"
+    },
+    {
+      "question_number": "1(xiv)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "1(xv)",
+      "chapter": "Metallurgy",
+      "topic": "Metals and Non-Metals"
+    },
+    {
+      "question_number": "2(i)(a)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(i)(b)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(i)(c)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(i)(d)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(i)(e)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(ii)",
+      "chapter": "Chemical Bonding",
+      "topic": "Electrovalent Bond"
+    },
+    {
+      "question_number": "2(iii)(a)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Salts and their Laboratory Preparations"
+    },
+    {
+      "question_number": "2(iii)(b)",
+      "chapter": "Metallurgy",
+      "topic": "Stages involved in extraction of metals"
+    },
+    {
+      "question_number": "2(iii)(c)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "2(iii)(d)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(iii)(e)",
+      "chapter": "Metallurgy",
+      "topic": "Stages involved in extraction of metals"
+    },
+    {
+      "question_number": "2(iv)(a)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkanes"
+    },
+    {
+      "question_number": "2(iv)(b)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "2(iv)(c)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Relative Atomic Mass, Relative Molecular Mass & Mole Concept"
+    },
+    {
+      "question_number": "2(iv)(d)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "2(iv)(e)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Percentage Composition, Empirical & Molecular Formulae"
+    },
+    {
+      "question_number": "2(v)(a)1",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkanes"
+    },
+    {
+      "question_number": "2(v)(a)2",
+      "chapter": "Organic Chemistry",
+      "topic": "Carboxylic Acids"
+    },
+    {
+      "question_number": "2(v)(b)1",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkanes"
+    },
+    {
+      "question_number": "2(v)(b)2",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkynes"
+    },
+    {
+      "question_number": "2(v)(b)3",
+      "chapter": "Organic Chemistry",
+      "topic": "Organic Compounds"
+    },
+    {
+      "question_number": "3(i)(a)",
+      "chapter": "Study of Compounds",
+      "topic": "Sulphuric Acid"
+    },
+    {
+      "question_number": "3(i)(b)",
+      "chapter": "Study of Compounds",
+      "topic": "Ammonia"
+    },
+    {
+      "question_number": "3(ii)(a)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "3(ii)(b)",
+      "chapter": "Study of Compounds",
+      "topic": "Nitric acid"
+    },
+    {
+      "question_number": "3(iii)(a)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Acids & Bases"
+    },
+    {
+      "question_number": "3(iii)(b)",
+      "chapter": "Study of Compounds",
+      "topic": "Ammonia"
+    },
+    {
+      "question_number": "3(iii)(c)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Acids & Bases"
+    },
+    {
+      "question_number": "3(iv)",
+      "chapter": "Study of Compounds",
+      "topic": "Sulphuric Acid"
+    },
+    {
+      "question_number": "4(i)(a)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Relative Atomic Mass, Relative Molecular Mass & Mole Concept"
+    },
+    {
+      "question_number": "4(i)(b)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "4(ii)(a)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "4(ii)(b)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "4(iii)(a)",
+      "chapter": "Analytical Chemistry",
+      "topic": "Action of alkalis (NaOH, KOH)"
+    },
+    {
+      "question_number": "4(iii)(b)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkanes"
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkynes"
+    },
+    {
+      "question_number": "4(iv)(a)",
+      "chapter": "Organic Chemistry",
+      "topic": "Alcohols"
+    },
+    {
+      "question_number": "4(iv)(b)",
+      "chapter": "Organic Chemistry",
+      "topic": "Carboxylic Acids"
+    },
+    {
+      "question_number": "4(iv)(c)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkenes"
+    },
+    {
+      "question_number": "5(i)(a)",
+      "chapter": "Metallurgy",
+      "topic": "Alloys"
+    },
+    {
+      "question_number": "5(i)(b)",
+      "chapter": "Metallurgy",
+      "topic": "Alloys"
+    },
+    {
+      "question_number": "5(ii)(a)",
+      "chapter": "Study of Compounds",
+      "topic": "Sulphuric Acid"
+    },
+    {
+      "question_number": "5(ii)(b)",
+      "chapter": "Organic Chemistry",
+      "topic": "Organic Compounds"
+    },
+    {
+      "question_number": "5(iii)(a)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Relative Atomic Mass, Relative Molecular Mass & Mole Concept"
+    },
+    {
+      "question_number": "5(iii)(b)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Calculations based on Chemical Equations"
+    },
+    {
+      "question_number": "5(iii)(c)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Calculations based on Chemical Equations"
+    },
+    {
+      "question_number": "5(iv)(a)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkanes"
+    },
+    {
+      "question_number": "5(iv)(b)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "5(iv)(c)",
+      "chapter": "Study of Compounds",
+      "topic": "Hydrogen Chloride"
+    },
+    {
+      "question_number": "6(i)(a)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "6(i)(b)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "6(ii)(a)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "6(ii)(b)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "6(iii)(a)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "6(iii)(b)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Acids & Bases"
+    },
+    {
+      "question_number": "6(iii)(c)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "6(iv)(a)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "6(iv)(b)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "6(iv)(c)",
+      "chapter": "Periodic Table, Periodic Properties & Variations in Properties",
+      "topic": "Periodic Table, Periodic Properties & Variations in Properties"
+    },
+    {
+      "question_number": "7(i)(a)",
+      "chapter": "Analytical Chemistry",
+      "topic": "Action of Ammonium Hydroxide and Sodium Hydroxide"
+    },
+    {
+      "question_number": "7(i)(b)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Properties of Salts"
+    },
+    {
+      "question_number": "7(ii)(a)",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "7(ii)(b)",
+      "chapter": "Electrolysis",
+      "topic": "Electrolysis"
+    },
+    {
+      "question_number": "7(iii)",
+      "chapter": "Mole Concept & Stoichiometry",
+      "topic": "Gay Lussac's Law & Avogadro's Law"
+    },
+    {
+      "question_number": "7(iv)(a)1",
+      "chapter": "Chemical Bonding",
+      "topic": "Electrovalent Bond"
+    },
+    {
+      "question_number": "7(iv)(a)2",
+      "chapter": "Chemical Bonding",
+      "topic": "Covalent Bond"
+    },
+    {
+      "question_number": "7(iv)(b)",
+      "chapter": "Organic Chemistry",
+      "topic": "Organic Compounds"
+    },
+    {
+      "question_number": "8(i)(a)",
+      "chapter": "Metallurgy",
+      "topic": "Stages involved in extraction of metals"
+    },
+    {
+      "question_number": "8(i)(b)",
+      "chapter": "Organic Chemistry",
+      "topic": "Hydrocarbons: Alkynes"
+    },
+    {
+      "question_number": "8(ii)(a)",
+      "chapter": "Study of Compounds",
+      "topic": "Nitric acid"
+    },
+    {
+      "question_number": "8(ii)(b)",
+      "chapter": "Study of Compounds",
+      "topic": "Ammonia"
+    },
+    {
+      "question_number": "8(iii)(a)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Salts and their Laboratory Preparations"
+    },
+    {
+      "question_number": "8(iii)(b)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Salts and their Laboratory Preparations"
+    },
+    {
+      "question_number": "8(iii)(c)",
+      "chapter": "Acids, Bases & Salts",
+      "topic": "Salts and their Laboratory Preparations"
+    },
+    {
+      "question_number": "8(iv)(a)",
+      "chapter": "Study of Compounds",
+      "topic": "Hydrogen Chloride"
+    },
+    {
+      "question_number": "8(iv)(b)",
+      "chapter": "Study of Compounds",
+      "topic": "Hydrogen Chloride"
+    },
+    {
+      "question_number": "8(iv)(c)",
+      "chapter": "Study of Compounds",
+      "topic": "Sulphuric Acid"
+    }
+  ]
+}

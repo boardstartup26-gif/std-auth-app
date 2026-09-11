@@ -161,6 +161,7 @@ async function importFile(jsonPath, subjectId) {
           correct_answer: entry.correct_answer ?? null,
           diagram_required: entry.diagram_required ?? false,
           topic: entry.topic ?? null,
+          chapter: entry.chapter ?? null,
         })
         .select('id')
         .single();
