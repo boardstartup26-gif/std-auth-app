@@ -1,74 +1,169 @@
 @import "tailwindcss";
 
+/* Dark is a token inversion, not a second design (handoff §1) — and it is NOT
+   reached from the OS. Light renders for everyone regardless of
+   prefers-color-scheme; `.dark` on <html> is the only way in, reserved for a
+   future explicit toggle. No component uses a `dark:` utility — the tokens
+   below are the entire theming surface. */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ─── Core tokens — light is canonical ──────────────────────────────────────
+   The eight tokens of handoff §1 and nothing else. Depth comes from hairlines
+   (--rule) and paper elevation (--surface over --bg) only: no gradients, no
+   glow, no glassmorphism, no coloured shadows. */
+:root {
+  /* Light is the rendering state, not a preference. Declaring color-scheme
+     here rather than deferring to the OS keeps form controls, scrollbars and
+     the pre-paint canvas light too — without it a dark-OS browser paints its
+     own dark chrome around a light page. */
+  color-scheme: light;
+
+  --bg: #FAF9F5;          /* page — warm paper, never pure white */
+  --surface: #FFFFFF;     /* cards sit brighter than the page */
+  --ink: #16181D;
+  --ink-muted: #5C6068;   /* secondary text, metadata, "missed" state */
+  --rule: #E4E0D6;        /* hairlines, margin rules */
+  --accent: #C43D2B;      /* teacher's red — interactive, marks, ticks */
+  --awarded: #1F6B4A;
+  --withheld: #B08A00;    /* gold, redeemed as partial credit only */
+}
+
+/* Inversion, reached only by an explicit `.dark` on <html>. There is
+   deliberately no prefers-color-scheme rule: a dark-OS visitor still gets the
+   light design. Only the eight core tokens are restated — every alias below is
+   a var() reference, so it re-resolves here for free. */
 :root.dark {
-  /* Base */
-  --background: #0B0E14;
-  --card: #181C24;
-  --surface-raised: #1F2430;
-  --foreground: #E8E9EC;
-  --muted-foreground: #8B8F98;
-  --border: #2A2F3D;
+  color-scheme: dark;
 
-  /* Brand accent — interactive only, see Gold Rule */
-  --accent: #F5A623;
-  --accent-hover: #E8960F;
-  --accent-subtle: #F5A6231A;
+  --bg: #0E0F12;
+  --surface: #17191E;
+  --ink: #F4F2EC;
+  --ink-muted: #9AA0A8;
+  --rule: #262A31;
+  --accent: #FF6B52;
+  --awarded: #4FBF8B;
+  --withheld: #E3B341;
+}
 
-  /* Semantic — shared History + Eval logic */
-  --status-correct: #3DDC84;
-  --status-correct-subtle: #3DDC8415;
-  --status-wrong: #F0553D;
-  --status-wrong-subtle: #F0553D15;
-  --status-partial: #F5D020;
-  --status-partial-subtle: #F5D02015;
+:root {
+  /* ─── Derived values ────────────────────────────────────────────────────
+     Defined once, in terms of the core tokens, so they invert automatically.
+     accent-hover mixes toward --ink, which means it darkens on paper and
+     lightens on dark — one declaration, correct in both themes. */
+  --accent-hover: color-mix(in srgb, var(--accent) 82%, var(--ink));
+  /* 8%, not 10%: accent text on its own wash measured 4.47:1 at 10% — a hair
+     under AA. Lightening the wash lifts it to 4.64:1 without touching the
+     accent token itself. */
+  --accent-subtle: color-mix(in srgb, var(--accent) 8%, transparent);
+  --awarded-subtle: color-mix(in srgb, var(--awarded) 12%, transparent);
+  --withheld-subtle: color-mix(in srgb, var(--withheld) 14%, transparent);
 
-  /* Eval-page-only tags */
-  --tag-conceptual: #E8642A;
-  --tag-conceptual-subtle: #E8642A15;
-  --tag-model-answer: #3B82F6;
-  --tag-model-answer-subtle: #3B82F615;
-  --tag-examiner-feedback: #6B7280;
-  --tag-examiner-feedback-subtle: #6B728015;
-  --tag-improvement-tips: #A855F7;
-  --tag-improvement-tips-subtle: #A855F715;
+  /* ─── Type ──────────────────────────────────────────────────────────────
+     Fraunces is loaded by next/font/google in layout.tsx (self-hosted at
+     build time) with the opsz/SOFT/WONK axes requested, rather than a
+     hand-rolled @font-face over a checked-in woff2 — same self-hosted result,
+     no binary in the repo, and it matches how Geist is already loaded. */
+  --font-display: var(--font-fraunces), Georgia, serif;
 
-  /* History-only */
-  --status-attempted: #A855F7;
+  /* §2 scale. Body is 17px with the measure capped at 68ch; metadata is the
+     12px uppercase rail face. Marks and scores are always mono + tabular-nums:
+     mono reads as "graded", proportional reads as decorative. */
+  --text-statement: clamp(3.5rem, 9vw, 8rem);
+  --text-section: clamp(2rem, 4vw, 3.25rem);
+  --text-body: 17px;
+  --text-meta: 12px;
+  --measure: 68ch;
 
-  /* Glow (Landing hero / Auth image-half / Dashboard hero only) */
-  --glow-purple: #7C3AED;
+  /* ─── Grid (§3) ─────────────────────────────────────────────────────────
+     The margin rail is the device that unifies landing and app. */
+  --rail-width: 180px;
 
-  /* Question sheet — the printed-paper surface on /evaluate.
-     Figures are scans of real exam papers: black line art on white. Dropping
-     them straight onto the dark card leaves them floating in a hole, so the
-     question and its figure share one light "sheet" instead. These stay light
-     in every theme; they represent paper, not chrome. */
-  --paper: #FBFBF8;
-  --paper-ink: #16191F;
-  --paper-ink-soft: #6C6A5E;
-  --paper-rule: #DEDDD4;
-  --paper-head: #F2F1EA;
-  --paper-foot: #F6F5EE;
+  /* Motion tokens (§4) are not declared here — they live in the plain @theme
+     block below so Tailwind owns the `--ease-*` / `--duration-*` namespaces and
+     emits `ease-editorial` / `duration-base` utilities. Declaring them in :root
+     as well would make the @theme entry reference itself. */
 
-  /* Pointer feedback. Deliberately NOT gold — gold means "chosen" (selected
-     option, active nav). This means "your cursor is here". Keeping them apart
-     stops a hover from reading as a selection. Per design system v2 §5. */
-  --cursor: #6BB8FF;
-  --cursor-wash: #6BB8FF1F;
+  /* ─── Question sheet — the printed-paper surface on /evaluate ───────────
+     Deliberately NOT inverted, and deliberately not aliased to --surface.
+     Figures are scans of real exam papers: black line art on white. The sheet
+     represents paper, not chrome, so it stays light in every theme. In light
+     mode it sits flush with the page tokens by design; in dark mode it stays
+     a sheet of paper on a dark desk. */
+  --paper: #FFFFFF;
+  --paper-ink: #16181D;
+  --paper-ink-soft: #5C6068;
+  --paper-rule: #E4E0D6;
+  --paper-head: #FAF9F5;
+  --paper-foot: #FAF9F5;
+
+  /* ─── Legacy aliases ────────────────────────────────────────────────────
+     Every pre-redesign surface still consumes these names. They point at the
+     new tokens so the existing app renders in the new system untouched, and
+     each one retires as its surface is rebuilt on the tokens above.
+
+     Mapping notes where it isn't one-to-one:
+     · status-wrong → accent. Red is a wrong statement. A *missed* point is
+       ink-muted, not red (§11 depth 2 vs depth 3) — the two must stay apart.
+     · the decorative tag palette (blue/grey/purple) has no equivalent: §1
+       bans colour-as-decoration, so these collapse to ink-muted and will be
+       replaced by hierarchy when the results page is rebuilt.
+     · glow-purple → transparent. Three radial-gradient washes reference it;
+       resolving to transparent removes them, which is the §1 hard rule. */
+  --background: var(--bg);
+  --card: var(--surface);
+  --surface-raised: var(--bg);
+  --foreground: var(--ink);
+  --muted-foreground: var(--ink-muted);
+  --border: var(--rule);
+
+  --status-correct: var(--awarded);
+  --status-correct-subtle: var(--awarded-subtle);
+  --status-wrong: var(--accent);
+  --status-wrong-subtle: var(--accent-subtle);
+  --status-partial: var(--withheld);
+  --status-partial-subtle: var(--withheld-subtle);
+
+  --tag-conceptual: var(--accent);
+  --tag-conceptual-subtle: var(--accent-subtle);
+  --tag-model-answer: var(--ink-muted);
+  --tag-model-answer-subtle: color-mix(in srgb, var(--ink-muted) 10%, transparent);
+  --tag-examiner-feedback: var(--ink-muted);
+  --tag-examiner-feedback-subtle: color-mix(in srgb, var(--ink-muted) 10%, transparent);
+  --tag-improvement-tips: var(--ink-muted);
+  --tag-improvement-tips-subtle: color-mix(in srgb, var(--ink-muted) 10%, transparent);
+  --status-attempted: var(--ink-muted);
+
+  --glow-purple: transparent;
+
+  /* Pointer feedback stays distinct from selection: hover deepens toward ink,
+     "chosen" is accent. Same rule as before the redesign, new palette — the
+     old blue was decoration the §1 token set doesn't allow. */
+  --cursor: var(--ink);
+  --cursor-wash: color-mix(in srgb, var(--ink) 6%, transparent);
 }
 
 @theme inline {
+  /* Canonical */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-awarded: var(--awarded);
+  --color-awarded-subtle: var(--awarded-subtle);
+  --color-withheld: var(--withheld);
+  --color-withheld-subtle: var(--withheld-subtle);
+
+  /* Legacy — retires surface by surface */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted-foreground: var(--muted-foreground);
   --color-card: var(--card);
   --color-border: var(--border);
   --color-surface-raised: var(--surface-raised);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-accent-subtle: var(--accent-subtle);
   --color-status-correct: var(--status-correct);
   --color-status-correct-subtle: var(--status-correct-subtle);
   --color-status-wrong: var(--status-wrong);
@@ -93,16 +188,72 @@
   --color-paper-foot: var(--paper-foot);
   --color-cursor: var(--cursor);
   --color-cursor-wash: var(--cursor-wash);
+
+  /* Grid, exposed as utilities: w-rail, pl-rail, … */
+  --spacing-rail: var(--rail-width);
 }
 
-@theme {
+/* `static`, not a plain @theme: Tailwind drops theme variables it can't see
+   used, and GSAP reads --ease-editorial / --duration-* off the computed style
+   at runtime (§4), where the scanner can't follow. */
+@theme static {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces), Georgia, serif;
+
+  /* §4 motion. Named for Tailwind's namespaces, so these are both CSS
+     variables on :root (`var(--duration-base)`) and utilities
+     (`ease-editorial`, `duration-base`). The handoff calls them --dur-*;
+     the --duration-* spelling is what generates the utility. */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 560ms;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg);
+  color: var(--ink);
   font-family: var(--font-sans);
+  font-size: var(--text-body);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Display type. WONK 1 introduces Fraunces' ink-irregular character forms —
+   it belongs on the largest statements only (Act 0 masthead); at body sizes it
+   reads as a typo. `.display` is the statement setting; `.display-section`
+   turns WONK off for everything smaller. */
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
+  font-weight: 480;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+}
+
+.display-section {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 72, "SOFT" 0, "WONK" 0;
+  font-weight: 480;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* Marks and scores are mono everywhere — non-negotiable per §2. */
+.numeric {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* §4: every GSAP timeline skips to its end state here, and no scrub runs.
+   This is the CSS half; the matchMedia half lives with the GSAP setup. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

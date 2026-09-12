@@ -87,7 +87,9 @@ export default async function AdminPage({
       </header>
 
       {metrics.truncated ? (
-        <p className="mt-6 rounded-xl border border-status-partial bg-status-partial-subtle px-4 py-3 text-xs text-status-partial">
+        // Gold on its own wash at 12px is 2.79:1. The border and fill keep the
+        // gold — non-text UI, 3:1 — and the sentence itself goes to ink.
+        <p className="mt-6 rounded-xl border border-status-partial bg-status-partial-subtle px-4 py-3 text-xs text-foreground">
           Row cap reached for this window — every figure below is a lower bound.
           Narrow the window for exact numbers.
         </p>

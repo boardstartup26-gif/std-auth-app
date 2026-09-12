@@ -86,7 +86,13 @@ export const selectorLabel =
 export function tokenCountClass(remaining: number): string {
   const base = "font-mono font-bold tabular-nums";
   if (remaining >= 13) return `${base} text-status-correct`;
-  if (remaining >= 7) return `${base} text-status-partial`;
+  // The middle tier renders at 10px, where withheld gold (3.24:1 on card) is
+  // well short of the 4.5:1 normal text needs — and there's no border or fill
+  // here to move the gold onto, the way the score badge does. Ink instead,
+  // which also reads correctly: this is the unremarkable tier. Green still
+  // means "plenty" and red still means "nearly out" — the two states that
+  // actually want the student's eye.
+  if (remaining >= 7) return `${base} text-foreground`;
   return `${base} text-status-wrong`;
 }
 
@@ -104,5 +110,18 @@ export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg
   }
   if (awarded === total) return `${base} border-status-correct bg-status-correct-subtle text-status-correct`;
   if (awarded === 0) return `${base} border-status-wrong bg-status-wrong-subtle text-status-wrong`;
-  return `${base} border-status-partial bg-status-partial-subtle text-status-partial`;
+
+  // Partial credit is the one state whose colour can't carry the numeral at
+  // any size here. Withheld gold (#B08A00) is 3.24:1 on white, but this badge
+  // puts it on its own subtle gold wash — which lifts the background to
+  // rgb(244,238,219) and drops it to 2.79:1. That misses 4.5:1 for the 12px
+  // and 14px badges and also misses the 3:1 large-text allowance the 36px one
+  // would otherwise get, so no size is exempt.
+  //
+  // The token is correct and stays as spec'd; the usage changes. Gold keeps
+  // the border and the wash — non-text UI, where 3.24:1 clears the 3:1 bar —
+  // so the badge still reads as the partial state at a glance, while the mark
+  // itself is ink at 15.31:1. Anything that puts gold on gold needs this same
+  // treatment; gold as text only works on an unwashed surface.
+  return `${base} border-status-partial bg-status-partial-subtle text-foreground`;
 }
