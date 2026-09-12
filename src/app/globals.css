@@ -222,9 +222,17 @@ body {
 /* Display type. WONK 1 introduces Fraunces' ink-irregular character forms —
    it belongs on the largest statements only (Act 0 masthead); at body sizes it
    reads as a typo. `.display` is the statement setting; `.display-section`
-   turns WONK off for everything smaller. */
+   turns WONK off for everything smaller.
+
+   Each class carries its own size from the §2 scale rather than leaving that to
+   the caller. The two are a matched pair — opsz 144 is drawn for the statement
+   clamp and opsz 72 for the section clamp — so a caller free to set any size
+   could put the wrong optical size on the wrong measure, which is the whole
+   thing Fraunces' opsz axis exists to prevent. These are the only consumers of
+   --text-statement/--text-section. */
 .display {
   font-family: var(--font-display);
+  font-size: var(--text-statement);
   font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
   font-weight: 480;
   letter-spacing: -0.03em;
@@ -233,6 +241,7 @@ body {
 
 .display-section {
   font-family: var(--font-display);
+  font-size: var(--text-section);
   font-variation-settings: "opsz" 72, "SOFT" 0, "WONK" 0;
   font-weight: 480;
   letter-spacing: -0.02em;
