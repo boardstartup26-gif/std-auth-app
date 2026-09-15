@@ -1,25 +1,20 @@
 "use client";
 
-// Primary navigation. Three groups — the app itself, the student's subjects,
-// and the study surfaces — so the subject list is reachable in one click
-// instead of living three dropdowns deep inside /evaluate.
+// Primary navigation. Two groups — the study surfaces and the account — plus
+// the dashboard on its own at the top.
 //
-// Subjects are passed in from the server layout rather than fetched here: the
-// list is the same for every student and never changes between renders, so a
-// client round-trip would only make the sidebar pop in after the page.
+// The subject list used to sit between them, one row per subject. It was
+// removed because every row pointed at the same place: /evaluate reads no
+// subject from the URL, so six links that looked like six destinations all
+// landed on the same unfiltered picker. Subject is the first step of that
+// picker, which is where the choice actually does something.
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
-  Atom,
-  BookOpen,
-  FlaskConical,
-  Globe2,
-  Landmark,
   LayoutGrid,
-  Leaf,
   LibraryBig,
   LogOut,
   type LucideIcon,
@@ -28,15 +23,6 @@ import {
   User,
 } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
-
-const SUBJECT_ICONS: Record<string, LucideIcon> = {
-  Physics: Atom,
-  Chemistry: FlaskConical,
-  Biology: Leaf,
-  Geography: Globe2,
-  "History & Civics": Landmark,
-  "English Literature": BookOpen,
-};
 
 const STUDY = [
   { href: "/evaluate", label: "Questions", icon: LibraryBig },
@@ -93,11 +79,9 @@ function NavRow({
 
 /** Shared by the desktop rail and the mobile drawer. */
 export function SidebarNav({
-  subjects,
   expanded,
   onNavigate,
 }: {
-  subjects: string[];
   expanded: boolean;
   onNavigate?: () => void;
 }) {
@@ -113,26 +97,6 @@ export function SidebarNav({
         expanded={expanded}
         onNavigate={onNavigate}
       />
-
-      {subjects.length ? (
-        <>
-          <GroupLabel expanded={expanded}>My subjects</GroupLabel>
-          {subjects.map((name) => (
-            <NavRow
-              key={name}
-              // Plain /evaluate: the picker does not read a subject from the
-              // URL yet, and a link that looks like a deep link but silently
-              // lands on an unfiltered page is worse than an honest one.
-              href="/evaluate"
-              label={name}
-              icon={SUBJECT_ICONS[name] ?? BookOpen}
-              active={false}
-              expanded={expanded}
-              onNavigate={onNavigate}
-            />
-          ))}
-        </>
-      ) : null}
 
       <GroupLabel expanded={expanded}>Study</GroupLabel>
       {STUDY.map((item) => (
@@ -159,7 +123,7 @@ export function SidebarNav({
   );
 }
 
-export function Sidebar({ subjects }: { subjects: string[] }) {
+export function Sidebar() {
   const [expanded, setExpanded] = useState(true);
 
   return (
@@ -198,7 +162,7 @@ export function Sidebar({ subjects }: { subjects: string[] }) {
         </button>
       ) : null}
 
-      <SidebarNav subjects={subjects} expanded={expanded} />
+      <SidebarNav expanded={expanded} />
 
       <form action={signOut} className="border-t border-border p-2">
         <button

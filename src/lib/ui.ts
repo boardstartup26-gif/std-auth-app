@@ -16,7 +16,11 @@ export const inputBase = "block rounded-xl border border-border bg-card px-3 tex
 export const btnPrimary = "inline-flex items-center justify-center rounded-xl bg-accent px-4 py-2.5 text-sm font-medium text-background shadow-sm transition-colors hover:bg-accent-hover disabled:opacity-50";
 export const btnSecondary = "inline-flex items-center justify-center rounded-xl border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-border";
 
-export const errorAlert = "p-4 rounded-xl border border-red-900/40 bg-red-950/30 text-sm font-medium text-red-300";
+// Uses the semantic wrong-answer tokens rather than raw Tailwind reds. It was
+// `border-red-900/40 bg-red-950/30 text-red-300` — near-black on the light
+// ground the app now uses, which rendered an error message as a dark smear.
+export const errorAlert =
+  "p-4 rounded-xl border border-status-wrong bg-status-wrong-subtle text-sm font-medium text-status-wrong";
 
 // Figures that need to line up in a column — marks, credits, question numbers,
 // dates. Tabular figures only: the sans face already has them, so numerals keep
@@ -77,12 +81,8 @@ export const contextTable =
   "[&_th]:border [&_th]:border-paper-rule [&_th]:bg-paper-head [&_th]:px-2 [&_th]:py-1 [&_th]:text-left [&_th]:font-semibold " +
   "[&_td]:border [&_td]:border-paper-rule [&_td]:px-2 [&_td]:py-1";
 
-// Selector strip — four stacked dropdowns in a tall card cost more vertical
-// space than the figure they push off screen.
-export const selectorStrip =
-  "flex flex-wrap items-end gap-2 rounded-xl border border-border bg-card p-2.5";
-export const selectorLabel =
-  "text-[8.5px] uppercase tracking-[0.1em] text-muted-foreground";
+// (The selector strip that used to live here went with the /evaluate rebuild —
+// the funnel is one step at a time now, not a row of dropdowns.)
 
 // Remaining-token count carries its own status colour. Only this number is
 // coloured — the per-question cost beside it stays neutral, so the colour

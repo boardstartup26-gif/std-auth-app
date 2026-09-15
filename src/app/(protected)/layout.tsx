@@ -3,13 +3,12 @@
 // Shell for every signed-in surface: navigation rail, a top bar carrying the
 // credit balance, then the page.
 //
-// Subjects and the balance are read here rather than per page so the chrome is
-// identical everywhere and each page does not repeat the query. Middleware has
-// already refused unauthenticated requests to these prefixes; the getUser call
-// below is for identity, not for the gate.
+// The balance is read here rather than per page so the chrome is identical
+// everywhere and each page does not repeat the query. Middleware has already
+// refused unauthenticated requests to these prefixes; the getUser call below is
+// for identity, not for the gate.
 
 import { createClient } from "@/lib/supabase/server";
-import { createAdminClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
 import { Sidebar } from "@/app/_components/Sidebar";
 import { MobileNav } from "@/app/_components/MobileNav";
@@ -25,18 +24,13 @@ export default async function ProtectedLayout({
     data: { user },
   } = await supabase.auth.getUser();
 
-  const [{ data: subjectRows }, credits] = await Promise.all([
-    createAdminClient().from("subjects").select("name").order("name"),
-    user ? readCredits(user.id) : Promise.resolve(null),
-  ]);
-
-  const subjects = (subjectRows ?? []).map((s) => s.name as string);
+  const credits = user ? await readCredits(user.id) : null;
 
   return (
     <div className="min-h-dvh bg-background md:flex">
-      <Sidebar subjects={subjects} />
+      <Sidebar />
       <div className="flex min-w-0 flex-1 flex-col">
-        <MobileNav subjects={subjects} credits={credits} />
+        <MobileNav credits={credits} />
         <TopBar credits={credits} />
         <main className="min-w-0 flex-1">{children}</main>
       </div>

@@ -2,11 +2,8 @@
 
 import { useCallback, useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import {
-  backLink,
   btnPrimary,
   cardPadded,
   contextBlockquote,
@@ -26,8 +23,6 @@ import {
   pageShellWide,
   scoreBadgeClass,
   sectionLabel,
-  selectorLabel,
-  selectorStrip,
   sheet,
   sheetBody,
   sheetFoot,
@@ -38,13 +33,20 @@ import {
 import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
+import { isSubjectiveGraded } from "@/lib/question-format";
+import { QuestionPicker } from "./_components/QuestionPicker";
 import {
-  ANSWER_FORMAT_LABELS,
-  DIAGRAM_FORMAT_DISABLED,
-  isSubjectiveGraded,
-  normalizeAnswerFormat,
-  type AnswerFormat,
-} from "@/lib/question-format";
+  diagramState,
+  hasFigureContext,
+  isDiagramBlocked,
+  mcqOptionLabel,
+  mcqOptionValue,
+  QUESTION_SELECT,
+  totalMarksOf,
+  type Question,
+  type StimulusData,
+  type TableData,
+} from "./_lib/question";
 
 // ─── Feedback issue tags ──────────────────────────────────────────
 // Fixed vocabulary, mirrored by the allowlist in /api/feedback. Free text still
@@ -60,73 +62,6 @@ const ISSUE_TAGS = [
 ] as const;
 
 // ─── Types ────────────────────────────────────────────────────────────────────
-
-// Two import batches shaped MCQ options differently: chemistry/physics/
-// biology/geography store plain option strings; history & civics / english
-// literature store {key, text} objects (their correct_answer is the bare
-// key letter). Both shapes have to render and submit correctly.
-type McqOption = string | { key: string; text: string };
-
-// Extract/stimulus/table shapes populated only for History & Civics / English
-// Literature rows (the same import batches that gave those two subjects their
-// {key, text} MCQ options above) — every field is optional because the shape
-// varies by stimulus type and not every row carrying one populates all of it.
-interface ExtractData {
-  text?: string | null;
-  speaker?: string | null;
-  reference?: string | null;
-  context_before?: string | null;
-}
-
-interface LiteraryWorkData {
-  title?: string | null;
-  author?: string | null;
-  work_type?: string | null;
-}
-
-// Only stimulus.type === "passage" renders here — a picture stimulus is a
-// diagram like any other subject's and goes through diagram_url instead (see
-// ContextBlock).
-interface StimulusData {
-  type?: string | null;
-  text?: string | null;
-  source?: string | null;
-}
-
-interface TableData {
-  headers?: string[];
-  rows?: string[][];
-}
-
-interface Question {
-  id: string;
-  question_number: string;
-  question_text: string;
-  is_subjective: boolean;
-  question_type: string | null;
-  options: McqOption[] | null;
-  paper: string;
-  year: number;
-  chapter: string | null;
-  diagram_required: boolean | null;
-  diagram_url: string | null;
-  diagram_source: DiagramSource;
-  topic: string | null;
-  extract: ExtractData | null;
-  stimulus: StimulusData | null;
-  literary_work: LiteraryWorkData | null;
-  table_data: TableData | null;
-  // Marks come from the question_marks view, not marking_schemes directly —
-  // that table now only opens to a student who has already attempted the
-  // question, so the answer key can't be read ahead of time. The view carries
-  // total_marks and nothing else. Supabase types an embedded relation as an
-  // array even where it is 1:1, hence the union.
-  question_marks: { total_marks: number | null }[] | { total_marks: number | null } | null;
-}
-
-// Why a question is diagram-related. Set by scripts/sync_diagram_figures.mjs;
-// see the migration that adds questions.diagram_source for the full contract.
-type DiagramSource = "figure" | "physical_map" | "ocr_pending" | null;
 
 interface EvaluationResult {
   marks_awarded: number;
@@ -157,25 +92,6 @@ interface EvaluationResult {
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-
-const SUBJECTS = [
-  { name: "Chemistry",           available: true },
-  { name: "Physics",             available: true },
-  { name: "Biology",             available: true },
-  { name: "Geography",           available: true },
-  { name: "History & Civics",    available: true },
-  { name: "English Literature",  available: true },
-];
-
-// The submitted value must match how correct_answer is stored for that
-// question: full option text for chemistry/physics/biology/geography, bare
-// key letter for history & civics/english literature.
-function mcqOptionValue(opt: McqOption): string {
-  return typeof opt === "string" ? opt : opt.key;
-}
-function mcqOptionLabel(opt: McqOption): string {
-  return typeof opt === "string" ? opt : opt.text;
-}
 
 const NON_OCR_LOADING_MESSAGES = [
   "Analyzing text structure…",
@@ -231,123 +147,7 @@ function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; t
   );
 }
 
-// Custom dropdown — a native <select> clips/truncates long option text with no
-// way to show it in full, so the question picker needs its own scrollable
-// listbox to satisfy "show the full question text, don't slice it."
-function QuestionDropdown({
-  questions,
-  value,
-  onChange,
-  disabled,
-}: {
-  questions: Question[];
-  value: string;
-  onChange: (v: string) => void;
-  disabled: boolean;
-}) {
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const selected = questions.find((q) => q.id === value) ?? null;
-
-  return (
-    <div ref={ref} className="relative">
-      <button
-        type="button"
-        disabled={disabled}
-        onClick={() => setOpen((o) => !o)}
-        className={`${inputBase} flex w-full items-start justify-between gap-3 py-2.5 text-left disabled:opacity-50`}
-      >
-        <span className={`line-clamp-2 text-sm ${selected ? "text-foreground" : "text-muted-foreground"}`}>
-          {selected
-            ? `${selected.year} P${selected.paper} · Q${selected.question_number}${selected.question_text?.trim() ? ` — ${selected.question_text}` : ""}`
-            : questions.length
-              ? "Select question"
-              : "No questions available"}
-        </span>
-        <ChevronDown
-          size={16}
-          className={`mt-0.5 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}
-        />
-      </button>
-
-      {open && questions.length > 0 && (
-        <div className="absolute z-20 mt-2 max-h-80 w-full overflow-y-auto rounded-xl border border-border bg-card shadow-lg">
-          {questions.map((q) => (
-            <button
-              key={q.id}
-              type="button"
-              onClick={() => { onChange(q.id); setOpen(false); }}
-              className={`block w-full border-b border-border/60 px-3 py-2.5 text-left text-sm leading-relaxed transition-colors last:border-b-0 hover:bg-surface-raised ${
-                q.id === value ? "bg-accent-subtle text-accent" : "text-foreground/90"
-              }`}
-            >
-              <span className={numericFigures}>{q.year} P{q.paper} · Q{q.question_number}</span>
-              {q.question_text?.trim() ? ` — ${q.question_text}` : ""}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
-const selectClass   = `${inputBase} h-10 w-full`;
 const textareaClass = `${inputBase} w-full px-3 py-2.5 disabled:bg-card/50`;
-
-// Sentinel bucket for questions with no chapter/subtopic value at that level
-// — coverage varies by subject as the chapter backfill (see
-// scripts/backfill_*.mjs and scripts/chapter-maps/) fills in over time.
-// Keeping it a distinct value (rather than "") lets it coexist with real
-// chapter/subtopic names in the same dropdown instead of colliding with the
-// "not selected" state.
-const OTHER_BUCKET = "__other__";
-
-// How a question's figure affects answering. Three of the four states are
-// answerable — only a question asking the student to DRAW is truly blocked,
-// plus the residue of questions whose figure hasn't been captured yet.
-//
-//   "ok"          nothing in the way (with or without a figure to display)
-//   "map"         needs a Survey of India topographic sheet we can't ship
-//   "ocr"         student must draw; blocked until handwriting recognition
-//   "no-figure"   needs a figure that hasn't been sourced yet; blocked
-type DiagramState = "ok" | "map" | "ocr" | "no-figure";
-
-function diagramState(q: Question): DiagramState {
-  // Drawing beats everything: even where a figure exists for context, the
-  // answer itself is a drawing we can't grade yet.
-  if (q.diagram_source === "ocr_pending" || q.question_type === "diagram") return "ocr";
-  if (q.diagram_source === "physical_map") return "map";
-  if (q.diagram_required && !q.diagram_url) return "no-figure";
-  return "ok";
-}
-
-function isDiagramBlocked(q: Question): boolean {
-  const s = diagramState(q);
-  return s === "ocr" || s === "no-figure";
-}
-
-// Is there a figure to be wrong about? A plain text question has nothing to
-// report, so offering "Figure wrong or missing?" there is noise at best and
-// invites junk reports at worst.
-function hasFigureContext(q: Question): boolean {
-  return Boolean(q.diagram_url) || q.diagram_source !== null || Boolean(q.diagram_required);
-}
-
-function totalMarksOf(q: Question): number | null {
-  const ms = q.question_marks;
-  if (!ms) return null;
-  const row = Array.isArray(ms) ? ms[0] : ms;
-  return row?.total_marks ?? null;
-}
 
 // ─── Question sheet ───────────────────────────────────────────────────────────
 
@@ -561,13 +361,7 @@ export default function EvaluatePage() {
 
   const [authChecked,       setAuthChecked]       = useState(false);
   const [subject,           setSubject]           = useState("");
-  const [chapter,           setChapter]           = useState<string>("");
-  const [subtopic,          setSubtopic]          = useState<string>("");
-  const [answerFormat,      setAnswerFormat]      = useState<AnswerFormat | "">("");
-  const [yearFilter,        setYearFilter]        = useState<number | "">("");
-  const [questionSearch,    setQuestionSearch]    = useState("");
   const [selectedQuestionId, setSelectedQuestionId] = useState("");
-  const [selectedQuestion,  setSelectedQuestion]  = useState<Question | null>(null);
   const [studentAnswer,     setStudentAnswer]     = useState("");
   const [questions,         setQuestions]         = useState<Question[]>([]);
   const [loadingQuestions,  setLoadingQuestions]  = useState(false);
@@ -697,87 +491,109 @@ export default function EvaluatePage() {
     fetchTokens();
   }, [authChecked]);
 
-  // ─── Cascading selection: Subject → Chapter/Topic → Answer Format → Question ─
+  // ─── Loading a subject's questions ──────────────────────────
   //
-  // Year is no longer a manual pre-filter — all of a subject's questions
-  // (every year/paper) load in one query, and year/paper surface as metadata
-  // on each row in the Browse Questions list instead.
+  // All of a subject's questions (every year and paper) load in one query;
+  // QuestionPicker narrows them without going back to the network, and
+  // year/paper surface as metadata on each row in Browse.
+  //
+  // Nothing is reset here. The picker is remounted on a subject change by its
+  // key, which clears its own filters, and handleSubjectChange clears what
+  // belongs to the page — so this effect only fetches, and the cascade of
+  // setState calls that used to live in it is gone.
 
   useEffect(() => {
-    if (!subject) {
-      setQuestions([]); setChapter(""); setSubtopic(""); setAnswerFormat("");
-      setYearFilter(""); setQuestionSearch("");
-      setSelectedQuestionId(""); setSelectedQuestion(null);
-      return;
-    }
-    async function fetchQuestions() {
-      setLoadingQuestions(true);
-      setChapter(""); setSubtopic(""); setAnswerFormat("");
-      setYearFilter(""); setQuestionSearch("");
-      setSelectedQuestionId(""); setSelectedQuestion(null); setResult(null); setError(null);
+    if (!subject) return;
+    let cancelled = false;
 
-      const { data: subjectRow } = await supabase.from("subjects").select("id").eq("name", subject).single();
+    async function fetchQuestions() {
+      const { data: subjectRow } = await supabase
+        .from("subjects").select("id").eq("name", subject).single();
+      if (cancelled) return;
       if (!subjectRow) { setLoadingQuestions(false); return; }
 
       const { data } = await supabase
         .from("questions")
-        // FIX: diagram_required was missing here — selectedQuestion.diagram_required
-        // was always undefined, so the diagram-blocking UI never triggered.
-        .select("id, question_number, question_text, is_subjective, question_type, options, paper, year, chapter, diagram_required, diagram_url, diagram_source, topic, extract, stimulus, literary_work, table_data, question_marks(total_marks)")
+        .select(QUESTION_SELECT)
         .eq("subject_id", subjectRow.id)
         .order("year", { ascending: false })
         .order("question_number", { ascending: true });
+      // Two subjects picked in quick succession would otherwise race, and the
+      // slower query would overwrite the faster one's results.
+      if (cancelled) return;
 
-      setQuestions((data ?? []) as Question[]);
+      setQuestions((data ?? []) as unknown as Question[]);
       setLoadingQuestions(false);
     }
+
     fetchQuestions();
+    return () => { cancelled = true; };
   }, [subject, supabase]);
 
-  useEffect(() => {
-    if (!selectedQuestionId) { setSelectedQuestion(null); return; }
-    const q = questions.find((q) => q.id === selectedQuestionId) ?? null;
-    setSelectedQuestion(q);
+  // selectedQuestion is derived, not stored: two sources of truth for "which
+  // question is open" is how the answer box could end up attached to a
+  // different question than the sheet above it.
+  const selectedQuestion = questions.find((q) => q.id === selectedQuestionId) ?? null;
+
+  const handleSubjectChange = useCallback((next: string) => {
+    flushAbandonment("switched_question");
+    attemptRef.current = null;
+    setSubject(next);
+    setQuestions([]);
+    setLoadingQuestions(Boolean(next));
+    setSelectedQuestionId("");
     setStudentAnswer(""); setResult(null); setError(null);
-    // Reset the figure-report form, or a report typed for one question would
-    // carry over — and worse, "Thanks, we'll review" would still be showing
-    // against a different figure.
-    setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
-    // Moving to another question without submitting is itself a drop-off, and
-    // has to be reported before the ref is overwritten.
+  }, [flushAbandonment]);
+
+  /** Step 5 commits a question — or, with "", reopens Browse. */
+  const handleSelectQuestion = useCallback((id: string) => {
+    // Moving off a question without submitting is itself a drop-off, and has
+    // to be reported before the ref is overwritten.
     flushAbandonment("switched_question");
 
-    if (q) {
-      questionOpenedAt.current = Date.now();
-      attemptRef.current = {
-        questionId: q.id,
-        questionNumber: q.question_number,
-        subject,
-        year: q.year,
-        openedAt: Date.now(),
-        typedChars: 0,
-        startedTyping: false,
-        submitted: false,
-        reported: false,
-      };
-      track(EVENTS.QUESTION_SELECTED, {
-        question_id: q.id,
-        question_number: q.question_number,
-        subject,
-        year: q.year,
-        paper: q.paper,
-        question_type: q.question_type,
-        is_subjective: q.is_subjective,
-      });
-    } else {
+    setSelectedQuestionId(id);
+    setStudentAnswer(""); setResult(null); setError(null);
+    // Reset the figure-report form too, or a report typed for one question
+    // would carry over — and worse, the "we'll review this" acknowledgement
+    // would still be showing against a different figure.
+    setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
+
+    const q = id ? questions.find((x) => x.id === id) ?? null : null;
+    if (!q) {
       attemptRef.current = null;
+      questionOpenedAt.current = null;
+      return;
     }
-  }, [selectedQuestionId, questions]);
+
+    questionOpenedAt.current = Date.now();
+    attemptRef.current = {
+      questionId: q.id,
+      questionNumber: q.question_number,
+      subject,
+      year: q.year,
+      openedAt: Date.now(),
+      typedChars: 0,
+      startedTyping: false,
+      submitted: false,
+      reported: false,
+    };
+    track(EVENTS.QUESTION_SELECTED, {
+      question_id: q.id,
+      question_number: q.question_number,
+      subject,
+      year: q.year,
+      paper: q.paper,
+      question_type: q.question_type,
+      is_subjective: q.is_subjective,
+    });
+  }, [flushAbandonment, questions, subject]);
 
   // ─── Loading message rotation (non-OCR path only — no upload path exists yet) ─
 
+  // The reset lives in handleSubmit, not here: setting state in an effect body
+  // only to undo it is a cascading render for no gain.
   useEffect(() => {
-    if (!evaluating) { setLoadingMessageIndex(0); return; }
+    if (!evaluating) return;
     const interval = setInterval(() => {
       setLoadingMessageIndex((i) => Math.min(i + 1, NON_OCR_LOADING_MESSAGES.length - 1));
     }, 2500);
@@ -786,7 +602,10 @@ export default function EvaluatePage() {
 
   // ─── Submit ───────────────────────────────────────────────────────────────
 
-  async function handleSubmit() {
+  // useCallback, not a bare function: the timing calls below read the clock,
+  // and a function declared in the render body is not, to the compiler, an
+  // event handler — so Date.now() there reads as an impure call during render.
+  const handleSubmit = useCallback(async () => {
     if (!subject || !selectedQuestion || !studentAnswer.trim()) return;
 
     const timeToSubmit = questionOpenedAt.current ? Date.now() - questionOpenedAt.current : null;
@@ -806,7 +625,7 @@ export default function EvaluatePage() {
       time_to_submit_ms: timeToSubmit,
     });
 
-    setEvaluating(true); setResult(null); setError(null);
+    setEvaluating(true); setResult(null); setError(null); setLoadingMessageIndex(0);
     setLimitReached(false); setFeedbackText(""); setFeedbackSent(false);
     setEvalRating(null); setEvalFeedbackText(""); setEvalIssueTags([]); setEvalFeedbackStatus("idle");
 
@@ -848,7 +667,7 @@ export default function EvaluatePage() {
     } finally {
       setEvaluating(false);
     }
-  }
+  }, [subject, selectedQuestion, studentAnswer]);
 
   // ─── Eval quality feedback ────────────────────────────────────────────────
 
@@ -897,83 +716,6 @@ export default function EvaluatePage() {
     }
   }
 
-  // ─── Derived state: Chapter → Subtopic → Answer Format → Browse Questions ──
-  //
-  // Chapter and Subtopic are always-visible independent dropdowns — each
-  // always includes an "Other" (OTHER_BUCKET) entry whenever at least one
-  // in-scope question lacks that field, rather than hiding the dropdown when
-  // nothing is backfilled yet. Coverage varies by subject (see the chapter
-  // backfill scripts under scripts/backfill_*.mjs and scripts/chapter-maps/).
-
-  const chapterOptions: { value: string; label: string }[] = (() => {
-    if (!questions.length) return [];
-    const seen = new Set<string>();
-    const opts: { value: string; label: string }[] = [];
-    for (const q of questions) {
-      const key = q.chapter ?? OTHER_BUCKET;
-      if (!seen.has(key)) {
-        seen.add(key);
-        opts.push({ value: key, label: q.chapter ?? "Other" });
-      }
-    }
-    return opts.sort((a, b) => (a.value === OTHER_BUCKET ? 1 : b.value === OTHER_BUCKET ? -1 : a.label.localeCompare(b.label)));
-  })();
-
-  const questionsInChapter = chapter
-    ? questions.filter((q) => (q.chapter ?? OTHER_BUCKET) === chapter)
-    : [];
-
-  const subtopicOptions: { value: string; label: string }[] = (() => {
-    if (!questionsInChapter.length) return [];
-    const seen = new Set<string>();
-    const opts: { value: string; label: string }[] = [];
-    for (const q of questionsInChapter) {
-      const t = q.topic?.trim();
-      const key = t || OTHER_BUCKET;
-      if (!seen.has(key)) {
-        seen.add(key);
-        opts.push({ value: key, label: t || "Other" });
-      }
-    }
-    return opts.sort((a, b) => (a.value === OTHER_BUCKET ? 1 : b.value === OTHER_BUCKET ? -1 : a.label.localeCompare(b.label)));
-  })();
-
-  const questionsInSubtopic = subtopic
-    ? questionsInChapter.filter((q) => (q.topic?.trim() || OTHER_BUCKET) === subtopic)
-    : [];
-
-  const answerFormatOptions: { value: AnswerFormat; label: string; disabled: boolean }[] = (() => {
-    if (!questionsInSubtopic.length) return [];
-    const seen = new Set<AnswerFormat>();
-    const opts: { value: AnswerFormat; label: string; disabled: boolean }[] = [];
-    for (const q of questionsInSubtopic) {
-      const fmt = normalizeAnswerFormat(q);
-      if (!seen.has(fmt)) {
-        seen.add(fmt);
-        opts.push({ value: fmt, label: ANSWER_FORMAT_LABELS[fmt], disabled: fmt === "diagram" && DIAGRAM_FORMAT_DISABLED });
-      }
-    }
-    return opts;
-  })();
-
-  const filteredQuestions = answerFormat
-    ? questionsInSubtopic.filter((q) => normalizeAnswerFormat(q) === answerFormat)
-    : [];
-
-  // Year filter is optional (defaults to "all years") and question search is
-  // a "starts with" match on question_text — both are refinements over the
-  // already-filtered Browse Questions list, not funnel steps of their own.
-  const yearOptions = [...new Set(filteredQuestions.map((q) => q.year))].sort((a, b) => b - a);
-
-  const questionsForYear = yearFilter
-    ? filteredQuestions.filter((q) => q.year === yearFilter)
-    : filteredQuestions;
-
-  const searchedQuestions = questionSearch.trim()
-    ? questionsForYear.filter((q) =>
-        q.question_text?.trim().toLowerCase().startsWith(questionSearch.trim().toLowerCase()))
-    : questionsForYear;
-
   const tokenCost = selectedQuestion
     ? (isSubjectiveGraded(selectedQuestion) ? CREDIT_COST_SUBJECTIVE : CREDIT_COST_OBJECTIVE)
     : 0;
@@ -1001,149 +743,27 @@ export default function EvaluatePage() {
         />
       )}
 
-      {/* Header */}
-      <div className="mb-6 flex items-start justify-between gap-6">
-        <div>
-          <p className={sectionLabel}>Evaluation engine</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">New evaluation</h1>
-        </div>
-        <Link href="/dashboard" className={backLink}>← Dashboard</Link>
-      </div>
+      <header className="mb-8">
+        <p className={sectionLabel}>Practice</p>
+        <h1 className="display-section mt-2">Questions</h1>
+        <p className="mt-4 max-w-[var(--measure)] text-muted-foreground">
+          Narrow down to a past-paper question, write your answer, and see exactly which
+          marking points earned marks and which did not.
+        </p>
+      </header>
 
-      {/* Selector strip: Subject → Chapter → Topic → Answer Format → Question.
-          Chapter and Topic skip rendering entirely when nothing in scope
-          carries a real value yet — the flow degrades to a flat list rather
-          than forcing a dead "Other" click. Stacked dropdowns in a tall left
-          card cost more vertical space than the figure they pushed off
-          screen, so they collapse to one horizontal row above the sheet. */}
-      <div className={`${selectorStrip} mb-4`}>
-        <div className="flex min-w-0 flex-col gap-1">
-          <span className={selectorLabel}>Subject</span>
-          <select value={subject} onChange={(e) => setSubject(e.target.value)} className={selectClass}>
-            <option value="">Select</option>
-            {SUBJECTS.map((s) => (
-              <option key={s.name} value={s.name} disabled={!s.available}>
-                {s.name}{!s.available ? " — Coming soon" : ""}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {subject && (
-          <div className="flex min-w-0 flex-col gap-1">
-            <span className={selectorLabel}>Chapter</span>
-            <select
-              value={chapter}
-              onChange={(e) => {
-                setChapter(e.target.value);
-                setSubtopic(""); setAnswerFormat("");
-                setYearFilter(""); setQuestionSearch("");
-                setSelectedQuestionId(""); setSelectedQuestion(null);
-              }}
-              disabled={loadingQuestions || !chapterOptions.length}
-              className={selectClass}
-            >
-              <option value="">{loadingQuestions ? "Loading…" : "Chapter"}</option>
-              {chapterOptions.map((c) => (
-                <option key={c.value} value={c.value}>{c.label}</option>
-              ))}
-            </select>
-          </div>
-        )}
-
-        {chapter && (
-          <div className="flex min-w-0 flex-col gap-1">
-            <span className={selectorLabel}>Subtopic</span>
-            <select
-              value={subtopic}
-              onChange={(e) => {
-                setSubtopic(e.target.value);
-                setAnswerFormat("");
-                setYearFilter(""); setQuestionSearch("");
-                setSelectedQuestionId(""); setSelectedQuestion(null);
-              }}
-              disabled={!subtopicOptions.length}
-              className={selectClass}
-            >
-              <option value="">Subtopic</option>
-              {subtopicOptions.map((t) => (
-                <option key={t.value} value={t.value}>{t.label}</option>
-              ))}
-            </select>
-          </div>
-        )}
-
-        {subtopic && (
-          <div className="flex min-w-0 flex-col gap-1">
-            <span className={selectorLabel}>Answer format</span>
-            <select
-              value={answerFormat}
-              onChange={(e) => {
-                setAnswerFormat(e.target.value as AnswerFormat);
-                setYearFilter(""); setQuestionSearch("");
-                setSelectedQuestionId(""); setSelectedQuestion(null);
-              }}
-              disabled={!answerFormatOptions.length}
-              className={selectClass}
-            >
-              <option value="">{answerFormatOptions.length ? "Format" : "No questions"}</option>
-              {answerFormatOptions.map((f) => (
-                <option key={f.value} value={f.value} disabled={f.disabled}>
-                  {f.label}{f.disabled ? " — Coming soon" : ""}
-                </option>
-              ))}
-            </select>
-          </div>
-        )}
-
-        {answerFormat && (
-          <div className="flex min-w-0 flex-col gap-1">
-            <span className={selectorLabel}>Year</span>
-            <select
-              value={yearFilter}
-              onChange={(e) => {
-                setYearFilter(e.target.value ? Number(e.target.value) : "");
-                setSelectedQuestionId(""); setSelectedQuestion(null);
-              }}
-              disabled={!yearOptions.length}
-              className={selectClass}
-            >
-              <option value="">All years</option>
-              {yearOptions.map((y) => (
-                <option key={y} value={y} className={numericFigures}>{y}</option>
-              ))}
-            </select>
-          </div>
-        )}
-
-        {answerFormat && (
-          <div className="flex min-w-[220px] flex-1 flex-col gap-1">
-            <span className={selectorLabel}>Question</span>
-            <input
-              type="text"
-              value={questionSearch}
-              onChange={(e) => {
-                setQuestionSearch(e.target.value);
-                setSelectedQuestionId(""); setSelectedQuestion(null);
-              }}
-              placeholder="Search question text…"
-              className={`${inputBase} h-10 w-full px-3 text-sm`}
-            />
-            <QuestionDropdown
-              questions={searchedQuestions}
-              value={selectedQuestionId}
-              onChange={setSelectedQuestionId}
-              disabled={!searchedQuestions.length}
-            />
-          </div>
-        )}
-      </div>
-
-      {!selectedQuestion && (
-        <div className={`${cardPadded} text-sm leading-relaxed text-muted-foreground`}>
-          Pick a subject, chapter, subtopic, answer format and question above to begin.
-        </div>
-      )}
+      {/* Steps 1–5 of handoff §12. The picker is keyed on subject so a new
+          subject remounts it, resetting chapter/topic/format/year/search
+          without an effect that watches for the change and undoes itself. */}
+      <QuestionPicker
+        key={subject}
+        subject={subject}
+        onSubjectChange={handleSubjectChange}
+        questions={questions}
+        loading={loadingQuestions}
+        selectedId={selectedQuestionId}
+        onSelect={handleSelectQuestion}
+      />
 
       {/* Sheet on the left, answer on the right. The sheet is wider — it holds
           the question and its figure, which is what the student reads. */}

@@ -2,7 +2,7 @@
 
 // Mobile header plus the drawer behind it. The drawer reuses SidebarNav so the
 // two breakpoints cannot drift into different navigation structures — adding a
-// subject or a study surface updates both.
+// study surface updates both.
 
 import { useState } from "react";
 import Image from "next/image";
@@ -12,13 +12,7 @@ import { SidebarNav } from "./Sidebar";
 import { CreditsPill } from "./CreditsPill";
 import type { CreditBalance } from "@/lib/credits";
 
-export function MobileNav({
-  subjects,
-  credits,
-}: {
-  subjects: string[];
-  credits: CreditBalance | null;
-}) {
+export function MobileNav({ credits }: { credits: CreditBalance | null }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -61,7 +55,7 @@ export function MobileNav({
               </button>
             </div>
 
-            <SidebarNav subjects={subjects} expanded onNavigate={() => setOpen(false)} />
+            <SidebarNav expanded onNavigate={() => setOpen(false)} />
 
             <form action={signOut} className="border-t border-border p-2">
               <button
