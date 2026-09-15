@@ -643,10 +643,12 @@ export default function EvaluatePage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        if (res.status === 429) {
-          setLimitReached(true);
-          if (data.tokens_remaining !== undefined) setTokensRemaining(data.tokens_remaining);
-        }
+        if (res.status === 429) setLimitReached(true);
+        // A persist failure (500) refunds the reserved token server-side and
+        // reports the balance back here too — without this the badge kept
+        // showing the reservation spent, so a retry looked free when it
+        // wasn't, or the student assumed they'd been charged when they hadn't.
+        if (data.tokens_remaining !== undefined) setTokensRemaining(data.tokens_remaining);
         setError(data?.error ?? "Evaluation failed. Try again.");
       } else {
         setResult(data as EvaluationResult);

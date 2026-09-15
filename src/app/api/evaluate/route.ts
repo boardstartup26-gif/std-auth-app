@@ -640,12 +640,19 @@ export async function POST(req: NextRequest) {
       });
     } catch (err) {
       console.error("[BoardEdge] Persist error:", err);
+      // The token was reserved before grading, and grading itself succeeded —
+      // only the write failed. Without this the student pays for an
+      // evaluation that never reached /history, on top of losing the result.
+      await refundTokens(supabase, userId, today, tokenCost);
       trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
         user_id: userId, subject, year, question_number,
         question_id: question.id, is_subjective: false,
       });
       return NextResponse.json(
-        { error: "Evaluation succeeded but could not be saved. Please retry." },
+        {
+          error: "Evaluation succeeded but could not be saved. Please retry.",
+          tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+        },
         { status: 500 }
       );
     }
@@ -794,12 +801,20 @@ export async function POST(req: NextRequest) {
     });
   } catch (err) {
     console.error("[BoardEdge] Persist error:", err);
+    // The token was reserved before the Claude call, and Claude graded the
+    // answer successfully — only the write failed. Without this the student
+    // pays for an evaluation that never reached /history, on top of losing
+    // the result itself.
+    await refundTokens(supabase, userId, today, tokenCost);
     trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
       user_id: userId, subject, year, question_number,
       question_id: question.id, is_subjective: true,
     });
     return NextResponse.json(
-      { error: "Evaluation succeeded but could not be saved. Please retry." },
+      {
+        error: "Evaluation succeeded but could not be saved. Please retry.",
+        tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+      },
       { status: 500 }
     );
   }
