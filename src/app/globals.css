@@ -198,7 +198,10 @@
    at runtime (§4), where the scanner can't follow. */
 @theme static {
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Kept as a token so any stray `font-mono` utility still renders in the
+     app's own face rather than the browser's default Courier. Geist Mono is no
+     longer loaded. */
+  --font-mono: var(--font-geist-sans);
   --font-display: var(--font-fraunces), Georgia, serif;
 
   /* §4 motion. Named for Tailwind's namespaces, so these are both CSS
@@ -248,9 +251,12 @@ body {
   line-height: 1.05;
 }
 
-/* Marks and scores are mono everywhere — non-negotiable per §2. */
+/* Figures line up by advance width, not by face. §2 called for Geist Mono on
+   marks and scores, but in practice the same class carried dates and question
+   numbers too, and a monospace date reads as machine output rather than as
+   something a person wrote. The sans face has tabular figures, which buys the
+   column alignment that mattered without the typewriter texture. */
 .numeric {
-  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }
 

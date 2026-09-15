@@ -14,7 +14,7 @@ import {
   Sparkles,
   ShieldCheck,
 } from "lucide-react";
-import { btnPrimary, btnSecondary, sectionLabel, numericMono } from "@/lib/ui";
+import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
 import { FaqAccordion, type FaqItem } from "@/app/_components/FaqAccordion";
 
 const SUBJECT_PILLS = [
@@ -266,7 +266,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2">
             <Image src="/be-logo1.png" alt="BoardEdge" width={24} height={24} />
-            <span className={numericMono + " text-xs text-muted-foreground"}>
+            <span className={numericFigures + " text-xs text-muted-foreground"}>
               © {new Date().getFullYear()} BoardEdge
             </span>
           </div>

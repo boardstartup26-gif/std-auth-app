@@ -18,8 +18,12 @@ export const btnSecondary = "inline-flex items-center justify-center rounded-xl 
 
 export const errorAlert = "p-4 rounded-xl border border-red-900/40 bg-red-950/30 text-sm font-medium text-red-300";
 
-// Dedicated mono token — Geist Mono, for question IDs, marks, token counters
-export const numericMono = "font-mono tabular-nums";
+// Figures that need to line up in a column — marks, credits, question numbers,
+// dates. Tabular figures only: the sans face already has them, so numerals keep
+// the same advance width without switching to a monospace face. Geist Mono was
+// doing this job and read machine-like on ordinary text like a date; legibility
+// of the surrounding sentence matters more than the typewriter texture.
+export const numericFigures = "tabular-nums";
 
 // ─── Question sheet (/evaluate) ─────────────────────────────────────────────
 // The question and its figure sit on a light "paper" surface rather than the
@@ -34,7 +38,7 @@ export const sheetTop =
   "flex flex-wrap items-center gap-2 border-b border-paper-rule bg-paper-head px-4 py-2.5";
 export const sheetBody = "flex flex-col gap-3 px-4 py-4";
 export const sheetFoot =
-  "flex flex-wrap items-center gap-2.5 border-t border-paper-rule bg-paper-foot px-4 py-2 font-mono text-[10px] text-paper-ink-soft";
+  "flex flex-wrap items-center gap-2.5 border-t border-paper-rule bg-paper-foot px-4 py-2 text-[10px] text-paper-ink-soft";
 
 // The question itself is the one thing on the page a student must not skim,
 // so it gets weight the surrounding chrome doesn't.
@@ -44,9 +48,9 @@ export const sheetQuestionText =
 export const figPlate =
   "relative grid min-h-[128px] place-items-center rounded-md border border-paper-rule bg-white p-3.5";
 export const figTool =
-  "rounded border border-[#BDBBAD] bg-white/95 px-2 py-1 font-mono text-[10px] font-semibold text-[#2F2E28] transition-colors hover:border-cursor hover:text-[#14384F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-cursor";
+  "rounded border border-[#BDBBAD] bg-white/95 px-2 py-1 text-[10px] font-semibold text-[#2F2E28] transition-colors hover:border-cursor hover:text-[#14384F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-cursor";
 export const figCaption =
-  "flex flex-wrap items-baseline gap-2 font-mono text-[9.5px] tracking-wide text-paper-ink-soft";
+  "flex flex-wrap items-baseline gap-2 text-[9.5px] tracking-wide text-paper-ink-soft";
 
 // ─── Question context (extract/stimulus) ────────────────────────────────────
 // Renders above question_text inside the same paper sheet — the literary
@@ -61,13 +65,13 @@ export const contextWrapper =
   "flex flex-col gap-2.5 rounded-lg border border-paper-rule bg-paper-head/60 px-3.5 py-3";
 export const contextItem = "flex flex-col gap-1.5";
 export const contextMeta =
-  "m-0 font-mono text-[10px] font-semibold uppercase tracking-wide text-paper-ink-soft";
+  "m-0 text-[10px] font-semibold uppercase tracking-wide text-paper-ink-soft";
 export const contextItalic = "m-0 text-[13px] italic leading-relaxed text-paper-ink-soft";
 export const contextExtractText =
   "m-0 whitespace-pre-line text-[14px] leading-relaxed text-paper-ink";
 export const contextBlockquote =
   "m-0 border-l-2 border-paper-rule pl-3 text-[14px] italic leading-relaxed text-paper-ink";
-export const contextSource = "m-0 font-mono text-[9.5px] tracking-wide text-paper-ink-soft";
+export const contextSource = "m-0 text-[9.5px] tracking-wide text-paper-ink-soft";
 export const contextTable =
   "w-full border-collapse text-[12px] text-paper-ink " +
   "[&_th]:border [&_th]:border-paper-rule [&_th]:bg-paper-head [&_th]:px-2 [&_th]:py-1 [&_th]:text-left [&_th]:font-semibold " +
@@ -78,13 +82,13 @@ export const contextTable =
 export const selectorStrip =
   "flex flex-wrap items-end gap-2 rounded-xl border border-border bg-card p-2.5";
 export const selectorLabel =
-  "font-mono text-[8.5px] uppercase tracking-[0.1em] text-muted-foreground";
+  "text-[8.5px] uppercase tracking-[0.1em] text-muted-foreground";
 
 // Remaining-token count carries its own status colour. Only this number is
 // coloured — the per-question cost beside it stays neutral, so the colour
 // always means "how much you have left", never "what this costs".
-export function tokenCountClass(remaining: number): string {
-  const base = "font-mono font-bold tabular-nums";
+export function creditCountClass(remaining: number): string {
+  const base = "font-bold tabular-nums";
   if (remaining >= 13) return `${base} text-status-correct`;
   // The middle tier renders at 10px, where withheld gold (3.24:1 on card) is
   // well short of the 4.5:1 normal text needs — and there's no border or fill
@@ -103,7 +107,7 @@ export function scoreBadgeClass(awarded: number, total: number, size: "sm" | "lg
       : size === "lg"
       ? "px-3 py-1 text-sm font-semibold"
       : "px-2.5 py-0.5 text-xs font-semibold";
-  const base = `inline-flex items-center rounded-full border font-mono tabular-nums ${sizeClass}`;
+  const base = `inline-flex items-center rounded-full border tabular-nums ${sizeClass}`;
 
   if (!total) {
     return `${base} border-border bg-card text-muted-foreground`;

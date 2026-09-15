@@ -24,7 +24,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
               aria-expanded={open}
             >
               <span className="flex items-baseline gap-3">
-                <span className="font-mono text-xs text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-sm font-medium text-foreground sm:text-base">{item.question}</span>
               </span>
               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-border text-muted-foreground">

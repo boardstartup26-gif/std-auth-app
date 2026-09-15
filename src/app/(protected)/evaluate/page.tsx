@@ -22,7 +22,7 @@ import {
   figPlate,
   figTool,
   inputBase,
-  numericMono,
+  numericFigures,
   pageShellWide,
   scoreBadgeClass,
   sectionLabel,
@@ -33,9 +33,9 @@ import {
   sheetFoot,
   sheetQuestionText,
   sheetTop,
-  tokenCountClass,
+  creditCountClass,
 } from "@/lib/ui";
-import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
+import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
 import {
@@ -221,9 +221,9 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
 // "what does this cost". Bands are absolute, not proportional: 13+ / 7–12 / <7.
 function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; tokenCost: number }) {
   return (
-    <p className="m-0 text-center font-mono text-[10px] font-semibold text-muted-foreground">
-      <span className={tokenCountClass(tokensRemaining)}>{tokensRemaining}</span>
-      {" "}token{tokensRemaining !== 1 ? "s" : ""} left this week
+    <p className="m-0 text-center text-[10px] font-semibold text-muted-foreground">
+      <span className={creditCountClass(tokensRemaining)}>{tokensRemaining}</span>
+      {" "}credit{tokensRemaining !== 1 ? "s" : ""} left this week
       {tokenCost > 0 && (
         <> · costs <span className="font-semibold text-foreground">{tokenCost}</span></>
       )}
@@ -290,7 +290,7 @@ function QuestionDropdown({
                 q.id === value ? "bg-accent-subtle text-accent" : "text-foreground/90"
               }`}
             >
-              <span className={numericMono}>{q.year} P{q.paper} · Q{q.question_number}</span>
+              <span className={numericFigures}>{q.year} P{q.paper} · Q{q.question_number}</span>
               {q.question_text?.trim() ? ` — ${q.question_text}` : ""}
             </button>
           ))}
@@ -376,11 +376,11 @@ function FigureViewer({ src, label, onClose }: { src: string; label: string; onC
       className="fixed inset-0 z-50 flex flex-col gap-3 bg-black/95 p-4 sm:p-8"
     >
       <div className="flex items-center gap-3">
-        <span className="font-mono text-xs font-semibold text-muted-foreground">{label}</span>
+        <span className="text-xs font-semibold text-muted-foreground">{label}</span>
         <button
           type="button"
           onClick={onClose}
-          className="ml-auto rounded border border-border px-3 py-1.5 font-mono text-xs font-bold text-foreground transition-colors hover:border-cursor hover:text-cursor"
+          className="ml-auto rounded border border-border px-3 py-1.5 text-xs font-bold text-foreground transition-colors hover:border-cursor hover:text-cursor"
         >
           Close ✕
         </button>
@@ -431,7 +431,7 @@ function FigureSlot({ q, onZoom }: { q: Question; onZoom: () => void }) {
   if (state === "map") {
     return (
       <div className={`${figPlate} min-h-[88px]`}>
-        <p className="m-0 max-w-[280px] text-center font-mono text-[10px] leading-relaxed text-paper-ink-soft">
+        <p className="m-0 max-w-[280px] text-center text-[10px] leading-relaxed text-paper-ink-soft">
           <span className="font-semibold text-paper-ink">Survey of India map extract</span>
           <br />
           These sheets aren&apos;t ours to reproduce. Refer to your
@@ -445,7 +445,7 @@ function FigureSlot({ q, onZoom }: { q: Question; onZoom: () => void }) {
   if (q.diagram_required) {
     return (
       <div className={`${figPlate} min-h-[88px]`}>
-        <p className="m-0 max-w-[240px] text-center font-mono text-[10px] leading-relaxed text-paper-ink-soft">
+        <p className="m-0 max-w-[240px] text-center text-[10px] leading-relaxed text-paper-ink-soft">
           Figure not available yet
           <br />
           <span className="text-[#8A8878]">Refer to your printed paper.</span>
@@ -574,7 +574,7 @@ export default function EvaluatePage() {
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
   const [error,             setError]             = useState<string | null>(null);
-  const [tokensRemaining,   setTokensRemaining]   = useState<number>(WEEKLY_TOKEN_LIMIT);
+  const [tokensRemaining,   setTokensRemaining]   = useState<number>(WEEKLY_CREDIT_LIMIT);
   const [limitReached,      setLimitReached]      = useState(false);
   const [feedbackText,      setFeedbackText]      = useState("");
   const [feedbackSent,      setFeedbackSent]      = useState(false);
@@ -690,7 +690,7 @@ export default function EvaluatePage() {
         const res = await fetch("/api/usage");
         if (res.ok) {
           const data = await res.json();
-          setTokensRemaining(data.tokens_remaining ?? WEEKLY_TOKEN_LIMIT);
+          setTokensRemaining(data.tokens_remaining ?? WEEKLY_CREDIT_LIMIT);
         }
       } catch {}
     }
@@ -975,7 +975,7 @@ export default function EvaluatePage() {
     : questionsForYear;
 
   const tokenCost = selectedQuestion
-    ? (isSubjectiveGraded(selectedQuestion) ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE)
+    ? (isSubjectiveGraded(selectedQuestion) ? CREDIT_COST_SUBJECTIVE : CREDIT_COST_OBJECTIVE)
     : 0;
   const canSubmit = Boolean(
     subject && selectedQuestion && studentAnswer.trim() &&
@@ -1110,7 +1110,7 @@ export default function EvaluatePage() {
             >
               <option value="">All years</option>
               {yearOptions.map((y) => (
-                <option key={y} value={y} className={numericMono}>{y}</option>
+                <option key={y} value={y} className={numericFigures}>{y}</option>
               ))}
             </select>
           </div>
@@ -1153,16 +1153,16 @@ export default function EvaluatePage() {
         {selectedQuestion && (
           <div className={sheet}>
             <div className={sheetTop}>
-              <span className="font-mono text-xs font-medium tracking-tight text-paper-ink">
+              <span className="text-xs font-medium tracking-tight text-paper-ink">
                 Q{selectedQuestion.question_number}
               </span>
               {selectedQuestion.topic && (
-                <span className="font-mono text-[10px] tracking-wide text-paper-ink-soft">
+                <span className="text-[10px] tracking-wide text-paper-ink-soft">
                   {selectedQuestion.topic}
                 </span>
               )}
               {totalMarksOf(selectedQuestion) != null && (
-                <span className="ml-auto whitespace-nowrap rounded border border-[#BDBBAD] bg-paper px-2 py-0.5 font-mono text-[11px] font-semibold text-[#33322B]">
+                <span className="ml-auto whitespace-nowrap rounded border border-[#BDBBAD] bg-paper px-2 py-0.5 text-[11px] font-semibold text-[#33322B]">
                   {totalMarksOf(selectedQuestion)} mark{totalMarksOf(selectedQuestion) === 1 ? "" : "s"}
                 </span>
               )}
@@ -1208,7 +1208,7 @@ export default function EvaluatePage() {
             {reportOpen && hasFigureContext(selectedQuestion) && (
               <div className="border-t border-paper-rule bg-paper-foot px-4 py-3">
                 {reportSent ? (
-                  <p className="m-0 font-mono text-[10px] text-[#2F6B3D]">
+                  <p className="m-0 text-[10px] text-[#2F6B3D]">
                     Thanks — we&apos;ll review this figure.
                   </p>
                 ) : (
@@ -1224,7 +1224,7 @@ export default function EvaluatePage() {
                       type="button"
                       onClick={handleReportFigure}
                       disabled={!reportText.trim()}
-                      className="self-start rounded border border-[#BDBBAD] bg-white px-3 py-1.5 font-mono text-[10px] font-bold text-[#2F2E28] transition-colors hover:border-cursor disabled:opacity-40"
+                      className="self-start rounded border border-[#BDBBAD] bg-white px-3 py-1.5 text-[10px] font-bold text-[#2F2E28] transition-colors hover:border-cursor disabled:opacity-40"
                     >
                       Send report
                     </button>
@@ -1406,8 +1406,8 @@ export default function EvaluatePage() {
                   <h2 className={sectionLabel}>{result.is_objective ? "Result" : "Examiner feedback"}</h2>
                 </div>
                 <span className="text-xs text-muted-foreground">
-                  <span className={numericMono}>{result.token_cost}</span> token{result.token_cost !== 1 ? "s" : ""} used ·{" "}
-                  <span className={numericMono}>{result.tokens_remaining}</span> remaining
+                  <span className={numericFigures}>{result.token_cost}</span> credit{result.token_cost !== 1 ? "s" : ""} used ·{" "}
+                  <span className={numericFigures}>{result.tokens_remaining}</span> remaining
                 </span>
               </div>
 
@@ -1481,7 +1481,7 @@ export default function EvaluatePage() {
                       <ul className="space-y-3">
                         {result.improvement_tips.map((tip, i) => (
                           <li key={i} className="flex items-start gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-tag-improvement-tips-subtle font-mono text-xs font-bold text-tag-improvement-tips">
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-tag-improvement-tips-subtle text-xs font-bold text-tag-improvement-tips">
                               {i + 1}
                             </span>
                             <span className="text-sm leading-relaxed text-foreground/90">{tip}</span>

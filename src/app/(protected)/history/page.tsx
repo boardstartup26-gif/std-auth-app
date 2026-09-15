@@ -13,7 +13,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import { Hairline } from "@/app/_components/Hairline";
-import { btnPrimary, errorAlert, numericMono, sectionLabel } from "@/lib/ui";
+import { btnPrimary, errorAlert, numericFigures, sectionLabel } from "@/lib/ui";
 import {
   computeStats,
   groupAttempts,
@@ -180,7 +180,7 @@ export default async function HistoryPage() {
             {STATS.map(({ label, value, sub }) => (
               <div key={label}>
                 <p className={sectionLabel}>{label}</p>
-                <p className={`mt-1.5 text-xl font-semibold text-foreground ${numericMono}`}>
+                <p className={`mt-1.5 text-xl font-semibold text-foreground ${numericFigures}`}>
                   {value}
                 </p>
                 <p className="mt-0.5 text-[11px] text-muted-foreground">{sub}</p>

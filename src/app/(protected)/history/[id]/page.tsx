@@ -1,6 +1,6 @@
 // src/app/(protected)/history/[id]/page.tsx
 //
-// The Practice page — one evaluated attempt, in full. This is the only surface
+// The Results page — one evaluated attempt, in full. This is the only surface
 // allowed to render the student's own answer, the examiner's feedback and the
 // model answer; the History list carries a derived one-line summary instead.
 //
@@ -11,7 +11,7 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
-import { backLink, numericMono, scoreBadgeClass, sectionLabel } from "@/lib/ui";
+import { backLink, numericFigures, scoreBadgeClass, sectionLabel } from "@/lib/ui";
 import { normaliseMarkingPoints, type MarkingPoint } from "@/lib/history";
 import { PracticeReport, type PracticeRecord } from "./_components/PracticeReport";
 
@@ -127,23 +127,23 @@ export default async function PracticePage({
         <Link href="/history" className={backLink}>
           ← History
         </Link>
-        <span className={`${numericMono} text-xs text-muted-foreground`}>{submitted}</span>
+        <span className={`${numericFigures} text-xs text-muted-foreground`}>{submitted}</span>
       </div>
 
       <p className={`${sectionLabel} mt-8`}>
         {record.subject}
         {q?.chapter ? ` · ${q.chapter}` : ""}
       </p>
-      <h1 className="display-section mt-2">Practice</h1>
+      <h1 className="display-section mt-2">Results</h1>
 
       <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
         <span className={scoreBadgeClass(awarded, totalMarks, "lg")}>
           {awarded} / {totalMarks}
         </span>
         {percent !== null ? (
-          <span className={`${numericMono} text-sm text-muted-foreground`}>{percent}%</span>
+          <span className={`${numericFigures} text-sm text-muted-foreground`}>{percent}%</span>
         ) : null}
-        <span className={`${numericMono} text-xs text-muted-foreground`}>
+        <span className={`${numericFigures} text-xs text-muted-foreground`}>
           {record.year ? `${record.year} · ` : ""}Q{record.questionNumber}
         </span>
       </div>

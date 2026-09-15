@@ -2,7 +2,7 @@ import { after, NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
+import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
@@ -267,7 +267,7 @@ async function reserveTokens(
     p_user_id: userId,
     p_date: date,
     p_cost: cost,
-    p_limit: WEEKLY_TOKEN_LIMIT,
+    p_limit: WEEKLY_CREDIT_LIMIT,
   });
 
   if (error) {
@@ -541,7 +541,7 @@ export async function POST(req: NextRequest) {
   const scheme = schemeRow as MarkingScheme;
 
   const isSubjective = question.is_subjective || question.question_type === "short_answer";
-  const tokenCost = isSubjective ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE;
+  const tokenCost = isSubjective ? CREDIT_COST_SUBJECTIVE : CREDIT_COST_OBJECTIVE;
   const today = getUsageDateIST();
 
   // FIX: atomic reserve-before-spend, replaces the old SELECT-then-later-
@@ -561,7 +561,7 @@ export async function POST(req: NextRequest) {
       { status: 429 }
     );
   }
-  const tokensRemaining = Math.max(0, WEEKLY_TOKEN_LIMIT - reservation.newCount);
+  const tokensRemaining = Math.max(0, WEEKLY_CREDIT_LIMIT - reservation.newCount);
 
   // ─── OBJECTIVE PATH (no Claude call) ─────────────────────────────────────
 
@@ -856,7 +856,7 @@ async function persistSubmission(
     throw new Error(`student_answers insert failed: ${answerError?.message}`);
   }
 
-  const { error: evalError } = await supabase.from("evaluations").insert({
+  const evaluationRow = {
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
     marking_points: evaluation.marking_points,
@@ -865,7 +865,29 @@ async function persistSubmission(
     model_answer_source: evaluation.model_answer_source,
     examiner_feedback: evaluation.examiner_feedback,
     improvement_tips: evaluation.improvement_tips,
-  });
+  };
+
+  let { error: evalError } = await supabase.from("evaluations").insert(evaluationRow);
+
+  // FIX: marks_awarded was an integer column while total_marks is numeric, so a
+  // half mark — which the examiner prompt now allows wherever the scheme itself
+  // splits a point into value and unit — was rejected outright. The student saw
+  // "could not be saved" on an answer that had just been graded correctly.
+  // 20260915180000_widen_marks_awarded_to_numeric.sql widens the column; until
+  // that migration is applied this retries with a rounded mark so a graded
+  // answer is never thrown away. The exact fractional value survives either way
+  // inside marking_points[].marks_awarded, which is jsonb, so nothing is lost
+  // even when the summary column has to be rounded.
+  if (evalError && !Number.isInteger(evaluation.marks_awarded)) {
+    const rounded = Math.round(evaluation.marks_awarded);
+    console.warn(
+      "[BoardEdge] evaluations insert rejected a fractional mark; retrying rounded.",
+      { from: evaluation.marks_awarded, to: rounded, reason: evalError.message }
+    );
+    ({ error: evalError } = await supabase
+      .from("evaluations")
+      .insert({ ...evaluationRow, marks_awarded: rounded }));
+  }
 
   if (evalError) {
     console.error("[BoardEdge] evaluations insert failed:", evalError);

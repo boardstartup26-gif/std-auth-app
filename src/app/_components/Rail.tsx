@@ -15,7 +15,7 @@
 //   <RailLayout>
 //     <Rail>
 //       <RailNote label="Today">12 Sep 2026</RailNote>
-//       <RailNote label="Tokens"><span className={numericMono}>7 / 10</span></RailNote>
+//       <RailNote label="Tokens"><span className={numericFigures}>7 / 10</span></RailNote>
 //     </Rail>
 //     <RailContent>…</RailContent>
 //   </RailLayout>

@@ -24,7 +24,7 @@ import {
   Search,
   SlidersHorizontal,
 } from "lucide-react";
-import { numericMono, scoreBadgeClass } from "@/lib/ui";
+import { numericFigures, scoreBadgeClass } from "@/lib/ui";
 import type { HistoryGroup } from "@/lib/history";
 
 // One small, consistent mark per subject. Deliberately monochrome — §1 of the
@@ -102,7 +102,7 @@ function formatDateTime(iso: string): string {
 function ScoreTrail({ group }: { group: HistoryGroup }) {
   const arrow = group.trend === "up" ? "↑" : group.trend === "down" ? "↓" : null;
   return (
-    <span className={`${numericMono} text-[11px] text-muted-foreground`}>
+    <span className={`${numericFigures} text-[11px] text-muted-foreground`}>
       {group.attempts.map((a, i) => (
         <span key={a.id}>
           {i > 0 ? <span className="px-1">→</span> : null}
@@ -156,10 +156,10 @@ function GroupRow({ group }: { group: HistoryGroup }) {
           </p>
 
           <div className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1.5">
-            <span className={`${numericMono} text-[11px] text-muted-foreground`}>
+            <span className={`${numericFigures} text-[11px] text-muted-foreground`}>
               {group.year ? `${group.year} · ` : ""}Q{group.questionNumber}
             </span>
-            <span className={`${numericMono} text-[11px] text-muted-foreground`}>
+            <span className={`${numericFigures} text-[11px] text-muted-foreground`}>
               {formatDate(latest.submittedAt)}
             </span>
             {repeated ? (
@@ -178,7 +178,7 @@ function GroupRow({ group }: { group: HistoryGroup }) {
             {latest.awarded}/{latest.totalMarks}
           </span>
           {latest.percent !== null ? (
-            <span className={`${numericMono} text-[11px] text-muted-foreground`}>
+            <span className={`${numericFigures} text-[11px] text-muted-foreground`}>
               {latest.percent}%
             </span>
           ) : null}
@@ -216,16 +216,16 @@ function GroupRow({ group }: { group: HistoryGroup }) {
               up, so the expanded list is for working backwards. */}
           {[...group.attempts].reverse().map((a, i) => (
             <li key={a.id} className="flex items-start gap-3 py-2">
-              <span className={`${numericMono} w-14 shrink-0 text-[11px] text-muted-foreground`}>
+              <span className={`${numericFigures} w-14 shrink-0 text-[11px] text-muted-foreground`}>
                 #{group.attempts.length - i}
               </span>
               <div className="min-w-0 flex-1">
-                <p className={`${numericMono} text-[11px] text-muted-foreground`}>
+                <p className={`${numericFigures} text-[11px] text-muted-foreground`}>
                   {formatDateTime(a.submittedAt)}
                 </p>
                 <p className="mt-0.5 text-[13px] text-muted-foreground">{a.lossSummary}</p>
               </div>
-              <span className={`${numericMono} shrink-0 text-xs text-foreground`}>
+              <span className={`${numericFigures} shrink-0 text-xs text-foreground`}>
                 {a.awarded}/{a.totalMarks}
               </span>
               <Link

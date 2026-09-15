@@ -14,7 +14,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { numericMono, sectionLabel } from "@/lib/ui";
+import { numericFigures, sectionLabel } from "@/lib/ui";
 import { sliceAnswer, type MarkingPoint } from "@/lib/history";
 
 export interface PracticeRecord {
@@ -64,7 +64,7 @@ function Depth({
           />
           <span className="text-sm font-semibold text-foreground">{label}</span>
           {count ? (
-            <span className={`${numericMono} text-[11px] text-muted-foreground`}>{count}</span>
+            <span className={`${numericFigures} text-[11px] text-muted-foreground`}>{count}</span>
           ) : null}
         </button>
       </h2>
@@ -118,13 +118,43 @@ function AnswerPanel({
   );
 }
 
-const STATUS_MARK: Record<MarkingPoint["status"], { glyph: string; className: string; label: string }> = {
-  // Gold as a glyph, not as prose: withheld on the page ground measures
-  // 3.24:1, which clears the 3:1 bar for a non-text mark but not the 4.5:1
-  // that body copy needs — so the dash is gold and the wording stays ink.
-  awarded: { glyph: "✓", className: "text-status-correct", label: "Awarded" },
-  partial: { glyph: "–", className: "text-status-partial", label: "Partial" },
-  missed: { glyph: "✕", className: "text-muted-foreground", label: "Missed" },
+// Each status carries its colour on three things at once — the glyph, a left
+// rule, and a wash — because a coloured glyph alone disappears at this size:
+// the list read as a column of grey text with grey marks, which is exactly
+// what a student scanning for "what did I lose" cannot use.
+//
+// Colour never lands on the point's own wording. Awarded green is 6.44:1 and
+// would be fine, but withheld gold on its own wash is 2.79:1, so a rule that
+// coloured the text would have to make an exception for one status and would
+// stop being a rule. The glyph and the rule are non-text UI at 3:1; the
+// sentence stays ink at 15.31:1 in every row.
+//
+// §11 reserves accent for conceptual errors and asks for a muted "missed".
+// A muted miss is what the grey complaint was about, so missed takes the red
+// here and the conceptual-error block keeps its distinction by treatment — a
+// filled callout with a heavy rule — rather than by hue alone.
+const STATUS_MARK: Record<
+  MarkingPoint["status"],
+  { glyph: string; glyphClass: string; rowClass: string; label: string }
+> = {
+  awarded: {
+    glyph: "✓",
+    glyphClass: "text-status-correct",
+    rowClass: "border-l-2 border-status-correct bg-status-correct-subtle",
+    label: "Awarded",
+  },
+  partial: {
+    glyph: "–",
+    glyphClass: "text-status-partial",
+    rowClass: "border-l-2 border-status-partial bg-status-partial-subtle",
+    label: "Partial",
+  },
+  missed: {
+    glyph: "✕",
+    glyphClass: "text-status-wrong",
+    rowClass: "border-l-2 border-status-wrong bg-status-wrong-subtle",
+    label: "Missed",
+  },
 };
 
 function MarkingPointList({
@@ -148,34 +178,28 @@ function MarkingPointList({
           const selected = i === activeIndex;
           const selectable = !!p.anchor;
           return (
-            <li key={`${p.point}-${i}`} className="border-b border-border last:border-b-0">
+            <li key={`${p.point}-${i}`} className="mb-2 last:mb-0">
               <button
                 type="button"
                 disabled={!selectable}
                 onClick={() => setActiveIndex(selected ? null : i)}
                 aria-pressed={selected}
-                className={`flex w-full items-start gap-3 px-2 py-3 text-left transition-colors ${
-                  selectable ? "cursor-pointer hover:bg-surface-raised" : "cursor-default"
-                } ${selected ? "bg-surface-raised" : ""}`}
+                className={`flex w-full items-start gap-3 rounded-r-md px-3 py-3 text-left transition-shadow ${mark.rowClass} ${
+                  selectable ? "cursor-pointer" : "cursor-default"
+                } ${selected ? "ring-1 ring-inset ring-foreground/25" : ""}`}
               >
                 <span
-                  className={`${mark.className} mt-0.5 w-4 shrink-0 text-center text-sm`}
+                  className={`${mark.glyphClass} mt-px w-4 shrink-0 text-center text-base font-semibold`}
                   title={mark.label}
                 >
                   {mark.glyph}
                   <span className="sr-only">{mark.label}: </span>
                 </span>
-                <span
-                  className={`min-w-0 flex-1 text-[14px] leading-snug ${
-                    p.status === "missed"
-                      ? "text-muted-foreground line-through decoration-border"
-                      : "text-foreground"
-                  }`}
-                >
+                <span className="min-w-0 flex-1 text-[14px] leading-snug text-foreground">
                   {p.point}
                 </span>
                 {p.marks > 0 ? (
-                  <span className={`${numericMono} shrink-0 text-xs text-muted-foreground`}>
+                  <span className={`${numericFigures} shrink-0 text-xs font-semibold text-foreground`}>
                     {p.marks_awarded}/{p.marks}
                   </span>
                 ) : null}
@@ -218,7 +242,7 @@ export function PracticeReport({ record }: { record: PracticeRecord }) {
         <div className="flex flex-wrap items-baseline justify-between gap-4">
           <p className={sectionLabel}>Verdict</p>
           {record.declaredMarks != null ? (
-            <p className={`${numericMono} text-[11px] text-muted-foreground`}>
+            <p className={`${numericFigures} text-[11px] text-muted-foreground`}>
               You predicted {record.declaredMarks}
             </p>
           ) : null}
@@ -304,7 +328,7 @@ export function PracticeReport({ record }: { record: PracticeRecord }) {
               <ul className="mt-3 flex max-w-[var(--measure)] flex-col gap-2">
                 {improvementTips.map((tip, i) => (
                   <li key={i} className="flex gap-3 text-[14px] leading-relaxed text-foreground">
-                    <span className={`${numericMono} shrink-0 text-muted-foreground`}>
+                    <span className={`${numericFigures} shrink-0 text-muted-foreground`}>
                       {i + 1}.
                     </span>
                     <span>{tip}</span>

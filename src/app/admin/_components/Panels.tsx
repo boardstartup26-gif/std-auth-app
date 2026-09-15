@@ -10,7 +10,7 @@
 // colours appear only where they mean what they mean elsewhere in the app —
 // red for failure, green for a good outcome, yellow for a partial one.
 
-import { cardPadded, numericMono, sectionLabel } from "@/lib/ui";
+import { cardPadded, numericFigures, sectionLabel } from "@/lib/ui";
 
 export type Tone = "neutral" | "good" | "bad" | "warn";
 
@@ -77,7 +77,7 @@ export function StatCard({
   return (
     <div className="rounded-2xl border border-border bg-card p-4 sm:p-5">
       <p className={sectionLabel}>{label}</p>
-      <p className={`mt-2 text-2xl font-bold sm:text-3xl ${numericMono} ${TONE_TEXT[tone]}`}>
+      <p className={`mt-2 text-2xl font-bold sm:text-3xl ${numericFigures} ${TONE_TEXT[tone]}`}>
         {value}
       </p>
       {sub ? <p className="mt-1 text-xs text-muted-foreground">{sub}</p> : null}
@@ -136,7 +136,7 @@ export function BarRow({
     <div className="py-2">
       <div className="flex items-baseline justify-between gap-3">
         <span className="min-w-0 truncate text-sm text-foreground">{label}</span>
-        <span className={`shrink-0 text-sm font-semibold ${numericMono} ${TONE_TEXT[tone]}`}>
+        <span className={`shrink-0 text-sm font-semibold ${numericFigures} ${TONE_TEXT[tone]}`}>
           {value}
         </span>
       </div>
@@ -150,7 +150,7 @@ export function BarRow({
           <div className={`h-full rounded-full ${TONE_BAR[tone]}`} style={{ width: `${width}%` }} />
         </div>
         {meta ? (
-          <span className={`shrink-0 text-[11px] text-muted-foreground ${numericMono}`}>{meta}</span>
+          <span className={`shrink-0 text-[11px] text-muted-foreground ${numericFigures}`}>{meta}</span>
         ) : null}
       </div>
     </div>
@@ -185,7 +185,7 @@ export function FunnelRow({
       <div className="flex items-baseline justify-between gap-3">
         <span className="min-w-0 text-sm text-foreground">{label}</span>
         <span className="flex shrink-0 items-baseline gap-2">
-          <span className={`text-sm font-semibold ${numericMono} text-foreground`}>
+          <span className={`text-sm font-semibold ${numericFigures} text-foreground`}>
             {formatNumber(count)}
           </span>
           {fromPrevious !== null ? (
@@ -198,8 +198,8 @@ export function FunnelRow({
             <span
               className={
                 tone === "warn"
-                  ? `rounded-full border border-status-partial bg-status-partial-subtle px-1.5 py-0.5 text-[11px] ${numericMono} text-foreground`
-                  : `text-[11px] ${numericMono} ${TONE_TEXT[tone]}`
+                  ? `rounded-full border border-status-partial bg-status-partial-subtle px-1.5 py-0.5 text-[11px] ${numericFigures} text-foreground`
+                  : `text-[11px] ${numericFigures} ${TONE_TEXT[tone]}`
               }
             >
               {formatPercent(fromPrevious)}

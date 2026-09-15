@@ -8,7 +8,7 @@
 import Link from "next/link";
 import { requireAdmin } from "@/lib/analytics/admin";
 import { getDashboardMetrics } from "@/lib/analytics/aggregate";
-import { numericMono, pageShellWide, sectionLabel } from "@/lib/ui";
+import { numericFigures, pageShellWide, sectionLabel } from "@/lib/ui";
 import {
   BarRow,
   EmptyState,
@@ -186,7 +186,7 @@ export default async function AdminPage({
                     tone={e.stage === "quota_exceeded" ? "warn" : "bad"}
                   />
                   {e.sampleReason ? (
-                    <p className="mt-1 truncate font-mono text-[10px] text-muted-foreground">
+                    <p className="mt-1 truncate text-[10px] text-muted-foreground">
                       {e.sampleReason}
                     </p>
                   ) : null}
@@ -209,7 +209,7 @@ export default async function AdminPage({
             ].map(({ label, stat }) => (
               <div key={label} className="rounded-xl border border-border bg-card/60 p-3">
                 <p className={sectionLabel}>{label}</p>
-                <p className={`mt-2 text-xl font-bold ${numericMono} text-foreground`}>
+                <p className={`mt-2 text-xl font-bold ${numericFigures} text-foreground`}>
                   {formatPercent(stat.rate)}
                 </p>
                 <p className="mt-1 text-[11px] text-muted-foreground">
@@ -293,13 +293,13 @@ export default async function AdminPage({
           <div className="mt-5 border-t border-border pt-4">
             <p className={sectionLabel}>Student feedback</p>
             <div className="mt-2 flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm">
-              <span className={`font-semibold ${numericMono} text-foreground`}>
+              <span className={`font-semibold ${numericFigures} text-foreground`}>
                 {formatNumber(feedback.total)} total
               </span>
-              <span className={`${numericMono} text-status-correct`}>
+              <span className={`${numericFigures} text-status-correct`}>
                 {formatNumber(feedback.thumbsUp)} up
               </span>
-              <span className={`${numericMono} text-status-wrong`}>
+              <span className={`${numericFigures} text-status-wrong`}>
                 {formatNumber(feedback.thumbsDown)} down
               </span>
             </div>
@@ -311,7 +311,7 @@ export default async function AdminPage({
                     key={t.tag}
                     className="rounded-full border border-border bg-card px-3 py-1 text-[11px] text-muted-foreground"
                   >
-                    {t.tag} · <span className={numericMono}>{t.count}</span>
+                    {t.tag} · <span className={numericFigures}>{t.count}</span>
                   </span>
                 ))}
               </div>
