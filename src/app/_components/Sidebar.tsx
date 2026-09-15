@@ -145,8 +145,11 @@ export function Sidebar() {
           {expanded ? (
             // The full lockup replaces the icon + separate "BoardEdge" span
             // pair that used to sit here — one image instead of two elements
-            // saying the same thing side by side.
-            <Image src="/logo-lockup.png" alt="BoardEdge" width={81} height={24} priority />
+            // saying the same thing side by side. Sized up from an initial
+            // 81×24: at that size it left most of the 240px-wide rail empty
+            // before the collapse toggle. 108×32 keeps the same 3.37:1 aspect
+            // ratio while actually using the header's width.
+            <Image src="/logo-lockup.png" alt="BoardEdge" width={108} height={32} priority />
           ) : (
             <Image src="/logo-icon.png" alt="BoardEdge" width={28} height={28} className="shrink-0" priority />
           )}

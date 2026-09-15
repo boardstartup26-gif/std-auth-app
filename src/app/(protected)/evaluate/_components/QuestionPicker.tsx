@@ -30,7 +30,7 @@ import {
   type AnswerFormat,
 } from "@/lib/question-format";
 import { inputBase, numericFigures } from "@/lib/ui";
-import { OTHER_BUCKET, SUBJECTS, totalMarksOf, type Question } from "../_lib/question";
+import { displayPaper, OTHER_BUCKET, SUBJECTS, totalMarksOf, type Question } from "../_lib/question";
 
 // ─── Bits ─────────────────────────────────────────────────────────────────────
 
@@ -448,7 +448,7 @@ export function QuestionPicker({
                         </span>
                         <span aria-hidden>·</span>
                         <span className={numericFigures}>
-                          {q.year} Paper {q.paper}
+                          {q.year} Paper {displayPaper(q.paper)}
                         </span>
                         {marks != null ? (
                           <>

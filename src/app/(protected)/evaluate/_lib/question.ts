@@ -103,6 +103,20 @@ export function mcqOptionLabel(opt: McqOption): string {
   return typeof opt === "string" ? opt : opt.text;
 }
 
+// The paper column is inconsistent across import batches: Chemistry/Biology/
+// Physics store a bare "1", Geography "1"/"2", but History & Civics stores
+// "hcg_paper_1" and English Literature "paper_2" — internal import codes that
+// were never cleaned up before landing in the questions table. Shown raw, a
+// student reading the Browse list sees "2025 Paper hcg_paper_1" instead of
+// "2025 Paper 1". This trims a known code prefix down to the trailing number
+// without touching the stored data — the underlying inconsistency belongs to
+// a data migration, not a display-layer patch, but the patch is what a
+// student sees today.
+export function displayPaper(paper: string): string {
+  const match = paper.match(/(\d+)\s*$/);
+  return match ? match[1] : paper;
+}
+
 export function totalMarksOf(q: Question): number | null {
   const ms = q.question_marks;
   if (!ms) return null;
