@@ -2,7 +2,7 @@ import { after, NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { WEEKLY_TOKEN_LIMIT, TOKEN_COST_SUBJECTIVE, TOKEN_COST_OBJECTIVE } from "@/lib/constants";
+import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
@@ -55,11 +55,24 @@ interface MarkingScheme {
   marks_per_correct_point: number | null;
 }
 
+// One entry per scheme-defined marking point. matched_text is a verbatim
+// quote Claude copies from the student's answer — never a character index;
+// asking a model to count characters reliably produces off-by-several
+// errors (proven out by hand while building the landing page demo). The
+// anchor is computed deterministically in code via resolveMarkingPointAnchors.
+interface MarkingPoint {
+  point: string;
+  marks: number;
+  status: "awarded" | "partial" | "missed";
+  marks_awarded: number;
+  matched_text: string | null;
+  anchor: { start: number; end: number } | null;
+}
+
 interface EvaluationOutput {
   marks_awarded: number;
   total_marks: number;
-  points_hit: string[];
-  points_missed: string[];
+  marking_points: MarkingPoint[];
   conceptual_errors: string[];
   icse_style_issues: string[];
   unassessable_components: string[];
@@ -79,11 +92,18 @@ interface EvaluationOutput {
 // shape before it touches the DB or the response. This does NOT replace the
 // marks_awarded clamp below; a value can be schema-valid and still out of
 // range (e.g. 999), so both checks run.
+const MarkingPointSchema = z.object({
+  point: z.string(),
+  marks: z.number().positive(),
+  status: z.enum(["awarded", "partial", "missed"]),
+  marks_awarded: z.number().min(0),
+  matched_text: z.string().nullable(),
+});
+
 const ClaudeEvalSchema = z.object({
   marks_awarded: z.number(),
   total_marks: z.number(),
-  points_hit: z.array(z.string()),
-  points_missed: z.array(z.string()),
+  marking_points: z.array(MarkingPointSchema),
   conceptual_errors: z.array(z.string()),
   icse_style_issues: z.array(z.string()),
   unassessable_components: z.array(z.string()),
@@ -92,6 +112,32 @@ const ClaudeEvalSchema = z.object({
   examiner_feedback: z.string(),
   improvement_tips: z.array(z.string()),
 });
+
+// ─── Anchor Resolution ─────────────────────────────────────────────────────
+// Claude returns a verbatim quote (matched_text), never a character index.
+// The anchor is computed here, deterministically, by searching for that
+// exact quote inside the student's own answer text. If Claude paraphrased
+// instead of quoting exactly, indexOf fails and the point still displays —
+// just without a highlighted span. This never blocks the evaluation.
+function resolveMarkingPointAnchors(
+  markingPoints: z.infer<typeof MarkingPointSchema>[],
+  studentAnswer: string
+): MarkingPoint[] {
+  return markingPoints.map((mp) => {
+    if (!mp.matched_text) {
+      return { ...mp, anchor: null };
+    }
+    const start = studentAnswer.indexOf(mp.matched_text);
+    if (start === -1) {
+      console.warn("[BoardEdge] matched_text not found verbatim in student answer:", {
+        point: mp.point,
+        matched_text: mp.matched_text,
+      });
+      return { ...mp, anchor: null };
+    }
+    return { ...mp, anchor: { start, end: start + mp.matched_text.length } };
+  });
+}
 
 // ─── User Message ─────────────────────────────────────────────────────────────
 
@@ -221,7 +267,7 @@ async function reserveTokens(
     p_user_id: userId,
     p_date: date,
     p_cost: cost,
-    p_limit: WEEKLY_TOKEN_LIMIT,
+    p_limit: WEEKLY_CREDIT_LIMIT,
   });
 
   if (error) {
@@ -495,7 +541,7 @@ export async function POST(req: NextRequest) {
   const scheme = schemeRow as MarkingScheme;
 
   const isSubjective = question.is_subjective || question.question_type === "short_answer";
-  const tokenCost = isSubjective ? TOKEN_COST_SUBJECTIVE : TOKEN_COST_OBJECTIVE;
+  const tokenCost = isSubjective ? CREDIT_COST_SUBJECTIVE : CREDIT_COST_OBJECTIVE;
   const today = getUsageDateIST();
 
   // FIX: atomic reserve-before-spend, replaces the old SELECT-then-later-
@@ -515,7 +561,7 @@ export async function POST(req: NextRequest) {
       { status: 429 }
     );
   }
-  const tokensRemaining = Math.max(0, WEEKLY_TOKEN_LIMIT - reservation.newCount);
+  const tokensRemaining = Math.max(0, WEEKLY_CREDIT_LIMIT - reservation.newCount);
 
   // ─── OBJECTIVE PATH (no Claude call) ─────────────────────────────────────
 
@@ -554,8 +600,16 @@ export async function POST(req: NextRequest) {
     const evaluation: EvaluationOutput = {
       marks_awarded: marksAwarded,
       total_marks: scheme.total_marks,
-      points_hit: isCorrect ? [correctAnswerDisplay] : [],
-      points_missed: isCorrect ? [] : [correctAnswerDisplay],
+      marking_points: [
+        {
+          point: correctAnswerDisplay,
+          marks: scheme.total_marks,
+          status: isCorrect ? "awarded" : "missed",
+          marks_awarded: marksAwarded,
+          matched_text: isCorrect ? student_answer : null,
+          anchor: isCorrect ? { start: 0, end: student_answer.length } : null,
+        },
+      ],
       conceptual_errors: [],
       icse_style_issues: [],
       unassessable_components: [],
@@ -586,12 +640,19 @@ export async function POST(req: NextRequest) {
       });
     } catch (err) {
       console.error("[BoardEdge] Persist error:", err);
+      // The token was reserved before grading, and grading itself succeeded —
+      // only the write failed. Without this the student pays for an
+      // evaluation that never reached /history, on top of losing the result.
+      await refundTokens(supabase, userId, today, tokenCost);
       trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
         user_id: userId, subject, year, question_number,
         question_id: question.id, is_subjective: false,
       });
       return NextResponse.json(
-        { error: "Evaluation succeeded but could not be saved. Please retry." },
+        {
+          error: "Evaluation succeeded but could not be saved. Please retry.",
+          tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+        },
         { status: 500 }
       );
     }
@@ -624,7 +685,13 @@ export async function POST(req: NextRequest) {
   try {
     const message = await anthropic.messages.create({
       model: "claude-sonnet-4-5",
-      max_tokens: 1024,
+      // The marking_points schema repeats the full scheme wording and a
+      // verbatim quote per point (on top of model_answer/examiner_feedback/
+      // improvement_tips), which is far more verbose than the old flat
+      // points_hit/points_missed arrays. 1024 was sized for that old shape
+      // and was truncating responses mid-JSON on questions with several
+      // marking points — bumped to give real headroom.
+      max_tokens: 4096,
       system: buildExaminerSystemPrompt(subject),
       messages: [
         {
@@ -712,8 +779,14 @@ export async function POST(req: NextRequest) {
 
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
+  const markingPointsWithAnchors = resolveMarkingPointAnchors(
+    claudeEval.marking_points,
+    student_answer
+  );
+
   const evaluation: EvaluationOutput = {
     ...claudeEval,
+    marking_points: markingPointsWithAnchors,
     marks_awarded: clampedMarks,
     token_cost: tokenCost,
     tokens_remaining: tokensRemaining,
@@ -728,12 +801,20 @@ export async function POST(req: NextRequest) {
     });
   } catch (err) {
     console.error("[BoardEdge] Persist error:", err);
+    // The token was reserved before the Claude call, and Claude graded the
+    // answer successfully — only the write failed. Without this the student
+    // pays for an evaluation that never reached /history, on top of losing
+    // the result itself.
+    await refundTokens(supabase, userId, today, tokenCost);
     trackEvaluationFailure(FAILURE_STAGES.PERSIST_ERROR, {
       user_id: userId, subject, year, question_number,
       question_id: question.id, is_subjective: true,
     });
     return NextResponse.json(
-      { error: "Evaluation succeeded but could not be saved. Please retry." },
+      {
+        error: "Evaluation succeeded but could not be saved. Please retry.",
+        tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+      },
       { status: 500 }
     );
   }
@@ -790,17 +871,38 @@ async function persistSubmission(
     throw new Error(`student_answers insert failed: ${answerError?.message}`);
   }
 
-  const { error: evalError } = await supabase.from("evaluations").insert({
+  const evaluationRow = {
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
-    points_hit: evaluation.points_hit,
-    points_missed: evaluation.points_missed,
+    marking_points: evaluation.marking_points,
     conceptual_errors: evaluation.conceptual_errors,
     model_answer: evaluation.model_answer,
     model_answer_source: evaluation.model_answer_source,
     examiner_feedback: evaluation.examiner_feedback,
     improvement_tips: evaluation.improvement_tips,
-  });
+  };
+
+  let { error: evalError } = await supabase.from("evaluations").insert(evaluationRow);
+
+  // FIX: marks_awarded was an integer column while total_marks is numeric, so a
+  // half mark — which the examiner prompt now allows wherever the scheme itself
+  // splits a point into value and unit — was rejected outright. The student saw
+  // "could not be saved" on an answer that had just been graded correctly.
+  // 20260915180000_widen_marks_awarded_to_numeric.sql widens the column; until
+  // that migration is applied this retries with a rounded mark so a graded
+  // answer is never thrown away. The exact fractional value survives either way
+  // inside marking_points[].marks_awarded, which is jsonb, so nothing is lost
+  // even when the summary column has to be rounded.
+  if (evalError && !Number.isInteger(evaluation.marks_awarded)) {
+    const rounded = Math.round(evaluation.marks_awarded);
+    console.warn(
+      "[BoardEdge] evaluations insert rejected a fractional mark; retrying rounded.",
+      { from: evaluation.marks_awarded, to: rounded, reason: evalError.message }
+    );
+    ({ error: evalError } = await supabase
+      .from("evaluations")
+      .insert({ ...evaluationRow, marks_awarded: rounded }));
+  }
 
   if (evalError) {
     console.error("[BoardEdge] evaluations insert failed:", evalError);

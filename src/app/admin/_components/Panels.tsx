@@ -10,15 +10,24 @@
 // colours appear only where they mean what they mean elsewhere in the app —
 // red for failure, green for a good outcome, yellow for a partial one.
 
-import { cardPadded, numericMono, sectionLabel } from "@/lib/ui";
+import { cardPadded, numericFigures, sectionLabel } from "@/lib/ui";
 
 export type Tone = "neutral" | "good" | "bad" | "warn";
 
+// `warn` is ink, not gold, and it is the one tone that can't use its own
+// colour here. Withheld gold is 3.24:1 on the card — fine for a bar or a
+// border, short of the 4.5:1 that normal text needs, and warn only ever
+// renders as text at 14px (BarRow) and 11px (FunnelRow). Green (6.44:1) and
+// red (5.19:1) both clear it, so they keep their colour.
+//
+// BarRow loses nothing: TONE_BAR below still paints its bar gold. FunnelRow's
+// bar is always neutral, so its percentage figure gets its own gold pill
+// where it renders (see FunnelRow) instead of relying on TONE_TEXT.
 const TONE_TEXT: Record<Tone, string> = {
   neutral: "text-foreground",
   good: "text-status-correct",
   bad: "text-status-wrong",
-  warn: "text-status-partial",
+  warn: "text-foreground",
 };
 
 const TONE_BAR: Record<Tone, string> = {
@@ -68,7 +77,7 @@ export function StatCard({
   return (
     <div className="rounded-2xl border border-border bg-card p-4 sm:p-5">
       <p className={sectionLabel}>{label}</p>
-      <p className={`mt-2 text-2xl font-bold sm:text-3xl ${numericMono} ${TONE_TEXT[tone]}`}>
+      <p className={`mt-2 text-2xl font-bold sm:text-3xl ${numericFigures} ${TONE_TEXT[tone]}`}>
         {value}
       </p>
       {sub ? <p className="mt-1 text-xs text-muted-foreground">{sub}</p> : null}
@@ -127,7 +136,7 @@ export function BarRow({
     <div className="py-2">
       <div className="flex items-baseline justify-between gap-3">
         <span className="min-w-0 truncate text-sm text-foreground">{label}</span>
-        <span className={`shrink-0 text-sm font-semibold ${numericMono} ${TONE_TEXT[tone]}`}>
+        <span className={`shrink-0 text-sm font-semibold ${numericFigures} ${TONE_TEXT[tone]}`}>
           {value}
         </span>
       </div>
@@ -141,7 +150,7 @@ export function BarRow({
           <div className={`h-full rounded-full ${TONE_BAR[tone]}`} style={{ width: `${width}%` }} />
         </div>
         {meta ? (
-          <span className={`shrink-0 text-[11px] text-muted-foreground ${numericMono}`}>{meta}</span>
+          <span className={`shrink-0 text-[11px] text-muted-foreground ${numericFigures}`}>{meta}</span>
         ) : null}
       </div>
     </div>
@@ -176,11 +185,23 @@ export function FunnelRow({
       <div className="flex items-baseline justify-between gap-3">
         <span className="min-w-0 text-sm text-foreground">{label}</span>
         <span className="flex shrink-0 items-baseline gap-2">
-          <span className={`text-sm font-semibold ${numericMono} text-foreground`}>
+          <span className={`text-sm font-semibold ${numericFigures} text-foreground`}>
             {formatNumber(count)}
           </span>
           {fromPrevious !== null ? (
-            <span className={`text-[11px] ${numericMono} ${TONE_TEXT[tone]}`}>
+            // `warn` is the one tone this figure can't carry by text colour
+            // alone (see TONE_TEXT above) — its bar is always neutral, so
+            // without its own chrome a warn step reads identical to a neutral
+            // one. A small pill borrows the score badge's trick: gold on the
+            // border and wash (non-text UI, 3.24:1 clears 3:1), ink for the
+            // number itself (17.76:1). Every other tone stays plain text.
+            <span
+              className={
+                tone === "warn"
+                  ? `rounded-full border border-status-partial bg-status-partial-subtle px-1.5 py-0.5 text-[11px] ${numericFigures} text-foreground`
+                  : `text-[11px] ${numericFigures} ${TONE_TEXT[tone]}`
+              }
+            >
               {formatPercent(fromPrevious)}
             </span>
           ) : null}

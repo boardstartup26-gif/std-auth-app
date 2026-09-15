@@ -1,0 +1,54 @@
+{
+  "subject": "History & Civics",
+  "board": "ICSE",
+  "year": 2024,
+  "question_number": "4(i)",
+  "question_text": "Mention any three points to distinguish between the Council of Ministers and the Cabinet.",
+  "student_answer_text": "The Council of Ministers is a larger body consisting of all categories of ministers, including Cabinet Ministers, Ministers of State and Deputy Ministers, whereas the Cabinet is a smaller group of senior ministers holding important portfolios. The Cabinet meets frequently to decide important government policies, while the entire Council of Ministers rarely meets as one body. The Cabinet advises the President directly, whereas the Council of Ministers does not advise the President.",
+  "total_marks": 3,
+  "marks_awarded": 2,
+  "is_objective": false,
+  "marking_points": [
+    {
+      "point": "The Council of Ministers consists of all categories of ministers, whereas the Cabinet is a smaller group of senior ministers holding important portfolios.",
+      "marks": 1,
+      "status": "awarded",
+      "marks_awarded": 1,
+      "matched_text": "The Council of Ministers is a larger body consisting of all categories of ministers, including Cabinet Ministers, Ministers of State and Deputy Ministers, whereas the Cabinet is a smaller group of senior ministers holding important portfolios.",
+      "anchor": {
+        "start": 0,
+        "end": 243
+      }
+    },
+    {
+      "point": "The Council of Ministers as a whole rarely meets; the Cabinet meets frequently to decide important government policies.",
+      "marks": 1,
+      "status": "awarded",
+      "marks_awarded": 1,
+      "matched_text": "The Cabinet meets frequently to decide important government policies, while the entire Council of Ministers rarely meets as one body.",
+      "anchor": {
+        "start": 244,
+        "end": 377
+      }
+    },
+    {
+      "point": "The Prime Minister may or may not consult ministers below Cabinet rank, but always consults Cabinet ministers, whose decisions bind all ministers.",
+      "marks": 1,
+      "status": "missed",
+      "marks_awarded": 0,
+      "matched_text": null,
+      "anchor": null
+    }
+  ],
+  "conceptual_errors": [
+    "The student states 'The Cabinet advises the President directly, whereas the Council of Ministers does not advise the President' — this reverses the constitutional position. The Constitution provides that the President acts on the advice of the Council of Ministers, though in practice it is the Cabinet that advises through the Prime Minister."
+  ],
+  "model_answer": "The Council of Ministers consists of all categories of ministers — Cabinet Ministers, Ministers of State, and Deputy Ministers — whereas the Cabinet is a smaller, more select group consisting only of senior ministers who hold important portfolios such as Defence, Finance, Home, and External Affairs. The Prime Minister may or may not consult ministers below the rank of Cabinet Ministers in decision-making, but the Cabinet ministers are the Prime Minister's most trusted colleagues whom the Prime Minister always consults, and the decisions taken by the Cabinet are binding on all ministers in the Council. In the day-to-day working of the government, the Council of Ministers as a whole rarely meets as one body, whereas the Cabinet is a small cohesive group that meets as frequently as possible to determine the policy and programme of the Government and to direct its implementation.",
+  "model_answer_source": "ai_generated",
+  "examiner_feedback": "You secured two valid distinctions but your third point contains a constitutional inversion. The Constitution provides that the President acts on the advice of the Council of Ministers, not that the Council does not advise — claiming the Council does not advise the President contradicts the legal framework and costs you the mark.",
+  "improvement_tips": [
+    "Create a two-column comparison table for Council of Ministers versus Cabinet using the exact four distinctions from the scheme, then practice writing any three as full sentences without mixing constitutional provision with operational practice — this will prevent conflation errors.",
+    "Before submitting a Civics answer on constitutional bodies or offices, perform a terminology check: replace informal phrases with exact Council terms.",
+    "For constitutional versus operational reality questions, practice the scheme's own qualifying phrases: 'According to the Constitution' for the legal position, 'In reality' or 'In practice' for the operational position."
+  ]
+}

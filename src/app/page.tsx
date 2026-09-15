@@ -14,8 +14,9 @@ import {
   Sparkles,
   ShieldCheck,
 } from "lucide-react";
-import { btnPrimary, btnSecondary, sectionLabel, numericMono } from "@/lib/ui";
+import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
 import { FaqAccordion, type FaqItem } from "@/app/_components/FaqAccordion";
+import { HomeLogoLink } from "@/app/_components/HomeLogoLink";
 
 const SUBJECT_PILLS = [
   { name: "Biology", icon: Dna, className: "left-[2%] top-[10%]" },
@@ -107,10 +108,9 @@ export default function Home() {
       {/* Sticky nav */}
       <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-12">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/be-logo1.png" alt="BoardEdge" width={28} height={28} />
-            <span className="text-sm font-semibold tracking-tight text-foreground">BoardEdge</span>
-          </Link>
+          <HomeLogoLink>
+            <Image src="/logo-lockup.png" alt="BoardEdge" width={101} height={30} priority />
+          </HomeLogoLink>
 
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground sm:flex">
             <a href="#features" className="hover:text-foreground">Features</a>
@@ -264,12 +264,15 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2">
-            <Image src="/be-logo1.png" alt="BoardEdge" width={24} height={24} />
-            <span className={numericMono + " text-xs text-muted-foreground"}>
+          {/* Icon only here, not the lockup — the adjacent text is the
+              copyright line, and "BoardEdge © 2026 BoardEdge" would repeat
+              the wordmark right next to itself. */}
+          <HomeLogoLink className="flex items-center gap-2">
+            <Image src="/logo-icon.png" alt="BoardEdge" width={24} height={24} />
+            <span className={numericFigures + " text-xs text-muted-foreground"}>
               © {new Date().getFullYear()} BoardEdge
             </span>
-          </div>
+          </HomeLogoLink>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
             <span className="opacity-50" title="Coming soon">[PLACEHOLDER — support email]</span>

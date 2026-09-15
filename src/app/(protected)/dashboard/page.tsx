@@ -1,10 +1,32 @@
-import { createClient } from "@/lib/supabase/server";
-import { signOut } from "@/app/(auth)/actions";
-import Link from "next/link";
 import { Gauge, BarChart2, PieChart } from "lucide-react";
-import { btnPrimary, btnSecondary, cardPadded, pageShell, sectionLabel } from "@/lib/ui";
+import { createClient } from "@/lib/supabase/server";
+import { readCredits } from "@/lib/credits";
+import { Hairline } from "@/app/_components/Hairline";
+import { MagneticCard } from "@/app/_components/MagneticCard";
+import { numericFigures, sectionLabel } from "@/lib/ui";
 
 export const dynamic = "force-dynamic";
+
+// No margin rail here. It held the date, the credit balance and the join month
+// — the balance now lives in the top bar on every page, and the other two did
+// not earn a column down the side.
+const dashboardShell = "mx-auto min-h-screen max-w-5xl px-6 py-12";
+
+/**
+ * Greeting by IST clock, not the server's. Vercel runs these functions in
+ * whatever region is nearest, so a UTC hour would wish a student in Kolkata
+ * good morning at half past five in the evening. The page is force-dynamic and
+ * server-only, so there is no client clock to disagree with this.
+ */
+function greetingFor(date: Date): string {
+  const hour = Number(
+    date.toLocaleString("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", hour12: false })
+  );
+  if (hour < 5) return "Still up";
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+}
 
 const ANALYTICS_PLACEHOLDERS = [
   { icon: Gauge, label: "Accuracy Overview", desc: "Your overall accuracy score" },
@@ -14,87 +36,66 @@ const ANALYTICS_PLACEHOLDERS = [
 
 export default async function DashboardPage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   const firstName = (user?.user_metadata?.first_name as string | undefined)?.trim();
   const greetingName = firstName || user?.email?.split("@")[0] || "there";
+  const credits = user ? await readCredits(user.id) : null;
 
   return (
-    <div className={pageShell}>
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-foreground/50">BoardEdge</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-foreground">Student dashboard</h1>
-        </div>
-        <div className="flex items-center gap-2">
-          <Link href="/account" className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-surface-raised flex items-center">
-            Account
-          </Link>
-          <form action={signOut}>
-            <button className="h-10 rounded-xl border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-surface-raised" type="submit">
-              Sign out
-            </button>
-          </form>
-        </div>
+    <div className={dashboardShell}>
+      <p className={sectionLabel}>BoardEdge</p>
+      <h1 className="display-section mt-2">
+        {greetingFor(new Date())}, {greetingName}
+      </h1>
+      <p className="mt-4 max-w-[var(--measure)] text-muted-foreground">
+        Choose a past-paper question, submit your answer, and see exactly where the marks were
+        awarded and where they were withheld.
+      </p>
+
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <MagneticCard
+          href="/evaluate"
+          title="Question practice"
+          description="Exam-style past-paper questions for every subject, chapter and year — marked point by point against the real scheme."
+          icon="practice"
+          accentClass="text-accent"
+          washClass="text-accent/[0.07]"
+        />
+        <MagneticCard
+          href="/history"
+          title="Previous evaluations"
+          description="Every answer you have submitted, grouped by question, with the marks you gained and the points you dropped."
+          icon="history"
+          accentClass="text-awarded"
+          washClass="text-awarded/[0.07]"
+        />
       </div>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2">
-        <div
-          className="rounded-2xl border border-border p-8"
-          style={{ background: "linear-gradient(135deg, #1E3A5F 0%, var(--card) 70%)" }}
-        >
-          <p className={sectionLabel}>Welcome back</p>
-          <p className="mt-3 text-xl font-semibold text-foreground">
-            Hello, {greetingName}!
-          </p>
-          <p className="mt-2 text-sm text-foreground/70">
-            {user?.email ?? "Unknown"}
-          </p>
-          {user?.created_at ? (
-            <p className="mt-2 text-sm text-foreground/60">
-              Member since{" "}
-              {new Date(user.created_at).toLocaleDateString("en-IN", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </p>
-          ) : null}
-        </div>
+      {credits ? (
+        <p className="mt-4 text-sm text-muted-foreground">
+          <span className={`${numericFigures} font-semibold text-foreground`}>
+            {credits.remaining}
+          </span>{" "}
+          of <span className={numericFigures}>{credits.limit}</span> credits left this week
+        </p>
+      ) : null}
 
-        <div className={`${cardPadded} flex flex-col justify-between`}>
-          <div>
-            <p className={sectionLabel}>Evaluation engine</p>
-            <h2 className="mt-3 text-lg font-semibold tracking-tight text-foreground">
-              Start Marking
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-foreground/60">
-              Choose a past paper question. Submit your answer. See exactly where you gained and lost marks.
-            </p>
-          </div>
+      <Hairline className="my-8" />
 
-          <div className="mt-8 flex flex-col gap-3">
-            <Link href="/evaluate" className={`${btnPrimary} w-full`}>
-              Start new evaluation
-            </Link>
-            <Link href="/history" className={`${btnSecondary} w-full`}>
-              View history
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Analytics placeholders — no charting library yet, structural placeholders only */}
-      <div className="mt-8 grid gap-6 sm:grid-cols-3">
+      {/* Analytics placeholders — no charting library yet, structural only. */}
+      <p className={sectionLabel}>Coming next</p>
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
         {ANALYTICS_PLACEHOLDERS.map(({ icon: Icon, label, desc }) => (
           <div
             key={label}
-            className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-border bg-card/40 p-8 text-center"
+            className="flex flex-col gap-2 rounded-xl border border-dashed border-border p-5"
           >
-            <Icon size={28} className="text-muted-foreground" />
+            <Icon size={20} strokeWidth={1.5} className="text-muted-foreground" aria-hidden />
             <p className="text-sm font-semibold text-foreground">{label}</p>
             <p className="text-xs text-muted-foreground">{desc}</p>
-            <p className="mt-2 text-xs text-muted-foreground">Analytics will appear here soon in the next update.</p>
           </div>
         ))}
       </div>
