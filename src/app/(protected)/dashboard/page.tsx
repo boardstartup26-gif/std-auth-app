@@ -1,16 +1,32 @@
-import Link from "next/link";
 import { Gauge, BarChart2, PieChart } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
 import { Hairline } from "@/app/_components/Hairline";
-import { btnPrimary, btnSecondary, numericFigures, sectionLabel } from "@/lib/ui";
+import { MagneticCard } from "@/app/_components/MagneticCard";
+import { numericFigures, sectionLabel } from "@/lib/ui";
 
 export const dynamic = "force-dynamic";
 
-// No margin rail here either. It held the date, the credit balance and the
-// join month — the balance now lives in the top bar on every page, and the
-// other two did not earn a column of their own down the side of the page.
+// No margin rail here. It held the date, the credit balance and the join month
+// — the balance now lives in the top bar on every page, and the other two did
+// not earn a column down the side.
 const dashboardShell = "mx-auto min-h-screen max-w-5xl px-6 py-12";
+
+/**
+ * Greeting by IST clock, not the server's. Vercel runs these functions in
+ * whatever region is nearest, so a UTC hour would wish a student in Kolkata
+ * good morning at half past five in the evening. The page is force-dynamic and
+ * server-only, so there is no client clock to disagree with this.
+ */
+function greetingFor(date: Date): string {
+  const hour = Number(
+    date.toLocaleString("en-GB", { timeZone: "Asia/Kolkata", hour: "2-digit", hour12: false })
+  );
+  if (hour < 5) return "Still up";
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+}
 
 const ANALYTICS_PLACEHOLDERS = [
   { icon: Gauge, label: "Accuracy Overview", desc: "Your overall accuracy score" },
@@ -31,31 +47,41 @@ export default async function DashboardPage() {
   return (
     <div className={dashboardShell}>
       <p className={sectionLabel}>BoardEdge</p>
-      <h1 className="display-section mt-2">Student dashboard</h1>
+      <h1 className="display-section mt-2">
+        {greetingFor(new Date())}, {greetingName}
+      </h1>
       <p className="mt-4 max-w-[var(--measure)] text-muted-foreground">
-        Hello, {greetingName}. Choose a past-paper question, submit your answer, and see exactly
-        where the marks were awarded and where they were withheld.
+        Choose a past-paper question, submit your answer, and see exactly where the marks were
+        awarded and where they were withheld.
       </p>
 
-      <Hairline className="my-8" />
-
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <Link href="/evaluate" className={btnPrimary}>
-          Start new evaluation
-        </Link>
-        <Link href="/history" className={btnSecondary}>
-          View results
-        </Link>
-        {credits ? (
-          <p className="text-sm text-muted-foreground sm:ml-auto">
-            <span className={`${numericFigures} font-semibold text-foreground`}>
-              {credits.remaining}
-            </span>{" "}
-            of{" "}
-            <span className={numericFigures}>{credits.limit}</span> credits left this week
-          </p>
-        ) : null}
+      <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <MagneticCard
+          href="/evaluate"
+          title="Question practice"
+          description="Exam-style past-paper questions for every subject, chapter and year — marked point by point against the real scheme."
+          icon="practice"
+          accentClass="text-accent"
+          washClass="text-accent/[0.07]"
+        />
+        <MagneticCard
+          href="/history"
+          title="Previous evaluations"
+          description="Every answer you have submitted, grouped by question, with the marks you gained and the points you dropped."
+          icon="history"
+          accentClass="text-awarded"
+          washClass="text-awarded/[0.07]"
+        />
       </div>
+
+      {credits ? (
+        <p className="mt-4 text-sm text-muted-foreground">
+          <span className={`${numericFigures} font-semibold text-foreground`}>
+            {credits.remaining}
+          </span>{" "}
+          of <span className={numericFigures}>{credits.limit}</span> credits left this week
+        </p>
+      ) : null}
 
       <Hairline className="my-8" />
 

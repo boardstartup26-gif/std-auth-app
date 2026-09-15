@@ -36,7 +36,7 @@ export default async function ProtectedLayout({
     <div className="min-h-dvh bg-background md:flex">
       <Sidebar subjects={subjects} />
       <div className="flex min-w-0 flex-1 flex-col">
-        <MobileNav subjects={subjects} remainingCredits={credits?.remaining ?? null} />
+        <MobileNav subjects={subjects} credits={credits} />
         <TopBar credits={credits} />
         <main className="min-w-0 flex-1">{children}</main>
       </div>

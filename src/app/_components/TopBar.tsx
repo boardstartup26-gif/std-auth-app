@@ -16,7 +16,7 @@ import type { CreditBalance } from "@/lib/credits";
 export function TopBar({ credits }: { credits: CreditBalance | null }) {
   return (
     <header className="sticky top-0 z-20 hidden h-14 shrink-0 items-center justify-end gap-3 border-b border-border bg-background/95 px-6 backdrop-blur md:flex">
-      {credits ? <CreditsPill remaining={credits.remaining} /> : null}
+      {credits ? <CreditsPill credits={credits} /> : null}
     </header>
   );
 }

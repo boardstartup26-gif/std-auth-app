@@ -10,13 +10,14 @@ import { LogOut, Menu, X } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
 import { SidebarNav } from "./Sidebar";
 import { CreditsPill } from "./CreditsPill";
+import type { CreditBalance } from "@/lib/credits";
 
 export function MobileNav({
   subjects,
-  remainingCredits,
+  credits,
 }: {
   subjects: string[];
-  remainingCredits?: number | null;
+  credits: CreditBalance | null;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -33,9 +34,7 @@ export function MobileNav({
         </button>
         <Image src="/be-logo1.png" alt="BoardEdge" width={30} height={30} />
         <div className="min-w-[22px]">
-          {typeof remainingCredits === "number" ? (
-            <CreditsPill remaining={remainingCredits} />
-          ) : null}
+          {credits ? <CreditsPill credits={credits} /> : null}
         </div>
       </header>
 
