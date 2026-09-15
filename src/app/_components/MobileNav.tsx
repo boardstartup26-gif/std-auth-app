@@ -5,6 +5,7 @@
 // study surface updates both.
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { LogOut, Menu, X } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
@@ -26,7 +27,11 @@ export function MobileNav({ credits }: { credits: CreditBalance | null }) {
         >
           <Menu size={22} />
         </button>
-        <Image src="/be-logo1.png" alt="BoardEdge" width={30} height={30} />
+        {/* Mobile header renders only inside (protected)/layout.tsx, already
+            gated to a signed-in user by middleware — /dashboard unconditionally. */}
+        <Link href="/dashboard" aria-label="Dashboard">
+          <Image src="/logo-icon.png" alt="" width={30} height={30} priority />
+        </Link>
         <div className="min-w-[22px]">
           {credits ? <CreditsPill credits={credits} /> : null}
         </div>
@@ -42,10 +47,9 @@ export function MobileNav({ credits }: { credits: CreditBalance | null }) {
           />
           <div className="absolute left-0 top-0 flex h-full w-72 flex-col border-r border-border bg-card">
             <div className="flex items-center justify-between px-4 py-4">
-              <div className="flex items-center gap-2">
-                <Image src="/be-logo1.png" alt="" width={26} height={26} />
-                <span className="text-sm font-semibold text-foreground">BoardEdge</span>
-              </div>
+              <Link href="/dashboard" onClick={() => setOpen(false)}>
+                <Image src="/logo-lockup.png" alt="BoardEdge" width={81} height={24} />
+              </Link>
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close menu"

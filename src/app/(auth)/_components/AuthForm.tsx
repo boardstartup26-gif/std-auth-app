@@ -84,7 +84,7 @@ export function BrandPanel({ imageSrc }: { imageSrc?: string }) {
         />
       )}
       <div className="relative flex flex-col items-center gap-4 px-10 text-center">
-        <Image src="/be-logo1.png" alt="BoardEdge" width={56} height={56} priority />
+        <Image src="/logo-icon.png" alt="BoardEdge" width={56} height={56} priority />
         <span className="text-xl font-semibold tracking-tight text-foreground">BoardEdge</span>
       </div>
     </div>

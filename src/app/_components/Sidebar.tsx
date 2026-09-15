@@ -135,10 +135,22 @@ export function Sidebar() {
       <div
         className={`flex items-center gap-2 px-3 py-4 ${expanded ? "" : "justify-center"}`}
       >
-        <Image src="/be-logo1.png" alt="" width={28} height={28} className="shrink-0" />
-        {expanded ? (
-          <span className="truncate text-sm font-semibold text-foreground">BoardEdge</span>
-        ) : null}
+        {/* This rail only ever renders inside (protected)/layout.tsx, which
+            middleware has already gated to a signed-in user — so the logo's
+            destination here is never in question. */}
+        <Link
+          href="/dashboard"
+          className="flex min-w-0 items-center rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          {expanded ? (
+            // The full lockup replaces the icon + separate "BoardEdge" span
+            // pair that used to sit here — one image instead of two elements
+            // saying the same thing side by side.
+            <Image src="/logo-lockup.png" alt="BoardEdge" width={81} height={24} priority />
+          ) : (
+            <Image src="/logo-icon.png" alt="BoardEdge" width={28} height={28} className="shrink-0" priority />
+          )}
+        </Link>
         <button
           type="button"
           onClick={() => setExpanded((v) => !v)}
