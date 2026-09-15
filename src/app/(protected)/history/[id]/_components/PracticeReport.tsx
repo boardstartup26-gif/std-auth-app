@@ -313,9 +313,16 @@ export function PracticeReport({ record }: { record: PracticeRecord }) {
               </figcaption>
               {/* Margin-note treatment per §11: Fraunces, smaller, ink-muted —
                   it is a reference beside the student's work, not a correction
-                  stamped over it. */}
+                  stamped over it. `font-display` (family only, from the
+                  --font-display theme token) rather than `.display-section`:
+                  that class also carries font-size: var(--text-section), a
+                  clamp(2rem, 4vw, 3.25rem) section-heading size defined
+                  outside any @layer, so it silently overrode the text-[17px]
+                  utility below regardless of source order — unlayered CSS
+                  beats @layer utilities in the cascade. The model answer was
+                  rendering at heading scale. */}
               <blockquote className="mt-3 max-w-[var(--measure)] border-l border-rule pl-5">
-                <p className="display-section m-0 whitespace-pre-wrap text-[17px] leading-relaxed text-muted-foreground">
+                <p className="font-display m-0 whitespace-pre-wrap text-[17px] leading-relaxed text-muted-foreground">
                   {modelAnswer}
                 </p>
               </blockquote>

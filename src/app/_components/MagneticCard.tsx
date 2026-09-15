@@ -28,8 +28,10 @@ const CARD_ICONS = {
 
 export type CardIcon = keyof typeof CARD_ICONS;
 
-const MAX_SHIFT_PX = 6;
-const ARROW_SHIFT_PX = 10;
+// Reduced 30% from the original 6/10 — the arrow keeps the same 10:6 ratio to
+// the card so it still reads as leading the pull rather than lagging it.
+const MAX_SHIFT_PX = 4.2;
+const ARROW_SHIFT_PX = 7;
 
 export function MagneticCard({
   href,
