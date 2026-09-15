@@ -131,8 +131,19 @@ type DiagramSource = "figure" | "physical_map" | "ocr_pending" | null;
 interface EvaluationResult {
   marks_awarded: number;
   total_marks: number;
-  points_hit: string[];
-  points_missed: string[];
+  // marking_points[] is what the API returns now; points_hit/points_missed are
+  // retired and survive here only so evaluations persisted before the change
+  // still render. Both are optional — never read either without a fallback.
+  marking_points?: {
+    point: string;
+    marks: number;
+    status: "awarded" | "partial" | "missed";
+    marks_awarded: number;
+    matched_text: string | null;
+    anchor: { start: number; end: number } | null;
+  }[];
+  points_hit?: string[];
+  points_missed?: string[];
   conceptual_errors: string[];
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
@@ -174,6 +185,22 @@ const NON_OCR_LOADING_MESSAGES = [
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
+
+// The eval engine now returns one structured marking_points[] instead of two
+// flat string arrays (handoff §9: points_hit/points_missed are retired, and
+// the two lists are that array filtered by status). Older persisted rows still
+// carry the flat arrays, so both paths stay live until this view is rebuilt.
+function awardedPoints(result: EvaluationResult): string[] {
+  return result.marking_points?.length
+    ? result.marking_points.filter((p) => p.status !== "missed").map((p) => p.point)
+    : result.points_hit ?? [];
+}
+
+function missedPoints(result: EvaluationResult): string[] {
+  return result.marking_points?.length
+    ? result.marking_points.filter((p) => p.status === "missed").map((p) => p.point)
+    : result.points_missed ?? [];
+}
 
 function Section({ title, items, color }: { title: string; items: string[]; color: string }) {
   if (!items || items.length === 0) return null;
@@ -1409,8 +1436,16 @@ export default function EvaluatePage() {
 
                     {/* Points hit / Points missed — paired grid per §3 reference layout */}
                     <div className="grid gap-6 sm:grid-cols-2">
-                      <Section title="Points awarded" items={result.points_hit} color="text-status-correct" />
-                      <Section title="Points missed" items={result.points_missed} color="text-status-wrong" />
+                      <Section
+                        title="Points awarded"
+                        items={awardedPoints(result)}
+                        color="text-status-correct"
+                      />
+                      <Section
+                        title="Points missed"
+                        items={missedPoints(result)}
+                        color="text-status-wrong"
+                      />
                     </div>
 
                     {/* Conceptual errors */}

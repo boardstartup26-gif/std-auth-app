@@ -13,7 +13,6 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import { Hairline } from "@/app/_components/Hairline";
-import { Rail, RailContent, RailLayout, RailNote } from "@/app/_components/Rail";
 import { btnPrimary, errorAlert, numericMono, sectionLabel } from "@/lib/ui";
 import {
   computeStats,
@@ -24,6 +23,14 @@ import {
 import { HistoryBrowser } from "./_components/HistoryBrowser";
 
 export const dynamic = "force-dynamic";
+
+// No margin rail on this surface. The rail is for running context, and
+// everything it would carry here — count, distinct questions, average — is
+// already in the stat row at the top of the content column, so the rail was
+// repeating those numbers and then holding a column of empty paper down the
+// length of a very long list. The content column takes the full measure
+// instead.
+const historyShell = "mx-auto min-h-screen max-w-5xl px-6 py-12";
 
 // PostgREST shape of the embedded select below. `evaluations (*)` is a
 // deliberate star: the table has picked up columns the repo's migrations never
@@ -110,14 +117,9 @@ export default async function HistoryPage() {
 
   if (error) {
     return (
-      <RailLayout wide>
-        <Rail>
-          <RailNote label="Section">History</RailNote>
-        </Rail>
-        <RailContent>
-          <div className={errorAlert}>Failed to load history: {error.message}</div>
-        </RailContent>
-      </RailLayout>
+      <div className={historyShell}>
+        <div className={errorAlert}>Failed to load history: {error.message}</div>
+      </div>
     );
   }
 
@@ -153,61 +155,44 @@ export default async function HistoryPage() {
   ];
 
   return (
-    <RailLayout wide>
-      <Rail>
-        <RailNote label="Section">History</RailNote>
-        <RailNote label="Evaluated">
-          <span className={numericMono}>{stats.evaluated}</span>
-        </RailNote>
-        <RailNote label="Questions">
-          <span className={numericMono}>{groups.length}</span>
-        </RailNote>
-        {stats.averagePercent !== null ? (
-          <RailNote label="Average">
-            <span className={numericMono}>{stats.averagePercent}%</span>
-          </RailNote>
-        ) : null}
-      </Rail>
+    <div className={historyShell}>
+      <p className={sectionLabel}>Past submissions</p>
+      <h1 className="display-section mt-2">Your History</h1>
+      <p className="mt-4 max-w-[var(--measure)] text-muted-foreground">
+        Review past answers, revisit feedback, and track where you&rsquo;re improving.
+      </p>
 
-      <RailContent>
-        <p className={sectionLabel}>Past submissions</p>
-        <h1 className="display-section mt-2">Your History</h1>
-        <p className="mt-4 max-w-[var(--measure)] text-muted-foreground">
-          Review past answers, revisit feedback, and track where you&rsquo;re improving.
-        </p>
+      {attempts.length === 0 ? (
+        <>
+          <Hairline className="my-8" />
+          <div className="rounded-xl border border-dashed border-border px-6 py-10 text-center">
+            <p className="text-sm text-muted-foreground">
+              No evaluations yet. Submit your first answer to see results here.
+            </p>
+            <Link href="/evaluate" className={`${btnPrimary} mt-6`}>
+              Start evaluation
+            </Link>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-border py-5 lg:grid-cols-4">
+            {STATS.map(({ label, value, sub }) => (
+              <div key={label}>
+                <p className={sectionLabel}>{label}</p>
+                <p className={`mt-1.5 text-xl font-semibold text-foreground ${numericMono}`}>
+                  {value}
+                </p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">{sub}</p>
+              </div>
+            ))}
+          </div>
 
-        {attempts.length === 0 ? (
-          <>
-            <Hairline className="my-8" />
-            <div className="rounded-xl border border-dashed border-border px-6 py-10 text-center">
-              <p className="text-sm text-muted-foreground">
-                No evaluations yet. Submit your first answer to see results here.
-              </p>
-              <Link href="/evaluate" className={`${btnPrimary} mt-6`}>
-                Start evaluation
-              </Link>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-border py-5 lg:grid-cols-4">
-              {STATS.map(({ label, value, sub }) => (
-                <div key={label}>
-                  <p className={sectionLabel}>{label}</p>
-                  <p className={`mt-1.5 text-xl font-semibold text-foreground ${numericMono}`}>
-                    {value}
-                  </p>
-                  <p className="mt-0.5 text-[11px] text-muted-foreground">{sub}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8">
-              <HistoryBrowser groups={groups} />
-            </div>
-          </>
-        )}
-      </RailContent>
-    </RailLayout>
+          <div className="mt-8">
+            <HistoryBrowser groups={groups} />
+          </div>
+        </>
+      )}
+    </div>
   );
 }

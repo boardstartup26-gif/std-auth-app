@@ -279,3 +279,67 @@ export function computeStats(rows: AttemptInput[]): HistoryStats {
     trend,
   };
 }
+
+// ─── Reading a single evaluation (the Practice page) ─────────────────────────
+
+/**
+ * One marking-point list regardless of which shape the row was written in.
+ *
+ * Rows written before the marking_points migration carry two flat string
+ * arrays and nothing else — no per-point marks, no status beyond hit/missed,
+ * and no quote to anchor. They are synthesised into the structured shape with
+ * `matched_text`/`anchor` null, which the Practice page already has to handle:
+ * per handoff §9 a null anchor is valid on an awarded point too, whenever the
+ * model paraphrased instead of quoting.
+ *
+ * `marks` is left at 0 for synthesised points rather than guessed by dividing
+ * the total, because the flat arrays never recorded what any single point was
+ * worth and a made-up per-point mark would read as real.
+ */
+export function normaliseMarkingPoints(evaluation: {
+  marking_points?: MarkingPoint[] | null;
+  points_hit?: string[] | null;
+  points_missed?: string[] | null;
+}): { points: MarkingPoint[]; synthesised: boolean } {
+  if (Array.isArray(evaluation.marking_points) && evaluation.marking_points.length) {
+    return { points: evaluation.marking_points, synthesised: false };
+  }
+
+  const make = (point: string, status: MarkingPointStatus): MarkingPoint => ({
+    point,
+    marks: 0,
+    status,
+    marks_awarded: 0,
+    matched_text: null,
+    anchor: null,
+  });
+
+  const points = [
+    ...(evaluation.points_hit ?? []).filter(isRealPoint).map((p) => make(p, "awarded")),
+    ...(evaluation.points_missed ?? []).filter(isRealPoint).map((p) => make(p, "missed")),
+  ];
+  return { points, synthesised: points.length > 0 };
+}
+
+/**
+ * Split an answer into before / match / after for one anchor. Returns null
+ * when there is nothing to highlight, so callers render plain text rather than
+ * treating a missing anchor as an error state.
+ */
+export function sliceAnswer(
+  answer: string,
+  anchor: { start: number; end: number } | null
+): { before: string; match: string; after: string } | null {
+  if (!anchor) return null;
+  const { start, end } = anchor;
+  // Anchors are computed against the answer as submitted. If the stored text
+  // and the stored offsets ever disagree, render plain text instead of
+  // slicing at an index that no longer means anything.
+  if (!Number.isInteger(start) || !Number.isInteger(end)) return null;
+  if (start < 0 || end > answer.length || end <= start) return null;
+  return {
+    before: answer.slice(0, start),
+    match: answer.slice(start, end),
+    after: answer.slice(end),
+  };
+}
