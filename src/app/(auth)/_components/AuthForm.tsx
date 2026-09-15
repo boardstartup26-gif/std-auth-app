@@ -83,10 +83,17 @@ export function BrandPanel({ imageSrc }: { imageSrc?: string }) {
           className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,var(--glow-purple),transparent_65%)] opacity-25"
         />
       )}
-      <div className="relative flex flex-col items-center gap-4 px-10 text-center">
+      {/* Login/signup are logged-out-only routes (middleware never gates
+          them), so the landing page is always the right destination — no
+          auth branching needed the way the public landing page itself needs
+          one for its own logo. */}
+      <Link
+        href="/"
+        className="relative flex flex-col items-center gap-4 px-10 text-center rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      >
         <Image src="/logo-icon.png" alt="BoardEdge" width={56} height={56} priority />
         <span className="text-xl font-semibold tracking-tight text-foreground">BoardEdge</span>
-      </div>
+      </Link>
     </div>
   );
 }
