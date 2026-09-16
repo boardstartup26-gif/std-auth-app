@@ -49,7 +49,7 @@ export function Reveal({
   onLoad?: boolean;
   slow?: boolean;
   className?: string;
-  as?: "div" | "section" | "header" | "footer";
+  as?: "div" | "section" | "header" | "footer" | "dl";
 }) {
   const scope = useRef<HTMLElement>(null);
 

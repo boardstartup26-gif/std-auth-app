@@ -9,13 +9,16 @@
 // each with a marking scheme, six subjects, 2018–2025). Motion is the only
 // client-side part, isolated in <Reveal> and <ScoreClimber>.
 
-import Link from "next/link";
 import Image from "next/image";
-import { Check, X as XIcon } from "lucide-react";
 import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
 import { Act2Evaluation } from "@/app/_components/Act2Evaluation";
+import { Comparison } from "@/app/_components/Comparison";
+import { CountUp } from "@/app/_components/CountUp";
 import { FaqAccordion, type FaqItem } from "@/app/_components/FaqAccordion";
 import { HomeLogoLink } from "@/app/_components/HomeLogoLink";
+import { MagneticButton } from "@/app/_components/MagneticButton";
+import { MarkedPhrase } from "@/app/_components/MarkedPhrase";
+import { NavLinks } from "@/app/_components/NavLinks";
 import { Reveal } from "@/app/_components/Reveal";
 import { ScoreClimber } from "@/app/_components/ScoreClimber";
 import { SHOWCASE, showcaseSentences } from "@/app/_data/showcase";
@@ -26,30 +29,26 @@ import { SHOWCASE, showcaseSentences } from "@/app/_data/showcase";
 // or year is imported.
 const CORPUS = {
   questions: 2456,
+  // What the headline figure counts up to. Rounded down, not up: a count that
+  // stops short of the real number and says "+" cannot overstate the corpus on
+  // the day a paper is added or removed.
+  questionsRounded: 2450,
   subjects: [
-    { name: "Geography", count: 506 },
-    { name: "Biology", count: 482 },
-    { name: "Chemistry", count: 466 },
-    { name: "Physics", count: 375 },
-    { name: "English Literature", count: 354 },
-    { name: "History & Civics", count: 273 },
+    "Geography",
+    "Biology",
+    "Chemistry",
+    "Physics",
+    "English Literature",
+    "History & Civics",
   ],
-  years: "2018–2020, 2023–2025",
+  // Shown as a span. The papers held are 2018-2020 and 2023-2025: ICSE 2021 was
+  // cancelled outright, and 2022 ran as two semesters rather than one paper, so
+  // the gap is mostly years that have no single paper to hold. The FAQ lists
+  // the six years individually, which is where a reader who wants the exact
+  // set will look.
+  years: "2018–2025",
 };
 
-const GENERIC_AI_POINTS = [
-  "Gives a rough estimate, not a real score",
-  "No access to official ICSE marking schemes",
-  "Generic feedback — not calibrated to your exam board",
-  "Can't tell you which specific marking-scheme point you missed",
-];
-
-const BOARDEDGE_POINTS = [
-  "Awards marks against the exact CISCE marking scheme",
-  "Shows every point hit and point missed — mapped to official criteria",
-  "Trained on ICSE-specific evaluation standards",
-  "Structured feedback: marks, points hit, points missed, conceptual errors, model answer",
-];
 
 const FAQ_ITEMS: FaqItem[] = [
   {
@@ -84,13 +83,6 @@ const FAQ_ITEMS: FaqItem[] = [
   },
 ];
 
-/** The masthead's issue line — the metadata strip under a newspaper title. */
-const ISSUE_LINE = [
-  "ICSE · CISCE",
-  "Classes 9 & 10",
-  `${CORPUS.questions.toLocaleString("en-IN")} past-paper questions`,
-  CORPUS.years,
-];
 
 export default function Home() {
   const sentences = showcaseSentences();
@@ -111,15 +103,15 @@ export default function Home() {
             <Image src="/logo-lockup.png" alt="BoardEdge" width={101} height={30} priority />
           </HomeLogoLink>
 
-          <nav className="hidden items-center gap-8 text-sm text-muted-foreground sm:flex">
-            <a href="#provenance" className="hover:text-foreground">Coverage</a>
-            <a href="#trajectory" className="hover:text-foreground">Progress</a>
-            <a href="#faq" className="hover:text-foreground">FAQs</a>
-          </nav>
+          <NavLinks />
 
           <div className="flex items-center gap-3">
-            <Link href="/login" className={`${btnSecondary} h-9 px-3.5 text-xs`}>Log in</Link>
-            <Link href="/signup" className={`${btnPrimary} h-9 px-3.5 text-xs`}>Sign up</Link>
+            <MagneticButton href="/login" className={`${btnSecondary} h-9 px-3.5 text-xs`}>
+              Log in
+            </MagneticButton>
+            <MagneticButton href="/signup" className={`${btnPrimary} h-9 px-3.5 text-xs`}>
+              Sign up
+            </MagneticButton>
           </div>
         </div>
       </header>
@@ -134,8 +126,12 @@ export default function Home() {
           </p>
         </div>
 
+        {/* "inside out" carries the claim, so it is the phrase that gets the
+            pen. Short enough that it never breaks across two lines, which the
+            underline could not follow. */}
         <h1 data-reveal className="display mt-8 max-w-[14ch] text-balance">
-          The AI examiner that knows ICSE inside out.
+          The AI examiner that knows ICSE{" "}
+          <MarkedPhrase>inside out</MarkedPhrase>.
         </h1>
 
         <p
@@ -147,22 +143,37 @@ export default function Home() {
         </p>
 
         <div data-reveal className="mt-8 flex flex-wrap items-center gap-3">
-          <Link href="/signup" className={`${btnPrimary} h-12 px-6 text-sm`}>
+          <MagneticButton href="/signup" className={`${btnPrimary} h-12 px-6 text-sm`}>
             Start marking free →
-          </Link>
-          <Link href="/login" className={`${btnSecondary} h-12 px-6 text-sm`}>
+          </MagneticButton>
+          <MagneticButton href="/login" className={`${btnSecondary} h-12 px-6 text-sm`}>
             Log in
-          </Link>
+          </MagneticButton>
         </div>
 
+        {/* The trust bar. One board, one class, the corpus size and the span
+            of years — the four things a student checks before deciding the
+            page is about their exam. */}
         <dl
           data-reveal
           className="mt-12 grid grid-cols-2 gap-px overflow-hidden border-y border-border bg-border sm:grid-cols-4"
         >
-          {ISSUE_LINE.map((item) => (
-            <div key={item} className="bg-background px-4 py-4">
+          {[
+            { key: "board", content: "ICSE" },
+            { key: "class", content: "Class 10" },
+            {
+              key: "questions",
+              content: (
+                <>
+                  <CountUp to={CORPUS.questionsRounded} suffix="+" /> past-paper questions
+                </>
+              ),
+            },
+            { key: "years", content: CORPUS.years },
+          ].map((item) => (
+            <div key={item.key} className="bg-background px-4 py-4">
               <dd className={`text-xs tracking-wide text-muted-foreground ${numericFigures}`}>
-                {item}
+                {item.content}
               </dd>
             </div>
           ))}
@@ -261,72 +272,46 @@ export default function Home() {
             marks from outside knowledge.
           </p>
 
-          <dl
-            data-reveal
-            className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3"
-          >
+          {/* Its own Reveal, not part of the block above: these sit far enough
+              down the section that the outer trigger would have fired long
+              before they were on screen, and the count would have run where
+              nobody could see it. Each stat carries its own data-reveal so the
+              three arrive 60ms apart rather than as one slab. */}
+          <Reveal as="dl" className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
             {[
-              { value: CORPUS.questions.toLocaleString("en-IN"), label: "Past-paper questions" },
-              { value: "1:1", label: "Questions to marking schemes" },
-              { value: CORPUS.years, label: "Exam years covered" },
+              {
+                key: "pyqs",
+                value: <CountUp to={CORPUS.questionsRounded} suffix="+" />,
+                label: "PYQs",
+              },
+              { key: "schemes", value: "1:1", label: "Questions to marking schemes" },
+              { key: "years", value: CORPUS.years, label: "Years covered" },
             ].map((stat) => (
-              <div key={stat.label} className="bg-background px-6 py-8">
+              <div key={stat.key} data-reveal className="bg-background px-6 py-8">
                 <dt className={`display-section text-foreground ${numericFigures}`}>
                   {stat.value}
                 </dt>
                 <dd className="mt-2 text-sm text-muted-foreground">{stat.label}</dd>
               </div>
             ))}
-          </dl>
+          </Reveal>
 
+          {/* Subject names without counts. The counts were true but they
+              invited the wrong comparison — a student reading "History &
+              Civics 273" next to "Geography 506" concludes their subject is
+              the thin one, when what matters is that every paper for it is
+              there. */}
           <ul data-reveal className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {CORPUS.subjects.map((s) => (
-              <li key={s.name} className="flex items-baseline gap-2 text-sm">
-                <span className="font-medium text-foreground">{s.name}</span>
-                <span className={`text-muted-foreground ${numericFigures}`}>{s.count}</span>
+            {CORPUS.subjects.map((name) => (
+              <li key={name} className="text-sm font-medium text-foreground">
+                {name}
               </li>
             ))}
           </ul>
 
           {/* The comparison that used to be its own section, folded into
               provenance where the claim it makes is actually evidenced. */}
-          <div className="mt-20 grid gap-6 sm:grid-cols-2">
-            <Reveal className="rounded-2xl border border-border bg-card/60 p-8">
-              <p data-reveal className={sectionLabel}>
-                Generic AI
-              </p>
-              <ul className="mt-6 space-y-4">
-                {GENERIC_AI_POINTS.map((point) => (
-                  <li
-                    key={point}
-                    data-reveal
-                    className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground"
-                  >
-                    <XIcon size={17} className="mt-0.5 shrink-0" aria-hidden />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-
-            <Reveal className="rounded-2xl border border-accent/40 bg-accent-subtle p-8">
-              <p data-reveal className="text-xs font-bold uppercase tracking-wider text-accent">
-                BoardEdge
-              </p>
-              <ul className="mt-6 space-y-4">
-                {BOARDEDGE_POINTS.map((point) => (
-                  <li
-                    key={point}
-                    data-reveal
-                    className="flex items-start gap-3 text-sm leading-relaxed text-foreground/90"
-                  >
-                    <Check size={17} className="mt-0.5 shrink-0 text-accent" aria-hidden />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
+          <Comparison />
         </Reveal>
       </section>
 
@@ -378,10 +363,13 @@ export default function Home() {
             Find out what you actually lost marks on.
           </h2>
           <div data-reveal className="mt-10 flex justify-center">
-            <Link href="/signup" className={`${btnPrimary} h-12 px-8 text-sm`}>
+            <MagneticButton href="/signup" className={`${btnPrimary} h-12 px-8 text-sm`}>
               Start marking free →
-            </Link>
+            </MagneticButton>
           </div>
+          <p data-reveal className="mt-4 text-sm text-muted-foreground">
+            Start with 20 free evaluations a week. No payment required.
+          </p>
         </Reveal>
       </section>
 
@@ -406,6 +394,18 @@ export default function Home() {
             <span className="opacity-50" title="Coming soon">Terms &amp; Conditions</span>
             <a href="#faq" className="hover:text-foreground">FAQs</a>
           </div>
+        </div>
+
+        {/* The page names CISCE throughout, and names other companies' products
+            in the comparison. None of them endorse this one, and a student
+            should not have to infer that. */}
+        <div className="border-t border-border">
+          <p className="mx-auto max-w-6xl px-6 py-5 text-xs leading-relaxed text-muted-foreground">
+            BoardEdge is an independent learning platform and is not affiliated with
+            CISCE. ICSE and CISCE are trademarks of the Council for the Indian School
+            Certificate Examinations. Other product and company names mentioned are the
+            trademarks of their respective owners and imply no endorsement.
+          </p>
         </div>
       </footer>
     </div>
