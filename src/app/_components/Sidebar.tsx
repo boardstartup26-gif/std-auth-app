@@ -1,96 +1,196 @@
 "use client";
 
+// Primary navigation. Two groups — the study surfaces and the account — plus
+// the dashboard on its own at the top.
+//
+// The subject list used to sit between them, one row per subject. It was
+// removed because every row pointed at the same place: /evaluate reads no
+// subject from the URL, so six links that looked like six destinations all
+// landed on the same unfiltered picker. Subject is the first step of that
+// picker, which is where the choice actually does something.
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, FilePlus2, History, User, LogOut, ChevronsLeft, ChevronsRight } from "lucide-react";
+import {
+  LayoutGrid,
+  LibraryBig,
+  LogOut,
+  type LucideIcon,
+  PanelLeft,
+  ScrollText,
+  User,
+} from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
 
-const NAV_ITEMS = [
-  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/evaluate", label: "New Evaluation", icon: FilePlus2 },
-  { href: "/history", label: "History", icon: History },
-  { href: "/account", label: "Account", icon: User },
+const STUDY = [
+  { href: "/evaluate", label: "Questions", icon: LibraryBig },
+  { href: "/history", label: "Results", icon: ScrollText },
 ];
 
-function NavLink({
+const ACCOUNT = [{ href: "/account", label: "Account", icon: User }];
+
+function isActive(pathname: string, href: string): boolean {
+  return pathname === href || pathname.startsWith(href + "/");
+}
+
+function GroupLabel({ children, expanded }: { children: string; expanded: boolean }) {
+  if (!expanded) return <div className="my-2 h-px bg-border" aria-hidden />;
+  return (
+    <p className="px-3 pb-1 pt-4 text-[10px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">
+      {children}
+    </p>
+  );
+}
+
+function NavRow({
   href,
   label,
   icon: Icon,
   active,
   expanded,
+  onNavigate,
 }: {
   href: string;
   label: string;
-  icon: typeof LayoutDashboard;
+  icon: LucideIcon;
   active: boolean;
   expanded: boolean;
+  onNavigate?: () => void;
 }) {
   return (
     <Link
       href={href}
+      onClick={onNavigate}
       title={expanded ? undefined : label}
-      className={`flex items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+      aria-current={active ? "page" : undefined}
+      className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
         active
-          ? "bg-accent-subtle text-accent"
+          ? "bg-accent-subtle font-medium text-accent"
           : "text-muted-foreground hover:bg-surface-raised hover:text-foreground"
       } ${expanded ? "" : "justify-center"}`}
     >
-      <Icon size={18} strokeWidth={1.75} className="shrink-0" />
-      {expanded && <span>{label}</span>}
+      <Icon size={17} strokeWidth={1.75} className="shrink-0" aria-hidden />
+      {expanded ? <span className="truncate">{label}</span> : null}
     </Link>
   );
 }
 
-export function Sidebar() {
+/** Shared by the desktop rail and the mobile drawer. */
+export function SidebarNav({
+  expanded,
+  onNavigate,
+}: {
+  expanded: boolean;
+  onNavigate?: () => void;
+}) {
   const pathname = usePathname();
-  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <nav className="flex flex-1 flex-col gap-0.5 overflow-y-auto px-2">
+      <NavRow
+        href="/dashboard"
+        label="Dashboard"
+        icon={LayoutGrid}
+        active={isActive(pathname, "/dashboard")}
+        expanded={expanded}
+        onNavigate={onNavigate}
+      />
+
+      <GroupLabel expanded={expanded}>Study</GroupLabel>
+      {STUDY.map((item) => (
+        <NavRow
+          key={item.href}
+          {...item}
+          active={isActive(pathname, item.href)}
+          expanded={expanded}
+          onNavigate={onNavigate}
+        />
+      ))}
+
+      <GroupLabel expanded={expanded}>Account</GroupLabel>
+      {ACCOUNT.map((item) => (
+        <NavRow
+          key={item.href}
+          {...item}
+          active={isActive(pathname, item.href)}
+          expanded={expanded}
+          onNavigate={onNavigate}
+        />
+      ))}
+    </nav>
+  );
+}
+
+export function Sidebar() {
+  const [expanded, setExpanded] = useState(true);
 
   return (
     <aside
-      className={`sticky top-0 hidden h-dvh shrink-0 flex-col bg-card border-r border-border md:flex transition-[width] duration-200 ${
+      className={`sticky top-0 hidden h-dvh shrink-0 flex-col border-r border-border bg-card transition-[width] duration-200 md:flex ${
         expanded ? "w-60" : "w-[4.5rem]"
       }`}
     >
-      <div className="flex items-center justify-center py-8">
-        <Image src="/be-logo1.png" alt="BoardEdge" width={36} height={36} priority />
+      <div
+        className={`flex items-center gap-2 px-3 py-4 ${expanded ? "" : "justify-center"}`}
+      >
+        {/* This rail only ever renders inside (protected)/layout.tsx, which
+            middleware has already gated to a signed-in user — so the logo's
+            destination here is never in question. */}
+        <Link
+          href="/dashboard"
+          className="flex min-w-0 items-center rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          {expanded ? (
+            // The full lockup replaces the icon + separate "BoardEdge" span
+            // pair that used to sit here — one image instead of two elements
+            // saying the same thing side by side. Sized up from an initial
+            // 81×24: at that size it left most of the 240px-wide rail empty
+            // before the collapse toggle. 108×32 keeps the same 3.37:1 aspect
+            // ratio while actually using the header's width.
+            <Image src="/logo-lockup.png" alt="BoardEdge" width={108} height={32} priority />
+          ) : (
+            <Image src="/logo-icon.png" alt="BoardEdge" width={28} height={28} className="shrink-0" priority />
+          )}
+        </Link>
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-label={expanded ? "Collapse sidebar" : "Expand sidebar"}
+          className={`rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground ${
+            expanded ? "ml-auto" : "hidden"
+          }`}
+        >
+          <PanelLeft size={16} strokeWidth={1.75} />
+        </button>
       </div>
 
-      <nav className="flex flex-1 flex-col gap-1 px-3">
-        {NAV_ITEMS.map((item) => (
-          <NavLink
-            key={item.href}
-            {...item}
-            expanded={expanded}
-            active={pathname === item.href || pathname.startsWith(item.href + "/")}
-          />
-        ))}
-      </nav>
+      {!expanded ? (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          aria-label="Expand sidebar"
+          className="mx-auto mb-2 rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground"
+        >
+          <PanelLeft size={16} strokeWidth={1.75} />
+        </button>
+      ) : null}
 
-      <form action={signOut} className="border-t border-border px-3 py-4">
+      <SidebarNav expanded={expanded} />
+
+      <form action={signOut} className="border-t border-border p-2">
         <button
           type="submit"
           title={expanded ? undefined : "Sign out"}
-          className={`flex w-full items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium text-muted-foreground transition-colors cursor-pointer hover:bg-surface-raised hover:text-foreground ${
+          className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground ${
             expanded ? "" : "justify-center"
           }`}
         >
-          <LogOut size={18} strokeWidth={1.75} className="shrink-0" />
-          {expanded && "Sign out"}
+          <LogOut size={17} strokeWidth={1.75} className="shrink-0" aria-hidden />
+          {expanded ? "Sign out" : null}
         </button>
       </form>
-
-      <button
-        type="button"
-        onClick={() => setExpanded((e) => !e)}
-        aria-label={expanded ? "Collapse sidebar" : "Expand sidebar"}
-        className={`flex items-center gap-3 border-t border-border px-3 py-3.5 text-muted-foreground transition-colors cursor-pointer hover:bg-surface-raised hover:text-foreground ${
-          expanded ? "justify-end" : "justify-center"
-        }`}
-      >
-        {expanded ? <ChevronsLeft size={18} strokeWidth={1.75} /> : <ChevronsRight size={18} strokeWidth={1.75} />}
-      </button>
     </aside>
   );
 }

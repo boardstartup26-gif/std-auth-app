@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "parse:chemistry-pdfs": "node scripts/parse_chemistry_pdfs.js"
+    "parse:chemistry-pdfs": "node scripts/parse_chemistry_pdfs.js",
+    "validate:showcase": "python scripts/validate-showcase.py"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.104.0",
     "dotenv": "^16.4.7",
+    "gsap": "^3.15.0",
     "lucide-react": "^1.21.0",
     "next": "^16.2.9",
     "pdf-parse": "^1.1.4",

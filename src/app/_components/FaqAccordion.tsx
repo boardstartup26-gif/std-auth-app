@@ -1,7 +1,14 @@
 "use client";
 
+// One card per question, each opening in place.
+//
+// The numbering that used to sit before each question is gone: with the cards
+// separated the count is visible from the stack itself, and a column of "01 02
+// 03" next to the plus buttons gave every row two leading glyphs competing for
+// the same job.
+
 import { useState } from "react";
-import { Plus, X } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 
 export interface FaqItem {
   question: string;
@@ -12,30 +19,44 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="divide-y divide-border rounded-2xl border border-border bg-card">
+    <div className="flex flex-col gap-3">
       {items.map((item, i) => {
         const open = openIndex === i;
         return (
-          <div key={i}>
+          <div
+            key={i}
+            className={`rounded-2xl border bg-card transition-colors ${
+              open ? "border-accent/40" : "border-border"
+            }`}
+          >
             <button
               type="button"
               onClick={() => setOpenIndex(open ? null : i)}
-              className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left sm:px-6"
               aria-expanded={open}
+              className="flex w-full cursor-pointer items-center gap-4 px-4 py-4 text-left sm:px-5"
             >
-              <span className="flex items-baseline gap-3">
-                <span className="font-mono text-xs text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
-                <span className="text-sm font-medium text-foreground sm:text-base">{item.question}</span>
+              <span
+                aria-hidden
+                className={`grid h-8 w-8 shrink-0 place-items-center rounded-full transition-colors ${
+                  open ? "bg-accent text-background" : "bg-foreground text-background"
+                }`}
+              >
+                {open ? <Minus size={15} strokeWidth={2.5} /> : <Plus size={15} strokeWidth={2.5} />}
               </span>
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-border text-muted-foreground">
-                {open ? <X size={14} /> : <Plus size={14} />}
+              <span className="min-w-0 flex-1 text-sm font-medium text-foreground sm:text-base">
+                {item.question}
               </span>
             </button>
-            {open && (
-              <div className="px-5 pb-5 sm:px-6">
-                <p className="pl-8 text-sm leading-relaxed text-muted-foreground">{item.answer}</p>
+
+            {open ? (
+              <div className="px-4 pb-5 sm:px-5">
+                {/* Indented to the question's text, not to the card edge, so
+                    the answer reads as belonging to the question above it. */}
+                <p className="pl-12 text-sm leading-relaxed text-muted-foreground">
+                  {item.answer}
+                </p>
               </div>
-            )}
+            ) : null}
           </div>
         );
       })}

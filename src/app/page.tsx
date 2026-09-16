@@ -1,72 +1,54 @@
-import Link from "next/link";
+// The landing page, as the six acts of handoff §5.
+//
+// Act 2 — the scroll-scrubbed evaluation, the money moment — lives in its own
+// client component. Act 1 deliberately ends on the unmarked answer so Act 2
+// has something to mark, and both read the same record.
+//
+// The page stays a static prerender: no data fetching, every figure below is a
+// constant checked against the live corpus at authoring time (2,456 questions,
+// each with a marking scheme, six subjects, 2018–2025). Motion is the only
+// client-side part, isolated in <Reveal> and <ScoreClimber>.
+
 import Image from "next/image";
-import {
-  Dna,
-  FlaskConical,
-  Atom,
-  Globe as GlobeIcon,
-  FileText,
-  Target,
-  TrendingUp,
-  Check,
-  X as XIcon,
-  GraduationCap,
-  Sparkles,
-  ShieldCheck,
-} from "lucide-react";
-import { btnPrimary, btnSecondary, sectionLabel, numericMono } from "@/lib/ui";
+import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
+import { Act2Evaluation } from "@/app/_components/Act2Evaluation";
+import { Comparison } from "@/app/_components/Comparison";
+import { CountUp } from "@/app/_components/CountUp";
 import { FaqAccordion, type FaqItem } from "@/app/_components/FaqAccordion";
+import { HomeLogoLink } from "@/app/_components/HomeLogoLink";
+import { MagneticButton } from "@/app/_components/MagneticButton";
+import { MarkedPhrase } from "@/app/_components/MarkedPhrase";
+import { NavLinks } from "@/app/_components/NavLinks";
+import { Reveal } from "@/app/_components/Reveal";
+import { ScoreClimber } from "@/app/_components/ScoreClimber";
+import { SHOWCASE, showcaseSentences } from "@/app/_data/showcase";
 
-const SUBJECT_PILLS = [
-  { name: "Biology", icon: Dna, className: "left-[2%] top-[10%]" },
-  { name: "Chemistry", icon: FlaskConical, className: "left-[6%] top-[68%]" },
-  { name: "Physics", icon: Atom, className: "right-[3%] top-[8%]" },
-  { name: "Geography", icon: GlobeIcon, className: "right-[0%] top-[64%]" },
-];
+// Counted against the live questions table at authoring time. Hardcoded rather
+// than queried so the page keeps its static prerender — a marketing page should
+// not wait on the database to render a headline number. Recount when a subject
+// or year is imported.
+const CORPUS = {
+  questions: 2456,
+  // What the headline figure counts up to. Rounded down, not up: a count that
+  // stops short of the real number and says "+" cannot overstate the corpus on
+  // the day a paper is added or removed.
+  questionsRounded: 2450,
+  subjects: [
+    "Geography",
+    "Biology",
+    "Chemistry",
+    "Physics",
+    "English Literature",
+    "History & Civics",
+  ],
+  // Shown as a span. The papers held are 2018-2020 and 2023-2025: ICSE 2021 was
+  // cancelled outright, and 2022 ran as two semesters rather than one paper, so
+  // the gap is mostly years that have no single paper to hold. The FAQ lists
+  // the six years individually, which is where a reader who wants the exact
+  // set will look.
+  years: "2018–2025",
+};
 
-const FEATURE_CARDS = [
-  {
-    icon: FileText,
-    title: "Practice on Real Papers",
-    subtext: "Choose a past paper question. Write your answer. See exactly where you scored.",
-    glow: "radial-gradient(circle at 15% 100%, #E8642Aaa, transparent 70%)",
-    iconBg: "#E8642A",
-  },
-  {
-    icon: Target,
-    title: "Point-by-Point Scoring",
-    subtext: "See exactly which marking-scheme points you hit and which you missed.",
-    glow: "radial-gradient(circle at 15% 100%, #3B82F6aa, transparent 70%)",
-    iconBg: "#3B82F6",
-  },
-  {
-    icon: TrendingUp,
-    title: "Track Your Progress",
-    subtext: "See your scores, accuracy trends, and weak topics — all in one place.",
-    glow: "radial-gradient(circle at 15% 100%, #3DDC84aa, transparent 70%)",
-    iconBg: "#3DDC84",
-  },
-];
-
-const PROOF_STRIP_ITEMS = [
-  { icon: GraduationCap, label: "Built for ICSE" },
-  { icon: Sparkles, label: "Powered by AI" },
-  { icon: ShieldCheck, label: "Verified against CISCE marking schemes" },
-];
-
-const GENERIC_AI_POINTS = [
-  "Gives a rough estimate, not a real score",
-  "No access to official ICSE marking schemes",
-  "Generic feedback — not calibrated to your exam board",
-  "Can't tell you which specific marking-scheme point you missed",
-];
-
-const BOARDEDGE_POINTS = [
-  "Awards marks against the exact CISCE marking scheme",
-  "Shows every point hit and point missed — mapped to official criteria",
-  "Trained on ICSE-specific evaluation standards",
-  "Structured feedback: marks, points hit, points missed, conceptual errors, model answer",
-];
 
 const FAQ_ITEMS: FaqItem[] = [
   {
@@ -77,7 +59,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Which subjects and years are available?",
     answer:
-      "Biology, Chemistry, Physics, and Geography are live. Past papers from 2018, 2019, 2020, 2024, and 2025 are currently available. More subjects and years are being added.",
+      "Six subjects are live: Geography, Biology, Chemistry, Physics, English Literature, and History & Civics. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available — 2,456 questions in total, each carrying its official marking scheme. More years are being added.",
   },
   {
     question: "Why not just ask ChatGPT or other Generic AI platforms?",
@@ -92,7 +74,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Is BoardEdge free?",
     answer:
-      "BoardEdge offers a free tier with a limited number of evaluations per month, as of now. Premium tier will cover more evaluations and more features.",
+      "BoardEdge offers a free tier with a limited number of evaluations per week, as of now. Premium tier will cover more evaluations and more features.",
   },
   {
     question: "Can I submit my own questions — not just past papers?",
@@ -101,184 +83,375 @@ const FAQ_ITEMS: FaqItem[] = [
   },
 ];
 
+
 export default function Home() {
+  const sentences = showcaseSentences();
+
   return (
     <div className="min-h-dvh bg-background text-foreground">
-      {/* Sticky nav */}
+      {/* Without this, a script failure leaves every [data-reveal] element
+          hidden and the page blank. Reduced-motion visitors are already safe —
+          the hide rule never applies to them. */}
+      <noscript>
+        <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+      </noscript>
+
+      {/* ─── Nav ─────────────────────────────────────────────────────────── */}
       <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-12">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/be-logo1.png" alt="BoardEdge" width={28} height={28} />
-            <span className="text-sm font-semibold tracking-tight text-foreground">BoardEdge</span>
-          </Link>
+          <HomeLogoLink>
+            <Image src="/logo-lockup.png" alt="BoardEdge" width={101} height={30} priority />
+          </HomeLogoLink>
 
-          <nav className="hidden items-center gap-8 text-sm text-muted-foreground sm:flex">
-            <a href="#features" className="hover:text-foreground">Features</a>
-            <a href="#ai-differentiation" className="hover:text-foreground">AI</a>
-            <a href="#faq" className="hover:text-foreground">FAQs</a>
-          </nav>
+          <NavLinks />
 
           <div className="flex items-center gap-3">
-            <Link href="/login" className={`${btnSecondary} h-9 px-3.5 text-xs`}>Log in</Link>
-            <Link href="/signup" className={`${btnPrimary} h-9 px-3.5 text-xs`}>Sign up</Link>
+            <MagneticButton href="/login" className={`${btnSecondary} h-9 px-3.5 text-xs`}>
+              Log in
+            </MagneticButton>
+            <MagneticButton href="/signup" className={`${btnPrimary} h-9 px-3.5 text-xs`}>
+              Sign up
+            </MagneticButton>
           </div>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-40"
-          style={{
-            backgroundImage:
-              "radial-gradient(var(--border) 1px, transparent 1px)",
-            backgroundSize: "28px 28px",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-[640px] bg-[radial-gradient(circle_at_50%_0%,var(--glow-purple),transparent_65%)] opacity-35"
-        />
+      {/* ─── Act 0 · Masthead ────────────────────────────────────────────────
+          One oversized Fraunces statement between hairlines, with an issue
+          line. No hero image, no dashboard screenshot, no gradient orb (§5). */}
+      <Reveal as="header" onLoad slow className="mx-auto max-w-7xl px-6 lg:px-12">
+        <div className="border-b border-border pb-2 pt-6">
+          <p data-reveal className={sectionLabel}>
+            BoardEdge
+          </p>
+        </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pt-28 lg:px-12">
-          {SUBJECT_PILLS.map(({ name, icon: Icon, className }) => (
-            <div
-              key={name}
-              className={`absolute hidden items-center gap-2 rounded-full border border-border bg-card px-3.5 py-2 text-xs font-medium text-foreground shadow-sm lg:flex ${className}`}
-            >
-              <Icon size={14} className="text-muted-foreground" />
-              {name}
+        {/* "inside out" carries the claim, so it is the phrase that gets the
+            pen. Short enough that it never breaks across two lines, which the
+            underline could not follow.
+
+            Sized locally rather than through the shared .display class: that
+            class sets font-size unlayered, which no Tailwind text-size
+            utility can override regardless of source order (the same rule
+            that once put the results page's model answer at heading scale),
+            so an explicit style is the only way to give this one heading its
+            own ceiling. The 13svh term is the actual point — it caps the
+            headline against the *viewport's* height, not just its width, so
+            a wide-but-short browser window (a laptop with the usual chrome
+            eating into it, common enough that a real visitor hit this) still
+            leaves room for the trust bar below to land inside the first
+            screen instead of just past it. --text-statement itself is
+            untouched: Act 5's closing line still gets the full-size version,
+            where fitting inside one screen was never the goal. */}
+        <h1
+          data-reveal
+          style={{ fontSize: "clamp(3.5rem, min(9vw, 13svh), 7rem)" }}
+          className="display mt-6 max-w-[14ch] text-balance"
+        >
+          The AI examiner that knows ICSE{" "}
+          <MarkedPhrase>inside out</MarkedPhrase>.
+        </h1>
+
+        <p
+          data-reveal
+          className="mt-6 max-w-[var(--measure)] text-lg leading-relaxed text-muted-foreground"
+        >
+          Write an answer to a real past-paper question. Get it back marked against the
+          official CISCE scheme — point by point, with every mark accounted for.
+        </p>
+
+        <div data-reveal className="mt-6 flex flex-wrap items-center gap-3">
+          <MagneticButton href="/signup" className={`${btnPrimary} h-12 px-6 text-sm`}>
+            Start marking free →
+          </MagneticButton>
+          <MagneticButton href="/login" className={`${btnSecondary} h-12 px-6 text-sm`}>
+            Log in
+          </MagneticButton>
+        </div>
+
+        {/* The trust bar. One board, one class, the corpus size and the span
+            of years — the four things a student checks before deciding the
+            page is about their exam. */}
+        <dl
+          data-reveal
+          className="mt-8 grid grid-cols-2 gap-px overflow-hidden border-y border-border bg-border sm:grid-cols-4"
+        >
+          {[
+            { key: "board", content: "ICSE" },
+            { key: "class", content: "Class 10" },
+            {
+              key: "questions",
+              content: (
+                <>
+                  <CountUp to={CORPUS.questionsRounded} suffix="+" /> past-paper questions
+                </>
+              ),
+            },
+            { key: "years", content: CORPUS.years },
+          ].map((item) => (
+            <div key={item.key} className="bg-background px-4 py-3">
+              <dd className={`text-xs tracking-wide text-muted-foreground ${numericFigures}`}>
+                {item.content}
+              </dd>
             </div>
           ))}
+        </dl>
+      </Reveal>
 
-          <div className="relative mx-auto max-w-2xl text-center">
-            <p className={`${sectionLabel} justify-center`}>BoardEdge</p>
-            <h1 className="mx-auto mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              The AI examiner that knows ICSE inside out.
-            </h1>
-            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Paste your answer, pick your question, and get examiner-level feedback in seconds.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <Link href="/signup" className={`${btnPrimary} h-12 px-6 text-sm`}>
-                Get Started Free →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof strip */}
-      <section className="border-y border-border bg-card/40">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 divide-y divide-border px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-          {PROOF_STRIP_ITEMS.map(({ icon: Icon, label }) => (
-            <div key={label} className="flex items-center justify-center gap-2.5 py-6 sm:py-8">
-              <Icon size={18} className="shrink-0 text-accent" />
-              <span className="text-sm font-medium text-foreground">{label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Feature grid */}
-      <section id="features" className="mx-auto max-w-7xl px-6 py-20 lg:px-12">
-        <div className="grid gap-5 sm:grid-cols-3">
-          {FEATURE_CARDS.map(({ icon: Icon, title, subtext, glow, iconBg }) => (
-            <div
-              key={title}
-              className="relative overflow-hidden rounded-2xl border border-border bg-card p-6"
-            >
-              <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: glow }} />
-              <div className="relative">
-                <div
-                  className="flex h-11 w-11 items-center justify-center rounded-2xl text-white"
-                  style={{ backgroundColor: iconBg, boxShadow: `0 0 24px 0 ${iconBg}80` }}
-                >
-                  <Icon size={20} />
-                </div>
-                <h3 className="mt-4 text-base font-semibold text-foreground">{title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{subtext}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* AI differentiation */}
-      <section id="ai-differentiation" className="border-t border-border bg-card/30">
-        <div className="mx-auto flex min-h-[85vh] max-w-6xl flex-col justify-center px-6 py-20 lg:px-12">
-          <div className="text-center">
-            <p className={`${sectionLabel} justify-center`}>Why BoardEdge</p>
-            <h2 className="mx-auto mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              BoardEdge vs. Generic AI — What&apos;s the difference?
+      {/* ─── Act 1 · The Problem ─────────────────────────────────────────────
+          Left column pins, right column scrolls a real answer being written
+          (§5). Pure CSS sticky — nothing here needs a ScrollTrigger. */}
+      <section className="mx-auto max-w-7xl px-6 py-28 lg:px-12">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-16">
+          <Reveal className="lg:sticky lg:top-28 lg:self-start">
+            <h2 data-reveal className="display-section">
+              You can&apos;t revise what you can&apos;t see.
             </h2>
-          </div>
+            <p
+              data-reveal
+              className="mt-6 max-w-[48ch] leading-relaxed text-muted-foreground"
+            >
+              You write the answer. It comes back with a number on it. Somewhere between
+              what you wrote and the mark you got, there are specific points the scheme
+              wanted — and nothing tells you which ones you missed.
+            </p>
+            <p
+              data-reveal
+              className="mt-4 max-w-[48ch] leading-relaxed text-muted-foreground"
+            >
+              So the next answer repeats the same gap.
+            </p>
+          </Reveal>
 
-          <div className="relative mt-16 grid gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-border bg-card/60 p-8 opacity-70">
-              <p className={sectionLabel}>Generic AI / ChatGPT</p>
-              <ul className="mt-6 space-y-4">
-                {GENERIC_AI_POINTS.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                    <XIcon size={18} className="mt-0.5 shrink-0 text-muted-foreground" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
+          <Reveal className="min-w-0">
+            <div data-reveal className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className={sectionLabel}>
+                {SHOWCASE.board} {SHOWCASE.subject}
+              </span>
+              <span className={`text-xs text-muted-foreground ${numericFigures}`}>
+                {SHOWCASE.year} · Q{SHOWCASE.questionNumber} ·{" "}
+                {SHOWCASE.totalMarks} marks
+              </span>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-accent/40 bg-accent-subtle p-8">
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 opacity-60"
-                style={{ backgroundImage: "radial-gradient(circle at 85% 0%, var(--glow-purple), transparent 60%)" }}
-              />
-              <div className="relative">
-                <p className="text-xs font-bold uppercase tracking-wider text-accent">BoardEdge</p>
-                <ul className="mt-6 space-y-4">
-                  {BOARDEDGE_POINTS.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/90 sm:text-base">
-                      <Check size={18} className="mt-0.5 shrink-0 text-accent" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+            <p
+              data-reveal
+              className="mt-4 border-l-2 border-accent pl-5 text-[17px] font-semibold leading-relaxed text-foreground"
+            >
+              {SHOWCASE.questionText}
+            </p>
+
+            {/* The answer arrives a sentence at a time as the column scrolls —
+                the "being written" of §5, without faking a typing cursor. */}
+            <div className="mt-10 space-y-5 border-l border-rule pl-5">
+              {sentences.map((sentence, i) => (
+                <p
+                  key={i}
+                  data-reveal
+                  className="max-w-[var(--measure)] font-display text-[17px] leading-[1.75] text-foreground"
+                >
+                  {sentence}
+                </p>
+              ))}
+            </div>
+
+            <p data-reveal className="mt-10 text-sm italic text-muted-foreground">
+              Three points asked for. Three points written. So how many did it earn?
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ─── Act 2 · The Evaluation ──────────────────────────────────────────
+          The money moment. Answers the question Act 1 above ends on, using the
+          same record: pinned and scrubbed on desktop, tap-advanced below
+          768px, complete and static without JavaScript. */}
+      <Act2Evaluation />
+
+      {/* ─── Act 3 · Provenance ──────────────────────────────────────────── */}
+      <section id="provenance" className="border-y border-border bg-card/30">
+        <Reveal className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+          <h2 data-reveal className="display-section max-w-[20ch]">
+            Marked against the real scheme, not a guess at it.
+          </h2>
+          <p
+            data-reveal
+            className="mt-6 max-w-[var(--measure)] leading-relaxed text-muted-foreground"
+          >
+            Every question in BoardEdge comes from an actual ICSE past paper and carries
+            the official CISCE marking scheme alongside it. The grader is bound to that
+            scheme — it cites the points the scheme lists, and it is not allowed to award
+            marks from outside knowledge.
+          </p>
+
+          {/* Its own Reveal, not part of the block above: these sit far enough
+              down the section that the outer trigger would have fired long
+              before they were on screen, and the count would have run where
+              nobody could see it. Each stat carries its own data-reveal so the
+              three arrive 60ms apart rather than as one slab. */}
+          <Reveal as="dl" className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-3">
+            {[
+              {
+                key: "pyqs",
+                value: <CountUp to={CORPUS.questionsRounded} suffix="+" />,
+                label: "PYQs",
+              },
+              { key: "schemes", value: "1:1", label: "Questions to marking schemes" },
+              { key: "years", value: CORPUS.years, label: "Years covered" },
+            ].map((stat) => (
+              <div key={stat.key} data-reveal className="bg-background px-6 py-8">
+                <dt className={`display-section text-foreground ${numericFigures}`}>
+                  {stat.value}
+                </dt>
+                <dd className="mt-2 text-sm text-muted-foreground">{stat.label}</dd>
               </div>
-            </div>
+            ))}
+          </Reveal>
+
+          {/* Subject names without counts. The counts were true but they
+              invited the wrong comparison — a student reading "History &
+              Civics 273" next to "Geography 506" concludes their subject is
+              the thin one, when what matters is that every paper for it is
+              there. */}
+          <ul data-reveal className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+            {CORPUS.subjects.map((name) => (
+              <li key={name} className="text-sm font-medium text-foreground">
+                {name}
+              </li>
+            ))}
+          </ul>
+
+          {/* The comparison that used to be its own section, folded into
+              provenance where the claim it makes is actually evidenced. It
+              gets its own heading rather than inheriting Provenance's —
+              without one it read as an unrelated pair of cards dropped in
+              after the subject list, no line connecting it to what came
+              before. */}
+          <p data-reveal className={`${sectionLabel} mt-20`}>
+            The difference
+          </p>
+          {/* font-display (family only) rather than .display-section: that
+              class also carries font-size: var(--text-section) unlayered,
+              which beats a Tailwind text-size utility regardless of source
+              order — the same rule that once made the model-answer quote
+              render at heading scale on the results page. Set explicitly here
+              instead of inheriting the section-heading size. */}
+          <h3 data-reveal className="mt-3 max-w-[24ch] font-display text-2xl text-foreground sm:text-[28px]">
+            Generic AI vs. BoardEdge
+          </h3>
+          <Comparison />
+        </Reveal>
+      </section>
+
+      {/* ─── Act 4 · Trajectory ──────────────────────────────────────────── */}
+      <section id="trajectory" className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+        <Reveal className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <h2 data-reveal className="display-section max-w-[18ch]">
+              The same question, until it stops costing you marks.
+            </h2>
+            <p
+              data-reveal
+              className="mt-6 max-w-[var(--measure)] leading-relaxed text-muted-foreground"
+            >
+              Every attempt is kept and grouped by question, so a second or third go at
+              the same one sits next to the first with its score trail intact. The point
+              that kept getting missed is the one to revise.
+            </p>
           </div>
+
+          <div data-reveal className="lg:justify-self-end">
+            <ScoreClimber />
+          </div>
+        </Reveal>
+      </section>
+
+      {/* ─── FAQ ──────────────────────────────────────────────────────────
+          Two columns: the invitation and the way to reach a person on the
+          left, the questions on the right. No subtext under the heading — the
+          button says what to do. */}
+      <section id="faq" className="border-t border-border">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1fr)] lg:gap-16 lg:px-12">
+          <Reveal className="lg:sticky lg:top-28 lg:self-start">
+            <div data-reveal className="flex items-start gap-4">
+              <h2 className="display-section max-w-[8ch] text-balance">
+                Ask us anything!
+              </h2>
+              <span className="mt-2 shrink-0 rounded-full bg-accent-subtle px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-accent">
+                FAQs
+              </span>
+            </div>
+
+            <div data-reveal className="mt-8">
+              <MagneticButton
+                href="mailto:contact.boardedge@gmail.com"
+                className={`${btnPrimary} h-12 px-6 text-sm`}
+              >
+                Contact us
+              </MagneticButton>
+            </div>
+          </Reveal>
+
+          <Reveal className="min-w-0">
+            <div data-reveal>
+              <FaqAccordion items={FAQ_ITEMS} />
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-3xl px-6 py-20">
-        <p className={`${sectionLabel} text-center`}>FAQs</p>
-        <h2 className="mt-2 text-center text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-          Common questions
-        </h2>
-        <div className="mt-10">
-          <FaqAccordion items={FAQ_ITEMS} />
-        </div>
+      {/* ─── Act 5 · Close ───────────────────────────────────────────────── */}
+      <section className="border-t border-border bg-card/30">
+        <Reveal className="mx-auto max-w-7xl px-6 py-28 text-center lg:px-12">
+          <h2 data-reveal className="display mx-auto max-w-[16ch] text-balance">
+            Find out what you actually lost marks on.
+          </h2>
+          <div data-reveal className="mt-10 flex justify-center">
+            <MagneticButton href="/signup" className={`${btnPrimary} h-12 px-8 text-sm`}>
+              Start marking free →
+            </MagneticButton>
+          </div>
+          <p data-reveal className="mt-4 text-sm text-muted-foreground">
+            Start with 20 free evaluations a week. No payment required.
+          </p>
+        </Reveal>
       </section>
 
-      {/* Footer */}
+      {/* ─── Footer ───────────────────────────────────────────────────────── */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2">
-            <Image src="/be-logo1.png" alt="BoardEdge" width={24} height={24} />
-            <span className={numericMono + " text-xs text-muted-foreground"}>
+          {/* Icon only here, not the lockup — the adjacent text is the
+              copyright line, and "BoardEdge © 2026 BoardEdge" would repeat
+              the wordmark right next to itself. */}
+          <HomeLogoLink className="flex items-center gap-2">
+            <Image src="/logo-icon.png" alt="BoardEdge" width={24} height={24} />
+            <span className={numericFigures + " text-xs text-muted-foreground"}>
               © {new Date().getFullYear()} BoardEdge
             </span>
-          </div>
+          </HomeLogoLink>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span className="opacity-50" title="Coming soon">[PLACEHOLDER — support email]</span>
+            <a href="mailto:contact.boardedge@gmail.com" className="hover:text-foreground">
+              contact.boardedge@gmail.com
+            </a>
             <span className="opacity-50" aria-disabled title="Coming soon">Instagram</span>
             <span className="opacity-50" aria-disabled title="Coming soon">LinkedIn</span>
             <span className="opacity-50" title="Coming soon">Privacy Policy</span>
             <span className="opacity-50" title="Coming soon">Terms &amp; Conditions</span>
             <a href="#faq" className="hover:text-foreground">FAQs</a>
           </div>
+        </div>
+
+        {/* The page names CISCE throughout, and names other companies' products
+            in the comparison. None of them endorse this one, and a student
+            should not have to infer that. */}
+        <div className="border-t border-border">
+          <p className="mx-auto max-w-6xl px-6 py-5 text-xs leading-relaxed text-muted-foreground">
+            BoardEdge is an independent learning platform and is not affiliated with
+            CISCE. ICSE and CISCE are trademarks of the Council for the Indian School
+            Certificate Examinations. Other product and company names mentioned are the
+            trademarks of their respective owners and imply no endorsement.
+          </p>
         </div>
       </footer>
     </div>

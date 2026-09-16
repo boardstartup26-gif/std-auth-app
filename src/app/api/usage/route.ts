@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
-import { WEEKLY_TOKEN_LIMIT } from "@/lib/constants";
+import { WEEKLY_CREDIT_LIMIT } from "@/lib/constants";
 import { getUsageDateIST, getUsageWindowStartIST } from "@/lib/usage-date";
 
 export async function GET() {
@@ -22,7 +22,7 @@ export async function GET() {
   const used = (data ?? []).reduce((sum, row) => sum + row.token_count, 0);
   return NextResponse.json({
     tokens_used: used,
-    tokens_remaining: Math.max(0, WEEKLY_TOKEN_LIMIT - used),
-    daily_limit: WEEKLY_TOKEN_LIMIT,
+    tokens_remaining: Math.max(0, WEEKLY_CREDIT_LIMIT - used),
+    daily_limit: WEEKLY_CREDIT_LIMIT,
   });
 }
