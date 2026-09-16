@@ -120,7 +120,7 @@ export default function Home() {
           One oversized Fraunces statement between hairlines, with an issue
           line. No hero image, no dashboard screenshot, no gradient orb (§5). */}
       <Reveal as="header" onLoad slow className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="border-b border-border pb-3 pt-10">
+        <div className="border-b border-border pb-2 pt-6">
           <p data-reveal className={sectionLabel}>
             BoardEdge
           </p>
@@ -128,21 +128,39 @@ export default function Home() {
 
         {/* "inside out" carries the claim, so it is the phrase that gets the
             pen. Short enough that it never breaks across two lines, which the
-            underline could not follow. */}
-        <h1 data-reveal className="display mt-8 max-w-[14ch] text-balance">
+            underline could not follow.
+
+            Sized locally rather than through the shared .display class: that
+            class sets font-size unlayered, which no Tailwind text-size
+            utility can override regardless of source order (the same rule
+            that once put the results page's model answer at heading scale),
+            so an explicit style is the only way to give this one heading its
+            own ceiling. The 13svh term is the actual point — it caps the
+            headline against the *viewport's* height, not just its width, so
+            a wide-but-short browser window (a laptop with the usual chrome
+            eating into it, common enough that a real visitor hit this) still
+            leaves room for the trust bar below to land inside the first
+            screen instead of just past it. --text-statement itself is
+            untouched: Act 5's closing line still gets the full-size version,
+            where fitting inside one screen was never the goal. */}
+        <h1
+          data-reveal
+          style={{ fontSize: "clamp(3.5rem, min(9vw, 13svh), 7rem)" }}
+          className="display mt-6 max-w-[14ch] text-balance"
+        >
           The AI examiner that knows ICSE{" "}
           <MarkedPhrase>inside out</MarkedPhrase>.
         </h1>
 
         <p
           data-reveal
-          className="mt-8 max-w-[var(--measure)] text-lg leading-relaxed text-muted-foreground"
+          className="mt-6 max-w-[var(--measure)] text-lg leading-relaxed text-muted-foreground"
         >
           Write an answer to a real past-paper question. Get it back marked against the
           official CISCE scheme — point by point, with every mark accounted for.
         </p>
 
-        <div data-reveal className="mt-8 flex flex-wrap items-center gap-3">
+        <div data-reveal className="mt-6 flex flex-wrap items-center gap-3">
           <MagneticButton href="/signup" className={`${btnPrimary} h-12 px-6 text-sm`}>
             Start marking free →
           </MagneticButton>
@@ -156,7 +174,7 @@ export default function Home() {
             page is about their exam. */}
         <dl
           data-reveal
-          className="mt-12 grid grid-cols-2 gap-px overflow-hidden border-y border-border bg-border sm:grid-cols-4"
+          className="mt-8 grid grid-cols-2 gap-px overflow-hidden border-y border-border bg-border sm:grid-cols-4"
         >
           {[
             { key: "board", content: "ICSE" },
@@ -171,7 +189,7 @@ export default function Home() {
             },
             { key: "years", content: CORPUS.years },
           ].map((item) => (
-            <div key={item.key} className="bg-background px-4 py-4">
+            <div key={item.key} className="bg-background px-4 py-3">
               <dd className={`text-xs tracking-wide text-muted-foreground ${numericFigures}`}>
                 {item.content}
               </dd>
@@ -186,10 +204,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 py-28 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-16">
           <Reveal className="lg:sticky lg:top-28 lg:self-start">
-            <p data-reveal className={sectionLabel}>
-              The problem
-            </p>
-            <h2 data-reveal className="display-section mt-3">
+            <h2 data-reveal className="display-section">
               You can&apos;t revise what you can&apos;t see.
             </h2>
             <p
@@ -256,10 +271,7 @@ export default function Home() {
       {/* ─── Act 3 · Provenance ──────────────────────────────────────────── */}
       <section id="provenance" className="border-y border-border bg-card/30">
         <Reveal className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
-          <p data-reveal className={sectionLabel}>
-            Provenance
-          </p>
-          <h2 data-reveal className="display-section mt-3 max-w-[20ch]">
+          <h2 data-reveal className="display-section max-w-[20ch]">
             Marked against the real scheme, not a guess at it.
           </h2>
           <p
@@ -310,7 +322,23 @@ export default function Home() {
           </ul>
 
           {/* The comparison that used to be its own section, folded into
-              provenance where the claim it makes is actually evidenced. */}
+              provenance where the claim it makes is actually evidenced. It
+              gets its own heading rather than inheriting Provenance's —
+              without one it read as an unrelated pair of cards dropped in
+              after the subject list, no line connecting it to what came
+              before. */}
+          <p data-reveal className={`${sectionLabel} mt-20`}>
+            The difference
+          </p>
+          {/* font-display (family only) rather than .display-section: that
+              class also carries font-size: var(--text-section) unlayered,
+              which beats a Tailwind text-size utility regardless of source
+              order — the same rule that once made the model-answer quote
+              render at heading scale on the results page. Set explicitly here
+              instead of inheriting the section-heading size. */}
+          <h3 data-reveal className="mt-3 max-w-[24ch] font-display text-2xl text-foreground sm:text-[28px]">
+            Generic AI vs. BoardEdge
+          </h3>
           <Comparison />
         </Reveal>
       </section>
@@ -319,10 +347,7 @@ export default function Home() {
       <section id="trajectory" className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
         <Reveal className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           <div>
-            <p data-reveal className={sectionLabel}>
-              Trajectory
-            </p>
-            <h2 data-reveal className="display-section mt-3 max-w-[18ch]">
+            <h2 data-reveal className="display-section max-w-[18ch]">
               The same question, until it stops costing you marks.
             </h2>
             <p
@@ -406,7 +431,9 @@ export default function Home() {
           </HomeLogoLink>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span className="opacity-50" title="Coming soon">[PLACEHOLDER — support email]</span>
+            <a href="mailto:contact.boardedge@gmail.com" className="hover:text-foreground">
+              contact.boardedge@gmail.com
+            </a>
             <span className="opacity-50" aria-disabled title="Coming soon">Instagram</span>
             <span className="opacity-50" aria-disabled title="Coming soon">LinkedIn</span>
             <span className="opacity-50" title="Coming soon">Privacy Policy</span>

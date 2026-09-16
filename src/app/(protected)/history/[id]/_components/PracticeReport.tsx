@@ -15,7 +15,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { numericFigures, sectionLabel } from "@/lib/ui";
-import { sliceAnswer, type MarkingPoint } from "@/lib/history";
+import { anchorConceptualError, sliceAnswer, type MarkingPoint } from "@/lib/history";
 import { TapSweepHighlight } from "@/app/_components/TapSweepHighlight";
 
 export interface PracticeRecord {
@@ -89,15 +89,17 @@ function AnswerPanel({
   active: MarkingPoint | null;
 }) {
   const slice = active ? sliceAnswer(answer, active.anchor) : null;
-  // Missed stays on its existing translucent token — a missed point carries
-  // no matched_text by construction (§6), so this branch is defensive rather
-  // than reachable, and doesn't warrant a third flattened wash token for a
-  // case the data model doesn't produce.
+  // "missed" is defensive rather than reachable — a missed point carries no
+  // matched_text by construction (§6) — but uses the same flattened -wash
+  // family as the other two now that it goes through the same per-word sweep,
+  // so a hit on this branch doesn't reintroduce the double-transparency seam
+  // those tokens exist to avoid. "partial" is chrome, not gold: see
+  // STATUS_MARK below for why.
   const wash =
     active?.status === "missed"
-      ? "bg-status-wrong-subtle"
+      ? "bg-status-wrong-wash"
       : active?.status === "partial"
-      ? "bg-withheld-wash"
+      ? "bg-chrome-wash"
       : "bg-awarded-wash";
 
   return (
@@ -134,6 +136,38 @@ function AnswerPanel({
   );
 }
 
+/**
+ * The answer with one or more conceptual-error spans marked red, merged the
+ * same way Act2Evaluation's segmentAnswer merges marking-point spans:
+ * sorted, and any span that would overlap one already placed is dropped
+ * rather than drawn twice.
+ */
+function ErrorMarkedAnswer({
+  answer,
+  anchors,
+}: {
+  answer: string;
+  anchors: { start: number; end: number }[];
+}) {
+  const spans = [...anchors].sort((a, b) => a.start - b.start);
+  const parts: React.ReactNode[] = [];
+  let cursor = 0;
+
+  spans.forEach((span, i) => {
+    if (span.start < cursor) return; // overlaps an earlier span — skip it
+    if (span.start > cursor) parts.push(answer.slice(cursor, span.start));
+    parts.push(
+      <mark key={i} className="rounded-sm px-0.5 text-foreground">
+        <TapSweepHighlight text={answer.slice(span.start, span.end)} wash="bg-status-wrong-wash" />
+      </mark>
+    );
+    cursor = span.end;
+  });
+  if (cursor < answer.length) parts.push(answer.slice(cursor));
+
+  return <>{parts}</>;
+}
+
 // Each status carries its colour on three things at once — the glyph, a left
 // rule, and a wash — because a coloured glyph alone disappears at this size:
 // the list read as a column of grey text with grey marks, which is exactly
@@ -149,6 +183,13 @@ function AnswerPanel({
 // A muted miss is what the grey complaint was about, so missed takes the red
 // here and the conceptual-error block keeps its distinction by treatment — a
 // filled callout with a heavy rule — rather than by hue alone.
+//
+// "partial" is chrome (a neutral steel tone from --ink-muted), not the
+// palette's gold: on this page's row + answer-highlight it read as a bright
+// yellow alert sitting on the answer rather than a graded state, so it moved
+// here and on the landing page's Act 2, by direct request — matching colours
+// across the same mechanic on both surfaces (green/red/chrome), same as §6
+// already requires matching everything else about it.
 const STATUS_MARK: Record<
   MarkingPoint["status"],
   { glyph: string; glyphClass: string; rowClass: string; label: string }
@@ -161,8 +202,8 @@ const STATUS_MARK: Record<
   },
   partial: {
     glyph: "–",
-    glyphClass: "text-status-partial",
-    rowClass: "border-l-2 border-status-partial bg-status-partial-subtle",
+    glyphClass: "text-chrome",
+    rowClass: "border-l-2 border-chrome bg-chrome-subtle",
     label: "Partial",
   },
   missed: {
@@ -313,6 +354,29 @@ export function PracticeReport({ record }: { record: PracticeRecord }) {
               </li>
             ))}
           </ul>
+
+          {/* Marked in place, in red, the same as the landing page's Act 2 —
+              a flagged error is a specific wrong claim, not an omission, and
+              is worth showing inside the actual sentence it names rather than
+              only described in prose above. Not every error can be: it
+              depends on Claude having quoted the offending clause verbatim
+              (see anchorConceptualError), which it usually but not always
+              does. Nothing renders below when none of them can be placed —
+              the list above already stands on its own. */}
+          {(() => {
+            const anchored = conceptualErrors
+              .map((e) => anchorConceptualError(e, answerText))
+              .filter((a): a is { start: number; end: number } => !!a);
+            if (!anchored.length) return null;
+            return (
+              <div className="mt-5 rounded-lg border border-border bg-card p-4">
+                <p className={sectionLabel}>Where it shows up in your answer</p>
+                <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-foreground transform-gpu">
+                  <ErrorMarkedAnswer answer={answerText} anchors={anchored} />
+                </p>
+              </div>
+            );
+          })()}
         </Depth>
       ) : null}
 

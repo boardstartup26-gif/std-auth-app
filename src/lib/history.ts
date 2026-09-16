@@ -343,3 +343,47 @@ export function sliceAnswer(
     after: answer.slice(end),
   };
 }
+
+/**
+ * Locate the wrong statement a conceptual error is *about*, inside the
+ * student's own answer, so it can be marked red in place — the same way a
+ * marking point's matched_text is anchored, for the same reason: a callout
+ * that names the mistake in prose is less useful than seeing exactly which
+ * words in your own answer it is.
+ *
+ * conceptual_errors[] carries no anchor of its own (it isn't part of the
+ * MarkingPoint shape), and examiner-prompt.ts makes no contractual promise
+ * that an error string quotes the answer at all — this is a best-effort
+ * extraction, not a guaranteed field. In practice Claude very often writes
+ * the error by quoting the offending clause ("The student states '...' —
+ * this reverses the constitutional position"), the same instinct that
+ * produces matched_text, and when it does, this pulls that quoted span back
+ * out and anchors it exactly like resolveMarkingPointAnchors does: indexOf,
+ * never a hand-counted offset, rejected if it would cut a word in half.
+ *
+ * Returns null whenever no quote is present, it doesn't appear verbatim, it's
+ * ambiguous (appears more than once), or it would split a word — the caller
+ * shows the error text plainly with no highlight in every one of those
+ * cases, the same graceful degradation a missing matched_text anchor gets.
+ * Never touches examiner-prompt.ts to try to guarantee the quote; that
+ * prompt governs real grading output and changing it is out of scope here.
+ */
+export function anchorConceptualError(
+  errorText: string,
+  answer: string
+): { start: number; end: number } | null {
+  const match = errorText.match(/['"“”‘’]([^'"“”‘’]{6,})['"“”‘’]/);
+  if (!match) return null;
+  const quoted = match[1];
+
+  const start = answer.indexOf(quoted);
+  if (start === -1) return null;
+  if (answer.indexOf(quoted, start + 1) !== -1) return null; // ambiguous
+
+  const end = start + quoted.length;
+  const isWordChar = (c: string | undefined) => !!c && /[A-Za-z0-9]/.test(c);
+  if (isWordChar(answer[start - 1]) && isWordChar(quoted[0])) return null;
+  if (isWordChar(answer[end]) && isWordChar(quoted[quoted.length - 1])) return null;
+
+  return { start, end };
+}

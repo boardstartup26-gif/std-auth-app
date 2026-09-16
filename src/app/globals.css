@@ -66,6 +66,23 @@
      double up. */
   --awarded-wash: color-mix(in srgb, var(--awarded) 12%, var(--bg));
   --withheld-wash: color-mix(in srgb, var(--withheld) 14%, var(--bg));
+  /* Same flattening for the answer-highlight's other two states. wrong-wash
+     mixes from --accent, matching the existing "status-wrong → accent, red is
+     a wrong statement" rule below — a conceptual error is exactly that: a
+     specific wrong claim, marked the same red as everywhere else wrong is
+     marked, not a new colour.
+     chrome-wash replaces gold for "partial" in the answer highlight and the
+     marking-point rows specifically, by direct request — gold read as a
+     stray bright-yellow alert against the paper background rather than a
+     graded state. It mixes from --ink-muted: a neutral steel tone already in
+     the palette rather than a new hue, keeping "no colour as decoration"
+     intact. --withheld itself is untouched — it still exists as originally
+     the palette's semantic gold for the surfaces the design-system-v2 doc's
+     score-badge/credit UI actually locked, which this change does not touch. */
+  --status-wrong-wash: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  --chrome: var(--ink-muted);
+  --chrome-wash: color-mix(in srgb, var(--ink-muted) 14%, var(--bg));
+  --chrome-subtle: color-mix(in srgb, var(--ink-muted) 12%, transparent);
 
   /* ─── Type ──────────────────────────────────────────────────────────────
      Fraunces is loaded by next/font/google in layout.tsx (self-hosted at
@@ -167,6 +184,10 @@
   --color-withheld-subtle: var(--withheld-subtle);
   --color-awarded-wash: var(--awarded-wash);
   --color-withheld-wash: var(--withheld-wash);
+  --color-status-wrong-wash: var(--status-wrong-wash);
+  --color-chrome: var(--chrome);
+  --color-chrome-wash: var(--chrome-wash);
+  --color-chrome-subtle: var(--chrome-subtle);
 
   /* Legacy — retires surface by surface */
   --color-background: var(--background);
