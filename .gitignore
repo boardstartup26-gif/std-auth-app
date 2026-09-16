@@ -45,3 +45,4 @@ supabase/.temp
 
 # one-off diagram pipeline reports
 diagram-flag-diff.json
+__pycache__/

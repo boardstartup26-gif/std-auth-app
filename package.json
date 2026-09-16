@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "parse:chemistry-pdfs": "node scripts/parse_chemistry_pdfs.js"
+    "parse:chemistry-pdfs": "node scripts/parse_chemistry_pdfs.js",
+    "validate:showcase": "python scripts/validate-showcase.py"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",

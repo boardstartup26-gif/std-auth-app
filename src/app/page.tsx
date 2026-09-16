@@ -1,9 +1,8 @@
 // The landing page, as the six acts of handoff §5.
 //
-// Acts 0, 1, 3, 4 and 5 are built here (build order step 4). Act 2 — the
-// scroll-scrubbed evaluation, the money moment — is step 5 and slots in
-// between Acts 1 and 3, where the comment marks it. Act 1 deliberately ends on
-// the unmarked answer so Act 2 has something to mark.
+// Act 2 — the scroll-scrubbed evaluation, the money moment — lives in its own
+// client component. Act 1 deliberately ends on the unmarked answer so Act 2
+// has something to mark, and both read the same record.
 //
 // The page stays a static prerender: no data fetching, every figure below is a
 // constant checked against the live corpus at authoring time (2,456 questions,
@@ -14,6 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Check, X as XIcon } from "lucide-react";
 import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
+import { Act2Evaluation } from "@/app/_components/Act2Evaluation";
 import { FaqAccordion, type FaqItem } from "@/app/_components/FaqAccordion";
 import { HomeLogoLink } from "@/app/_components/HomeLogoLink";
 import { Reveal } from "@/app/_components/Reveal";
@@ -237,9 +237,10 @@ export default function Home() {
       </section>
 
       {/* ─── Act 2 · The Evaluation ──────────────────────────────────────────
-          Build order step 5: author the full JSON contract against
-          _data/showcase.ts, then build the pinned scrub against it. It belongs
-          here — Act 1 above ends on the unanswered question it answers. */}
+          The money moment. Answers the question Act 1 above ends on, using the
+          same record: pinned and scrubbed on desktop, tap-advanced below
+          768px, complete and static without JavaScript. */}
+      <Act2Evaluation />
 
       {/* ─── Act 3 · Provenance ──────────────────────────────────────────── */}
       <section id="provenance" className="border-y border-border bg-card/30">
