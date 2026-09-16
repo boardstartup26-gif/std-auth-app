@@ -25,9 +25,21 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 // A hand-drawn line rather than a rule: it rises a little to the right and
-// thins at the ends, which is what a stroke made in one movement does. Drawn in
-// a 200-wide box and stretched to the phrase, with a non-scaling stroke so the
-// line keeps its weight at any width.
+// thins at the ends, which is what a stroke made in one movement does. Drawn
+// in a 200x12 box and stretched non-uniformly (preserveAspectRatio="none") to
+// whatever width the phrase renders at.
+//
+// The stroke deliberately does NOT carry vector-effect="non-scaling-stroke".
+// That was tried first, to keep the line's weight constant at any width, but
+// non-scaling-stroke combined with stroke-dasharray/stroke-dashoffset under a
+// non-uniform scale is a real Chromium rendering bug: the dash pattern gets
+// computed in a coordinate space that disagrees with where the stroke is
+// painted, and the line visibly stops partway across — exactly like a broken
+// underline — even though stroke-dashoffset reports fully drawn. Dropping the
+// vector-effect fixes it, and costs nothing: the stroke now scales with the
+// box like any other SVG geometry, which for a hand-drawn mark is the more
+// correct behaviour anyway — thicker under the 115px desktop headline,
+// thinner under the 56px mobile one, in proportion to the text it marks.
 const STROKE = "M2,9 C34,4.2 78,3.1 120,4.4 C152,5.4 180,6.8 198,5";
 
 export function MarkedPhrase({ children }: { children: React.ReactNode }) {
@@ -125,7 +137,6 @@ export function MarkedPhrase({ children }: { children: React.ReactNode }) {
           stroke="var(--accent)"
           strokeWidth={5}
           strokeLinecap="round"
-          vectorEffect="non-scaling-stroke"
         />
         <circle
           data-mark-nib
@@ -133,7 +144,6 @@ export function MarkedPhrase({ children }: { children: React.ReactNode }) {
           cy={9}
           r={3}
           fill="var(--accent)"
-          vectorEffect="non-scaling-stroke"
           opacity={0}
         />
       </svg>
