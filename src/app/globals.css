@@ -272,3 +272,22 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Entrance state for the landing page's §4 reveals.
+ *
+ * The hidden state belongs here rather than in the GSAP component: the page is
+ * server-rendered, so setting opacity from JS would paint the content, then
+ * blink it out on hydration, then fade it back. Hiding at first paint costs
+ * nothing and removes the flash entirely.
+ *
+ * Deliberately wrapped in `no-preference`. A visitor who asked for reduced
+ * motion never gets content hidden from them at all — so even if the
+ * JavaScript never arrives, there is nothing for it to have revealed. The
+ * <noscript> block on the page covers the same failure for everyone else.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
