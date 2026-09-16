@@ -16,6 +16,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { numericFigures, sectionLabel } from "@/lib/ui";
 import { sliceAnswer, type MarkingPoint } from "@/lib/history";
+import { TapSweepHighlight } from "@/app/_components/TapSweepHighlight";
 
 export interface PracticeRecord {
   subject: string;
@@ -88,21 +89,36 @@ function AnswerPanel({
   active: MarkingPoint | null;
 }) {
   const slice = active ? sliceAnswer(answer, active.anchor) : null;
+  // Missed stays on its existing translucent token — a missed point carries
+  // no matched_text by construction (§6), so this branch is defensive rather
+  // than reachable, and doesn't warrant a third flattened wash token for a
+  // case the data model doesn't produce.
   const wash =
     active?.status === "missed"
       ? "bg-status-wrong-subtle"
       : active?.status === "partial"
-      ? "bg-status-partial-subtle"
-      : "bg-status-correct-subtle";
+      ? "bg-withheld-wash"
+      : "bg-awarded-wash";
 
   return (
     <div className="rounded-lg border border-border bg-card p-4">
       <p className={sectionLabel}>Your answer</p>
-      <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-foreground">
+      {/* transform-gpu unconditionally, not just when a point is active: the
+          highlighted span's words each carry a transformed wash sibling
+          (promoting them onto a composited layer, which Chromium renders with
+          grayscale antialiasing), while the surrounding before/after text
+          would stay on the default subpixel/ClearType path — the exact
+          mismatch Act2Evaluation's answer paragraph hit and fixed the same
+          way. Applying it here whether or not a point is selected keeps every
+          render of this paragraph on one layer, not just the ones with a
+          highlight in them. */}
+      <p className="mt-3 whitespace-pre-wrap text-[15px] leading-relaxed text-foreground transform-gpu">
         {slice ? (
           <>
             {slice.before}
-            <mark className={`${wash} rounded-sm px-0.5 text-foreground`}>{slice.match}</mark>
+            <mark className="rounded-sm px-0.5 text-foreground">
+              <TapSweepHighlight text={slice.match} wash={wash} />
+            </mark>
             {slice.after}
           </>
         ) : (
