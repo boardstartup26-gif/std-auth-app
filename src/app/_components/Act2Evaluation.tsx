@@ -455,7 +455,25 @@ export function Act2Evaluation() {
                 the sentences the visitor just watched being written. */}
             <div className="mt-6 rounded-lg border border-border bg-background p-4">
               <p className={sectionLabel}>The answer</p>
-              <p className="mt-2.5 max-w-[var(--measure)] font-display text-[16px] leading-[1.8] text-foreground">
+              {/* transform-gpu is load-bearing, not a perf hint. Every
+                  HighlightedRun word carries its own transformed wash sibling
+                  (even at rest, GSAP sets it to scaleX(0) on mount rather than
+                  leaving it untouched), which promotes those words onto a
+                  composited layer — and Chromium renders composited text with
+                  grayscale antialiasing, not the subpixel/ClearType AA a plain
+                  text node gets. The awarded and partial sentences are all
+                  HighlightedRun words, so they were already on that layer; the
+                  missed point's sentence is the one plain, un-wrapped span in
+                  this paragraph, and on a real ClearType display it rendered
+                  with a visibly different — faintly red/blue-fringed — edge
+                  than its neighbours. Same ink color (both are --ink; this
+                  never showed up in a getComputedStyle diff), different
+                  antialiasing pipeline for the same paragraph.
+                  transform-gpu promotes the whole paragraph to one layer, so
+                  the plain segment renders through the identical grayscale
+                  path as the wrapped ones — one paragraph, one AA mode,
+                  regardless of which sentences happen to carry a mark. */}
+              <p className="mt-2.5 max-w-[var(--measure)] font-display text-[16px] leading-[1.8] text-foreground transform-gpu">
                 {SEGMENTS.map((seg, i) =>
                   seg.pointIndex === null ? (
                     <span key={i}>{seg.text}</span>
