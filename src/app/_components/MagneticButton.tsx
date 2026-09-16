@@ -52,8 +52,12 @@ export function MagneticButton({
     setActive(false);
   }, []);
 
+  // mailto: and external hrefs are not routes — next/link has nothing to
+  // prefetch or navigate for them, so they render as a plain anchor.
+  const Tag = /^(mailto:|tel:|https?:)/.test(href) ? "a" : Link;
+
   return (
-    <Link
+    <Tag
       ref={ref}
       href={href}
       onPointerMove={onPointerMove}
@@ -70,6 +74,6 @@ export function MagneticButton({
       }}
     >
       {children}
-    </Link>
+    </Tag>
   );
 }

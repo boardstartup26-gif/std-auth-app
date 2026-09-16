@@ -116,6 +116,101 @@ function segmentAnswer(answer: string, points: MarkingPoint[]): Segment[] {
 
 const SEGMENTS = segmentAnswer(EVAL.student_answer_text, POINTS);
 
+/**
+ * One marking point's quote, with a wash that sweeps across it word by word.
+ *
+ * Word by word because the wash cannot be one box. A quote here is a whole
+ * sentence, which wraps — and an absolutely positioned layer inside a wrapped
+ * inline element is sized to the *union* of that element's line boxes, not to
+ * each line. The first version did exactly that and painted a grey rectangle
+ * across the whole paragraph with a stray bar hanging off it.
+ *
+ * Each word is its own inline-block, so each wash is one line box and lands
+ * where the word is. The spaces stay outside the boxes, which is what keeps
+ * the sentence able to wrap at all; the washes are widened slightly to close
+ * the gaps those spaces leave, and use the flattened --*-wash tokens so the
+ * overlap that creates does not stack into a darker seam at every join.
+ *
+ * The tighter line-height is on the boxes only: at the paragraph's 1.8 the
+ * wash would be nearly twice the height of the text it sits behind and would
+ * touch the line above.
+ */
+function HighlightedRun({
+  text,
+  pointIndex,
+  status,
+  swept,
+}: {
+  text: string;
+  pointIndex: number;
+  status: MarkingPoint["status"];
+  /**
+   * Whether this quote's point has been reached — but only meaningful while
+   * the tap stepper is driving. `null` means nobody is stepping: the desktop
+   * scrub owns these transforms through GSAP, and the server renders them
+   * already swept for everyone else.
+   */
+  swept: boolean | null;
+}) {
+  // Split on whitespace but keep it: the separators render as ordinary text
+  // between the boxes, which is where the line is allowed to break.
+  const tokens = text.split(/(\s+)/).filter(Boolean);
+  const wash = status === "partial" ? "bg-withheld-wash" : "bg-awarded-wash";
+
+  // Each token paired with its position among the *words* — spaces get null.
+  // Counted up front rather than with a running variable inside the map: a
+  // counter reassigned across render closures is exactly what the React
+  // Compiler refuses, and the sentence is forty tokens, so the repeated scan
+  // costs nothing.
+  const isSpace = (t: string) => /^\s+$/.test(t);
+  const wordCount = tokens.filter((t) => !isSpace(t)).length;
+  const parts = tokens.map((token, i) => ({
+    token,
+    word: isSpace(token) ? null : tokens.slice(0, i).filter((t) => !isSpace(t)).length,
+  }));
+
+  return (
+    <>
+      {parts.map(({ token, word }, i) => {
+        if (word === null) return <span key={i}>{token}</span>;
+
+        // The stepper's version of the desktop sweep: each word's wash takes
+        // the same 200ms, starting a little later the further along the
+        // sentence it sits, so a tap draws the highlight left to right instead
+        // of dropping it in all at once. Inline style because the delay is a
+        // computed per-word value no utility class can express — and applied
+        // only while stepping, so it never fights the inline transform GSAP
+        // writes during the desktop scrub.
+        const stepping = swept !== null;
+        const style = stepping
+          ? {
+              transform: swept ? "scaleX(1)" : "scaleX(0)",
+              transitionDelay: swept
+                ? `${Math.round((word / Math.max(1, wordCount - 1)) * 340)}ms`
+                : "0ms",
+            }
+          : undefined;
+
+        return (
+          <span key={i} className="relative isolate inline-block leading-[1.35]">
+            <span
+              data-highlight={pointIndex}
+              aria-hidden
+              style={style}
+              className={`absolute inset-y-0 -inset-x-[0.16em] -z-10 origin-left rounded-[2px] ${wash} ${
+                stepping
+                  ? "transition-transform duration-200 ease-out motion-reduce:transition-none"
+                  : ""
+              }`}
+            />
+            {token}
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
 // ─── Steps ───────────────────────────────────────────────────────────────────
 //
 // One step per marking point, then the conceptual error, then the verdict.
@@ -227,11 +322,24 @@ export function Act2Evaluation() {
           const at = i === 0 ? 0 : ">-0.1";
           tl.to(row, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, at);
 
-          const fill = fills.find((f) => f.dataset.highlight === String(i));
-          if (fill) {
-            // 400ms, and it draws left to right — §4's tick-draw mechanic, which
-            // is meant to read as a pen moving across the line.
-            tl.to(fill, { scaleX: 1, duration: 0.4, ease: "power1.inOut" }, "<0.15");
+          // Every word of this point's quote, in reading order.
+          const run = fills.filter((f) => f.dataset.highlight === String(i));
+          if (run.length) {
+            // The row lands first, then the pen crosses the sentence it earned
+            // its mark on — the point, then the evidence for it. The stagger is
+            // divided by the word count so a long quote and a short one both
+            // take the same half-second to cross, rather than the long one
+            // taking four times as long.
+            tl.to(
+              run,
+              {
+                scaleX: 1,
+                duration: 0.18,
+                ease: "power1.inOut",
+                stagger: run.length > 1 ? 0.34 / (run.length - 1) : 0,
+              },
+              ">-0.18"
+            );
           }
 
           // The mark lands the instant the stroke finishes, not gradually over
@@ -241,7 +349,7 @@ export function Act2Evaluation() {
           const marks = marksAtStep(i);
           if (marks !== tallied) {
             tallied = marks;
-            tl.to(tally, { marks, duration: 0.01, onUpdate: writeTally }, fill ? ">" : "<0.1");
+            tl.to(tally, { marks, duration: 0.01, onUpdate: writeTally }, run.length ? ">" : "<0.1");
           }
         });
 
@@ -352,25 +460,13 @@ export function Act2Evaluation() {
                   seg.pointIndex === null ? (
                     <span key={i}>{seg.text}</span>
                   ) : (
-                    <mark
+                    <HighlightedRun
                       key={i}
-                      className="relative isolate rounded-sm bg-transparent px-0.5 text-foreground"
-                    >
-                      {/* The wash is its own layer so the draw can be a
-                          transform. §4 allows transform and opacity only —
-                          animating a background or a width here would hand a
-                          mid-range Android a paint on every scroll frame. */}
-                      <span
-                        data-highlight={seg.pointIndex}
-                        aria-hidden
-                        className={`absolute inset-y-0 -inset-x-0.5 -z-10 rounded-sm ${
-                          POINTS[seg.pointIndex].status === "partial"
-                            ? "bg-status-partial-subtle"
-                            : "bg-status-correct-subtle"
-                        }`}
-                      />
-                      {seg.text}
-                    </mark>
+                      text={seg.text}
+                      pointIndex={seg.pointIndex}
+                      status={POINTS[seg.pointIndex].status}
+                      swept={stepped ? shown(seg.pointIndex) : null}
+                    />
                   )
                 )}
               </p>

@@ -341,19 +341,38 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* ─── FAQ ──────────────────────────────────────────────────────────── */}
+      {/* ─── FAQ ──────────────────────────────────────────────────────────
+          Two columns: the invitation and the way to reach a person on the
+          left, the questions on the right. No subtext under the heading — the
+          button says what to do. */}
       <section id="faq" className="border-t border-border">
-        <Reveal className="mx-auto max-w-3xl px-6 py-24">
-          <p data-reveal className={sectionLabel}>
-            FAQs
-          </p>
-          <h2 data-reveal className="display-section mt-3">
-            Common questions
-          </h2>
-          <div data-reveal className="mt-10">
-            <FaqAccordion items={FAQ_ITEMS} />
-          </div>
-        </Reveal>
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1fr)] lg:gap-16 lg:px-12">
+          <Reveal className="lg:sticky lg:top-28 lg:self-start">
+            <div data-reveal className="flex items-start gap-4">
+              <h2 className="display-section max-w-[8ch] text-balance">
+                Ask us anything!
+              </h2>
+              <span className="mt-2 shrink-0 rounded-full bg-accent-subtle px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-accent">
+                FAQs
+              </span>
+            </div>
+
+            <div data-reveal className="mt-8">
+              <MagneticButton
+                href="mailto:contact.boardedge@gmail.com"
+                className={`${btnPrimary} h-12 px-6 text-sm`}
+              >
+                Contact us
+              </MagneticButton>
+            </div>
+          </Reveal>
+
+          <Reveal className="min-w-0">
+            <div data-reveal>
+              <FaqAccordion items={FAQ_ITEMS} />
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ─── Act 5 · Close ───────────────────────────────────────────────── */}

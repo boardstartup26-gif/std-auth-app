@@ -58,6 +58,15 @@
   --awarded-subtle: color-mix(in srgb, var(--awarded) 12%, transparent);
   --withheld-subtle: color-mix(in srgb, var(--withheld) 14%, transparent);
 
+  /* The same two washes, flattened against the page instead of left
+     translucent. A highlight drawn word by word has to overlap its neighbours
+     slightly to close the gaps between words, and two translucent layers stack
+     into a darker band at every one of those seams. Mixing with --bg rather
+     than with transparent gives the identical colour on paper with nothing to
+     double up. */
+  --awarded-wash: color-mix(in srgb, var(--awarded) 12%, var(--bg));
+  --withheld-wash: color-mix(in srgb, var(--withheld) 14%, var(--bg));
+
   /* ─── Type ──────────────────────────────────────────────────────────────
      Fraunces is loaded by next/font/google in layout.tsx (self-hosted at
      build time) with the opsz/SOFT/WONK axes requested, rather than a
@@ -156,6 +165,8 @@
   --color-awarded-subtle: var(--awarded-subtle);
   --color-withheld: var(--withheld);
   --color-withheld-subtle: var(--withheld-subtle);
+  --color-awarded-wash: var(--awarded-wash);
+  --color-withheld-wash: var(--withheld-wash);
 
   /* Legacy — retires surface by surface */
   --color-background: var(--background);
