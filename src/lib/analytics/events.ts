@@ -53,6 +53,11 @@ export const ALLOWED_EVENT_NAMES: ReadonlySet<string> = new Set(
  * from "the student ran out of tokens" — very different problems.
  */
 export const FAILURE_STAGES = {
+  /**
+   * No confirmed parent/guardian consent. Refused before any question lookup,
+   * credit reservation or Anthropic call — the answer is never processed.
+   */
+  PARENT_CONSENT_REQUIRED: "parent_consent_required",
   /** Weekly token cap hit. A product signal, not a bug. */
   QUOTA_EXCEEDED: "quota_exceeded",
   BAD_REQUEST: "bad_request",

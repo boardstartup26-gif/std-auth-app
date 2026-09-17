@@ -42,6 +42,12 @@ export function HomeLogoLink({
       .auth.getUser()
       .then(({ data: { user } }) => {
         if (!cancelled && user) setHref("/dashboard");
+      })
+      .catch(() => {
+        // A stale/missing refresh token throws here (AuthApiError). It just
+        // means "not logged in" — the default "/" href is already correct,
+        // so there is nothing to do but stop it from becoming an unhandled
+        // promise rejection.
       });
     return () => {
       cancelled = true;

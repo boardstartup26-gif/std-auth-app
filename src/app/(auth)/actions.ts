@@ -5,6 +5,8 @@ import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
+import { recordSignupConsent } from "@/lib/legal/consent";
+import { normaliseParentEmail, requestParentConsent } from "@/lib/parent-consent/service";
 
 type AuthResult =
   | { ok: true }
@@ -79,6 +81,28 @@ export async function signup(
   if (!firstName || !lastName) {
     return { ok: false, message: "First and last name are required." };
   }
+  // Re-checked here because the checkbox's `required` attribute is only a
+  // browser hint — a hand-built POST skips it. Only the fact of acceptance
+  // comes from the form; which versions were accepted is decided server-side
+  // in recordSignupConsent.
+  if (formData.get("accept_policies") !== "on") {
+    return {
+      ok: false,
+      message: "Please agree to the Terms & Conditions and Privacy Policy to create an account.",
+    };
+  }
+  // Validated before the account exists, so a typo is caught while the
+  // student is still on the form rather than discovered as a bounced email.
+  const parentEmail = normaliseParentEmail(formData.get("parent_email"));
+  if (!parentEmail) {
+    return { ok: false, message: "Please enter a valid parent or guardian email address." };
+  }
+  if (parentEmail === email.toLowerCase()) {
+    return {
+      ok: false,
+      message: "Your parent or guardian's email must be different from your own.",
+    };
+  }
 
   try {
     const supabase = await createClient();
@@ -107,6 +131,33 @@ export async function signup(
     // visible on the dashboard.
     const newUserId = data.user?.id ?? null;
     const confirmationPending = !data.session;
+
+    // Awaited rather than deferred to after(): this is the compliance record,
+    // and it should exist before the student lands on the dashboard. It never
+    // throws. An empty `identities` array is Supabase's enumeration-safe reply
+    // for an email that already has an account — that id is not a new user
+    // who just agreed to anything, so nothing is recorded for it.
+    const isRealNewUser = Boolean(newUserId) && (data.user?.identities?.length ?? 0) > 0;
+    if (newUserId && isRealNewUser) {
+      await recordSignupConsent(newUserId, "email_signup");
+    }
+
+    // Parental consent request. Account creation is never blocked on it —
+    // evaluation access is (see src/app/api/evaluate/route.ts). If the email
+    // fails to send, the student sees a "resend" prompt after logging in.
+    // Skipped for the enumeration-safe fake user: that id belongs to an
+    // existing account, and emailing a stranger's parent from it would be
+    // both wrong and a spam vector.
+    let parentEmailSent = false;
+    if (newUserId && isRealNewUser) {
+      const result = await requestParentConsent({
+        userId: newUserId,
+        studentEmail: email,
+        studentFirstName: firstName,
+        parentEmail,
+      });
+      parentEmailSent = result.ok;
+    }
     after(() =>
       recordServerEvent({
         eventName: EVENTS.SIGNUP_COMPLETED,
@@ -119,8 +170,9 @@ export async function signup(
     if (!data.session) {
       return {
         ok: false,
-        message:
-          "Signup succeeded. Please check your email to confirm your account, then log in.",
+        message: parentEmailSent
+          ? "Signup succeeded. Please check your email to confirm your account, then log in. We've also emailed your parent or guardian a link to approve grading — you can practise once they confirm."
+          : "Signup succeeded. Please check your email to confirm your account, then log in. After logging in, you'll be asked to send your parent or guardian a consent link.",
       };
     }
   } catch (e) {

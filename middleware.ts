@@ -44,7 +44,16 @@ const PROTECTED_PREFIXES = [
   "/account",
 ];
 
+// Pages that must stay reachable without a session, checked before
+// PROTECTED_PREFIXES. The legal pages are linked from the signup form a
+// logged-out visitor is agreeing to — an auth redirect on them would make
+// consent impossible to give. /parent-confirm is opened by a parent who has
+// no BoardEdge account at all. Listed explicitly (exact match) so a future
+// protected prefix can never swallow them by accident.
+const PUBLIC_PATHS = new Set(["/privacy", "/terms", "/parent-confirm"]);
+
 function isProtectedRoute(pathname: string): boolean {
+  if (PUBLIC_PATHS.has(pathname)) return false;
   return PROTECTED_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
