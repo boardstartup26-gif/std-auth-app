@@ -21,6 +21,7 @@ import { MarkedPhrase } from "@/app/_components/MarkedPhrase";
 import { NavLinks } from "@/app/_components/NavLinks";
 import { Reveal } from "@/app/_components/Reveal";
 import { ScoreClimber } from "@/app/_components/ScoreClimber";
+import { SiteFooter } from "@/app/_components/SiteFooter";
 import { SHOWCASE, showcaseSentences } from "@/app/_data/showcase";
 
 // Counted against the live questions table at authoring time. Hardcoded rather
@@ -418,42 +419,7 @@ export default function Home() {
       </section>
 
       {/* ─── Footer ───────────────────────────────────────────────────────── */}
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
-          {/* Icon only here, not the lockup — the adjacent text is the
-              copyright line, and "BoardEdge © 2026 BoardEdge" would repeat
-              the wordmark right next to itself. */}
-          <HomeLogoLink className="flex items-center gap-2">
-            <Image src="/logo-icon.png" alt="BoardEdge" width={24} height={24} />
-            <span className={numericFigures + " text-xs text-muted-foreground"}>
-              © {new Date().getFullYear()} BoardEdge
-            </span>
-          </HomeLogoLink>
-
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <a href="mailto:contact.boardedge@gmail.com" className="hover:text-foreground">
-              contact.boardedge@gmail.com
-            </a>
-            <span className="opacity-50" aria-disabled title="Coming soon">Instagram</span>
-            <span className="opacity-50" aria-disabled title="Coming soon">LinkedIn</span>
-            <span className="opacity-50" title="Coming soon">Privacy Policy</span>
-            <span className="opacity-50" title="Coming soon">Terms &amp; Conditions</span>
-            <a href="#faq" className="hover:text-foreground">FAQs</a>
-          </div>
-        </div>
-
-        {/* The page names CISCE throughout, and names other companies' products
-            in the comparison. None of them endorse this one, and a student
-            should not have to infer that. */}
-        <div className="border-t border-border">
-          <p className="mx-auto max-w-6xl px-6 py-5 text-xs leading-relaxed text-muted-foreground">
-            BoardEdge is an independent learning platform and is not affiliated with
-            CISCE. ICSE and CISCE are trademarks of the Council for the Indian School
-            Certificate Examinations. Other product and company names mentioned are the
-            trademarks of their respective owners and imply no endorsement.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter faqHref="#faq" />
     </div>
   );
 }

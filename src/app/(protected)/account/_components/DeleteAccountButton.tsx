@@ -14,16 +14,26 @@ export function DeleteAccountButton() {
     setPending(true);
     setError(null);
 
-    const res = await fetch("/api/account/delete", { method: "POST" });
-    const data = await res.json();
+    // Every failure path must end with the button usable again. This used to
+    // call res.json() unguarded, so a non-JSON response (the 404 page, a proxy
+    // error) threw and left the button stuck on "Deleting…" with no message.
+    try {
+      const res = await fetch("/api/account/delete", { method: "POST" });
+      const data: { error?: string } | null = await res.json().catch(() => null);
 
-    if (!res.ok) {
+      if (!res.ok) {
+        setPending(false);
+        setError(data?.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+    } catch {
       setPending(false);
-      setError(data.error ?? "Something went wrong.");
+      setError("Couldn't reach BoardEdge. Check your connection and try again.");
       return;
     }
 
     router.push("/login");
+    router.refresh();
   };
 
   if (confirming) {

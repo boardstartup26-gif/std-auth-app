@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { after, NextRequest, NextResponse } from "next/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
+import { recordSignupConsent } from "@/lib/legal/consent";
 
 // Google's PKCE exchange gives back a user but not a "was this a signup"
 // flag. For a first-ever sign-in Supabase stamps created_at and
@@ -48,6 +49,16 @@ export async function GET(request: NextRequest) {
       const isNewAccount =
         createdAt !== null &&
         (lastSignInAt === null || lastSignInAt - createdAt < NEW_ACCOUNT_WINDOW_MS);
+
+      // Google accounts are created here, not in the signup action, so this
+      // is where their consent is recorded. Both auth screens state beside the
+      // Google button that continuing means agreeing to the Terms and Privacy
+      // Policy (and on /signup the button stays disabled until the checkbox is
+      // ticked). The user id comes from the verified code exchange above;
+      // the versions from policies.ts. Idempotent, never throws.
+      if (isNewAccount && user) {
+        await recordSignupConsent(user.id, "google_oauth");
+      }
 
       after(() =>
         recordServerEvent({

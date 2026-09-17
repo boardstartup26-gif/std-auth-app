@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +14,7 @@ import {
 } from "@/lib/ui";
 import { EVENTS } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
+import { POLICIES } from "@/lib/legal/policies";
 
 type AuthResult = { ok: true } | { ok: false; message: string };
 
@@ -24,17 +25,20 @@ type AuthResult = { ok: true } | { ok: false; message: string };
  */
 type AuthFlow = "login" | "signup";
 
-function SubmitButton({ label }: { label: string }) {
+const legalLink = "text-foreground underline underline-offset-2 hover:text-accent";
+
+function SubmitButton({ label, disabled = false }: { label: string; disabled?: boolean }) {
   const { pending } = useFormStatus();
   return (
-    <button className={`${btnPrimary} w-full`} disabled={pending} type="submit">
+    <button className={`${btnPrimary} w-full`} disabled={pending || disabled} type="submit">
       {pending ? "Working…" : label}
     </button>
   );
 }
 
-function GoogleButton({ flow }: { flow: AuthFlow }) {
+function GoogleButton({ flow, disabled = false }: { flow: AuthFlow; disabled?: boolean }) {
   const handleGoogleSignIn = async () => {
+    if (disabled) return;
     if (flow === "signup") {
       // Beacon dispatch: the OAuth redirect tears this document down
       // immediately after, and a plain fetch would be cancelled with it.
@@ -54,7 +58,9 @@ function GoogleButton({ flow }: { flow: AuthFlow }) {
     <button
       type="button"
       onClick={handleGoogleSignIn}
-      className="flex h-11 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border border-border bg-card text-sm font-medium text-foreground transition-colors hover:bg-surface-raised"
+      disabled={disabled}
+      aria-describedby={flow === "signup" ? "google-consent-hint" : "login-legal-notice"}
+      className="flex h-11 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border border-border bg-card text-sm font-medium text-foreground transition-colors hover:bg-surface-raised disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-card"
     >
       <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
@@ -64,6 +70,47 @@ function GoogleButton({ flow }: { flow: AuthFlow }) {
       </svg>
       Continue with Google
     </button>
+  );
+}
+
+/**
+ * Required agreement on the signup form. Controlled so the Google button above
+ * can be gated on the same state — and so React's post-action form reset
+ * doesn't untick it when a signup attempt comes back with an error.
+ *
+ * `required` is a courtesy only; signup() in (auth)/actions.ts re-checks
+ * `accept_policies` and refuses without it.
+ */
+function ConsentCheckbox({
+  checked,
+  onChange,
+}: {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+}) {
+  return (
+    <div className="flex items-start gap-3">
+      <input
+        id="accept_policies"
+        name="accept_policies"
+        type="checkbox"
+        required
+        checked={checked}
+        onChange={(e) => onChange(e.target.checked)}
+        className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer rounded border-border accent-accent"
+      />
+      <label htmlFor="accept_policies" className="text-xs leading-relaxed text-muted-foreground">
+        I agree to the{" "}
+        <Link href={POLICIES.terms.href} target="_blank" className={legalLink}>
+          {POLICIES.terms.title}
+        </Link>{" "}
+        and{" "}
+        <Link href={POLICIES.privacy.href} target="_blank" className={legalLink}>
+          {POLICIES.privacy.title}
+        </Link>
+        . If I&apos;m under 18, my parent or guardian has agreed to them too.
+      </label>
+    </div>
   );
 }
 
@@ -116,10 +163,12 @@ export function AuthForm({
   imageSrc?: string;
 }) {
   const [state, formAction] = useActionState<AuthResult | null, FormData>(action, null);
+  const [accepted, setAccepted] = useState(false);
   const inputClass = `${inputBase} h-11 w-full placeholder:text-muted-foreground`;
   // The name fields are what distinguish the signup form from the login form;
   // no caller has to pass the flow separately and get it out of step.
   const flow: AuthFlow = nameFields ? "signup" : "login";
+  const needsConsent = flow === "signup" && !accepted;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background text-foreground md:flex-row">
@@ -134,7 +183,19 @@ export function AuthForm({
           <p className={sectionLabel}>BoardEdge</p>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
 
-          <div className="mt-8"><GoogleButton flow={flow} /></div>
+          <div className="mt-8">
+            {/* A Google sign-in creates the account without ever submitting
+                the form below, so on signup the agreement has to gate this
+                button too, not just the password path. */}
+            <GoogleButton flow={flow} disabled={needsConsent} />
+            {flow === "signup" ? (
+              <p id="google-consent-hint" className="mt-2 text-center text-xs text-muted-foreground">
+                {needsConsent
+                  ? "Tick the agreement below to continue with Google."
+                  : "You've agreed to the Terms and Privacy Policy."}
+              </p>
+            ) : null}
+          </div>
 
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
@@ -185,15 +246,58 @@ export function AuthForm({
               <input className={inputClass} id="password" name="password" type="password" autoComplete="current-password" required minLength={6} />
             </div>
 
+            {flow === "signup" ? (
+              <>
+                {/* Checked again server-side in signup(): valid format and
+                    not the student's own address. */}
+                <div className="space-y-2">
+                  <label className="text-xs font-medium text-muted-foreground" htmlFor="parent_email">
+                    Parent or guardian email
+                  </label>
+                  <input
+                    className={inputClass}
+                    id="parent_email"
+                    name="parent_email"
+                    type="email"
+                    autoComplete="off"
+                    required
+                    aria-describedby="parent_email_hint"
+                  />
+                  <p id="parent_email_hint" className="text-xs leading-relaxed text-muted-foreground">
+                    We&apos;ll email them a link to approve. You can explore right away; grading
+                    unlocks once they confirm.
+                  </p>
+                </div>
+                <ConsentCheckbox checked={accepted} onChange={setAccepted} />
+              </>
+            ) : null}
+
             {state?.ok === false ? <p className={errorAlert}>{state.message}</p> : null}
 
             <div className="space-y-3 pt-1">
-              <SubmitButton label={submitLabel} />
+              <SubmitButton label={submitLabel} disabled={needsConsent} />
               <p className="text-center text-sm text-muted-foreground">
                 <Link className="text-foreground underline-offset-2 hover:underline" href={alternate.href}>{alternate.label}</Link>
               </p>
             </div>
           </form>
+
+          {/* On login this notice is the consent for a first-time Google
+              user: the callback creates their account and records agreement,
+              and this is the text they saw beside the button. */}
+          {flow === "login" ? (
+            <p id="login-legal-notice" className="mt-8 text-center text-xs leading-relaxed text-muted-foreground">
+              By continuing, you agree to BoardEdge&apos;s{" "}
+              <Link href={POLICIES.terms.href} className={legalLink}>{POLICIES.terms.title}</Link>{" "}
+              and{" "}
+              <Link href={POLICIES.privacy.href} className={legalLink}>{POLICIES.privacy.title}</Link>.
+            </p>
+          ) : (
+            <p className="mt-8 flex justify-center gap-4 text-xs text-muted-foreground">
+              <Link href={POLICIES.privacy.href} className="hover:text-foreground">{POLICIES.privacy.title}</Link>
+              <Link href={POLICIES.terms.href} className="hover:text-foreground">{POLICIES.terms.title}</Link>
+            </p>
+          )}
         </div>
       </div>
     </div>
