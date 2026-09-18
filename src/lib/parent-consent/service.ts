@@ -32,6 +32,30 @@ const SEND_WINDOW_MS = 24 * 60 * 60 * 1000;
 
 export { GRIEVANCE_EMAIL };
 
+/**
+ * Temporary kill switch for the enforcement side of the gate, added
+ * 2026-09-18 because production had no working outbound email (EMAIL_FROM/
+ * RESEND_API_KEY not live), which left every non-admin account locked out of
+ * grading with no way to actually receive a confirmation link.
+ *
+ * `getParentConsentState()` treats anyone NOT explicitly revoked as
+ * "confirmed" while this is on. It does not touch the database: parent_consents
+ * rows keep their real status (pending/needs_email/expired), signup still
+ * creates them and still attempts to send the link, and turning this flag
+ * back off makes enforcement resume exactly where the data already says it
+ * should — no backfill, no reset needed.
+ *
+ * A parent who has explicitly withdrawn consent is the one state this never
+ * overrides (see getParentConsentState) — that is a parent saying stop,
+ * categorically different from "nobody has answered yet."
+ *
+ * Remove this flag from the environment the moment outbound email works
+ * again; this exists to buy days, not to become how the app runs.
+ */
+function parentConsentEnforcementDisabled(): boolean {
+  return process.env.DISABLE_PARENT_CONSENT_GATE === "true";
+}
+
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface ConsentRow {
@@ -137,6 +161,28 @@ export async function getParentConsentState(userId: string): Promise<ParentConse
   if (result.error) return locked("unavailable");
 
   const row = result.row;
+
+  // Kill switch. Checked after a successful read (so a genuine DB error still
+  // reports "unavailable" rather than silently passing) and before every
+  // other branch. An explicit withdrawal is the one state that survives it —
+  // see parentConsentEnforcementDisabled()'s doc comment for why.
+  if (row?.status === "revoked") {
+    return {
+      status: "revoked",
+      parentEmailMasked: row.parent_email ? maskEmail(row.parent_email) : null,
+      tokenExpiresAt: null,
+      resendAvailableAt: null,
+    };
+  }
+  if (parentConsentEnforcementDisabled()) {
+    return {
+      status: "confirmed",
+      parentEmailMasked: row?.parent_email ? maskEmail(row.parent_email) : null,
+      tokenExpiresAt: null,
+      resendAvailableAt: null,
+    };
+  }
+
   if (!row) return locked("needs_email");
 
   const now = Date.now();
@@ -148,7 +194,7 @@ export async function getParentConsentState(userId: string): Promise<ParentConse
   };
 
   if (row.status === "confirmed") return { status: "confirmed", ...base };
-  if (row.status === "revoked") return { status: "revoked", ...base };
+  // "revoked" already returned above, unconditionally — not reachable here.
   if (!row.parent_email) return { status: "needs_email", ...base };
   if (
     row.status === "expired" ||
