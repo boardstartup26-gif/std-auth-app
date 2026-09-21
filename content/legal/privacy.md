@@ -15,7 +15,7 @@
     src/app/api/evaluate/route.ts. Adding a new data flow means updating this.
 -->
 
-> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, our standard process is to not grade anything until a parent or guardian confirms consent by email — see the notice below for a short exception currently in effect. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. You can delete your account, and your answers with it, at any time.
+> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. You can delete your account, and your answers with it, at any time.
 
 ## Who we are
 
@@ -31,10 +31,8 @@ Most people who use BoardEdge are school students under 18. Under the DPDP Act, 
 
 1. When a student signs up (or, for accounts created before this process existed, the next time they log in), they give us their parent's or guardian's email address.
 2. We email that address a personal confirmation link, valid for 72 hours. The link opens a page explaining what BoardEdge is and what data we process, and the parent or guardian confirms by pressing a button.
-3. **Until a parent or guardian confirms, the student's answers are not graded.** An unconfirmed account can log in and see its dashboard and past results, but any new answer is refused before it is stored or sent to our AI provider.
+3. **A new student can complete their first 2 evaluations before this is required**, so they can see how BoardEdge works before involving a parent or guardian. **From the 3rd evaluation onward, answers are not graded until a parent or guardian has confirmed.** An account that hasn't reached that point, or is still waiting on confirmation, can log in and see its dashboard and past results as normal; a new answer past the 2-evaluation mark is refused before it is stored or sent to our AI provider.
 4. We keep the parent's or guardian's email address, when the link was sent, and when consent was confirmed, as a record of consent.
-
-> **Temporary notice, added 18 September 2026:** While we finish setting up reliable delivery for the confirmation email in step 2, step 3 above is not currently being enforced — a student's answers may be graded before a parent or guardian has confirmed. We are still asking for the parent or guardian email at signup and still attempting to send the confirmation link; a parent or guardian who withdraws consent (see below) is honoured immediately regardless of this notice. We expect this exception to last only a few days and will remove this notice once grading is gated on confirmation again, as described above.
 
 ### Withdrawing consent
 
@@ -75,7 +73,7 @@ We do **not** collect your phone number, school, address, date of birth, payment
 
 | Purpose | Data used | Legal basis |
 |---|---|---|
-| Creating and securing your account | Name, email, password hash, Google profile, session data | Your consent (and your parent's or guardian's, if you are under 18) |
+| Creating and securing your account, and sending you account emails (like a welcome message when you sign up) | Name, email, password hash, Google profile, session data | Your consent (and your parent's or guardian's, if you are under 18) |
 | Grading your answers | Your answer, the question, its marking scheme | Your consent |
 | Showing your history and progress | Answers, evaluation results | Your consent |
 | Applying the free weekly credit limit | Credit usage | Your consent |

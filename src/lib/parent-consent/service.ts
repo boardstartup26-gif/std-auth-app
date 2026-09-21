@@ -7,14 +7,21 @@
 // verified token). parent_consents has no client write path at all — a student
 // who could write their own row could confirm themselves.
 //
-// The single rule everything else hangs off: evaluation access requires
-// status === "confirmed". Anything else — no row, no email yet, pending,
-// expired, revoked, or a failed read — is locked.
+// A new student may complete FREE_EVALUATIONS_BEFORE_CONSENT evaluations
+// before this becomes mandatory (added 2026-09-22, once email delivery was
+// working) — see getEvaluationGateState(), the combined check every
+// enforcement point should call instead of getParentConsentState() directly.
+// Once that free quota is used, the underlying rule is unchanged: evaluation
+// access requires status === "confirmed". Anything else — no row, no email
+// yet, pending, expired, revoked, or a failed read — is locked. An explicit
+// withdrawal (status === "revoked") always locks immediately, even mid-quota
+// — a parent saying stop is never something a grace period overrides.
 
 import { z } from "zod";
 import { createAdminClient } from "@/lib/supabase/server";
 import { escapeHtml, sendEmail } from "@/lib/email/send";
 import { POLICIES } from "@/lib/legal/policies";
+import { getSiteUrl } from "@/lib/site-url";
 import { GRIEVANCE_EMAIL } from "./constants";
 import {
   createConsentToken,
@@ -23,6 +30,17 @@ import {
 } from "./token";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
+
+/**
+ * How many evaluations a new student may complete before a confirmed parent
+ * or guardian becomes mandatory. Added 2026-09-22 as a permanent product
+ * decision (not the DISABLE_PARENT_CONSENT_GATE kill switch above, which is
+ * a separate, unconditional emergency bypass) — a deliberate short trial
+ * window, not "before processing" in the strict DPDP-Act sense for these
+ * first evaluations. Counted from confirmed evaluations only (rows in
+ * student_answers), never attempts that failed before grading.
+ */
+export const FREE_EVALUATIONS_BEFORE_CONSENT = 2;
 
 /** Minimum gap between two emails for one student. */
 export const RESEND_COOLDOWN_MS = 60 * 1000;
@@ -98,16 +116,6 @@ export function maskEmail(email: string): string {
   const [local, domain] = email.split("@");
   if (!domain) return "•••";
   return `${local.slice(0, 1)}•••@${domain}`;
-}
-
-function getSiteUrl(): string | null {
-  // Never derived from the request's Host header: a student who could steer
-  // the link's domain could send their parent a link to a site they control,
-  // capture the token, and confirm themselves.
-  const configured = (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "").trim();
-  if (configured) return configured.replace(/\/+$/, "");
-  if (process.env.NODE_ENV !== "production") return "http://localhost:3000";
-  return null;
 }
 
 const emailSchema = z.string().trim().toLowerCase().max(320).pipe(z.email());
@@ -209,6 +217,78 @@ export async function getParentConsentState(userId: string): Promise<ParentConse
 /** The gate. Only an explicit confirmation unlocks evaluation. */
 export async function hasConfirmedParentConsent(userId: string): Promise<boolean> {
   return (await getParentConsentState(userId)).status === "confirmed";
+}
+
+// ─── Evaluation access (consent state + free-evaluation quota) ───────────────
+
+/**
+ * Count of this student's completed evaluations — same query
+ * src/app/api/evaluate/route.ts already runs for eval_index, so a passing
+ * grade always means exactly one more row here. Null means the read itself
+ * failed; getEvaluationGateState() treats that as the quota already spent
+ * rather than silently granting an extra free evaluation on an error.
+ */
+async function countCompletedEvaluations(userId: string): Promise<number | null> {
+  try {
+    const { count, error } = await createAdminClient()
+      .from("student_answers")
+      .select("id", { count: "exact", head: true })
+      .eq("user_id", userId);
+    if (error) {
+      console.error("[BoardEdge] evaluation count read failed:", error.message);
+      return null;
+    }
+    return count ?? 0;
+  } catch (err) {
+    console.error("[BoardEdge] evaluation count read threw:", err);
+    return null;
+  }
+}
+
+export interface EvaluationGateState {
+  /** Whether an evaluation request may proceed. The single field enforcement points should check. */
+  allowed: boolean;
+  /** The underlying consent record, for messaging (masked email, expiry, etc). */
+  consent: ParentConsentState;
+  /** Null when the count read failed — treated internally as quota exhausted. */
+  evaluationsUsed: number | null;
+  /** 0 once the free quota is used up or consent has been revoked. */
+  freeEvaluationsRemaining: number;
+}
+
+/**
+ * The one function every enforcement and UX point should call — the API
+ * gate (src/app/api/evaluate/route.ts), the /evaluate layout lock, and the
+ * banner in (protected)/layout.tsx all read from this, not from
+ * getParentConsentState() directly, so the free-evaluation quota applies
+ * everywhere consistently.
+ */
+export async function getEvaluationGateState(userId: string): Promise<EvaluationGateState> {
+  const [consent, evaluationsUsed] = await Promise.all([
+    getParentConsentState(userId),
+    countCompletedEvaluations(userId),
+  ]);
+
+  // An explicit withdrawal ends the free-trial window outright, same as it
+  // overrides the DISABLE_PARENT_CONSENT_GATE kill switch — a parent saying
+  // stop is absolute, never something a grace period gets to override.
+  if (consent.status === "revoked") {
+    return { allowed: false, consent, evaluationsUsed, freeEvaluationsRemaining: 0 };
+  }
+
+  const used = evaluationsUsed ?? FREE_EVALUATIONS_BEFORE_CONSENT;
+  const freeEvaluationsRemaining = Math.max(0, FREE_EVALUATIONS_BEFORE_CONSENT - used);
+
+  if (freeEvaluationsRemaining > 0) {
+    return { allowed: true, consent, evaluationsUsed, freeEvaluationsRemaining };
+  }
+
+  return {
+    allowed: consent.status === "confirmed",
+    consent,
+    evaluationsUsed,
+    freeEvaluationsRemaining: 0,
+  };
 }
 
 // ─── Request (send / resend / change email) ──────────────────────────────────

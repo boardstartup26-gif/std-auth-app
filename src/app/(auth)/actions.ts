@@ -7,6 +7,7 @@ import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
 import { normaliseParentEmail, requestParentConsent } from "@/lib/parent-consent/service";
+import { sendWelcomeEmail } from "@/lib/email/welcome";
 
 type AuthResult =
   | { ok: true }
@@ -140,6 +141,13 @@ export async function signup(
     const isRealNewUser = Boolean(newUserId) && (data.user?.identities?.length ?? 0) > 0;
     if (newUserId && isRealNewUser) {
       await recordSignupConsent(newUserId, "email_signup");
+    }
+
+    // Welcome email — to the student's own address, only for a genuine new
+    // signup, never a login. Deferred to after(): it's not compliance-
+    // critical and its outcome doesn't affect what the student sees next.
+    if (isRealNewUser) {
+      after(() => sendWelcomeEmail({ to: email, firstName: firstName || null }));
     }
 
     // Parental consent request. Account creation is never blocked on it —

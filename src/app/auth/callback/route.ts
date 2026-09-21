@@ -5,6 +5,7 @@ import { after, NextRequest, NextResponse } from "next/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
+import { sendWelcomeEmail } from "@/lib/email/welcome";
 
 // Google's PKCE exchange gives back a user but not a "was this a signup"
 // flag. For a first-ever sign-in Supabase stamps created_at and
@@ -58,6 +59,21 @@ export async function GET(request: NextRequest) {
       // the versions from policies.ts. Idempotent, never throws.
       if (isNewAccount && user) {
         await recordSignupConsent(user.id, "google_oauth");
+      }
+
+      // Welcome email — to the Google account's own address, only for a
+      // genuine new signup (isNewAccount), never a returning login. Google's
+      // metadata shape varies by what the user shared, so this tries a few
+      // reasonable fields before falling back to a generic greeting.
+      if (isNewAccount && user?.email) {
+        const meta = user.user_metadata as Record<string, unknown> | undefined;
+        const firstName =
+          (typeof meta?.given_name === "string" && meta.given_name) ||
+          (typeof meta?.full_name === "string" && meta.full_name.split(" ")[0]) ||
+          (typeof meta?.name === "string" && meta.name.split(" ")[0]) ||
+          null;
+        const emailForWelcome = user.email;
+        after(() => sendWelcomeEmail({ to: emailForWelcome, firstName }));
       }
 
       after(() =>
