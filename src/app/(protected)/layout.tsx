@@ -14,7 +14,7 @@
 
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
-import { getParentConsentState } from "@/lib/parent-consent/service";
+import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { Sidebar } from "@/app/_components/Sidebar";
 import { MobileNav } from "@/app/_components/MobileNav";
 import { TopBar } from "@/app/_components/TopBar";
@@ -30,8 +30,8 @@ export default async function ProtectedLayout({
     data: { user },
   } = await supabase.auth.getUser();
 
-  const [credits, consent] = user
-    ? await Promise.all([readCredits(user.id), getParentConsentState(user.id)])
+  const [credits, gate] = user
+    ? await Promise.all([readCredits(user.id), getEvaluationGateState(user.id)])
     : [null, null];
 
   return (
@@ -40,7 +40,7 @@ export default async function ProtectedLayout({
       <div className="flex min-w-0 flex-1 flex-col">
         <MobileNav credits={credits} />
         <TopBar credits={credits} />
-        {consent ? <ParentConsentNotice state={consent} /> : null}
+        {gate ? <ParentConsentNotice gate={gate} /> : null}
         <main className="min-w-0 flex-1">{children}</main>
       </div>
     </div>

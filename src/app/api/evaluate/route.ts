@@ -7,7 +7,7 @@ import { getUsageDateIST } from "@/lib/usage-date";
 import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
-import { getParentConsentState } from "@/lib/parent-consent/service";
+import { getEvaluationGateState } from "@/lib/parent-consent/service";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -447,30 +447,33 @@ export async function POST(req: NextRequest) {
 
   // ─── Parental consent gate ─────────────────────────────────────────────────
   //
-  // Verify before processing. This runs before the question lookup, before
-  // any credit reservation, before anything is written, and before Anthropic
-  // is called — so an unconfirmed student's answer never leaves this request.
-  // Only an explicit status of "confirmed" passes; a missing row, pending or
-  // expired link, revoked consent, or a failed read all refuse.
+  // A new student may complete FREE_EVALUATIONS_BEFORE_CONSENT evaluations
+  // (src/lib/parent-consent/service.ts) before this becomes mandatory — an
+  // explicit parental withdrawal is the one exception, and locks immediately
+  // regardless of that quota. Once the free quota is used, this runs before
+  // the question lookup, before any credit reservation, before anything is
+  // written, and before Anthropic is called — so a refused request never
+  // gets processed.
   //
-  // Checked per request, not cached: a manual revocation re-locks the next
-  // submission immediately.
-  const parentConsent = await getParentConsentState(userId);
-  if (parentConsent.status !== "confirmed") {
+  // Checked per request, not cached: a manual revocation re-locks the very
+  // next submission immediately, even mid-free-quota.
+  const gate = await getEvaluationGateState(userId);
+  if (!gate.allowed) {
     trackEvaluationFailure(FAILURE_STAGES.PARENT_CONSENT_REQUIRED, {
       user_id: userId, subject, year, question_number,
-      consent_status: parentConsent.status,
+      consent_status: gate.consent.status,
+      evaluations_used: gate.evaluationsUsed,
     });
-    const unavailable = parentConsent.status === "unavailable";
+    const unavailable = gate.consent.status === "unavailable";
     return NextResponse.json(
       {
         error: unavailable
           ? "We couldn't check your parent or guardian consent. Please try again in a moment."
-          : parentConsent.status === "revoked"
+          : gate.consent.status === "revoked"
             ? "Evaluations are paused because your parent or guardian withdrew consent."
-            : "Evaluations unlock once your parent or guardian confirms consent. Check the notice at the top of the page.",
+            : "You've used your free evaluations. Evaluations unlock once your parent or guardian confirms consent — check the notice at the top of the page.",
         code: "parent_consent_required",
-        consent_status: parentConsent.status,
+        consent_status: gate.consent.status,
       },
       { status: unavailable ? 503 : 403 }
     );

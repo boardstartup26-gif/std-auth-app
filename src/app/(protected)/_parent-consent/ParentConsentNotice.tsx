@@ -3,13 +3,16 @@
 // The student's view of parent/guardian consent, rendered at the top of every
 // signed-in page by (protected)/layout.tsx.
 //
-//   needs_email → a modal asking for the parent's email. Dismissible ("Not
-//                 now"): dashboard and history stay available during the grace
-//                 period; only new evaluations are locked. A slim banner keeps
-//                 the prompt one click away after dismissal.
+// Two tiers of copy, driven by gate.allowed (still within the free-evaluation
+// quota, or already confirmed/no notice needed) vs. actually locked:
+//
+//   needs_email → within quota: a soft, dismissible nudge to add the email
+//                 early. Past quota: the same modal, worded as the real block
+//                 it now is. Dashboard and history stay available either way.
 //   pending     → "waiting on confirmation" banner, with resend and change-email
 //   expired     → same banner, worded for an expired link
-//   revoked     → banner explaining evaluations are paused; no resend
+//   revoked     → banner explaining evaluations are paused; no resend, no
+//                 quota framing — a withdrawal is absolute regardless of it
 //   confirmed / unavailable → nothing (the evaluate route still enforces)
 //
 // This component is guidance only. The lock itself lives server-side in
@@ -18,7 +21,7 @@
 import { useActionState, useEffect, useRef, useState } from "react";
 import { useFormStatus } from "react-dom";
 import { btnPrimary, btnSecondary, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
-import type { ParentConsentState } from "@/lib/parent-consent/service";
+import type { EvaluationGateState } from "@/lib/parent-consent/service";
 import { submitParentEmail, type ParentConsentActionResult } from "./actions";
 
 function SubmitButton({ label, pendingLabel, className }: { label: string; pendingLabel: string; className: string }) {
@@ -84,7 +87,19 @@ function formatIst(iso: string): string {
   });
 }
 
-function NeedsEmailModal({ onDismiss }: { onDismiss: () => void }) {
+function plural(n: number, word: string): string {
+  return `${n} ${word}${n === 1 ? "" : "s"}`;
+}
+
+function NeedsEmailModal({
+  onDismiss,
+  stillFree,
+  freeRemaining,
+}: {
+  onDismiss: () => void;
+  stillFree: boolean;
+  freeRemaining: number;
+}) {
   const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -104,14 +119,17 @@ function NeedsEmailModal({ onDismiss }: { onDismiss: () => void }) {
         aria-labelledby="parent-consent-title"
         className="w-full max-w-md rounded-2xl border border-border bg-card p-6 shadow-lg sm:p-8"
       >
-        <p className={sectionLabel}>One more step</p>
+        <p className={sectionLabel}>{stillFree ? "Worth doing now" : "One more step"}</p>
         <h2 id="parent-consent-title" className="mt-2 text-xl font-semibold tracking-tight text-foreground">
-          We need your parent or guardian&apos;s OK
+          {stillFree ? "Add your parent or guardian's email" : "We need your parent or guardian's OK"}
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Because most BoardEdge students are under 18, the law requires a parent or guardian to
-          agree before we grade your answers. Enter their email and we&apos;ll send them a link to
-          confirm. Your dashboard and past results stay available in the meantime.
+          agree before we grade your answers.{" "}
+          {stillFree
+            ? `You can still try ${plural(freeRemaining, "more evaluation")} first — add their email now so it's ready before you need it.`
+            : "Enter their email and we'll send them a link to confirm."}{" "}
+          Your dashboard and past results stay available in the meantime.
         </p>
         <div className="mt-6">
           <ParentEmailForm submitLabel="Send confirmation link" autoFocus />
@@ -128,23 +146,46 @@ function NeedsEmailModal({ onDismiss }: { onDismiss: () => void }) {
   );
 }
 
-export function ParentConsentNotice({ state }: { state: ParentConsentState }) {
+export function ParentConsentNotice({ gate }: { gate: EvaluationGateState }) {
   const [dismissed, setDismissed] = useState(false);
   const [changingEmail, setChangingEmail] = useState(false);
 
-  if (state.status === "confirmed" || state.status === "unavailable") return null;
+  const { consent } = gate;
+  if (consent.status === "confirmed" || consent.status === "unavailable") return null;
 
   const shell = "border-b border-border bg-card px-6 py-3";
+  // Whenever the free quota still covers them (and consent isn't revoked —
+  // getEvaluationGateState never sets allowed=true for a revoked row), this
+  // is a nudge, not a block, and the copy below has to say so honestly.
+  const stillFree = gate.allowed;
 
-  if (state.status === "needs_email") {
+  if (consent.status === "needs_email") {
     return (
       <>
-        {!dismissed ? <NeedsEmailModal onDismiss={() => setDismissed(true)} /> : null}
+        {!dismissed ? (
+          <NeedsEmailModal
+            onDismiss={() => setDismissed(true)}
+            stillFree={stillFree}
+            freeRemaining={gate.freeEvaluationsRemaining}
+          />
+        ) : null}
         <div className={shell} role="region" aria-label="Parent consent">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-foreground">
-              <span className="font-semibold">Evaluations are locked</span>
-              <span className="text-muted-foreground"> until a parent or guardian confirms consent.</span>
+              {stillFree ? (
+                <>
+                  <span className="font-semibold">Add a parent or guardian email soon.</span>{" "}
+                  <span className="text-muted-foreground">
+                    You have {plural(gate.freeEvaluationsRemaining, "free evaluation")} left before
+                    we&apos;ll need their OK.
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span className="font-semibold">Evaluations are locked</span>
+                  <span className="text-muted-foreground"> until a parent or guardian confirms consent.</span>
+                </>
+              )}
             </p>
             <button
               type="button"
@@ -159,7 +200,7 @@ export function ParentConsentNotice({ state }: { state: ParentConsentState }) {
     );
   }
 
-  if (state.status === "revoked") {
+  if (consent.status === "revoked") {
     return (
       <div className={shell} role="region" aria-label="Parent consent">
         <p className="text-sm text-foreground">
@@ -178,7 +219,10 @@ export function ParentConsentNotice({ state }: { state: ParentConsentState }) {
   }
 
   // pending | expired
-  const expired = state.status === "expired";
+  const expired = consent.status === "expired";
+  const quotaClause = stillFree
+    ? ` You have ${plural(gate.freeEvaluationsRemaining, "free evaluation")} left before this is needed.`
+    : "";
   return (
     <div className={shell} role="region" aria-label="Parent consent">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
@@ -189,10 +233,12 @@ export function ParentConsentNotice({ state }: { state: ParentConsentState }) {
             </span>{" "}
             <span className="text-muted-foreground">
               {expired
-                ? `Send a new one to ${state.parentEmailMasked ?? "your parent"} — evaluations stay locked until they confirm.`
-                : `We emailed ${state.parentEmailMasked ?? "your parent"}${
-                    state.tokenExpiresAt ? `; the link works until ${formatIst(state.tokenExpiresAt)} IST` : ""
-                  }. Evaluations unlock as soon as they confirm.`}
+                ? `Send a new one to ${consent.parentEmailMasked ?? "your parent"}.${
+                    stillFree ? quotaClause : " Evaluations stay locked until they confirm."
+                  }`
+                : `We emailed ${consent.parentEmailMasked ?? "your parent"}${
+                    consent.tokenExpiresAt ? `; the link works until ${formatIst(consent.tokenExpiresAt)} IST` : ""
+                  }.${stillFree ? quotaClause : " Evaluations unlock as soon as they confirm."}`}
             </span>
           </p>
           <button
