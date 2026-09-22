@@ -56,8 +56,19 @@ export async function sendEmail(message: OutgoingEmail): Promise<SendResult> {
     });
 
     if (!res.ok) {
-      // Provider error bodies can echo the recipient; log status only.
-      console.error("[BoardEdge] email send failed with status", res.status);
+      // Resend's error bodies are structural ("The `from` field is not a
+      // verified domain.") rather than a copy of the recipient, and a bare
+      // status code alone (the previous behaviour here) wasn't enough to
+      // diagnose a real misconfiguration without another deploy-and-retry
+      // cycle — so this now logs the body too, capped defensively in case a
+      // future error shape is more verbose than expected.
+      const bodyText = await res.text().catch(() => "");
+      console.error(
+        "[BoardEdge] email send failed with status",
+        res.status,
+        "body:",
+        bodyText.slice(0, 500),
+      );
       return { ok: false, reason: `provider_${res.status}` };
     }
     return { ok: true };
