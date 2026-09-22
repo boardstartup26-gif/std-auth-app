@@ -9,8 +9,22 @@
 // discipline everywhere links are built this way.
 
 export function getSiteUrl(): string | null {
-  const configured = (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "").trim();
-  if (configured) return configured.replace(/\/+$/, "");
+  let configured = (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "").trim();
+  if (configured) {
+    // A bare domain (no scheme) is a real mistake that has already shipped
+    // once — Vercel's env var UI doesn't validate this, and a value like
+    // "boardedge.vercel.app" passes every check here except `new URL()`,
+    // which only gets called deep inside a template builder and throws
+    // there instead. Self-heal rather than let that happen again, but log
+    // it so a genuine misconfiguration is still visible.
+    if (!/^https?:\/\//i.test(configured)) {
+      console.warn(
+        `[BoardEdge] NEXT_PUBLIC_SITE_URL/SITE_URL ("${configured}") has no scheme — assuming https://. Fix the env var to remove this warning.`,
+      );
+      configured = `https://${configured}`;
+    }
+    return configured.replace(/\/+$/, "");
+  }
   if (process.env.NODE_ENV !== "production") return "http://localhost:3000";
   return null;
 }
