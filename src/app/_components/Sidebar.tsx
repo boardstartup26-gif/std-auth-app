@@ -4,7 +4,7 @@
 // the dashboard on its own at the top.
 //
 // The subject list used to sit between them, one row per subject. It was
-// removed because every row pointed at the same place: /evaluate reads no
+// removed because every row pointed at the same place: /evaluate then read no
 // subject from the URL, so six links that looked like six destinations all
 // landed on the same unfiltered picker. Subject is the first step of that
 // picker, which is where the choice actually does something.

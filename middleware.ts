@@ -43,6 +43,7 @@ const PROTECTED_PREFIXES = [
   "/history",
   "/account",
   "/onboarding",
+  "/notifications",
 ];
 
 // Pages that must stay reachable without a session, checked before
@@ -95,8 +96,11 @@ export async function middleware(request: NextRequest) {
   if (!user && isProtectedRoute(pathname)) {
     const redirectUrl = request.nextUrl.clone();
     redirectUrl.pathname = "/login";
-    // Preserve the intended destination so you can redirect back post-login.
-    redirectUrl.searchParams.set("next", pathname);
+    // Preserve the intended destination, query included, so a reminder link
+    // to /evaluate?subject=…&q=… still opens that question after login.
+    // The login side re-validates it (src/lib/safe-next.ts).
+    redirectUrl.search = "";
+    redirectUrl.searchParams.set("next", pathname + request.nextUrl.search);
     return withCookies(response, NextResponse.redirect(redirectUrl));
   }
 

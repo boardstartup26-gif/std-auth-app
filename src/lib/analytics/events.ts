@@ -33,6 +33,18 @@ export const EVENTS = {
   /** Selected a question, or started typing, then left without submitting. */
   EVALUATION_ABANDONED: "evaluation_abandoned",
 
+  // ── Return triggers ────────────────────────────────────────────────────────
+  /**
+   * Server, from the daily cron: one row per student per run that got new
+   * reattempt prompts. Carries count, steps, subjects, and the email outcome
+   * ("sent", "unsubscribed", "recently_active", …).
+   */
+  REATTEMPT_PROMPTS_CREATED: "reattempt_prompts_created",
+  /** Server: a student opened a notification from the in-app inbox. */
+  NOTIFICATION_OPENED: "notification_opened",
+  /** Server: reminder emails turned on or off, and from where. */
+  EMAIL_REMINDERS_CHANGED: "email_reminders_changed",
+
   // ── Feedback ───────────────────────────────────────────────────────────────
   FEEDBACK_SUBMITTED: "feedback_submitted",
 } as const;

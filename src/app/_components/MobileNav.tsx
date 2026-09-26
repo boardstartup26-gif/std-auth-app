@@ -11,9 +11,10 @@ import { LogOut, Menu, X } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
 import { SidebarNav } from "./Sidebar";
 import { CreditsPill } from "./CreditsPill";
+import { NotificationBell } from "./NotificationBell";
 import type { CreditBalance } from "@/lib/credits";
 
-export function MobileNav({ credits }: { credits: CreditBalance | null }) {
+export function MobileNav({ credits, unread }: { credits: CreditBalance | null; unread: number }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -32,7 +33,8 @@ export function MobileNav({ credits }: { credits: CreditBalance | null }) {
         <Link href="/dashboard" aria-label="Dashboard">
           <Image src="/logo-icon.png" alt="" width={30} height={30} priority />
         </Link>
-        <div className="min-w-[22px]">
+        <div className="flex min-w-[22px] items-center gap-1.5">
+          <NotificationBell unread={unread} />
           {credits ? <CreditsPill credits={credits} /> : null}
         </div>
       </header>

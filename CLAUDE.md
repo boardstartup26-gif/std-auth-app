@@ -34,6 +34,14 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - `src/app/(protected)/*` — dashboard, evaluate, history, account pages (route group, requires auth per middleware). `src/app/(auth)/*` — login/signup/forgot-password. `src/app/api/*` — evaluate, usage (daily token count), feedback.
 - [src/lib/ui.ts](src/lib/ui.ts) — shared Tailwind class-string constants (buttons, cards, inputs, score-badge coloring) and [boardedge-design-system-v2.md](boardedge-design-system-v2.md) — the authoritative color-token spec (dark-navy/gold theme, semantic colors for points-hit/missed/conceptual-errors/etc). Check this doc before hand-picking colors for eval/history UI.
 
+### Notifications & return triggers
+
+- `public.notifications` ([20260926120000_notifications.sql](supabase/migrations/20260926120000_notifications.sql)) is the in-app inbox: students SELECT their own rows via RLS; nothing client-side can write. Rows are created by the cron and marked read by server actions, both through the service-role client keyed on a verified user id. `dedupe_key` (unique per user) makes generation idempotent.
+- [src/lib/notifications/reattempt.ts](src/lib/notifications/reattempt.ts) — Spaced Reattempt Prompts. Latest attempt per written question in the last 30 days, not at full marks, prompted at ~1/3/7 days; max 3 new per student per run; email at most once per ~2 days, skipped if the student was active in the last 20h or unsubscribed (`profiles.email_reminders`). Students who can't currently be graded (`getEvaluationGateState`) get nothing.
+- [src/app/api/cron/reattempt-prompts/route.ts](src/app/api/cron/reattempt-prompts/route.ts) runs daily from [vercel.json](vercel.json) (13:30 UTC = 7 pm IST). It refuses every request unless `CRON_SECRET` is set and sent as `Authorization: Bearer …` (Vercel does this automatically). `?dry=1` reports what it would send without writing.
+- Reminder emails carry a signed unsubscribe link (`/unsubscribe`, no login needed) and RFC 8058 one-click headers (`POST /api/email/unsubscribe`), signed with `PARENT_CONSENT_TOKEN_SECRET` under a separate context string.
+- `/evaluate?subject=<name>&q=<question id>&src=<notification|email>` deep-links to a question; `src` is recorded on QUESTION_SELECTED and ANSWER_SUBMITTED for attribution. `/login?next=` returns there after sign-in (validated by [src/lib/safe-next.ts](src/lib/safe-next.ts); Google carries it in the `be_next` cookie).
+
 ### Telemetry & the admin dashboard
 
 - `src/lib/analytics/*` is the whole product-analytics pipeline, writing to `public.analytics_events` (created in [supabase/migrations/20260904120000_analytics_events_and_profiles.sql](supabase/migrations/20260904120000_analytics_events_and_profiles.sql)):

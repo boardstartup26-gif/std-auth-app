@@ -8,6 +8,7 @@ import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
 import { normaliseParentEmail, requestParentConsent } from "@/lib/parent-consent/service";
 import { sendWelcomeEmail } from "@/lib/email/welcome";
+import { safeNextPath } from "@/lib/safe-next";
 
 type AuthResult =
   | { ok: true }
@@ -64,7 +65,9 @@ export async function login(
     return { ok: false, message: asMessage(e, "Login failed.") };
   }
 
-  redirect("/dashboard");
+  // Re-validated here, not trusted from the page: the hidden field is
+  // browser-editable.
+  redirect(safeNextPath(formData.get("next")) ?? "/dashboard");
 }
 
 export async function signup(

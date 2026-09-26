@@ -16,6 +16,8 @@ export interface OutgoingEmail {
   subject: string;
   text: string;
   html: string;
+  /** Extra MIME headers, e.g. List-Unsubscribe on reminder emails. */
+  headers?: Record<string, string>;
 }
 
 export type SendResult = { ok: true } | { ok: false; reason: string };
@@ -51,6 +53,7 @@ export async function sendEmail(message: OutgoingEmail): Promise<SendResult> {
         subject: message.subject,
         text: message.text,
         html: message.html,
+        ...(message.headers ? { headers: message.headers } : {}),
       }),
       signal: AbortSignal.timeout(SEND_TIMEOUT_MS),
     });

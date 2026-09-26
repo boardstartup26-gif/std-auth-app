@@ -6,6 +6,7 @@ import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
 import { sendWelcomeEmail } from "@/lib/email/welcome";
+import { NEXT_COOKIE, safeNextPath } from "@/lib/safe-next";
 
 // Google's PKCE exchange gives back a user but not a "was this a signup"
 // flag. For a first-ever sign-in Supabase stamps created_at and
@@ -85,7 +86,20 @@ export async function GET(request: NextRequest) {
         }),
       );
 
-      return NextResponse.redirect(`${origin}/dashboard`);
+      // Set by the Google button when the login page had a `next` — e.g. a
+      // reminder email's question link. Validated again here; the cookie is
+      // browser-writable. A new account still lands on onboarding first,
+      // because the (protected) layout redirects there.
+      const rawNext = cookieStore.get(NEXT_COOKIE)?.value;
+      let returnTo: string | null = null;
+      try {
+        returnTo = rawNext ? safeNextPath(decodeURIComponent(rawNext)) : null;
+      } catch {
+        returnTo = null;
+      }
+      const response = NextResponse.redirect(`${origin}${returnTo ?? "/dashboard"}`);
+      if (rawNext !== undefined) response.cookies.delete(NEXT_COOKIE);
+      return response;
     }
 
     after(() =>

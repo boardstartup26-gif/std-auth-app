@@ -15,6 +15,7 @@ import {
 import { EVENTS } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
 import { POLICIES } from "@/lib/legal/policies";
+import { NEXT_COOKIE } from "@/lib/safe-next";
 
 type AuthResult = { ok: true } | { ok: false; message: string };
 
@@ -36,9 +37,32 @@ function SubmitButton({ label, disabled = false }: { label: string; disabled?: b
   );
 }
 
-function GoogleButton({ flow, disabled = false }: { flow: AuthFlow; disabled?: boolean }) {
+/**
+ * Google leaves the site and comes back through /auth/callback, so `next`
+ * can't ride along in the form. It goes in a short-lived cookie instead —
+ * not in redirectTo's query string, which Supabase's redirect allowlist may
+ * not match. Cleared when there is no destination, so a stale one from an
+ * abandoned attempt can't hijack a later login.
+ */
+function rememberNext(next: string | undefined) {
+  const secure = window.location.protocol === "https:" ? "; Secure" : "";
+  document.cookie = next
+    ? `${NEXT_COOKIE}=${encodeURIComponent(next)}; Max-Age=600; Path=/; SameSite=Lax${secure}`
+    : `${NEXT_COOKIE}=; Max-Age=0; Path=/; SameSite=Lax${secure}`;
+}
+
+function GoogleButton({
+  flow,
+  disabled = false,
+  next,
+}: {
+  flow: AuthFlow;
+  disabled?: boolean;
+  next?: string;
+}) {
   const handleGoogleSignIn = async () => {
     if (disabled) return;
+    rememberNext(next);
     if (flow === "signup") {
       // Beacon dispatch: the OAuth redirect tears this document down
       // immediately after, and a plain fetch would be cancelled with it.
@@ -153,6 +177,7 @@ export function AuthForm({
   showForgotPassword = false,
   nameFields = false,
   imageSrc,
+  next,
 }: {
   title: string;
   action: (prevState: AuthResult | null, formData: FormData) => Promise<AuthResult>;
@@ -161,6 +186,8 @@ export function AuthForm({
   showForgotPassword?: boolean;
   nameFields?: boolean;
   imageSrc?: string;
+  /** Validated same-site path to return to after login. */
+  next?: string;
 }) {
   const [state, formAction] = useActionState<AuthResult | null, FormData>(action, null);
   const [accepted, setAccepted] = useState(false);
@@ -187,7 +214,7 @@ export function AuthForm({
             {/* A Google sign-in creates the account without ever submitting
                 the form below, so on signup the agreement has to gate this
                 button too, not just the password path. */}
-            <GoogleButton flow={flow} disabled={needsConsent} />
+            <GoogleButton flow={flow} disabled={needsConsent} next={next} />
             {flow === "signup" ? (
               <p id="google-consent-hint" className="mt-2 text-center text-xs text-muted-foreground">
                 {needsConsent
@@ -216,6 +243,7 @@ export function AuthForm({
             }}
             className="space-y-5"
           >
+            {next ? <input type="hidden" name="next" value={next} /> : null}
             {nameFields && (
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-2">

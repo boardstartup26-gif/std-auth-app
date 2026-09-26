@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import {
   btnPrimary,
@@ -42,6 +42,7 @@ import {
   mcqOptionLabel,
   mcqOptionValue,
   QUESTION_SELECT,
+  SUBJECTS,
   totalMarksOf,
   type Question,
   type StimulusData,
@@ -359,12 +360,31 @@ export default function EvaluatePage() {
   const supabase = createClient();
   const router   = useRouter();
 
+  // ─── Deep link ──────────────────────────────────────────────
+  //
+  // /evaluate?subject=History&q=<question id>&src=notification opens that
+  // question directly. Reattempt prompts (in-app and email) link here, and a
+  // prompt that dropped the student on an empty picker would ask them to find
+  // the question again themselves. `src` rides along into QUESTION_SELECTED
+  // and ANSWER_SUBMITTED so a return can be credited to what caused it.
+  //
+  // Read once, into initial state and refs. The page is dynamically rendered
+  // (see evaluate/layout.tsx), so the server render sees the same params and
+  // the initial state matches on hydration.
+  const searchParams = useSearchParams();
+  const [initialSubject] = useState(() => {
+    const s = searchParams.get("subject");
+    return s && (SUBJECTS as readonly string[]).includes(s) ? s : "";
+  });
+  const pendingQuestionRef = useRef<string | null>(initialSubject ? searchParams.get("q") : null);
+  const returnSourceRef = useRef<string | null>(searchParams.get("src")?.slice(0, 32) ?? null);
+
   const [authChecked,       setAuthChecked]       = useState(false);
-  const [subject,           setSubject]           = useState("");
+  const [subject,           setSubject]           = useState(initialSubject);
   const [selectedQuestionId, setSelectedQuestionId] = useState("");
   const [studentAnswer,     setStudentAnswer]     = useState("");
   const [questions,         setQuestions]         = useState<Question[]>([]);
-  const [loadingQuestions,  setLoadingQuestions]  = useState(false);
+  const [loadingQuestions,  setLoadingQuestions]  = useState(Boolean(initialSubject));
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
   const [error,             setError]             = useState<string | null>(null);
@@ -401,6 +421,8 @@ export default function EvaluatePage() {
     startedTyping: boolean;
     submitted: boolean;
     reported: boolean;
+    /** What brought the student to this question: "notification", "email", or null. */
+    source: string | null;
   } | null>(null);
 
   const flushAbandonment = useCallback((reason: string) => {
@@ -491,6 +513,37 @@ export default function EvaluatePage() {
     fetchTokens();
   }, [authChecked]);
 
+  /**
+   * Opens the attempt record for a question: the abandonment ref, the
+   * time-to-submit clock, and QUESTION_SELECTED. Shared by a picker click and
+   * a deep link, so both are measured identically.
+   */
+  const beginAttempt = useCallback((q: Question, source: string | null) => {
+    questionOpenedAt.current = Date.now();
+    attemptRef.current = {
+      questionId: q.id,
+      questionNumber: q.question_number,
+      subject,
+      year: q.year,
+      openedAt: Date.now(),
+      typedChars: 0,
+      startedTyping: false,
+      submitted: false,
+      reported: false,
+      source,
+    };
+    track(EVENTS.QUESTION_SELECTED, {
+      question_id: q.id,
+      question_number: q.question_number,
+      subject,
+      year: q.year,
+      paper: q.paper,
+      question_type: q.question_type,
+      is_subjective: q.is_subjective,
+      source,
+    });
+  }, [subject]);
+
   // ─── Loading a subject's questions ──────────────────────────
   //
   // All of a subject's questions (every year and paper) load in one query;
@@ -522,13 +575,29 @@ export default function EvaluatePage() {
       // slower query would overwrite the faster one's results.
       if (cancelled) return;
 
-      setQuestions((data ?? []) as unknown as Question[]);
+      const loaded = (data ?? []) as unknown as Question[];
+      setQuestions(loaded);
       setLoadingQuestions(false);
+
+      // A deep-linked question opens once, on the first load of its subject.
+      const pending = pendingQuestionRef.current;
+      if (pending) {
+        pendingQuestionRef.current = null;
+        const match = loaded.find((q) => q.id === pending);
+        if (match) {
+          setSelectedQuestionId(match.id);
+          beginAttempt(match, returnSourceRef.current);
+        }
+        // Drop the params so a refresh, or a later subject change, doesn't
+        // reopen the linked question. Next keeps its router in sync with the
+        // native history API.
+        window.history.replaceState(null, "", "/evaluate");
+      }
     }
 
     fetchQuestions();
     return () => { cancelled = true; };
-  }, [subject, supabase]);
+  }, [subject, supabase, beginAttempt]);
 
   // selectedQuestion is derived, not stored: two sources of truth for "which
   // question is open" is how the answer box could end up attached to a
@@ -565,28 +634,8 @@ export default function EvaluatePage() {
       return;
     }
 
-    questionOpenedAt.current = Date.now();
-    attemptRef.current = {
-      questionId: q.id,
-      questionNumber: q.question_number,
-      subject,
-      year: q.year,
-      openedAt: Date.now(),
-      typedChars: 0,
-      startedTyping: false,
-      submitted: false,
-      reported: false,
-    };
-    track(EVENTS.QUESTION_SELECTED, {
-      question_id: q.id,
-      question_number: q.question_number,
-      subject,
-      year: q.year,
-      paper: q.paper,
-      question_type: q.question_type,
-      is_subjective: q.is_subjective,
-    });
-  }, [flushAbandonment, questions, subject]);
+    beginAttempt(q, null);
+  }, [flushAbandonment, questions, beginAttempt]);
 
   // ─── Loading message rotation (non-OCR path only — no upload path exists yet) ─
 
@@ -623,6 +672,7 @@ export default function EvaluatePage() {
       is_subjective: selectedQuestion.is_subjective,
       answer_length: studentAnswer.trim().length,
       time_to_submit_ms: timeToSubmit,
+      source: attemptRef.current?.source ?? null,
     });
 
     setEvaluating(true); setResult(null); setError(null); setLoadingMessageIndex(0);
