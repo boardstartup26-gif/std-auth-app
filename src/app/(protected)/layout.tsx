@@ -12,8 +12,10 @@
 // every client navigation, so the authoritative check is per request in
 // src/app/api/evaluate/route.ts.
 
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
+import { readOnboardingProfile } from "@/lib/onboarding/profile";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { Sidebar } from "@/app/_components/Sidebar";
 import { MobileNav } from "@/app/_components/MobileNav";
@@ -30,9 +32,17 @@ export default async function ProtectedLayout({
     data: { user },
   } = await supabase.auth.getUser();
 
-  const [credits, gate] = user
-    ? await Promise.all([readCredits(user.id), getEvaluationGateState(user.id)])
-    : [null, null];
+  const [credits, gate, profile] = user
+    ? await Promise.all([
+        readCredits(user.id),
+        getEvaluationGateState(user.id),
+        readOnboardingProfile(user.id),
+      ])
+    : [null, null, null];
+
+  // A null profile (read failed) falls through rather than redirecting —
+  // onboarding is a first-run experience, not a gate on the product.
+  if (profile && !profile.onboarded) redirect("/onboarding");
 
   return (
     <div className="min-h-dvh bg-background md:flex">

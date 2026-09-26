@@ -42,6 +42,7 @@ const PROTECTED_PREFIXES = [
   "/evaluate",
   "/history",
   "/account",
+  "/onboarding",
 ];
 
 // Pages that must stay reachable without a session, checked before

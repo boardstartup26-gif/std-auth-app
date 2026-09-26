@@ -20,6 +20,8 @@ export const EVENTS = {
   SIGNUP_COMPLETED: "signup_completed",
   LOGIN_COMPLETED: "login_completed",
   AUTH_FAILED: "auth_failed",
+  /** Recorded server-side once /onboarding saves. Carries study_stage and heard_from. */
+  ONBOARDING_COMPLETED: "onboarding_completed",
 
   // ── Evaluation lifecycle ───────────────────────────────────────────────────
   QUESTION_SELECTED: "question_selected",
