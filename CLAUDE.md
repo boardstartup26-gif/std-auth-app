@@ -34,6 +34,15 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - `src/app/(protected)/*` — dashboard, evaluate, history, account pages (route group, requires auth per middleware). `src/app/(auth)/*` — login/signup/forgot-password. `src/app/api/*` — evaluate, usage (daily token count), feedback.
 - [src/lib/ui.ts](src/lib/ui.ts) — shared Tailwind class-string constants (buttons, cards, inputs, score-badge coloring) and [boardedge-design-system-v2.md](boardedge-design-system-v2.md) — the authoritative color-token spec (dark-navy/gold theme, semantic colors for points-hit/missed/conceptual-errors/etc). Check this doc before hand-picking colors for eval/history UI.
 
+### Handwritten answers (photo → transcript review → marks)
+
+- One Claude vision call reads the photo(s) **and** grades the transcript ([src/lib/evaluation/handwritten.ts](src/lib/evaluation/handwritten.ts)): the examiner prompt is used unchanged with a Section 10 addendum appended. `POST /api/evaluate/handwritten` returns only the transcript; the grade travels back to the browser **sealed** (AES-256-GCM, key derived from `PARENT_CONSENT_TOKEN_SECRET`), so marks can't be seen or altered before the student reviews the transcript.
+- `POST /api/evaluate/handwritten/confirm`: unchanged transcript (removing `[?]` markers counts as unchanged) → the sealed grade is saved, no second call. Edited transcript → graded like a typed answer (second call), no second credit. Seals expire after 30 min and are single-use (refused once a `student_answers` row exists for that user+question since issue).
+- Same order as the typed route: consent gate first (checked again at confirm), then question lookup, then `reserveTokens` before the model call, refund on failure or an illegible photo. The credit is spent at transcription, not at confirm.
+- Photos are never stored; the confirmed transcript is saved as `answer_text`. The privacy policy (v1.4) says so — keep it true.
+- Shared grading code (`buildUserMessage`, `ClaudeEvalSchema`, `reserveTokens`/`refundTokens`, `persistSubmission`, anchors) lives in [src/lib/evaluation/grading.ts](src/lib/evaluation/grading.ts), moved verbatim from the typed route so both paths grade identically.
+- JSX gotcha seen here: text right after a `{expression}` loses its leading space when it contains an HTML entity (`&rsquo;`, `&apos;`). Use literal `’` in such text.
+
 ### Notifications & return triggers
 
 - `public.notifications` ([20260926120000_notifications.sql](supabase/migrations/20260926120000_notifications.sql)) is the in-app inbox: students SELECT their own rows via RLS; nothing client-side can write. Rows are created by the cron and marked read by server actions, both through the service-role client keyed on a verified user id. `dedupe_key` (unique per user) makes generation idempotent.

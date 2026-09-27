@@ -32,6 +32,12 @@ export const EVENTS = {
   EVALUATION_FAILED: "evaluation_failed",
   /** Selected a question, or started typing, then left without submitting. */
   EVALUATION_ABANDONED: "evaluation_abandoned",
+  /**
+   * Server: a handwritten answer was transcribed (and graded, sealed) and is
+   * waiting for the student to review the transcript. The gap between this
+   * and EVALUATION_COMPLETED with input_mode "handwritten" is review drop-off.
+   */
+  TRANSCRIPT_READY: "transcript_ready",
 
   // ── Return triggers ────────────────────────────────────────────────────────
   /**
@@ -91,9 +97,9 @@ export const FAILURE_STAGES = {
   /** Client-side: request never reached us. */
   NETWORK_ERROR: "network_error",
   /**
-   * Handwriting/scan recognition failed. No OCR upload path exists yet — this
-   * is reserved so the dashboard's error panel already has a bucket for it the
-   * day one ships.
+   * Handwritten answer: the photo couldn't be read (illegible) or the
+   * transcription call failed for a reason that isn't one of the stages above.
+   * Recorded by /api/evaluate/handwritten.
    */
   OCR_FAILED: "ocr_failed",
 } as const;

@@ -13,9 +13,13 @@
     evaluations, usage, usage_feedback, analytics_events (+ browser storage in
     src/lib/analytics/track.ts), policy_consents, and the Anthropic call in
     src/app/api/evaluate/route.ts. Adding a new data flow means updating this.
+  - 1.4 added handwritten answers: photos are posted to
+    src/app/api/evaluate/handwritten, sent to Anthropic in that one request,
+    and never written to storage; the confirmed transcript is saved as the
+    answer. Also added welcome and reminder emails to the Resend row.
 -->
 
-> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. You can delete your account, and your answers with it, at any time.
+> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. If you photograph a handwritten answer, the photo is sent to Anthropic to be read and graded, and we don't keep it. You can delete your account, and your answers with it, at any time.
 
 ## Who we are
 
@@ -49,7 +53,7 @@ A parent or guardian can withdraw consent at any time by emailing [contact.board
 
 - **Account details** — your first name, last name, email address, and a password. Passwords are stored only as a secure hash by our authentication provider; we never see them.
 - **Google sign-in** — if you choose "Continue with Google", Google shares your name, email address, profile picture link, and a Google account identifier with us. We don't receive your Google password or access to your Google Drive, Gmail, or contacts.
-- **Your answers** — the text you type in response to questions, and the question you answered.
+- **Your answers** — the text you type in response to questions, and the question you answered. For written questions you can instead upload **photos of a handwritten answer** (up to 3 pages). The photos are used only to read and grade that answer and are not stored; what we keep is the transcript you check and confirm.
 - **Feedback** — anything you write to us through the in-app feedback form, and any rating or tags you choose.
 - **Parent or guardian email** — the address a student gives us so we can ask for parental consent. We use it only to send the consent link and to handle consent or data requests from that parent or guardian.
 
@@ -67,15 +71,16 @@ A parent or guardian can withdraw consent at any time by emailing [contact.board
 - **How you found us** — the website that referred you and any campaign tags (such as utm_source) in the link you first arrived from.
 - **Technical data** — your IP address and browser type are processed by our hosting and authentication providers to deliver the service, keep sessions secure, and prevent abuse. Our own analytics do not store your IP address.
 
-We do **not** collect your phone number, school, address, date of birth, payment details, precise location, contacts, or photos.
+We do **not** collect your phone number, school, address, date of birth, payment details, precise location, or contacts, and we don't keep any photos (answer photos are discarded once they've been read, as described above).
 
 ## Why we use it
 
 | Purpose | Data used | Legal basis |
 |---|---|---|
 | Creating and securing your account, and sending you account emails (like a welcome message when you sign up) | Name, email, password hash, Google profile, session data | Your consent (and your parent's or guardian's, if you are under 18) |
-| Grading your answers | Your answer, the question, its marking scheme | Your consent |
+| Grading your answers | Your answer (typed, or photos of a handwritten answer), the question, its marking scheme | Your consent |
 | Showing your history and progress | Answers, evaluation results | Your consent |
+| Reminding you when an answer is due for another go, in the app and by email (you can turn the emails off at any time) | Evaluation results, your email address and first name | Your consent |
 | Applying the free weekly credit limit | Credit usage | Your consent |
 | Fixing bugs and improving BoardEdge | Usage events, feedback, error logs | Your consent |
 | Keeping BoardEdge safe and preventing abuse | IP address (transiently), usage events | Legitimate use permitted under the DPDP Act |
@@ -90,9 +95,11 @@ When you submit an answer to a written (subjective) question, we send **the ques
 
 Anthropic processes this data on our behalf under its commercial terms, which do not permit it to use our API inputs or outputs to train its models. Anthropic may keep API data for a limited period for trust-and-safety purposes, as described in its own policies.
 
+**Handwritten answers.** If you upload photos of a handwritten answer, we send **the photos, the question and the marking scheme** to Anthropic in a single request. Claude reads your handwriting and grades what it read in that same request. We show you what it read before you see any marks, so you can correct anything it misread; if you change it, the corrected text is graded again, as a typed answer would be. BoardEdge does not save the photos anywhere: they exist only for that request. The transcript you confirm is saved as your answer.
+
 Objective questions (such as multiple choice) are marked directly by BoardEdge and are not sent to Anthropic.
 
-Please don't write personal information — your full name, phone number, address, or anything about other people — in your answers. Your answers only need to contain the answer.
+Please don't write personal information — your full name, phone number, address, or anything about other people — in your answers. Your answers only need to contain the answer. When photographing an answer, frame just the page: keep faces, name labels and other people out of the photo.
 
 ## Who we share data with
 
@@ -101,8 +108,8 @@ We share personal data only with service providers who help us run BoardEdge, an
 | Provider | What they do | Data involved |
 |---|---|---|
 | **Supabase** | Database, authentication, and account storage | All account data, answers, results, usage, feedback, analytics events, consent records |
-| **Resend** | Sending consent emails to parents and guardians | Parent or guardian email address, the student's first name, the consent link |
-| **Anthropic** | AI grading of written answers | Question, answer text, marking scheme — no identity |
+| **Resend** | Sending emails: consent requests to parents and guardians, and welcome and practice-reminder emails to students | The recipient's email address, the student's first name, and the contents of that email (for reminders, which questions are due for another go) |
+| **Anthropic** | AI grading of written answers, and reading handwritten answer photos | Question, answer text or answer photos, marking scheme — no identity |
 | **Google** | Optional "Continue with Google" sign-in | The sign-in exchange you approve on Google's screen |
 | **Vercel** | Website hosting | Web requests, including IP address and browser type, in server logs |
 
@@ -129,6 +136,7 @@ You can clear these at any time in your browser settings. If you block cookies, 
 - **Account, answers, results, credit usage, feedback, consent records and the parent or guardian email** — kept for as long as the account exists, and deleted when the account is deleted.
 - **Product usage events** — when you delete your account, events are unlinked from your account and kept only in pseudonymous form (tied to a random visitor ID, not to your name or email) so our overall usage figures stay accurate.
 - **Server and authentication logs** — kept by our providers for their standard, limited log-retention periods.
+- **Answer photos** — not kept by BoardEdge. They are used for the one grading request and then discarded; only the transcript you confirm is saved.
 - **Data held by Anthropic** — handled under Anthropic's retention policy for API data, as described above.
 
 ## Your rights

@@ -35,6 +35,7 @@ import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
 import { isSubjectiveGraded } from "@/lib/question-format";
 import { QuestionPicker } from "./_components/QuestionPicker";
+import { HandwrittenAnswer } from "./_components/HandwrittenAnswer";
 import {
   diagramState,
   hasFigureContext,
@@ -402,6 +403,8 @@ export default function EvaluatePage() {
   const [reportOpen,        setReportOpen]        = useState(false);
   const [reportText,        setReportText]        = useState("");
   const [reportSent,        setReportSent]        = useState(false);
+  // Written questions only: type the answer, or photograph a handwritten one.
+  const [answerMode,        setAnswerMode]        = useState<"type" | "photo">("type");
   const resultRef = useRef<HTMLDivElement>(null);
 
   // ─── Abandonment tracking ───────────────────────────────────
@@ -626,6 +629,7 @@ export default function EvaluatePage() {
     // would carry over — and worse, the "we'll review this" acknowledgement
     // would still be showing against a different figure.
     setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
+    setAnswerMode("type");
 
     const q = id ? questions.find((x) => x.id === id) ?? null : null;
     if (!q) {
@@ -720,6 +724,41 @@ export default function EvaluatePage() {
       setEvaluating(false);
     }
   }, [subject, selectedQuestion, studentAnswer]);
+
+  // ─── Handwritten answers ──────────────────────────────────────────────────
+  //
+  // HandwrittenAnswer owns the upload → review → confirm flow; the page keeps
+  // the telemetry and shows the result exactly as it does for a typed answer.
+
+  const handleHandwrittenUpload = useCallback((pages: number) => {
+    if (!selectedQuestion) return;
+    const timeToSubmit = questionOpenedAt.current ? Date.now() - questionOpenedAt.current : null;
+    if (attemptRef.current) attemptRef.current.submitted = true;
+    track(EVENTS.ANSWER_SUBMITTED, {
+      question_id: selectedQuestion.id,
+      question_number: selectedQuestion.question_number,
+      subject,
+      year: selectedQuestion.year,
+      paper: selectedQuestion.paper,
+      question_type: selectedQuestion.question_type,
+      is_subjective: selectedQuestion.is_subjective,
+      input_mode: "handwritten",
+      pages,
+      time_to_submit_ms: timeToSubmit,
+      source: attemptRef.current?.source ?? null,
+    });
+    setResult(null); setError(null); setLimitReached(false);
+    setFeedbackText(""); setFeedbackSent(false);
+    setEvalRating(null); setEvalFeedbackText(""); setEvalIssueTags([]); setEvalFeedbackStatus("idle");
+  }, [selectedQuestion, subject]);
+
+  const handleHandwrittenResult = useCallback((data: EvaluationResult & { transcript: string }) => {
+    // The confirmed transcript is the answer on record, so it is what the
+    // rest of the page (feedback, reattempts) treats as the student's answer.
+    setStudentAnswer(data.transcript);
+    setResult(data);
+    requestAnimationFrame(() => resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }, []);
 
   // ─── Eval quality feedback ────────────────────────────────────────────────
 
@@ -993,20 +1032,57 @@ export default function EvaluatePage() {
 
                 /* Subjective */
                 ) : (
-                  <div className="flex flex-col gap-2">
-                    <label className="text-xs font-medium text-muted-foreground">Write your answer</label>
-                    <textarea
-                      value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)} rows={8}
-                      disabled={!selectedQuestion.question_text?.trim()}
-                      placeholder={selectedQuestion.question_text?.trim() ? "Write your detailed answer here…" : "Question text not available — evaluation unavailable until added."}
-                      className={textareaClass}
-                    />
+                  <div className="flex flex-col gap-3">
+                    <div className="grid grid-cols-2 rounded-xl border border-border bg-card p-1 text-sm" role="tablist" aria-label="How to answer">
+                      {(["type", "photo"] as const).map((mode) => (
+                        <button
+                          key={mode}
+                          type="button"
+                          role="tab"
+                          aria-selected={answerMode === mode}
+                          onClick={() => setAnswerMode(mode)}
+                          disabled={evaluating}
+                          className={`rounded-lg px-3 py-2 font-medium transition-colors ${
+                            answerMode === mode ? "bg-accent-subtle text-accent" : "text-muted-foreground hover:text-foreground"
+                          }`}
+                        >
+                          {mode === "type" ? "Type it" : "Photo of handwriting"}
+                        </button>
+                      ))}
+                    </div>
+                    {answerMode === "type" ? (
+                      <>
+                        <label className="text-xs font-medium text-muted-foreground">Write your answer</label>
+                        <textarea
+                          value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)} rows={8}
+                          disabled={!selectedQuestion.question_text?.trim()}
+                          placeholder={selectedQuestion.question_text?.trim() ? "Write your detailed answer here…" : "Question text not available — evaluation unavailable until added."}
+                          className={textareaClass}
+                        />
+                      </>
+                    ) : (
+                      <HandwrittenAnswer<EvaluationResult>
+                        key={selectedQuestion.id}
+                        question={{
+                          subject,
+                          year: selectedQuestion.year,
+                          paper: selectedQuestion.paper,
+                          question_number: selectedQuestion.question_number,
+                        }}
+                        disabled={!selectedQuestion.question_text?.trim()}
+                        onUploadStart={handleHandwrittenUpload}
+                        onTokens={setTokensRemaining}
+                        onResult={handleHandwrittenResult}
+                      />
+                    )}
                   </div>
                 )}
 
+                {!(isSubjectiveGraded(selectedQuestion) && answerMode === "photo") && (
                 <button onClick={handleSubmit} disabled={!canSubmit} className={btnPrimary}>
                   {evaluating ? "Evaluating…" : "Evaluate"}
                 </button>
+                )}
                 <TokenBadge tokensRemaining={tokensRemaining} tokenCost={tokenCost} />
                 {evaluating && (
                   <p className="text-center text-xs text-muted-foreground">
