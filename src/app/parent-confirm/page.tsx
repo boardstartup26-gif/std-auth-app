@@ -89,7 +89,7 @@ export default async function ParentConfirmPage({
               </ul>
               <p className="mt-3">
                 Answers to written questions are sent to our AI provider, Anthropic, to be graded — without
-                {` ${child}'s`} name or email attached. We don&apos;t sell data, show advertising, or use
+                {` ${child}'s`} name or email attached. We don’t sell data, show advertising, or use
                 answers to train AI models. Full details are in our{" "}
                 <Link href="/privacy" className="text-accent underline underline-offset-2">Privacy Policy</Link>.
               </p>
