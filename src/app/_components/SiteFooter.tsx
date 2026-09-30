@@ -31,7 +31,14 @@ export function SiteFooter({ faqHref = "/#faq" }: { faqHref?: string }) {
           <a href="mailto:contact.boardedge@gmail.com" className="hover:text-foreground">
             contact.boardedge@gmail.com
           </a>
-          <span className="opacity-50" aria-disabled title="Coming soon">Instagram</span>
+          <a
+            href="https://www.instagram.com/boardedge.icse/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground"
+          >
+            Instagram
+          </a>
           <span className="opacity-50" aria-disabled title="Coming soon">LinkedIn</span>
           <Link href={POLICIES.privacy.href} className="hover:text-foreground">
             {POLICIES.privacy.title}
