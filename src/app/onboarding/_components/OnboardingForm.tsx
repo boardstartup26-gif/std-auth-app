@@ -42,7 +42,7 @@ function stageNote(stage: StudyStage | ""): string | null {
     case "isc_12":
       return "BoardEdge covers ICSE Class 10 papers for now. You're welcome to use it, but ISC papers aren't here yet.";
     case "other_board":
-      return "Answers are marked against CISCE's official ICSE schemes, so your marks won't match how your own board would grade them.";
+      return "Answers are marked to ICSE conventions, so your marks won't match how your own board would grade them.";
     default:
       return null;
   }

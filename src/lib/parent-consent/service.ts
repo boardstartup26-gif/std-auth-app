@@ -456,7 +456,7 @@ function buildConsentEmail({
     ``,
     `${who} has created an account on BoardEdge and gave this email address as their parent or guardian.`,
     ``,
-    `BoardEdge is an online practice tool for ICSE Class 9 and 10 students. Students answer past-paper questions and get marks and feedback against the official marking scheme. Written answers are graded by an AI model.`,
+    `BoardEdge is an online practice tool for ICSE Class 9 and 10 students. Students answer past-paper questions and get marks and feedback against a marking scheme for each question. Written answers are graded by an AI model.`,
     ``,
     `Because students under 18 need a parent's or guardian's consent, their account can't submit answers for grading until you confirm. To review what data is used and confirm, open this link (valid until ${expires} IST):`,
     ``,
@@ -477,7 +477,7 @@ function buildConsentEmail({
     <p style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5C6068;margin:0 0 16px;">BoardEdge</p>
     <h1 style="font-family:Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;margin:0 0 20px;">Please confirm consent for ${safeWho}&rsquo;s account</h1>
     <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">${safeWho} has created an account on BoardEdge and gave this email address as their parent or guardian.</p>
-    <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">BoardEdge is an online practice tool for ICSE Class 9 and 10 students. Students answer past-paper questions and get marks and feedback against the official marking scheme. Written answers are graded by an AI model.</p>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">BoardEdge is an online practice tool for ICSE Class 9 and 10 students. Students answer past-paper questions and get marks and feedback against a marking scheme for each question. Written answers are graded by an AI model.</p>
     <p style="font-size:16px;line-height:1.6;margin:0 0 24px;">Because students under 18 need a parent&rsquo;s or guardian&rsquo;s consent, the account can&rsquo;t submit answers for grading until you confirm.</p>
     <p style="margin:0 0 24px;"><a href="${safeLink}" style="display:inline-block;background:#C43D2B;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:10px;">Review and confirm</a></p>
     <p style="font-size:13px;line-height:1.6;color:#5C6068;margin:0 0 14px;">This link is valid until ${escapeHtml(expires)} IST. If the button doesn&rsquo;t work, copy this address into your browser:<br><span style="word-break:break-all;">${safeLink}</span></p>

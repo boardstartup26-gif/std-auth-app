@@ -73,7 +73,7 @@ export default async function ParentConfirmPage({
               <h2 className="text-lg font-semibold tracking-tight">What BoardEdge is</h2>
               <p className="mt-2">
                 An online practice tool for ICSE Class 9 and 10 students. Students answer real past-paper
-                questions and get marks and feedback checked against the official marking scheme.
+                questions and get marks and feedback checked against a marking scheme for each question.
                 There are no ads and it is currently free.
               </p>
             </section>

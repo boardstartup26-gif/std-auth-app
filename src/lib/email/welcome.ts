@@ -40,7 +40,7 @@ export async function sendWelcomeEmail({
     "",
     "Welcome to BoardEdge — you're set up and ready to practise.",
     "",
-    "Pick a subject and a past-paper question, write your answer, and we'll grade it against the official ICSE marking scheme, point by point, the way a real examiner would.",
+    "Pick a subject and a past-paper question, write your answer, and we'll grade it against the marking scheme for that question, point by point.",
     "",
     "One thing worth knowing up front: your first 2 evaluations are free to try, no extra step needed. After that, we'll need your parent or guardian to confirm consent by email before grading continues — that's a legal requirement for students under 18, and it only takes them a minute.",
     "",
@@ -49,6 +49,8 @@ export async function sendWelcomeEmail({
     "Questions? Just reply to this email.",
     "",
     "— BoardEdge",
+    "",
+    "BoardEdge is an independent practice platform and is not affiliated with CISCE.",
   ].join("\n");
 
   const safeGreeting = escapeHtml(greeting);
@@ -59,10 +61,11 @@ export async function sendWelcomeEmail({
     <p style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5C6068;margin:0 0 16px;">BoardEdge</p>
     <h1 style="font-family:Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;margin:0 0 20px;">${safeGreeting} welcome aboard</h1>
     <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">You're set up and ready to practise.</p>
-    <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">Pick a subject and a past-paper question, write your answer, and we&rsquo;ll grade it against the official ICSE marking scheme, point by point, the way a real examiner would.</p>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">Pick a subject and a past-paper question, write your answer, and we&rsquo;ll grade it against the marking scheme for that question, point by point.</p>
     <p style="font-size:15px;line-height:1.6;color:#5C6068;margin:0 0 24px;">One thing worth knowing up front: your first 2 evaluations are free to try, no extra step needed. After that, we&rsquo;ll need your parent or guardian to confirm consent by email before grading continues &mdash; that&rsquo;s a legal requirement for students under 18, and it only takes them a minute.</p>
     <p style="margin:0 0 24px;"><a href="${safeLink}" style="display:inline-block;background:#C43D2B;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:10px;">Start practising</a></p>
     <p style="font-size:13px;line-height:1.6;color:#5C6068;margin:0;">Questions? Just reply to this email.</p>
+    <p style="font-size:12px;line-height:1.6;color:#5C6068;margin:16px 0 0;">BoardEdge is an independent practice platform and is not affiliated with CISCE.</p>
   </div>
 </body></html>`;
 
