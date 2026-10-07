@@ -10,8 +10,11 @@ import {
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
+  matchObjectiveAnswer,
+  resolveAnswerDisplay,
   type EvaluationOutput,
   type MarkingScheme,
+  type McqOption,
 } from "@/lib/evaluation/grading";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
@@ -29,13 +32,6 @@ interface EvaluateRequestBody {
   student_answer: string;
 }
 
-// Two import batches shaped MCQ options differently: chemistry/physics/
-// biology/geography store plain option strings (correct_answer is the full
-// matching string); history & civics / english literature store {key, text}
-// objects (correct_answer is just the key letter, e.g. "d"). Both shapes
-// have to be supported here.
-type McqOption = string | { key: string; text: string };
-
 interface QuestionRow {
   id: string;
   question_text: string;
@@ -52,85 +48,6 @@ interface QuestionRow {
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: "figure" | "physical_map" | "ocr_pending" | null;
-}
-
-// ─── Objective Answer Matching ────────────────────────────────────────────────
-
-function normaliseAnswer(raw: string): string {
-  return raw
-    .trim()
-    .toLowerCase()
-    .replace(/^[a-d]\.\s*/i, "")
-    .replace(/\s+/g, " ");
-}
-
-function matchesSingleAnswer(
-  userAnswer: string,
-  correctAnswer: string,
-  questionType: string | null
-): boolean {
-  const userNorm = normaliseAnswer(userAnswer);
-  const correctNorm = normaliseAnswer(correctAnswer);
-
-  if (questionType === "mcq") {
-    const userLetter = userAnswer.trim().toUpperCase().charAt(0);
-    const correctLetter = correctAnswer.trim().toUpperCase().charAt(0);
-    return (
-      userNorm === correctNorm ||
-      (userLetter === correctLetter && /^[A-D]$/.test(userLetter))
-    );
-  }
-
-  if (questionType === "match") {
-    const parsePairs = (s: string) =>
-      s
-        .toLowerCase()
-        .replace(/\s/g, "")
-        .split(",")
-        .map((p) => p.trim())
-        .sort();
-    return parsePairs(userAnswer).join() === parsePairs(correctAnswer).join();
-  }
-
-  return userNorm === correctNorm;
-}
-
-// correctAnswer is an array only for the handful of multi-accepted-answer
-// MCQs (correct_option holds e.g. ["c", "d"]) — the student can still only
-// submit one option (single-select UI), so a match against any element
-// earns the mark.
-function matchObjectiveAnswer(
-  userAnswer: string,
-  correctAnswer: string | string[],
-  questionType: string | null
-): boolean {
-  if (Array.isArray(correctAnswer)) {
-    return correctAnswer.some((opt) => matchesSingleAnswer(userAnswer, opt, questionType));
-  }
-  return matchesSingleAnswer(userAnswer, correctAnswer, questionType);
-}
-
-// Resolves a raw MCQ answer (a full option string, or a bare key like "d")
-// to the human-readable option text for display. Falls through to the raw
-// value when options are plain strings, no options are on record, or the
-// key doesn't resolve — never blocks showing feedback to the student.
-function resolveOptionText(raw: string, options: McqOption[] | null): string {
-  if (!options) return raw;
-  const match = options.find(
-    (opt) => typeof opt !== "string" && opt.key.toLowerCase() === raw.trim().toLowerCase()
-  );
-  return match && typeof match !== "string" ? match.text : raw;
-}
-
-// Array case: a multi-accepted-answer MCQ, displayed the same way the
-// import data itself joins alternatives (see correct_answer_text, e.g.
-// "adjourn the house for lack of discipline / disqualify the members
-// under Anti-defection law").
-function resolveAnswerDisplay(raw: string | string[], options: McqOption[] | null): string {
-  if (Array.isArray(raw)) {
-    return raw.map((r) => resolveOptionText(r, options)).join(" / ");
-  }
-  return resolveOptionText(raw, options);
 }
 
 // ─── Telemetry ────────────────────────────────────────────────────────────────

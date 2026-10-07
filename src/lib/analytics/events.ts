@@ -39,6 +39,16 @@ export const EVENTS = {
    */
   TRANSCRIPT_READY: "transcript_ready",
 
+  // ── Practice papers ────────────────────────────────────────────────────────
+  /** Server: a student built a practice paper. Carries the spec and the fit. */
+  PRACTICE_SET_CREATED: "practice_set_created",
+  /** Server: pressed Start Paper on the paper's cover. */
+  PRACTICE_SET_STARTED: "practice_set_started",
+  /** Server: handed the paper in. Carries answered/blank counts and credits reserved. */
+  PRACTICE_SET_SUBMITTED: "practice_set_submitted",
+  /** Server: every answer on the paper has been dealt with. Carries the score. */
+  PRACTICE_SET_MARKED: "practice_set_marked",
+
   // ── Return triggers ────────────────────────────────────────────────────────
   /**
    * Server, from the daily cron: one row per student per run that got new

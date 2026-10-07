@@ -14,6 +14,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
+  FileStack,
   LayoutGrid,
   LibraryBig,
   LogOut,
@@ -26,6 +27,7 @@ import { signOut } from "@/app/(auth)/actions";
 
 const STUDY = [
   { href: "/evaluate", label: "Questions", icon: LibraryBig },
+  { href: "/practice-paper", label: "Practice papers", icon: FileStack },
   { href: "/history", label: "Results", icon: ScrollText },
 ];
 

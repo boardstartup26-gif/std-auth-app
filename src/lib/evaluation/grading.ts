@@ -1,7 +1,8 @@
 // src/lib/evaluation/grading.ts
 //
-// The grading pieces shared by the typed-answer route (src/app/api/evaluate)
-// and the handwritten-answer routes (src/app/api/evaluate/handwritten). Moved
+// The grading pieces shared by the typed-answer route (src/app/api/evaluate),
+// the handwritten-answer routes (src/app/api/evaluate/handwritten) and the
+// practice-paper marker (src/lib/practice-sets/mark.ts). Moved
 // here verbatim from the typed route so both paths build the same prompt,
 // validate the same schema, reserve credits the same way and persist the same
 // rows. A route file can only export HTTP handlers, so shared code can't live
@@ -57,6 +58,92 @@ export interface EvaluationOutput {
   is_correct?: boolean;
   token_cost: number;
   tokens_remaining: number;
+}
+
+// Two import batches shaped MCQ options differently: chemistry/physics/
+// biology/geography store plain option strings (correct_answer is the full
+// matching string); history & civics / english literature store {key, text}
+// objects (correct_answer is just the key letter, e.g. "d"). Both shapes
+// have to be supported here.
+export type McqOption = string | { key: string; text: string };
+
+// ─── Objective Answer Matching ────────────────────────────────────────────────
+
+function normaliseAnswer(raw: string): string {
+  return raw
+    .trim()
+    .toLowerCase()
+    .replace(/^[a-d]\.\s*/i, "")
+    .replace(/\s+/g, " ");
+}
+
+function matchesSingleAnswer(
+  userAnswer: string,
+  correctAnswer: string,
+  questionType: string | null
+): boolean {
+  const userNorm = normaliseAnswer(userAnswer);
+  const correctNorm = normaliseAnswer(correctAnswer);
+
+  if (questionType === "mcq") {
+    const userLetter = userAnswer.trim().toUpperCase().charAt(0);
+    const correctLetter = correctAnswer.trim().toUpperCase().charAt(0);
+    return (
+      userNorm === correctNorm ||
+      (userLetter === correctLetter && /^[A-D]$/.test(userLetter))
+    );
+  }
+
+  if (questionType === "match") {
+    const parsePairs = (s: string) =>
+      s
+        .toLowerCase()
+        .replace(/\s/g, "")
+        .split(",")
+        .map((p) => p.trim())
+        .sort();
+    return parsePairs(userAnswer).join() === parsePairs(correctAnswer).join();
+  }
+
+  return userNorm === correctNorm;
+}
+
+// correctAnswer is an array only for the handful of multi-accepted-answer
+// MCQs (correct_option holds e.g. ["c", "d"]) — the student can still only
+// submit one option (single-select UI), so a match against any element
+// earns the mark.
+export function matchObjectiveAnswer(
+  userAnswer: string,
+  correctAnswer: string | string[],
+  questionType: string | null
+): boolean {
+  if (Array.isArray(correctAnswer)) {
+    return correctAnswer.some((opt) => matchesSingleAnswer(userAnswer, opt, questionType));
+  }
+  return matchesSingleAnswer(userAnswer, correctAnswer, questionType);
+}
+
+// Resolves a raw MCQ answer (a full option string, or a bare key like "d")
+// to the human-readable option text for display. Falls through to the raw
+// value when options are plain strings, no options are on record, or the
+// key doesn't resolve — never blocks showing feedback to the student.
+function resolveOptionText(raw: string, options: McqOption[] | null): string {
+  if (!options) return raw;
+  const match = options.find(
+    (opt) => typeof opt !== "string" && opt.key.toLowerCase() === raw.trim().toLowerCase()
+  );
+  return match && typeof match !== "string" ? match.text : raw;
+}
+
+// Array case: a multi-accepted-answer MCQ, displayed the same way the
+// import data itself joins alternatives (see correct_answer_text, e.g.
+// "adjourn the house for lack of discipline / disqualify the members
+// under Anti-defection law").
+export function resolveAnswerDisplay(raw: string | string[], options: McqOption[] | null): string {
+  if (Array.isArray(raw)) {
+    return raw.map((r) => resolveOptionText(r, options)).join(" / ");
+  }
+  return resolveOptionText(raw, options);
 }
 
 // ─── Zod schema for Claude's structured output ────────────────────────────────
@@ -212,7 +299,7 @@ export async function persistSubmission(
     userId: string;
     evaluation: EvaluationOutput;
   }
-): Promise<void> {
+): Promise<{ studentAnswerId: string }> {
   const { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
     .insert({
@@ -265,4 +352,5 @@ export async function persistSubmission(
     console.error("[BoardEdge] evaluations insert failed:", evalError);
     throw new Error(`evaluations insert failed: ${evalError.message}`);
   }
+  return { studentAnswerId: answerRow.id as string };
 }
