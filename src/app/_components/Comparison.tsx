@@ -8,8 +8,9 @@
 // On the trademarks in the Generic-AI artwork: they are other companies'
 // marks, used to name what BoardEdge is being compared against. That is what a
 // comparison is for, and the claims beside them are about capability, not
-// quality — a general chatbot genuinely has no access to a CISCE marking
-// scheme. The footer disclaims affiliation.
+// quality — a general chatbot genuinely has no per-question marking scheme.
+// The footer disclaims affiliation. Don't call the schemes "official" or
+// "CISCE" here: they aren't licensed CISCE material.
 
 import Image from "next/image";
 import { Check, X as XIcon } from "lucide-react";
@@ -18,15 +19,15 @@ import { SweepIn } from "@/app/_components/SweepIn";
 
 const GENERIC_AI_POINTS = [
   "Gives a rough estimate, not a real score",
-  "No access to official ICSE marking schemes",
+  "No marking scheme behind its marks",
   "Generic feedback — not calibrated to your exam board",
   "Can't tell you which specific marking-scheme point you missed",
 ];
 
 const BOARDEDGE_POINTS = [
-  "Awards marks against the exact CISCE marking scheme",
-  "Shows every point hit and point missed — mapped to official criteria",
-  "Trained on ICSE-specific evaluation standards",
+  "Awards marks against a point-by-point scheme for each question",
+  "Shows every point hit and point missed — mapped to the scheme",
+  "Built for ICSE answers, not general chat",
   "Structured feedback: marks, points hit, points missed, conceptual errors, model answer",
 ];
 

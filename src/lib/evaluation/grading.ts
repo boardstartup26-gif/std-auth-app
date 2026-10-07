@@ -134,11 +134,11 @@ ${scheme.scheme_text}
 Key Points:
 ${JSON.stringify(scheme.key_points, null, 2)}
 
-${scheme.model_answer ? `Official Model Answer:\n${scheme.model_answer}` : "Model Answer: Not provided — generate from scheme."}
+${scheme.model_answer ? `Reference Model Answer:\n${scheme.model_answer}` : "Model Answer: Not provided — generate from scheme."}
 
 ${scheme.accepted_alternatives ? `Accepted Alternatives:\n${JSON.stringify(scheme.accepted_alternatives, null, 2)}` : ""}
 
-${scheme.common_errors ? `Common Pupil Errors (from CISCE Examiner Comments):\n${JSON.stringify(scheme.common_errors, null, 2)}` : ""}
+${scheme.common_errors ? `Common Pupil Errors:\n${JSON.stringify(scheme.common_errors, null, 2)}` : ""}
 
 ${scheme.examiner_notes ? `Examiner Notes:\n${scheme.examiner_notes}` : ""}
 

@@ -38,8 +38,17 @@ export function HomeLogoLink({
 
   useEffect(() => {
     let cancelled = false;
-    createClient()
-      .auth.getUser()
+    // createClient() throws synchronously when the Supabase env vars are
+    // missing (e.g. a fresh checkout without .env.local). That must not take
+    // the landing page down for what is only a logo-destination nicety.
+    let supabase: ReturnType<typeof createClient>;
+    try {
+      supabase = createClient();
+    } catch {
+      return;
+    }
+    supabase.auth
+      .getUser()
       .then(({ data: { user } }) => {
         if (!cancelled && user) setHref("/dashboard");
       })

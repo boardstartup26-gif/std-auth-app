@@ -59,7 +59,7 @@ export default async function DashboardPage() {
         <MagneticCard
           href="/evaluate"
           title="Question practice"
-          description="Exam-style past-paper questions for every subject, chapter and year — marked point by point against the real scheme."
+          description="Exam-style past-paper questions for every subject, chapter and year — marked point by point against a marking scheme."
           icon="practice"
           accentClass="text-accent"
           washClass="text-accent/[0.07]"

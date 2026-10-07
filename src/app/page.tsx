@@ -55,17 +55,17 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "How does BoardEdge evaluate my answers?",
     answer:
-      "You select a subject and a question, write your answer, and BoardEdge scores it against the official ICSE marking criteria for that question — the same standards a real examiner applies. You get a breakdown of marks awarded, points hit, points missed, and specific feedback on where to improve.",
+      "You select a subject and a question, write your answer, and BoardEdge scores it against a point-by-point marking scheme for that question. You get a breakdown of marks awarded, points hit, points missed, and specific feedback on where to improve.",
   },
   {
     question: "Which subjects and years are available?",
     answer:
-      "Six subjects are live: Geography, Biology, Chemistry, Physics, English Literature, and History & Civics. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available — 2,456 questions in total, each carrying its official marking scheme. More years are being added.",
+      "Six subjects are live: Geography, Biology, Chemistry, Physics, English Literature, and History & Civics. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available — 2,456 questions in total, each paired with its own marking scheme. More years are being added.",
   },
   {
     question: "Why not just ask ChatGPT or other Generic AI platforms?",
     answer:
-      "General AI tools give rough, generic feedback with no access to official marking criteria. BoardEdge evaluates your answer against actual ICSE marking schemes — point by point, the way a real examiner would. The difference shows up immediately in the quality of feedback.",
+      "General AI tools give rough, generic feedback with no marking scheme behind it. BoardEdge marks your answer against a point-by-point scheme for that exact question and shows which point earned or missed each mark. The difference shows up immediately in the quality of feedback.",
   },
   {
     question: "Is my data safe? Who sees my answers?",
@@ -157,8 +157,8 @@ export default function Home() {
           data-reveal
           className="mt-6 max-w-[var(--measure)] text-lg leading-relaxed text-muted-foreground"
         >
-          Write an answer to a real past-paper question. Get it back marked against the
-          official CISCE scheme — point by point, with every mark accounted for.
+          Write an answer to a real past-paper question. Get it back marked against a
+          point-by-point marking scheme, with every mark accounted for.
         </p>
 
         <div data-reveal className="mt-6 flex flex-wrap items-center gap-3">
@@ -273,14 +273,14 @@ export default function Home() {
       <section id="provenance" className="border-y border-border bg-card/30">
         <Reveal className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
           <h2 data-reveal className="display-section max-w-[20ch]">
-            Marked against the real scheme, not a guess at it.
+            Marked against a written scheme, not a guess.
           </h2>
           <p
             data-reveal
             className="mt-6 max-w-[var(--measure)] leading-relaxed text-muted-foreground"
           >
-            Every question in BoardEdge comes from an actual ICSE past paper and carries
-            the official CISCE marking scheme alongside it. The grader is bound to that
+            Every question in BoardEdge comes from an actual ICSE past paper and is paired
+            with a point-by-point marking scheme. The grader is bound to that
             scheme — it cites the points the scheme lists, and it is not allowed to award
             marks from outside knowledge.
           </p>

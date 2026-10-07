@@ -85,7 +85,7 @@ export async function sendReattemptEmail({
     "",
     ...items.map((i) => `- ${i.label} (you scored ${i.score}): ${i.link}`),
     "",
-    "Each one is marked against the same official scheme, so you'll see straight away whether the missing points are in.",
+    "Each one is marked against the same scheme as before, so you'll see straight away whether the missing points are in.",
     "",
     "— BoardEdge",
     "",
@@ -115,7 +115,7 @@ export async function sendReattemptEmail({
     <p style="font-size:16px;line-height:1.6;margin:0 0 20px;">${escapeHtml(intro)}</p>
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-bottom:1px solid #E4E1D8;margin:0 0 24px;">${rows}
     </table>
-    <p style="font-size:14px;line-height:1.6;color:#5C6068;margin:0 0 28px;">Each one is marked against the same official scheme, so you&rsquo;ll see straight away whether the missing points are in.</p>
+    <p style="font-size:14px;line-height:1.6;color:#5C6068;margin:0 0 28px;">Each one is marked against the same scheme as before, so you&rsquo;ll see straight away whether the missing points are in.</p>
     <p style="font-size:12px;line-height:1.6;color:#8A8D93;margin:0;">You&rsquo;re getting this because you practised on BoardEdge. <a href="${escapeHtml(unsubscribe.page)}" style="color:#8A8D93;">Stop reminder emails</a></p>
   </div>
 </body></html>`;

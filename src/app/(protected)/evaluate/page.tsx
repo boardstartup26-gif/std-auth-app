@@ -1215,7 +1215,7 @@ export default function EvaluatePage() {
                       <div className="mb-3 flex flex-wrap items-center gap-2">
                         <span className="text-xs font-semibold uppercase tracking-widest text-tag-model-answer">Model answer</span>
                         <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
-                          {result.model_answer_source === "verified" ? "CISCE verified" : "AI generated"}
+                          {result.model_answer_source === "verified" ? "From marking scheme" : "AI generated"}
                         </span>
                       </div>
                       <p className="text-sm leading-relaxed text-foreground/90">{result.model_answer}</p>

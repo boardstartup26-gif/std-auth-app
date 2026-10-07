@@ -388,7 +388,7 @@ export function PracticeReport({ record }: { record: PracticeRecord }) {
               <figcaption className="flex flex-wrap items-center gap-2">
                 <span className={sectionLabel}>Model answer</span>
                 <span className="rounded-full border border-border px-2 py-0.5 text-[10px] uppercase tracking-[0.08em] text-muted-foreground">
-                  {record.modelAnswerSource === "verified" ? "CISCE verified" : "AI generated"}
+                  {record.modelAnswerSource === "verified" ? "From marking scheme" : "AI generated"}
                 </span>
               </figcaption>
               {/* Margin-note treatment per §11: Fraunces, smaller, ink-muted —
