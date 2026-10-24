@@ -9,10 +9,30 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { readOnboardingProfile } from "@/lib/onboarding/profile";
+import { readCredits } from "@/lib/credits";
+import { loadPool } from "@/lib/practice-sets/build";
+import { readInvitedBy } from "@/lib/referrals/service";
 import { sectionLabel } from "@/lib/ui";
 import { OnboardingForm } from "./_components/OnboardingForm";
 
 export const dynamic = "force-dynamic";
+
+/**
+ * Markable questions per subject, for the subjects cue. Same pool and the same
+ * "can this be marked" rules as the practice-paper builder, so the number shown
+ * is one the student can actually practise. Empty on failure; the cue just
+ * leaves the count out.
+ */
+async function readQuestionCounts(): Promise<Record<string, number>> {
+  try {
+    const counts: Record<string, number> = {};
+    for (const q of await loadPool()) counts[q.subject] = (counts[q.subject] ?? 0) + 1;
+    return counts;
+  } catch (err) {
+    console.warn("[BoardEdge] onboarding question counts failed:", err);
+    return {};
+  }
+}
 
 function metaString(meta: Record<string, unknown> | undefined, key: string): string | null {
   const v = meta?.[key];
@@ -28,6 +48,12 @@ export default async function OnboardingPage() {
 
   const profile = await readOnboardingProfile(user.id);
   if (profile?.onboarded) redirect("/dashboard");
+
+  const [questionCounts, invitedBy, credits] = await Promise.all([
+    readQuestionCounts(),
+    readInvitedBy(user.id),
+    readCredits(user.id),
+  ]);
 
   // Email signups already gave a name; Google ones only have given_name/
   // family_name in their metadata, which the profile trigger never copies.
@@ -59,7 +85,13 @@ export default async function OnboardingPage() {
           account — we never share it.
         </p>
 
-        <OnboardingForm defaultFirstName={firstName} defaultLastName={lastName} />
+        <OnboardingForm
+          defaultFirstName={firstName}
+          defaultLastName={lastName}
+          questionCounts={questionCounts}
+          invitedBy={invitedBy ? (invitedBy.firstName ?? "a friend") : null}
+          weeklyCredits={credits.limit}
+        />
       </main>
     </div>
   );

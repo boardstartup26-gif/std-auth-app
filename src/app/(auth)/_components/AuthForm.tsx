@@ -178,7 +178,10 @@ export function AuthForm({
   nameFields = false,
   imageSrc,
   next,
+  notice,
 }: {
+  /** Shown under the title, e.g. who invited this student. */
+  notice?: React.ReactNode;
   title: string;
   action: (prevState: AuthResult | null, formData: FormData) => Promise<AuthResult>;
   submitLabel: string;
@@ -209,6 +212,7 @@ export function AuthForm({
 
           <p className={sectionLabel}>BoardEdge</p>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">{title}</h1>
+          {notice ? <div className="mt-4">{notice}</div> : null}
 
           <div className="mt-8">
             {/* A Google sign-in creates the account without ever submitting

@@ -2,6 +2,9 @@
 
 import { redirect } from "next/navigation";
 import { after } from "next/server";
+import { cookies } from "next/headers";
+import { REF_COOKIE } from "@/lib/referrals/constants";
+import { attachReferral } from "@/lib/referrals/service";
 import { createClient } from "@/lib/supabase/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
@@ -144,6 +147,11 @@ export async function signup(
     const isRealNewUser = Boolean(newUserId) && (data.user?.identities?.length ?? 0) > 0;
     if (newUserId && isRealNewUser) {
       await recordSignupConsent(newUserId, "email_signup");
+      // Who invited them, if they came through /i/{code}. Same new-account
+      // flag as consent: a login or the enumeration-safe fake user never
+      // attaches. Never throws.
+      await attachReferral(newUserId);
+      (await cookies()).delete(REF_COOKIE);
     }
 
     // Welcome email — to the student's own address, only for a genuine new

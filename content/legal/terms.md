@@ -44,13 +44,23 @@ BoardEdge is an independent platform and is **not affiliated with, endorsed by, 
 - If an evaluation fails because of an error on our side, we return the credits it used.
 - We don't currently charge for BoardEdge. If we introduce paid features, we'll show you the price and terms before you pay for anything.
 
+## Referral credits
+
+You can invite friends to BoardEdge with your personal invite link.
+
+- **How you earn them.** When a friend signs up through your link and has 2 written answers marked, you **both** get +5 extra credits every week, for as long as you both have your accounts.
+- **Limits.** You can earn at most +50 bonus credits a week in total, from at most 10 rewarded referrals. Friends you invite after that can still join, but won't add more credits.
+- **Same rules as other credits.** Bonus credits have no cash value and can't be transferred, sold, or exchanged.
+- **Play fair.** Inviting yourself, or using multiple or fake accounts to earn bonus credits, breaks these Terms and voids the rewards. Referrals that look like this are flagged and may be reviewed by our team before any credits are given, and we may remove credits that were obtained this way.
+- **Changes.** We may change or end the referral program at any time. If we do, you keep the bonus credits you've already earned, unless they were obtained by breaking these rules.
+
 ## Acceptable use
 
 When using BoardEdge, you agree not to:
 
 1. Try to manipulate the grading — for example, by writing instructions to the AI in your answer instead of answering the question.
 2. Use scripts, bots or automated tools to access the Service, submit answers, or collect questions, marking schemes, or model answers.
-3. Try to get around credit limits, for example by creating multiple accounts.
+3. Try to get around credit limits or earn referral credits unfairly, for example by creating multiple accounts or inviting yourself.
 4. Probe, scan or test the security of the Service, or interfere with its operation, without our written permission.
 5. Copy, republish, or sell BoardEdge's content, marking data, or AI-generated feedback.
 6. Submit anything unlawful, abusive, or that includes other people's personal information.

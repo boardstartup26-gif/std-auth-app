@@ -2,7 +2,7 @@ import { after, NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
+import { CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import {
   buildUserMessage,
   ClaudeEvalSchema,
@@ -341,7 +341,8 @@ export async function POST(req: NextRequest) {
       { status: 429 }
     );
   }
-  const tokensRemaining = Math.max(0, WEEKLY_CREDIT_LIMIT - reservation.newCount);
+  const weeklyLimit = reservation.limit;
+  const tokensRemaining = Math.max(0, weeklyLimit - reservation.newCount);
 
   // ─── OBJECTIVE PATH (no Claude call) ─────────────────────────────────────
 
@@ -417,6 +418,7 @@ export async function POST(req: NextRequest) {
         studentAnswer: student_answer,
         userId,
         evaluation,
+        written: false,
       });
     } catch (err) {
       console.error("[BoardEdge] Persist error:", err);
@@ -431,7 +433,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           error: "Evaluation succeeded but could not be saved. Please retry.",
-          tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+          tokens_remaining: Math.min(weeklyLimit, tokensRemaining + tokenCost),
         },
         { status: 500 }
       );
@@ -578,6 +580,7 @@ export async function POST(req: NextRequest) {
       studentAnswer: student_answer,
       userId,
       evaluation,
+      written: true,
     });
   } catch (err) {
     console.error("[BoardEdge] Persist error:", err);
@@ -593,7 +596,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         error: "Evaluation succeeded but could not be saved. Please retry.",
-        tokens_remaining: Math.min(WEEKLY_CREDIT_LIMIT, tokensRemaining + tokenCost),
+        tokens_remaining: Math.min(weeklyLimit, tokensRemaining + tokenCost),
       },
       { status: 500 }
     );

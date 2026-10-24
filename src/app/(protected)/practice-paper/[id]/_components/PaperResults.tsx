@@ -13,6 +13,8 @@ import { retryMissed } from "../../actions";
 import { ScoreReveal } from "./ScoreReveal";
 import { ResultsList, type ResultRow } from "./ResultsList";
 import { RetryButton } from "./RetryButton";
+import { ShareInvite } from "@/app/_components/ShareInvite";
+import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 
 function dateLabel(iso: string | null): string {
   if (!iso) return "";
@@ -123,6 +125,28 @@ export function PaperResults({ paper }: { paper: Paper }) {
             Generate Another Paper
           </Link>
         </div>
+      </section>
+
+      {/* ── Invite — right after the score, where finishing a whole paper
+          is most worth telling someone about. ── */}
+      <section className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-status-correct/40 bg-status-correct-subtle px-6 py-5 sm:px-8">
+        <div className="max-w-[var(--measure)]">
+          <p className="font-display text-lg leading-snug text-foreground">
+            {a.percent >= 70 ? "Dare a friend to sit this paper" : "Practise with a friend"}
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            If they join with your link, you both get +{REFERRAL_WEEKLY_BONUS} credits every week.
+          </p>
+        </div>
+        <ShareInvite
+          surface="paper_results"
+          compact
+          challenge={
+            a.percent >= 70
+              ? `I scored ${a.percent}% on a full ${paper.subject} board-style paper.`
+              : null
+          }
+        />
       </section>
 
       {/* ── Examiner summary ── */}

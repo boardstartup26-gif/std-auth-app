@@ -11,8 +11,10 @@
 // Server-only.
 
 import { z } from "zod";
+import { after } from "next/server";
 import { createAdminClient } from "@/lib/supabase/server";
-import { WEEKLY_CREDIT_LIMIT } from "@/lib/constants";
+import { getWeeklyLimit } from "@/lib/credits";
+import { recordWrittenAnswerForReferral } from "@/lib/referrals/service";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -242,19 +244,23 @@ export async function reserveTokens(
   userId: string,
   date: string,
   cost: number
-): Promise<{ ok: true; newCount: number } | { ok: false }> {
+): Promise<{ ok: true; newCount: number; limit: number } | { ok: false }> {
+  // Per-student limit: the base allowance plus any referral bonus. The RPC
+  // already takes the limit as a parameter, so its atomic check is unchanged;
+  // getWeeklyLimit falls back to the base allowance if the bonus read fails.
+  const limit = await getWeeklyLimit(userId);
   const { data, error } = await supabase.rpc("increment_usage", {
     p_user_id: userId,
     p_date: date,
     p_cost: cost,
-    p_limit: WEEKLY_CREDIT_LIMIT,
+    p_limit: limit,
   });
 
   if (error) {
     // TOKEN_LIMIT_EXCEEDED surfaces here as a Postgres exception.
     return { ok: false };
   }
-  return { ok: true, newCount: data as number };
+  return { ok: true, newCount: data as number, limit };
 }
 
 // Rollback: only called if token reservation succeeded but the Claude call
@@ -293,22 +299,43 @@ export async function persistSubmission(
     studentAnswer,
     userId,
     evaluation,
+    written,
+    inputMethod = "typed",
   }: {
     questionId: string;
     studentAnswer: string;
     userId: string;
     evaluation: EvaluationOutput;
+    /** Examiner-graded (subjective). Only these advance a pending referral. */
+    written: boolean;
+    inputMethod?: "typed" | "handwritten";
   }
 ): Promise<{ studentAnswerId: string }> {
-  const { data: answerRow, error: answerError } = await supabase
+  const answerInsert = {
+    question_id: questionId,
+    answer_text: studentAnswer,
+    user_id: userId,
+    input_method: inputMethod,
+  };
+  let { data: answerRow, error: answerError } = await supabase
     .from("student_answers")
-    .insert({
-      question_id: questionId,
-      answer_text: studentAnswer,
-      user_id: userId,
-    })
+    .insert(answerInsert)
     .select("id")
     .single();
+
+  // input_method arrives with 20261024120000_referrals.sql. Until that
+  // migration is applied, PostgREST rejects the unknown column (PGRST204 /
+  // 42703); retry without it so a deploy that lands before the migration
+  // never loses a graded answer.
+  if (answerError && (answerError.code === "PGRST204" || answerError.code === "42703")) {
+    const { input_method: _omitted, ...withoutMethod } = answerInsert;
+    void _omitted;
+    ({ data: answerRow, error: answerError } = await supabase
+      .from("student_answers")
+      .insert(withoutMethod)
+      .select("id")
+      .single());
+  }
 
   if (answerError || !answerRow) {
     console.error("[BoardEdge] student_answers insert failed:", answerError);
@@ -351,6 +378,17 @@ export async function persistSubmission(
   if (evalError) {
     console.error("[BoardEdge] evaluations insert failed:", evalError);
     throw new Error(`evaluations insert failed: ${evalError.message}`);
+  }
+
+  // A saved written answer may be the one that makes this student's referral
+  // count. Off the response path, and it never throws.
+  if (written) {
+    try {
+      after(() => recordWrittenAnswerForReferral(userId));
+    } catch {
+      // Outside a request scope after() is unavailable; run it inline.
+      await recordWrittenAnswerForReferral(userId);
+    }
   }
   return { studentAnswerId: answerRow.id as string };
 }

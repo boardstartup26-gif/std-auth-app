@@ -1,7 +1,11 @@
 "use client";
 
-import { startTransition, useActionState, useState } from "react";
+import { startTransition, useActionState, useEffect, useRef, useState } from "react";
 import { btnPrimary, errorAlert, inputBase } from "@/lib/ui";
+import { EVENTS } from "@/lib/analytics/events";
+import { track } from "@/lib/analytics/track";
+import { REFERRAL_QUALIFY_AT, REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
+import { OnboardingProgress } from "./OnboardingProgress";
 import { HEARD_FROM, STUDY_STAGES, type StudyStage } from "@/lib/onboarding/constants";
 import { SUBJECTS } from "@/app/(protected)/evaluate/_lib/question";
 import { completeOnboarding, type OnboardingResult } from "../actions";
@@ -14,15 +18,32 @@ const fieldLabel = "text-xs font-medium text-muted-foreground";
 const legendText = "font-display text-lg text-foreground";
 
 // The question number sits in the margin, the way a marked script numbers its
-// answers. Collapses above the field on narrow screens.
-function Step({ n, children }: { n: number; children: React.ReactNode }) {
+// answers — and, like a marked script, turns into a tick once it's answered.
+// Collapses above the field on narrow screens.
+function Step({ n, done, children }: { n: number; done: boolean; children: React.ReactNode }) {
   return (
     <div className="grid gap-3 border-t border-rule py-7 sm:grid-cols-[2.5rem_1fr] sm:gap-4">
-      <span className="font-display text-lg tabular-nums text-accent" aria-hidden>
-        {n}.
+      <span
+        className={`font-display text-lg tabular-nums transition-colors duration-[180ms] ${done ? "text-status-correct" : "text-accent"}`}
+        aria-hidden
+      >
+        {done ? "✓" : `${n}.`}
       </span>
       <div className="min-w-0">{children}</div>
     </div>
+  );
+}
+
+// One line of encouragement under an answered step, in the same left-rule
+// style as the class note. Announced politely so it doesn't interrupt typing.
+function Cue({ show, children }: { show: boolean; children: React.ReactNode }) {
+  return (
+    <p
+      className={`max-w-[var(--measure)] border-l-2 border-status-correct/60 pl-3 text-sm leading-relaxed text-muted-foreground ${show ? "mt-4" : "sr-only"}`}
+      aria-live="polite"
+    >
+      {show ? children : null}
+    </p>
   );
 }
 
@@ -51,19 +72,47 @@ function stageNote(stage: StudyStage | ""): string | null {
 export function OnboardingForm({
   defaultFirstName,
   defaultLastName,
+  questionCounts = {},
+  invitedBy = null,
+  weeklyCredits,
 }: {
   defaultFirstName: string;
   defaultLastName: string;
+  /** Markable past-paper questions per subject, for the subjects cue. */
+  questionCounts?: Record<string, number>;
+  /** First name of whoever invited this student, if anyone. */
+  invitedBy?: string | null;
+  weeklyCredits: number;
 }) {
   const [state, formAction, pending] = useActionState<OnboardingResult, FormData>(completeOnboarding, null);
   const [firstName, setFirstName] = useState(defaultFirstName);
   const [lastName, setLastName] = useState(defaultLastName);
   const [stage, setStage] = useState<StudyStage | "">("");
   const [subjects, setSubjects] = useState<string[]>([]);
-  const [heardFrom, setHeardFrom] = useState("");
+  const [heardFrom, setHeardFrom] = useState(invitedBy ? "friend" : "");
 
   const inputClass = `${inputBase} h-11 w-full`;
   const note = stageNote(stage);
+
+  const stepsDone = [
+    Boolean(firstName.trim() && lastName.trim()),
+    Boolean(stage),
+    subjects.length > 0,
+    Boolean(heardFrom),
+  ];
+  const doneCount = stepsDone.filter(Boolean).length;
+  const questionTotal = subjects.reduce((sum, s) => sum + (questionCounts[s] ?? 0), 0);
+
+  // Per-step drop-off: each step reports the first time it becomes valid.
+  const reported = useRef(new Set<number>());
+  useEffect(() => {
+    stepsDone.forEach((done, i) => {
+      if (done && !reported.current.has(i)) {
+        reported.current.add(i);
+        track(EVENTS.ONBOARDING_STEP_COMPLETED, { step: i + 1 });
+      }
+    });
+  });
 
   const toggleSubject = (subject: string, on: boolean) =>
     setSubjects((prev) => (on ? [...prev, subject] : prev.filter((s) => s !== subject)));
@@ -81,7 +130,11 @@ export function OnboardingForm({
         startTransition(() => formAction(data));
       }}
     >
-      <Step n={1}>
+      <div className="sticky top-0 z-10 -mx-6 bg-background/95 px-6 py-3 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+        <OnboardingProgress done={doneCount} total={stepsDone.length} label="answered" />
+      </div>
+
+      <Step n={1} done={stepsDone[0]}>
         <fieldset>
           <legend className={legendText}>What should we call you?</legend>
           <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -114,10 +167,13 @@ export function OnboardingForm({
               />
             </div>
           </div>
+          <Cue show={stepsDone[0]}>
+            Hi {firstName.trim()} — that&rsquo;s the name your marked answers will be addressed to.
+          </Cue>
         </fieldset>
       </Step>
 
-      <Step n={2}>
+      <Step n={2} done={stepsDone[1]}>
         <fieldset>
           <legend className={legendText}>Which class are you in?</legend>
           <div className="mt-4 grid gap-2.5 sm:grid-cols-2">
@@ -143,11 +199,15 @@ export function OnboardingForm({
             <p className="mt-4 max-w-[var(--measure)] border-l-2 border-rule pl-3 text-sm leading-relaxed text-muted-foreground" aria-live="polite">
               {note}
             </p>
-          ) : null}
+          ) : (
+            <Cue show={stage === "icse_10"}>
+              Good — every question here is from a real ICSE Class 10 board paper, marked against its scheme.
+            </Cue>
+          )}
         </fieldset>
       </Step>
 
-      <Step n={3}>
+      <Step n={3} done={stepsDone[2]}>
         <fieldset>
           <legend className={legendText}>Which subjects do you want marked?</legend>
           <p className="mt-1 text-sm text-muted-foreground">Pick any. You can practise the others too.</p>
@@ -166,10 +226,22 @@ export function OnboardingForm({
               </label>
             ))}
           </div>
+          <Cue show={stepsDone[2]}>
+            <span className="font-mono tabular-nums text-foreground">{subjects.length}</span>{" "}
+            subject{subjects.length === 1 ? "" : "s"}
+            {questionTotal > 0 ? (
+              <>
+                {" "}· <span className="font-mono tabular-nums text-foreground">{questionTotal.toLocaleString("en-IN")}</span>{" "}
+                past-paper questions ready to be marked.
+              </>
+            ) : (
+              " picked."
+            )}
+          </Cue>
         </fieldset>
       </Step>
 
-      <Step n={4}>
+      <Step n={4} done={stepsDone[3]}>
         <div className="space-y-2">
           <label className={legendText} htmlFor="heard_from">How did you hear about BoardEdge?</label>
           <select
@@ -185,10 +257,24 @@ export function OnboardingForm({
               <option key={h.value} value={h.value}>{h.label}</option>
             ))}
           </select>
+          {invitedBy ? (
+            <Cue show>
+              <span className="text-foreground">Invited by {invitedBy}</span> — get {REFERRAL_QUALIFY_AT} answers marked and
+              you both get +{REFERRAL_WEEKLY_BONUS} credits every week.
+            </Cue>
+          ) : (
+            <Cue show={heardFrom === "friend"}>
+              Studying with friends? Once you&rsquo;re in, invite them and you both get +{REFERRAL_WEEKLY_BONUS} credits a week.
+            </Cue>
+          )}
         </div>
       </Step>
 
       <div className="border-t border-rule pt-7">
+        <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
+          <span className="text-foreground">Next: your first marked answer</span> — about two minutes. You have{" "}
+          <span className="font-mono tabular-nums text-foreground">{weeklyCredits}</span> credits this week.
+        </p>
         {state?.ok === false ? <p className={`${errorAlert} mb-5`} role="alert">{state.message}</p> : null}
         <SubmitButton pending={pending} />
       </div>

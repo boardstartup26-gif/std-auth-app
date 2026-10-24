@@ -16,7 +16,7 @@
 
 import { after, NextResponse, type NextRequest } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
-import { CREDIT_COST_SUBJECTIVE, WEEKLY_CREDIT_LIMIT } from "@/lib/constants";
+import { CREDIT_COST_SUBJECTIVE } from "@/lib/constants";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
@@ -164,7 +164,7 @@ export async function POST(req: NextRequest) {
       { status: 429 },
     );
   }
-  const tokensRemaining = Math.max(0, WEEKLY_CREDIT_LIMIT - reservation.newCount);
+  const tokensRemaining = Math.max(0, reservation.limit - reservation.newCount);
 
   // ─── The one call: transcribe + grade ─────────────────────────────────────
 

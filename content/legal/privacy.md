@@ -17,9 +17,13 @@
     src/app/api/evaluate/handwritten, sent to Anthropic in that one request,
     and never written to storage; the confirmed transcript is saved as the
     answer. Also added welcome and reminder emails to the Resend row.
+  - 1.5 added the referral program (src/lib/referrals, src/app/i/[code]):
+    the be_ref cookie set by /i/{code}, the inviter→invited record made at
+    signup, what the inviter can see, and the be_anon_id comparison used
+    only to flag self-referrals. No contact upload, no emails to invitees.
 -->
 
-> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. If you photograph a handwritten answer, the photo is sent to Anthropic to be read and graded, and we don't keep it. You can delete your account, and your answers with it, at any time.
+> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. If you photograph a handwritten answer, the photo is sent to Anthropic to be read and graded, and we don't keep it. If you invite friends with your personal link, you see only their first name and how far along they are, never their marks or answers, and we never ask for your contacts. You can delete your account, and your answers with it, at any time.
 
 ## Who we are
 
@@ -63,6 +67,7 @@ A parent or guardian can withdraw consent at any time by emailing [contact.board
 - **Credit usage** — how many evaluation credits you used on each day, so we can apply the weekly free limit.
 - **Your consent record** — which version of this policy and the Terms you agreed to, how (email signup or Google), and when.
 - **Parental consent record** — whether a parent or guardian has confirmed, withdrawn, or not yet responded, when consent links were sent, and when consent was confirmed or withdrawn.
+- **Invite record** — your personal invite link, and, if you signed up through someone else's link, which student invited you. See [Inviting friends](#inviting-friends).
 
 ### Information collected automatically
 
@@ -82,6 +87,8 @@ We do **not** collect your phone number, school, address, date of birth, payment
 | Showing your history and progress | Answers, evaluation results | Your consent |
 | Reminding you when an answer is due for another go, in the app and by email (you can turn the emails off at any time) | Evaluation results, your email address and first name | Your consent |
 | Applying the free weekly credit limit | Credit usage | Your consent |
+| Running invites and referral credits, and showing you how your invited friends are getting on | Invite record, the invited friend's first name and progress status | Your consent |
+| Spotting people inviting themselves to earn extra credits | Invite record, random visitor IDs | Legitimate use permitted under the DPDP Act |
 | Fixing bugs and improving BoardEdge | Usage events, feedback, error logs | Your consent |
 | Keeping BoardEdge safe and preventing abuse | IP address (transiently), usage events | Legitimate use permitted under the DPDP Act |
 | Proving what you agreed to | Consent record | Compliance with law |
@@ -101,13 +108,25 @@ Objective questions (such as multiple choice) are marked directly by BoardEdge a
 
 Please don't write personal information — your full name, phone number, address, or anything about other people — in your answers. Your answers only need to contain the answer. When photographing an answer, frame just the page: keep faces, name labels and other people out of the photo.
 
+## Inviting friends
+
+Every student gets a **personal invite link** they can share, for example on WhatsApp. When a friend signs up through it and has 2 written answers marked, both students get extra weekly credits (see the [Terms](/terms)).
+
+- **When someone opens an invite link**, we store a small cookie called be_ref in their browser that remembers which link they came from. It can't be read by scripts on the page and expires after 30 days.
+- **When they sign up**, we record which student invited them.
+- **What the inviter sees** — only the friend's first name and how far along they are: "joined", "1 of 2 answers marked", or "counting" once the referral counts towards credits. The inviter never sees the friend's marks, answers, email address or any other contact details.
+- **Stopping self-referrals** — we compare the random visitor ID (be_anon_id, described in [Cookies and browser storage](#cookies-and-browser-storage)) of the inviter and the invited account, only to spot someone inviting themselves from a second account. A match flags the referral for review instead of rewarding it; it isn't used for anything else.
+- **We never ask for your contacts.** BoardEdge doesn't ask students to upload their address book or type in a friend's email address, and we never email the friends you invite. Whether to share your link, and with whom, is up to you.
+- **Where your link appears** — we may include a link to your invite page in emails we already send you: your welcome email and practice reminders.
+- **When a friend counts**, we tell you in the app and, unless you've turned reminder emails off, by email — naming them by first name only.
+
 ## Who we share data with
 
 We share personal data only with service providers who help us run BoardEdge, and only what each one needs:
 
 | Provider | What they do | Data involved |
 |---|---|---|
-| **Supabase** | Database, authentication, and account storage | All account data, answers, results, usage, feedback, analytics events, consent records |
+| **Supabase** | Database, authentication, and account storage | All account data, answers, results, usage, feedback, analytics events, consent records, invite records |
 | **Resend** | Sending emails: consent requests to parents and guardians, and welcome and practice-reminder emails to students | The recipient's email address, the student's first name, and the contents of that email (for reminders, which questions are due for another go) |
 | **Anthropic** | AI grading of written answers, and reading handwritten answer photos | Question, answer text or answer photos, marking scheme — no identity |
 | **Google** | Optional "Continue with Google" sign-in | The sign-in exchange you approve on Google's screen |
@@ -126,6 +145,8 @@ BoardEdge does not use advertising or third-party tracking cookies. We use:
 | sb-…-auth-token | Cookie | Keeps you signed in (strictly necessary) | Until you sign out or the session expires |
 | be_anon_id | Cookie and local storage | Random visitor ID for product analytics | Cookie: 1 year. Local storage: until cleared |
 | be_attribution | Local storage | The referring site and campaign tags from your first visit | Until cleared |
+| be_ref | Cookie (not readable by page scripts) | Remembers the invite link you arrived from, so the student who invited you can be credited when you sign up | 30 days |
+| be_challenge | Cookie (not readable by page scripts) | If the invite was for a particular question, remembers which one so you can start there after signing up | 30 days, or until you finish setting up your account |
 | be_first_touch_sent | Local storage | Remembers we've already counted your first visit | Until cleared |
 | be_session_id, be_session_touched_at | Session storage | Groups page views into a single visit | Until the tab is closed |
 

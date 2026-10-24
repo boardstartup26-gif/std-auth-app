@@ -19,7 +19,14 @@ import {
   sheetTop,
   creditCountClass,
 } from "@/lib/ui";
-import { WEEKLY_CREDIT_LIMIT, CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
+import {
+  WEEKLY_CREDIT_LIMIT,
+  CREDIT_COST_SUBJECTIVE,
+  CREDIT_COST_OBJECTIVE,
+  REFERRAL_QUALIFY_AT,
+  REFERRAL_WEEKLY_BONUS,
+} from "@/lib/constants";
+import { ShareInvite } from "@/app/_components/ShareInvite";
 import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
 import { isSubjectiveGraded } from "@/lib/question-format";
@@ -894,6 +901,17 @@ export default function EvaluatePage() {
             <div className="space-y-4">
               <div className={errorAlert}>{error}</div>
               {limitReached && (
+                <div className="rounded-lg border border-status-correct/40 bg-status-correct-subtle px-5 py-5">
+                  <p className="font-display text-lg leading-snug text-foreground">
+                    Get {REFERRAL_WEEKLY_BONUS} more credits every week — for good
+                  </p>
+                  <p className="mt-1 mb-4 text-sm text-muted-foreground">
+                    Invite a classmate. Once they&rsquo;ve had {REFERRAL_QUALIFY_AT} answers marked, you both get +{REFERRAL_WEEKLY_BONUS} a week, permanently.
+                  </p>
+                  <ShareInvite surface="out_of_credits" />
+                </div>
+              )}
+              {limitReached && (
                 <div className={cardPadded}>
                   {feedbackSent ? (
                     <p className="text-sm text-status-correct">Thanks — we&apos;ll take a look.</p>
@@ -1022,6 +1040,27 @@ export default function EvaluatePage() {
                       </ul>
                     </div>
                   </>
+                )}
+
+                {/* Challenge a friend — only on a written answer that went
+                    well, the moment a student is most likely to show it off.
+                    The link carries the question, never the score or name. */}
+                {!result.is_objective && result.total_marks > 0 &&
+                  result.marks_awarded / result.total_marks >= 0.7 && selectedQuestion && (
+                  <div className="flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
+                    <div className="max-w-[var(--measure)]">
+                      <p className="font-display text-lg leading-snug text-foreground">Think a friend can beat that?</p>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        Send them this question. If they join, you both get +{REFERRAL_WEEKLY_BONUS} credits a week.
+                      </p>
+                    </div>
+                    <ShareInvite
+                      surface="result"
+                      compact
+                      questionId={selectedQuestion.id}
+                      challenge={`I got ${result.marks_awarded}/${result.total_marks} on this ${subject} board question — can you beat it?`}
+                    />
+                  </div>
                 )}
 
                 {/* Eval quality feedback */}

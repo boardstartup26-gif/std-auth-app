@@ -15,6 +15,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   FileStack,
+  Gift,
   LayoutGrid,
   LibraryBig,
   LogOut,
@@ -31,7 +32,12 @@ const STUDY = [
   { href: "/history", label: "Results", icon: ScrollText },
 ];
 
-const ACCOUNT = [{ href: "/account", label: "Account", icon: User }];
+const ACCOUNT = [
+  // The referral program's permanent entry point. Carries its reward in the
+  // row itself so the offer is visible on every page, not only on /invite.
+  { href: "/invite", label: "Invite friends", icon: Gift, badge: "+5/wk" },
+  { href: "/account", label: "Account", icon: User },
+];
 
 function isActive(pathname: string, href: string): boolean {
   return pathname === href || pathname.startsWith(href + "/");
@@ -50,6 +56,7 @@ function NavRow({
   href,
   label,
   icon: Icon,
+  badge,
   active,
   expanded,
   onNavigate,
@@ -57,6 +64,7 @@ function NavRow({
   href: string;
   label: string;
   icon: LucideIcon;
+  badge?: string;
   active: boolean;
   expanded: boolean;
   onNavigate?: () => void;
@@ -75,6 +83,11 @@ function NavRow({
     >
       <Icon size={17} strokeWidth={1.75} className="shrink-0" aria-hidden />
       {expanded ? <span className="truncate">{label}</span> : null}
+      {expanded && badge ? (
+        <span className="ml-auto rounded-full bg-status-correct-subtle px-1.5 py-0.5 font-mono text-[10px] font-semibold tabular-nums text-status-correct">
+          {badge}
+        </span>
+      ) : null}
     </Link>
   );
 }

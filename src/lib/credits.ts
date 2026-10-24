@@ -6,8 +6,36 @@
 // increment_usage RPC — if that ever changes, all three move together.
 
 import { createAdminClient } from "@/lib/supabase/server";
-import { WEEKLY_CREDIT_LIMIT } from "@/lib/constants";
+import { MAX_WEEKLY_BONUS, WEEKLY_CREDIT_LIMIT } from "@/lib/constants";
 import { getUsageDateIST, getUsageWindowStartIST } from "@/lib/usage-date";
+
+/**
+ * This student's weekly allowance: the base limit plus active credit bonuses
+ * (referrals), capped at MAX_WEEKLY_BONUS. The one place the per-student limit
+ * is worked out — reserveTokens passes it to increment_usage as p_limit, and
+ * readCredits / /api/usage report against it, so the three can't disagree.
+ *
+ * A failed read returns the base limit: a student can lose a bonus for one
+ * request, never their base credits.
+ */
+export async function getWeeklyLimit(userId: string): Promise<number> {
+  const { data, error } = await createAdminClient()
+    .from("credit_bonuses")
+    .select("weekly_amount, expires_at")
+    .eq("user_id", userId);
+  if (error) {
+    // Expected until 20261024120000_referrals.sql is applied.
+    if (error.code !== "42P01" && error.code !== "PGRST205") {
+      console.warn("[BoardEdge] credit bonus read failed:", error.message);
+    }
+    return WEEKLY_CREDIT_LIMIT;
+  }
+  const now = Date.now();
+  const bonus = (data ?? [])
+    .filter((b) => !b.expires_at || Date.parse(b.expires_at as string) > now)
+    .reduce((sum, b) => sum + (b.weekly_amount as number), 0);
+  return WEEKLY_CREDIT_LIMIT + Math.min(MAX_WEEKLY_BONUS, Math.max(0, bonus));
+}
 
 export interface CreditBalance {
   used: number;
@@ -40,12 +68,15 @@ function istMidnightUtc(isoDate: string): number {
 
 export async function readCredits(userId: string): Promise<CreditBalance> {
   const today = getUsageDateIST();
-  const { data, error } = await createAdminClient()
-    .from("usage")
-    .select("token_count, usage_date")
-    .eq("user_id", userId)
-    .gte("usage_date", getUsageWindowStartIST(today))
-    .lte("usage_date", today);
+  const [{ data, error }, limit] = await Promise.all([
+    createAdminClient()
+      .from("usage")
+      .select("token_count, usage_date")
+      .eq("user_id", userId)
+      .gte("usage_date", getUsageWindowStartIST(today))
+      .lte("usage_date", today),
+    getWeeklyLimit(userId),
+  ]);
 
   if (error) {
     // A failed read must not read as "no credits left" — that would block a
@@ -54,8 +85,8 @@ export async function readCredits(userId: string): Promise<CreditBalance> {
     console.error("[BoardEdge] credit balance read failed:", error);
     return {
       used: 0,
-      remaining: WEEKLY_CREDIT_LIMIT,
-      limit: WEEKLY_CREDIT_LIMIT,
+      remaining: limit,
+      limit,
       nextRefill: null,
     };
   }
@@ -82,8 +113,8 @@ export async function readCredits(userId: string): Promise<CreditBalance> {
 
   return {
     used,
-    remaining: Math.max(0, WEEKLY_CREDIT_LIMIT - used),
-    limit: WEEKLY_CREDIT_LIMIT,
+    remaining: Math.max(0, limit - used),
+    limit,
     nextRefill,
   };
 }

@@ -191,7 +191,14 @@ export async function POST(req: NextRequest) {
 
   const admin = createAdminClient();
   try {
-    await persistSubmission(admin, { questionId: question.id, studentAnswer: answer, userId, evaluation });
+    await persistSubmission(admin, {
+      questionId: question.id,
+      studentAnswer: answer,
+      userId,
+      evaluation,
+      written: true,
+      inputMethod: "handwritten",
+    });
   } catch (err) {
     // Unlike the typed route there is no refund here: the credit was spent on
     // the transcription call, which succeeded. The seal is still unused, so a

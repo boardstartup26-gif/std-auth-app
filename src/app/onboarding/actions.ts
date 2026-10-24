@@ -4,6 +4,9 @@ import { z } from "zod";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { after } from "next/server";
+import { cookies } from "next/headers";
+import { safeNextPath } from "@/lib/safe-next";
+import { CHALLENGE_COOKIE } from "@/lib/referrals/constants";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
@@ -96,6 +99,13 @@ export async function completeOnboarding(
     }),
   );
 
+  // A challenge link (/i/{code}?q=…) remembered a question; start there. The
+  // cookie holds a path we built ourselves, but it is browser-held, so it is
+  // validated like any other return path.
+  const cookieStore = await cookies();
+  const challenge = safeNextPath(cookieStore.get(CHALLENGE_COOKIE)?.value);
+  if (cookieStore.has(CHALLENGE_COOKIE)) cookieStore.delete(CHALLENGE_COOKIE);
+
   revalidatePath("/", "layout");
-  redirect("/evaluate");
+  redirect(challenge?.startsWith("/evaluate?") ? challenge : "/evaluate");
 }

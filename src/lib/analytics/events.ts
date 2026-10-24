@@ -61,6 +61,18 @@ export const EVENTS = {
   /** Server: reminder emails turned on or off, and from where. */
   EMAIL_REMINDERS_CHANGED: "email_reminders_changed",
 
+  // ── Onboarding & referrals ─────────────────────────────────────────────────
+  /** Browser: an onboarding question became valid. Carries `step` (1-4). Per-step drop-off. */
+  ONBOARDING_STEP_COMPLETED: "onboarding_step_completed",
+  /** Server: someone opened a valid /i/{code} invite link. Carries `has_challenge`. */
+  REFERRAL_LINK_OPENED: "referral_link_opened",
+  /** Browser: a share button was pressed. Carries `surface` and `channel`. */
+  REFERRAL_SHARE_CLICKED: "referral_share_clicked",
+  /** Server: a new account was attributed to an inviter. Carries `flagged`. */
+  REFERRAL_ATTACHED: "referral_attached",
+  /** Server: the invited friend reached the qualifying answer count; bonuses granted. */
+  REFERRAL_QUALIFIED: "referral_qualified",
+
   // ── Feedback ───────────────────────────────────────────────────────────────
   FEEDBACK_SUBMITTED: "feedback_submitted",
 } as const;

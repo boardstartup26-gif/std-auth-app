@@ -7,6 +7,8 @@ import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
 import { sendWelcomeEmail } from "@/lib/email/welcome";
 import { NEXT_COOKIE, safeNextPath } from "@/lib/safe-next";
+import { REF_COOKIE } from "@/lib/referrals/constants";
+import { attachReferral } from "@/lib/referrals/service";
 
 // Google's PKCE exchange gives back a user but not a "was this a signup"
 // flag. For a first-ever sign-in Supabase stamps created_at and
@@ -60,6 +62,9 @@ export async function GET(request: NextRequest) {
       // the versions from policies.ts. Idempotent, never throws.
       if (isNewAccount && user) {
         await recordSignupConsent(user.id, "google_oauth");
+        // Who invited them, if they came through /i/{code}. The cookie is
+        // deleted on the response below either way. Never throws.
+        await attachReferral(user.id);
       }
 
       // Welcome email — to the Google account's own address, only for a
@@ -99,6 +104,9 @@ export async function GET(request: NextRequest) {
       }
       const response = NextResponse.redirect(`${origin}${returnTo ?? "/dashboard"}`);
       if (rawNext !== undefined) response.cookies.delete(NEXT_COOKIE);
+      // Only a new account ever uses it; a returning login just clears it so
+      // an old invite can't attach to some later signup on this browser.
+      if (cookieStore.has(REF_COOKIE)) response.cookies.delete(REF_COOKIE);
       return response;
     }
 

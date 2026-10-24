@@ -45,6 +45,7 @@ const PROTECTED_PREFIXES = [
   "/onboarding",
   "/notifications",
   "/practice-paper",
+  "/invite",
 ];
 
 // Pages that must stay reachable without a session, checked before

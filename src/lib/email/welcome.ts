@@ -34,6 +34,7 @@ export async function sendWelcomeEmail({
   const name = (firstName ?? "").trim().slice(0, 40);
   const greeting = name ? `Hi ${name},` : "Hi there,";
   const evaluateLink = `${siteUrl}/evaluate`;
+  const inviteLink = `${siteUrl}/invite`;
 
   const text = [
     greeting,
@@ -45,6 +46,8 @@ export async function sendWelcomeEmail({
     "One thing worth knowing up front: your first 2 evaluations are free to try, no extra step needed. After that, we'll need your parent or guardian to confirm consent by email before grading continues — that's a legal requirement for students under 18, and it only takes them a minute.",
     "",
     `Start practising: ${evaluateLink}`,
+    "",
+    `Studying with friends? Send them your invite link and you'll both get 5 extra credits every week: ${inviteLink}`,
     "",
     "Questions? Just reply to this email.",
     "",
@@ -62,6 +65,7 @@ export async function sendWelcomeEmail({
     <p style="font-size:16px;line-height:1.6;margin:0 0 14px;">Pick a subject and a past-paper question, write your answer, and we&rsquo;ll grade it against the official ICSE marking scheme, point by point, the way a real examiner would.</p>
     <p style="font-size:15px;line-height:1.6;color:#5C6068;margin:0 0 24px;">One thing worth knowing up front: your first 2 evaluations are free to try, no extra step needed. After that, we&rsquo;ll need your parent or guardian to confirm consent by email before grading continues &mdash; that&rsquo;s a legal requirement for students under 18, and it only takes them a minute.</p>
     <p style="margin:0 0 24px;"><a href="${safeLink}" style="display:inline-block;background:#C43D2B;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:12px 20px;border-radius:10px;">Start practising</a></p>
+    <p style="font-size:15px;line-height:1.6;margin:0 0 24px;border-top:1px solid #E4E1D8;padding-top:20px;">Studying with friends? <a href="${escapeHtml(inviteLink)}" style="color:#C43D2B;font-weight:600;">Send them your invite link</a> and you&rsquo;ll both get 5 extra credits every week.</p>
     <p style="font-size:13px;line-height:1.6;color:#5C6068;margin:0;">Questions? Just reply to this email.</p>
   </div>
 </body></html>`;

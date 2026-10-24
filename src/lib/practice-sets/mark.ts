@@ -266,6 +266,7 @@ export async function markPaper(userId: string, setId: string, deadline: number)
             studentAnswer: item.answer_text,
             userId,
             evaluation,
+            written: isSubjectiveGraded(q),
           });
           await admin
             .from("practice_set_answers")

@@ -101,6 +101,17 @@ export interface FeedbackStat {
   tags: { tag: string; count: number }[];
 }
 
+export interface ReferralStats {
+  shareClicks: number;
+  bySurface: { surface: string; label: string; count: number }[];
+  linksOpened: number;
+  attached: number;
+  flagged: number;
+  qualified: number;
+  /** Share of this window's signups that came in through an invite link. */
+  shareOfSignups: number | null;
+}
+
 export interface DashboardMetrics {
   windowDays: number;
   generatedAt: string;
@@ -132,6 +143,7 @@ export interface DashboardMetrics {
     within7d: RetentionStat;
   };
   feedback: FeedbackStat;
+  referrals: ReferralStats;
 }
 
 // ─── Fetch ───────────────────────────────────────────────────────────────────
@@ -264,6 +276,17 @@ export async function getDashboardMetrics(windowDays = 30): Promise<DashboardMet
   const feedback: FeedbackStat = { total: 0, thumbsUp: 0, thumbsDown: 0, tags: [] };
   const feedbackTags = new Map<string, number>();
 
+  const referrals: ReferralStats = {
+    shareClicks: 0,
+    bySurface: [],
+    linksOpened: 0,
+    attached: 0,
+    flagged: 0,
+    qualified: 0,
+    shareOfSignups: null,
+  };
+  const shareSurfaces = new Map<string, number>();
+
   for (const row of rows) {
     const actor = actorOf(row);
     const props = row.properties ?? {};
@@ -367,8 +390,29 @@ export async function getDashboardMetrics(windowDays = 30): Promise<DashboardMet
         }
         break;
       }
+
+      case EVENTS.REFERRAL_SHARE_CLICKED: {
+        referrals.shareClicks += 1;
+        const surface = str(props.surface) ?? "unknown";
+        shareSurfaces.set(surface, (shareSurfaces.get(surface) ?? 0) + 1);
+        break;
+      }
+      case EVENTS.REFERRAL_LINK_OPENED:
+        referrals.linksOpened += 1;
+        break;
+      case EVENTS.REFERRAL_ATTACHED:
+        referrals.attached += 1;
+        if (props.flagged === true) referrals.flagged += 1;
+        break;
+      case EVENTS.REFERRAL_QUALIFIED:
+        referrals.qualified += 1;
+        break;
     }
   }
+
+  referrals.bySurface = [...shareSurfaces.entries()]
+    .map(([surface, count]) => ({ surface, label: humanise(surface), count }))
+    .sort((a, b) => b.count - a.count);
 
   // Abandonment is resolved after the pass, because the submission that
   // cancels it may have happened later in the window than the walk-away.
@@ -525,5 +569,6 @@ export async function getDashboardMetrics(windowDays = 30): Promise<DashboardMet
     acquisition: acquisitionStats,
     retention: { d1, d7, within7d },
     feedback,
+    referrals: { ...referrals, shareOfSignups: ratio(referrals.attached, signedUp.size) },
   };
 }

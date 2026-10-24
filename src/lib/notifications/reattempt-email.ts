@@ -11,6 +11,7 @@
 import { escapeHtml, sendEmail, type SendResult } from "@/lib/email/send";
 import { unsubscribeLinks } from "@/lib/email/reminder-preferences";
 import { getSiteUrl } from "@/lib/site-url";
+import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 import { createAdminClient } from "@/lib/supabase/server";
 import { withReturnSource } from "./service";
 import { formatMarks, questionLabel, reattemptHref } from "./reattempt-copy";
@@ -89,6 +90,8 @@ export async function sendReattemptEmail({
     "",
     "— BoardEdge",
     "",
+    `Practising with friends? Invite them and you both get ${REFERRAL_WEEKLY_BONUS} extra credits every week: ${siteUrl}/invite`,
+    "",
     `Stop these reminder emails: ${unsubscribe.page}`,
   ].join("\n");
 
@@ -116,6 +119,7 @@ export async function sendReattemptEmail({
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border-bottom:1px solid #E4E1D8;margin:0 0 24px;">${rows}
     </table>
     <p style="font-size:14px;line-height:1.6;color:#5C6068;margin:0 0 28px;">Each one is marked against the same official scheme, so you&rsquo;ll see straight away whether the missing points are in.</p>
+    <p style="font-size:14px;line-height:1.6;margin:0 0 20px;">Practising with friends? <a href="${escapeHtml(`${siteUrl}/invite`)}" style="color:#C43D2B;font-weight:600;">Invite them</a> and you both get ${REFERRAL_WEEKLY_BONUS} extra credits every week.</p>
     <p style="font-size:12px;line-height:1.6;color:#8A8D93;margin:0;">You&rsquo;re getting this because you practised on BoardEdge. <a href="${escapeHtml(unsubscribe.page)}" style="color:#8A8D93;">Stop reminder emails</a></p>
   </div>
 </body></html>`;

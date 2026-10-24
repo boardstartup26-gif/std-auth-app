@@ -6,6 +6,10 @@ import { btnPrimary, numericFigures, scoreBadgeClass, sectionLabel } from "@/lib
 import type { SetSummary } from "@/lib/practice-sets/read";
 import { fmtMarks } from "@/lib/practice-sets/results";
 import { readDashboardPractice, type RecentItem } from "./_lib/recent";
+import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
+import { readFirstWeekChecklist } from "@/lib/onboarding/checklist";
+import { readReferralSummary, type ReferralSummary } from "@/lib/referrals/service";
+import { FirstWeekChecklist } from "./_components/FirstWeekChecklist";
 
 export const dynamic = "force-dynamic";
 
@@ -216,6 +220,47 @@ function QuickStart() {
   );
 }
 
+// ─── Invite friends ──────────────────────────────────────────────────────────
+// A standing row, not a banner: where the student's referral progress lives on
+// the dashboard, and the one-tap way to send another invite.
+
+function InviteRow({ summary }: { summary: ReferralSummary }) {
+  const joined = summary.friends.length;
+  const counting = summary.friends.filter((f) => f.state === "joined" || f.state === "progress").length;
+  return (
+    <section
+      className="grid items-center gap-x-8 gap-y-3 border-b border-border py-5 sm:grid-cols-[9rem_minmax(0,1fr)_auto]"
+      aria-labelledby="invite-friends"
+    >
+      <p id="invite-friends" className={rowLabel}>
+        Friends
+      </p>
+      <p className="text-sm text-muted-foreground">
+        {joined ? (
+          <>
+            <span className={`${numericFigures} font-semibold text-foreground`}>{joined}</span> joined
+            {counting ? (
+              <>
+                {" "}· <span className={numericFigures}>{counting}</span> on the way
+              </>
+            ) : null}{" "}
+            · <span className={`${numericFigures} font-semibold text-status-correct`}>+{summary.weeklyBonusEarned}</span>/week earned
+          </>
+        ) : (
+          <>
+            Invite a classmate — you both get{" "}
+            <span className="font-semibold text-status-correct">+{REFERRAL_WEEKLY_BONUS} credits a week</span>, for good.
+          </>
+        )}
+      </p>
+      <Link href="/invite" className={textLink}>
+        Invite friends
+        <ArrowRight size={14} strokeWidth={2} aria-hidden />
+      </Link>
+    </section>
+  );
+}
+
 // ─── Recent practice ─────────────────────────────────────────────────────────
 
 interface RowView {
@@ -354,9 +399,14 @@ export default async function DashboardPage() {
 
   const firstName = (user?.user_metadata?.first_name as string | undefined)?.trim();
   const greetingName = firstName || user?.email?.split("@")[0] || "there";
-  const [credits, practice] = user
-    ? await Promise.all([readCredits(user.id), readDashboardPractice(user.id)])
-    : [null, { openPaper: null, latestMarked: null, recent: [] }];
+  const [credits, practice, checklist, referrals] = user
+    ? await Promise.all([
+        readCredits(user.id),
+        readDashboardPractice(user.id),
+        readFirstWeekChecklist(user.id),
+        readReferralSummary(user.id),
+      ])
+    : [null, { openPaper: null, latestMarked: null, recent: [] }, null, null];
   const { openPaper, latestMarked, recent } = practice;
   const now = new Date();
 
@@ -379,11 +429,14 @@ export default async function DashboardPage() {
         ) : null}
       </header>
 
+      {checklist ? <FirstWeekChecklist checklist={checklist} /> : null}
+
       <div className="mt-10">{openPaper ? <ContinuePaper paper={openPaper} /> : <BuildPaper />}</div>
 
       <div className={openPaper ? "mt-6 border-t border-border" : "mt-8 border-t border-border"}>
         {latestMarked ? <LatestResult paper={latestMarked} /> : null}
         <QuickStart />
+        {referrals ? <InviteRow summary={referrals} /> : null}
       </div>
 
       <RecentPractice recent={recent} />

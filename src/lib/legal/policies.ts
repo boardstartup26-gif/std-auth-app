@@ -36,8 +36,8 @@ export const POLICIES: Record<PolicyKey, PolicyMeta> = {
       "What personal data BoardEdge collects, why, who processes it, how long it is kept, and the rights you and your parent or guardian have over it.",
     href: "/privacy",
     file: "privacy.md",
-    version: "1.4",
-    lastUpdated: "2026-09-27",
+    version: "1.5",
+    lastUpdated: "2026-10-24",
   },
   terms: {
     key: "terms",
@@ -46,8 +46,8 @@ export const POLICIES: Record<PolicyKey, PolicyMeta> = {
       "The terms for using BoardEdge — accounts, fair use of evaluation credits, AI-generated feedback, and your content.",
     href: "/terms",
     file: "terms.md",
-    version: "1.1",
-    lastUpdated: "2026-09-17",
+    version: "1.2",
+    lastUpdated: "2026-10-24",
   },
 };
 

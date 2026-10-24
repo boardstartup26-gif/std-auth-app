@@ -42,7 +42,7 @@ export default async function AdminPage({
   const windowDays = parseWindow(days);
   const metrics = await getDashboardMetrics(windowDays);
 
-  const { kpis, funnel, subjects, errors, abandonment, acquisition, retention, feedback } = metrics;
+  const { kpis, funnel, subjects, errors, abandonment, acquisition, retention, feedback, referrals } = metrics;
   const topSubject = subjects[0]?.evaluations ?? 0;
   const topError = errors[0]?.count ?? 0;
   const topSource = acquisition[0]?.visitors ?? 0;
@@ -264,6 +264,48 @@ export default async function AdminPage({
               ))}
             </div>
           )}
+        </Panel>
+
+        {/* ── Referrals ───────────────────────────────────────────────── */}
+        <Panel
+          title="Referrals"
+          subtitle="Invites shared → links opened → accounts attributed → friends who counted (2 written answers marked)."
+        >
+          <div className="divide-y divide-border">
+            {[
+              { label: "Share buttons pressed", value: referrals.shareClicks },
+              { label: "Invite links opened", value: referrals.linksOpened },
+              { label: "Signups via invite", value: referrals.attached },
+              { label: "Friends who counted", value: referrals.qualified },
+            ].map((r) => (
+              <BarRow
+                key={r.label}
+                label={r.label}
+                value={formatNumber(r.value)}
+                share={r.value / Math.max(1, referrals.shareClicks, referrals.linksOpened, referrals.attached)}
+              />
+            ))}
+          </div>
+          <p className="mt-3 text-[11px] text-muted-foreground">
+            {formatPercent(referrals.shareOfSignups)} of signups came through an invite ·{" "}
+            <span className={numericFigures}>{formatNumber(referrals.flagged)}</span> flagged for review
+            (self-referral or burst).
+          </p>
+          {referrals.bySurface.length ? (
+            <>
+              <p className={`${sectionLabel} mt-5`}>Shares by surface</p>
+              <div className="mt-1 divide-y divide-border">
+                {referrals.bySurface.map((s) => (
+                  <BarRow
+                    key={s.surface}
+                    label={s.label}
+                    value={formatNumber(s.count)}
+                    share={referrals.bySurface[0].count ? s.count / referrals.bySurface[0].count : 0}
+                  />
+                ))}
+              </div>
+            </>
+          ) : null}
         </Panel>
 
         {/* ── Drop-off + feedback ─────────────────────────────────────── */}
