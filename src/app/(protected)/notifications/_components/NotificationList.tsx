@@ -3,6 +3,7 @@
 // browser prefetches it.
 
 import type { NotificationItem, NotificationKind } from "@/lib/notifications/constants";
+import { PendingOverlay } from "@/app/_components/states/PendingSubmit";
 import { openNotificationAction } from "../actions";
 
 const KIND_LABEL: Record<NotificationKind, string> = {
@@ -35,8 +36,10 @@ export function NotificationList({ items, now }: { items: NotificationItem[]; no
               <input type="hidden" name="id" value={n.id} />
               <button
                 type="submit"
-                className="group grid w-full grid-cols-[1rem_1fr_auto] items-start gap-3 py-5 text-left transition-colors hover:bg-surface-raised/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-2"
+                className="group relative grid w-full grid-cols-[1rem_1fr_auto] items-start gap-3 py-5 text-left transition-colors hover:bg-surface-raised/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-2"
               >
+                {/* Opening is a server round trip then a redirect: acknowledge the press. */}
+                <PendingOverlay />
                 <span className="mt-2 flex justify-center" aria-hidden>
                   {isUnread ? <span className="h-2 w-2 rounded-full bg-accent" /> : null}
                 </span>

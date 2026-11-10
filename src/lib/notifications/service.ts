@@ -98,5 +98,10 @@ export async function markAllRead(userId: string): Promise<void> {
 
 /** Tags an internal href with the channel that delivered it. */
 export function withReturnSource(href: string, source: ReturnSource): string {
-  return `${href}${href.includes("?") ? "&" : "?"}src=${source}`;
+  // The query must come before any #fragment, or the browser reads `?src=`
+  // as part of the fragment and the server never sees it.
+  const hashAt = href.indexOf("#");
+  const path = hashAt === -1 ? href : href.slice(0, hashAt);
+  const hash = hashAt === -1 ? "" : href.slice(hashAt);
+  return `${path}${path.includes("?") ? "&" : "?"}src=${source}${hash}`;
 }

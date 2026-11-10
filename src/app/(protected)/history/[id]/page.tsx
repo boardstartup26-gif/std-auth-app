@@ -79,6 +79,15 @@ export default async function PracticePage({
     .eq("id", id)
     .single();
 
+  // `.single()` reports "no such row" as PGRST116. That one is a real 404 (and
+  // also what a row belonging to someone else looks like, by design). Anything
+  // else is the database failing to answer: throw to the segment's error
+  // boundary, which offers a retry, instead of telling a student their result
+  // doesn't exist. 22P02 is a malformed id (/history/abc): also a plain 404.
+  if (error && error.code !== "PGRST116" && error.code !== "22P02") {
+    console.error("[BoardEdge] result read failed:", error.message);
+    throw new Error("result unavailable");
+  }
   if (error || !data) notFound();
 
   const row = data as unknown as DetailRow;

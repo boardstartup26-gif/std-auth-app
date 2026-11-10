@@ -13,9 +13,13 @@
 
 import { createAdminClient } from "@/lib/supabase/server";
 import { isSubjectiveGraded } from "@/lib/question-format";
+import { latestPerQuestion } from "@/lib/progress/attempts";
+import { readProgressAttempts } from "@/lib/progress/read";
 import {
   DIFFICULTIES,
   DIFFICULTY_MIN_COVERAGE,
+  fitPreset,
+  LENGTH_PRESETS,
   matchesDifficulty,
   SET_TYPES,
   type SetSpec,
@@ -135,29 +139,83 @@ export function summarise(pool: PoolQuestion[], subjects: readonly string[]): Su
 }
 
 /** Question ids whose latest attempt by this student scored full marks. */
+// Shares the progress module's paged read: the previous unpaged select stopped
+// at PostgREST's 1000-row cap, so a long history quietly lost its newest
+// attempts and could call a question mastered after a later, weaker attempt.
+// A failed read still means "nothing mastered" (the paper just won't skip any).
 export async function masteredQuestionIds(userId: string): Promise<Set<string>> {
-  const { data, error } = await createAdminClient()
-    .from("student_answers")
-    .select("question_id, submitted_at, evaluations ( marks_awarded ), questions ( question_marks ( total_marks ) )")
-    .eq("user_id", userId)
-    .order("submitted_at", { ascending: true });
-  if (error) {
-    console.warn("[BoardEdge] mastered-question read failed:", error.message);
-    return new Set();
+  const read = await readProgressAttempts(userId);
+  return new Set(
+    latestPerQuestion(read.attempts)
+      .filter((a) => a.awarded >= a.total)
+      .map((a) => a.questionId),
+  );
+}
+
+// ─── Fix List ────────────────────────────────────────────────────────────────
+
+/** Fewer markable questions than this and a Fix List isn't worth sitting. */
+export const FIX_LIST_MIN_QUESTIONS = 3;
+const FIX_LIST_START_CHAPTERS = 2;
+const FIX_LIST_MAX_CHAPTERS = 5;
+
+export type FixListPlan =
+  | { ok: true; spec: SetSpec; result: Extract<BuildResult, { ok: true }> }
+  | { ok: false; reason: "no_weak_chapters" | "not_enough_questions" };
+
+/**
+ * Pure: a Quick-length paper from the student's weakest chapters, skipping
+ * questions they've already got full marks on (questions they lost marks on
+ * stay in — that's the point). `weakChapters` arrives weakest first, from
+ * lib/progress weakestChapters(). Starts with the two weakest so the paper
+ * stays focused, and only widens (up to five) when those can't fill it.
+ * The preset is then fitted to what the chosen chapters can actually supply,
+ * the same way the builder fits presets to a subject.
+ */
+export function planFixList(
+  pool: PoolQuestion[],
+  subject: string,
+  weakChapters: string[],
+  { mastered = new Set<string>(), random = Math.random }: { mastered?: Set<string>; random?: () => number } = {},
+): FixListPlan {
+  if (!weakChapters.length) return { ok: false, reason: "no_weak_chapters" };
+
+  const fresh = pool.filter((q) => q.subject === subject && !mastered.has(q.id));
+  const want = LENGTH_PRESETS.quick;
+  const wantTotal = want.objective + want.short + want.long;
+  const capFor = (chapters: string[]) => {
+    const set = new Set(chapters);
+    const cap = { objective: 0, short: 0, long: 0 } as Record<SetType, number>;
+    for (const q of fresh) if (q.chapter && set.has(q.chapter)) cap[q.type] += 1;
+    return cap;
+  };
+
+  const limit = Math.min(weakChapters.length, FIX_LIST_MAX_CHAPTERS);
+  let take = Math.min(FIX_LIST_START_CHAPTERS, limit);
+  let cap = capFor(weakChapters.slice(0, take));
+  const total = (c: Record<SetType, number>) => c.objective + c.short + c.long;
+  while (total(cap) < wantTotal && take < limit) {
+    take += 1;
+    cap = capFor(weakChapters.slice(0, take));
   }
-  const latest = new Map<string, boolean>();
-  for (const row of (data ?? []) as unknown as {
-    question_id: string;
-    evaluations: { marks_awarded: number | string | null }[] | null;
-    questions: { question_marks: { total_marks: number | string | null }[] | { total_marks: number | string | null } | null } | null;
-  }[]) {
-    const ev = row.evaluations?.[0];
-    const qm = row.questions?.question_marks;
-    const total = Number((Array.isArray(qm) ? qm[0] : qm)?.total_marks ?? 0);
-    if (!ev || total <= 0) continue;
-    latest.set(row.question_id, Number(ev.marks_awarded ?? 0) >= total);
-  }
-  return new Set([...latest.entries()].filter(([, full]) => full).map(([id]) => id));
+
+  const counts = fitPreset(want, cap);
+  if (total(counts) < FIX_LIST_MIN_QUESTIONS) return { ok: false, reason: "not_enough_questions" };
+
+  const spec: SetSpec = {
+    subject,
+    counts,
+    targetMarks: null,
+    difficulty: "any",
+    chapters: weakChapters.slice(0, take),
+    skipMastered: true,
+    length: "quick",
+    fixList: true,
+  };
+  const result = selectQuestions(pool, spec, { mastered, random });
+  // Can't fail: counts were fitted to exactly this filter. Guarded anyway.
+  if (!result.ok) return { ok: false, reason: "not_enough_questions" };
+  return { ok: true, spec, result };
 }
 
 // ─── Selection ───────────────────────────────────────────────────────────────

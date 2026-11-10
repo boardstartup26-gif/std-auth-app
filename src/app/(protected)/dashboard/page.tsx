@@ -10,6 +10,17 @@ import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 import { readFirstWeekChecklist } from "@/lib/onboarding/checklist";
 import { readReferralSummary, type ReferralSummary } from "@/lib/referrals/service";
 import { FirstWeekChecklist } from "./_components/FirstWeekChecklist";
+import { RecoveryRow } from "./_components/RecoveryRow";
+import { readProgressAttempts } from "@/lib/progress/read";
+import { buildProgressSnapshot } from "@/lib/progress";
+import { after } from "next/server";
+import { getEvaluationGateState } from "@/lib/parent-consent/service";
+import { ensureWeeklyPlan, viewPlan, type PlanView } from "@/lib/board-plan/service";
+import { EVENTS } from "@/lib/analytics/events";
+import { recordServerEvent } from "@/lib/analytics/server";
+import { BoardPlanCard } from "./_components/BoardPlanCard";
+import { EmptyState } from "@/app/_components/states/EmptyState";
+import { ReloadableError } from "@/app/_components/states/ErrorState";
 
 export const dynamic = "force-dynamic";
 
@@ -380,10 +391,14 @@ function RecentPractice({ recent }: { recent: RecentItem[] }) {
           </tbody>
         </table>
       ) : (
-        <p className="border-b border-border py-6 text-sm text-muted-foreground">
-          Nothing here yet. Papers and questions you attempt will be listed here, with a link to
-          each result.
-        </p>
+        <EmptyState
+          compact
+          className="mt-5"
+          title="Your practice will show up here"
+          description="Answer a past-paper question or sit a full paper, and each attempt is listed here with a link to its marked result."
+          primary={{ label: "Practice a question", href: "/evaluate" }}
+          secondary={{ label: "Build a paper", href: "/practice-paper" }}
+        />
       )}
     </section>
   );
@@ -399,15 +414,49 @@ export default async function DashboardPage() {
 
   const firstName = (user?.user_metadata?.first_name as string | undefined)?.trim();
   const greetingName = firstName || user?.email?.split("@")[0] || "there";
-  const [credits, practice, checklist, referrals] = user
+  const [credits, practice, checklist, referrals, progressRead, gate] = user
     ? await Promise.all([
         readCredits(user.id),
         readDashboardPractice(user.id),
         readFirstWeekChecklist(user.id),
         readReferralSummary(user.id),
+        readProgressAttempts(user.id),
+        getEvaluationGateState(user.id),
       ])
-    : [null, { openPaper: null, latestMarked: null, recent: [] }, null, null];
-  const { openPaper, latestMarked, recent } = practice;
+    : [null, { openPaper: null, latestMarked: null, recent: [], loadFailed: false }, null, null, null, null];
+  // No row until there is something to say, and none on a failed read: a
+  // "0 weeks" built from missing data would be a false statement.
+  const progress =
+    progressRead?.ok && progressRead.attempts.length ? buildProgressSnapshot(progressRead.attempts) : null;
+  const { openPaper, latestMarked, recent, loadFailed } = practice;
+
+  // This week's Board Plan, created on first view if the Monday run hasn't
+  // reached this student (or they're new this week). Only for students who
+  // can be graded right now: every task leads to marking. Any failure —
+  // including the table not existing yet — means no card, never a broken page.
+  let plan: PlanView | null = null;
+  if (user && gate?.allowed && progressRead?.ok && progressRead.attempts.length) {
+    try {
+      const ensured = await ensureWeeklyPlan(user.id, progressRead.attempts);
+      if (ensured) {
+        plan = viewPlan(ensured.plan, progressRead.attempts);
+        if (ensured.created) {
+          const userId = user.id;
+          const { weekStart, tasks } = ensured.plan;
+          after(() =>
+            recordServerEvent({
+              eventName: EVENTS.BOARD_PLAN_CREATED,
+              userId,
+              properties: { source: "dashboard", week_start: weekStart, kinds: tasks.map((t) => t.kind) },
+              path: "/dashboard",
+            }),
+          );
+        }
+      }
+    } catch (err) {
+      console.warn("[BoardEdge] dashboard board plan unavailable:", err instanceof Error ? err.message : err);
+    }
+  }
   const now = new Date();
 
   return (
@@ -431,15 +480,34 @@ export default async function DashboardPage() {
 
       {checklist ? <FirstWeekChecklist checklist={checklist} /> : null}
 
-      <div className="mt-10">{openPaper ? <ContinuePaper paper={openPaper} /> : <BuildPaper />}</div>
+      {/* When the practice reads failed, "Build a practice paper" would be a
+          false statement — there may well be an open paper we couldn't see — so
+          the slot says what happened instead, and offers the retry. */}
+      <div className="mt-10">
+        {loadFailed && !openPaper ? (
+          <ReloadableError
+            title="We couldn’t load your practice"
+            message="Your papers and answers are safe — we just couldn’t fetch them this time. Try again to see where you left off."
+          />
+        ) : openPaper ? (
+          <ContinuePaper paper={openPaper} />
+        ) : (
+          <BuildPaper />
+        )}
+      </div>
+
+      {plan ? <BoardPlanCard view={plan} rowLabel={rowLabel} /> : null}
 
       <div className={openPaper ? "mt-6 border-t border-border" : "mt-8 border-t border-border"}>
         {latestMarked ? <LatestResult paper={latestMarked} /> : null}
+        {progress ? <RecoveryRow snap={progress} rowLabel={rowLabel} textLink={textLink} /> : null}
         <QuickStart />
         {referrals ? <InviteRow summary={referrals} /> : null}
       </div>
 
-      <RecentPractice recent={recent} />
+      {/* Hidden while failed-and-empty: the error above already speaks for it,
+          and an "empty" panel here would contradict it. */}
+      {loadFailed && !recent.length ? null : <RecentPractice recent={recent} />}
     </div>
   );
 }

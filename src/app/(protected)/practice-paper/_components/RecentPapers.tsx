@@ -5,6 +5,7 @@ import Link from "next/link";
 import { btnPrimary, btnSecondary, numericFigures } from "@/lib/ui";
 import type { SetSummary } from "@/lib/practice-sets/read";
 import { fmtMarks } from "@/lib/practice-sets/results";
+import { ReloadableError } from "@/app/_components/states/ErrorState";
 
 function dateLabel(iso: string): string {
   return new Date(iso).toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short" });
@@ -70,8 +71,35 @@ function Card({ s }: { s: SetSummary }) {
   );
 }
 
-export function RecentPapers({ sets }: { sets: SetSummary[] }) {
-  if (!sets.length) return null;
+export function RecentPapers({ sets, failed = false }: { sets: SetSummary[]; failed?: boolean }) {
+  // A failed read is not "no papers": the student may have one in progress.
+  // Saying so (with a retry) beats silently showing only the builder.
+  if (failed) {
+    return (
+      <section className="mt-10" aria-labelledby="recent-papers">
+        <h2 id="recent-papers" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          Your recent papers
+        </h2>
+        <ReloadableError
+          className="mt-4"
+          title="We couldn’t load your papers"
+          message="Your papers and answers are safe. Try again to see where you left off."
+        />
+      </section>
+    );
+  }
+
+  // No papers yet: the builder sits directly below, so this is one quiet line
+  // that says what to do with it rather than a second panel competing with it.
+  if (!sets.length) {
+    return (
+      <p className="mt-10 border-t border-rule pt-6 text-sm text-muted-foreground">
+        You haven’t built a paper yet. Choose a subject and a length below, and your first one will be
+        saved here as soon as you build it.
+      </p>
+    );
+  }
+
   return (
     <section className="mt-10" aria-labelledby="recent-papers">
       <h2 id="recent-papers" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">

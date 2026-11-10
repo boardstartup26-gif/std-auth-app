@@ -10,10 +10,12 @@
 // stays the only surface that shows them.
 
 import { redirect } from "next/navigation";
-import Link from "next/link";
+import { ScrollText } from "lucide-react";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import { Hairline } from "@/app/_components/Hairline";
-import { btnPrimary, errorAlert, numericFigures, sectionLabel } from "@/lib/ui";
+import { EmptyState } from "@/app/_components/states/EmptyState";
+import { ReloadableError } from "@/app/_components/states/ErrorState";
+import { numericFigures, sectionLabel } from "@/lib/ui";
 import {
   computeStats,
   groupAttempts,
@@ -116,9 +118,19 @@ export default async function HistoryPage() {
     .order("submitted_at", { ascending: false });
 
   if (error) {
+    // The provider's message stays in the server log; the student gets a
+    // sentence and a retry. (This used to print `error.message` on the page.)
+    console.error("[BoardEdge] history read failed:", error.message);
     return (
       <div className={historyShell}>
-        <div className={errorAlert}>Failed to load history: {error.message}</div>
+        <p className={sectionLabel}>Past submissions</p>
+        <h1 className="display-section mt-2">Your History</h1>
+        <ReloadableError
+          className="mt-10"
+          title="We couldn’t load your results"
+          message="Your submissions are safe — we just couldn’t fetch them this time. Try again in a moment."
+          secondary={{ label: "Back to dashboard", href: "/dashboard" }}
+        />
       </div>
     );
   }
@@ -165,14 +177,13 @@ export default async function HistoryPage() {
       {attempts.length === 0 ? (
         <>
           <Hairline className="my-8" />
-          <div className="rounded-xl border border-dashed border-border px-6 py-10 text-center">
-            <p className="text-sm text-muted-foreground">
-              No evaluations yet. Submit your first answer to see results here.
-            </p>
-            <Link href="/evaluate" className={`${btnPrimary} mt-6`}>
-              Start evaluation
-            </Link>
-          </div>
+          <EmptyState
+            icon={ScrollText}
+            title="No results yet"
+            description="Answer a past-paper question and it’s marked point by point against the board’s scheme. Every marked answer is kept here so you can see what you’re improving."
+            primary={{ label: "Practice a question", href: "/evaluate" }}
+            secondary={{ label: "Build a practice paper", href: "/practice-paper" }}
+          />
         </>
       ) : (
         <>

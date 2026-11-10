@@ -102,6 +102,18 @@ export interface SetSpec {
   length?: PaperLength;
   /** Set when this paper is a retry of another paper's missed questions. */
   retryOf?: string;
+  /**
+   * Set when the Fix List built this paper from the student's weakest
+   * chapters (lib/progress weakestChapters). `chapters` above holds them.
+   */
+  fixList?: true;
+}
+
+/** What to call a paper on its cover and results. */
+export function paperKindLabel(spec: Pick<SetSpec, "retryOf" | "fixList">): string {
+  if (spec.fixList) return "Fix List";
+  if (spec.retryOf) return "Retry paper";
+  return "Practice paper";
 }
 
 /** Per-subject facts the builder needs to offer only what can be built. */

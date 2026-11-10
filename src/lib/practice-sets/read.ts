@@ -41,7 +41,14 @@ export interface SetSummary {
   submittedAt: string | null;
 }
 
-export async function listRecentSets(userId: string, limit = 6): Promise<SetSummary[]> {
+/**
+ * "No papers" and "couldn't read your papers" are different facts and have to
+ * look different on screen: an empty list invites the student to build their
+ * first paper, a failed read must not. Hence a result that says which it was.
+ */
+export type RecentSetsResult = { ok: true; sets: SetSummary[] } | { ok: false; sets: [] };
+
+export async function tryListRecentSets(userId: string, limit = 6): Promise<RecentSetsResult> {
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("practice_sets")
@@ -54,9 +61,9 @@ export async function listRecentSets(userId: string, limit = 6): Promise<SetSumm
     .limit(limit);
   if (error) {
     console.warn("[BoardEdge] practice set list failed:", error.message);
-    return [];
+    return { ok: false, sets: [] };
   }
-  return ((data ?? []) as unknown as {
+  const sets = ((data ?? []) as unknown as {
     id: string;
     subject: string;
     status: PaperStatus;
@@ -79,9 +86,23 @@ export async function listRecentSets(userId: string, limit = 6): Promise<SetSumm
     createdAt: r.created_at,
     submittedAt: r.submitted_at,
   }));
+  return { ok: true, sets };
+}
+
+/** Same read, for callers that only want the list and treat a failure as empty. */
+export async function listRecentSets(userId: string, limit = 6): Promise<SetSummary[]> {
+  return (await tryListRecentSets(userId, limit)).sets;
 }
 
 // ─── One paper ───────────────────────────────────────────────────────────────
+
+/** Thrown by a strict readPaper when the paper exists but couldn't be read. */
+export class PaperUnavailableError extends Error {
+  constructor(detail: string) {
+    super(`practice paper unavailable: ${detail}`);
+    this.name = "PaperUnavailableError";
+  }
+}
 
 export type MarkState = "draft" | "pending" | "grading" | "marked" | "failed" | "skipped";
 
@@ -141,7 +162,19 @@ interface EvaluationRow {
   improvement_tips: string[] | null;
 }
 
-export async function readPaper(userId: string, setId: string): Promise<Paper | null> {
+/**
+ * `strict` separates "this paper isn't yours / doesn't exist" (null, which the
+ * page renders as a 404) from "the database couldn't answer" (throws, which the
+ * page's error boundary renders as a retryable failure). Without it, a blip in
+ * the answers query would show a student a blank paper that looks like their
+ * work was lost, and a blip in the paper query would tell them it was deleted.
+ * Non-strict callers (server actions) keep the original null-on-failure shape.
+ */
+export async function readPaper(
+  userId: string,
+  setId: string,
+  { strict = false }: { strict?: boolean } = {},
+): Promise<Paper | null> {
   if (!isPaperId(setId)) return null;
   const supabase = await createClient();
   const [{ data: set, error }, { data: answerRows, error: answersError }] = await Promise.all([
@@ -159,10 +192,16 @@ export async function readPaper(userId: string, setId: string): Promise<Paper | 
       .eq("set_id", setId),
   ]);
   if (error || !set) {
-    if (error) console.warn("[BoardEdge] practice set read failed:", error.message);
+    if (error) {
+      console.warn("[BoardEdge] practice set read failed:", error.message);
+      if (strict) throw new PaperUnavailableError("paper read");
+    }
     return null;
   }
-  if (answersError) console.warn("[BoardEdge] practice set answers read failed:", answersError.message);
+  if (answersError) {
+    console.warn("[BoardEdge] practice set answers read failed:", answersError.message);
+    if (strict) throw new PaperUnavailableError("answers read");
+  }
   const row = set as unknown as {
     id: string;
     user_id: string;
@@ -184,6 +223,7 @@ export async function readPaper(userId: string, setId: string): Promise<Paper | 
   const { data: qs, error: qError } = await admin.from("questions").select(QUESTION_SELECT).in("id", row.question_ids);
   if (qError) {
     console.error("[BoardEdge] practice set questions read failed:", qError.message);
+    if (strict) throw new PaperUnavailableError("questions read");
     return null;
   }
 
@@ -215,7 +255,10 @@ export async function readPaper(userId: string, setId: string): Promise<Paper | 
           "examiner_feedback, improvement_tips",
       )
       .in("student_answer_id", [...answerIds.values()]);
-    if (evalError) console.error("[BoardEdge] practice set results read failed:", evalError.message);
+    if (evalError) {
+      console.error("[BoardEdge] practice set results read failed:", evalError.message);
+      if (strict) throw new PaperUnavailableError("results read");
+    }
     const byAnswer = new Map(
       ((evals ?? []) as unknown as (EvaluationRow & { student_answer_id: string })[]).map((e) => [e.student_answer_id, e]),
     );

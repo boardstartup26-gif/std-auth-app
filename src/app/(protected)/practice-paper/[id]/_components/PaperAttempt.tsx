@@ -47,7 +47,8 @@ export interface AttemptPaper {
   startedAt: string | null;
   /** Set when the student asked for a marks total the papers couldn't hit exactly. */
   targetMarks: number | null;
-  retry: boolean;
+  /** "Practice paper", "Retry paper" or "Fix List" (paperKindLabel). */
+  kindLabel: string;
   questions: PaperQuestion[];
   answers: Record<string, DraftAnswer & { updatedAt: string }>;
 }
@@ -453,7 +454,7 @@ export function PaperAttempt({
         <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-card">
           <div className="border-b border-rule px-6 py-8 text-center sm:px-10">
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">
-              {paper.retry ? "Retry paper" : "Practice paper"} · ICSE Class 10
+              {paper.kindLabel} · ICSE Class 10
             </p>
             <h1 className="mt-3 font-display text-4xl text-foreground">{paper.subject}</h1>
             <p className={`${numericFigures} mt-4 text-sm text-muted-foreground`}>
@@ -507,7 +508,10 @@ export function PaperAttempt({
   const saveLabel: Record<SaveState, string> = {
     saved: "All answers saved",
     saving: "Saving…",
-    offline: "Not saved yet. Retrying",
+    // Says where the work is, not just that saving failed: it's mirrored to this
+    // device on every keystroke (writeBackup), so this is accurate, and it's
+    // what a student actually wants to know when the cloud copy is behind.
+    offline: "Not saved yet. Your answers are kept on this device",
     locked: "Saving paused: parent consent needed",
     closed: "This paper has been submitted",
   };
@@ -517,7 +521,7 @@ export function PaperAttempt({
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-5 gap-y-2">
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold text-foreground">{paper.subject}</p>
-          <p className="text-xs text-muted-foreground">{paper.retry ? "Retry paper" : "Practice paper"}</p>
+          <p className="text-xs text-muted-foreground">{paper.kindLabel}</p>
         </div>
         <p className={`${numericFigures} text-sm text-muted-foreground`}>
           <span className="font-semibold text-foreground">{answeredCount}</span>/{questions.length} answered
@@ -530,6 +534,18 @@ export function PaperAttempt({
           aria-live="polite"
         >
           {saveLabel[saveState]}
+          {saveState === "offline" ? (
+            <>
+              {" · "}
+              <button
+                type="button"
+                onClick={() => void flushAll()}
+                className="font-medium underline underline-offset-2 hover:text-foreground"
+              >
+                Retry now
+              </button>
+            </>
+          ) : null}
         </p>
         <div className="ml-auto flex gap-2">
           {view === "paper" ? (

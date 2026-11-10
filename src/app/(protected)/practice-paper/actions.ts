@@ -21,7 +21,9 @@ import {
   SET_TYPES,
   type SetSpec,
 } from "@/lib/practice-sets/constants";
-import { loadPool, masteredQuestionIds, selectQuestions } from "@/lib/practice-sets/build";
+import { loadPool, masteredQuestionIds, planFixList, selectQuestions } from "@/lib/practice-sets/build";
+import { readProgressAttempts } from "@/lib/progress/read";
+import { computeLeakage, latestPerQuestion, weakestChapters } from "@/lib/progress";
 import { creditCost } from "@/lib/practice-sets/mark";
 import { isPaperId, readPaper } from "@/lib/practice-sets/read";
 import { refundTokens, reserveTokens } from "@/lib/evaluation/grading";
@@ -147,6 +149,105 @@ export async function buildPracticeSet(_prev: BuildState, formData: FormData): P
   );
 
   redirect(`/practice-paper/${row.id}${result.exactFit ? "" : "?fit=closest"}`);
+}
+
+// ─── Fix List ────────────────────────────────────────────────────────────────
+
+const FixListSchema = z.object({ subject: z.enum(SUBJECTS) });
+
+/**
+ * A Quick-length paper from the student's weakest chapters in one subject,
+ * chosen from their own marked answers (lib/progress) — no filters to set.
+ * Real PYQs only, through the same selection and the same paper flow as any
+ * other practice paper. Reopens an in-progress Fix List for the subject
+ * instead of building another. On failure it returns to /progress with a
+ * reason the page explains; it never builds a paper the student didn't need.
+ */
+export async function buildFixList(formData: FormData): Promise<void> {
+  const userId = await currentUserId("/progress");
+  const parsed = FixListSchema.safeParse({ subject: formData.get("subject") });
+  if (!parsed.success) redirect("/progress");
+  const { subject } = parsed.data;
+  // A declared `never` function, so TypeScript narrows after each call.
+  function back(reason: "error" | "none" | "thin"): never {
+    redirect(`/progress?subject=${encodeURIComponent(subject)}&fix=${reason}`);
+  }
+
+  // An open Fix List for this subject is still the work to do: send the
+  // student back to it rather than leaving a second paper nobody will sit.
+  // Checked here, server-side, so every entry point (/progress, the dashboard
+  // row, the Board Plan task) behaves the same. In progress covers started and
+  // unstarted; a paper being marked or already marked is done with.
+  const { data: open, error: openError } = await createAdminClient()
+    .from("practice_sets")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("subject", subject)
+    .eq("status", "in_progress")
+    .eq("spec->>fixList", "true")
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+  if (openError) console.warn("[BoardEdge] open fix list lookup failed:", openError.message);
+  if (open) redirect(`/practice-paper/${open.id}`);
+
+  // One read feeds both the weak chapters and the mastered set, so the two
+  // can't describe different moments.
+  const read = await readProgressAttempts(userId);
+  if (!read.ok) back("error");
+  const attempts = read.attempts.filter((a) => a.subject === subject);
+  const weak = weakestChapters(computeLeakage(attempts), { subject, limit: 5 });
+  const mastered = new Set(
+    latestPerQuestion(read.attempts)
+      .filter((a) => a.awarded >= a.total)
+      .map((a) => a.questionId),
+  );
+
+  let pool;
+  try {
+    pool = await loadPool(subject);
+  } catch (err) {
+    console.error("[BoardEdge] fix list pool read failed:", err);
+    back("error");
+  }
+  const plan = planFixList(pool, subject, weak.map((c) => c.chapter), { mastered });
+  if (!plan.ok) back(plan.reason === "no_weak_chapters" ? "none" : "thin");
+  const { spec, result } = plan;
+
+  const { data: row, error } = await createAdminClient()
+    .from("practice_sets")
+    .insert({
+      user_id: userId,
+      subject,
+      spec,
+      question_ids: result.questions.map((q) => q.id),
+      total_marks: result.totalMarks,
+    })
+    .select("id")
+    .single();
+  if (error || !row) {
+    console.error("[BoardEdge] fix list insert failed:", error?.message);
+    back("error");
+  }
+
+  after(() =>
+    recordServerEvent({
+      eventName: EVENTS.PRACTICE_SET_CREATED,
+      userId,
+      properties: {
+        set_id: row.id,
+        subject,
+        fix_list: true,
+        length: spec.length,
+        counts: spec.counts,
+        total_marks: result.totalMarks,
+        chapters: spec.chapters.length,
+        source: String(formData.get("src") ?? "").slice(0, 32) || null,
+      },
+      path: "/progress",
+    }),
+  );
+  redirect(`/practice-paper/${row.id}`);
 }
 
 // ─── Attempt ─────────────────────────────────────────────────────────────────

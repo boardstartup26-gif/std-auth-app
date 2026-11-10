@@ -9,8 +9,9 @@ import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
 import { SUBJECTS } from "@/app/(protected)/evaluate/_lib/question";
 import { loadPool, summarise } from "@/lib/practice-sets/build";
-import { listRecentSets } from "@/lib/practice-sets/read";
-import { errorAlert, sectionLabel } from "@/lib/ui";
+import { tryListRecentSets } from "@/lib/practice-sets/read";
+import { sectionLabel } from "@/lib/ui";
+import { ReloadableError } from "@/app/_components/states/ErrorState";
 import { BuilderForm } from "./_components/BuilderForm";
 import { RecentPapers } from "./_components/RecentPapers";
 
@@ -28,7 +29,7 @@ export default async function PracticePaperPage({
   } = await supabase.auth.getUser();
   if (!user) redirect("/login?next=/practice-paper");
 
-  const [poolResult, credits, recent] = await Promise.all([
+  const [poolResult, credits, recentResult] = await Promise.all([
     loadPool().then(
       (pool) => ({ ok: true as const, pool }),
       (err: unknown) => {
@@ -37,8 +38,9 @@ export default async function PracticePaperPage({
       },
     ),
     readCredits(user.id),
-    listRecentSets(user.id),
+    tryListRecentSets(user.id),
   ]);
+  const recent = recentResult.sets;
 
   return (
     <div className="mx-auto min-h-screen max-w-6xl px-6 py-12">
@@ -49,7 +51,7 @@ export default async function PracticePaperPage({
         paper marked point by point when you hand it in.
       </p>
 
-      <RecentPapers sets={recent} />
+      <RecentPapers sets={recent} failed={!recentResult.ok} />
 
       {recent.length ? (
         <h2 className="mt-14 font-display text-2xl text-foreground">Build a new paper</h2>
@@ -62,9 +64,12 @@ export default async function PracticePaperPage({
           initialSubject={subject}
         />
       ) : (
-        <p className={`${errorAlert} mt-10`} role="alert">
-          We couldn’t load the question bank just now. Please refresh in a moment.
-        </p>
+        <ReloadableError
+          className="mt-10"
+          title="We couldn’t load the question bank"
+          message="Papers are built from the question bank, and it didn’t respond this time. Your existing papers are safe. Try again in a moment."
+          secondary={{ label: "Practice a single question", href: "/evaluate" }}
+        />
       )}
     </div>
   );

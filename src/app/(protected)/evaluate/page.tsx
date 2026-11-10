@@ -27,9 +27,13 @@ import {
   REFERRAL_WEEKLY_BONUS,
 } from "@/lib/constants";
 import { ShareInvite } from "@/app/_components/ShareInvite";
+import { ErrorState } from "@/app/_components/states/ErrorState";
+import { Skeleton } from "@/app/_components/states/Skeleton";
 import { EVENTS, FAILURE_STAGES } from "@/lib/analytics/events";
 import { track } from "@/lib/analytics/track";
 import { isSubjectiveGraded } from "@/lib/question-format";
+import { requestJson } from "@/lib/request";
+import { clearDraft, readDraft, saveDraft } from "@/lib/drafts";
 import { QuestionPicker } from "./_components/QuestionPicker";
 import { HandwrittenAnswer } from "./_components/HandwrittenAnswer";
 import { ContextBlock, FigureSlot, FigureViewer } from "../_components/QuestionSheetParts";
@@ -77,6 +81,10 @@ interface EvaluationResult {
   points_hit?: string[];
   points_missed?: string[];
   conceptual_errors: string[];
+  // Exam-style slips (units, prescribed wording…). Optional: the API has always
+  // sent it, but it was never declared or rendered here, and it isn't stored,
+  // so only a just-graded result carries it — never read it without a fallback.
+  icse_style_issues?: string[];
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
   examiner_feedback: string;
@@ -96,6 +104,26 @@ const NON_OCR_LOADING_MESSAGES = [
   "Evaluating conceptual clarity and depth…",
   "Finalizing your score…",
 ];
+
+// Reads that should answer in a second or two get a short leash, so a stalled
+// connection becomes a retryable error instead of a spinner that never ends.
+const READ_TIMEOUT_MS = 15_000;
+
+// Marking is a model call, not a read. This is deliberately well past a normal
+// run: its only job is to stop an unbounded wait, not to cut off slow marking
+// (the server may still finish and charge for a request the browser gave up
+// on, which is why the timeout message sends the student to Results first).
+const EVALUATE_TIMEOUT_MS = 90_000;
+
+// A subject's id never changes within a session; remembering it saves one round
+// trip every time a student comes back to a subject they've already opened.
+const subjectIdCache = new Map<string, string | number>();
+
+/** The student's remaining credits, or null when they couldn't be read. */
+async function loadBalance(): Promise<number | null> {
+  const res = await requestJson<{ tokens_remaining?: number }>("/api/usage", {}, { timeoutMs: READ_TIMEOUT_MS });
+  return res.ok ? (res.data.tokens_remaining ?? WEEKLY_CREDIT_LIMIT) : null;
+}
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -132,7 +160,37 @@ function Section({ title, items, color }: { title: string; items: string[]; colo
 // Only the remaining count is coloured. The per-question cost beside it stays
 // neutral, so the colour always answers "how much do I have left", never
 // "what does this cost". Bands are absolute, not proportional: 13+ / 7–12 / <7.
-function TokenBadge({ tokensRemaining, tokenCost }: { tokensRemaining: number; tokenCost: number }) {
+function TokenBadge({
+  tokensRemaining,
+  failed,
+  onRetry,
+  tokenCost,
+}: {
+  /** null until the balance has been read — never a guessed number. */
+  tokensRemaining: number | null;
+  failed: boolean;
+  onRetry: () => void;
+  tokenCost: number;
+}) {
+  if (tokensRemaining === null) {
+    // The server enforces credits on every request regardless; this is only the
+    // readout. Unknown stays unknown rather than showing the full allowance.
+    return failed ? (
+      <p className="m-0 text-center text-[10px] font-semibold text-muted-foreground">
+        Credit balance unavailable ·{" "}
+        <button type="button" onClick={onRetry} className="underline underline-offset-2 hover:text-foreground">
+          Retry
+        </button>
+        {tokenCost > 0 && (
+          <> · costs <span className="font-semibold text-foreground">{tokenCost}</span></>
+        )}
+      </p>
+    ) : (
+      <div className="flex justify-center" role="status" aria-label="Checking your credits">
+        <Skeleton className="h-3 w-36" />
+      </div>
+    );
+  }
   return (
     <p className="m-0 text-center text-[10px] font-semibold text-muted-foreground">
       <span className={creditCountClass(tokensRemaining)}>{tokensRemaining}</span>
@@ -171,19 +229,29 @@ export default function EvaluatePage() {
   const pendingQuestionRef = useRef<string | null>(initialSubject ? searchParams.get("q") : null);
   const returnSourceRef = useRef<string | null>(searchParams.get("src")?.slice(0, 32) ?? null);
 
-  const [authChecked,       setAuthChecked]       = useState(false);
   const [subject,           setSubject]           = useState(initialSubject);
   const [selectedQuestionId, setSelectedQuestionId] = useState("");
   const [studentAnswer,     setStudentAnswer]     = useState("");
+  // True while the answer box holds text restored from this device's saved
+  // draft, so the student is told where unexpected words came from.
+  const [draftRestored,     setDraftRestored]     = useState(false);
   const [questions,         setQuestions]         = useState<Question[]>([]);
   const [loadingQuestions,  setLoadingQuestions]  = useState(Boolean(initialSubject));
+  // Distinct from "no questions": the fetch failed, so say that, and offer retry.
+  const [questionsError,    setQuestionsError]    = useState(false);
+  const [reloadKey,         setReloadKey]         = useState(0);
   const [evaluating,        setEvaluating]        = useState(false);
   const [result,            setResult]            = useState<EvaluationResult | null>(null);
   const [error,             setError]             = useState<string | null>(null);
-  const [tokensRemaining,   setTokensRemaining]   = useState<number>(WEEKLY_CREDIT_LIMIT);
+  // Whether sending the same answer again can sensibly succeed (a dropped
+  // connection, a server fault) as opposed to a refusal (limit, consent).
+  const [errorRetryable,    setErrorRetryable]    = useState(false);
+  const [tokensRemaining,   setTokensRemaining]   = useState<number | null>(null);
+  const [tokensFailed,      setTokensFailed]      = useState(false);
   const [limitReached,      setLimitReached]      = useState(false);
   const [feedbackText,      setFeedbackText]      = useState("");
   const [feedbackSent,      setFeedbackSent]      = useState(false);
+  const [feedbackStatus,    setFeedbackStatus]    = useState<"idle" | "sending" | "error">("idle");
   const questionOpenedAt = useRef<number | null>(null);
   const [evalRating,        setEvalRating]        = useState<"up" | "down" | null>(null);
   const [evalFeedbackText,  setEvalFeedbackText]  = useState("");
@@ -194,6 +262,7 @@ export default function EvaluatePage() {
   const [reportOpen,        setReportOpen]        = useState(false);
   const [reportText,        setReportText]        = useState("");
   const [reportSent,        setReportSent]        = useState(false);
+  const [reportFailed,      setReportFailed]      = useState(false);
   // Written questions only: type the answer, or photograph a handwritten one.
   const [answerMode,        setAnswerMode]        = useState<"type" | "photo">("type");
   const resultRef = useRef<HTMLDivElement>(null);
@@ -261,8 +330,12 @@ export default function EvaluatePage() {
    */
   const handleAnswerChange = useCallback((value: string) => {
     setStudentAnswer(value);
+    setDraftRestored(false);
     const attempt = attemptRef.current;
     if (!attempt) return;
+    // Kept on this device as it's typed (never sent anywhere), so an answer
+    // survives a failed request, a refresh, or an error boundary resetting the page.
+    saveDraft(attempt.questionId, value);
     attempt.typedChars = value.length;
     if (!attempt.startedTyping && value.trim().length > 0) {
       attempt.startedTyping = true;
@@ -278,15 +351,22 @@ export default function EvaluatePage() {
 
   // ─── Auth ─────────────────────────────────────────────────────────────────
 
+  // Runs alongside the page, not in front of it. This used to hold the whole
+  // screen on "Checking session…" until a round trip to Supabase returned —
+  // for a route middleware has already refused to anyone signed out. The
+  // check itself is unchanged and still redirects; it just no longer makes
+  // every student stare at a blank page first. Every API route re-checks the
+  // session on its own, so nothing is reachable in the meantime.
   useEffect(() => {
     async function checkAuth() {
       const { data: { user }, error } = await supabase.auth.getUser();
-      if (!user || error) {
-        await supabase.auth.signOut();
-        router.push("/login");
-        return;
-      }
-      setAuthChecked(true);
+      if (user && !error) return;
+      // A dropped connection is not a signed-out student. Supabase reports it
+      // as a retryable fetch error; treating it like a bad session used to log
+      // people out (and drop them on /login) every time their wifi blinked.
+      if (error?.name === "AuthRetryableFetchError") return;
+      await supabase.auth.signOut();
+      router.push("/login");
     }
     checkAuth();
   }, [router, supabase.auth]);
@@ -294,18 +374,22 @@ export default function EvaluatePage() {
   // ─── Token fetch ──────────────────────────────────────────────────────────
 
   useEffect(() => {
-    if (!authChecked) return;
-    async function fetchTokens() {
-      try {
-        const res = await fetch("/api/usage");
-        if (res.ok) {
-          const data = await res.json();
-          setTokensRemaining(data.tokens_remaining ?? WEEKLY_CREDIT_LIMIT);
-        }
-      } catch {}
-    }
-    fetchTokens();
-  }, [authChecked]);
+    let cancelled = false;
+    loadBalance().then((balance) => {
+      if (cancelled) return;
+      if (balance === null) setTokensFailed(true);
+      else setTokensRemaining(balance);
+    });
+    return () => { cancelled = true; };
+  }, []);
+
+  const retryTokens = useCallback(() => {
+    setTokensFailed(false);
+    loadBalance().then((balance) => {
+      if (balance === null) setTokensFailed(true);
+      else setTokensRemaining(balance);
+    });
+  }, []);
 
   /**
    * Opens the attempt record for a question: the abandonment ref, the
@@ -353,45 +437,82 @@ export default function EvaluatePage() {
     if (!subject) return;
     let cancelled = false;
 
-    async function fetchQuestions() {
-      const { data: subjectRow } = await supabase
-        .from("subjects").select("id").eq("name", subject).single();
+    // Any failure ends the same way: stop the loading state, say the fetch
+    // failed (not "there are none"), and let the student retry. Before this the
+    // function had no error path, so a failed request left `loadingQuestions`
+    // true forever — a spinner that never resolved.
+    const fail = () => {
       if (cancelled) return;
-      if (!subjectRow) { setLoadingQuestions(false); return; }
-
-      const { data } = await supabase
-        .from("questions")
-        .select(QUESTION_SELECT)
-        .eq("subject_id", subjectRow.id)
-        .order("year", { ascending: false })
-        .order("question_number", { ascending: true });
-      // Two subjects picked in quick succession would otherwise race, and the
-      // slower query would overwrite the faster one's results.
-      if (cancelled) return;
-
-      const loaded = (data ?? []) as unknown as Question[];
-      setQuestions(loaded);
+      setQuestionsError(true);
       setLoadingQuestions(false);
+    };
 
-      // A deep-linked question opens once, on the first load of its subject.
-      const pending = pendingQuestionRef.current;
-      if (pending) {
-        pendingQuestionRef.current = null;
-        const match = loaded.find((q) => q.id === pending);
-        if (match) {
-          setSelectedQuestionId(match.id);
-          beginAttempt(match, returnSourceRef.current);
+    async function fetchQuestions() {
+      try {
+        let subjectId = subjectIdCache.get(subject);
+        if (subjectId === undefined) {
+          const { data: subjectRow, error: subjectError } = await supabase
+            .from("subjects")
+            .select("id")
+            .eq("name", subject)
+            .abortSignal(AbortSignal.timeout(READ_TIMEOUT_MS))
+            .single();
+          if (cancelled) return;
+          // PGRST116 is "no such row" — a subject with no data, not a failure.
+          if (subjectError && subjectError.code !== "PGRST116") return fail();
+          if (!subjectRow) { setLoadingQuestions(false); return; }
+          subjectId = subjectRow.id as string | number;
+          subjectIdCache.set(subject, subjectId);
         }
-        // Drop the params so a refresh, or a later subject change, doesn't
-        // reopen the linked question. Next keeps its router in sync with the
-        // native history API.
-        window.history.replaceState(null, "", "/evaluate");
+
+        const { data, error: questionsFetchError } = await supabase
+          .from("questions")
+          .select(QUESTION_SELECT)
+          .eq("subject_id", subjectId)
+          .order("year", { ascending: false })
+          .order("question_number", { ascending: true })
+          .abortSignal(AbortSignal.timeout(READ_TIMEOUT_MS));
+        // Two subjects picked in quick succession would otherwise race, and the
+        // slower query would overwrite the faster one's results.
+        if (cancelled) return;
+        if (questionsFetchError) return fail();
+
+        const loaded = (data ?? []) as unknown as Question[];
+        setQuestions(loaded);
+        setLoadingQuestions(false);
+
+        // A deep-linked question opens once, on the first load of its subject.
+        const pending = pendingQuestionRef.current;
+        if (pending) {
+          pendingQuestionRef.current = null;
+          const match = loaded.find((q) => q.id === pending);
+          if (match) {
+            setSelectedQuestionId(match.id);
+            const draft = readDraft(match.id);
+            setStudentAnswer(draft);
+            setDraftRestored(Boolean(draft));
+            beginAttempt(match, returnSourceRef.current);
+          }
+          // Drop the params so a refresh, or a later subject change, doesn't
+          // reopen the linked question. Next keeps its router in sync with the
+          // native history API.
+          window.history.replaceState(null, "", "/evaluate");
+        }
+      } catch {
+        fail();
       }
     }
 
     fetchQuestions();
     return () => { cancelled = true; };
-  }, [subject, supabase, beginAttempt]);
+    // reloadKey is the Retry button: bumping it re-runs this fetch.
+  }, [subject, supabase, beginAttempt, reloadKey]);
+
+  const handleRetryQuestions = useCallback(() => {
+    setQuestionsError(false);
+    setLoadingQuestions(true);
+    setReloadKey((k) => k + 1);
+  }, []);
 
   // selectedQuestion is derived, not stored: two sources of truth for "which
   // question is open" is how the answer box could end up attached to a
@@ -404,8 +525,9 @@ export default function EvaluatePage() {
     setSubject(next);
     setQuestions([]);
     setLoadingQuestions(Boolean(next));
+    setQuestionsError(false);
     setSelectedQuestionId("");
-    setStudentAnswer(""); setResult(null); setError(null);
+    setStudentAnswer(""); setDraftRestored(false); setResult(null); setError(null);
   }, [flushAbandonment]);
 
   /** Step 5 commits a question — or, with "", reopens Browse. */
@@ -415,11 +537,13 @@ export default function EvaluatePage() {
     flushAbandonment("switched_question");
 
     setSelectedQuestionId(id);
-    setStudentAnswer(""); setResult(null); setError(null);
+    // Pick up where a failed request, refresh or crash left off on this question.
+    const draft = id ? readDraft(id) : "";
+    setStudentAnswer(draft); setDraftRestored(Boolean(draft)); setResult(null); setError(null);
     // Reset the figure-report form too, or a report typed for one question
     // would carry over — and worse, the "we'll review this" acknowledgement
     // would still be showing against a different figure.
-    setReportOpen(false); setReportText(""); setReportSent(false); setZoomedFigure(null);
+    setReportOpen(false); setReportText(""); setReportSent(false); setReportFailed(false); setZoomedFigure(null);
     setAnswerMode("type");
 
     const q = id ? questions.find((x) => x.id === id) ?? null : null;
@@ -470,12 +594,15 @@ export default function EvaluatePage() {
       source: attemptRef.current?.source ?? null,
     });
 
-    setEvaluating(true); setResult(null); setError(null); setLoadingMessageIndex(0);
-    setLimitReached(false); setFeedbackText(""); setFeedbackSent(false);
+    setEvaluating(true); setResult(null); setError(null); setErrorRetryable(false); setLoadingMessageIndex(0);
+    setLimitReached(false); setFeedbackText(""); setFeedbackSent(false); setFeedbackStatus("idle");
     setEvalRating(null); setEvalFeedbackText(""); setEvalIssueTags([]); setEvalFeedbackStatus("idle");
 
-    try {
-      const res = await fetch("/api/evaluate", {
+    // The answer is never cleared on failure: `studentAnswer` stays in state and
+    // in this device's draft until a result actually comes back.
+    const res = await requestJson<EvaluationResult>(
+      "/api/evaluate",
+      {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -485,35 +612,54 @@ export default function EvaluatePage() {
           subject,
           student_answer: studentAnswer,
         }),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        if (res.status === 429) setLimitReached(true);
-        // A persist failure (500) refunds the reserved token server-side and
-        // reports the balance back here too — without this the badge kept
-        // showing the reservation spent, so a retry looked free when it
-        // wasn't, or the student assumed they'd been charged when they hadn't.
-        if (data.tokens_remaining !== undefined) setTokensRemaining(data.tokens_remaining);
-        setError(data?.error ?? "Evaluation failed. Try again.");
-      } else {
-        setResult(data as EvaluationResult);
-        if (data.tokens_remaining !== undefined) setTokensRemaining(data.tokens_remaining);
-      }
-    } catch {
-      // The only failure the server cannot see for itself. Every other stage —
+      },
+      {
+        timeoutMs: EVALUATE_TIMEOUT_MS,
+        // `network` and `timeout` are the two failures where the server may
+        // have finished (and charged) a request the browser never heard back
+        // about — so those messages point to Results before a second attempt,
+        // rather than promising the answer wasn't marked. `offline` is the
+        // opposite: nothing was sent. Server-sent messages (quota, consent,
+        // validation, "token refunded") are left alone and win over generic copy.
+        messages: {
+          offline: "You’re offline, so nothing was sent. Reconnect and try again.",
+          network:
+            "We lost the connection while marking your answer. If it went through, it will be in your Results — check there before trying again.",
+          timeout:
+            "Marking is taking longer than usual. If it finishes, it will appear in your Results — check there before trying again.",
+        },
+      },
+    );
+
+    if (!res.ok) {
+      if (res.status === 429) setLimitReached(true);
+      // A persist failure (500) refunds the reserved token server-side and
+      // reports the balance back here too — without this the badge kept
+      // showing the reservation spent, so a retry looked free when it
+      // wasn't, or the student assumed they'd been charged when they hadn't.
+      const remaining = res.data?.tokens_remaining;
+      if (typeof remaining === "number") setTokensRemaining(remaining);
+      setError(res.message);
+      setErrorRetryable(res.retryable);
+      // The only failures the server cannot see for itself. Every other stage —
       // quota, Anthropic, parse, persist — is recorded in /api/evaluate, where
       // the actual cause is known; reporting those here too would double-count
       // them in the error panel.
-      track(EVENTS.EVALUATION_FAILED, {
-        failure_stage: FAILURE_STAGES.NETWORK_ERROR,
-        question_id: selectedQuestion.id,
-        subject,
-        year: selectedQuestion.year,
-      });
-      setError("Network error. Check your connection.");
-    } finally {
-      setEvaluating(false);
+      if (res.kind === "network" || res.kind === "offline" || res.kind === "timeout") {
+        track(EVENTS.EVALUATION_FAILED, {
+          failure_stage: FAILURE_STAGES.NETWORK_ERROR,
+          question_id: selectedQuestion.id,
+          subject,
+          year: selectedQuestion.year,
+        });
+      }
+    } else {
+      // Marked and saved server-side: only now is the local draft redundant.
+      clearDraft(selectedQuestion.id);
+      setResult(res.data);
+      if (res.data.tokens_remaining !== undefined) setTokensRemaining(res.data.tokens_remaining);
     }
+    setEvaluating(false);
   }, [subject, selectedQuestion, studentAnswer]);
 
   // ─── Handwritten answers ──────────────────────────────────────────────────
@@ -558,19 +704,37 @@ export default function EvaluatePage() {
   // The question is identified in the message body so it can be acted on.
   async function handleReportFigure() {
     if (!reportText.trim() || !selectedQuestion) return;
-    try {
-      const res = await fetch("/api/feedback", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: `[FIGURE REPORT] ${subject} ${selectedQuestion.year} Q${selectedQuestion.question_number} `
-            + `(source=${selectedQuestion.diagram_source ?? "none"}, url=${selectedQuestion.diagram_url ?? "none"}): `
-            + reportText.trim(),
-        }),
-      });
-      if (res.ok) setReportSent(true);
-    } catch (err) {
-      console.error("[BoardEdge] figure report failed:", err);
+    setReportFailed(false);
+    const res = await requestJson("/api/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: `[FIGURE REPORT] ${subject} ${selectedQuestion.year} Q${selectedQuestion.question_number} `
+          + `(source=${selectedQuestion.diagram_source ?? "none"}, url=${selectedQuestion.diagram_url ?? "none"}): `
+          + reportText.trim(),
+      }),
+    }, { timeoutMs: READ_TIMEOUT_MS });
+    // "Thanks" only once the report has actually been accepted. A failure keeps
+    // the typed report in the box and says so, instead of looking like nothing happened.
+    if (res.ok) setReportSent(true);
+    else setReportFailed(true);
+  }
+
+  // The "why do you need more credits" note on the limit screen. Same rule:
+  // it only says "Thanks" after the server has it.
+  async function handleLimitFeedback() {
+    if (!feedbackText.trim()) return;
+    setFeedbackStatus("sending");
+    const res = await requestJson("/api/feedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: feedbackText }),
+    }, { timeoutMs: READ_TIMEOUT_MS });
+    if (res.ok) {
+      setFeedbackSent(true);
+      setFeedbackStatus("idle");
+    } else {
+      setFeedbackStatus("error");
     }
   }
 
@@ -608,10 +772,6 @@ export default function EvaluatePage() {
 
   // ─── Auth gate ────────────────────────────────────────────────────────────
 
-  if (!authChecked) {
-    return <div className={`${pageShellWide} text-sm text-muted-foreground`}>Checking session…</div>;
-  }
-
   // ─── Render ───────────────────────────────────────────────────────────────
 
   return (
@@ -643,6 +803,8 @@ export default function EvaluatePage() {
         onSubjectChange={handleSubjectChange}
         questions={questions}
         loading={loadingQuestions}
+        loadError={questionsError}
+        onRetry={handleRetryQuestions}
         selectedId={selectedQuestionId}
         onSelect={handleSelectQuestion}
       />
@@ -730,6 +892,11 @@ export default function EvaluatePage() {
                     >
                       Send report
                     </button>
+                    {reportFailed && (
+                      <p className="m-0 text-[10px] text-status-wrong" role="alert">
+                        We couldn&apos;t send that. Your note is still here — please try again.
+                      </p>
+                    )}
                   </div>
                 )}
               </div>
@@ -844,6 +1011,22 @@ export default function EvaluatePage() {
                     {answerMode === "type" ? (
                       <>
                         <label className="text-xs font-medium text-muted-foreground">Write your answer</label>
+                        {draftRestored && (
+                          <p className="m-0 text-xs text-muted-foreground" role="status">
+                            Restored your unsent draft from this device.{" "}
+                            <button
+                              type="button"
+                              onClick={() => {
+                                clearDraft(selectedQuestion.id);
+                                setStudentAnswer("");
+                                setDraftRestored(false);
+                              }}
+                              className="underline underline-offset-2 hover:text-foreground"
+                            >
+                              Start fresh
+                            </button>
+                          </p>
+                        )}
                         <textarea
                           value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)} rows={8}
                           disabled={!selectedQuestion.question_text?.trim()}
@@ -874,7 +1057,12 @@ export default function EvaluatePage() {
                   {evaluating ? "Evaluating…" : "Evaluate"}
                 </button>
                 )}
-                <TokenBadge tokensRemaining={tokensRemaining} tokenCost={tokenCost} />
+                <TokenBadge
+                  tokensRemaining={tokensRemaining}
+                  failed={tokensFailed}
+                  onRetry={retryTokens}
+                  tokenCost={tokenCost}
+                />
                 {evaluating && (
                   <p className="text-center text-xs text-muted-foreground">
                     {NON_OCR_LOADING_MESSAGES[loadingMessageIndex]}
@@ -899,7 +1087,16 @@ export default function EvaluatePage() {
           {/* Error */}
           {error && (
             <div className="space-y-4">
-              <div className={errorAlert}>{error}</div>
+              {limitReached ? (
+                <div className={errorAlert}>{error}</div>
+              ) : (
+                <ErrorState
+                  title="Your answer wasn’t marked"
+                  message={errorRetryable ? `${error} Your answer is still here.` : error}
+                  onRetry={errorRetryable ? () => void handleSubmit() : undefined}
+                  retrying={evaluating}
+                />
+              )}
               {limitReached && (
                 <div className="rounded-lg border border-status-correct/40 bg-status-correct-subtle px-5 py-5">
                   <p className="font-display text-lg leading-snug text-foreground">
@@ -922,17 +1119,17 @@ export default function EvaluatePage() {
                       </p>
                       <textarea value={feedbackText} onChange={(e) => setFeedbackText(e.target.value)} placeholder="E.g., exam prep, testing different approaches…" rows={2} className={textareaClass} />
                       <button
-                        onClick={async () => {
-                          if (!feedbackText.trim()) return;
-                          try {
-                            const res = await fetch("/api/feedback", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: feedbackText }) });
-                            if (res.ok) setFeedbackSent(true);
-                          } catch (err) { console.error("Feedback send failed:", err); }
-                        }}
+                        onClick={() => void handleLimitFeedback()}
+                        disabled={feedbackStatus === "sending"}
                         className={`${btnPrimary} self-start`}
                       >
-                        Send feedback
+                        {feedbackStatus === "sending" ? "Sending…" : "Send feedback"}
                       </button>
+                      {feedbackStatus === "error" && (
+                        <p className="m-0 text-xs text-status-wrong" role="alert">
+                          We couldn&apos;t send that. Your note is still here — please try again.
+                        </p>
+                      )}
                     </div>
                   )}
                 </div>
@@ -1006,6 +1203,22 @@ export default function EvaluatePage() {
                         </div>
                         <ul className="space-y-2">
                           {result.conceptual_errors.map((item, i) => (
+                            <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Exam-style fixes — icse_style_issues. Neutral tag tokens on
+                        purpose: accent is reserved for conceptual errors, and
+                        these are wording/format slips, not wrong statements. */}
+                    {(result.icse_style_issues ?? []).length > 0 && (
+                      <div className="rounded-xl border border-tag-examiner-feedback bg-tag-examiner-feedback-subtle p-5">
+                        <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-examiner-feedback">
+                          Exam-style fixes
+                        </div>
+                        <ul className="space-y-2">
+                          {(result.icse_style_issues ?? []).map((item, i) => (
                             <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
                           ))}
                         </ul>

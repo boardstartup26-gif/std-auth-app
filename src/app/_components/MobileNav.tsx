@@ -7,9 +7,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LogOut, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
 import { SidebarNav } from "./Sidebar";
+import { SignOutButton } from "./SignOutButton";
 import { CreditsPill } from "./CreditsPill";
 import { NotificationBell } from "./NotificationBell";
 import type { CreditBalance } from "@/lib/credits";
@@ -64,13 +65,7 @@ export function MobileNav({ credits, unread }: { credits: CreditBalance | null; 
             <SidebarNav expanded onNavigate={() => setOpen(false)} />
 
             <form action={signOut} className="border-t border-border p-2">
-              <button
-                type="submit"
-                className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground"
-              >
-                <LogOut size={17} strokeWidth={1.75} aria-hidden />
-                Sign out
-              </button>
+              <SignOutButton />
             </form>
           </div>
         </div>

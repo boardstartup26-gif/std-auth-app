@@ -10,7 +10,7 @@
 // picker, which is where the choice actually does something.
 
 import { useState } from "react";
-import Link from "next/link";
+import Link, { useLinkStatus } from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
@@ -18,18 +18,20 @@ import {
   Gift,
   LayoutGrid,
   LibraryBig,
-  LogOut,
   type LucideIcon,
   PanelLeft,
   ScrollText,
+  TrendingUp,
   User,
 } from "lucide-react";
 import { signOut } from "@/app/(auth)/actions";
+import { SignOutButton } from "./SignOutButton";
 
 const STUDY = [
   { href: "/evaluate", label: "Questions", icon: LibraryBig },
   { href: "/practice-paper", label: "Practice papers", icon: FileStack },
   { href: "/history", label: "Results", icon: ScrollText },
+  { href: "/progress", label: "Progress", icon: TrendingUp },
 ];
 
 const ACCOUNT = [
@@ -52,14 +54,34 @@ function GroupLabel({ children, expanded }: { children: string; expanded: boolea
   );
 }
 
+/**
+ * The row's icon, which doubles as its "still loading" hint. useLinkStatus only
+ * works in a descendant of the <Link>, and the icon has to stay the same size
+ * and place either way — so the hint is a pulse on the icon itself rather than
+ * an extra spinner element that would shift the row. When the destination was
+ * prefetched, navigation commits at once and this never visibly fires.
+ */
+function NavIcon({ icon: Icon }: { icon: LucideIcon }) {
+  const { pending } = useLinkStatus();
+  return (
+    <Icon
+      size={17}
+      strokeWidth={1.75}
+      className={`shrink-0 ${pending ? "animate-pulse motion-reduce:animate-none" : ""}`}
+      aria-hidden
+    />
+  );
+}
+
 function NavRow({
   href,
   label,
-  icon: Icon,
+  icon,
   badge,
   active,
   expanded,
   onNavigate,
+  onPress,
 }: {
   href: string;
   label: string;
@@ -68,11 +90,18 @@ function NavRow({
   active: boolean;
   expanded: boolean;
   onNavigate?: () => void;
+  /** Fired on a plain click, so the nav can show the destination as current before it loads. */
+  onPress?: (href: string) => void;
 }) {
   return (
     <Link
       href={href}
-      onClick={onNavigate}
+      onClick={(e) => {
+        // Modified clicks open a new tab/window; this page isn't going anywhere.
+        const plain = e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
+        if (plain) onPress?.(href);
+        onNavigate?.();
+      }}
       title={expanded ? undefined : label}
       aria-current={active ? "page" : undefined}
       className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
@@ -81,8 +110,8 @@ function NavRow({
           : "text-muted-foreground hover:bg-surface-raised hover:text-foreground"
       } ${expanded ? "" : "justify-center"}`}
     >
-      <Icon size={17} strokeWidth={1.75} className="shrink-0" aria-hidden />
-      {expanded ? <span className="truncate">{label}</span> : null}
+      <NavIcon icon={icon} />
+      {expanded ? <span className="truncate">{label}</span> : <span className="sr-only">{label}</span>}
       {expanded && badge ? (
         <span className="ml-auto rounded-full bg-status-correct-subtle px-1.5 py-0.5 font-mono text-[10px] font-semibold tabular-nums text-status-correct">
           {badge}
@@ -102,15 +131,33 @@ export function SidebarNav({
 }) {
   const pathname = usePathname();
 
+  // Optimistic active state. usePathname() only changes once the new route has
+  // *committed*, which for a route that isn't prefetched is a full server round
+  // trip after the click — long enough for the nav to still say "you are
+  // here" about the page the student just left. So a click records where it is
+  // heading, and that wins until the pathname actually changes. The pending
+  // target is dropped during render when the pathname moves (React's
+  // "adjust state when a value changes" pattern), not in an effect, so there is
+  // no frame where the old highlight flashes back.
+  const [heading, setHeading] = useState<string | null>(null);
+  const [seenPath, setSeenPath] = useState(pathname);
+  if (seenPath !== pathname) {
+    setSeenPath(pathname);
+    setHeading(null);
+  }
+  const current = heading ?? pathname;
+  const press = (href: string) => setHeading(href === pathname ? null : href);
+
   return (
     <nav className="flex flex-1 flex-col gap-0.5 overflow-y-auto px-2">
       <NavRow
         href="/dashboard"
         label="Dashboard"
         icon={LayoutGrid}
-        active={isActive(pathname, "/dashboard")}
+        active={isActive(current, "/dashboard")}
         expanded={expanded}
         onNavigate={onNavigate}
+        onPress={press}
       />
 
       <GroupLabel expanded={expanded}>Study</GroupLabel>
@@ -118,9 +165,10 @@ export function SidebarNav({
         <NavRow
           key={item.href}
           {...item}
-          active={isActive(pathname, item.href)}
+          active={isActive(current, item.href)}
           expanded={expanded}
           onNavigate={onNavigate}
+          onPress={press}
         />
       ))}
 
@@ -129,9 +177,10 @@ export function SidebarNav({
         <NavRow
           key={item.href}
           {...item}
-          active={isActive(pathname, item.href)}
+          active={isActive(current, item.href)}
           expanded={expanded}
           onNavigate={onNavigate}
+          onPress={press}
         />
       ))}
     </nav>
@@ -195,16 +244,7 @@ export function Sidebar() {
       <SidebarNav expanded={expanded} />
 
       <form action={signOut} className="border-t border-border p-2">
-        <button
-          type="submit"
-          title={expanded ? undefined : "Sign out"}
-          className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-surface-raised hover:text-foreground ${
-            expanded ? "" : "justify-center"
-          }`}
-        >
-          <LogOut size={17} strokeWidth={1.75} className="shrink-0" aria-hidden />
-          {expanded ? "Sign out" : null}
-        </button>
+        <SignOutButton expanded={expanded} />
       </form>
     </aside>
   );

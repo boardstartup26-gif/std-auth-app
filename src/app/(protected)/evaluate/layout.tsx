@@ -8,14 +8,29 @@
 // src/app/api/evaluate/route.ts, which refuses before anything is processed —
 // this layout can be stale across client navigations, that route can't.
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { FREE_EVALUATIONS_BEFORE_CONSENT, getEvaluationGateState } from "@/lib/parent-consent/service";
+import { EvaluateSkeleton } from "@/app/_components/states/page-skeletons";
 import { btnSecondary, sectionLabel } from "@/lib/ui";
 
 export const dynamic = "force-dynamic";
 
-export default async function EvaluateLayout({ children }: { children: React.ReactNode }) {
+// The layout itself is synchronous and the gate is read behind a Suspense
+// boundary. An async layout would hold the whole navigation until the consent
+// lookup returned, and loading.js can't help: it wraps the page, not the layout
+// of its own segment. This way the skeleton paints at once, the gate resolves
+// behind it, and the decision is exactly the same one as before.
+export default function EvaluateLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <Suspense fallback={<EvaluateSkeleton />}>
+      <EvaluateGate>{children}</EvaluateGate>
+    </Suspense>
+  );
+}
+
+async function EvaluateGate({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
   const {
     data: { user },

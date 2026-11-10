@@ -23,6 +23,9 @@
 
 import { useState } from "react";
 import { ChevronRight, Search, SlidersHorizontal, X } from "lucide-react";
+import { EmptyState } from "@/app/_components/states/EmptyState";
+import { ErrorState } from "@/app/_components/states/ErrorState";
+import { ChoiceGridSkeleton } from "@/app/_components/states/page-skeletons";
 import {
   ANSWER_FORMAT_LABELS,
   DIAGRAM_FORMAT_DISABLED,
@@ -154,6 +157,8 @@ export function QuestionPicker({
   onSubjectChange,
   questions,
   loading,
+  loadError,
+  onRetry,
   selectedId,
   onSelect,
 }: {
@@ -162,6 +167,9 @@ export function QuestionPicker({
   /** Every question for the chosen subject, all years and papers. */
   questions: Question[];
   loading: boolean;
+  /** The subject's questions couldn't be fetched (as opposed to there being none). */
+  loadError: boolean;
+  onRetry: () => void;
   selectedId: string;
   /** "" clears the selection and reopens Browse with the filters intact. */
   onSelect: (id: string) => void;
@@ -315,10 +323,17 @@ export function QuestionPicker({
           <StepHead
             stage="Chapter"
             title="Choose a chapter"
-            hint={loading ? undefined : `${questions.length} questions in ${subject}`}
+            hint={loading || loadError ? undefined : `${questions.length} questions in ${subject}`}
           />
           {loading ? (
-            <p className="text-sm text-muted-foreground">Loading {subject} questions…</p>
+            <ChoiceGridSkeleton label={`Loading ${subject} questions`} />
+          ) : loadError ? (
+            <ErrorState
+              title={`We couldn’t load the ${subject} questions`}
+              message="This is a connection or server hiccup, not a problem with your account. Try again, or choose a different subject."
+              onRetry={onRetry}
+              secondary={{ label: "Choose another subject", onClick: () => onSubjectChange("") }}
+            />
           ) : chapters.length ? (
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {chapters.map((c) => (
@@ -331,9 +346,13 @@ export function QuestionPicker({
               ))}
             </div>
           ) : (
-            <p className="text-sm text-muted-foreground">
-              No questions are loaded for {subject} yet.
-            </p>
+            <EmptyState
+              compact
+              title={`No ${subject} questions yet`}
+              description="We’re still adding past papers for this subject. Pick another subject to keep practising."
+              primary={{ label: "Choose another subject", onClick: () => onSubjectChange("") }}
+              secondary={{ label: "Build a practice paper", href: "/practice-paper" }}
+            />
           )}
         </section>
       )}
@@ -472,11 +491,22 @@ export function QuestionPicker({
               })}
             </ul>
           ) : (
-            <p className="rounded-xl border border-dashed border-border px-4 py-6 text-center text-sm text-muted-foreground">
-              {term
-                ? `No question in this topic contains “${search.trim()}”.`
-                : "No questions match these filters."}
-            </p>
+            <EmptyState
+              compact
+              title={term ? `Nothing in this topic contains “${search.trim()}”` : "No questions match these filters"}
+              description={
+                term
+                  ? "Try a shorter or different word."
+                  : "Show every year to see all the questions in this topic."
+              }
+              primary={
+                term
+                  ? { label: "Clear search", onClick: () => setSearch("") }
+                  : year
+                    ? { label: "Show all years", onClick: () => setYear("") }
+                    : undefined
+              }
+            />
           )}
         </section>
       )}

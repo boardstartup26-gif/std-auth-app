@@ -342,11 +342,16 @@ export async function persistSubmission(
     throw new Error(`student_answers insert failed: ${answerError?.message}`);
   }
 
-  const evaluationRow = {
+  let evaluationRow: Record<string, unknown> = {
     student_answer_id: answerRow.id,
     marks_awarded: evaluation.marks_awarded,
     marking_points: evaluation.marking_points,
     conceptual_errors: evaluation.conceptual_errors,
+    // Feeds the Leakage Map's "presentation & terminology" reason. Always an
+    // array here (possibly empty); NULL in the column means "not recorded".
+    icse_style_issues: Array.isArray(evaluation.icse_style_issues)
+      ? evaluation.icse_style_issues
+      : [],
     model_answer: evaluation.model_answer,
     model_answer_source: evaluation.model_answer_source,
     examiner_feedback: evaluation.examiner_feedback,
@@ -354,6 +359,16 @@ export async function persistSubmission(
   };
 
   let { error: evalError } = await supabase.from("evaluations").insert(evaluationRow);
+
+  // icse_style_issues arrives with 20261110120000_evaluation_leakage_facts.sql.
+  // Until that migration is applied PostgREST rejects the unknown column;
+  // retry without it so a deploy that lands first never loses a graded answer.
+  if (evalError && (evalError.code === "PGRST204" || evalError.code === "42703")) {
+    const { icse_style_issues: _omitted, ...withoutStyle } = evaluationRow;
+    void _omitted;
+    evaluationRow = withoutStyle;
+    ({ error: evalError } = await supabase.from("evaluations").insert(evaluationRow));
+  }
 
   // FIX: marks_awarded was an integer column while total_marks is numeric, so a
   // half mark — which the examiner prompt now allows wherever the scheme itself

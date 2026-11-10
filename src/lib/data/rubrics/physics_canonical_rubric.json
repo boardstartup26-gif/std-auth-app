@@ -1,0 +1,2795 @@
+{
+  "subject": "physics",
+  "rubric_version": "2.0",
+  "source_material": [
+    "ICSE Physics 2019 Pupil Performance Analysis",
+    "ICSE Physics 2025 Pupil Performance Analysis"
+  ],
+  "archetypes": [
+    {
+      "archetype_id": "PHYS_NUMERICAL",
+      "name": "Physics Numerical Calculations",
+      "trigger_patterns": [
+        "Calculate",
+        "Find the value of",
+        "Determine",
+        "What is the value",
+        "Find the mass",
+        "Find the focal length",
+        "Find the distance",
+        "Find the cost",
+        "Find the resistance",
+        "Find the current",
+        "Find the weight",
+        "Find the height"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_NUM_C1",
+          "requirement": "Gate 1 — FORMULA: Explicit statement of the governing physical law or equation before any substitution.",
+          "required_anchors": [
+            "formula_statement"
+          ],
+          "accepted_equivalents": [
+            "Standard textbook form of the equation",
+            "Rearranged algebraic equivalent provided derivation shown"
+          ],
+          "insufficient_alone": [
+            "Jumping directly to substitution without stating the formula",
+            "Writing only the final answer"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(i)",
+              "context": "Concave lens focal length via lens formula",
+              "sample_hit": "1/f = 1/v - 1/u",
+              "sample_penalty": "Directly writing 1/f = 1/(-30) - 1/(-45) without first stating the general formula"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(c)",
+              "context": "Lens equation numerical",
+              "sample_hit": "1/f = 1/v - 1/u",
+              "sample_penalty": "Omitting the formula and writing only the arithmetic"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(i)",
+              "context": "Calorimetry — principle of mixtures",
+              "sample_hit": "Heat lost = Heat gained; ml + mcΔt = mcΔt",
+              "sample_penalty": "Writing mcΔt = ml as the starting equation (incorrect LHS/RHS assignment)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q5(b)",
+              "context": "Principle of moments equilibrium",
+              "sample_hit": "Sum of clockwise moments = Sum of anticlockwise moments",
+              "sample_penalty": "Writing only the substituted equation without stating the principle"
+            }
+          ],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_NUM_C2",
+          "requirement": "Gate 2 — SUBSTITUTION: All given values substituted into the formula with uniform units (SI or CGS consistently) and correct sign conventions.",
+          "required_anchors": [
+            "uniform_unit_substitution",
+            "sign_convention_compliance"
+          ],
+          "accepted_equivalents": [
+            "SI units throughout",
+            "CGS units throughout"
+          ],
+          "insufficient_alone": [
+            "Mixing SI and CGS units in the same equation",
+            "Omitting sign convention in optics (all distances positive)",
+            "Converting specific heat capacity to SI but leaving mass in CGS"
+          ],
+          "mandatory_dependencies": [
+            "consistent_unit_system",
+            "explicit_sign_assignment_in_optics"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(i)",
+              "context": "Concave lens: u = -45 cm, v = -30 cm",
+              "sample_hit": "1/f = 1/(-30) - 1/(-45)",
+              "sample_penalty": "Using positive values for u and v with a concave lens"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(i)",
+              "context": "Calorimetry mixing SI specific heat with CGS mass",
+              "sample_hit": "30(336 + 4.2 × 20) = m × 4.2 × 50 with all values in grams and J/g°C",
+              "sample_penalty": "Converting c and l to SI while leaving mass in grams without conversion"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q5(a)",
+              "context": "SI-CGS work relation derivation",
+              "sample_hit": "1 J = 1 kg·m/s² × 1 m then converting each to CGS equivalents",
+              "sample_penalty": "Mixing kg and g in the same substitution line"
+            }
+          ],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_NUM_C3",
+          "requirement": "Gate 3 — FINAL_VALUE_AND_UNIT: Final numerical magnitude expressed as a decimal or whole number (never as an unsimplified fraction) with the correct SI or CGS unit explicitly written.",
+          "required_anchors": [
+            "decimal_value_with_unit"
+          ],
+          "accepted_equivalents": [
+            "Standard SI unit abbreviation",
+            "Standard CGS unit abbreviation",
+            "Full unit name spelled out"
+          ],
+          "insufficient_alone": [
+            "Final value without unit",
+            "Unsimplified fraction as final answer (e.g., 8/5, 41/4, -1/90)",
+            "Bare numeral without dimensional unit",
+            "Correct value with wrong unit"
+          ],
+          "mandatory_dependencies": [
+            "standard_unit_symbol",
+            "decimal_format"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(i)",
+              "context": "Concave lens focal length",
+              "sample_hit": "f = -90 cm",
+              "sample_penalty": "-90 (unit missing) or leaving as -1/90"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q4(a)",
+              "context": "Celsius to Kelvin conversion",
+              "sample_hit": "T = 303 K",
+              "sample_penalty": "303 without 'K' unit"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(ii)",
+              "context": "Sonar echo distance calculation",
+              "sample_hit": "d = 75000 m (= 75 km)",
+              "sample_penalty": "75000 without unit, or leaving as 1500 × 100 / 2 unsimplified"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(c)",
+              "context": "Image distance via lens formula",
+              "sample_hit": "v = +24 cm",
+              "sample_penalty": "24 without cm, or leaving as 24/1"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q6(iii)(a)",
+              "context": "Kinetic energy calculation with kgf to N conversion",
+              "sample_hit": "K = 2000 J",
+              "sample_penalty": "2000 without J, or incorrect kgf-to-N conversion yielding wrong magnitude"
+            }
+          ],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit_pattern"
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_001",
+          "wrong_form": "Final numerical answer without unit",
+          "correct_form": "Magnitude accompanied by correct SI/CGS unit",
+          "context": "Any numerical sub-question producing a dimensional physical quantity",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q4(a)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q4(b)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q3(iv)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_002",
+          "wrong_form": "Final answer left as an unsimplified or improper fraction",
+          "correct_form": "Express final answer in decimal form",
+          "context": "All numerical problems except pure ratio/dimensionless comparisons",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "General Comments"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "General Comments"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_003",
+          "wrong_form": "Mixing SI and CGS units in a single substitution step",
+          "correct_form": "All terms in uniform SI or uniform CGS system before arithmetic",
+          "context": "Calorimetry, work-energy, electrical power calculations",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "FULL_MARK_LOSS_ON_GATE_2",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q9(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_004",
+          "wrong_form": "Incorrect sign convention in optics (treating all distances as positive)",
+          "correct_form": "Apply Cartesian sign convention: distances measured from optic centre, real-object side negative for u, same-side virtual image negative for v",
+          "context": "Lens formula and mirror formula numericals",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "FULL_MARK_LOSS_ON_GATE_2",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q6(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q5(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_005",
+          "wrong_form": "Writing mcΔt = ml or mcΔt = mcΔt as the calorimetry starting equation",
+          "correct_form": "Heat lost by hot body = Heat gained by cold body, with ml term on the correct side for phase change",
+          "context": "Calorimetry involving phase change (melting/freezing)",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "FULL_MARK_LOSS_ON_GATE_1",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q9(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_006",
+          "wrong_form": "Incorrect conversion of kilogram-force to newton or gram",
+          "correct_form": "1 kgf = 9.8 N ≈ 10 N (as given); mass in kgf must be multiplied by g to get weight in N",
+          "context": "Mechanics numericals involving kgf units",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "CASCADING_ERROR_ON_SUBSEQUENT_GATES",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q6(iii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_007",
+          "wrong_form": "Not converting minutes to seconds before substituting into v = 2d/t",
+          "correct_form": "Convert all time to seconds: 1 min 40 s = 100 s",
+          "context": "Sound echo/sonar distance problems",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "FULL_MARK_LOSS_ON_GATE_2",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_008",
+          "wrong_form": "Neglecting the moment due to the weight of the ruler in equilibrium problems involving uniform rulers",
+          "correct_form": "Include the ruler's own weight acting at its centre of gravity (midpoint for uniform ruler) when calculating moments",
+          "context": "Principle of moments with uniform metre rule",
+          "applies_to_archetypes": [
+            "PHYS_NUMERICAL"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q6(i)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "FORMULA",
+            "SUBSTITUTION",
+            "FINAL_VALUE_AND_UNIT"
+          ],
+          "penalty_deductions": {
+            "missing_unit": 0.5,
+            "unreduced_fraction": 0.5,
+            "mixed_unit_systems": 1.0
+          },
+          "observed_in": [
+            "2019 Q5(a)",
+            "2019 Q5(b)",
+            "2019 Q6(c)",
+            "2019 Q7(c)",
+            "2019 Q8(a)",
+            "2019 Q8(b)",
+            "2019 Q8(c)",
+            "2019 Q9(c)",
+            "2025 Q5(i)",
+            "2025 Q6(i)",
+            "2025 Q7(ii)",
+            "2025 Q9(i)"
+          ]
+        },
+        {
+          "total_marks": 4,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "FORMULA_OR_PRINCIPLE",
+            "SUBSTITUTION_PART_A",
+            "SUBSTITUTION_PART_B",
+            "FINAL_VALUE_AND_UNIT"
+          ],
+          "penalty_deductions": {
+            "missing_unit": 0.5,
+            "unreduced_fraction": 0.5
+          },
+          "observed_in": [
+            "2025 Q6(iii)",
+            "2025 Q8(iii)(a)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "FORMULA_AND_SUBSTITUTION",
+            "FINAL_VALUE_AND_UNIT"
+          ],
+          "penalty_deductions": {
+            "missing_unit": 0.5
+          },
+          "observed_in": [
+            "2019 Q2(a)",
+            "2019 Q4(a)",
+            "2019 Q4(b)",
+            "2025 Q3(iv)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_RAY_DIAGRAM",
+      "name": "Ray Diagrams Through Prisms and Lenses",
+      "trigger_patterns": [
+        "Draw a ray diagram",
+        "Complete the ray diagram",
+        "Show the path of the ray",
+        "Draw the refracted ray",
+        "Trace the path of light"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_RAY_C1",
+          "requirement": "All incident, refracted, and emergent rays must carry directional arrowheads indicating the direction of propagation of light.",
+          "required_anchors": [
+            "arrowhead_on_incident_ray",
+            "arrowhead_on_refracted_ray",
+            "arrowhead_on_emergent_ray"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Rays drawn without any arrows",
+            "Arrow on only one ray"
+          ],
+          "mandatory_dependencies": [
+            "directional_arrowhead_on_every_ray_segment"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(i)",
+              "context": "TIR ray diagram through right-angled prism",
+              "sample_hit": "All three ray segments (incident, internally reflected, emergent) carry arrowheads",
+              "sample_penalty": "Correct path drawn but arrows missing — mark voided"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q2(e)",
+              "context": "Prism ray diagram completion",
+              "sample_hit": "Arrows on incident ray entering prism and emergent ray leaving prism",
+              "sample_penalty": "No arrows drawn on any ray"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RAY_C2",
+          "requirement": "Angles of incidence, reflection, and refraction must be measured from the NORMAL to the surface, never from the optical surface or prism face.",
+          "required_anchors": [
+            "normal_drawn_at_point_of_incidence",
+            "angle_measured_from_normal"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Angle measured from the prism face or lens surface",
+            "Normal not drawn"
+          ],
+          "mandatory_dependencies": [
+            "normal_line_at_each_refracting_surface"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(i)",
+              "context": "Angle of incidence at prism face",
+              "sample_hit": "Normal drawn perpendicular to prism face at point of incidence; angle measured between incoming ray and normal",
+              "sample_penalty": "Angle measured between incoming ray and prism face"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(a)",
+              "context": "Right-angled isosceles prism 90° deviation",
+              "sample_hit": "Normal at hypotenuse face; angle of incidence from normal = 45° for TIR",
+              "sample_penalty": "Measuring angle from the hypotenuse surface"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RAY_C3",
+          "requirement": "Real rays and real images must be drawn as solid continuous lines. Virtual rays, backward extensions, and virtual images must be drawn as dashed or dotted lines.",
+          "required_anchors": [
+            "solid_line_for_real_ray",
+            "dashed_line_for_virtual_ray_or_image"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "All lines solid including virtual extensions",
+            "Dotted lines used for real rays",
+            "No distinction between real and virtual paths"
+          ],
+          "mandatory_dependencies": [
+            "line_type_encoding_real_vs_virtual"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)",
+              "context": "Convex lens ray diagram with object at 2F — real image",
+              "sample_hit": "All construction rays solid; image indicated at 2F on opposite side with solid lines",
+              "sample_penalty": "Using dotted lines for real rays of light"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(b)",
+              "context": "Convex lens with object between O and F — virtual image",
+              "sample_hit": "Real rays solid; backward extensions dashed; virtual image dashed",
+              "sample_penalty": "Virtual image shown as solid lines"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RAY_C4",
+          "requirement": "For lens diagrams, the object must be placed at the correct position relative to the optical centre, and the scale must be uniform on both sides of the lens.",
+          "required_anchors": [
+            "object_at_specified_position",
+            "uniform_scale_both_sides"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Object placed at arbitrary position regardless of question specification",
+            "Non-uniform scale across the lens"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)",
+              "context": "Object at 2F from convex lens",
+              "sample_hit": "Object placed exactly at 2F with equal scale markings F and 2F on both sides",
+              "sample_penalty": "Object not drawn at 2F, or non-uniform scale"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "PHYS_RAY_C5",
+          "requirement": "For prism TIR diagrams, the ray must undergo total internal reflection at the correct face, with angle of incidence at that face exceeding the critical angle.",
+          "required_anchors": [
+            "TIR_at_correct_face",
+            "angle_of_incidence_exceeds_critical_angle"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Ray shown refracting through the TIR face instead of reflecting",
+            "TIR at the wrong face of the prism"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(i)",
+              "context": "Right-angled prism with TIR at hypotenuse",
+              "sample_hit": "Ray enters one short face normally, hits hypotenuse at 45° (> critical angle), totally reflects, exits other short face",
+              "sample_penalty": "Ray shown refracting through hypotenuse"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(a)",
+              "context": "Right-angled isosceles prism producing 90° deviation",
+              "sample_hit": "TIR at hypotenuse; emergent ray perpendicular to incident ray",
+              "sample_penalty": "Ray path does not show 90° total deviation"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_010",
+          "wrong_form": "Ray diagram drawn without directional arrowheads on rays",
+          "correct_form": "Every ray segment must carry an arrowhead indicating direction of light propagation",
+          "context": "All ray diagrams — prisms, lenses, slabs, TIR",
+          "applies_to_archetypes": [
+            "PHYS_RAY_DIAGRAM"
+          ],
+          "effect": "VOID_DIAGRAM_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q2(e)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(a)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q6(b)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q4(i)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_011",
+          "wrong_form": "Angle of incidence or refraction measured from the optical surface instead of the normal",
+          "correct_form": "All angles measured from the normal drawn perpendicular to the surface at the point of incidence",
+          "context": "Any refraction or reflection at prism, lens, or slab surface",
+          "applies_to_archetypes": [
+            "PHYS_RAY_DIAGRAM"
+          ],
+          "effect": "DOCK_FULL_MARK_FOR_ANGLE",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q2(e)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q4(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_012",
+          "wrong_form": "Virtual image or virtual ray extension drawn with solid continuous lines",
+          "correct_form": "Virtual components drawn as dashed or dotted lines; real components as solid lines",
+          "context": "Diverging lens images, virtual images formed by converging lens (object between O and F)",
+          "applies_to_archetypes": [
+            "PHYS_RAY_DIAGRAM"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q6(b)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_013",
+          "wrong_form": "Using arrows on virtual ray extensions",
+          "correct_form": "Virtual ray extensions (backward projections) should be dashed lines without arrowheads; only real ray segments carry arrows",
+          "context": "Virtual image formation in diverging lenses or mirrors",
+          "applies_to_archetypes": [
+            "PHYS_RAY_DIAGRAM"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(iii)(a)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "CORRECT_RAY_PATH_WITH_NORMALS",
+            "ARROWHEADS_AND_LINE_TYPES",
+            "ANGLES_AND_LABELS"
+          ],
+          "penalty_deductions": {
+            "missing_arrows": 1.0,
+            "angle_from_surface": 1.0,
+            "solid_line_for_virtual": 0.5
+          },
+          "observed_in": [
+            "2019 Q2(e)",
+            "2019 Q6(a)",
+            "2019 Q6(b)",
+            "2019 Q7(a)",
+            "2025 Q4(i)",
+            "2025 Q4(iii)(a)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_CIRCUIT_DIAGRAM",
+      "name": "Circuit Diagrams and Household Wiring",
+      "trigger_patterns": [
+        "Draw the circuit",
+        "Identify the component",
+        "Name the device",
+        "What is the current rating",
+        "household wiring",
+        "meter room",
+        "fuse rating"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_CKT_C1",
+          "requirement": "Correct identification of live, neutral, and earth wires by their standard colour codes and functional roles in household wiring.",
+          "required_anchors": [
+            "wire_colour_identification",
+            "functional_role_of_each_wire"
+          ],
+          "accepted_equivalents": [
+            "Red/Brown for Live",
+            "Black/Blue for Neutral",
+            "Green or Green-Yellow for Earth"
+          ],
+          "insufficient_alone": [
+            "Naming colours without associating to wire function",
+            "Reversing live and neutral assignments"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q3(ii)",
+              "context": "Wire colour identification in household wiring",
+              "sample_hit": "Live = Red/Brown, Neutral = Black/Blue, Earth = Green/Green-Yellow",
+              "sample_penalty": "Swapping Live and Neutral colours"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q4(c)",
+              "context": "Household wiring colour identification",
+              "sample_hit": "Correct colour-wire-function triplet",
+              "sample_penalty": "Naming colours without wire function"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_CKT_C2",
+          "requirement": "In meter room diagrams, correctly identify the fuse rating (based on load), distinguish between double-pole (main) switch and single-pole switches, and identify the unit of the meter reading.",
+          "required_anchors": [
+            "fuse_rating_from_load",
+            "switch_type_identification",
+            "meter_unit_identification"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Writing the fuse rating of the distribution system instead of the company fuse",
+            "Confusing double-pole switch with dual control switch",
+            "Confusing kW with kWh"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(a)",
+              "context": "Current rating of device X in meter room",
+              "sample_hit": "50 A (company's main fuse rating)",
+              "sample_penalty": "Writing the ring distribution fuse rating instead"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(b)",
+              "context": "Difference between switch Z (double pole) and home switches (single pole)",
+              "sample_hit": "Switch Z is in live and neutral (double pole); home switch is in live only (single pole)",
+              "sample_penalty": "Calling Z a dual control switch or MCB"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(c)",
+              "context": "Unit displayed by meter Y",
+              "sample_hit": "kWh (kilowatt hour)",
+              "sample_penalty": "Writing kW or joules"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_020",
+          "wrong_form": "Confusing the company's main fuse rating with the ring circuit fuse rating",
+          "correct_form": "Identify the correct fuse based on its position in the wiring hierarchy (company fuse vs distribution board fuse)",
+          "context": "Meter room wiring diagram interpretation",
+          "applies_to_archetypes": [
+            "PHYS_CIRCUIT_DIAGRAM"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_021",
+          "wrong_form": "Confusing double-pole switch with dual control switch or MCB",
+          "correct_form": "Double-pole switch breaks both live and neutral; single-pole switch breaks only live",
+          "context": "Household wiring switch identification",
+          "applies_to_archetypes": [
+            "PHYS_CIRCUIT_DIAGRAM"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(b)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "COMPONENT_A_IDENTIFICATION",
+            "COMPONENT_B_IDENTIFICATION",
+            "COMPONENT_C_IDENTIFICATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q8(i)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "WIRE_IDENTIFICATION",
+            "FUNCTION_OR_COLOUR"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2019 Q4(c)",
+            "2025 Q3(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_PULLEY_SYSTEM",
+      "name": "Block and Tackle Pulley Systems",
+      "trigger_patterns": [
+        "Draw a block and tackle",
+        "pulley system",
+        "velocity ratio",
+        "mechanical advantage",
+        "block and tackle"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_PUL_C1",
+          "requirement": "Diagram must show correct number of pulleys distributed between fixed upper block and movable lower block, with VR equal to the number of supporting strands on the load.",
+          "required_anchors": [
+            "correct_pulley_distribution",
+            "VR_equals_supporting_strands"
+          ],
+          "accepted_equivalents": [
+            "For odd VR: one more pulley in fixed block than movable block",
+            "For even VR: equal number of pulleys in fixed and movable blocks"
+          ],
+          "insufficient_alone": [
+            "Incorrect number of pulleys",
+            "All pulleys in one block"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)",
+              "context": "Block and tackle VR = 3",
+              "sample_hit": "2 pulleys in fixed block, 1 in movable block; 3 supporting strands on load",
+              "sample_penalty": "3 pulleys all in one block"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)",
+              "context": "Block and tackle VR = 3",
+              "sample_hit": "Correct distribution with 3 taut strands supporting the load",
+              "sample_penalty": "Pulleys connected from rim instead of axle"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_PUL_C2",
+          "requirement": "All strings must be drawn taut and straight, with upward tension arrows (T) marked uniformly on every supporting strand.",
+          "required_anchors": [
+            "taut_straight_strings",
+            "upward_tension_arrows_on_all_strands"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Loose or curved strings",
+            "Tension arrows missing or not uniform",
+            "Tension marked as T₁, T₂, T₃ with different values on strands of same tackle"
+          ],
+          "mandatory_dependencies": [
+            "uniform_tension_across_single_tackle"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)",
+              "context": "Block and tackle VR = 3 diagram",
+              "sample_hit": "Each of 3 strands has upward arrow labeled T; strings taut and straight",
+              "sample_penalty": "Loose strands; or marking T₁, T₂, T₃ separately suggesting unequal tensions"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)",
+              "context": "Block and tackle VR = 3",
+              "sample_hit": "Taut strings with uniform T arrows",
+              "sample_penalty": "Loose strings hanging from pulleys"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_PUL_C3",
+          "requirement": "Load (L) must hang from the movable block with a downward arrow. Effort (E) must be applied at the free end of the string with a labeled arrow.",
+          "required_anchors": [
+            "load_on_movable_block",
+            "effort_on_free_end"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Load and effort labels missing",
+            "Load shown on fixed block"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)",
+              "context": "VR = 3 block and tackle",
+              "sample_hit": "L with downward arrow below movable block; E with downward arrow on free string end",
+              "sample_penalty": "No labels for L or E"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_PUL_C4",
+          "requirement": "Fixed block must be attached to a clearly drawn rigid support (beam/ceiling). Pulleys in fixed block must be connected through their axles, not from the rim.",
+          "required_anchors": [
+            "rigid_support_drawn",
+            "axle_connection_not_rim"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "No rigid support shown",
+            "Pulleys connected from rim or hooks on rim"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)",
+              "context": "Fixed block support",
+              "sample_hit": "Rigid beam drawn above; pulleys axle-mounted to beam",
+              "sample_penalty": "Main support not drawn; pulleys floating"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)",
+              "context": "Fixed block support",
+              "sample_hit": "Clearly labeled rigid support",
+              "sample_penalty": "Hooks connected from rim of pulleys"
+            }
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit_pattern"
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_030",
+          "wrong_form": "Loose or sagging strings in pulley diagram",
+          "correct_form": "All strings taut and straight between pulleys",
+          "context": "Block and tackle system diagrams",
+          "applies_to_archetypes": [
+            "PHYS_PULLEY_SYSTEM"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_031",
+          "wrong_form": "Tension arrows missing or marked with different magnitudes on strands of the same tackle",
+          "correct_form": "Uniform upward tension T on every supporting strand of a single continuous string",
+          "context": "Block and tackle systems",
+          "applies_to_archetypes": [
+            "PHYS_PULLEY_SYSTEM"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_032",
+          "wrong_form": "Pulleys connected from rim instead of axle in fixed block",
+          "correct_form": "Pulleys mounted through axle to the rigid support",
+          "context": "Fixed block construction",
+          "applies_to_archetypes": [
+            "PHYS_PULLEY_SYSTEM"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q5(c)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "CORRECT_PULLEY_ARRANGEMENT_AND_SUPPORT",
+            "TAUT_STRINGS_WITH_TENSION_ARROWS",
+            "LOAD_EFFORT_LABELS_AND_VR_STRANDS"
+          ],
+          "penalty_deductions": {
+            "loose_strings": 1.0,
+            "missing_tension_arrows": 1.0,
+            "missing_support": 0.5
+          },
+          "observed_in": [
+            "2019 Q5(c)",
+            "2025 Q7(i)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_NUCLEAR_EQUATION",
+      "name": "Nuclear Reactions and Radioactive Decay",
+      "trigger_patterns": [
+        "Name the process",
+        "nuclear fission",
+        "nuclear fusion",
+        "radioactive decay",
+        "alpha decay",
+        "beta decay",
+        "What is the value of X",
+        "Identify the missing product",
+        "balance the nuclear equation",
+        "mass number",
+        "atomic number"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_NUC_C1",
+          "requirement": "Correct identification of the nuclear process (fission, fusion, or specific decay type) based on the reaction equation or graphical representation.",
+          "required_anchors": [
+            "process_name_identification"
+          ],
+          "accepted_equivalents": [
+            "Nuclear fission",
+            "Nuclear fusion",
+            "Alpha decay",
+            "Beta decay"
+          ],
+          "insufficient_alone": [
+            "Writing 'nuclear reaction' without specifying fission or fusion",
+            "Writing 'radioactive reaction' or 'chain reaction' as a substitute for fission",
+            "Confusing fission with fusion"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(a)",
+              "context": "Nuclear fission diagram with U-235 + neutron → Ba + Kr + 3 neutrons + energy",
+              "sample_hit": "Nuclear fission",
+              "sample_penalty": "'Nuclear fusion' or 'radioactive reaction' or 'chain reaction'"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q3(c)",
+              "context": "Distinguish nuclear fission from fusion",
+              "sample_hit": "Fission: heavy nucleus splits; Fusion: light nuclei combine",
+              "sample_penalty": "Reversing the definitions"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_NUC_C2",
+          "requirement": "Conservation of mass number (A) and atomic number (Z) must be satisfied across the nuclear equation. The sum of mass numbers on LHS must equal the sum on RHS; likewise for atomic numbers.",
+          "required_anchors": [
+            "mass_number_conservation",
+            "atomic_number_conservation"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Balanced atomic number but unbalanced mass number",
+            "Correct product but wrong mass number due to not counting the captured neutron"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(b)",
+              "context": "Find X in: U-235 + n → X_92_U → Ba-144 + Kr-89 + 3n",
+              "sample_hit": "X = 236 (235 + 1 = 236, accounting for the absorbed neutron)",
+              "sample_penalty": "X = 235 (forgetting the captured neutron adds to mass number)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q3(vi)",
+              "context": "Nuclear decay from graph — identify daughter nucleus after alpha/beta emissions",
+              "sample_hit": "Correct mass and atomic number after accounting for each emission",
+              "sample_penalty": "Position in periodic table after alpha decay incorrectly placed (wrong element group)"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_NUC_C3",
+          "requirement": "Missing particles must be identified with correct notation: neutron as ₀¹n, alpha as ₂⁴He or ₂⁴α, beta as ₋₁⁰e or ₋₁⁰β.",
+          "required_anchors": [
+            "correct_particle_notation"
+          ],
+          "accepted_equivalents": [
+            "₀¹n for neutron",
+            "n for neutron (abbreviated)",
+            "₂⁴He for alpha particle",
+            "₋₁⁰e for beta particle"
+          ],
+          "insufficient_alone": [
+            "Identifying a neutron as alpha or beta particle",
+            "Using wrong notation (e.g., writing neutron with charge)"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(c)",
+              "context": "Identify Y — missing product in fission equation",
+              "sample_hit": "3 neutrons / ₀¹n",
+              "sample_penalty": "Identifying missing particle as alpha or beta"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(c)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_040",
+          "wrong_form": "Confusing nuclear fission with fusion or writing 'chain reaction' as the process name",
+          "correct_form": "Fission = heavy nucleus splits into lighter fragments; Fusion = light nuclei combine into heavier nucleus",
+          "context": "Naming nuclear processes from equations or diagrams",
+          "applies_to_archetypes": [
+            "PHYS_NUCLEAR_EQUATION"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_041",
+          "wrong_form": "Not adding the mass of the captured neutron to the intermediate nucleus mass number",
+          "correct_form": "When a nucleus absorbs a neutron, the intermediate mass number = original mass number + 1",
+          "context": "Neutron bombardment in fission reactions",
+          "applies_to_archetypes": [
+            "PHYS_NUCLEAR_EQUATION"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q8(ii)(b)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_042",
+          "wrong_form": "Confusing position shift in periodic table after alpha decay (moving left 2 places) with beta decay (moving right 1 place)",
+          "correct_form": "Alpha: Z decreases by 2, A decreases by 4; Beta: Z increases by 1, A unchanged",
+          "context": "Radioactive decay series and nuclear transmutation",
+          "applies_to_archetypes": [
+            "PHYS_NUCLEAR_EQUATION"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q3(vi)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "PROCESS_IDENTIFICATION",
+            "MASS_NUMBER_BALANCE",
+            "PRODUCT_OR_PARTICLE_IDENTIFICATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q8(ii)",
+            "2025 Q3(vi)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_REASON",
+      "name": "Scientific Reasoning and Justification",
+      "trigger_patterns": [
+        "Give a reason",
+        "Justify your answer",
+        "Explain why",
+        "State the reason",
+        "Why does",
+        "Account for",
+        "What is the condition for",
+        "Name and explain"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_RSN_C1",
+          "requirement": "Response must contain the specific scientific principle, law, or physical mechanism that explains the phenomenon — not a restatement of the observation.",
+          "required_anchors": [
+            "scientific_principle_cited",
+            "causal_mechanism_stated"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Restating the observation as the reason",
+            "Circular reasoning (e.g., 'it happens because it happens')",
+            "Vague qualitative claims without physical basis"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q3(i)",
+              "context": "Condition for total internal reflection",
+              "sample_hit": "Light must travel from denser to rarer medium AND angle of incidence must exceed the critical angle",
+              "sample_penalty": "Only stating one condition, or confusing denser/rarer direction"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q1(e)",
+              "context": "Why centripetal force needed for circular motion",
+              "sample_hit": "To continuously change the direction of velocity while maintaining uniform speed; force directed toward centre",
+              "sample_penalty": "Writing centrifugal force instead of centripetal"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(iii)(a)",
+              "context": "Naming and explaining resonance phenomenon",
+              "sample_hit": "Resonance: tuning fork frequency matches the natural frequency of wire B, causing it to vibrate with maximum amplitude — paper rider falls off",
+              "sample_penalty": "Stating tuning fork frequency equals frequency of the paper rider or the wooden box"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RSN_C2",
+          "requirement": "For resonance questions, two explicit anchors are mandatory: (a) driving frequency matches the natural frequency of the vibrating body, and (b) the body vibrates with maximum or increased amplitude.",
+          "required_anchors": [
+            "frequency_match_condition",
+            "maximum_amplitude_condition"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Only stating frequency match without amplitude increase",
+            "Stating the tuning fork frequency equals the frequency of the paper rider or box",
+            "Omitting the concept of natural frequency"
+          ],
+          "mandatory_dependencies": [
+            "natural_frequency_term",
+            "driving_frequency_term"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q7(iii)(a)",
+              "context": "Resonance — paper rider falls off wire B",
+              "sample_hit": "The tuning fork's frequency matches the natural frequency of wire on box B; wire B vibrates with maximum amplitude, dislodging the rider",
+              "sample_penalty": "Saying tuning fork frequency = paper rider frequency"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q7(b)",
+              "context": "Sonometer resonance",
+              "sample_hit": "When tuning fork frequency matches natural frequency of the wire, wire vibrates with maximum amplitude (resonance)",
+              "sample_penalty": "Writing that the wire vibrates 'at the same frequency as the tuning fork' without mentioning natural frequency or amplitude increase"
+            }
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RSN_C3",
+          "requirement": "For TIR justification, two conditions must be stated: (a) light travels from optically denser to optically rarer medium, AND (b) angle of incidence exceeds the critical angle.",
+          "required_anchors": [
+            "denser_to_rarer_medium",
+            "angle_exceeds_critical_angle"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Only one condition stated",
+            "Reversing medium direction (rarer to denser)",
+            "Writing 'angle of incidence equals critical angle' instead of 'exceeds'"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q3(i)",
+              "context": "Conditions for TIR",
+              "sample_hit": "Light travels from denser to rarer medium; angle of incidence > critical angle",
+              "sample_penalty": "Missing either condition"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q2(c)",
+              "context": "Critical angle definition/conditions",
+              "sample_hit": "Both conditions stated with correct directionality",
+              "sample_penalty": "Defining critical angle without specifying denser-to-rarer requirement"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_RSN_C4",
+          "requirement": "For phase-change reasoning, the response must state that temperature remains constant because absorbed heat increases the potential energy of molecules while average kinetic energy remains strictly constant.",
+          "required_anchors": [
+            "heat_increases_PE",
+            "KE_remains_constant",
+            "temperature_constant_during_state_change"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Simply stating 'temperature remains constant during melting'",
+            "Saying 'heat is used to break bonds' without mentioning PE and KE"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q9(a)",
+              "context": "Why temperature remains constant during melting",
+              "sample_hit": "Heat absorbed increases PE of molecules to overcome intermolecular forces; average KE (and therefore temperature) stays constant",
+              "sample_penalty": "Only saying 'latent heat is absorbed' without the PE/KE mechanism"
+            }
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q9(a)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "PHYS_RSN_C5",
+          "requirement": "For electromagnetic force effect questions, the reasoning must connect the physical variable (cross-sectional area, current, field strength, length) to force via the governing formula F = BIl.",
+          "required_anchors": [
+            "governing_formula_reference",
+            "variable_effect_on_force"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Simply applying F = BIlsinθ and saying 'no effect' because area is not in the formula",
+            "Listing factors without connecting to the formula",
+            "Not recognizing that greater cross-section reduces resistance and thus increases current"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(c-d)",
+              "context": "Effect on force when rod cross-section increases",
+              "sample_hit": "Force increases because greater cross-sectional area → lower resistance → greater current → greater F (since F = BIl and I increases)",
+              "sample_penalty": "Saying 'no effect' because area is not directly in F = BIl"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(c-d)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_050",
+          "wrong_form": "Writing centrifugal force instead of centripetal force for circular motion",
+          "correct_form": "Centripetal force is directed toward the centre; centrifugal is a pseudo-force in rotating frame",
+          "context": "Circular motion reasoning",
+          "applies_to_archetypes": [
+            "PHYS_REASON"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(e)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_051",
+          "wrong_form": "Equating tuning fork frequency to paper rider or wooden box frequency in resonance",
+          "correct_form": "Tuning fork (driving) frequency matches natural frequency of the vibrating wire/string",
+          "context": "Resonance phenomenon explanation",
+          "applies_to_archetypes": [
+            "PHYS_REASON"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q7(b)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q7(iii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_052",
+          "wrong_form": "Confusing 'turning the glass upside down' with an increase in real depth in real/apparent depth problems",
+          "correct_form": "Ratio of real to apparent depth is constant (equals refractive index); when real depth changes, apparent depth changes proportionally",
+          "context": "Real and apparent depth reasoning",
+          "applies_to_archetypes": [
+            "PHYS_REASON"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q4(ii)(c)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "CONDITION_OR_PRINCIPLE",
+            "EXPLANATION_OR_MECHANISM"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q3(i)",
+            "2025 Q7(iii)(a)",
+            "2025 Q7(iii)(b)",
+            "2025 Q9(iii)(c-d)",
+            "2019 Q1(e)",
+            "2019 Q7(b)",
+            "2019 Q9(a)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "milestone_labels": [
+            "CORRECT_REASONING_STATEMENT"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q4(iii)(b)",
+            "2025 Q8(iii)(b)",
+            "2025 Q9(ii)(b)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_DEFINE",
+      "name": "Formal Definitions of Laws and Physical Quantities",
+      "trigger_patterns": [
+        "Define",
+        "State the law",
+        "What is meant by",
+        "State the definition"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_DEF_C1",
+          "requirement": "Definition must contain ALL mandatory key phrases specified in the marking scheme. Missing any single key phrase voids the mark for that phrase.",
+          "required_anchors": [
+            "all_key_phrases_present"
+          ],
+          "accepted_equivalents": [
+            "Semantically equivalent phrasing that preserves the physical meaning"
+          ],
+          "insufficient_alone": [
+            "Partial definition missing a critical qualifier",
+            "Circular definition",
+            "Example given instead of definition"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(a)",
+              "context": "Definition of moment of force",
+              "sample_hit": "The turning effect of a force about a point is the product of the force and the PERPENDICULAR DISTANCE from the point to the line of action of the force",
+              "sample_penalty": "Writing 'distance' instead of 'perpendicular distance'"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q3(d)",
+              "context": "Definition of free vibrations",
+              "sample_hit": "Vibrations of a body at its natural frequency WITHOUT any external periodic force",
+              "sample_penalty": "Omitting 'without external periodic force'"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q4(d)",
+              "context": "Definition of isobars",
+              "sample_hit": "Atoms of DIFFERENT elements having the SAME mass number but DIFFERENT atomic numbers",
+              "sample_penalty": "Confusing with isotopes (same element, different mass number)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q2(d)",
+              "context": "Definition of scattering of light",
+              "sample_hit": "The phenomenon by which a beam of light is redirected in different directions when it interacts with particles of the medium",
+              "sample_penalty": "Confusing scattering with refraction or dispersion"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_DEF_C2",
+          "requirement": "For moment of force: the term 'perpendicular distance' is non-negotiable. Writing 'distance' alone scores zero.",
+          "required_anchors": [
+            "perpendicular_distance_keyword"
+          ],
+          "accepted_equivalents": [
+            "perpendicular distance from the axis/point/fulcrum to the line of action of force"
+          ],
+          "insufficient_alone": [
+            "'distance' without 'perpendicular'",
+            "'shortest distance' (ambiguous)"
+          ],
+          "mandatory_dependencies": [
+            "perpendicular_qualifier"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(a)",
+              "context": "Moment of force definition",
+              "sample_hit": "Force × perpendicular distance from the fulcrum",
+              "sample_penalty": "Force × distance (missing 'perpendicular') = 0 marks"
+            }
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(a)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_060",
+          "wrong_form": "Omitting 'perpendicular' in the definition of moment of force",
+          "correct_form": "Moment = Force × perpendicular distance from the pivot/fulcrum",
+          "context": "Definition of moment of force / torque",
+          "applies_to_archetypes": [
+            "PHYS_DEFINE"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_061",
+          "wrong_form": "Omitting 'without external periodic force' in definition of free vibrations",
+          "correct_form": "Free vibrations: body vibrates at its natural frequency without any external periodic force after being displaced and released",
+          "context": "Definition of free vibrations",
+          "applies_to_archetypes": [
+            "PHYS_DEFINE"
+          ],
+          "effect": "DOCK_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(d)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_062",
+          "wrong_form": "Confusing isobars (same A, different Z) with isotopes (same Z, different A)",
+          "correct_form": "Isobars: different elements, same mass number; Isotopes: same element, different mass numbers",
+          "context": "Nuclear terminology definitions",
+          "applies_to_archetypes": [
+            "PHYS_DEFINE"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q4(d)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "CORE_DEFINITION_STATEMENT",
+            "CRITICAL_QUALIFIER_OR_CONDITION"
+          ],
+          "penalty_deductions": {
+            "missing_key_phrase": 1.0
+          },
+          "observed_in": [
+            "2019 Q1(a)",
+            "2019 Q2(c)",
+            "2019 Q2(d)",
+            "2019 Q3(d)",
+            "2019 Q4(d)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_IDENTIFY",
+      "name": "Identification of Physical Quantities, Radiations, and Conversions",
+      "trigger_patterns": [
+        "Name the",
+        "Identify",
+        "What type of",
+        "Which radiation",
+        "State the energy conversion",
+        "What is the unit",
+        "Name the law"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_IDN_C1",
+          "requirement": "The identified item must match the official marking scheme terminology exactly or be an accepted equivalent listed in the scheme.",
+          "required_anchors": [
+            "exact_term_or_accepted_equivalent"
+          ],
+          "accepted_equivalents": [
+            "Full name or standard abbreviation as listed in marking scheme"
+          ],
+          "insufficient_alone": [
+            "A related but incorrect term",
+            "A subjective description instead of the standard name"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(iii)(a)",
+              "context": "Name radiations: quartz prism spectrum, remote sensing, traffic signals",
+              "sample_hit": "1. Ultraviolet/UV rays; 2. Infrared/IR radiations/microwaves/radio waves; 3. Visible light (any colour)",
+              "sample_penalty": "Confusing UV with ultrasonic; confusing IR with infrasonic"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q1(b)",
+              "context": "Energy conversions in devices",
+              "sample_hit": "Correct 'input energy → output energy' format",
+              "sample_penalty": "Reversing input and output energies"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(b)",
+              "context": "Name the law for direction of motion of current-carrying conductor in magnetic field",
+              "sample_hit": "Fleming's Left-Hand Rule / Right Hand Palm Rule",
+              "sample_penalty": "Fleming's Right-Hand Rule / Thumb Rule / Faraday's Law / Lenz's Law"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_IDN_C2",
+          "requirement": "For specific heat capacity comparison questions, the material with LOWER specific heat capacity shows HIGHER temperature rise for the same heat input, and is selected for making a calorimeter due to low heat absorption.",
+          "required_anchors": [
+            "inverse_relationship_SHC_temp_rise",
+            "low_SHC_for_calorimeter"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Stating higher temperature rise means higher specific heat capacity",
+            "Selecting the material with higher SHC for calorimeter"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(ii)(a-b)",
+              "context": "Material X warms 10°C, material Y warms 40°C for same heat and mass",
+              "sample_hit": "X has higher SHC (lower temp rise); Y selected for calorimeter (low SHC = absorbs less heat)",
+              "sample_penalty": "Saying Y has higher SHC because it has higher temperature rise"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_070",
+          "wrong_form": "Confusing ultraviolet with ultrasonic, or infrared with infrasonic",
+          "correct_form": "UV/IR are electromagnetic radiations; ultrasonic/infrasonic are sound waves",
+          "context": "Electromagnetic spectrum identification",
+          "applies_to_archetypes": [
+            "PHYS_IDENTIFY"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(iii)(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_071",
+          "wrong_form": "Confusing Fleming's Left-Hand Rule with Fleming's Right-Hand Rule",
+          "correct_form": "Left-Hand Rule for motor effect (force on current-carrying conductor in magnetic field); Right-Hand Rule for dynamo/generator effect",
+          "context": "Electromagnetism law identification",
+          "applies_to_archetypes": [
+            "PHYS_IDENTIFY"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(b)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_072",
+          "wrong_form": "Confusing electromagnetic radiation properties with radioactive radiation properties",
+          "correct_form": "Electromagnetic radiations share properties: travel at speed of light in vacuum, no medium required, can refract/reflect. Radioactive emissions have particle nature (alpha, beta) or are a specific EM ray (gamma).",
+          "context": "Common property identification for EM radiations",
+          "applies_to_archetypes": [
+            "PHYS_IDENTIFY"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q5(iii)(b)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 4,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "IDENTIFICATION_1",
+            "IDENTIFICATION_2",
+            "IDENTIFICATION_3",
+            "COMMON_PROPERTY"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q5(iii)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "ITEM_IDENTIFIED",
+            "SUPPORTING_DETAIL"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2019 Q1(b)",
+            "2019 Q1(d)",
+            "2019 Q2(b)",
+            "2025 Q3(ii)",
+            "2025 Q3(iii)",
+            "2025 Q3(v)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "milestone_labels": [
+            "SINGLE_IDENTIFICATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q8(i)(c)",
+            "2025 Q9(ii)(a)",
+            "2025 Q9(iii)(b)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_DISTINGUISH",
+      "name": "Two-Sided Comparative Distinctions",
+      "trigger_patterns": [
+        "Distinguish between",
+        "Differentiate between",
+        "What is the difference between",
+        "Compare"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_DST_C1",
+          "requirement": "Response must present matched pairs of contrasting properties — each distinguishing point for item A must have a corresponding contrasting point for item B on the same criterion.",
+          "required_anchors": [
+            "matched_contrast_pairs"
+          ],
+          "accepted_equivalents": [
+            "Tabular format with matching rows",
+            "Paired sentences with explicit contrast"
+          ],
+          "insufficient_alone": [
+            "Listing properties of only one item",
+            "Non-parallel comparison (different criteria for A and B)",
+            "Repeating the same point in different words"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(c)",
+              "context": "Nuclear fission vs fusion",
+              "sample_hit": "Fission: heavy nucleus → lighter fragments + energy; Fusion: light nuclei → heavier nucleus + energy",
+              "sample_penalty": "Only describing fission without the matching fusion counterpart"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q9(b)",
+              "context": "Heat capacity vs specific heat capacity",
+              "sample_hit": "Heat capacity: heat to raise temp of whole body by 1°C (unit: J/°C); SHC: heat to raise temp of unit mass by 1°C (unit: J/kg°C)",
+              "sample_penalty": "Defining only one term"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q8(i)(b)",
+              "context": "Double-pole switch vs single-pole switch",
+              "sample_hit": "Switch Z in live AND neutral (double pole); home switch in live ONLY (single pole)",
+              "sample_penalty": "Calling Z a dual control switch"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_080",
+          "wrong_form": "Listing properties of only one item without the contrasting counterpart",
+          "correct_form": "Each point about A must have a matching contrasting point about B",
+          "context": "Any distinguish/differentiate question",
+          "applies_to_archetypes": [
+            "PHYS_DISTINGUISH"
+          ],
+          "effect": "HALF_MARKS_ONLY",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(c)"
+            },
+            {
+              "paper": "2019",
+              "question_ref": "Q9(b)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "PHYS_NEG_081",
+          "wrong_form": "Confusing heat capacity (whole body) with specific heat capacity (per unit mass)",
+          "correct_form": "Heat capacity = mcΔθ/Δθ = mc (for the body); SHC = c (per unit mass per degree)",
+          "context": "Heat capacity vs specific heat capacity distinction",
+          "applies_to_archetypes": [
+            "PHYS_DISTINGUISH"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q9(b)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(ii)(a)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "PROPERTY_A_VS_B_POINT_1",
+            "PROPERTY_A_VS_B_POINT_2"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2019 Q3(c)",
+            "2019 Q4(e)",
+            "2019 Q9(b)",
+            "2025 Q8(i)(b)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_GRAPH",
+      "name": "Graph Plotting and Interpretation",
+      "trigger_patterns": [
+        "Plot a graph",
+        "Draw a graph",
+        "From the graph",
+        "Compare the waveforms",
+        "amplitude",
+        "wavelength",
+        "frequency from graph"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_GRP_C1",
+          "requirement": "For sound wave comparison, correctly identify which waveform has greater amplitude (louder) and which has shorter wavelength/higher frequency (higher pitch) based on visual inspection of the waveforms.",
+          "required_anchors": [
+            "amplitude_comparison",
+            "wavelength_or_frequency_comparison"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Confusing amplitude with wavelength",
+            "Using subjective descriptors (softer/quieter) instead of objective quantities (amplitude/frequency)"
+          ],
+          "mandatory_dependencies": [
+            "pitch_frequency_linkage",
+            "loudness_amplitude_linkage"
+          ],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(a)",
+              "context": "Two sound waveforms — compare amplitude and wavelength",
+              "sample_hit": "Wave A has larger amplitude (louder); Wave B has shorter wavelength (higher pitch/frequency)",
+              "sample_penalty": "Saying Wave A has higher pitch because it has larger amplitude"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q2(iii)",
+              "context": "Sound wave graph — identify amplitude and wavelength changes",
+              "sample_hit": "Correctly marking amplitude on displacement axis and wavelength along time/distance axis",
+              "sample_penalty": "Measuring amplitude as peak-to-peak instead of zero-to-peak"
+            }
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_GRP_C2",
+          "requirement": "For nuclear decay graphs, correctly read mass number and atomic number from axes to identify the parent and daughter nuclei and the type of decay.",
+          "required_anchors": [
+            "axis_reading",
+            "decay_type_identification"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Reading graph values incorrectly",
+            "Confusing mass number axis with atomic number axis"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q3(vi)",
+              "context": "Nuclear decay graph — read values and identify decay type",
+              "sample_hit": "Reading initial and final (A, Z) values; identifying alpha decay (A decreases by 4, Z by 2) or beta decay (Z increases by 1, A same)",
+              "sample_penalty": "Misreading the graph axes or confusing decay types"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q3(vi)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_090",
+          "wrong_form": "Confusing pitch (frequency) with loudness (amplitude) or using them interchangeably",
+          "correct_form": "Pitch is determined by frequency; Loudness is determined by amplitude. These are independent physical quantities.",
+          "context": "Sound wave graph interpretation",
+          "applies_to_archetypes": [
+            "PHYS_GRAPH"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "explicit_pattern",
+          "evidence": [
+            {
+              "paper": "2019",
+              "question_ref": "Q3(a)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q2(iii)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "AMPLITUDE_OR_FIRST_QUANTITY",
+            "WAVELENGTH_FREQUENCY_OR_SECOND_QUANTITY"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2019 Q3(a)",
+            "2025 Q2(iii)"
+          ]
+        },
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "GRAPH_READING_POINT_1",
+            "GRAPH_READING_POINT_2",
+            "DECAY_OR_PROCESS_IDENTIFICATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q3(vi)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_LEVER",
+      "name": "Lever Class Identification and Mechanical Advantage",
+      "trigger_patterns": [
+        "Which class of lever",
+        "Identify the lever",
+        "mechanical advantage",
+        "effort arm",
+        "load arm",
+        "fulcrum position"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_LEV_C1",
+          "requirement": "Lever class identification based on the relative positions of Load (L), Fulcrum (F), and Effort (E): Class I = F between L and E; Class II = L between F and E; Class III = E between F and L.",
+          "required_anchors": [
+            "correct_class_from_LFE_positions"
+          ],
+          "accepted_equivalents": [
+            "Class 1/I/First",
+            "Class 2/II/Second",
+            "Class 3/III/Third"
+          ],
+          "insufficient_alone": [
+            "Naming the class without relating to L, F, E positions when justification is required",
+            "Confusing classes when multiple lever diagrams share the same class"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2019",
+              "question_ref": "Q1(c)",
+              "context": "Identify lever class from diagram",
+              "sample_hit": "Class II lever — load between fulcrum and effort",
+              "sample_penalty": "Misidentifying the class due to incorrect L/F/E positions"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q6(ii)(a)",
+              "context": "Three levers X, Y, Z of equal length — identify class",
+              "sample_hit": "Class I / First class lever (all three have fulcrum between load and effort)",
+              "sample_penalty": "Saying each is a different class"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_LEV_C2",
+          "requirement": "For maximum mechanical advantage identification, the lever with the longest effort arm relative to load arm gives maximum MA. MA = Effort Arm / Load Arm.",
+          "required_anchors": [
+            "effort_arm_load_arm_ratio",
+            "MA_formula"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Stating 'highest effort arm' without comparing to load arm",
+            "Confusing effort arm with load arm"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q6(ii)(b)",
+              "context": "Among levers X, Y, Z of equal length, which gives maximum MA",
+              "sample_hit": "Lever X — effort arm is longest relative to load arm (EA > LA), so MA = EA/LA is greatest",
+              "sample_penalty": "Identifying the lever with highest effort arm alone without comparing to load arm"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q6(ii)(b)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "PHYS_NEG_100",
+          "wrong_form": "Claiming multiple lever diagrams belong to different classes when they all share the same fulcrum-load-effort arrangement",
+          "correct_form": "If all levers have fulcrum between load and effort, all are Class I regardless of exact positions",
+          "context": "Multiple lever comparison questions",
+          "applies_to_archetypes": [
+            "PHYS_LEVER"
+          ],
+          "effect": "FULL_MARK_LOSS",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q6(ii)(a)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "LEVER_CLASS_IDENTIFICATION",
+            "MAX_MA_LEVER_IDENTIFIED",
+            "JUSTIFICATION_EA_VS_LA"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q6(ii)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "milestone_labels": [
+            "LEVER_CLASS",
+            "EXAMPLE_OR_JUSTIFICATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2019 Q1(c)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "PHYS_MATCH_FILL",
+      "name": "Multiple Choice, Assertion-Reason, and Fill-in-the-Blanks",
+      "trigger_patterns": [
+        "Choose the correct answer",
+        "Fill in the blanks",
+        "Select the correct option",
+        "True or False",
+        "State True or False",
+        "assertion",
+        "reason"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "PHYS_MCQ_C1",
+          "requirement": "The selected option must exactly match the marking scheme answer. For fill-in-the-blanks, the inserted term must be the standard physics term or accepted equivalent.",
+          "required_anchors": [
+            "exact_option_match"
+          ],
+          "accepted_equivalents": [
+            "Accepted alternatives listed in the marking scheme"
+          ],
+          "insufficient_alone": [
+            "A plausible but incorrect option",
+            "A related but non-standard term in fill-in-the-blanks"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q1",
+              "context": "15 MCQs, 1 mark each",
+              "sample_hit": "Correct option letter matching the scheme",
+              "sample_penalty": "Any other option"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q2(i)",
+              "context": "Fill in the blanks — 6 items",
+              "sample_hit": "Standard physics term from the scheme",
+              "sample_penalty": "Related but incorrect term"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit_pattern"
+        },
+        {
+          "criterion_id": "PHYS_MCQ_C2",
+          "requirement": "For True/False questions, the answer must be the correct Boolean value as per the marking scheme. No partial credit for explanation without the correct T/F declaration.",
+          "required_anchors": [
+            "boolean_declaration"
+          ],
+          "accepted_equivalents": [
+            "True / T",
+            "False / F"
+          ],
+          "insufficient_alone": [
+            "Explanation without stating True or False",
+            "Contradictory declaration and explanation"
+          ],
+          "mandatory_dependencies": [],
+          "evaluation_examples": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(ii)(c)",
+              "context": "SHC same during state change — True or False",
+              "sample_hit": "False",
+              "sample_penalty": "True, or writing only an explanation"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(a)",
+              "context": "Copper rod PQ moves towards C — True or False",
+              "sample_hit": "True",
+              "sample_penalty": "False"
+            }
+          ],
+          "rule_refs": [],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "2025",
+              "question_ref": "Q9(ii)(c)"
+            },
+            {
+              "paper": "2025",
+              "question_ref": "Q9(iii)(a)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 15,
+          "milestone_weights": [
+            1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0
+          ],
+          "milestone_labels": [
+            "MCQ_1", "MCQ_2", "MCQ_3", "MCQ_4", "MCQ_5",
+            "MCQ_6", "MCQ_7", "MCQ_8", "MCQ_9", "MCQ_10",
+            "MCQ_11", "MCQ_12", "MCQ_13", "MCQ_14", "MCQ_15"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q1"
+          ]
+        },
+        {
+          "total_marks": 6,
+          "milestone_weights": [
+            1.0, 1.0, 1.0, 1.0, 1.0, 1.0
+          ],
+          "milestone_labels": [
+            "BLANK_1", "BLANK_2", "BLANK_3", "BLANK_4", "BLANK_5", "BLANK_6"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q2(i)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "milestone_labels": [
+            "TRUE_FALSE_DECLARATION"
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "2025 Q9(ii)(c)",
+            "2025 Q9(iii)(a)"
+          ]
+        }
+      ]
+    }
+  ],
+  "global_negative_constraints": [
+    {
+      "constraint_id": "PHYS_GLOBAL_001",
+      "wrong_form": "Leaving final answers in fractional form (e.g., 8/5, 41/4, -1/90)",
+      "correct_form": "Express final answer in decimal form up to appropriate decimal places",
+      "context": "All numerical problems except pure ratio or dimensionless comparison questions",
+      "applies_to_archetypes": [
+        "ALL"
+      ],
+      "effect": "DOCK_HALF_MARK",
+      "source": "general_comments",
+      "evidence_level": "explicit_pattern",
+      "evidence": [
+        {
+          "paper": "2019",
+          "question_ref": "General Comments"
+        },
+        {
+          "paper": "2025",
+          "question_ref": "General Comments"
+        }
+      ]
+    },
+    {
+      "constraint_id": "PHYS_GLOBAL_002",
+      "wrong_form": "Omitting units from dimensional physical quantities in final answers",
+      "correct_form": "Every dimensional final answer must carry the correct SI or CGS unit",
+      "context": "All numerical sub-questions producing dimensional quantities",
+      "applies_to_archetypes": [
+        "ALL"
+      ],
+      "effect": "DOCK_HALF_MARK",
+      "source": "general_comments",
+      "evidence_level": "explicit_pattern",
+      "evidence": [
+        {
+          "paper": "2019",
+          "question_ref": "General Comments"
+        },
+        {
+          "paper": "2025",
+          "question_ref": "General Comments — Suggestions for candidates: 'Pay attention to writing correct units for all physical quantities'"
+        }
+      ]
+    },
+    {
+      "constraint_id": "PHYS_GLOBAL_003",
+      "wrong_form": "Missing directional arrowheads on rays in any optical diagram",
+      "correct_form": "Every ray segment in a ray diagram must carry a directional arrowhead",
+      "context": "All ray-optics diagrams — prisms, lenses, slabs, mirrors",
+      "applies_to_archetypes": [
+        "PHYS_RAY_DIAGRAM"
+      ],
+      "effect": "VOID_DIAGRAM_MARK",
+      "source": "general_comments",
+      "evidence_level": "explicit_pattern",
+      "evidence": [
+        {
+          "paper": "2019",
+          "question_ref": "General Comments"
+        },
+        {
+          "paper": "2025",
+          "question_ref": "General Comments — Suggestions for candidates: 'Always draw arrows on rays'"
+        }
+      ]
+    },
+    {
+      "constraint_id": "PHYS_GLOBAL_004",
+      "wrong_form": "Drawing neat diagrams without labels for forces, tensions, loads, efforts, or key components",
+      "correct_form": "All diagrams must have appropriate labels for physical quantities and components",
+      "context": "All diagrammatic questions including pulleys, levers, circuits, and ray diagrams",
+      "applies_to_archetypes": [
+        "ALL"
+      ],
+      "effect": "DOCK_MARK",
+      "source": "general_comments",
+      "evidence_level": "explicit_pattern",
+      "evidence": [
+        {
+          "paper": "2019",
+          "question_ref": "General Comments"
+        },
+        {
+          "paper": "2025",
+          "question_ref": "General Comments"
+        }
+      ]
+    },
+    {
+      "constraint_id": "PHYS_GLOBAL_005",
+      "wrong_form": "Using subjective sound descriptors (louder/softer/shrill) as physical quantities",
+      "correct_form": "Pitch is governed by frequency (Hz); Loudness is governed by amplitude. Use objective physical quantities.",
+      "context": "Any question involving sound characteristics",
+      "applies_to_archetypes": [
+        "PHYS_GRAPH",
+        "PHYS_REASON",
+        "PHYS_IDENTIFY"
+      ],
+      "effect": "FULL_MARK_LOSS",
+      "source": "examiner_comment",
+      "evidence_level": "explicit_pattern",
+      "evidence": [
+        {
+          "paper": "2019",
+          "question_ref": "Q3(a)"
+        },
+        {
+          "paper": "2025",
+          "question_ref": "Q2(iii)"
+        }
+      ]
+    },
+    {
+      "constraint_id": "PHYS_GLOBAL_006",
+      "wrong_form": "Confusing resistance with resistivity in circuit analysis",
+      "correct_form": "Resistance (R) is for a specific conductor; Resistivity (ρ) is a material property. R = ρl/A",
+      "context": "Electrical circuit and resistor problems",
+      "applies_to_archetypes": [
+        "PHYS_NUMERICAL",
+        "PHYS_CIRCUIT_DIAGRAM",
+        "PHYS_DISTINGUISH"
+      ],
+      "effect": "FULL_MARK_LOSS",
+      "source": "general_comments",
+      "evidence_level": "single",
+      "evidence": [
+        {
+          "paper": "2025",
+          "question_ref": "General Comments — Topics candidates got confused: 'Resistance and Resistivity'"
+        }
+      ]
+    }
+  ],
+  "question_archetype_mapping": {
+    "2019": {
+      "Q1(a)": "PHYS_DEFINE",
+      "Q1(b)": "PHYS_IDENTIFY",
+      "Q1(c)": "PHYS_LEVER",
+      "Q1(d)": "PHYS_IDENTIFY",
+      "Q1(e)": "PHYS_REASON",
+      "Q2(a)": "PHYS_NUMERICAL",
+      "Q2(b)": "PHYS_IDENTIFY",
+      "Q2(c)": "PHYS_DEFINE",
+      "Q2(d)": "PHYS_DEFINE",
+      "Q2(e)": "PHYS_RAY_DIAGRAM",
+      "Q3(a)": "PHYS_GRAPH",
+      "Q3(b)": "PHYS_NUMERICAL",
+      "Q3(c)": "PHYS_DISTINGUISH",
+      "Q3(d)": "PHYS_DEFINE",
+      "Q3(e)": "PHYS_NUMERICAL",
+      "Q4(a)": "PHYS_NUMERICAL",
+      "Q4(b)": "PHYS_NUMERICAL",
+      "Q4(c)": "PHYS_CIRCUIT_DIAGRAM",
+      "Q4(d)": "PHYS_DEFINE",
+      "Q4(e)": "PHYS_DISTINGUISH",
+      "Q5(a)": "PHYS_NUMERICAL",
+      "Q5(b)": "PHYS_NUMERICAL",
+      "Q5(c)": "PHYS_PULLEY_SYSTEM",
+      "Q6(a)": "PHYS_RAY_DIAGRAM",
+      "Q6(b)": "PHYS_RAY_DIAGRAM",
+      "Q6(c)": "PHYS_NUMERICAL",
+      "Q7(a)": "PHYS_RAY_DIAGRAM",
+      "Q7(b)": "PHYS_REASON",
+      "Q7(c)": "PHYS_NUMERICAL",
+      "Q8(a)": "PHYS_NUMERICAL",
+      "Q8(b)": "PHYS_NUMERICAL",
+      "Q8(c)": "PHYS_NUMERICAL",
+      "Q9(a)": "PHYS_REASON",
+      "Q9(b)": "PHYS_DISTINGUISH",
+      "Q9(c)": "PHYS_NUMERICAL"
+    },
+    "2025": {
+      "Q1": "PHYS_MATCH_FILL",
+      "Q2(i)": "PHYS_MATCH_FILL",
+      "Q2(ii)": "PHYS_IDENTIFY",
+      "Q2(iii)": "PHYS_GRAPH",
+      "Q3(i)": "PHYS_REASON",
+      "Q3(ii)": "PHYS_IDENTIFY",
+      "Q3(iii)": "PHYS_IDENTIFY",
+      "Q3(iv)": "PHYS_NUMERICAL",
+      "Q3(v)": "PHYS_IDENTIFY",
+      "Q3(vi)": "PHYS_NUCLEAR_EQUATION",
+      "Q4(i)": "PHYS_RAY_DIAGRAM",
+      "Q4(ii)(a)": "PHYS_REASON",
+      "Q4(ii)(b)": "PHYS_REASON",
+      "Q4(ii)(c)": "PHYS_REASON",
+      "Q4(iii)(a)": "PHYS_RAY_DIAGRAM",
+      "Q4(iii)(b)": "PHYS_REASON",
+      "Q5(i)": "PHYS_NUMERICAL",
+      "Q5(ii)(a)": "PHYS_REASON",
+      "Q5(ii)(b)": "PHYS_REASON",
+      "Q5(ii)(c)": "PHYS_REASON",
+      "Q5(iii)(a)": "PHYS_IDENTIFY",
+      "Q5(iii)(b)": "PHYS_IDENTIFY",
+      "Q6(i)": "PHYS_NUMERICAL",
+      "Q6(ii)(a)": "PHYS_LEVER",
+      "Q6(ii)(b)": "PHYS_LEVER",
+      "Q6(iii)(a)": "PHYS_NUMERICAL",
+      "Q6(iii)(b)": "PHYS_NUMERICAL",
+      "Q6(iii)(c)": "PHYS_NUMERICAL",
+      "Q7(i)": "PHYS_PULLEY_SYSTEM",
+      "Q7(ii)": "PHYS_NUMERICAL",
+      "Q7(iii)(a)": "PHYS_REASON",
+      "Q7(iii)(b)": "PHYS_REASON",
+      "Q8(i)(a)": "PHYS_CIRCUIT_DIAGRAM",
+      "Q8(i)(b)": "PHYS_DISTINGUISH",
+      "Q8(i)(c)": "PHYS_IDENTIFY",
+      "Q8(ii)(a)": "PHYS_NUCLEAR_EQUATION",
+      "Q8(ii)(b)": "PHYS_NUCLEAR_EQUATION",
+      "Q8(ii)(c)": "PHYS_NUCLEAR_EQUATION",
+      "Q8(iii)(a)": "PHYS_NUMERICAL",
+      "Q8(iii)(b)": "PHYS_REASON",
+      "Q9(i)": "PHYS_NUMERICAL",
+      "Q9(ii)(a)": "PHYS_IDENTIFY",
+      "Q9(ii)(b)": "PHYS_REASON",
+      "Q9(ii)(c)": "PHYS_MATCH_FILL",
+      "Q9(iii)(a)": "PHYS_MATCH_FILL",
+      "Q9(iii)(b)": "PHYS_IDENTIFY",
+      "Q9(iii)(c)": "PHYS_REASON",
+      "Q9(iii)(d)": "PHYS_REASON"
+    }
+  },
+  "unresolved_anomalies": []
+}

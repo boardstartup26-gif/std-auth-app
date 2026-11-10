@@ -12,23 +12,15 @@
 // `?dry=1` runs the whole selection, including the consent gate, and reports
 // what it would send without writing or emailing anything.
 
-import { timingSafeEqual } from "node:crypto";
 import { NextResponse, type NextRequest } from "next/server";
 import { runReattemptPrompts } from "@/lib/notifications/reattempt";
+import { cronAuthorised } from "@/lib/cron-auth";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
-function authorised(request: NextRequest): boolean {
-  const secret = process.env.CRON_SECRET ?? "";
-  if (secret.length < 16) return false;
-  const expected = Buffer.from(`Bearer ${secret}`);
-  const given = Buffer.from(request.headers.get("authorization") ?? "");
-  return expected.length === given.length && timingSafeEqual(expected, given);
-}
-
 export async function GET(request: NextRequest) {
-  if (!authorised(request)) {
+  if (!cronAuthorised(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

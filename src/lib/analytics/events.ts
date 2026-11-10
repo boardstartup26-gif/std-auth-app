@@ -60,6 +60,18 @@ export const EVENTS = {
   NOTIFICATION_OPENED: "notification_opened",
   /** Server: reminder emails turned on or off, and from where. */
   EMAIL_REMINDERS_CHANGED: "email_reminders_changed",
+  /**
+   * Server: a Weekly Board Plan was created. Carries `source` ("cron" |
+   * "dashboard"), `week_start`, the task `kinds`, and from the cron the
+   * email outcome.
+   */
+  BOARD_PLAN_CREATED: "board_plan_created",
+  /** Server: a student sent their parent the weekly-report invite from /account. */
+  PARENT_REPORT_INVITED: "parent_report_invited",
+  /** Server: a parent turned weekly reports on or off. Carries `enabled` and `via`. */
+  PARENT_REPORTS_CHANGED: "parent_reports_changed",
+  /** Server, from the weekly cron: one report sent. Carries `answers` and `active` (practised this week). */
+  PARENT_REPORT_SENT: "parent_report_sent",
 
   // ── Onboarding & referrals ─────────────────────────────────────────────────
   /** Browser: an onboarding question became valid. Carries `step` (1-4). Per-step drop-off. */

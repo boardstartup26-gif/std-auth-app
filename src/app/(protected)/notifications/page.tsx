@@ -10,7 +10,11 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { listNotifications } from "@/lib/notifications/service";
-import { errorAlert, sectionLabel } from "@/lib/ui";
+import { sectionLabel } from "@/lib/ui";
+import { Bell } from "lucide-react";
+import { EmptyState } from "@/app/_components/states/EmptyState";
+import { ReloadableError } from "@/app/_components/states/ErrorState";
+import { PendingSubmit } from "@/app/_components/states/PendingSubmit";
 import { markAllReadAction } from "./actions";
 import { NotificationList } from "./_components/NotificationList";
 
@@ -34,12 +38,12 @@ export default async function NotificationsPage() {
         <h1 className="display-section">Notifications</h1>
         {unread > 0 ? (
           <form action={markAllReadAction}>
-            <button
-              type="submit"
+            <PendingSubmit
+              pendingLabel="Marking as read…"
               className="text-sm text-muted-foreground underline-offset-2 transition-colors hover:text-foreground hover:underline"
             >
               Mark all as read
-            </button>
+            </PendingSubmit>
           </form>
         ) : null}
       </div>
@@ -49,17 +53,20 @@ export default async function NotificationsPage() {
       </p>
 
       {items === null ? (
-        <p className={`${errorAlert} mt-10`} role="alert">
-          We couldn&rsquo;t load your notifications just now. Please refresh in a moment.
-        </p>
+        <ReloadableError
+          className="mt-10"
+          title="We couldn’t load your notifications"
+          message="Nothing has been lost. Try again in a moment."
+          secondary={{ label: "Back to dashboard", href: "/dashboard" }}
+        />
       ) : items.length === 0 ? (
-        <div className="mt-10 border-t border-rule pt-8">
-          <p className="font-display text-lg text-foreground">Nothing here yet.</p>
-          <p className="mt-2 max-w-[var(--measure)] text-sm text-muted-foreground">
-            Answer a written question, and if any marks slip away, you&rsquo;ll get a nudge here
-            the next day to win them back.
-          </p>
-        </div>
+        <EmptyState
+          className="mt-10"
+          icon={Bell}
+          title="You’re all caught up"
+          description="Answer a written question, and if any marks slip away, you’ll get a nudge here the next day to win them back."
+          primary={{ label: "Practice a question", href: "/evaluate" }}
+        />
       ) : (
         <NotificationList items={items} now={now} />
       )}

@@ -36,8 +36,8 @@ export const POLICIES: Record<PolicyKey, PolicyMeta> = {
       "What personal data BoardEdge collects, why, who processes it, how long it is kept, and the rights you and your parent or guardian have over it.",
     href: "/privacy",
     file: "privacy.md",
-    version: "1.5",
-    lastUpdated: "2026-10-24",
+    version: "1.6",
+    lastUpdated: "2026-11-11",
   },
   terms: {
     key: "terms",

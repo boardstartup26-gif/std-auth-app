@@ -11,6 +11,7 @@ import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
 import { readPaper } from "@/lib/practice-sets/read";
+import { paperKindLabel } from "@/lib/practice-sets/constants";
 import { FREE_EVALUATIONS_BEFORE_CONSENT, getEvaluationGateState } from "@/lib/parent-consent/service";
 import { btnSecondary, sectionLabel } from "@/lib/ui";
 import { PaperAttempt } from "./_components/PaperAttempt";
@@ -33,7 +34,9 @@ export default async function PracticePaperPage({
   } = await supabase.auth.getUser();
   if (!user) redirect(`/login?next=/practice-paper/${id}`);
 
-  const paper = await readPaper(user.id, id);
+  // strict: a database failure throws to the error boundary (retryable) rather
+  // than reading as "paper not found", or as a paper with its answers missing.
+  const paper = await readPaper(user.id, id, { strict: true });
   if (!paper) notFound();
 
   if (paper.status === "marked") return <PaperResults paper={paper} />;
@@ -88,7 +91,7 @@ export default async function PracticePaperPage({
         totalMarks: paper.totalMarks,
         startedAt: paper.startedAt,
         targetMarks: fit === "closest" ? paper.spec.targetMarks : null,
-        retry: Boolean(paper.spec.retryOf),
+        kindLabel: paperKindLabel(paper.spec),
         questions: paper.questions,
         answers: Object.fromEntries(
           Object.entries(paper.answers).map(([qid, a]) => [qid, { text: a.text, flagged: a.flagged, updatedAt: a.updatedAt }]),

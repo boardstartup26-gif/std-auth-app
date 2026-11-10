@@ -3,6 +3,7 @@
 import { startTransition, useActionState, useState } from "react";
 import { Minus, Plus } from "lucide-react";
 import { btnPrimary, errorAlert, inputBase, numericFigures } from "@/lib/ui";
+import { EmptyState } from "@/app/_components/states/EmptyState";
 import { CREDIT_COST_OBJECTIVE, CREDIT_COST_SUBJECTIVE } from "@/lib/constants";
 import {
   approxMinutes,
@@ -144,6 +145,18 @@ export function BuilderForm({
       const others = total - current[key];
       return { ...current, [key]: Math.min(next, MAX_QUESTIONS - others) };
     });
+
+  if (!availability.length) {
+    return (
+      <EmptyState
+        className="mt-10"
+        title="No questions are available yet"
+        description="The question bank has nothing to build a paper from right now. Practising a single question still works, and papers will appear here as soon as questions are added."
+        primary={{ label: "Practice a question", href: "/evaluate" }}
+        secondary={{ label: "Back to dashboard", href: "/dashboard" }}
+      />
+    );
+  }
 
   return (
     // onSubmit + startTransition rather than <form action>: React resets a form
@@ -400,6 +413,14 @@ export function BuilderForm({
         </button>
         {needsChapters ? (
           <p className="mt-2 text-center text-xs text-muted-foreground">Choose at least one chapter.</p>
+        ) : null}
+        {/* A disabled button with no reason is a dead end. When nothing can be
+            built from these choices, say so and say what to change. */}
+        {total === 0 && !needsChapters ? (
+          <p className="mt-2 text-center text-xs text-muted-foreground" role="status">
+            There aren’t any questions for these choices yet. Try another subject
+            {info?.difficultyLabelled && difficulty !== "any" ? " or a different difficulty" : ""}.
+          </p>
         ) : null}
       </aside>
     </form>

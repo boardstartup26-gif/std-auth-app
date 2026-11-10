@@ -98,7 +98,7 @@ function decapitalise(text: string): string {
  * production `points_missed` arrays and rendered as "Missed , +1 more".
  * Anything without a letter or digit in it is not a point.
  */
-function isRealPoint(text: string): boolean {
+export function isRealPoint(text: string): boolean {
   return /[\p{L}\p{N}]/u.test(text ?? "");
 }
 

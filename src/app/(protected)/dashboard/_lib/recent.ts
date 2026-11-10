@@ -12,7 +12,7 @@
 // Server-only.
 
 import { createAdminClient, createClient } from "@/lib/supabase/server";
-import { listRecentSets, type SetSummary } from "@/lib/practice-sets/read";
+import { tryListRecentSets, type SetSummary } from "@/lib/practice-sets/read";
 
 export interface QuestionAttempt {
   /** student_answers.id — the key /history/[id] reads. */
@@ -37,7 +37,9 @@ interface AttemptRow {
   evaluations: { marks_awarded: number | string | null }[] | null;
 }
 
-async function listRecentQuestionAttempts(userId: string, limit: number): Promise<QuestionAttempt[]> {
+type AttemptsResult = { ok: true; attempts: QuestionAttempt[] } | { ok: false; attempts: [] };
+
+async function listRecentQuestionAttempts(userId: string, limit: number): Promise<AttemptsResult> {
   // Admin client scoped on user_id, the same read /history makes. Over-fetch so
   // that dropping the paper answers still leaves enough to fill the list.
   const admin = createAdminClient();
@@ -59,10 +61,10 @@ async function listRecentQuestionAttempts(userId: string, limit: number): Promis
     .limit(limit * 4);
   if (error) {
     console.warn("[BoardEdge] dashboard recent attempts failed:", error.message);
-    return [];
+    return { ok: false, attempts: [] };
   }
   const rows = (data ?? []) as unknown as AttemptRow[];
-  if (!rows.length) return [];
+  if (!rows.length) return { ok: true, attempts: [] };
 
   const supabase = await createClient();
   const { data: paperRows, error: paperError } = await supabase
@@ -77,7 +79,7 @@ async function listRecentQuestionAttempts(userId: string, limit: number): Promis
     ((paperRows ?? []) as { student_answer_id: string | null }[]).map((r) => r.student_answer_id),
   );
 
-  return rows
+  const attempts = rows
     .filter((r) => !fromPapers.has(r.id))
     .slice(0, limit)
     .map((r) => {
@@ -94,6 +96,7 @@ async function listRecentQuestionAttempts(userId: string, limit: number): Promis
         totalMarks: Number(q?.marking_schemes?.[0]?.total_marks ?? 0),
       };
     });
+  return { ok: true, attempts };
 }
 
 export type RecentItem =
@@ -107,15 +110,22 @@ export interface DashboardPractice {
   latestMarked: SetSummary | null;
   /** Papers and single questions, newest first. */
   recent: RecentItem[];
+  /**
+   * True when either read failed. The lists above are then incomplete, and the
+   * page must say so rather than present a missing paper as "nothing yet".
+   */
+  loadFailed: boolean;
 }
 
 const RECENT_LIMIT = 6;
 
 export async function readDashboardPractice(userId: string): Promise<DashboardPractice> {
-  const [sets, attempts] = await Promise.all([
-    listRecentSets(userId, 10),
+  const [setsResult, attemptsResult] = await Promise.all([
+    tryListRecentSets(userId, 10),
     listRecentQuestionAttempts(userId, RECENT_LIMIT),
   ]);
+  const sets = setsResult.sets;
+  const attempts = attemptsResult.attempts;
 
   const openPaper =
     sets.find((s) => s.status === "in_progress") ?? sets.find((s) => s.status === "marking") ?? null;
@@ -128,5 +138,5 @@ export async function readDashboardPractice(userId: string): Promise<DashboardPr
     .sort((a, b) => Date.parse(b.at) - Date.parse(a.at))
     .slice(0, RECENT_LIMIT);
 
-  return { openPaper, latestMarked, recent };
+  return { openPaper, latestMarked, recent, loadFailed: !setsResult.ok || !attemptsResult.ok };
 }

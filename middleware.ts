@@ -41,6 +41,7 @@ const PROTECTED_PREFIXES = [
   "/dashboard",
   "/evaluate",
   "/history",
+  "/progress",
   "/account",
   "/onboarding",
   "/notifications",

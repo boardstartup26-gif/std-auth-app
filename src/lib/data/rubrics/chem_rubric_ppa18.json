@@ -1,0 +1,3979 @@
+{
+  "subject": "chemistry",
+  "rubric_version": "2.0",
+  "source_material": [
+    "ICSE Chemistry Paper-2 PPA-18 (Qualitative Analysis; year not stated in source)"
+  ],
+  "archetypes": [
+    {
+      "archetype_id": "CHEM_OBSERVATION",
+      "name": "Observation Questions",
+      "trigger_patterns": [
+        "State one relevant observation",
+        "What do you observe when",
+        "What is seen when"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_OBS_001",
+          "requirement": "Reagent added dropwise then to excess: report precipitate formation with colour AND its behaviour in excess reagent.",
+          "required_anchors": [
+            "precipitate formed",
+            "colour of precipitate",
+            "behaviour (soluble/insoluble) in excess reagent"
+          ],
+          "accepted_equivalents": [
+            "white precipitate soluble in excess",
+            "white precipitate dissolves in excess NaOH",
+            "white ppt then clear colourless solution on excess"
+          ],
+          "insufficient_alone": [
+            "white precipitate (excess behaviour not stated)",
+            "formula of the hydroxide in place of the word precipitate"
+          ],
+          "mandatory_dependencies": [
+            "both checkpoints required: (1) precipitate + colour, (2) transition in excess"
+          ],
+          "recommended_not_required": [
+            "name of the reagent added in excess"
+          ],
+          "rule_refs": [
+            "RULE_1"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_OBS_002",
+          "requirement": "Gas/vapour liberated at an electrode: colour of the gas, the word vapour/gas, and the electrode.",
+          "required_anchors": [
+            "colour of gas",
+            "state word: vapour or gas",
+            "location (anode/cathode)"
+          ],
+          "accepted_equivalents": [
+            "reddish brown vapour at the anode",
+            "reddish brown fumes at the anode"
+          ],
+          "insufficient_alone": [
+            "reddish brown (no vapour/gas word)",
+            "bromine liberated",
+            "equation of anode reaction"
+          ],
+          "mandatory_dependencies": [
+            "state word (vapour/gas) must accompany the colour"
+          ],
+          "recommended_not_required": [
+            "naming the electrode before the observation"
+          ],
+          "rule_refs": [
+            "RULE_1"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_OBS_003",
+          "requirement": "Precipitate whose solubility changes with temperature: report precipitate colour AND the effect of heating on it.",
+          "required_anchors": [
+            "precipitate formed with colour",
+            "effect of heating (dissolves / colourless solution on heating)"
+          ],
+          "accepted_equivalents": [
+            "white precipitate which dissolves on heating",
+            "initially white ppt, colourless solution on heating"
+          ],
+          "insufficient_alone": [
+            "white precipitate only (effect of heating omitted)",
+            "equation without colour of the precipitate"
+          ],
+          "mandatory_dependencies": [
+            "both the cold precipitate state and the hot state must be covered"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_1"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_OBS_004",
+          "requirement": "Deliquescent solid exposed to air: solid absorbs moisture and turns into a (colourless) solution.",
+          "required_anchors": [
+            "solid turns into solution",
+            "solution is colourless"
+          ],
+          "accepted_equivalents": [
+            "colourless solution",
+            "solid CaCl2 turns into solution"
+          ],
+          "insufficient_alone": [
+            "turns hydrated",
+            "turns powdery"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_1"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(iv)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_OBS_005",
+          "requirement": "Double decomposition giving an insoluble salt: state that a precipitate forms AND its colour.",
+          "required_anchors": [
+            "the word precipitate",
+            "colour of precipitate (white)"
+          ],
+          "accepted_equivalents": [
+            "a white precipitate is formed",
+            "white ppt"
+          ],
+          "insufficient_alone": [
+            "BaSO4 formed (word precipitate or colour missing)"
+          ],
+          "mandatory_dependencies": [
+            "word precipitate and colour both required"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_1"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(v)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_001",
+          "wrong_form": "white solution",
+          "correct_form": "colourless solution",
+          "context": "Describing a white amphoteric hydroxide precipitate (e.g. Pb(OH)2) dissolving in excess alkali. Not applicable when describing the precipitate or a suspension itself, where white is correct.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_002",
+          "wrong_form": "insoluble in excess",
+          "correct_form": "soluble in excess",
+          "context": "Lead nitrate solution with NaOH added dropwise to excess. Not applicable to hydroxides that genuinely stay insoluble (e.g. Cu2+, Fe2+, Fe3+).",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_003",
+          "wrong_form": "white Pb(OH)2 (formula substituted for 'precipitate' and excess behaviour omitted)",
+          "correct_form": "white precipitate soluble in excess of sodium hydroxide solution",
+          "context": "Q1(e)(i)-type dropwise-to-excess observation; a formula without precipitate/solubility information leaves the answer incomplete.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_004",
+          "wrong_form": "orange/red (colour of bromine)",
+          "correct_form": "reddish brown",
+          "context": "Colour of bromine vapour at the anode during electrolysis of molten lead bromide.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_005",
+          "wrong_form": "colour given without the word vapour or gas",
+          "correct_form": "reddish brown vapour (or gas)",
+          "context": "Halogen/coloured gas liberated at an electrode.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_006",
+          "wrong_form": "grey metal deposited at the anode",
+          "correct_form": "reddish brown vapour at the anode (lead is deposited at the cathode)",
+          "context": "Molten PbBr2 electrolysed with graphite electrodes; anode observation asked.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_007",
+          "wrong_form": "chemical equation or formula written instead of an observation",
+          "correct_form": "sensory description (colour, precipitate, gas, odour, solubility)",
+          "context": "Any 'state one relevant observation' sub-part. Equations written in place of observations score 0 (RULE_1).",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_008",
+          "wrong_form": "reddish brown fumes of NO2",
+          "correct_form": "white precipitate which dissolves on heating",
+          "context": "Pb(NO3)2 solution mixed with dilute HCl and heated; no NO2 is evolved in this reaction.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_009",
+          "wrong_form": "turns hydrated / turns powdery",
+          "correct_form": "turns into colourless solution",
+          "context": "Anhydrous CaCl2 exposed to air (deliquescence). Not applicable to efflorescent hydrated salts, for which powdery is correct.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_010",
+          "wrong_form": "BaSO4 identified but 'precipitate' or 'white' omitted",
+          "correct_form": "white precipitate",
+          "context": "BaCl2 solution added to Na2SO4 solution.",
+          "applies_to_archetypes": [
+            "CHEM_OBSERVATION"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(e)(v)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {
+            "imprecise_colour": 0.5,
+            "missing_state_word_vapour_or_gas": 0.5,
+            "wrong_colour_descriptor_for_solution": 0.5
+          },
+          "observed_in": [
+            "PPA-18 Q1(e)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_EQUATION",
+      "name": "Balanced Equations, Preparations and Conditions",
+      "trigger_patterns": [
+        "Write a balanced chemical equation for",
+        "Action of ... on ...",
+        "Write the balanced equation for the preparation of",
+        "Reaction of ... with ..."
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_EQ_001",
+          "requirement": "Concentrated H2SO4 acting as an oxidising agent on a non-metal: oxide of the non-metal + SO2 + H2O, balanced.",
+          "required_anchors": [
+            "C + 2H2SO4 -> CO2 + 2SO2 + 2H2O",
+            "correct reactant C (not Cu)",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "H2SO3 or H2CO3 among products",
+            "unbalanced equation"
+          ],
+          "mandatory_dependencies": [
+            "concentrated H2SO4 as reagent"
+          ],
+          "recommended_not_required": [
+            "state symbols/arrows for gases"
+          ],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_002",
+          "requirement": "Precipitation of a hydroxide: FeCl3 + 3NaOH -> Fe(OH)3 + 3NaCl.",
+          "required_anchors": [
+            "iron(III) chloride is FeCl3",
+            "Fe(OH)3 product",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "FeCl2 used in place of FeCl3"
+          ],
+          "mandatory_dependencies": [
+            "oxidation state taken from the Roman numeral in the stem"
+          ],
+          "recommended_not_required": [
+            "downward arrow on precipitate"
+          ],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_003",
+          "requirement": "Thermal decomposition of an insoluble metal hydroxide: 2Al(OH)3 -> Al2O3 + 3H2O.",
+          "required_anchors": [
+            "oxide + water as products",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Al and H2O as products"
+          ],
+          "mandatory_dependencies": [
+            "heat (action of heat)"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_004",
+          "requirement": "Amphoteric metal with alkali: Zn + 2KOH -> K2ZnO2 + H2.",
+          "required_anchors": [
+            "potassium zincate K2ZnO2",
+            "hydrogen gas",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Zn(OH)2, ZnO or K2O as a product"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(iv)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_005",
+          "requirement": "Dilute acid with a sulphite: MgSO3 + 2HCl -> MgCl2 + SO2 + H2O.",
+          "required_anchors": [
+            "correct salt (sulphite, not sulphide or sulphate)",
+            "SO2 + H2O (not H2SO3)",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "H2SO3 written as product"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(v)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_006",
+          "requirement": "Laboratory preparation of NH3 using an alkali: 2NH4Cl + Ca(OH)2 -> CaCl2 + 2H2O + 2NH3 with heat.",
+          "required_anchors": [
+            "ammonium chloride + calcium hydroxide",
+            "NH3 (not NH4OH) as product",
+            "balanced",
+            "heat"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "NH4OH as product"
+          ],
+          "mandatory_dependencies": [
+            "heat (delta) over the arrow"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(a)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_007",
+          "requirement": "Laboratory preparation of HCl gas: NaCl + H2SO4(conc.) -> NaHSO4 + HCl at below 200 C.",
+          "required_anchors": [
+            "concentrated H2SO4",
+            "NaHSO4 as the salt",
+            "temperature below 200 C"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "2NaCl + H2SO4 -> Na2SO4 + 2HCl"
+          ],
+          "mandatory_dependencies": [
+            "condition: concentrated acid",
+            "condition: temperature below 200 C (prevents Na2SO4 which fuses to glass)"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(b)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_008",
+          "requirement": "Salt prepared from a carbonate and the named acid: CuCO3 + H2SO4 -> CuSO4 + H2O + CO2, one equation only.",
+          "required_anchors": [
+            "the acid named in the stem (H2SO4)",
+            "CuSO4 + H2O + CO2",
+            "balanced"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Na2SO4 solution used in place of H2SO4",
+            "two alternative equations (HCl route and H2SO4 route)"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(b)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_EQ_009",
+          "requirement": "Insoluble carbonate by precipitation: ZnSO4 + Na2CO3 -> ZnCO3 + Na2SO4 (or another soluble carbonate solution), single step.",
+          "required_anchors": [
+            "soluble carbonate solution",
+            "ZnCO3 precipitate",
+            "balanced"
+          ],
+          "accepted_equivalents": [
+            "ZnSO4 + (NH4)2CO3 -> (NH4)2SO4 + ZnCO3"
+          ],
+          "insufficient_alone": [
+            "H2CO3 used as the carbonate source",
+            "two-step route via ZnCl2"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(b)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_011",
+          "wrong_form": "H2SO3 or H2CO3 among products",
+          "correct_form": "CO2 + SO2 + H2O",
+          "context": "Action of concentrated H2SO4 on carbon (oxidising action).",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_012",
+          "wrong_form": "Cu written in place of C as reactant",
+          "correct_form": "C",
+          "context": "Action of concentrated sulphuric acid on carbon.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_013",
+          "wrong_form": "FeCl2 as reactant",
+          "correct_form": "FeCl3",
+          "context": "Stem specifies iron (III) chloride.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_014",
+          "wrong_form": "Al and H2O as products",
+          "correct_form": "Al2O3 and H2O",
+          "context": "Heating aluminium hydroxide.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_015",
+          "wrong_form": "Zn(OH)2, ZnO or K2O as a product",
+          "correct_form": "K2ZnO2 + H2",
+          "context": "Zinc with potassium hydroxide solution.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_016",
+          "wrong_form": "magnesium sulphide or sulphate used; or H2SO3 as product",
+          "correct_form": "MgSO3 reactant; SO2 + H2O products",
+          "context": "Dilute HCl on magnesium sulphite.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(v)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_017",
+          "wrong_form": "NH4OH shown as product",
+          "correct_form": "NH3 gas",
+          "context": "Laboratory preparation of ammonia gas.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_018",
+          "wrong_form": "NaOH as the alkali, or (NH4)2SO4 as the ammonium salt",
+          "correct_form": "Ca(OH)2 with NH4Cl",
+          "context": "Q3(a)(i) laboratory preparation of NH3 using an alkali. Reported by examiners as deviating from the appropriate reactants; see unresolved_anomalies.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_019",
+          "wrong_form": "2NaCl + H2SO4 -> Na2SO4 + 2HCl (and no temperature condition)",
+          "correct_form": "NaCl + H2SO4(conc.) -> NaHSO4 + HCl below 200 C",
+          "context": "Laboratory preparation of HCl gas; question asks for the equation under the stated condition.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(b)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_020",
+          "wrong_form": "Na2SO4 solution used in place of H2SO4 for copper sulphate from copper carbonate",
+          "correct_form": "CuCO3 + H2SO4",
+          "context": "Salt preparation from a carbonate.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_021",
+          "wrong_form": "H2CO3 solution used as carbonate source; or ZnSO4 + HCl then ZnCl2 + Na2CO3 (two steps)",
+          "correct_form": "ZnSO4 + Na2CO3 (soluble carbonate solution), single step",
+          "context": "Preparation of insoluble ZnCO3 from ZnSO4.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(b)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_022",
+          "wrong_form": "unbalanced equation",
+          "correct_form": "equation with whole-number coefficients balancing every element",
+          "context": "Any 'balanced chemical equation' question.",
+          "applies_to_archetypes": [
+            "CHEM_EQUATION"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(c)(i)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(c)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {
+            "missing_required_condition": 0.5
+          },
+          "observed_in": [
+            "PPA-18 Q3(a)(i)",
+            "PPA-18 Q3(b)(ii)",
+            "PPA-18 Q7(b)(i)",
+            "PPA-18 Q7(b)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_REASON",
+      "name": "Reason / Justification Questions",
+      "trigger_patterns": [
+        "Give a reason for each of the following",
+        "State why",
+        "Why is ... not ...",
+        "Why is direct absorption ... not feasible"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_RSN_001",
+          "requirement": "High melting point of ionic compounds: strong electrostatic force of attraction between oppositely charged ions.",
+          "required_anchors": [
+            "strong force of attraction",
+            "electrostatic / between oppositely charged ions"
+          ],
+          "accepted_equivalents": [
+            "energy is required to separate ions held by strong electrostatic force"
+          ],
+          "insufficient_alone": [
+            "intermolecular force of attraction"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_002",
+          "requirement": "Inert gases do not form ions: stable electronic configuration, stated explicitly.",
+          "required_anchors": [
+            "stable electronic configuration / complete outermost shell / 8 electrons in valence shell"
+          ],
+          "accepted_equivalents": [
+            "do not lose or gain electrons to form ions",
+            "duplet or octet complete"
+          ],
+          "insufficient_alone": [
+            "inert gases are stable (configuration not mentioned)"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_003",
+          "requirement": "Ionisation potential increases across a period: increasing nuclear charge and decreasing atomic size strengthen attraction on valence electrons in the same shell.",
+          "required_anchors": [
+            "nuclear charge increases / atomic size decreases",
+            "greater attraction on valence electrons"
+          ],
+          "accepted_equivalents": [
+            "force of attraction on valence electrons increases"
+          ],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_004",
+          "requirement": "Alkali metals are good reducing agents: low ionisation potential / one valence electron, hence easy loss of electron.",
+          "required_anchors": [
+            "low ionisation potential or one valence electron",
+            "easily lose/donate an electron"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(iv)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_005",
+          "requirement": "Conductivity of dilute HCl exceeds that of acetic acid: comparative, covering BOTH acids (complete vs partial ionisation).",
+          "required_anchors": [
+            "HCl: complete ionisation/dissociation (strong electrolyte)",
+            "acetic acid: incomplete/partial ionisation (weak electrolyte)",
+            "explicit comparison"
+          ],
+          "accepted_equivalents": [
+            "HCl has higher concentration of ions",
+            "HCl has higher degree of dissociation",
+            "HCl only ions, acetic acid ions and molecules"
+          ],
+          "insufficient_alone": [
+            "statement about only one of the acids"
+          ],
+          "mandatory_dependencies": [
+            "both substances compared"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(v)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_006",
+          "requirement": "Conc. H2SO4 not used to dry NH3: NH3 is basic and reacts with the acid to form ammonium sulphate.",
+          "required_anchors": [
+            "NH3 reacts with conc. H2SO4 / forms ammonium sulphate"
+          ],
+          "accepted_equivalents": [
+            "NH3 being basic combines with conc. H2SO4",
+            "correct chemical equation"
+          ],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(a)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_007",
+          "requirement": "NH3 is not collected over water: highly soluble in water.",
+          "required_anchors": [
+            "NH3 highly soluble / dissolves in water"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(a)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_008",
+          "requirement": "Direct absorption of HCl in water is not feasible: back suction, because HCl dissolves faster than it is produced.",
+          "required_anchors": [
+            "HCl dissolves faster than it is produced",
+            "back suction of water"
+          ],
+          "accepted_equivalents": [
+            "description of back suction"
+          ],
+          "insufficient_alone": [
+            "HCl is highly soluble (back suction effect not mentioned)"
+          ],
+          "mandatory_dependencies": [
+            "the effect (back suction) must be stated"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(c)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_RSN_009",
+          "requirement": "Apparatus for HNO3 preparation is all glass: HNO3 vapours are corrosive and attack rubber, cork.",
+          "required_anchors": [
+            "HNO3 vapour corrosive / attacks rubber and cork / does not react with glass"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "rubber melts due to heat",
+            "cork breaks"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(c)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_023",
+          "wrong_form": "intermolecular force of attraction",
+          "correct_form": "strong electrostatic force of attraction between ions",
+          "context": "Explaining the high melting point of ionic compounds. Intermolecular forces are correct for molecular covalent substances.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_024",
+          "wrong_form": "inert gases are stable (no electronic configuration)",
+          "correct_form": "stable electronic configuration / 8 electrons in valence shell",
+          "context": "Reason why inert gases do not form ions.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_025",
+          "wrong_form": "describing conductivity of only HCl or only acetic acid",
+          "correct_form": "comparison of both acids",
+          "context": "Comparative conductivity of dilute HCl vs acetic acid.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(v)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_027",
+          "wrong_form": "HCl is highly soluble (back suction not mentioned)",
+          "correct_form": "HCl dissolves faster than produced, causing back suction",
+          "context": "Why direct absorption of HCl in water is not feasible.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_028",
+          "wrong_form": "rubber will melt due to heat / cork will break",
+          "correct_form": "nitric acid vapours are corrosive and attack rubber/cork",
+          "context": "Why apparatus for nitric acid preparation is entirely glass.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(c)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_029",
+          "wrong_form": "reason for an increase/trend stated without cause (no nuclear charge / atomic size)",
+          "correct_form": "nuclear charge increases and size decreases",
+          "context": "Ionisation potential trend across a period; examiners report candidates could not explain it.",
+          "applies_to_archetypes": [
+            "CHEM_REASON"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(iii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(iv)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(f)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q3(a)(ii)",
+            "PPA-18 Q3(a)(iii)",
+            "PPA-18 Q3(c)(i)",
+            "PPA-18 Q7(c)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_DISTINGUISH",
+      "name": "Distinguishing Between Pairs",
+      "trigger_patterns": [
+        "Give a chemical test to distinguish between",
+        "How would you distinguish"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_DIS_001",
+          "requirement": "Pb(NO3)2 vs Zn(NO3)2 solutions: add NH4OH in excess; Pb gives white precipitate (persists), Zn gives colourless solution.",
+          "required_anchors": [
+            "single reagent: ammonium hydroxide, added in excess",
+            "observation for lead nitrate",
+            "observation for zinc nitrate"
+          ],
+          "accepted_equivalents": [
+            "alternate correct chemical tests accepted per key"
+          ],
+          "insufficient_alone": [
+            "result stated for only one substance",
+            "dry heating test",
+            "NaOH as reagent"
+          ],
+          "mandatory_dependencies": [
+            "test performed on the solutions",
+            "contrast of the SAME attribute for both substances"
+          ],
+          "recommended_not_required": [
+            "precipitate colour named"
+          ],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_DIS_002",
+          "requirement": "NaCl vs NaNO3 solutions: add AgNO3 (or Pb(NO3)2) solution; NaCl gives white precipitate, NaNO3 gives no precipitate.",
+          "required_anchors": [
+            "single reagent: AgNO3 or Pb(NO3)2 solution",
+            "NaCl: white precipitate",
+            "NaNO3: no precipitate / unchanged"
+          ],
+          "accepted_equivalents": [
+            "alternate correct chemical tests accepted per key"
+          ],
+          "insufficient_alone": [
+            "conc. H2SO4 test (solid-state test)",
+            "result stated for only one substance"
+          ],
+          "mandatory_dependencies": [
+            "test performed on the solutions",
+            "contrast of the SAME attribute for both substances"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_3"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_030",
+          "wrong_form": "dry heating test",
+          "correct_form": "test on the solution (e.g. NH4OH in excess)",
+          "context": "Distinguishing Pb(NO3)2 and Zn(NO3)2 when both are given as solutions.",
+          "applies_to_archetypes": [
+            "CHEM_DISTINGUISH"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_031",
+          "wrong_form": "NaOH solution as the reagent",
+          "correct_form": "NH4OH in excess",
+          "context": "Pb2+ vs Zn2+: both hydroxides dissolve in excess NaOH, so it does not discriminate; NH4OH is the discriminating reagent here.",
+          "applies_to_archetypes": [
+            "CHEM_DISTINGUISH"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_032",
+          "wrong_form": "concentrated H2SO4 test",
+          "correct_form": "AgNO3 / Pb(NO3)2 solution test",
+          "context": "NaCl vs NaNO3 when both are in solution form; conc. H2SO4 tests suit solids only.",
+          "applies_to_archetypes": [
+            "CHEM_DISTINGUISH"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_033",
+          "wrong_form": "result stated for only one of the two substances",
+          "correct_form": "contrasting result for each substance",
+          "context": "Any distinguish question (dual-anchor rule).",
+          "applies_to_archetypes": [
+            "CHEM_DISTINGUISH"
+          ],
+          "effect": "VOID_POINT",
+          "source": "general_comments",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "General Comments (Suggestions for Candidates)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_034",
+          "wrong_form": "more than one reagent used",
+          "correct_form": "one reagent only",
+          "context": "Distinguish questions; candidates told to select only one reagent.",
+          "applies_to_archetypes": [
+            "CHEM_DISTINGUISH"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "general_comments",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "General Comments (Suggestions for Candidates)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q7(a)(i)",
+            "PPA-18 Q7(a)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_NUMERICAL",
+      "name": "Mole Concept, Stoichiometry and Gas Volumes",
+      "trigger_patterns": [
+        "Find the empirical formula",
+        "What mass of ... is formed",
+        "What volume at s.t.p.",
+        "Calculate the volume of"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_NUM_001",
+          "requirement": "Empirical formula from percentage composition: atoms = % / atomic mass, divide by smallest, simplest whole-number ratio, formula in correct element order.",
+          "required_anchors": [
+            "relative atoms = % divided by atomic mass",
+            "ratio divided by smallest value",
+            "formula N1H3 written as NH3"
+          ],
+          "accepted_equivalents": [
+            "N1H3",
+            "NH3"
+          ],
+          "insufficient_alone": [
+            "N3H",
+            "atomic mass divided by percentage"
+          ],
+          "mandatory_dependencies": [
+            "ratio in simplest whole-number form"
+          ],
+          "recommended_not_required": [
+            "tabular working"
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(a)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_NUM_002",
+          "requirement": "Mass of product from stoichiometric equation: use full coefficients (4 mol Al(OH)3 per mol Al4C3).",
+          "required_anchors": [
+            "mass relation 144 g -> 4 x 78 = 312 g",
+            "scale to 12 g -> 26 g"
+          ],
+          "accepted_equivalents": [
+            "26 g",
+            "26.0 g"
+          ],
+          "insufficient_alone": [
+            "mole ratio of 1 for Al(OH)3"
+          ],
+          "mandatory_dependencies": [
+            "unit: g"
+          ],
+          "recommended_not_required": [
+            "stepwise working"
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(b)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_NUM_003",
+          "requirement": "Volume of gas at STP from stoichiometric equation: 3 mol CH4 per mol Al4C3, 22.4 L per mole.",
+          "required_anchors": [
+            "144 g -> 3 x 22.4 L",
+            "scale to 12 g -> 5.6 L"
+          ],
+          "accepted_equivalents": [
+            "5.6 L",
+            "5.6 dm3",
+            "5600 cc"
+          ],
+          "insufficient_alone": [
+            "1 mol CH4 per mol Al4C3"
+          ],
+          "mandatory_dependencies": [
+            "unit: L or dm3 (STP)"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(b)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_NUM_004",
+          "requirement": "Avogadro relation: equal volumes at same T,P hold equal molecules; molecules proportional to volume (75/150 x X = X/2).",
+          "required_anchors": [
+            "proportional scaling of molecules with volume",
+            "answer expressed as X/2"
+          ],
+          "accepted_equivalents": [
+            "x/2",
+            "0.5x"
+          ],
+          "insufficient_alone": [
+            "2x"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(c)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_NUM_005",
+          "requirement": "Gas-volume stoichiometry with excess reactant: base calculations on the limiting reactant (ethane), then find unused O2 by subtraction.",
+          "required_anchors": [
+            "CO2 = 4/2 x 300 = 600 cc",
+            "O2 used = 7/2 x 300 = 1050 cc",
+            "unused O2 = 1250 - 1050 = 200 cc"
+          ],
+          "accepted_equivalents": [
+            "600 cc",
+            "200 cc"
+          ],
+          "insufficient_alone": [
+            "CO2 calculated from the volume of O2",
+            "unused O2 not calculated"
+          ],
+          "mandatory_dependencies": [
+            "unit: cc",
+            "volume of ethane copied correctly as 300 cc"
+          ],
+          "recommended_not_required": [
+            "stepwise working"
+          ],
+          "rule_refs": [
+            "RULE_4"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_035",
+          "wrong_form": "atomic weight divided by percentage",
+          "correct_form": "percentage divided by atomic mass",
+          "context": "Empirical formula calculation.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_036",
+          "wrong_form": "empirical formula stated as N3H",
+          "correct_form": "NH3",
+          "context": "Final step of empirical formula (N:H = 1:3).",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_037",
+          "wrong_form": "stoichiometric coefficient ignored for Al(OH)3 (1 mol used instead of 4)",
+          "correct_form": "4 mol Al(OH)3 per mol Al4C3",
+          "context": "Mass of Al(OH)3 from Al4C3.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_038",
+          "wrong_form": "3 mol CH4 per mol Al4C3 ignored",
+          "correct_form": "3 x 22.4 L CH4 per 144 g Al4C3",
+          "context": "Volume of CH4 at STP from Al4C3.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(b)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_039",
+          "wrong_form": "2x molecules of B",
+          "correct_form": "x/2 molecules of B",
+          "context": "75 cc of B versus 150 cc of A containing X molecules.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_040",
+          "wrong_form": "volume of O2 used to calculate volume of CO2",
+          "correct_form": "volume of ethane (limiting reactant) used",
+          "context": "Ethane + O2 combustion with oxygen in excess.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_041",
+          "wrong_form": "unused O2 not calculated",
+          "correct_form": "unused O2 = initial O2 minus O2 used = 200 cc",
+          "context": "Question explicitly asks for unused oxygen.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_042",
+          "wrong_form": "volume of ethane copied incorrectly from the stem",
+          "correct_form": "300 cc",
+          "context": "Transcription of given data in gas-volume problems. Error-carried-forward policy is not printed; see unresolved_anomalies.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_043",
+          "wrong_form": "numerical answer without unit or with wrong unit",
+          "correct_form": "value with g / L (dm3) at STP / cc as appropriate",
+          "context": "Any quantity with a physical unit.",
+          "applies_to_archetypes": [
+            "CHEM_NUMERICAL"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "general_comments",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "General Comments (Suggestions for Candidates)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(b)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(b)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {
+            "missing_unit": 0.5
+          },
+          "observed_in": [
+            "PPA-18 Q4(a)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {
+            "missing_unit": 0.5
+          },
+          "observed_in": [
+            "PPA-18 Q4(b)(i)",
+            "PPA-18 Q4(b)(ii)",
+            "PPA-18 Q6(b)(i)",
+            "PPA-18 Q6(b)(ii)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q4(c)(i)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_IDENTIFY",
+      "name": "Identification and Naming",
+      "trigger_patterns": [
+        "Name the gas",
+        "Name the acid",
+        "Name the process",
+        "Identify",
+        "Name the law",
+        "Which property",
+        "Which one of these is a"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_ID_001",
+          "requirement": "Gas named is the single product specific to the reaction or electrode asked.",
+          "required_anchors": [
+            "one gas only",
+            "gas specific to the reaction/electrode"
+          ],
+          "accepted_equivalents": [
+            "name or formula",
+            "nitric oxide / nitrogen monoxide for NO"
+          ],
+          "insufficient_alone": [
+            "nitrogen oxide",
+            "several gases listed",
+            "gas of the other electrode"
+          ],
+          "mandatory_dependencies": [
+            "name the electrode first when an electrode is specified"
+          ],
+          "recommended_not_required": [
+            "name the electrode before the gas"
+          ],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(iii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(iv)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(v)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_002",
+          "requirement": "Ore, formula and purification process for aluminium: bauxite Al2O3.2H2O; Baeyer's process.",
+          "required_anchors": [
+            "Bauxite",
+            "Al2O3.2H2O",
+            "Baeyer's process"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "alumina or cryolite named as ore",
+            "Al2O3.5H2O",
+            "Hall's or Hoope's process"
+          ],
+          "mandatory_dependencies": [
+            "formula carries the correct number of water molecules"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_003",
+          "requirement": "Product and catalyst of esterification: ethyl ethanoate (specific ester) with concentrated H2SO4, reaction named esterification.",
+          "required_anchors": [
+            "ethyl ethanoate / ethyl acetate / CH3COOC2H5",
+            "concentrated H2SO4",
+            "esterification"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "ester (class only)",
+            "C2H5COOCH3",
+            "dilute or unspecified H2SO4",
+            "catalysis"
+          ],
+          "mandatory_dependencies": [
+            "acid strength stated"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_004",
+          "requirement": "Law governing equal volumes of gases having equal molecules under the same T, P: Avogadro's law.",
+          "required_anchors": [
+            "Avogadro's law"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Gay-Lussac's law"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(c)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_005",
+          "requirement": "Main component of an alloy only: brass = copper; duralumin = aluminium.",
+          "required_anchors": [
+            "only the main component named"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "listing all components of the alloy"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(d)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_006",
+          "requirement": "Property of concentrated H2SO4 shown in a reaction: dehydrating (ethanol), oxidising (carbon).",
+          "required_anchors": [
+            "dehydrating agent for ethanol",
+            "oxidising agent for carbon"
+          ],
+          "accepted_equivalents": [
+            "dehydration",
+            "oxidation"
+          ],
+          "insufficient_alone": [
+            "drying",
+            "acidic property"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(d)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(d)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_007",
+          "requirement": "Type of salt formed at suitable temperature in HNO3 preparation: acid salt (NaHSO4/KHSO4).",
+          "required_anchors": [
+            "acid salt"
+          ],
+          "accepted_equivalents": [
+            "bisulphate",
+            "hydrogen sulphate",
+            "NaHSO4",
+            "KHSO4"
+          ],
+          "insufficient_alone": [
+            "normal salt"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(c)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_008",
+          "requirement": "Acid for lab preparation of HCl gas (concentrated sulphuric acid) with reason: non-volatile / high boiling point, displaces volatile HCl.",
+          "required_anchors": [
+            "concentrated sulphuric acid",
+            "non-volatile / high b.p. / displaces volatile HCl"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "sulphuric acid without concentrated/dilute",
+            "does not react with HCl"
+          ],
+          "mandatory_dependencies": [
+            "acid strength stated"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(b)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_009",
+          "requirement": "Arrangement for dissolving HCl in water: inverted funnel with rim just touching the water surface.",
+          "required_anchors": [
+            "inverted funnel",
+            "rim just touching water surface"
+          ],
+          "accepted_equivalents": [
+            "correct diagram"
+          ],
+          "insufficient_alone": [
+            "thistle funnel"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(c)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ID_010",
+          "requirement": "pH classification: weak acid = the less acidic (higher pH) acidic solution; strong alkali = highest pH.",
+          "required_anchors": [
+            "weak acid: Q (pH 5.2)",
+            "strong alkali: R (pH 12.2)"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "P (pH 3.5) named as weak acid"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(c)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(c)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_044",
+          "wrong_form": "SO2, H2S, N2, or both NO2 and SO2",
+          "correct_form": "NO2 (nitrogen dioxide)",
+          "context": "Sulphur oxidised by concentrated nitric acid.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_045",
+          "wrong_form": "nitrogen oxide / NO2",
+          "correct_form": "nitric oxide (nitrogen monoxide), NO",
+          "context": "Cold dilute nitric acid on copper.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_046",
+          "wrong_form": "hydrogen and oxygen, or hydrogen",
+          "correct_form": "oxygen",
+          "context": "Gas at the ANODE in electrolysis of acidified water. Hydrogen is correct only if the cathode is asked.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_047",
+          "wrong_form": "ethane or ethene",
+          "correct_form": "hydrogen",
+          "context": "Ethanol with sodium.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(g)(v)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_048",
+          "wrong_form": "alumina or cryolite as the ore",
+          "correct_form": "bauxite",
+          "context": "Most common ore of aluminium.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_049",
+          "wrong_form": "Al2O3.5H2O (or other hydration number)",
+          "correct_form": "Al2O3.2H2O",
+          "context": "Formula of bauxite.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_050",
+          "wrong_form": "Hall's process or Hoope's process",
+          "correct_form": "Baeyer's process",
+          "context": "Purification of aluminium ore with concentrated alkali solution.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_051",
+          "wrong_form": "ester (class only) or C2H5COOCH3",
+          "correct_form": "ethyl ethanoate",
+          "context": "Compound Y from ethanol + ethanoic acid.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_052",
+          "wrong_form": "acid Z given without its strength",
+          "correct_form": "concentrated H2SO4",
+          "context": "Catalyst/dehydrating agent Z in esterification.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_053",
+          "wrong_form": "catalysis",
+          "correct_form": "esterification",
+          "context": "Naming reaction of an alcohol with a carboxylic acid.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_054",
+          "wrong_form": "Gay-Lussac's law",
+          "correct_form": "Avogadro's law",
+          "context": "Equal volumes of gases contain equal molecules.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(c)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_055",
+          "wrong_form": "all components of the alloy listed",
+          "correct_form": "main component only (copper; aluminium)",
+          "context": "Main component of brass or duralumin.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q4(d)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_056",
+          "wrong_form": "drying",
+          "correct_form": "dehydration (removal of chemically combined H and O as water)",
+          "context": "Conc. H2SO4 with ethanol.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_057",
+          "wrong_form": "acidic property",
+          "correct_form": "oxidising property",
+          "context": "Conc. H2SO4 with carbon.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(d)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_058",
+          "wrong_form": "normal salt",
+          "correct_form": "acid salt",
+          "context": "Salt formed in HNO3 preparation by heating nitrate with conc. H2SO4 at a suitable (low) temperature.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q7(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_059",
+          "wrong_form": "sulphuric acid with strength unspecified",
+          "correct_form": "concentrated sulphuric acid",
+          "context": "Naming the acid for HCl preparation, where dilute vs concentrated changes the answer.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_060",
+          "wrong_form": "thistle funnel",
+          "correct_form": "inverted funnel",
+          "context": "Arrangement to dissolve HCl gas in water.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(c)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_026",
+          "wrong_form": "conc. H2SO4 preferred because it does not react with HCl",
+          "correct_form": "non-volatile / high boiling point, displaces the volatile HCl",
+          "context": "Reason part of Q3(b)(i): why concentrated sulphuric acid is preferred for HCl gas preparation.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_061",
+          "wrong_form": "solution P (pH 3.5) as weak acid",
+          "correct_form": "solution Q (pH 5.2)",
+          "context": "Choosing weak acid from several acidic solutions; lowest pH is the strongest acid.",
+          "applies_to_archetypes": [
+            "CHEM_IDENTIFY"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(c)(i)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(g)"
+          ]
+        },
+        {
+          "total_marks": 4,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q5(b)",
+            "PPA-18 Q6(a)"
+          ]
+        },
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q4(c)(ii)+Q4(d)",
+            "PPA-18 Q6(c)",
+            "PPA-18 Q7(c)",
+            "PPA-18 Q7(d)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_DEFINE",
+      "name": "Scientific Terms and Definitions",
+      "trigger_patterns": [
+        "Give one word or a phrase for the following statements",
+        "What do you understand by",
+        "Define"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_DEF_001",
+          "requirement": "Exact scientific term matching the description: electron affinity; ionisation; catenation; efflorescence; froth floatation.",
+          "required_anchors": [
+            "term matches the described property or process"
+          ],
+          "accepted_equivalents": [
+            "electron gain enthalpy",
+            "efflorescent",
+            "froth floatation method"
+          ],
+          "insufficient_alone": [
+            "electronegativity or ionisation potential",
+            "dissociation",
+            "self-linking",
+            "deliquescence or effervescence",
+            "roasting or calcination"
+          ],
+          "mandatory_dependencies": [
+            "correct spelling when a misspelling yields a different term"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(iii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(iv)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(v)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_DEF_002",
+          "requirement": "Lone pair: pair of electrons not yet shared with other atoms in a covalent molecule.",
+          "required_anchors": [
+            "pair of electrons",
+            "not shared / unshared",
+            "in a covalent molecule"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "definition missing key words"
+          ],
+          "mandatory_dependencies": [
+            "all three key words present"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(i)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_062",
+          "wrong_form": "electronegativity or ionisation potential",
+          "correct_form": "electron affinity (energy RELEASED when an electron is added to a neutral gaseous atom)",
+          "context": "Defining the energy change on adding an electron to an isolated gaseous atom.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_063",
+          "wrong_form": "dissociation",
+          "correct_form": "ionisation",
+          "context": "Process producing ions from molecules that are not in ionic state. Not applicable to ionic compounds separating in solution, nor to the Q1(f)(v) reasoning, where the key accepts ionisation/dissociation.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(f)(v)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_064",
+          "wrong_form": "self-linking",
+          "correct_form": "catenation",
+          "context": "Tendency of an element to form chains of identical atoms.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_065",
+          "wrong_form": "deliquescence or effervescence",
+          "correct_form": "efflorescence",
+          "context": "Hydrated salt losing water of crystallisation in air and crumbling to powder.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_066",
+          "wrong_form": "misspelt scientific term",
+          "correct_form": "correct spelling",
+          "context": "Examiners noted spelling errors; penalty applies when the misspelling is ambiguous with another term.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "examiner_comment",
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_067",
+          "wrong_form": "roasting or calcination",
+          "correct_form": "froth floatation",
+          "context": "Concentration of a sulphide ore.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(b)(v)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_068",
+          "wrong_form": "lone pair definition missing 'pair of electrons', 'not shared' or 'covalent molecule'",
+          "correct_form": "pair of electrons not yet shared in a covalent molecule",
+          "context": "Definition of lone pair.",
+          "applies_to_archetypes": [
+            "CHEM_DEFINE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(i)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(b)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q2(a)(i)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_ORGANIC_NOMENCLATURE",
+      "name": "Organic Nomenclature, Structures and Homologous Series",
+      "trigger_patterns": [
+        "Give the IUPAC name for each of the following",
+        "Write the structural formula of",
+        "isomers of",
+        "homologous series of hydrocarbons"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_ORG_001",
+          "requirement": "IUPAC name derived from structure: stem for the longest chain, correct suffix (-al, -ol, -ene), locant where position is ambiguous.",
+          "required_anchors": [
+            "parent chain stem",
+            "functional-group suffix",
+            "locant where required"
+          ],
+          "accepted_equivalents": [
+            "methanal / methan-1-al",
+            "propan-1-ol / 1-propanol",
+            "but-2-ene / 2-butene"
+          ],
+          "insufficient_alone": [
+            "trivial or common names",
+            "butane for a butene"
+          ],
+          "mandatory_dependencies": [
+            "numeral 1 (not letter l) in locants"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_5"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ORG_002",
+          "requirement": "Two isomers of butane drawn as complete structural formulae: n-butane and 2-methylpropane.",
+          "required_anchors": [
+            "straight chain C4",
+            "branched chain (methyl branch)",
+            "all C and H shown"
+          ],
+          "accepted_equivalents": [
+            "CH3-CH2-CH2-CH3",
+            "H3C-CH(CH3)-CH3 (key accepts these as OR forms)"
+          ],
+          "insufficient_alone": [
+            "carbon skeleton only"
+          ],
+          "mandatory_dependencies": [
+            "carbon tetravalency satisfied",
+            "branched isomer is genuinely different from the straight chain"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_5"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ORG_003",
+          "requirement": "Full structural formula of ethanoic acid (X): CH3 group, C=O, O-H with all bonds explicit.",
+          "required_anchors": [
+            "CH3-C(=O)-OH shown with all bonds",
+            "C=O double bond",
+            "O-H bond"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "condensed -COOH group drawn instead of explicit bonds"
+          ],
+          "mandatory_dependencies": [
+            "all bonds explicit"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_5"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ORG_004",
+          "requirement": "Homologous series table: series name, characteristic bond type, IUPAC name of first member.",
+          "required_anchors": [
+            "alkyne / alkane (series name, not compound name)",
+            "triple covalent bond / single covalent bond",
+            "ethyne / methane"
+          ],
+          "accepted_equivalents": [
+            "triple",
+            "C≡C",
+            "single",
+            "C-C"
+          ],
+          "insufficient_alone": [
+            "unsaturated or saturated as the bond type",
+            "methyne"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(a)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_069",
+          "wrong_form": "trivial or common name",
+          "correct_form": "IUPAC name",
+          "context": "Any 'IUPAC name' question.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_070",
+          "wrong_form": "methanone",
+          "correct_form": "methanal",
+          "context": "Name of H-CHO (aldehyde, suffix -al).",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_071",
+          "wrong_form": "propanal, or prop-l-ol (letter l)",
+          "correct_form": "propan-1-ol",
+          "context": "Name of CH3CH2CH2OH (alcohol, suffix -ol).",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_072",
+          "wrong_form": "1,2-dimethylethene, butane, or butan-2-ene",
+          "correct_form": "but-2-ene",
+          "context": "Four-carbon alkene with double bond at C2.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_073",
+          "wrong_form": "locant omitted when position can vary",
+          "correct_form": "include locant (e.g. propan-1-ol, but-2-ene)",
+          "context": "Applies where positional isomers exist; not required for methanal.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "DOCK_HALF_MARK",
+          "source": "suggestions_for_teachers",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_074",
+          "wrong_form": "carbon skeleton drawn without hydrogens",
+          "correct_form": "complete structural formula",
+          "context": "Isomers of butane.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_075",
+          "wrong_form": "straight-chain structure drawn twice (or a branched structure not actually branched)",
+          "correct_form": "n-butane and 2-methylpropane",
+          "context": "Examiners report confusion between straight and branched chains.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(d)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_076",
+          "wrong_form": "incorrect structure of ethanoic acid (e.g. bonds missing or wrong connectivity)",
+          "correct_form": "H3C-C(=O)-OH with all bonds",
+          "context": "Structural formula of X in esterification.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q6(a)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_077",
+          "wrong_form": "name of a compound written as the homologous series",
+          "correct_form": "alkyne / alkane",
+          "context": "Series-name column of the homologous-series table.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_078",
+          "wrong_form": "unsaturated / saturated as the bond type",
+          "correct_form": "triple covalent bond / single covalent bond",
+          "context": "Characteristic bond type column.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(a)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_079",
+          "wrong_form": "methyne",
+          "correct_form": "ethyne",
+          "context": "First member of the alkyne series.",
+          "applies_to_archetypes": [
+            "CHEM_ORGANIC_NOMENCLATURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(a)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(d)"
+          ]
+        },
+        {
+          "total_marks": 6,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q5(a)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q6(a)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_ELECTROLYSIS",
+      "name": "Electrode Reactions and Electrolysis",
+      "trigger_patterns": [
+        "At the anode",
+        "At the cathode",
+        "electro-refining",
+        "conversion of ions to neutral particles"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_ELEC_001",
+          "requirement": "Anode (oxidation): anion/atom loses electrons; electron written on the product side or subtracted from the reactant.",
+          "required_anchors": [
+            "Cl- - e- -> Cl, then Cl + Cl -> Cl2 (or 2Cl- - 2e- -> Cl2)",
+            "Cu - 2e- -> Cu2+"
+          ],
+          "accepted_equivalents": [
+            "Cl- -> Cl + e-",
+            "Cu -> Cu2+ + 2e-"
+          ],
+          "insufficient_alone": [
+            "Cl- + e- -> Cl",
+            "Cu + 2e- -> Cu2+",
+            "Cu2+ - 2e- -> Cu"
+          ],
+          "mandatory_dependencies": [
+            "when Cl- - e- -> Cl is given, Cl + Cl -> Cl2 must also be given"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(d)(ii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ELEC_002",
+          "requirement": "Cathode (reduction): cation gains electrons; electron on the reactant side.",
+          "required_anchors": [
+            "Pb2+ + 2e- -> Pb",
+            "Al3+ + 3e- -> Al"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "Pb2+ - 2e- -> Pb",
+            "Al - 3e- -> Al3+",
+            "Al + 3e- -> Al3+",
+            "2Al3+ + 6e- -> Al (unreduced / not the unit equation)"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(iii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(iii)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ELEC_003",
+          "requirement": "Oxidation/Reduction label consistent with electron loss/gain in the equation: loss = oxidation, gain = reduction.",
+          "required_anchors": [
+            "oxidation for electron loss",
+            "reduction for electron gain"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "label that contradicts the equation"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(iv)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ELEC_004",
+          "requirement": "Electro-refining of copper: cathode is pure copper; anode is impure copper dissolving as Cu2+.",
+          "required_anchors": [
+            "pure copper (cathode)"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [
+            "copper (without 'pure')",
+            "impure copper as cathode"
+          ],
+          "mandatory_dependencies": [
+            "word pure present"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(d)(i)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_ELEC_005",
+          "requirement": "Selective discharge: at cathode of aqueous NaCl, hydrogen (not sodium) is liberated.",
+          "required_anchors": [
+            "hydrogen gas at cathode"
+          ],
+          "accepted_equivalents": [
+            "hydrogen"
+          ],
+          "insufficient_alone": [
+            "sodium metal"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [
+            "name the electrode first and then the product"
+          ],
+          "rule_refs": [],
+          "evidence_level": "pattern",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(h)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "General Comments (difficult topics)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_080",
+          "wrong_form": "Cl- + e- -> Cl (electron on the wrong side)",
+          "correct_form": "Cl- - e- -> Cl (loss of electron)",
+          "context": "Conversion of chloride ion to chlorine (anion to neutral).",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_081",
+          "wrong_form": "only Cl- - e- -> Cl given, Cl + Cl -> Cl2 missed",
+          "correct_form": "both steps, or single 2Cl- - 2e- -> Cl2",
+          "context": "Forming Cl2 from chloride ion.",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_082",
+          "wrong_form": "Pb2+ - 2e- -> Pb",
+          "correct_form": "Pb2+ + 2e- -> Pb",
+          "context": "Conversion of lead(II) ion to lead (gain of electrons).",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_083",
+          "wrong_form": "oxidation/reduction label inconsistent with the equation",
+          "correct_form": "label matching electron loss or gain",
+          "context": "Ion-to-neutral conversion tables.",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(c)(iv)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_084",
+          "wrong_form": "Cu + 2e- -> Cu2+ or Cu2+ - 2e- -> Cu",
+          "correct_form": "Cu - 2e- -> Cu2+",
+          "context": "Anode reaction in copper electro-refining.",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(d)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_085",
+          "wrong_form": "copper or impure copper as cathode",
+          "correct_form": "pure copper",
+          "context": "Cathode in electro-refining of copper.",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q3(d)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_086",
+          "wrong_form": "Al - 3e- -> Al3+, Al + 3e- -> Al3+, or 2Al3+ + 6e- -> Al",
+          "correct_form": "Al3+ + 3e- -> Al",
+          "context": "Cathode reaction in electrolysis of alumina.",
+          "applies_to_archetypes": [
+            "CHEM_ELECTROLYSIS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q5(b)(iii)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 4,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q2(c)"
+          ]
+        },
+        {
+          "total_marks": 1,
+          "milestone_weights": [
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q3(d)(i)",
+            "PPA-18 Q3(d)(ii)",
+            "PPA-18 Q5(b)(iii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_PROCESS_CONDITIONS",
+      "name": "Industrial Process Conditions",
+      "trigger_patterns": [
+        "The catalyst used in the Contact Process",
+        "conditions for the process",
+        "Haber / Ostwald / Contact process"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_PROC_001",
+          "requirement": "Industrial process answers state reaction, catalyst, temperature/pressure conditions and precautions. In this paper only the Contact Process catalyst (V2O5) is tested.",
+          "required_anchors": [
+            "correct catalyst (vanadium pentoxide for Contact Process)",
+            "conditions and reaction where asked"
+          ],
+          "accepted_equivalents": [
+            "V2O5"
+          ],
+          "insufficient_alone": [
+            "iron named as Contact Process catalyst"
+          ],
+          "mandatory_dependencies": [
+            "catalyst/condition matched to the correct process"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [
+            "RULE_2"
+          ],
+          "evidence_level": "single",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(v)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1 Suggestions for teachers"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_087",
+          "wrong_form": "iron as the catalyst of the Contact Process",
+          "correct_form": "vanadium pentoxide (V2O5)",
+          "context": "Contact Process (SO2 -> SO3). Iron is correct only for Haber's process.",
+          "applies_to_archetypes": [
+            "CHEM_PROCESS_CONDITIONS"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(v)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": []
+    },
+    {
+      "archetype_id": "CHEM_PERIODIC_TABLE",
+      "name": "Periodic Trends",
+      "trigger_patterns": [
+        "In Period 3 ... element B is placed to the left of element A",
+        "choose the correct word from the brackets"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_PT_001",
+          "requirement": "Across a period (left to right): metallic character decreases, electron affinity increases, atomic size decreases; apply to the stated relative positions of A and B.",
+          "required_anchors": [
+            "direction of trend left to right",
+            "comparison oriented to the correct element (B is left of A)"
+          ],
+          "accepted_equivalents": [
+            "B higher metallic character",
+            "A higher electron affinity",
+            "A smaller atomic size"
+          ],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [
+            "read positions of A and B correctly"
+          ],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(b)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 3,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q2(b)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_BONDING_STRUCTURE",
+      "name": "Electron Dot Diagrams",
+      "trigger_patterns": [
+        "Draw the electron dot diagram of",
+        "lone pair of electrons"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_BOND_001",
+          "requirement": "Hydronium ion dot-and-cross diagram: O with three H, one lone pair on O, distinct symbols for O and H electrons, coordinate bond to H+ shown with an arrow, square brackets with + charge.",
+          "required_anchors": [
+            "lone pair on oxygen",
+            "distinct symbols for O and H electrons",
+            "coordinate bond arrow",
+            "square brackets with + charge"
+          ],
+          "accepted_equivalents": [
+            "bond-structure form with O->H arrow and lone pair, inside brackets with +"
+          ],
+          "insufficient_alone": [
+            "lone pair or charge missing",
+            "same kind of dots for O and H",
+            "coordinate bond not shown by an arrow"
+          ],
+          "mandatory_dependencies": [
+            "lone pair explicitly drawn",
+            "charge shown outside the bracket"
+          ],
+          "recommended_not_required": [
+            "separate dot structure and bond structure"
+          ],
+          "rule_refs": [
+            "RULE_5"
+          ],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(ii)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_088",
+          "wrong_form": "lone pair missing from the oxygen atom",
+          "correct_form": "lone pair shown on O",
+          "context": "Dot diagram of H3O+.",
+          "applies_to_archetypes": [
+            "CHEM_BONDING_STRUCTURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_089",
+          "wrong_form": "charge missing",
+          "correct_form": "brackets with + charge",
+          "context": "Dot diagram of a polyatomic cation such as H3O+.",
+          "applies_to_archetypes": [
+            "CHEM_BONDING_STRUCTURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_090",
+          "wrong_form": "same kind of dots used for electrons of O and H",
+          "correct_form": "distinct symbols (dots vs crosses)",
+          "context": "Dot-and-cross diagram of H3O+.",
+          "applies_to_archetypes": [
+            "CHEM_BONDING_STRUCTURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(ii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_091",
+          "wrong_form": "coordinate bond not indicated by an arrow",
+          "correct_form": "arrow from O (donor) to H+",
+          "context": "Hydronium ion bonding.",
+          "applies_to_archetypes": [
+            "CHEM_BONDING_STRUCTURE"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q2(a)(ii)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 2,
+          "milestone_weights": [
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q2(a)(ii)"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype_id": "CHEM_MATCH_FILL",
+      "name": "MCQs and Fill-in-the-Blanks",
+      "trigger_patterns": [
+        "Choose the correct answer from the options given below",
+        "Fill up the blanks with the correct choice given in brackets"
+      ],
+      "canonical_criteria": [
+        {
+          "criterion_id": "CHEM_MF_001",
+          "requirement": "MCQ: one option selected; key accepts option letter or option text. Concepts tested: Ca2+ gives no precipitate with NH4OH; alkanes undergo substitution; electrolysis of acidified water is a redox reaction; dimethyl ether is methoxymethane; Contact Process catalyst is V2O5.",
+          "required_anchors": [
+            "single option selected"
+          ],
+          "accepted_equivalents": [
+            "letter (A/D/C/B/C) or the corresponding option text"
+          ],
+          "insufficient_alone": [
+            "more than one option marked"
+          ],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(i)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(ii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(iii)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(iv)"
+            },
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(v)"
+            }
+          ]
+        },
+        {
+          "criterion_id": "CHEM_MF_002",
+          "requirement": "Fill-in-blank from bracketed choices: solid; hydrogen gas; upward; haematite; iron (III) chloride. Concepts: ionic compounds do not conduct when solid; H2 at cathode in aqueous NaCl; HCl collected by upward displacement of air; haematite is the common iron ore; direct combination of Fe and Cl2 gives FeCl3.",
+          "required_anchors": [
+            "the bracketed choice that completes the statement"
+          ],
+          "accepted_equivalents": [],
+          "insufficient_alone": [],
+          "mandatory_dependencies": [],
+          "recommended_not_required": [],
+          "rule_refs": [],
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(h)"
+            }
+          ]
+        }
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "CHEM_NEG_092",
+          "wrong_form": "copper nitrate or lead nitrate selected",
+          "correct_form": "calcium nitrate",
+          "context": "Salt solution that does not react with ammonium hydroxide (Ca2+ gives no precipitate).",
+          "applies_to_archetypes": [
+            "CHEM_MATCH_FILL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(i)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_093",
+          "wrong_form": "oxidation or reduction alone",
+          "correct_form": "redox reaction",
+          "context": "Electrolysis of acidified water, where both occur.",
+          "applies_to_archetypes": [
+            "CHEM_MATCH_FILL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(iii)"
+            }
+          ]
+        },
+        {
+          "constraint_id": "CHEM_NEG_094",
+          "wrong_form": "iron selected as catalyst",
+          "correct_form": "vanadium pentoxide",
+          "context": "Catalyst used in the Contact Process.",
+          "applies_to_archetypes": [
+            "CHEM_MATCH_FILL"
+          ],
+          "effect": "VOID_POINT",
+          "source": "examiner_comment",
+          "evidence_level": "explicit",
+          "evidence": [
+            {
+              "paper": "PPA-18",
+              "question_ref": "Q1(a)(v)"
+            }
+          ]
+        }
+      ],
+      "mark_distribution_templates": [
+        {
+          "total_marks": 5,
+          "milestone_weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "penalty_deductions": {},
+          "observed_in": [
+            "PPA-18 Q1(a)",
+            "PPA-18 Q1(h)"
+          ]
+        }
+      ]
+    }
+  ],
+  "global_negative_constraints": [
+    {
+      "constraint_id": "CHEM_GLOBAL_001",
+      "wrong_form": "multiple answers, all products, or an unrequested equation where one specific answer is asked",
+      "correct_form": "only the specific gas, precipitate, component or equation asked for",
+      "context": "Questions asking for one named gas, precipitate, main component or one equation. Does not apply where a question explicitly asks for all products.",
+      "applies_to_archetypes": [
+        "ALL"
+      ],
+      "effect": "VOID_POINT",
+      "source": "examiner_comment",
+      "evidence_level": "pattern",
+      "evidence": [
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q1(g)(i)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q3(b)(ii)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q4(d)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q7(b)(i)"
+        }
+      ]
+    },
+    {
+      "constraint_id": "CHEM_GLOBAL_002",
+      "wrong_form": "acid named or written without dilute/concentrated where strength changes the answer",
+      "correct_form": "concentrated sulphuric acid, dilute hydrochloric acid, etc.",
+      "context": "Naming or choosing an acid (e.g. Q3(b)(i)) or writing an equation where conc. vs dilute decides the product. Not enforced where the stem already fixes the strength.",
+      "applies_to_archetypes": [
+        "CHEM_IDENTIFY",
+        "CHEM_EQUATION"
+      ],
+      "effect": "DOCK_HALF_MARK",
+      "source": "general_comments",
+      "evidence_level": "pattern",
+      "evidence": [
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q3(b)(i)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q3(b)(ii)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "General Comments (Suggestions for Candidates)"
+        }
+      ]
+    },
+    {
+      "constraint_id": "CHEM_GLOBAL_003",
+      "wrong_form": "failing to read the stem (state of matter, oxidation state, 'main', 'pure') and answering a different question",
+      "correct_form": "answer that honours every qualifier in the stem",
+      "context": "Questions that specify solution vs solid, iron(III) vs iron(II), main component, pure vs impure.",
+      "applies_to_archetypes": [
+        "ALL"
+      ],
+      "effect": "VOID_POINT",
+      "source": "suggestions_for_teachers",
+      "evidence_level": "pattern",
+      "evidence": [
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q7(a)(i)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q7(a)(ii)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q1(c)(ii)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q4(d)"
+        },
+        {
+          "paper": "PPA-18",
+          "question_ref": "Q3(d)(i)"
+        }
+      ]
+    }
+  ],
+  "unresolved_anomalies": [
+    {
+      "issue": "Marking scheme Q4(b)(i) prints 'Mass of Al(OH)2' (typo); working 312/144 x 12 = 26 g is consistent with Al(OH)3.",
+      "archetype_id": "CHEM_NUMERICAL",
+      "reason": "Text erratum in key; rubric uses Al(OH)3 and 26 g."
+    },
+    {
+      "issue": "Q4(b) is [4] marks with no printed split; rubric assumes 2 + 2 across (i) and (ii). Q4(a) [2] assumed as 1 ratio + 1 formula. Q6(b) [4] assumed 2 + 2.",
+      "archetype_id": "CHEM_NUMERICAL",
+      "reason": "Unprinted multi-mark splits; the 3-mark (2+1) template in the prompt does not fit a 4-mark item."
+    },
+    {
+      "issue": "Examiner comment for Q5(b) labels the process answer '(i)' and the equation '(ii)', while the question has (i) ore, (ii) process, (iii) equation.",
+      "archetype_id": "CHEM_IDENTIFY",
+      "reason": "Sub-part labels shifted; comments mapped to criteria by content."
+    },
+    {
+      "issue": "Q3(a)(i): examiners report NaOH or (NH4)2SO4 as incorrect choices, yet the paper note says alternate correct solutions were accepted and both routes are chemically valid.",
+      "archetype_id": "CHEM_EQUATION",
+      "reason": "Examiner comment (rule 2) retained as a half-mark deduction; needs human decision on whether to accept valid alternatives."
+    },
+    {
+      "issue": "Key writes bare 'HCl' (Q1(c)(v)) and 'H2SO4' (Q7(b)(i)) while General Comments tell candidates to state acid strength.",
+      "archetype_id": "CHEM_EQUATION",
+      "reason": "Strength requirement enforced only where it changes the answer (Q3(b)(i)); equations not penalised for omitting it."
+    },
+    {
+      "issue": "Key Q1(d)(ii) accepts condensed forms (CH3-CH2-CH2-CH3, H3C-CH(CH3)-CH3) as OR alternatives, whereas RULE_5 voids condensed formulas in 'draw the structure' questions.",
+      "archetype_id": "CHEM_ORGANIC_NOMENCLATURE",
+      "reason": "Condensed alkane forms with explicit C-C bonds accepted; condensed functional groups (-COOH, -CHO) still void under RULE_5."
+    },
+    {
+      "issue": "Severity (VOID_POINT vs DOCK_HALF_MARK) is not printed anywhere in the source; it is derived from whether the error contradicts the key or only weakens wording.",
+      "archetype_id": "ALL",
+      "reason": "Marking schemes award integer marks only; half-mark deductions are an evaluator convention per principle 3."
+    },
+    {
+      "issue": "Error-carried-forward credit is not specified (e.g. mis-copied 300 cc in Q6(b)).",
+      "archetype_id": "CHEM_NUMERICAL",
+      "reason": "No printed policy; CHEM_NEG_042 is a provisional half-mark deduction."
+    },
+    {
+      "issue": "No CHEM_PROCESS_CONDITIONS question appears in this PPA; the criterion rests on one MCQ and the Suggestions for Teachers.",
+      "archetype_id": "CHEM_PROCESS_CONDITIONS",
+      "reason": "Single-evidence derivation; add more PPAs before trusting it."
+    },
+    {
+      "issue": "Q2(b) examiner comment names no specific error, so no negative constraints were derived for periodic trends.",
+      "archetype_id": "CHEM_PERIODIC_TABLE",
+      "reason": "Comment reports only that a few candidates chose wrong words."
+    },
+    {
+      "issue": "Q1(h) comment says errors occurred in (i), (ii) and (v) without naming the wrong choices.",
+      "archetype_id": "CHEM_MATCH_FILL",
+      "reason": "No context-scoped constraint can be derived without the actual wrong answers."
+    },
+    {
+      "issue": "Composite sub-parts assigned to one archetype: Q3(b)(i) (name + reason) to CHEM_IDENTIFY; Q2(c) (ionic equation + oxidation/reduction label) to CHEM_ELECTROLYSIS; Q1(b)(v) (ore concentration) to CHEM_DEFINE; Q6(c) (pH) to CHEM_IDENTIFY; Q4(c)(ii) and Q4(d) to CHEM_IDENTIFY.",
+      "archetype_id": "ALL",
+      "reason": "Taxonomy has no exact home for these; one archetype assigned per sub-question."
+    },
+    {
+      "issue": "Q1(d)(i) diagram stems and the Q6(a)(ii) and Q2(a)(ii) key diagrams are images; they were read visually from the PDF pages, not from extracted text. Q1(d)(i) structures themselves were inferred from the printed names in the key.",
+      "archetype_id": "CHEM_ORGANIC_NOMENCLATURE",
+      "reason": "Text extraction omits drawings."
+    },
+    {
+      "issue": "The paper year is not stated in the PDF text; evidence uses the file tag 'PPA-18'.",
+      "archetype_id": "ALL",
+      "reason": "source_material and evidence.paper cannot cite a year."
+    }
+  ]
+}

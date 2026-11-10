@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { numericFigures, scoreBadgeClass } from "@/lib/ui";
 import type { HistoryGroup } from "@/lib/history";
+import { EmptyState } from "@/app/_components/states/EmptyState";
 
 // One small, consistent mark per subject. Deliberately monochrome — §1 of the
 // design system reserves colour for meaning, and a subject is not a status.
@@ -433,9 +434,23 @@ export function HistoryBrowser({ groups }: { groups: HistoryGroup[] }) {
 
       <div className="mt-2 border-t border-border">
         {visible.length === 0 ? (
-          <p className="py-10 text-center text-sm text-muted-foreground">
-            Nothing matches these filters.
-          </p>
+          <EmptyState
+            compact
+            className="mt-6"
+            title="No results match these filters"
+            description="Your results are all still here. Loosen a filter to see them."
+            primary={{
+              label: "Clear filters",
+              onClick: () => {
+                setQuery("");
+                setSubject("all");
+                setTopic("all");
+                setType("all");
+                setBand("all");
+                setRange("all");
+              },
+            }}
+          />
         ) : (
           visible.map((g) => <GroupRow key={g.key} group={g} />)
         )}

@@ -21,9 +21,16 @@
     the be_ref cookie set by /i/{code}, the inviter→invited record made at
     signup, what the inviter can see, and the be_anon_id comparison used
     only to flag self-referrals. No contact upload, no emails to invitees.
+  - 1.6 added progress features and parent summaries: the Weekly Board Plan
+    (src/lib/board-plan, weekly_plans table, Monday in-app notice + student
+    email under the same reminder switch), presentation issues saved per
+    evaluation (evaluations.icse_style_issues), and opt-in weekly summaries
+    to a parent (src/lib/parent-report, parent_consents.reports_*). Reports
+    go only to the address that confirmed consent, only after that parent
+    opts in from the emailed link, and stop with one click.
 -->
 
-> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. If you photograph a handwritten answer, the photo is sent to Anthropic to be read and graded, and we don't keep it. If you invite friends with your personal link, you see only their first name and how far along they are, never their marks or answers, and we never ask for your contacts. You can delete your account, and your answers with it, at any time.
+> **In short:** BoardEdge collects what it needs to run your account and grade your answers — your name, email, the answers you submit, and basic usage information. If you're under 18, you can try your first 2 evaluations right away; after that, we don't grade anything else until a parent or guardian confirms consent by email. We don't sell your data or show you ads. Answers to written questions are sent to our AI provider, Anthropic, to be graded, without your name or email attached. If you photograph a handwritten answer, the photo is sent to Anthropic to be read and graded, and we don't keep it. If you invite friends with your personal link, you see only their first name and how far along they are, never their marks or answers, and we never ask for your contacts. If you ask us to, we can send your parent or guardian a short weekly summary of your practice, but only after they agree to it from their own email, and they can stop it at any time. You can delete your account, and your answers with it, at any time.
 
 ## Who we are
 
@@ -59,14 +66,15 @@ A parent or guardian can withdraw consent at any time by emailing [contact.board
 - **Google sign-in** — if you choose "Continue with Google", Google shares your name, email address, profile picture link, and a Google account identifier with us. We don't receive your Google password or access to your Google Drive, Gmail, or contacts.
 - **Your answers** — the text you type in response to questions, and the question you answered. For written questions you can instead upload **photos of a handwritten answer** (up to 3 pages). The photos are used only to read and grade that answer and are not stored; what we keep is the transcript you check and confirm.
 - **Feedback** — anything you write to us through the in-app feedback form, and any rating or tags you choose.
-- **Parent or guardian email** — the address a student gives us so we can ask for parental consent. We use it only to send the consent link and to handle consent or data requests from that parent or guardian.
+- **Parent or guardian email** — the address a student gives us so we can ask for parental consent. We use it to send the consent link, to handle consent or data requests from that parent or guardian, and — only if the student asks and the parent or guardian agrees — to send weekly practice summaries (see [Weekly summaries for parents](#weekly-summaries-for-parents)).
 
 ### Information created when you use BoardEdge
 
-- **Evaluation results** — the marks awarded, points you hit and missed, examiner-style feedback, the model answer, and improvement tips for each answer.
+- **Evaluation results** — the marks awarded, points you hit and missed, presentation issues the examiner noted, examiner-style feedback, the model answer, and improvement tips for each answer.
+- **Progress and weekly plans** — figures worked out from your evaluation results, such as where you lose marks, marks won back by reattempting, and your weekly streak, plus the three-task plan we set you each week and how far you got with it.
 - **Credit usage** — how many evaluation credits you used on each day, so we can apply the weekly free limit.
 - **Your consent record** — which version of this policy and the Terms you agreed to, how (email signup or Google), and when.
-- **Parental consent record** — whether a parent or guardian has confirmed, withdrawn, or not yet responded, when consent links were sent, and when consent was confirmed or withdrawn.
+- **Parental consent record** — whether a parent or guardian has confirmed, withdrawn, or not yet responded, when consent links were sent, and when consent was confirmed or withdrawn. If weekly summaries are used, also whether the parent or guardian turned them on (and from which address), when, and when the last summary and invitation were sent.
 - **Invite record** — your personal invite link, and, if you signed up through someone else's link, which student invited you. See [Inviting friends](#inviting-friends).
 
 ### Information collected automatically
@@ -86,6 +94,8 @@ We do **not** collect your phone number, school, address, date of birth, payment
 | Grading your answers | Your answer (typed, or photos of a handwritten answer), the question, its marking scheme | Your consent |
 | Showing your history and progress | Answers, evaluation results | Your consent |
 | Reminding you when an answer is due for another go, in the app and by email (you can turn the emails off at any time) | Evaluation results, your email address and first name | Your consent |
+| Setting you a weekly plan of three practice tasks, in the app and by email (the email follows the same on/off switch as reminders) | Evaluation results, your email address and first name | Your consent |
+| Sending your parent or guardian a weekly practice summary, only if you ask and they agree | Evaluation results and progress figures, your first name, the parent or guardian email | Your consent and your parent's or guardian's |
 | Applying the free weekly credit limit | Credit usage | Your consent |
 | Running invites and referral credits, and showing you how your invited friends are getting on | Invite record, the invited friend's first name and progress status | Your consent |
 | Spotting people inviting themselves to earn extra credits | Invite record, random visitor IDs | Legitimate use permitted under the DPDP Act |
@@ -120,6 +130,15 @@ Every student gets a **personal invite link** they can share, for example on Wha
 - **Where your link appears** — we may include a link to your invite page in emails we already send you: your welcome email and practice reminders.
 - **When a friend counts**, we tell you in the app and, unless you've turned reminder emails off, by email — naming them by first name only.
 
+## Weekly summaries for parents
+
+A student can ask us to send their parent or guardian a short weekly summary of their practice. It works like this:
+
+1. The student presses "Invite my parent" on their Account page. We email an invitation to the parent or guardian address **that confirmed consent** for the account — never to an address typed in at that moment. The invitation alone turns nothing on.
+2. Summaries start only if the parent or guardian presses the button on the page the invitation links to. Opening the link doesn't change anything by itself.
+3. Once a week, the summary covers: how many questions were answered (and the week before), the subjects, marks scored out of marks available, marks won back by rewriting answers, the most common ways marks were lost, the weakest chapter, and how many weekly-plan tasks were done. It never includes the answers themselves, the examiner's comments, or anything typed into BoardEdge.
+4. Summaries stop if the parent or guardian uses the stop link in any summary email, if the parent email on the account changes, or if consent is withdrawn. Students who haven't practised for four weeks aren't sent any.
+
 ## Who we share data with
 
 We share personal data only with service providers who help us run BoardEdge, and only what each one needs:
@@ -127,7 +146,7 @@ We share personal data only with service providers who help us run BoardEdge, an
 | Provider | What they do | Data involved |
 |---|---|---|
 | **Supabase** | Database, authentication, and account storage | All account data, answers, results, usage, feedback, analytics events, consent records, invite records |
-| **Resend** | Sending emails: consent requests to parents and guardians, and welcome and practice-reminder emails to students | The recipient's email address, the student's first name, and the contents of that email (for reminders, which questions are due for another go) |
+| **Resend** | Sending emails: consent requests, and (when turned on) weekly practice summaries, to parents and guardians; welcome, practice-reminder and weekly-plan emails to students | The recipient's email address, the student's first name, and the contents of that email (for reminders, which questions are due for another go; for weekly plans, the three tasks; for parent summaries, the figures described in [Weekly summaries for parents](#weekly-summaries-for-parents)) |
 | **Anthropic** | AI grading of written answers, and reading handwritten answer photos | Question, answer text or answer photos, marking scheme — no identity |
 | **Google** | Optional "Continue with Google" sign-in | The sign-in exchange you approve on Google's screen |
 | **Vercel** | Website hosting | Web requests, including IP address and browser type, in server logs |

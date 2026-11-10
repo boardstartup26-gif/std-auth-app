@@ -5,7 +5,7 @@
 
 import Link from "next/link";
 import { btnPrimary, btnSecondary, numericFigures } from "@/lib/ui";
-import { SET_TYPES } from "@/lib/practice-sets/constants";
+import { paperKindLabel, SET_TYPES } from "@/lib/practice-sets/constants";
 import type { Paper } from "@/lib/practice-sets/read";
 import { analysePaper, fmtMarks, type Outcome } from "@/lib/practice-sets/results";
 import { mcqOptionLabel, mcqOptionValue } from "../../../evaluate/_lib/question";
@@ -67,7 +67,7 @@ export function PaperResults({ paper }: { paper: Paper }) {
         Practice papers
       </Link>
       <p className="mt-6 text-xs font-bold uppercase tracking-wider text-muted-foreground">
-        {paper.spec.retryOf ? "Retry paper" : "Practice paper"} · {paper.subject} · Marked {dateLabel(paper.markedAt)}
+        {paperKindLabel(paper.spec)} · {paper.subject} · Marked {dateLabel(paper.markedAt)}
       </p>
 
       {/* ── Score ── */}
