@@ -162,35 +162,36 @@ export function HistorySkeleton() {
 
 export function ProgressSkeleton() {
   return (
-    <LoadingRegion label="Loading your progress" className="mx-auto min-h-screen max-w-5xl px-6 py-12">
-      <PageHeader />
-      <div aria-hidden className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 border-y border-border py-5 lg:grid-cols-4">
+    // Shared by /progress and its three sections (one loading.tsx covers the
+    // segment): header, tab bar, a row of figure cards, then a bar card.
+    <LoadingRegion label="Loading your progress" className="mx-auto min-h-screen max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+      <div aria-hidden>
+        <Skeleton className="h-3 w-28" />
+        <Skeleton className="mt-3 h-10 w-80 max-w-full" />
+        <Skeleton className="mt-3 h-4 w-72 max-w-full" />
+      </div>
+      <div aria-hidden className="mt-6 flex gap-4 border-b border-border pb-2.5">
         {[0, 1, 2, 3].map((i) => (
-          <div key={i}>
-            <Skeleton className="h-3 w-24" />
-            <Skeleton className="mt-2.5 h-6 w-20" />
-            <Skeleton className="mt-2 h-3 w-28" />
+          <Skeleton key={i} className="h-4 w-20" />
+        ))}
+      </div>
+      <div aria-hidden className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} className="flex flex-col items-center rounded-xl border border-border bg-card px-3 py-5">
+            <Skeleton className="h-5 w-5 rounded" />
+            <Skeleton className="mt-3 h-8 w-16" />
+            <Skeleton className="mt-2.5 h-3 w-20" />
           </div>
         ))}
       </div>
-      <Skeleton className="mt-12 h-7 w-40" />
-      <div aria-hidden className="mt-6 grid gap-8 lg:grid-cols-2">
-        {[0, 1].map((i) => (
-          <div key={i} className="space-y-5 rounded-2xl border border-border bg-card p-6">
-            <Skeleton className="h-6 w-24" />
-            {[0, 1, 2, 3].map((j) => (
-              <div key={j} className="space-y-2">
-                <Skeleton className="h-4 w-2/3" />
-                <Skeleton className="h-1.5 w-full rounded-full" />
-              </div>
-            ))}
+      <div aria-hidden className="mt-8 space-y-4 rounded-xl border border-border bg-card p-5 sm:p-6">
+        <Skeleton className="h-6 w-48" />
+        {[0, 1, 2, 3, 4].map((j) => (
+          <div key={j} className="grid grid-cols-[8rem_minmax(0,1fr)_3rem] items-center gap-4">
+            <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-2 w-full rounded-full" />
+            <Skeleton className="h-4 w-full" />
           </div>
-        ))}
-      </div>
-      <Skeleton className="mt-12 h-7 w-44" />
-      <div aria-hidden className="mt-6">
-        {[0, 1, 2].map((i) => (
-          <RowSkeleton key={i} />
         ))}
       </div>
     </LoadingRegion>

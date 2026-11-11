@@ -115,7 +115,7 @@ function buildTools({
   if (snap.weakest.length) {
     tiles.push({
       key: "fix",
-      href: "/progress#fix-list",
+      href: "/progress/fix-list",
       label: "Fix List",
       icon: ClipboardList,
       caption: plural(snap.weakest.length, "weak chapter", "weak chapters"),
@@ -124,7 +124,7 @@ function buildTools({
   if (snap.leakage.lost > 0) {
     tiles.push({
       key: "leak",
-      href: "/progress#leakage-map",
+      href: "/progress/leakage",
       label: "Leakage Map",
       icon: ChartPie,
       caption: `${fmtMarks(snap.leakage.lost)} marks lost`,
@@ -132,7 +132,7 @@ function buildTools({
   }
   tiles.push({
     key: "gain",
-    href: "/progress#reattempt-gain",
+    href: "/progress/reattempt-gain",
     label: "Reattempt Gain",
     icon: TrendingUp,
     caption: snap.gain.reattempted ? `+${fmtMarks(snap.gain.marksRecovered)} won back` : "No rewrites yet",

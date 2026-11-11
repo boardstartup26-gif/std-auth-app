@@ -98,7 +98,7 @@ export function ProgressSummary({ snap, latestMarked }: { snap: ProgressSnapshot
       {leak ? (
         <p className="mt-2 text-[13px] text-muted-foreground">
           Biggest leak:{" "}
-          <Link href="/progress#leakage-map" className="font-medium text-foreground underline-offset-4 hover:underline">
+          <Link href="/progress/leakage" className="font-medium text-foreground underline-offset-4 hover:underline">
             {leak.chapter}
           </Link>{" "}
           · {leak.subject}{" "}

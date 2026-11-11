@@ -164,13 +164,13 @@ const FixListSchema = z.object({ subject: z.enum(SUBJECTS) });
  * reason the page explains; it never builds a paper the student didn't need.
  */
 export async function buildFixList(formData: FormData): Promise<void> {
-  const userId = await currentUserId("/progress");
+  const userId = await currentUserId("/progress/fix-list");
   const parsed = FixListSchema.safeParse({ subject: formData.get("subject") });
-  if (!parsed.success) redirect("/progress");
+  if (!parsed.success) redirect("/progress/fix-list");
   const { subject } = parsed.data;
   // A declared `never` function, so TypeScript narrows after each call.
   function back(reason: "error" | "none" | "thin"): never {
-    redirect(`/progress?subject=${encodeURIComponent(subject)}&fix=${reason}`);
+    redirect(`/progress/fix-list?subject=${encodeURIComponent(subject)}&fix=${reason}`);
   }
 
   // An open Fix List for this subject is still the work to do: send the

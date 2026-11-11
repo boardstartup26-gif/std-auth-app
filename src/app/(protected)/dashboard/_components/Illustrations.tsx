@@ -85,3 +85,43 @@ export function OpenBookSketch({ className = "" }: { className?: string }) {
     </svg>
   );
 }
+
+/** A magnifying glass over a marked sheet (Leakage Map). */
+export function MagnifierSketch({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 120 96" className={className} aria-hidden focusable="false">
+      <g {...ink}>
+        <path d="M14 18l50-8 10 66-50 8z" {...ink} fill={wash} />
+        <g strokeWidth={0.7} opacity={0.65}>
+          <path d="M22 28l34-5M23 36l34-5M24 44l22-3M25 52l30-4M26 60l18-3" />
+        </g>
+        <circle cx="70" cy="46" r="20" {...ink} fill="var(--bg, #fff)" />
+        <circle cx="70" cy="46" r="15" strokeWidth={0.8} opacity={0.6} />
+        <path d="M62 40c2-4 6-6 10-6" strokeWidth={1} opacity={0.7} />
+        <path d="M84 60l20 20" strokeWidth={4} />
+        <path d="M84 60l20 20" stroke="var(--bg, #fff)" strokeWidth={1.4} />
+      </g>
+    </svg>
+  );
+}
+
+/** Rising bars with an arrow (Reattempt Gain). */
+export function RisingChartSketch({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 120 96" className={className} aria-hidden focusable="false">
+      <g {...ink}>
+        <path d="M10 86h100" />
+        {[
+          [22, 70],
+          [44, 58],
+          [66, 44],
+          [88, 28],
+        ].map(([x, y]) => (
+          <path key={x} d={`M${x} 86V${y}h14v${86 - y}`} {...ink} fill={wash} />
+        ))}
+        <path d="M14 62c20-6 38-16 56-30 10-8 20-16 30-24" strokeWidth={1.6} />
+        <path d="M90 8h12v12" strokeWidth={1.6} />
+      </g>
+    </svg>
+  );
+}
