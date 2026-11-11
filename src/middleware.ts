@@ -1,3 +1,12 @@
+// src/middleware.ts
+//
+// Must live in src/, beside src/app. Next only runs a middleware file at the
+// same level as the app directory; from the repo root it still compiles but
+// is never invoked (that happened from 2026-04-28 to 2026-11-11, silently).
+//
+// Still named `middleware`, not Next 16's `proxy`: proxy runs on Node only,
+// and this file runs on the edge runtime. Rename separately, on purpose.
+
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 

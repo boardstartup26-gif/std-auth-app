@@ -14,6 +14,7 @@ import { RecoveryRow } from "./_components/RecoveryRow";
 import { readProgressAttempts } from "@/lib/progress/read";
 import { buildProgressSnapshot } from "@/lib/progress";
 import { after } from "next/server";
+import { redirect } from "next/navigation";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { ensureWeeklyPlan, viewPlan, type PlanView } from "@/lib/board-plan/service";
 import { EVENTS } from "@/lib/analytics/events";
@@ -411,19 +412,21 @@ export default async function DashboardPage() {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  // Middleware already sends signed-out visitors to /login; this is the
+  // page's own guard, so it never renders an empty shell if that ever lapses
+  // (it did once — the file sat outside src/ and silently stopped running).
+  if (!user) redirect("/login?next=/dashboard");
 
-  const firstName = (user?.user_metadata?.first_name as string | undefined)?.trim();
-  const greetingName = firstName || user?.email?.split("@")[0] || "there";
-  const [credits, practice, checklist, referrals, progressRead, gate] = user
-    ? await Promise.all([
-        readCredits(user.id),
-        readDashboardPractice(user.id),
-        readFirstWeekChecklist(user.id),
-        readReferralSummary(user.id),
-        readProgressAttempts(user.id),
-        getEvaluationGateState(user.id),
-      ])
-    : [null, { openPaper: null, latestMarked: null, recent: [], loadFailed: false }, null, null, null, null];
+  const firstName = (user.user_metadata?.first_name as string | undefined)?.trim();
+  const greetingName = firstName || user.email?.split("@")[0] || "there";
+  const [credits, practice, checklist, referrals, progressRead, gate] = await Promise.all([
+    readCredits(user.id),
+    readDashboardPractice(user.id),
+    readFirstWeekChecklist(user.id),
+    readReferralSummary(user.id),
+    readProgressAttempts(user.id),
+    getEvaluationGateState(user.id),
+  ]);
   // No row until there is something to say, and none on a failed read: a
   // "0 weeks" built from missing data would be a false statement.
   const progress =
