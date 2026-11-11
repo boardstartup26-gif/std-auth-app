@@ -307,21 +307,46 @@ export function NotificationsSkeleton() {
 
 export function InviteSkeleton() {
   return (
-    <LoadingRegion label="Loading invites" className="mx-auto min-h-screen max-w-3xl px-6 py-12">
+    <LoadingRegion label="Loading invites" className="mx-auto min-h-screen max-w-4xl px-4 py-8 sm:px-6 sm:py-10">
       <div aria-hidden>
-        <Skeleton className="h-3 w-24" />
-        <Skeleton className="mt-3 h-9 w-full max-w-md" />
-        <Skeleton className="mt-2 h-9 w-2/3" />
-        <SkeletonText lines={2} className="mt-5 max-w-[var(--measure)]" />
+        <Skeleton className="h-3 w-28" />
+        <Skeleton className="mt-3 h-10 w-80 max-w-full" />
+        <Skeleton className="mt-3 h-4 w-64 max-w-full" />
       </div>
-      <div aria-hidden className="mt-8 space-y-4">
-        <Skeleton className="h-12 w-full rounded-xl" />
-        <div className="flex gap-2">
-          <Skeleton className="h-11 w-44 rounded-lg" />
-          <Skeleton className="h-11 w-36 rounded-lg" />
+      {/* Link card */}
+      <div aria-hidden className="mt-7 rounded-xl border border-border bg-card p-5 sm:p-6">
+        <div className="flex gap-3.5">
+          <Skeleton className="h-9 w-9 rounded-lg" />
+          <div className="flex-1 space-y-2">
+            <Skeleton className="h-5 w-40" />
+            <Skeleton className="h-3.5 w-3/4" />
+          </div>
         </div>
+        <div className="mt-5 flex gap-2.5">
+          <Skeleton className="h-11 flex-1 rounded-md" />
+          <Skeleton className="h-11 w-32 rounded-md" />
+        </div>
+        <Skeleton className="mt-3 h-10 w-48 rounded-md" />
       </div>
-      <div aria-hidden className="mt-12">
+      {/* How it works */}
+      <Skeleton className="mt-10 h-6 w-36" />
+      <div aria-hidden className="mt-5 grid gap-6 sm:grid-cols-3">
+        {[0, 1, 2].map((i) => (
+          <div key={i} className="flex flex-col items-center gap-2">
+            <Skeleton className="h-9 w-9 rounded-full" />
+            <Skeleton className="h-4 w-28" />
+            <Skeleton className="h-3 w-40" />
+          </div>
+        ))}
+      </div>
+      {/* Status */}
+      <Skeleton className="mt-10 h-6 w-48" />
+      <div aria-hidden className="mt-4 grid grid-cols-3 gap-3">
+        {[0, 1, 2].map((i) => (
+          <Skeleton key={i} className="h-28 rounded-xl" />
+        ))}
+      </div>
+      <div aria-hidden className="mt-10">
         {[0, 1, 2].map((i) => (
           <RowSkeleton key={i} />
         ))}

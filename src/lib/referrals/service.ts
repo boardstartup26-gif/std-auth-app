@@ -355,6 +355,11 @@ export interface ReferralSummary {
   qualified: number;
   /** Weekly credits this student has earned from referrals (both directions). */
   weeklyBonusEarned: number;
+  /**
+   * True when the friends or bonus read failed. The lists above are then
+   * incomplete, and a page must say so rather than show "no one yet".
+   */
+  loadFailed: boolean;
 }
 
 export async function readReferralSummary(userId: string): Promise<ReferralSummary> {
@@ -415,5 +420,6 @@ export async function readReferralSummary(userId: string): Promise<ReferralSumma
     friends,
     qualified: friends.filter((f) => f.state === "counted").length,
     weeklyBonusEarned,
+    loadFailed: Boolean(referralsRes.error || bonusRes.error),
   };
 }
