@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Fraunces, Geist, Inter } from "next/font/google";
 import { AnalyticsProvider } from "@/app/_components/AnalyticsProvider";
 import "./globals.css";
 
@@ -16,6 +16,10 @@ const fraunces = Fraunces({
   subsets: ["latin"],
   axes: ["SOFT", "WONK", "opsz"],
 });
+
+// Body face for redesigned surfaces (the dashboard first), applied per page
+// through the `font-body` utility so pages not yet redesigned keep Geist.
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BoardEdge",
@@ -34,7 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     // style would outrank the `.dark` override a future toggle will use.
     <html
       lang="en"
-      className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="bg-background text-foreground font-sans">
         {/* Renders nothing; owns page_view + anonymous-visitor continuity. */}

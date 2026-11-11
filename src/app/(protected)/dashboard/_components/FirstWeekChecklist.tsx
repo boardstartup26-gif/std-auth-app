@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react";
 import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 import type { ChecklistKey, FirstWeekChecklist as Checklist } from "@/lib/onboarding/checklist";
 import { OnboardingProgress } from "@/app/onboarding/_components/OnboardingProgress";
+import { dashButton, dashCard, dashHeading } from "../_lib/styles";
 
 const COPY: Record<ChecklistKey, { title: string; note: string; progressNote?: string; href: string; cta: string }> = {
   first_answer: {
@@ -44,30 +45,30 @@ const COPY: Record<ChecklistKey, { title: string; note: string; progressNote?: s
   },
 };
 
-const rowLabel = "text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-foreground";
+const rowLabel = "text-[11px] font-semibold uppercase tracking-[0.14em] text-accent";
 
 export function FirstWeekChecklist({ checklist }: { checklist: Checklist }) {
   // The first unfinished item gets the filled button; the rest stay quiet.
   const nextKey = checklist.items.find((i) => !i.done)?.key;
 
   return (
-    <section className="mt-10 border-t border-foreground/80 pt-5" aria-labelledby="first-week">
+    <section className={`${dashCard} mt-4 p-5 sm:p-6`} aria-labelledby="first-week">
       <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
         <div>
           <p className={rowLabel}>Getting started</p>
-          <h2 id="first-week" className="mt-1 font-display text-2xl leading-tight text-foreground">
+          <h2 id="first-week" className={`${dashHeading} mt-1`}>
             Your first week
           </h2>
         </div>
         <OnboardingProgress done={checklist.done} total={checklist.total} className="w-full sm:w-56" />
       </div>
 
-      <ol className="mt-4 divide-y divide-border border-y border-border">
+      <ol className="mt-4 divide-y divide-border border-t border-border">
         {checklist.items.map((item, i) => {
           const c = COPY[item.key];
           const isNext = item.key === nextKey;
           return (
-            <li key={item.key} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-x-3 py-3.5 sm:grid-cols-[2rem_minmax(0,1fr)_auto] sm:items-center">
+            <li key={item.key} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-x-3 py-3 last:pb-0 sm:grid-cols-[2rem_minmax(0,1fr)_auto] sm:items-center">
               <span
                 className={`font-display text-base tabular-nums ${item.done ? "text-status-correct" : "text-accent"}`}
                 aria-hidden
@@ -88,10 +89,8 @@ export function FirstWeekChecklist({ checklist }: { checklist: Checklist }) {
               {!item.done ? (
                 <Link
                   href={c.href}
-                  className={`col-start-2 mt-2 inline-flex items-center gap-1.5 justify-self-start text-sm font-medium sm:col-start-3 sm:mt-0 sm:justify-self-end ${
-                    isNext
-                      ? "rounded-lg bg-accent px-3.5 py-1.5 text-background transition-colors hover:bg-accent-hover"
-                      : "text-accent underline-offset-4 hover:underline"
+                  className={`col-start-2 mt-2 justify-self-start sm:col-start-3 sm:mt-0 sm:justify-self-end ${
+                    isNext ? dashButton : "inline-flex items-center gap-1.5 text-[13px] font-medium text-accent underline-offset-4 hover:underline"
                   }`}
                 >
                   {c.cta}

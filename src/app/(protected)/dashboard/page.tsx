@@ -1,35 +1,51 @@
 import Link from "next/link";
-import { ArrowRight, FileStack, LibraryBig, type LucideIcon, ScrollText } from "lucide-react";
+import {
+  ArrowRight,
+  CalendarCheck,
+  ChartNoAxesColumn,
+  ChartPie,
+  ClipboardList,
+  Gift,
+  MailCheck,
+  TrendingUp,
+} from "lucide-react";
+import { after } from "next/server";
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
-import { btnPrimary, numericFigures, scoreBadgeClass, sectionLabel } from "@/lib/ui";
+import { numericFigures, scoreBadgeClass } from "@/lib/ui";
 import type { SetSummary } from "@/lib/practice-sets/read";
 import { fmtMarks } from "@/lib/practice-sets/results";
-import { readDashboardPractice, type RecentItem } from "./_lib/recent";
 import { REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 import { readFirstWeekChecklist } from "@/lib/onboarding/checklist";
 import { readReferralSummary, type ReferralSummary } from "@/lib/referrals/service";
-import { FirstWeekChecklist } from "./_components/FirstWeekChecklist";
-import { RecoveryRow } from "./_components/RecoveryRow";
 import { readProgressAttempts } from "@/lib/progress/read";
-import { buildProgressSnapshot } from "@/lib/progress";
-import { after } from "next/server";
-import { redirect } from "next/navigation";
+import { buildProgressSnapshot, type ProgressSnapshot } from "@/lib/progress";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
+import { parentReportsLive, readReportRow, reportState, type ReportState } from "@/lib/parent-report/service";
 import { ensureWeeklyPlan, viewPlan, type PlanView } from "@/lib/board-plan/service";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
-import { BoardPlanCard } from "./_components/BoardPlanCard";
 import { EmptyState } from "@/app/_components/states/EmptyState";
 import { ReloadableError } from "@/app/_components/states/ErrorState";
+import { readDashboardPractice, type RecentItem } from "./_lib/recent";
+import { dashCard, dashEyebrow, dashHeading, dashLink } from "./_lib/styles";
+import { FirstWeekChecklist } from "./_components/FirstWeekChecklist";
+import { BoardPlanCard } from "./_components/BoardPlanCard";
+import { ProgressSummary } from "./_components/ProgressSummary";
+import { PrimaryActions } from "./_components/PrimaryActions";
+import { SubjectGrid } from "./_components/SubjectGrid";
+import { ToolShortcuts, type ToolTile } from "./_components/ToolShortcuts";
+import { HallSketch } from "./_components/Illustrations";
 
 export const dynamic = "force-dynamic";
 
-// An exam desk, not a stack of cards: the page is set in type, whitespace and
-// hairline rules. The one filled surface is an open paper — the single thing
-// on this page that is waiting on the student. Serif carries the academic
-// hierarchy (greeting, subjects, scores); sans carries metadata and actions.
-const dashboardShell = "mx-auto min-h-screen max-w-5xl px-6 py-12";
+// Practice first: greeting, then the two ways to practise, then the shortcuts
+// to the preparation tools, then subjects. Below that, only what this student
+// has: this week's Board Plan and progress for a returning student, the
+// first-week checklist for a new one. No section renders an empty statistic.
+// Headings are Fraunces; everything else is Inter (font-body on the shell).
+const dashboardShell = "mx-auto min-h-screen max-w-5xl px-4 py-8 font-body sm:px-6 sm:py-10";
 
 /**
  * Greeting by IST clock, not the server's. Vercel runs these functions in
@@ -52,12 +68,7 @@ function dateLabel(iso: string): string {
 }
 
 function todayLabel(date: Date): string {
-  return date.toLocaleDateString("en-IN", {
-    timeZone: "Asia/Kolkata",
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-  });
+  return date.toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", weekday: "long", day: "numeric", month: "long" });
 }
 
 /** A marked paper's score against what was actually marked (failed answers are left out). */
@@ -67,210 +78,87 @@ function paperScore(s: SetSummary): { score: number; outOf: number; percent: num
   return { score, outOf, percent: outOf ? Math.round((score / outOf) * 100) : 0 };
 }
 
-const textLink =
-  "inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 transition-colors hover:text-accent hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
-const rowLabel = "text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-foreground";
+const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
-// ─── Primary: the practice paper ─────────────────────────────────────────────
-// With a paper open it is that paper, on the page's only filled surface.
-// Otherwise it is an invitation set in type that sends the student to the
-// builder at /practice-paper — the builder is not duplicated here.
+// ─── Preparation tools ───────────────────────────────────────────────────────
+// Each tile links to where the feature already lives and carries one fact
+// from real data. A tile with nothing behind it is dropped; "Your Progress"
+// fills a gap so the row stays a full set.
 
-function ContinuePaper({ paper }: { paper: SetSummary }) {
-  const marking = paper.status === "marking";
-  const progress = Math.round((paper.answeredCount / Math.max(1, paper.questionCount)) * 100);
+const REPORT_CAPTION: Record<ReportState, string> = {
+  on: "On · every Monday",
+  off: "Off · turn on",
+  unavailable: "After parent consent",
+};
 
-  return (
-    <section
-      className="rounded-lg border border-border bg-card px-6 py-7 sm:px-8"
-      aria-labelledby="primary-paper"
-    >
-      <p className={rowLabel}>{marking ? "Practice paper · being marked" : "Continue practice paper"}</p>
-      <div className="mt-3 flex flex-wrap items-end justify-between gap-x-10 gap-y-6">
-        <div className="min-w-0">
-          <h2 id="primary-paper" className="font-display text-[2rem] leading-tight text-foreground">
-            {paper.subject}
-          </h2>
-          <p className="mt-1.5 text-sm text-muted-foreground">
-            <span className={numericFigures}>{paper.questionCount}</span> questions ·{" "}
-            <span className={numericFigures}>{fmtMarks(paper.totalMarks)}</span> marks ·{" "}
-            {marking ? "handed in" : "started"} {dateLabel(paper.submittedAt ?? paper.createdAt)}
-          </p>
-        </div>
-
-        <div className="w-full sm:w-64">
-          <p className="flex items-baseline justify-between">
-            <span className={`${numericFigures} font-display text-2xl text-foreground`}>
-              {paper.answeredCount}
-              <span className="text-base text-muted-foreground">/{paper.questionCount}</span>
-            </span>
-            <span className="text-xs text-muted-foreground">answered</span>
-          </p>
-          <div
-            className="mt-2 h-1 overflow-hidden rounded-full bg-rule"
-            role="img"
-            aria-label={`${paper.answeredCount} of ${paper.questionCount} questions answered`}
-          >
-            <div className="h-full rounded-full bg-accent" style={{ width: `${progress}%` }} />
-          </div>
-        </div>
-      </div>
-
-      {marking ? (
-        <p className="mt-5 max-w-[var(--measure)] text-sm text-muted-foreground">
-          Your answers are being marked point by point. Results appear on the paper as soon as
-          marking finishes.
-        </p>
-      ) : null}
-
-      <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-border pt-5">
-        <Link href={`/practice-paper/${paper.id}`} className={`${btnPrimary} gap-2 rounded-lg`}>
-          {marking ? "See marking" : "Continue Practice Paper"}
-          <ArrowRight size={15} strokeWidth={2} aria-hidden />
-        </Link>
-        <Link href="/practice-paper" className="text-sm font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline">
-          Build a new paper
-        </Link>
-      </div>
-    </section>
-  );
-}
-
-function BuildPaper() {
-  return (
-    <section className="border-t border-foreground/80 pt-6" aria-labelledby="primary-paper">
-      <p className={rowLabel}>Practice papers</p>
-      <div className="mt-3 flex flex-wrap items-end justify-between gap-x-10 gap-y-5">
-        <div className="max-w-[var(--measure)]">
-          <h2 id="primary-paper" className="font-display text-[2rem] leading-tight text-foreground text-balance">
-            Sit a full paper built from real ICSE questions
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Pick a subject and a length, answer the whole paper in one sitting, and get every answer
-            marked point by point against the board&rsquo;s scheme when you hand it in.
-          </p>
-        </div>
-        <Link href="/practice-paper" className={`${btnPrimary} gap-2 rounded-lg`}>
-          Build a practice paper
-          <ArrowRight size={15} strokeWidth={2} aria-hidden />
-        </Link>
-      </div>
-    </section>
-  );
-}
-
-// ─── Latest result ───────────────────────────────────────────────────────────
-
-function LatestResult({ paper }: { paper: SetSummary }) {
-  const { score, outOf, percent } = paperScore(paper);
-  return (
-    <section
-      className="grid items-center gap-x-8 gap-y-3 border-b border-border py-5 sm:grid-cols-[9rem_minmax(0,1fr)_auto_auto]"
-      aria-labelledby="latest-result"
-    >
-      <p id="latest-result" className={rowLabel}>
-        Latest result
-      </p>
-      <div className="min-w-0">
-        <p className="truncate font-display text-lg leading-tight text-foreground">{paper.subject} paper</p>
-        <p className="mt-0.5 text-xs text-muted-foreground">
-          <span className={numericFigures}>{paper.questionCount}</span> questions ·{" "}
-          {dateLabel(paper.submittedAt ?? paper.createdAt)}
-        </p>
-      </div>
-      <p className="flex items-baseline gap-3">
-        <span className={`${numericFigures} font-display text-3xl leading-none text-foreground`}>
-          {fmtMarks(score)}
-          <span className="text-lg text-muted-foreground">/{fmtMarks(outOf)}</span>
-        </span>
-        <span className={scoreBadgeClass(score, outOf)}>{percent}%</span>
-      </p>
-      <Link href={`/practice-paper/${paper.id}`} className={textLink}>
-        View full analysis
-        <ArrowRight size={14} strokeWidth={2} aria-hidden />
-      </Link>
-    </section>
-  );
-}
-
-// ─── Quick start ─────────────────────────────────────────────────────────────
-
-const QUICK_START: { href: string; icon: LucideIcon; label: string; note: string }[] = [
-  { href: "/evaluate", icon: LibraryBig, label: "Practice a question", note: "One past-paper question, marked" },
-  { href: "/practice-paper", icon: FileStack, label: "Build a paper", note: "A full sitting from real PYQs" },
-  { href: "/history", icon: ScrollText, label: "View results", note: "Every answer you have submitted" },
-];
-
-function QuickStart() {
-  return (
-    <section
-      className="grid gap-x-8 gap-y-3 border-b border-border py-5 sm:grid-cols-[9rem_minmax(0,1fr)]"
-      aria-labelledby="quick-start"
-    >
-      <p id="quick-start" className={`${rowLabel} sm:pt-0.5`}>
-        Quick start
-      </p>
-      <ul className="grid gap-y-3 sm:grid-cols-3 sm:divide-x sm:divide-border">
-        {QUICK_START.map(({ href, icon: Icon, label, note }) => (
-          <li key={href} className="sm:px-5 sm:first:pl-0 sm:last:pr-0">
-            <Link
-              href={href}
-              className="group flex items-start gap-2.5 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-            >
-              <Icon size={16} strokeWidth={1.75} aria-hidden className="mt-0.5 shrink-0 text-muted-foreground transition-colors group-hover:text-accent" />
-              <span>
-                <span className="block text-sm font-medium text-foreground underline-offset-4 group-hover:underline">
-                  {label}
-                </span>
-                <span className="block text-xs text-muted-foreground">{note}</span>
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
-// ─── Invite friends ──────────────────────────────────────────────────────────
-// A standing row, not a banner: where the student's referral progress lives on
-// the dashboard, and the one-tap way to send another invite.
-
-function InviteRow({ summary }: { summary: ReferralSummary }) {
-  const joined = summary.friends.length;
-  const counting = summary.friends.filter((f) => f.state === "joined" || f.state === "progress").length;
-  return (
-    <section
-      className="grid items-center gap-x-8 gap-y-3 border-b border-border py-5 sm:grid-cols-[9rem_minmax(0,1fr)_auto]"
-      aria-labelledby="invite-friends"
-    >
-      <p id="invite-friends" className={rowLabel}>
-        Friends
-      </p>
-      <p className="text-sm text-muted-foreground">
-        {joined ? (
-          <>
-            <span className={`${numericFigures} font-semibold text-foreground`}>{joined}</span> joined
-            {counting ? (
-              <>
-                {" "}· <span className={numericFigures}>{counting}</span> on the way
-              </>
-            ) : null}{" "}
-            · <span className={`${numericFigures} font-semibold text-status-correct`}>+{summary.weeklyBonusEarned}</span>/week earned
-          </>
-        ) : (
-          <>
-            Invite a classmate — you both get{" "}
-            <span className="font-semibold text-status-correct">+{REFERRAL_WEEKLY_BONUS} credits a week</span>, for good.
-          </>
-        )}
-      </p>
-      <Link href="/invite" className={textLink}>
-        Invite friends
-        <ArrowRight size={14} strokeWidth={2} aria-hidden />
-      </Link>
-    </section>
-  );
+function buildTools({
+  snap,
+  plan,
+  report,
+  referrals,
+}: {
+  snap: ProgressSnapshot;
+  plan: PlanView | null;
+  report: ReportState | null;
+  referrals: ReferralSummary | null;
+}): ToolTile[] {
+  const tiles: ToolTile[] = [];
+  if (plan) {
+    tiles.push({
+      key: "plan",
+      href: "#board-plan",
+      label: "Weekly Board Plan",
+      icon: CalendarCheck,
+      caption: `${plan.completed} of ${plan.items.length} done`,
+    });
+  }
+  if (snap.weakest.length) {
+    tiles.push({
+      key: "fix",
+      href: "/progress#fix-list",
+      label: "Fix List",
+      icon: ClipboardList,
+      caption: plural(snap.weakest.length, "weak chapter", "weak chapters"),
+    });
+  }
+  if (snap.leakage.lost > 0) {
+    tiles.push({
+      key: "leak",
+      href: "/progress#leakage-map",
+      label: "Leakage Map",
+      icon: ChartPie,
+      caption: `${fmtMarks(snap.leakage.lost)} marks lost`,
+    });
+  }
+  tiles.push({
+    key: "gain",
+    href: "/progress#reattempt-gain",
+    label: "Reattempt Gain",
+    icon: TrendingUp,
+    caption: snap.gain.reattempted ? `+${fmtMarks(snap.gain.marksRecovered)} won back` : "No rewrites yet",
+  });
+  if (report) {
+    tiles.push({ key: "report", href: "/account#parent-report", label: "Parent Report", icon: MailCheck, caption: REPORT_CAPTION[report] });
+  }
+  const invite: ToolTile = {
+    key: "invite",
+    href: "/invite",
+    label: "Invite Friends",
+    icon: Gift,
+    caption: referrals?.friends.length
+      ? `${referrals.friends.length} joined`
+      : `+${REFERRAL_WEEKLY_BONUS}/week each`,
+  };
+  if (tiles.length < 5) {
+    tiles.push({
+      key: "progress",
+      href: "/progress",
+      label: "Your Progress",
+      icon: ChartNoAxesColumn,
+      caption: plural(snap.attempts, "answer marked", "answers marked"),
+    });
+  }
+  return [...tiles.slice(0, 5), invite];
 }
 
 // ─── Recent practice ─────────────────────────────────────────────────────────
@@ -299,7 +187,7 @@ function viewOf(item: RecentItem): RowView {
       );
     } else {
       score = (
-        <span className="font-sans text-xs text-muted-foreground">
+        <span className="text-xs text-muted-foreground">
           {p.status === "marking" ? "Marking" : `${p.answeredCount}/${p.questionCount} answered`}
         </span>
       );
@@ -322,7 +210,7 @@ function viewOf(item: RecentItem): RowView {
     title: a.subject,
     score:
       a.awarded === null ? (
-        <span className="font-sans text-xs text-muted-foreground">Not marked</span>
+        <span className="text-xs text-muted-foreground">Not marked</span>
       ) : (
         <span className={scoreBadgeClass(a.awarded, a.totalMarks)}>
           {fmtMarks(a.awarded)}/{fmtMarks(a.totalMarks)}
@@ -335,72 +223,38 @@ function viewOf(item: RecentItem): RowView {
 
 function RecentPractice({ recent }: { recent: RecentItem[] }) {
   return (
-    <section className="mt-14" aria-labelledby="recent-practice">
-      <div className="flex items-baseline justify-between gap-4 border-b border-foreground/80 pb-3">
-        <h2 id="recent-practice" className="font-display text-xl text-foreground">
+    <section className="mt-10" aria-labelledby="recent-practice">
+      <div className="flex items-baseline justify-between gap-4">
+        <h2 id="recent-practice" className={dashHeading}>
           Recent practice
         </h2>
-        {recent.length ? (
-          <Link href="/history" className="text-xs font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline">
-            All results
-          </Link>
-        ) : null}
+        <Link href="/history" className={dashLink}>
+          All results <ArrowRight size={13} strokeWidth={2} aria-hidden />
+        </Link>
       </div>
-
-      {recent.length ? (
-        <table className="w-full text-left">
-          <thead>
-            <tr className="border-b border-border">
-              <th scope="col" className={`${rowLabel} py-2.5 font-semibold`}>Activity</th>
-              <th scope="col" className={`${rowLabel} py-2.5 pl-4 text-right font-semibold`}>Score</th>
-              <th scope="col" className={`${rowLabel} hidden py-2.5 pl-6 text-right font-semibold sm:table-cell`}>Date</th>
-              <th scope="col" className="py-2.5 pl-6">
-                <span className="sr-only">Action</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-border">
-            {recent.map((item) => {
-              const r = viewOf(item);
-              return (
-                <tr key={r.key} className="align-middle">
-                  <td className="py-3.5 pr-2">
-                    <p className="font-display text-base leading-snug text-foreground">{r.title}</p>
-                    <p className={`${numericFigures} text-xs text-muted-foreground`}>
-                      {r.kind}
-                      <span className="sm:hidden"> · {r.date}</span>
-                    </p>
-                  </td>
-                  <td className={`${numericFigures} whitespace-nowrap py-3.5 pl-4 text-right font-display text-base text-foreground`}>
-                    {r.score}
-                  </td>
-                  <td className={`${numericFigures} hidden whitespace-nowrap py-3.5 pl-6 text-right text-xs text-muted-foreground sm:table-cell`}>
-                    {r.date}
-                  </td>
-                  <td className="whitespace-nowrap py-3.5 pl-6 text-right">
-                    <Link
-                      href={r.href}
-                      className="text-sm font-medium text-accent underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                    >
-                      {r.action}
-                      <span className="sr-only">: {r.title}, {r.kind}</span>
-                    </Link>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      ) : (
-        <EmptyState
-          compact
-          className="mt-5"
-          title="Your practice will show up here"
-          description="Answer a past-paper question or sit a full paper, and each attempt is listed here with a link to its marked result."
-          primary={{ label: "Practice a question", href: "/evaluate" }}
-          secondary={{ label: "Build a paper", href: "/practice-paper" }}
-        />
-      )}
+      <ul className={`${dashCard} mt-4 divide-y divide-border`}>
+        {recent.map((item) => {
+          const r = viewOf(item);
+          return (
+            <li key={r.key} className="flex items-center gap-4 px-4 py-3 sm:px-5">
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-[13.5px] font-medium text-foreground">{r.title}</p>
+                <p className={`${numericFigures} truncate text-xs text-muted-foreground`}>
+                  {r.kind} · {r.date}
+                </p>
+              </div>
+              <div className={`${numericFigures} shrink-0 text-right text-sm`}>{r.score}</div>
+              <Link
+                href={r.href}
+                className="shrink-0 text-[13px] font-medium text-accent underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              >
+                {r.action}
+                <span className="sr-only">: {r.title}, {r.kind}</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
@@ -419,19 +273,23 @@ export default async function DashboardPage() {
 
   const firstName = (user.user_metadata?.first_name as string | undefined)?.trim();
   const greetingName = firstName || user.email?.split("@")[0] || "there";
-  const [credits, practice, checklist, referrals, progressRead, gate] = await Promise.all([
+  const reportsLive = parentReportsLive();
+  const [credits, practice, checklist, referrals, progressRead, gate, reportRow] = await Promise.all([
     readCredits(user.id),
     readDashboardPractice(user.id),
     readFirstWeekChecklist(user.id),
     readReferralSummary(user.id),
     readProgressAttempts(user.id),
     getEvaluationGateState(user.id),
+    reportsLive ? readReportRow(user.id) : Promise.resolve(null),
   ]);
-  // No row until there is something to say, and none on a failed read: a
-  // "0 weeks" built from missing data would be a false statement.
+  // No progress figures until there is something to say, and none on a failed
+  // read: a "0 weeks" built from missing data would be a false statement.
   const progress =
     progressRead?.ok && progressRead.attempts.length ? buildProgressSnapshot(progressRead.attempts) : null;
+  const progressFailed = progressRead ? !progressRead.ok : false;
   const { openPaper, latestMarked, recent, loadFailed } = practice;
+  const report = reportsLive ? reportState(reportRow) : null;
 
   // This week's Board Plan, created on first view if the Monday run hasn't
   // reached this student (or they're new this week). Only for students who
@@ -460,57 +318,92 @@ export default async function DashboardPage() {
       console.warn("[BoardEdge] dashboard board plan unavailable:", err instanceof Error ? err.message : err);
     }
   }
+
+  // "Returning" = has marked work or any practice on record. A failed read is
+  // not evidence of a new student, so it never shows the first-run framing.
+  const returning = Boolean(progress) || recent.length > 0 || Boolean(openPaper) || progressFailed || loadFailed;
+  const tools = progress ? buildTools({ snap: progress, plan, report, referrals }) : [];
   const now = new Date();
 
   return (
     <div className={dashboardShell}>
-      <header className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
-        <div>
-          <p className={`${sectionLabel} font-medium normal-case tracking-normal`}>{todayLabel(now)}</p>
-          <h1 className="mt-1.5 font-display text-3xl leading-tight text-foreground sm:text-[2.25rem]">
-            {greetingFor(now)}, {greetingName}
+      {/* ─── Greeting ─────────────────────────────────────────────────── */}
+      <header className="relative flex items-start justify-between gap-6">
+        <div className="min-w-0 max-w-xl">
+          <p className={dashEyebrow}>{returning ? `Welcome back · ${todayLabel(now)}` : "Welcome to BoardEdge"}</p>
+          <h1 className="mt-2.5 font-display text-[2rem] font-semibold leading-[1.1] tracking-[-0.02em] text-foreground sm:text-[2.6rem]">
+            {greetingFor(now)}, {greetingName}.
           </h1>
-        </div>
-        {/* Secondary on purpose: the top bar's pill is the balance's real home
-            (and its detail panel); this line is for phones, where that bar is hidden. */}
-        {credits ? (
-          <p className="pb-1 text-xs text-muted-foreground">
-            <span className={`${numericFigures} font-semibold text-foreground`}>{credits.remaining}</span> of{" "}
-            <span className={numericFigures}>{credits.limit}</span> credits left this week
+          <p className="mt-2 font-display text-lg italic text-foreground/80">Let&rsquo;s make today count.</p>
+          <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+            Practice smarter, identify gaps, and steadily recover the marks you&rsquo;re missing.
           </p>
-        ) : null}
+          {/* Phones only: the top bar's pill is the balance's real home. */}
+          {credits ? (
+            <p className="mt-3 text-xs text-muted-foreground md:hidden">
+              <span className={`${numericFigures} font-semibold text-foreground`}>{credits.remaining}</span> of{" "}
+              <span className={numericFigures}>{credits.limit}</span> credits left this week
+            </p>
+          ) : null}
+        </div>
+        <HallSketch className="-mt-2 hidden w-56 shrink-0 text-accent/55 sm:block lg:w-64" />
       </header>
 
+      {/* ─── Practice ─────────────────────────────────────────────────── */}
+      {/* When the practice reads failed, an open paper may exist that we
+          couldn't see — say so above the cards, and offer the retry. */}
+      {loadFailed && !openPaper ? (
+        <ReloadableError
+          className="mt-6"
+          title="We couldn’t load your practice"
+          message="Your papers and answers are safe — we just couldn’t fetch them this time. Try again to see where you left off."
+        />
+      ) : null}
+      <div className="mt-7">
+        <PrimaryActions openPaper={openPaper} />
+      </div>
+
+      {/* ─── Preparation tools / first week ───────────────────────────── */}
+      {tools.length ? <ToolShortcuts tiles={tools} /> : null}
       {checklist ? <FirstWeekChecklist checklist={checklist} /> : null}
+      {!progress && !progressFailed ? (
+        <p className="mt-4 text-[13px] text-muted-foreground">
+          Your Weekly Board Plan, Leakage Map, Fix List and Reattempt Gain appear here after your first marked answer.
+        </p>
+      ) : null}
 
-      {/* When the practice reads failed, "Build a practice paper" would be a
-          false statement — there may well be an open paper we couldn't see — so
-          the slot says what happened instead, and offers the retry. */}
-      <div className="mt-10">
-        {loadFailed && !openPaper ? (
-          <ReloadableError
-            title="We couldn’t load your practice"
-            message="Your papers and answers are safe — we just couldn’t fetch them this time. Try again to see where you left off."
-          />
-        ) : openPaper ? (
-          <ContinuePaper paper={openPaper} />
-        ) : (
-          <BuildPaper />
-        )}
-      </div>
+      <SubjectGrid />
 
-      {plan ? <BoardPlanCard view={plan} rowLabel={rowLabel} /> : null}
+      {/* ─── This week ────────────────────────────────────────────────── */}
+      {progressFailed ? (
+        <ReloadableError
+          className="mt-10"
+          title="We couldn’t load your progress"
+          message="Your marked answers are safe — your Board Plan and progress just didn’t load this time."
+        />
+      ) : progress ? (
+        <section className="mt-10" aria-label="This week">
+          <div className={plan ? "grid items-start gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]" : ""}>
+            {plan ? <BoardPlanCard view={plan} /> : null}
+            <ProgressSummary snap={progress} latestMarked={latestMarked} />
+          </div>
+        </section>
+      ) : null}
 
-      <div className={openPaper ? "mt-6 border-t border-border" : "mt-8 border-t border-border"}>
-        {latestMarked ? <LatestResult paper={latestMarked} /> : null}
-        {progress ? <RecoveryRow snap={progress} rowLabel={rowLabel} textLink={textLink} /> : null}
-        <QuickStart />
-        {referrals ? <InviteRow summary={referrals} /> : null}
-      </div>
-
-      {/* Hidden while failed-and-empty: the error above already speaks for it,
-          and an "empty" panel here would contradict it. */}
-      {loadFailed && !recent.length ? null : <RecentPractice recent={recent} />}
+      {/* ─── Recent practice ──────────────────────────────────────────── */}
+      {/* Hidden while failed-and-empty: the error above already speaks for it. */}
+      {recent.length ? (
+        <RecentPractice recent={recent.slice(0, 5)} />
+      ) : !loadFailed && returning ? (
+        <EmptyState
+          compact
+          className="mt-10"
+          title="Your practice will show up here"
+          description="Answer a past-paper question or sit a full paper, and each attempt is listed here with a link to its marked result."
+          primary={{ label: "Practice a question", href: "/evaluate" }}
+          secondary={{ label: "Build a paper", href: "/practice-paper" }}
+        />
+      ) : null}
     </div>
   );
 }

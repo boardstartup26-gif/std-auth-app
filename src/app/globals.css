@@ -235,6 +235,8 @@
      longer loaded. */
   --font-mono: var(--font-geist-sans);
   --font-display: var(--font-fraunces), Georgia, serif;
+  /* Inter, for redesigned surfaces only (`font-body`); body default stays Geist. */
+  --font-body: var(--font-inter), var(--font-geist-sans), system-ui, sans-serif;
 
   /* §4 motion. Named for Tailwind's namespaces, so these are both CSS
      variables on :root (`var(--duration-base)`) and utilities

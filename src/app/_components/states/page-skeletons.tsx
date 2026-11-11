@@ -36,35 +36,53 @@ function RowSkeleton() {
 
 export function DashboardSkeleton() {
   return (
-    <LoadingRegion label="Loading your dashboard" className="mx-auto min-h-screen max-w-5xl px-6 py-12">
+    <LoadingRegion label="Loading your dashboard" className="mx-auto min-h-screen max-w-5xl px-4 py-8 sm:px-6 sm:py-10">
+      {/* Greeting */}
       <div aria-hidden>
         <Skeleton className="h-3 w-40" />
-        <Skeleton className="mt-3 h-9 w-72 max-w-full" />
+        <Skeleton className="mt-3 h-10 w-80 max-w-full" />
+        <Skeleton className="mt-3 h-4 w-44" />
+        <Skeleton className="mt-3 h-3.5 w-96 max-w-full" />
       </div>
 
-      {/* Primary: the paper to continue, or the invitation to build one. */}
-      <div aria-hidden className="mt-10 rounded-lg border border-border bg-card px-6 py-7 sm:px-8">
-        <Skeleton className="h-3 w-44" />
-        <Skeleton className="mt-4 h-8 w-56" />
-        <Skeleton className="mt-3 h-3.5 w-72 max-w-full" />
-        <Skeleton className="mt-8 h-10 w-52 rounded-xl" />
-      </div>
-
-      <div aria-hidden className="mt-8 border-t border-border">
-        {[0, 1, 2].map((i) => (
-          <div key={i} className="grid items-center gap-x-8 gap-y-3 border-b border-border py-5 sm:grid-cols-[9rem_minmax(0,1fr)]">
-            <Skeleton className="h-3 w-24" />
-            <Skeleton className="h-4 w-2/3" />
+      {/* Two practice cards */}
+      <div aria-hidden className="mt-7 grid gap-4 sm:grid-cols-2">
+        {[0, 1].map((i) => (
+          <div key={i} className="min-h-[13rem] rounded-xl border border-border bg-card p-5 sm:p-6">
+            <Skeleton className="h-9 w-9 rounded-lg" />
+            <Skeleton className="mt-4 h-6 w-48" />
+            <Skeleton className="mt-2.5 h-3.5 w-56 max-w-full" />
+            <Skeleton className="mt-8 h-9 w-40 rounded-md" />
           </div>
         ))}
       </div>
 
-      <div aria-hidden className="mt-14">
-        <div className="border-b border-foreground/80 pb-3">
-          <Skeleton className="h-6 w-40" />
+      {/* Tool shortcuts */}
+      <div aria-hidden className="mt-4 grid grid-cols-3 gap-3 sm:grid-cols-6">
+        {Array.from({ length: 6 }, (_, i) => (
+          <Skeleton key={i} className="h-[6.25rem] rounded-xl" />
+        ))}
+      </div>
+
+      {/* Subjects */}
+      <div aria-hidden className="mt-10">
+        <Skeleton className="h-6 w-44" />
+        <div className="mt-4 grid grid-cols-3 gap-3 sm:grid-cols-6">
+          {Array.from({ length: 6 }, (_, i) => (
+            <Skeleton key={i} className="h-[5.75rem] rounded-xl" />
+          ))}
         </div>
-        {[0, 1, 2].map((i) => (
-          <RowSkeleton key={i} />
+      </div>
+
+      {/* This week */}
+      <div aria-hidden className="mt-10 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
+        {[0, 1].map((i) => (
+          <div key={i} className="rounded-xl border border-border bg-card p-5 sm:p-6">
+            <Skeleton className="h-6 w-40" />
+            {[0, 1, 2].map((j) => (
+              <RowSkeleton key={j} />
+            ))}
+          </div>
         ))}
       </div>
     </LoadingRegion>
