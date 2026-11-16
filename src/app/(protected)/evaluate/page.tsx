@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import {
@@ -8,9 +8,7 @@ import {
   cardPadded,
   errorAlert,
   inputBase,
-  numericFigures,
   pageShellWide,
-  scoreBadgeClass,
   sectionLabel,
   sheet,
   sheetBody,
@@ -36,6 +34,8 @@ import { requestJson } from "@/lib/request";
 import { clearDraft, readDraft, saveDraft } from "@/lib/drafts";
 import { QuestionPicker } from "./_components/QuestionPicker";
 import { HandwrittenAnswer } from "./_components/HandwrittenAnswer";
+import { EvaluationFeedback, EvaluationFeedbackSkeleton } from "./_components/EvaluationFeedback";
+import { buildFeedbackView, formatMarks } from "./_lib/feedback";
 import { ContextBlock, FigureSlot, FigureViewer } from "../_components/QuestionSheetParts";
 import {
   diagramState,
@@ -85,6 +85,8 @@ interface EvaluationResult {
   // sent it, but it was never declared or rendered here, and it isn't stored,
   // so only a just-graded result carries it — never read it without a fallback.
   icse_style_issues?: string[];
+  // Components the examiner could not see in typed text (a diagram, a map).
+  unassessable_components?: string[];
   model_answer: string;
   model_answer_source: "verified" | "ai_generated";
   examiner_feedback: string;
@@ -126,36 +128,6 @@ async function loadBalance(): Promise<number | null> {
 }
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
-
-// The eval engine now returns one structured marking_points[] instead of two
-// flat string arrays (handoff §9: points_hit/points_missed are retired, and
-// the two lists are that array filtered by status). Older persisted rows still
-// carry the flat arrays, so both paths stay live until this view is rebuilt.
-function awardedPoints(result: EvaluationResult): string[] {
-  return result.marking_points?.length
-    ? result.marking_points.filter((p) => p.status !== "missed").map((p) => p.point)
-    : result.points_hit ?? [];
-}
-
-function missedPoints(result: EvaluationResult): string[] {
-  return result.marking_points?.length
-    ? result.marking_points.filter((p) => p.status === "missed").map((p) => p.point)
-    : result.points_missed ?? [];
-}
-
-function Section({ title, items, color }: { title: string; items: string[]; color: string }) {
-  if (!items || items.length === 0) return null;
-  return (
-    <div>
-      <div className={`mb-3 text-xs font-semibold uppercase tracking-widest ${color}`}>{title}</div>
-      <ul className="space-y-2">
-        {items.map((item, i) => (
-          <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
 
 // Only the remaining count is coloured. The per-question cost beside it stays
 // neutral, so the colour always answers "how much do I have left", never
@@ -266,6 +238,11 @@ export default function EvaluatePage() {
   // Written questions only: type the answer, or photograph a handwritten one.
   const [answerMode,        setAnswerMode]        = useState<"type" | "photo">("type");
   const resultRef = useRef<HTMLDivElement>(null);
+  const answerRef = useRef<HTMLTextAreaElement>(null);
+  // Set by "Retry with guidance": what the last attempt lost marks on, kept
+  // beside the editor while the student revises (the feedback itself is
+  // cleared on resubmit). Cleared by a new result or a change of question.
+  const [retryGuidance, setRetryGuidance] = useState<{ score: string; points: string[] } | null>(null);
 
   // ─── Abandonment tracking ───────────────────────────────────
   //
@@ -528,10 +505,11 @@ export default function EvaluatePage() {
     setQuestionsError(false);
     setSelectedQuestionId("");
     setStudentAnswer(""); setDraftRestored(false); setResult(null); setError(null);
+    setRetryGuidance(null);
   }, [flushAbandonment]);
 
   /** Step 5 commits a question — or, with "", reopens Browse. */
-  const handleSelectQuestion = useCallback((id: string) => {
+  const handleSelectQuestion = useCallback((id: string, source: string | null = null) => {
     // Moving off a question without submitting is itself a drop-off, and has
     // to be reported before the ref is overwritten.
     flushAbandonment("switched_question");
@@ -540,6 +518,7 @@ export default function EvaluatePage() {
     // Pick up where a failed request, refresh or crash left off on this question.
     const draft = id ? readDraft(id) : "";
     setStudentAnswer(draft); setDraftRestored(Boolean(draft)); setResult(null); setError(null);
+    setRetryGuidance(null);
     // Reset the figure-report form too, or a report typed for one question
     // would carry over — and worse, the "we'll review this" acknowledgement
     // would still be showing against a different figure.
@@ -553,7 +532,7 @@ export default function EvaluatePage() {
       return;
     }
 
-    beginAttempt(q, null);
+    beginAttempt(q, source);
   }, [flushAbandonment, questions, beginAttempt]);
 
   // ─── Loading message rotation (non-OCR path only — no upload path exists yet) ─
@@ -657,7 +636,11 @@ export default function EvaluatePage() {
       // Marked and saved server-side: only now is the local draft redundant.
       clearDraft(selectedQuestion.id);
       setResult(res.data);
+      setRetryGuidance(null);
       if (res.data.tokens_remaining !== undefined) setTokensRemaining(res.data.tokens_remaining);
+      // The feedback renders full-width below the editor: bring it into view,
+      // as the handwritten path already does.
+      requestAnimationFrame(() => resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
     }
     setEvaluating(false);
   }, [subject, selectedQuestion, studentAnswer]);
@@ -694,6 +677,7 @@ export default function EvaluatePage() {
     // rest of the page (feedback, reattempts) treats as the student's answer.
     setStudentAnswer(data.transcript);
     setResult(data);
+    setRetryGuidance(null);
     requestAnimationFrame(() => resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }, []);
 
@@ -761,6 +745,59 @@ export default function EvaluatePage() {
       setEvalFeedbackStatus("error");
     }
   }
+
+  // ─── After the feedback: retry this question, or move to a similar one ────
+
+  // "Retry with guidance" is the existing workflow, not a new one: the answer
+  // stays in the editor to be revised, a note beside it lists what the last
+  // attempt lost marks on, and Evaluate resubmits through /api/evaluate at the
+  // normal credit cost. beginAttempt restarts the attempt clock and records
+  // the reopen with source "retry".
+  const handleRetryWithGuidance = useCallback(() => {
+    if (!selectedQuestion || !result) return;
+    const view = buildFeedbackView(result, studentAnswer);
+    const points = view.lostRows.length ? view.lostRows.map((r) => r.point) : view.nextCorrections;
+    setRetryGuidance({
+      score: `${formatMarks(result.marks_awarded)}/${formatMarks(result.total_marks)}`,
+      points: points.slice(0, 6),
+    });
+    setAnswerMode("type");
+    beginAttempt(selectedQuestion, "retry");
+    requestAnimationFrame(() => {
+      answerRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+      answerRef.current?.focus({ preventScroll: true });
+    });
+  }, [selectedQuestion, result, studentAnswer, beginAttempt]);
+
+  // "Practice similar question" stays inside this page's own flow: another
+  // real past-paper question of the same kind from the same topic, else the
+  // same chapter, that can be graded. It walks forward through the subject's
+  // list, so pressing it again moves on rather than bouncing between two.
+  // With nothing similar loaded, the action reopens the picker instead.
+  const similarQuestion = useMemo(() => {
+    if (!selectedQuestion) return null;
+    const written = isSubjectiveGraded(selectedQuestion);
+    const usable = (q: Question) =>
+      q.id !== selectedQuestion.id &&
+      isSubjectiveGraded(q) === written &&
+      Boolean(q.question_text?.trim()) &&
+      !isDiagramBlocked(q);
+    const sameTopic = selectedQuestion.topic
+      ? questions.filter((q) => usable(q) && q.chapter === selectedQuestion.chapter && q.topic === selectedQuestion.topic)
+      : [];
+    const sameChapter = selectedQuestion.chapter
+      ? questions.filter((q) => usable(q) && q.chapter === selectedQuestion.chapter)
+      : [];
+    const pool = sameTopic.length ? sameTopic : sameChapter;
+    if (!pool.length) return null;
+    const here = questions.findIndex((q) => q.id === selectedQuestion.id);
+    return pool.find((q) => questions.indexOf(q) > here) ?? pool[0];
+  }, [selectedQuestion, questions]);
+
+  const handlePracticeSimilar = useCallback(() => {
+    handleSelectQuestion(similarQuestion?.id ?? "", similarQuestion ? "similar" : null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [handleSelectQuestion, similarQuestion]);
 
   const tokenCost = selectedQuestion
     ? (isSubjectiveGraded(selectedQuestion) ? CREDIT_COST_SUBJECTIVE : CREDIT_COST_OBJECTIVE)
@@ -1027,7 +1064,25 @@ export default function EvaluatePage() {
                             </button>
                           </p>
                         )}
+                        {retryGuidance && (
+                          <div className="rounded-xl border border-accent/25 bg-accent-subtle px-4 py-3 text-xs leading-relaxed text-foreground/90" role="note">
+                            <p className="m-0 font-semibold text-foreground">
+                              Retrying with guidance · your last attempt scored {retryGuidance.score}
+                            </p>
+                            {retryGuidance.points.length > 0 && (
+                              <>
+                                <p className="m-0 mt-1 text-muted-foreground">Revise your answer below so it covers:</p>
+                                <ul className="m-0 mt-1.5 list-disc space-y-1 pl-4">
+                                  {retryGuidance.points.map((p, i) => (
+                                    <li key={i}>{p}</li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
+                          </div>
+                        )}
                         <textarea
+                          ref={answerRef}
                           value={studentAnswer} onChange={(e) => handleAnswerChange(e.target.value)} rows={8}
                           disabled={!selectedQuestion.question_text?.trim()}
                           placeholder={selectedQuestion.question_text?.trim() ? "Write your detailed answer here…" : "Question text not available — evaluation unavailable until added."}
@@ -1140,120 +1195,43 @@ export default function EvaluatePage() {
         </div>
       </div>
 
-      {/* Result — full width, below the split. The paired points-hit /
-          points-missed grid needs the whole page; inside the answer column it
-          collapsed into one cramped stack hugging the right edge. */}
+      {/* Result — full width, below the split: the feedback needs the whole
+          page. While a typed answer is being marked, its skeleton holds the
+          slot so the page visibly responds to the submit. */}
+      {evaluating && !result && (
+        <div className="mt-8">
+          <EvaluationFeedbackSkeleton />
+        </div>
+      )}
       {result && (
-        <div ref={resultRef} className={`${cardPadded} mt-6 scroll-mt-6`}>
-              <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
-                <div className="flex flex-col items-start gap-2">
-                  <span className={scoreBadgeClass(result.marks_awarded, result.total_marks, "xl")}>
-                    {result.marks_awarded} / {result.total_marks}
-                  </span>
-                  <h2 className={sectionLabel}>{result.is_objective ? "Result" : "Examiner feedback"}</h2>
-                </div>
-                <span className="text-xs text-muted-foreground">
-                  <span className={numericFigures}>{result.token_cost}</span> credit{result.token_cost !== 1 ? "s" : ""} used ·{" "}
-                  <span className={numericFigures}>{result.tokens_remaining}</span> remaining
-                </span>
-              </div>
-
-              <div className="space-y-8">
-
-                {/* Objective */}
-                {result.is_objective ? (
-                  <div className={`rounded-xl border px-5 py-4 ${result.is_correct ? "border-status-correct bg-status-correct-subtle" : "border-status-wrong bg-status-wrong-subtle"}`}>
-                    <p className={`text-sm font-medium ${result.is_correct ? "text-status-correct" : "text-status-wrong"}`}>
-                      {result.is_correct ? "✓ Correct" : "✗ Incorrect"}
-                    </p>
-                    {!result.is_correct && result.correct_answer && (
-                      <p className="mt-2 text-sm text-foreground/90">
-                        Correct answer: <span className="font-medium">{result.correct_answer}</span>
-                      </p>
-                    )}
-                  </div>
-
-                /* Subjective */
-                ) : (
-                  <>
-                    {/* Examiner feedback quote */}
-                    <div className="rounded-xl border border-tag-examiner-feedback bg-tag-examiner-feedback-subtle p-5">
-                      <p className="text-sm italic leading-relaxed text-foreground/90">&ldquo;{result.examiner_feedback}&rdquo;</p>
-                    </div>
-
-                    {/* Points hit / Points missed — paired grid per §3 reference layout */}
-                    <div className="grid gap-6 sm:grid-cols-2">
-                      <Section
-                        title="Points awarded"
-                        items={awardedPoints(result)}
-                        color="text-status-correct"
-                      />
-                      <Section
-                        title="Points missed"
-                        items={missedPoints(result)}
-                        color="text-status-wrong"
-                      />
-                    </div>
-
-                    {/* Conceptual errors */}
-                    {result.conceptual_errors.length > 0 && (
-                      <div className="rounded-xl border border-tag-conceptual bg-tag-conceptual-subtle p-5">
-                        <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-conceptual">
-                          Conceptual errors
-                        </div>
-                        <ul className="space-y-2">
-                          {result.conceptual_errors.map((item, i) => (
-                            <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {/* Exam-style fixes — icse_style_issues. Neutral tag tokens on
-                        purpose: accent is reserved for conceptual errors, and
-                        these are wording/format slips, not wrong statements. */}
-                    {(result.icse_style_issues ?? []).length > 0 && (
-                      <div className="rounded-xl border border-tag-examiner-feedback bg-tag-examiner-feedback-subtle p-5">
-                        <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-examiner-feedback">
-                          Exam-style fixes
-                        </div>
-                        <ul className="space-y-2">
-                          {(result.icse_style_issues ?? []).map((item, i) => (
-                            <li key={i} className="text-sm leading-relaxed text-foreground/90">— {item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {/* Model answer */}
-                    <div className="rounded-xl border border-tag-model-answer bg-tag-model-answer-subtle p-5">
-                      <div className="mb-3 flex flex-wrap items-center gap-2">
-                        <span className="text-xs font-semibold uppercase tracking-widest text-tag-model-answer">Model answer</span>
-                        <span className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground">
-                          {result.model_answer_source === "verified" ? "CISCE verified" : "AI generated"}
-                        </span>
-                      </div>
-                      <p className="text-sm leading-relaxed text-foreground/90">{result.model_answer}</p>
-                    </div>
-
-                    {/* Improvement tips — ordered list */}
-                    <div className="rounded-xl border border-tag-improvement-tips bg-tag-improvement-tips-subtle p-5">
-                      <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-tag-improvement-tips">
-                        How to improve
-                      </div>
-                      <ul className="space-y-3">
-                        {result.improvement_tips.map((tip, i) => (
-                          <li key={i} className="flex items-start gap-3">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-tag-improvement-tips-subtle text-xs font-bold text-tag-improvement-tips">
-                              {i + 1}
-                            </span>
-                            <span className="text-sm leading-relaxed text-foreground/90">{tip}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </>
-                )}
+        <div ref={resultRef} className="mt-8 scroll-mt-6">
+          <EvaluationFeedback
+            result={result}
+            questionLabel={selectedQuestion ? `Question ${selectedQuestion.question_number}` : "Your answer"}
+            studentAnswer={studentAnswer}
+            // Rewriting teaches nothing once the marks are full, or once an
+            // objective answer's key has been shown.
+            onRetry={
+              selectedQuestion && !result.is_objective && result.marks_awarded < result.total_marks
+                ? handleRetryWithGuidance
+                : undefined
+            }
+            retryCost={tokenCost}
+            similar={
+              similarQuestion
+                ? {
+                    label: "Practice similar question",
+                    note: `Another ${
+                      similarQuestion.topic && similarQuestion.topic === selectedQuestion?.topic
+                        ? similarQuestion.topic
+                        : similarQuestion.chapter
+                    } question · ${similarQuestion.year}`,
+                    onClick: handlePracticeSimilar,
+                  }
+                : { label: "Pick another question", note: null, onClick: handlePracticeSimilar }
+            }
+          >
+              <div className="mt-10 space-y-8">
 
                 {/* Challenge a friend — only on a written answer that went
                     well, the moment a student is most likely to show it off.
@@ -1360,6 +1338,7 @@ export default function EvaluatePage() {
                 </div>
 
               </div>
+          </EvaluationFeedback>
         </div>
       )}
     </div>
