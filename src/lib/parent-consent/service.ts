@@ -71,7 +71,29 @@ export { GRIEVANCE_EMAIL };
  * again; this exists to buy days, not to become how the app runs.
  */
 function parentConsentEnforcementDisabled(): boolean {
-  return process.env.DISABLE_PARENT_CONSENT_GATE === "true";
+  return !parentConsentFlowEnabled() || process.env.DISABLE_PARENT_CONSENT_GATE === "true";
+}
+
+/**
+ * Master switch for the whole parental-consent flow (added 2026-11-20): the
+ * signup email, the resend/change-email path, the lock after the free quota,
+ * the banner and the onboarding-checklist step. OFF unless
+ * PARENT_CONSENT_ENABLED=true — the consent emails were pure friction for new
+ * students before there are genuine users. Set it to "true" at launch.
+ *
+ * While off:
+ *  - requestParentConsent() sends nothing, so no consent email can go out.
+ *  - getParentConsentState() reports everyone not explicitly revoked as
+ *    "confirmed" (same behaviour as DISABLE_PARENT_CONSENT_GATE) without
+ *    touching any parent_consents row.
+ *
+ * Parent reports are unaffected: they read the raw parent_consents row (see
+ * src/lib/parent-report/service.ts), never this gate, so students whose
+ * parent already confirmed keep getting them. A withdrawal (status "revoked")
+ * is still honoured.
+ */
+export function parentConsentFlowEnabled(): boolean {
+  return process.env.PARENT_CONSENT_ENABLED === "true";
 }
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -323,6 +345,10 @@ export async function requestParentConsent(input: {
   parentEmail?: unknown;
 }): Promise<RequestResult> {
   const { userId } = input;
+
+  // Consent flow switched off (see parentConsentFlowEnabled): never send.
+  if (!parentConsentFlowEnabled()) return { ok: false, reason: "unavailable" };
+
   const supabase = createAdminClient();
 
   let newEmail: string | null = null;

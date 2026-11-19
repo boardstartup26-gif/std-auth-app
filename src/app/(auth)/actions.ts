@@ -9,7 +9,11 @@ import { createClient } from "@/lib/supabase/server";
 import { EVENTS } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { recordSignupConsent } from "@/lib/legal/consent";
-import { normaliseParentEmail, requestParentConsent } from "@/lib/parent-consent/service";
+import {
+  normaliseParentEmail,
+  parentConsentFlowEnabled,
+  requestParentConsent,
+} from "@/lib/parent-consent/service";
 import { sendWelcomeEmail } from "@/lib/email/welcome";
 import { safeNextPath } from "@/lib/safe-next";
 
@@ -167,8 +171,10 @@ export async function signup(
     // Skipped for the enumeration-safe fake user: that id belongs to an
     // existing account, and emailing a stranger's parent from it would be
     // both wrong and a spam vector.
+    // No-op while PARENT_CONSENT_ENABLED is off (requestParentConsent sends
+    // nothing), so parentEmailSent stays false and the copy below omits it.
     let parentEmailSent = false;
-    if (newUserId && isRealNewUser) {
+    if (newUserId && isRealNewUser && parentConsentFlowEnabled()) {
       const result = await requestParentConsent({
         userId: newUserId,
         studentEmail: email,
@@ -189,9 +195,11 @@ export async function signup(
     if (!data.session) {
       return {
         ok: false,
-        message: parentEmailSent
-          ? "Signup succeeded. Please check your email to confirm your account, then log in. We've also emailed your parent or guardian a link to approve grading — you can practise once they confirm."
-          : "Signup succeeded. Please check your email to confirm your account, then log in. After logging in, you'll be asked to send your parent or guardian a consent link.",
+        message: !parentConsentFlowEnabled()
+          ? "Signup succeeded. Please check your email to confirm your account, then log in."
+          : parentEmailSent
+            ? "Signup succeeded. Please check your email to confirm your account, then log in. We've also emailed your parent or guardian a link to approve grading — you can practise once they confirm."
+            : "Signup succeeded. Please check your email to confirm your account, then log in. After logging in, you'll be asked to send your parent or guardian a consent link.",
       };
     }
   } catch (e) {

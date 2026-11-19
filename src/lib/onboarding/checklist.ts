@@ -9,7 +9,7 @@
 // the verified user id, like the rest of the dashboard.
 
 import { createAdminClient } from "@/lib/supabase/server";
-import { getParentConsentState } from "@/lib/parent-consent/service";
+import { getParentConsentState, parentConsentFlowEnabled } from "@/lib/parent-consent/service";
 
 /** The checklist disappears this long after onboarding, finished or not. */
 const SHOW_FOR_DAYS = 14;
@@ -45,7 +45,8 @@ export async function readFirstWeekChecklist(userId: string): Promise<FirstWeekC
 
   // While the consent kill switch is on, nothing is asking for a parent, so
   // the checklist doesn't either.
-  const consentEnforced = process.env.DISABLE_PARENT_CONSENT_GATE !== "true";
+  const consentEnforced =
+    parentConsentFlowEnabled() && process.env.DISABLE_PARENT_CONSENT_GATE !== "true";
 
   const [answers, handwritten, papers, referrals, qualified, consent] = await Promise.all([
     admin.from("student_answers").select("id", { count: "exact", head: true }).eq("user_id", userId),
