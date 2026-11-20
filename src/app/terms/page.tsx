@@ -7,12 +7,13 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/app/_components/LegalPage";
 import { POLICIES } from "@/lib/legal/policies";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 
-export const metadata: Metadata = {
-  title: `${POLICIES.terms.title} · BoardEdge`,
+export const metadata: Metadata = buildPageMetadata({
+  title: POLICIES.terms.title,
   description: POLICIES.terms.description,
-  alternates: { canonical: POLICIES.terms.href },
-};
+  path: POLICIES.terms.href,
+});
 
 export default function TermsPage() {
   return <LegalPage policy="terms" />;

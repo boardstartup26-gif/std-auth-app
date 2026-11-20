@@ -1,7 +1,16 @@
 // app/(auth)/login/page.tsx
+import type { Metadata } from "next";
 import { AuthForm } from "../_components/AuthForm";
 import { login } from "../actions";
 import { safeNextPath } from "@/lib/safe-next";
+
+// noindex, follow: a utility page with nothing to rank for, but its links
+// (terms, privacy, signup) are still worth following.
+export const metadata: Metadata = {
+  title: "Log in",
+  description: "Log in to BoardEdge to get your ICSE answers marked.",
+  robots: { index: false, follow: true },
+};
 
 export default async function LoginPage({
   searchParams,

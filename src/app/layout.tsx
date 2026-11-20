@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist, Inter } from "next/font/google";
 import { AnalyticsProvider } from "@/app/_components/AnalyticsProvider";
+import { SITE, isIndexableDeployment } from "@/lib/seo/site";
 import "./globals.css";
 
 // Geist Mono is deliberately not loaded. Nothing sets a monospace face any
@@ -21,10 +22,27 @@ const fraunces = Fraunces({
 // through the `font-body` utility so pages not yet redesigned keep Geist.
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
+// Site-wide defaults. Pages refine these through buildPageMetadata()
+// (src/lib/seo/metadata.ts), which sets each page's canonical URL; there is
+// deliberately no canonical here, because a layout canonical is inherited by
+// every page that forgets its own and would point them all at "/".
 export const metadata: Metadata = {
-  title: "BoardEdge",
-  description: "AI-powered ICSE answer evaluation with examiner-style feedback.",
-  // Add the verification object right here:
+  metadataBase: new URL(SITE.origin),
+  title: { default: `${SITE.name} — ICSE Class 10 answers marked against the official scheme`, template: `%s · ${SITE.name}` },
+  description: SITE.description,
+  applicationName: SITE.name,
+  openGraph: {
+    type: "website",
+    siteName: SITE.name,
+    locale: SITE.locale,
+    url: SITE.origin,
+    title: SITE.name,
+    description: SITE.description,
+  },
+  twitter: { card: "summary_large_image" },
+  // Preview deployments are never indexable; production pages are unless
+  // they opt out (signed-in routes, auth, token links).
+  robots: isIndexableDeployment() ? { index: true, follow: true } : { index: false, follow: false },
   verification: {
     google: "ZQJGhBJbPN1AvGsJYaUzy03HJxpZbfoXQHogKZk2EOk",
   },

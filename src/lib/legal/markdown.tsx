@@ -52,7 +52,15 @@ export interface LegalDoc {
  * request.
  */
 export function loadLegalDoc(file: string): LegalDoc {
-  const source = readFileSync(path.join(process.cwd(), "content", "legal", file), "utf8");
+  return loadContentDoc("legal", file);
+}
+
+/**
+ * Same parser for any folder under content/ (the public guides use it too).
+ * Callers pass names from a code registry, never from a request.
+ */
+export function loadContentDoc(folder: string, file: string): LegalDoc {
+  const source = readFileSync(path.join(process.cwd(), "content", folder, file), "utf8");
   return parseMarkdown(source);
 }
 

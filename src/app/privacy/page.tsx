@@ -7,12 +7,13 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/app/_components/LegalPage";
 import { POLICIES } from "@/lib/legal/policies";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 
-export const metadata: Metadata = {
-  title: `${POLICIES.privacy.title} · BoardEdge`,
+export const metadata: Metadata = buildPageMetadata({
+  title: POLICIES.privacy.title,
   description: POLICIES.privacy.description,
-  alternates: { canonical: POLICIES.privacy.href },
-};
+  path: POLICIES.privacy.href,
+});
 
 export default function PrivacyPage() {
   return <LegalPage policy="privacy" />;

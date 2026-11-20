@@ -1,9 +1,18 @@
+import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { AuthForm } from "../_components/AuthForm";
 import { signup } from "../actions";
 import { REFERRAL_QUALIFY_AT, REFERRAL_WEEKLY_BONUS } from "@/lib/constants";
 import { REF_COOKIE } from "@/lib/referrals/constants";
 import { findReferrerByCode } from "@/lib/referrals/service";
+
+// noindex, follow: the landing page is the page that should rank for
+// "BoardEdge"; this one personalises itself from a referral cookie.
+export const metadata: Metadata = {
+  title: "Create your account",
+  description: "Create a free BoardEdge account and get ICSE Class 10 answers marked against the official scheme.",
+  robots: { index: false, follow: true },
+};
 
 export default async function SignupPage() {
   // Set by /i/{code}. Looked up again here rather than trusted: the cookie

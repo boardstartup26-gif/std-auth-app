@@ -12,7 +12,9 @@
 // every client navigation, so the authoritative check is per request in
 // src/app/api/evaluate/route.ts.
 
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
+import { NOINDEX } from "@/lib/seo/metadata";
 import { createClient } from "@/lib/supabase/server";
 import { readCredits } from "@/lib/credits";
 import { readOnboardingProfile } from "@/lib/onboarding/profile";
@@ -22,6 +24,11 @@ import { Sidebar } from "@/app/_components/Sidebar";
 import { MobileNav } from "@/app/_components/MobileNav";
 import { TopBar } from "@/app/_components/TopBar";
 import { ParentConsentNotice } from "./_parent-consent/ParentConsentNotice";
+
+// Signed-in pages hold a student's own answers and marks: never indexed,
+// whatever a page sets for its title. robots.txt and the X-Robots-Tag header
+// (next.config.ts) say the same; this is the copy that travels with the HTML.
+export const metadata: Metadata = { robots: NOINDEX };
 
 export default async function ProtectedLayout({
   children,

@@ -7,7 +7,7 @@
 // 03" next to the plus buttons gave every row two leading glyphs competing for
 // the same job.
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Minus, Plus } from "lucide-react";
 
 export interface FaqItem {
@@ -17,6 +17,7 @@ export interface FaqItem {
 
 export function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const baseId = useId();
 
   return (
     <div className="flex flex-col gap-3">
@@ -33,6 +34,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
               type="button"
               onClick={() => setOpenIndex(open ? null : i)}
               aria-expanded={open}
+              aria-controls={`${baseId}-${i}`}
               className="flex w-full cursor-pointer items-center gap-4 px-4 py-4 text-left sm:px-5"
             >
               <span
@@ -48,15 +50,16 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
               </span>
             </button>
 
-            {open ? (
-              <div className="px-4 pb-5 sm:px-5">
+            {/* Always rendered, hidden when closed: the answers have to be in
+                the server HTML for search engines and answer engines to read
+                them (and for the FAQPage structured data to match the page). */}
+            <div id={`${baseId}-${i}`} hidden={!open} className="px-4 pb-5 sm:px-5">
                 {/* Indented to the question's text, not to the card edge, so
                     the answer reads as belonging to the question above it. */}
                 <p className="pl-12 text-sm leading-relaxed text-muted-foreground">
                   {item.answer}
                 </p>
               </div>
-            ) : null}
           </div>
         );
       })}

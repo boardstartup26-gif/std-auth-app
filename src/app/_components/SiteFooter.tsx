@@ -46,6 +46,8 @@ export function SiteFooter({ faqHref = "/#faq" }: { faqHref?: string }) {
           <Link href={POLICIES.terms.href} className="hover:text-foreground">
             {POLICIES.terms.title}
           </Link>
+          <Link href="/icse-class-10" className="hover:text-foreground">Subjects</Link>
+          <Link href="/guides" className="hover:text-foreground">Guides</Link>
           <a href={faqHref} className="hover:text-foreground">FAQs</a>
         </div>
       </div>

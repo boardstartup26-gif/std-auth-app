@@ -9,7 +9,9 @@
 // each with a marking scheme, six subjects, 2018–2025). Motion is the only
 // client-side part, isolated in <Reveal> and <ScoreClimber>.
 
+import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { btnPrimary, btnSecondary, sectionLabel, numericFigures } from "@/lib/ui";
 import { Act2Evaluation } from "@/app/_components/Act2Evaluation";
 import { Comparison } from "@/app/_components/Comparison";
@@ -23,6 +25,24 @@ import { Reveal } from "@/app/_components/Reveal";
 import { ScoreClimber } from "@/app/_components/ScoreClimber";
 import { SiteFooter } from "@/app/_components/SiteFooter";
 import { SHOWCASE, showcaseSentences } from "@/app/_data/showcase";
+import { buildPageMetadata } from "@/lib/seo/metadata";
+import { SITE } from "@/lib/seo/site";
+import {
+  JsonLd,
+  faqNode,
+  organizationNode,
+  webApplicationNode,
+  webPageNode,
+  websiteNode,
+} from "@/lib/seo/json-ld";
+import { SUBJECT_PAGES, subjectPath } from "@/lib/seo/content/subjects";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "BoardEdge — ICSE Class 10 Answers Marked Against the Official Scheme",
+  description: SITE.description,
+  path: "/",
+  absoluteTitle: true,
+});
 
 // Counted against the live questions table at authoring time. Hardcoded rather
 // than queried so the page keeps its static prerender — a marketing page should
@@ -90,6 +110,17 @@ export default function Home() {
 
   return (
     <div className="min-h-dvh bg-background text-foreground">
+      {/* The FAQ node is built from FAQ_ITEMS, the same array the accordion
+          renders, so the structured data can't drift from the visible page. */}
+      <JsonLd
+        data={[
+          organizationNode(),
+          websiteNode(),
+          webApplicationNode(CORPUS.subjects),
+          webPageNode({ path: "/", name: SITE.name, description: SITE.description }),
+          faqNode(FAQ_ITEMS),
+        ]}
+      />
       {/* Without this, a script failure leaves every [data-reveal] element
           hidden and the page blank. Reduced-motion visitors are already safe —
           the hide rule never applies to them. */}
@@ -315,11 +346,26 @@ export default function Home() {
               the thin one, when what matters is that every paper for it is
               there. */}
           <ul data-reveal className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {CORPUS.subjects.map((name) => (
-              <li key={name} className="text-sm font-medium text-foreground">
-                {name}
-              </li>
-            ))}
+            {/* Each name links to its public subject page — the landing
+                page's only crawlable path into them. Same type, with a
+                hairline underline that warms to the accent on hover. */}
+            {CORPUS.subjects.map((name) => {
+              const page = SUBJECT_PAGES.find((s) => s.name === name);
+              return (
+                <li key={name} className="text-sm font-medium text-foreground">
+                  {page ? (
+                    <Link
+                      href={subjectPath(page.slug)}
+                      className="underline decoration-border underline-offset-4 transition-colors hover:decoration-accent"
+                    >
+                      {name}
+                    </Link>
+                  ) : (
+                    name
+                  )}
+                </li>
+              );
+            })}
           </ul>
 
           {/* The comparison that used to be its own section, folded into

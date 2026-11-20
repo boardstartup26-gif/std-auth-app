@@ -8,11 +8,9 @@
 // and both pages prerender as static HTML. Colours are token classes only, so
 // the page inverts with `.dark` like the rest of the app.
 
-import Image from "next/image";
 import Link from "next/link";
-import { btnPrimary, btnSecondary, numericFigures, sectionLabel } from "@/lib/ui";
-import { HomeLogoLink } from "@/app/_components/HomeLogoLink";
-import { SiteFooter } from "@/app/_components/SiteFooter";
+import { numericFigures, sectionLabel } from "@/lib/ui";
+import { PublicShell } from "@/app/_components/PublicShell";
 import { LegalMarkdown, loadLegalDoc } from "@/lib/legal/markdown";
 import { POLICIES, formatPolicyDate, type PolicyKey } from "@/lib/legal/policies";
 
@@ -22,24 +20,7 @@ export function LegalPage({ policy }: { policy: PolicyKey }) {
   const doc = loadLegalDoc(meta.file);
 
   return (
-    <div className="min-h-dvh bg-background text-foreground">
-      {/* ─── Nav ─────────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
-          <HomeLogoLink>
-            <Image src="/logo-lockup.png" alt="BoardEdge" width={101} height={30} priority />
-          </HomeLogoLink>
-          <div className="flex items-center gap-3">
-            <Link href="/login" className={`${btnSecondary} h-9 px-3.5 text-xs`}>
-              Log in
-            </Link>
-            <Link href="/signup" className={`${btnPrimary} h-9 px-3.5 text-xs`}>
-              Sign up
-            </Link>
-          </div>
-        </div>
-      </header>
-
+    <PublicShell>
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-12 sm:pt-16">
         {/* ─── Masthead ──────────────────────────────────────────────────── */}
         <div className="border-b border-border pb-8">
@@ -93,8 +74,6 @@ export function LegalPage({ policy }: { policy: PolicyKey }) {
           </article>
         </div>
       </main>
-
-      <SiteFooter />
-    </div>
+    </PublicShell>
   );
 }

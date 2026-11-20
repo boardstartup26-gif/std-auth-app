@@ -5,7 +5,9 @@
 // student has no use for the sidebar yet. Middleware still gates it on a
 // session (PROTECTED_PREFIXES).
 
+import type { Metadata } from "next";
 import Image from "next/image";
+import { NOINDEX } from "@/lib/seo/metadata";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { readOnboardingProfile } from "@/lib/onboarding/profile";
@@ -16,6 +18,8 @@ import { sectionLabel } from "@/lib/ui";
 import { OnboardingForm } from "./_components/OnboardingForm";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = { title: "Welcome", robots: NOINDEX };
 
 /**
  * Markable questions per subject, for the subjects cue. Same pool and the same
