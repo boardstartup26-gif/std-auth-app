@@ -1,13 +1,14 @@
 // src/lib/seo/content/subjects.ts
 //
 // Public subject landing pages (/icse-class-10/[subject]). One entry per
-// subject BoardEdge can actually mark — six, matching the corpus — never one
+// subject BoardEdge can actually mark — seven, matching the corpus — never one
 // per keyword variation. A subject is added here when its papers are imported,
 // not before.
 //
 // Where the content comes from, so it can be kept true:
 //   • `coverage` was counted against the live questions table on 2026-11-20
-//     (questions.chapter, questions.is_subjective, questions.year). Hardcoded,
+//     (questions.chapter, questions.is_subjective, questions.year); Economics
+//     was added on 2026-11-22, and the other six rechecked then. Hardcoded,
 //     like CORPUS on the landing page, so these pages stay static prerenders.
 //     Recount when papers are imported.
 //   • `markLeaks` restates, for students, the subject protocols the grader is
@@ -15,7 +16,8 @@
 //     change the matching leak here — the page must describe how BoardEdge
 //     actually marks.
 //   • Paper numbering is the ICSE Class 10 structure (Science Papers 1–3,
-//     History, Civics & Geography Papers 1–2, English Paper 2).
+//     History, Civics & Geography Papers 1–2, English Paper 2, and Economics
+//     as a Group II elective).
 //
 // No marking-scheme text or model answers ever appear on these pages: answer
 // keys only reach a student after they have attempted the question.
@@ -362,6 +364,68 @@ export const SUBJECT_PAGES: SubjectPage[] = [
       },
     ],
     updated: UPDATED,
+  },
+
+  // ─── Economics ─────────────────────────────────────────────────────────────
+  {
+    slug: "economics",
+    name: "Economics",
+    paper: "Group II Elective",
+    metaTitle: "ICSE Class 10 Economics Past Papers With Marking Schemes",
+    metaDescription:
+      "185 ICSE Class 10 Economics past-paper questions (2018–2026) with official marking schemes. See where key terms, explanations and matched differences earn marks.",
+    intro:
+      "ICSE Economics is marked on precise terms. A definition of demand without “at a given price and at a given time”, a stage of inflation without its rate per annum, or a heading with no explanation under it loses marks even when the idea is right. BoardEdge marks your answer against the official CISCE scheme for the real past-paper question you chose.",
+    coverage: {
+      questions: 185,
+      written: 137,
+      years: [2018, 2019, 2024, 2025, 2026],
+      chapters: [
+        ["Theory of Demand and Supply", 44],
+        ["Productive Mechanism", 38],
+        ["Public Finance", 33],
+        ["Banking in India", 29],
+        ["Consumer Awareness", 17],
+        ["Inflation", 13],
+        ["Market", 11],
+      ],
+    },
+    markLeaks: [
+      {
+        title: "Dropping the key term",
+        body: "Definitions carry marks for their qualifying words: “other things being equal” in the law of demand, “percentage change” in elasticity, “in expectation of reward” for labour, a rate per annum for each stage of inflation. Leave one out and the definition is incomplete.",
+      },
+      {
+        title: "Headings without explanation",
+        body: "When a question says “explain”, a bare heading such as “Natural factors” or “Right to safety” is only half a point. Each point needs a sentence that explains it.",
+      },
+      {
+        title: "Writing demand for supply",
+        body: "An answer about demand where supply was asked earns nothing, however correct. The same goes for expansion versus increase, demand-pull versus cost-push inflation, and CRR versus SLR.",
+      },
+      {
+        title: "Unmatched differences",
+        body: "A “give five differences” answer is marked pair by pair. Each difference must compare both things on the same basis — interest, withdrawal, ownership — not list unrelated features in two columns.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How are ICSE Economics answers marked?",
+        answer:
+          "Point by point, against the official scheme. Where the scheme lists more points than the question asks for, any of them counts, up to the number asked. BoardEdge shows which of your points were credited and which you missed.",
+      },
+      {
+        question: "Can BoardEdge mark Economics graphs?",
+        answer:
+          "Not from typed text. Questions that ask you to draw a demand or supply curve are kept aside until handwriting can be marked; written answers, schedules and definitions are marked normally.",
+      },
+      {
+        question: "Which ICSE Economics years are available?",
+        answer:
+          "Questions from the 2018, 2019, 2024, 2025 and 2026 ICSE Class 10 Economics papers, 185 in total, each with its official marking scheme.",
+      },
+    ],
+    updated: "2026-11-22",
   },
 
   // ─── English Literature ────────────────────────────────────────────────────

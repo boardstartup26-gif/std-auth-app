@@ -50,7 +50,7 @@ export default async function OpengraphImage() {
           }}
         >
           <span>ICSE Class 10</span>
-          <span>2,450+ past-paper questions</span>
+          <span>2,600+ past-paper questions</span>
           <span>6 subjects</span>
         </div>
       </div>

@@ -5,8 +5,8 @@
 // has something to mark, and both read the same record.
 //
 // The page stays a static prerender: no data fetching, every figure below is a
-// constant checked against the live corpus at authoring time (2,456 questions,
-// each with a marking scheme, six subjects, 2018–2025). Motion is the only
+// constant checked against the live corpus at authoring time (2,641 questions,
+// each with a marking scheme, seven subjects, 2018–2026). Motion is the only
 // client-side part, isolated in <Reveal> and <ScoreClimber>.
 
 import type { Metadata } from "next";
@@ -35,7 +35,7 @@ import {
   webPageNode,
   websiteNode,
 } from "@/lib/seo/json-ld";
-import { SUBJECT_PAGES, subjectPath } from "@/lib/seo/content/subjects";
+import { SUBJECT_HUB_PATH, SUBJECT_PAGES, subjectPath } from "@/lib/seo/content/subjects";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "BoardEdge — ICSE Class 10 Answers Marked Against the Official Scheme",
@@ -49,11 +49,11 @@ export const metadata: Metadata = buildPageMetadata({
 // not wait on the database to render a headline number. Recount when a subject
 // or year is imported.
 const CORPUS = {
-  questions: 2456,
+  questions: 2641,
   // What the headline figure counts up to. Rounded down, not up: a count that
   // stops short of the real number and says "+" cannot overstate the corpus on
   // the day a paper is added or removed.
-  questionsRounded: 2450,
+  questionsRounded: 2600,
   subjects: [
     "Geography",
     "Biology",
@@ -61,13 +61,14 @@ const CORPUS = {
     "Physics",
     "English Literature",
     "History & Civics",
+    "Economics",
   ],
-  // Shown as a span. The papers held are 2018-2020 and 2023-2025: ICSE 2021 was
+  // Shown as a span. The papers held are 2018-2020 and 2023-2026: ICSE 2021 was
   // cancelled outright, and 2022 ran as two semesters rather than one paper, so
-  // the gap is mostly years that have no single paper to hold. The FAQ lists
-  // the six years individually, which is where a reader who wants the exact
-  // set will look.
-  years: "2018–2025",
+  // the gap is mostly years that have no single paper to hold. 2026 is
+  // Economics only so far. The FAQ lists the years individually, which is
+  // where a reader who wants the exact set will look.
+  years: "2018–2026",
 };
 
 
@@ -80,7 +81,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Which subjects and years are available?",
     answer:
-      "Six subjects are live: Geography, Biology, Chemistry, Physics, English Literature, and History & Civics. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available — 2,456 questions in total, each carrying its official marking scheme. More years are being added.",
+      "Seven subjects are live: Geography, Biology, Chemistry, Physics, English Literature, History & Civics, and Economics. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available, plus the 2026 Economics paper — 2,641 questions in total, each carrying its official marking scheme. More years are being added.",
   },
   {
     question: "Why not just ask ChatGPT or other Generic AI platforms?",
@@ -300,6 +301,61 @@ export default function Home() {
           768px, complete and static without JavaScript. */}
       <Act2Evaluation />
 
+      {/* ─── Subjects ────────────────────────────────────────────────────────
+          Right after the evaluation: having watched one answer get marked, the
+          next question is "does it do my subject?". One card per public
+          subject page, and the landing page's main crawlable path into them.
+          No per-subject question counts, deliberately — "History & Civics 273"
+          next to "Geography 506" reads as the thin subject, when what matters
+          is that its papers are there. Each card leads with that subject's
+          most common way to lose marks instead, which is the page's actual
+          content. */}
+      <section id="subjects" className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
+        <Reveal>
+          <p data-reveal className={sectionLabel}>
+            Subjects
+          </p>
+          <div className="mt-3 flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+            <h2 data-reveal className="display-section max-w-[18ch]">
+              Pick your subject. See where it leaks marks.
+            </h2>
+            <Link
+              data-reveal
+              href={SUBJECT_HUB_PATH}
+              className="text-sm font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:decoration-accent"
+            >
+              All subjects and guides →
+            </Link>
+          </div>
+        </Reveal>
+
+        <Reveal as="ul" className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {SUBJECT_PAGES.map((s) => (
+            <li key={s.slug} data-reveal>
+              <Link
+                href={subjectPath(s.slug)}
+                className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent/40"
+              >
+                <p className={sectionLabel}>{s.paper}</p>
+                <h3 className="mt-2 font-display text-xl text-foreground">{s.name}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  Most common mark leak: {s.markLeaks[0].title.toLowerCase()}.
+                </p>
+                <p className={`mt-5 text-xs text-muted-foreground ${numericFigures}`}>
+                  {s.coverage.years[0]}–{s.coverage.years[s.coverage.years.length - 1]} papers
+                </p>
+                <p className="mt-1 text-sm font-medium text-accent">
+                  See how it&apos;s marked{" "}
+                  <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">
+                    →
+                  </span>
+                </p>
+              </Link>
+            </li>
+          ))}
+        </Reveal>
+      </section>
+
       {/* ─── Act 3 · Provenance ──────────────────────────────────────────── */}
       <section id="provenance" className="border-y border-border bg-card/30">
         <Reveal className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
@@ -339,34 +395,6 @@ export default function Home() {
               </div>
             ))}
           </Reveal>
-
-          {/* Subject names without counts. The counts were true but they
-              invited the wrong comparison — a student reading "History &
-              Civics 273" next to "Geography 506" concludes their subject is
-              the thin one, when what matters is that every paper for it is
-              there. */}
-          <ul data-reveal className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {/* Each name links to its public subject page — the landing
-                page's only crawlable path into them. Same type, with a
-                hairline underline that warms to the accent on hover. */}
-            {CORPUS.subjects.map((name) => {
-              const page = SUBJECT_PAGES.find((s) => s.name === name);
-              return (
-                <li key={name} className="text-sm font-medium text-foreground">
-                  {page ? (
-                    <Link
-                      href={subjectPath(page.slug)}
-                      className="underline decoration-border underline-offset-4 transition-colors hover:decoration-accent"
-                    >
-                      {name}
-                    </Link>
-                  ) : (
-                    name
-                  )}
-                </li>
-              );
-            })}
-          </ul>
 
           {/* The comparison that used to be its own section, folded into
               provenance where the claim it makes is actually evidenced. It

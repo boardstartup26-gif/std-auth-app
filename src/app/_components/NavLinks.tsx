@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 
 const LINKS = [
   { href: "#evaluation", label: "How it marks" },
+  { href: "#subjects", label: "Subjects" },
   { href: "#provenance", label: "Coverage" },
   { href: "#trajectory", label: "Progress" },
   { href: "#faq", label: "FAQs" },
