@@ -204,6 +204,26 @@ const GEOGRAPHY = `=== SUBJECT PROTOCOL: GEOGRAPHY ===
 
 4. MAP AND GRAPH COMPONENTS. Map work, cross-sections, and graph plotting cannot be assessed from text — route them to unassessable_components rather than assuming.`;
 
+// Rules drawn from what the CISCE Analysis of Pupil Performance reports for
+// Economics (2018, 2019, 2024-2026) repeatedly record as costing marks.
+const ECONOMICS = `=== SUBJECT PROTOCOL: ECONOMICS ===
+
+1. ONE VALID POINT = ONE MARK. Where the scheme lists more points than the question asks for ("any two", "any three", "any five"), any of the listed points earns credit, up to the number asked. Award for the first N valid, distinct points in the order written and never more than N. Content outside the scheme earns nothing, however accurate.
+
+2. HEADING PLUS EXPLANATION. Where the scheme asks for a point to be explained ("explain any three", "head point with explanation"), a bare heading — "Natural factors", "Elastic", "Right to safety" — is a half-formed point. Credit it fully only when the student explains it in at least one specific sentence. Where the question only asks the student to state, name, mention or list, the heading alone is the answer.
+
+3. KEY TERMS IN DEFINITIONS ARE MARK-BEARING. A definition that drops a qualifying term the scheme includes is incomplete: "at a given price and at a given time" in demand and supply; "other things being equal / constant" in the laws of demand and supply; "percentage change" or "responsiveness" in elasticity; "in expectation of reward" in labour; "capacity" in productivity of land; "current account" in overdraft; "per annum" with a stated rate range in the stages of inflation. Do not supply the missing term on the student's behalf.
+
+4. DEMAND VERSUS SUPPLY. An answer that gives the determinant, assumption, law or curve of demand where supply was asked — or the reverse — has not answered the question, even where the content is otherwise correct. The same applies to the distinctions examiners repeatedly find confused: expansion/contraction (movement along a curve, due to own price) versus increase/decrease (shift of the curve, due to other factors); demand-pull versus cost-push inflation; direct versus indirect tax; commercial versus administrative revenue; revenue versus capital expenditure; CRR versus SLR; bank rate versus interest rate; Right to Information versus the consumer's right to be informed. Record such a mix-up as a conceptual error.
+
+5. DIFFERENCES MUST BE MATCHED. In "distinguish between" or "give N differences" answers, each difference must compare both items on the same basis (meaning, objective, ownership, interest, withdrawal, and so on). Unmatched features listed in two columns earn credit only where a matched pair can be read; features written under the wrong item earn nothing for that pair.
+
+6. SCOPE. Answer the demand of the question: ways in which consumers are exploited (how) are not reasons for exploitation (why); merits are not features; functions are not characteristics; factors affecting the productivity of land are not characteristics of land. Award only the part that answers what was asked and record the drift in icse_style_issues.
+
+7. DEGREE OF ELASTICITY. Where the question asks for the type or degree of elasticity, the precise name and symbol are mark-bearing: "perfectly elastic" is not "elastic", and "Es > 1" or "Ed < 1" should accompany relative elasticity where the scheme gives it.
+
+8. GRAPHS AND SCHEDULES. Diagrams cannot be assessed from text — route them to unassessable_components rather than assuming. A typed hypothetical schedule or a written description of the curve's slope and direction is assessed as text.`;
+
 /* ------------------------------------------------------------------ */
 /* REGISTRY + BUILDER                                                  */
 /* ------------------------------------------------------------------ */
@@ -214,7 +234,8 @@ export type SubjectKey =
   | "physics"
   | "chemistry"
   | "biology"
-  | "geography";
+  | "geography"
+  | "economics";
 
 const SUBJECT_MODULES: Record<SubjectKey, string> = {
   history_civics: HISTORY_CIVICS,
@@ -223,6 +244,7 @@ const SUBJECT_MODULES: Record<SubjectKey, string> = {
   chemistry: CHEMISTRY,
   biology: BIOLOGY,
   geography: GEOGRAPHY,
+  economics: ECONOMICS,
 };
 
 /**
@@ -242,6 +264,7 @@ const SUBJECT_ALIASES: Record<string, SubjectKey> = {
   chemistry: "chemistry",
   biology: "biology",
   geography: "geography",
+  economics: "economics",
 };
 
 export function resolveSubjectKey(subject: string | null | undefined): SubjectKey | null {

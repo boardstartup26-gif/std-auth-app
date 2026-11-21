@@ -1,0 +1,824 @@
+{
+  "year": 2019,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "question_text": "What are normal goods? Give two examples.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Normal goods - goods whose demand increases with the increase in income of the consumers. Example - AC / cooler / refrigerator etc. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Goods whose demand increases with an increase in the income of consumers",
+        "Two examples such as AC, cooler, refrigerator"
+      ],
+      "model_answer": "Normal goods are goods whose demand increases when the income of the consumer increases. Examples: air conditioners and refrigerators.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Explained normal goods on the basis of quality instead of income"
+      ],
+      "examiner_notes": "Explain the term normal goods in relation to income with suitable examples.",
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "State any two features of the Consumer Protection Act.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "It applies to all goods and services / all sectors, private, public or co-operative are covered / provision of courts at district, state and national levels to look into the grievances of consumers. (Any two features)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: applies to all goods and services; covers private, public and co-operative sectors; three-tier courts at district, state and national levels"
+      ],
+      "model_answer": "The Consumer Protection Act applies to all goods and services, and it provides consumer courts at the district, state and national levels to look into the grievances of consumers.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the rights of consumers instead of the features of the Consumer Protection Act"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "A businessman stocks potato in the cold storage during the winter and releases that stock during summer. Will this be considered as production? Give a reason for your answer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Yes, this activity is considered as production, because he is creating time utility.",
+      "total_marks": 2,
+      "key_points": [
+        "Yes, it is production",
+        "Because it creates time utility"
+      ],
+      "model_answer": "Yes, this is production, because by storing potatoes and releasing them in summer the businessman creates time utility.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not connect the activity with production and utility"
+      ],
+      "examiner_notes": "Teach the term production in relation to utility.",
+      "topic": "Factors of Production",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(d)",
+      "question_text": "Mention two ways by which a worker benefits from division of labour.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Increase in labour efficiency / productivity; opportunity to increase income; bargaining power of the worker increases; work completed within the stipulated time; more job opportunities; labour works according to choice. (Or any two other relevant points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two benefits to the worker: increased efficiency; higher income; better bargaining power; work completed on time; more job opportunities; work according to choice"
+      ],
+      "model_answer": "Division of labour increases the efficiency of the worker, and it gives the worker an opportunity to increase his or her income.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the overall benefits of division of labour instead of benefits to the worker"
+      ],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(e)",
+      "question_text": "Give two assumptions of the law of supply.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "No change in technology of production / government policy - taxation / cost of factors of production / goals of the firm / price of related goods / expectation of change in price in future. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two assumptions (other things being constant): no change in technology; no change in taxation policy; no change in cost of factors; no change in goals of the firm; no change in price of related goods; no expectation of future price change"
+      ],
+      "model_answer": "The law of supply assumes that there is no change in the technology of production and no change in the cost of factors of production.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote assumptions of demand instead of supply",
+        "Wrote factors of supply without stating them as assumptions (other things being constant)"
+      ],
+      "examiner_notes": null,
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Briefly explain any two merits of direct taxes.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Certainty, cannot be evaded, cost of collection is low, based on ability to pay, helps to increase government's income, creates civic consciousness among tax-payers. (Any two with brief explanation)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two merits briefly explained: certainty; cost of collection is low; based on ability to pay (equity); elastic / increases government income; creates civic consciousness"
+      ],
+      "model_answer": "Equity: direct taxes are based on the ability to pay, as those with higher incomes pay more. Economy: the cost of collecting direct taxes is low.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the features of taxes instead of the merits of direct taxes"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Expand the term RTI. How does this help a citizen of India?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Right to Information. It helps citizens in accessing information in government records except information that needs to be protected in public and national interest.",
+      "total_marks": 2,
+      "key_points": [
+        "RTI = Right to Information",
+        "Helps citizens access information held by the government / in government records"
+      ],
+      "model_answer": "RTI stands for Right to Information. It helps a citizen obtain information from government records about the working of public authorities, except information protected in the national interest.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about information relating to a product rather than information held by the government"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "Define price elasticity of demand.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Price elasticity is the ratio between the percentage change in quantity demanded and the percentage change in price. OR It is a measure of the degree of responsiveness of the change in quantity demanded to a change in its price.",
+      "total_marks": 2,
+      "key_points": [
+        "Ratio of percentage change in quantity demanded to percentage change in price / degree of responsiveness of quantity demanded to a change in price"
+      ],
+      "model_answer": "Price elasticity of demand is the degree of responsiveness of quantity demanded to a change in price; it is the ratio of the percentage change in quantity demanded to the percentage change in price.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention the key words 'percentage' or 'responsiveness'"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "2(d)",
+      "question_text": "What is food adulteration? Mention any one harmful effect of food adulteration.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Food adulteration - intentionally degrading the quality of food offered for sale by admixture or substitution of inferior substance or by removal of some valuable ingredient. Effects: stomach ache / cholera / anaemia / eye problems / partial paralysis etc. (Any one harmful effect)",
+      "total_marks": 2,
+      "key_points": [
+        "Intentionally lowering the quality of food by mixing/substituting inferior substances or removing a valuable ingredient",
+        "One harmful effect such as stomach ache, cholera, anaemia, eye problems or paralysis"
+      ],
+      "model_answer": "Food adulteration is the intentional lowering of the quality of food offered for sale by mixing or substituting inferior substances or removing a valuable ingredient. It can cause stomach ailments or even partial paralysis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described cheap goods as adulterated goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "2(e)",
+      "question_text": "What is degressive tax?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Degressive tax: the rate of tax on income increases up to a certain limit but after that a uniform rate is charged.",
+      "total_marks": 2,
+      "key_points": [
+        "Tax rate increases with income up to a certain limit",
+        "after that a uniform rate is charged"
+      ],
+      "model_answer": "A degressive tax is one in which the rate of tax rises with income up to a certain limit, after which a uniform rate is charged.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about regressive or progressive taxes instead of degressive tax"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "If a buyer buys less of a commodity when his income falls, how will his demand curve change? Illustrate your answer with a diagram.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Decrease in demand: the demand curve shifts to the left (from DD to D1D1). Diagram with price on Y-axis, quantity demanded on X-axis and a leftward shift of the demand curve.",
+      "total_marks": 2,
+      "key_points": [
+        "Demand curve shifts to the left (decrease in demand)",
+        "Diagram showing leftward shift with axes labelled"
+      ],
+      "model_answer": "When income falls and the buyer buys less at the same price, there is a decrease in demand, so the demand curve shifts to the left, from DD to D1D1, with price on the Y-axis and quantity demanded on the X-axis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not give a diagram",
+        "Drew a movement along the curve instead of a shift in demand"
+      ],
+      "examiner_notes": "Instruct students to draw graphs with complete detailing.",
+      "topic": "Demand",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "State two factors which affect productivity of land.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Natural factors / human factors / improvement on land / location of land / organisation / ownership of land / availability of capital / proper use of land / state help. (Any two factors to be stated briefly)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two factors: natural factors; human factors; improvement on land; location; organisation; ownership; availability of capital; proper use of land; state help"
+      ],
+      "model_answer": "Two factors affecting productivity of land are natural factors such as soil fertility and climate, and the location of land.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Natural factors",
+        "Human factors",
+        "Improvement on land",
+        "Location of land",
+        "Organisation",
+        "Ownership of land",
+        "Availability of capital",
+        "Proper use of land",
+        "State help"
+      ],
+      "common_errors": [
+        "Wrote the characteristics of land instead of factors affecting its productivity"
+      ],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "Give two differences between recurring deposits and fixed deposits.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Recurring deposit: a fixed amount is deposited every month for a period decided by the customer; encourages saving habit. Fixed deposit: one-time deposit for a fixed period and cannot be withdrawn before maturity; surplus savings are saved by households. (Two differences only)",
+      "total_marks": 2,
+      "key_points": [
+        "RD: fixed amount deposited every month vs FD: one-time deposit for a fixed period",
+        "RD encourages the saving habit vs FD holds surplus savings and cannot be withdrawn before maturity"
+      ],
+      "model_answer": "In a recurring deposit a fixed amount is deposited every month, while a fixed deposit is a single one-time deposit for a fixed period. A recurring deposit encourages regular saving, while a fixed deposit is used to keep surplus savings and cannot be withdrawn before maturity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote differences between saving deposit and fixed deposit"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "3(d)",
+      "question_text": "What is overdraft facility?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "One of the ways of lending by commercial banks / only for current account holders / customer can withdraw above his balance / temporary facility. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Allowed only to current account holders",
+        "Customer can withdraw more than the balance in the account (up to a limit) / temporary loan facility"
+      ],
+      "model_answer": "Overdraft is a facility given by a commercial bank to current account holders, allowing them to withdraw more than the balance in their account up to an agreed limit for a temporary period.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the key term 'current account'"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "3(e)",
+      "question_text": "State any two reasons for the growth of public expenditure in a country like India in recent times.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Expanding administrative machinery / defence needs / emphasis on increasing agricultural and industrial output / rise in prices / building infrastructure / basic facilities for growing population / development of backward areas / social security and welfare / urbanisation.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: expanding administration; defence needs; raising agricultural and industrial output; rise in prices; infrastructure; growing population; backward areas; social security; urbanisation"
+      ],
+      "model_answer": "Public expenditure in India has grown because of increased defence needs and because of rising prices, which raise the cost of all government activities.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Expenditure",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Draw a well labelled diagram showing the price elasticity of supply of a commodity starting from the origin.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Unitary elastic supply: a straight-line supply curve SS passing through the origin, with price on Y-axis and quantity supplied on X-axis. Es = 1.",
+      "total_marks": 2,
+      "key_points": [
+        "Straight-line supply curve starting from the origin",
+        "Labelled Es = 1 (unitary elastic), axes labelled price and quantity supplied"
+      ],
+      "model_answer": "A straight-line supply curve passing through the origin shows unitary elastic supply, Es = 1, with price on the Y-axis and quantity supplied on the X-axis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Were unsure of the word 'origin'",
+        "Did not label the axes"
+      ],
+      "examiner_notes": "Teach plotting of graphs in a systematic manner and emphasise labelling.",
+      "topic": "Elasticity of Supply",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "What is land in Economics?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Land, in economics, means not only the surface of the earth but all those free gifts of nature, the supply of which can be regulated.",
+      "total_marks": 2,
+      "key_points": [
+        "Not only the surface of the earth but all free gifts of nature",
+        "whose supply can be regulated"
+      ],
+      "model_answer": "In economics, land means not only the surface of the earth but all those free gifts of nature whose supply can be regulated, such as soil, water, minerals and forests.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote only the basic definition without the key term 'regulated'"
+      ],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "Define supply.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Supply: the quantity of a commodity that the producer is willing to sell at a given price during a given period of time.",
+      "total_marks": 2,
+      "key_points": [
+        "Quantity of a commodity the producer is willing to sell",
+        "at a given price",
+        "during a given period of time"
+      ],
+      "model_answer": "Supply is the quantity of a commodity that a producer is willing to sell at a given price during a given period of time.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention time or price"
+      ],
+      "examiner_notes": null,
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "4(d)",
+      "question_text": "Indirect taxes are regressive in nature. How can they be made progressive?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Indirect taxes can be made progressive by imposing high taxes on luxury items and by exempting items of necessary consumption from taxation.",
+      "total_marks": 2,
+      "key_points": [
+        "Impose high taxes on luxury goods",
+        "Exempt necessities from taxation"
+      ],
+      "model_answer": "Indirect taxes can be made progressive by taxing luxury goods, which the rich buy, at high rates and exempting necessities, which the poor buy, from tax.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not comprehend the requirement of the question"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "4(e)",
+      "question_text": "The income earned by an entrepreneur is residual in nature. Explain.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "The entrepreneur earns profit only after the payments made to other factors of production (land, labour and capital) on the basis of contractual income, i.e. rent, wages and interest.",
+      "total_marks": 2,
+      "key_points": [
+        "Profit is earned only after paying the other factors",
+        "Rent, wages and interest are contractual payments made first"
+      ],
+      "model_answer": "An entrepreneur's income, profit, is residual because it is what remains after paying rent for land, wages for labour and interest for capital, which are fixed contractual payments.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about the functions of an entrepreneur",
+        "Mentioned the risk factor but missed the payment to other factors"
+      ],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "(i) State the law of demand. (ii) Briefly explain any two reasons for its occurrence.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Other things being equal, the quantity demanded of a commodity rises with a fall in price and falls with a rise in price. (ii) Income effect / substitution effect / law of diminishing marginal utility. (Any two reasons with brief explanation)",
+      "total_marks": 5,
+      "key_points": [
+        "Law: other things being equal, quantity demanded rises when price falls and falls when price rises",
+        "Reason explained: income effect",
+        "Reason explained: substitution effect",
+        "Reason explained: law of diminishing marginal utility"
+      ],
+      "model_answer": "(i) Law of demand: other things being equal, the quantity demanded of a commodity rises with a fall in its price and falls with a rise in its price. (ii) Income effect: when price falls, the real income of the consumer rises, so he buys more. Substitution effect: when the price of a good falls it becomes cheaper than its substitutes, so consumers buy more of it.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention 'other things being equal'",
+        "Wrote factors affecting demand instead of reasons for the downward slope"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Define inflation. Explain its impact on the producers and salaried class.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Inflation is a situation in which the prices of goods and services or general price level persistently rises at a fast pace. Producers gain as the value of their stock rises and generally they are borrowers. Salaried class suffers a loss as their purchasing power falls as prices rise faster than their incomes.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: persistent rise in the general price level",
+        "Producers gain: value of stock and profits rise; as borrowers they repay in cheaper money",
+        "Salaried class loses: fixed incomes, purchasing power falls as prices rise faster than salaries"
+      ],
+      "model_answer": "Inflation is a situation in which the general price level of goods and services rises persistently. Producers gain during inflation because the value of their stocks and their profits rise, and as borrowers they repay loans in money of lower value. The salaried class suffers because their incomes are fixed and prices rise faster than salaries, so their purchasing power falls.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention key words in the definition",
+        "Wrote the impact on the economy rather than on producers and the salaried class"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "(i) Define Public debt. (ii) What are Redeemable debts? (iii) Mention two examples of unproductive debt.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Loans raised by the government within or outside the country. (ii) Debt that the government pays off after a specified date; interest is paid regularly and on maturity the principal is returned. (iii) Financing a war, financing a deficit budget.",
+      "total_marks": 5,
+      "key_points": [
+        "Public debt: loans raised by the government within or outside the country",
+        "Redeemable debt: repaid on a specified date with interest paid regularly",
+        "Unproductive debt examples: financing war; financing deficit budget / relief"
+      ],
+      "model_answer": "(i) Public debt refers to the loans raised by the government from within or outside the country. (ii) Redeemable debts are debts which the government promises to repay on a specified date; interest is paid regularly and the principal is returned on maturity. (iii) Debt raised to finance a war and debt raised to finance a deficit budget are unproductive debts.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write that the redeemable debt is repaid with interest"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Briefly explain the following with reference to the barter system of exchange: (i) Lack of common measure of value. (ii) Lack of standard of deferred payments.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Lack of common measure of value: the problem of the proportion in which two goods should be exchanged; rate of exchange is fixed according to the intensity of demand for each other's good. Lack of standard of deferred payments: credit transactions requiring future payments cannot take place due to disagreement regarding quality, value of the product or terms of repayment. (Explanation with example of each)",
+      "total_marks": 5,
+      "key_points": [
+        "No common unit to measure value, so the ratio of exchange between goods is hard to fix (with example)",
+        "Future / credit payments are difficult as there is disagreement on quality, value and terms of repayment (with example)"
+      ],
+      "model_answer": "(i) Under barter there is no common unit to measure value, so it is difficult to decide the proportion in which two goods should be exchanged, for example how many kilograms of rice equal one cow. (ii) Credit transactions requiring future payment are difficult, because the borrower and lender may disagree about the quality and value of the goods to be returned, for example a loan of wheat to be repaid next year.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about lack of double coincidence of wants",
+        "Wrote the solution instead of the problem of deferred payment"
+      ],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Explain the following functions of the Central Bank: (i) Fiscal agent of the government. (ii) Advisor to the government.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) As fiscal agent it manages public borrowings, collects taxes and other payments on behalf of the government, and represents the government in international financial institutions like the IMF and World Bank. (ii) As advisor it advises the government on financial and economic matters such as deficit financing, demonetisation, devaluation, trade policy and foreign exchange policy.",
+      "total_marks": 5,
+      "key_points": [
+        "Fiscal agent: manages public borrowing",
+        "Fiscal agent: collects taxes and payments for the government",
+        "Fiscal agent: represents the government at IMF and World Bank",
+        "Advisor: advises on financial and economic matters like deficit financing, devaluation, trade and foreign exchange policy"
+      ],
+      "model_answer": "(i) As fiscal agent the Central Bank manages the public borrowings of the government, collects taxes and other payments on its behalf, and represents the government in international financial institutions such as the IMF and the World Bank. (ii) As advisor it advises the government on financial and economic matters such as deficit financing, demonetisation, devaluation of the currency and foreign exchange policy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote general functions of the Central Bank instead of its function as fiscal agent"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Explain any five characteristics of land.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Free gift of nature / limited in supply / primary factor of production / passive factor / permanent / immovable / varies in fertility / differs in location / has many uses. (Any five with brief explanation)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five characteristics explained: free gift of nature; limited supply; primary factor; passive factor; permanent; immovable; varies in fertility; differs in location; many uses"
+      ],
+      "model_answer": "1. Land is a free gift of nature. 2. Its supply is limited and cannot be increased. 3. It is a passive factor and produces only when labour works on it. 4. It is permanent and cannot be destroyed. 5. It is immovable and cannot be shifted from one place to another.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Discuss the risk bearing and decision-making functions of an entrepreneur.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Risk bearing: the entrepreneur bears the risk of uncertain changes in production, investment and profits, and the risk of changes in government policies and technological obsolescence. Decision making: selection of the commodity, design and quality, location of plant, scale of production, techniques of production.",
+      "total_marks": 5,
+      "key_points": [
+        "Risk bearing: bears uncertainty about production, investment and profit, changes in government policy and technology",
+        "Decision making: choice of commodity, design and quality, location, scale and technique of production"
+      ],
+      "model_answer": "Risk bearing: the entrepreneur bears the risk of uncertain changes in demand, production, investment and profits, as well as frequent changes in government policies and technological obsolescence; he pays fixed incomes to other factors and keeps only what remains. Decision making: he decides which commodity to produce, its design and quality, the location of the plant, the scale of production and the technique of production.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write about factor income as part of the risk bearing function"
+      ],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "What is Cost Push inflation? Briefly explain three causes of cost push inflation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When the prices of goods and services rise persistently due to a rise in the cost of production; the supply or cost theory of inflation. Causes: rise in wages, increase in prices of basic materials, higher taxes, natural disasters. (Any three explained briefly)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: persistent price rise due to rise in cost of production",
+        "Any three causes explained: rise in wages; rise in prices of basic materials; higher taxes; natural disasters"
+      ],
+      "model_answer": "Cost push inflation is a persistent rise in prices caused by a rise in the cost of production. Causes: 1. Rise in wages increases production costs. 2. Increase in prices of basic materials like oil raises costs. 3. Higher taxes on inputs raise the cost of production, which producers pass on as higher prices.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Defined demand pull inflation instead",
+        "Wrote causes of both demand pull and cost push inflation"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "(i) Define Tax. (ii) Give three differences between direct taxes and indirect taxes.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Tax is a compulsory payment imposed on persons or companies by the government to meet expenditure incurred in providing common benefits. (ii) Direct taxes are imposed on income/property, paid directly by the person on whom imposed, cannot be shifted, levied according to ability to pay, e.g. income tax; indirect taxes are imposed on commodities/transactions, burden borne by another person, can be shifted, ability assessed indirectly, e.g. GST. (Any three differences)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: compulsory payment to the government for common benefits",
+        "Imposed on income/property vs on commodities",
+        "Impact and incidence on same person vs different persons",
+        "Cannot be shifted vs can be shifted",
+        "Examples: income tax vs GST"
+      ],
+      "model_answer": "(i) A tax is a compulsory payment imposed by the government on persons or companies to meet expenditure on common benefits. (ii) 1. Direct taxes are imposed on income and property; indirect taxes on commodities. 2. The burden of a direct tax cannot be shifted; an indirect tax can be shifted to others. 3. Direct taxes are based on ability to pay, e.g. income tax; indirect taxes are not, e.g. GST.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "(i) Define capital formation. (ii) Briefly discuss the process of capital formation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) An addition to the existing stock of capital in an economy during a particular time period / fiscal year. (ii) Generation of savings, mobilisation of savings, investment of savings.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: addition to the stock of capital during a given time period",
+        "Generation of savings",
+        "Mobilisation of savings",
+        "Investment of savings"
+      ],
+      "model_answer": "(i) Capital formation is the addition to the existing stock of capital in an economy during a particular period of time. (ii) It has three stages: generation of savings, when households save part of their income; mobilisation of savings, when banks and financial institutions collect these savings; and investment of savings, when the funds are used to produce capital goods.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the key term 'time period'",
+        "Wrote functions or characteristics of capital instead of the process"
+      ],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Define and draw the following: (i) Relatively elastic supply. (ii) Relatively inelastic demand.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Relatively elastic supply: percentage change in quantity supplied is greater than the percentage change in price (Es > 1); definition and diagram. (ii) Relatively inelastic demand: percentage change in quantity demanded is less than the percentage change in price (Ed < 1); definition and diagram.",
+      "total_marks": 5,
+      "key_points": [
+        "Relatively elastic supply defined: % change in quantity supplied > % change in price, Es > 1",
+        "Diagram of a flatter supply curve with axes labelled",
+        "Relatively inelastic demand defined: % change in quantity demanded < % change in price, Ed < 1",
+        "Diagram of a steep demand curve with axes labelled"
+      ],
+      "model_answer": "(i) Supply is relatively elastic when the percentage change in quantity supplied is greater than the percentage change in price, Es > 1; drawn as a flatter upward sloping supply curve meeting the Y-axis. (ii) Demand is relatively inelastic when the percentage change in quantity demanded is less than the percentage change in price, Ed < 1; drawn as a steep downward sloping demand curve. Both graphs have price on the Y-axis and quantity on the X-axis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the law of supply instead of elasticity",
+        "Did not write the degree of elasticity (es > 1)",
+        "Interchanged the graphs of demand and supply"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Supply",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Briefly discuss any two quantitative measures adopted by the Reserve Bank of India to control credit.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Bank rate / CRR / SLR / open market operations. (Any two with brief explanation)",
+      "total_marks": 5,
+      "key_points": [
+        "Any two quantitative measures explained: bank rate; cash reserve ratio; statutory liquidity ratio; open market operations"
+      ],
+      "model_answer": "Bank rate: the rate at which the RBI lends to commercial banks; raising it makes loans costlier and reduces credit. Open market operations: buying and selling government securities; selling securities takes money out of banks and reduces their ability to lend.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    }
+  ]
+}

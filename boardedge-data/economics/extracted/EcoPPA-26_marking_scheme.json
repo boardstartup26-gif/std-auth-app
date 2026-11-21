@@ -1,0 +1,1052 @@
+{
+  "year": 2026,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "When ABC Electronics implemented division of labour, the workers became more productive. This happened due to ___________. (a) Rotation (b) Motivation (c) Mechanisation (d) Specialisation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Rotation",
+        "(b) Motivation",
+        "(c) Mechanisation",
+        "(d) Specialisation"
+      ],
+      "correct_answer": "(d) Specialisation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Specialisation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Specialisation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected options (b) Motivation or (c) Mechanisation"
+      ],
+      "examiner_notes": "Tell students to analyse all options carefully and eliminate distractors by applying relevant concepts.",
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "What will be the elasticity of demand for the given commodity as shown in the picture? (Refer to the picture of salt.) (a) Elastic (b) Unit elastic (c) Inelastic (d) Perfectly elastic",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Elastic",
+        "(b) Unit elastic",
+        "(c) Inelastic",
+        "(d) Perfectly elastic"
+      ],
+      "correct_answer": "(c) Inelastic",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Inelastic",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Inelastic",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Inadequate revision of degrees of elasticity"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "When income increases, the demand for ___________ type of goods will increase. (a) Inferior (b) Giffen (c) Normal (d) Inexpensive necessities",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Inferior",
+        "(b) Giffen",
+        "(c) Normal",
+        "(d) Inexpensive necessities"
+      ],
+      "correct_answer": "(c) Normal",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Normal",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Normal",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify the effect of a change in income on demand for different types of goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "The following supply curve shifts from S1 to S2. It may be due to ___________. (Refer to the graph showing supply curve S1 shifting to S2, with quantity rising from Q1 to Q2 at price P.) (a) increase in tax (b) upgradation of technology (c) rise in the price of inputs (d) decrease in the number of producers",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) increase in tax",
+        "(b) upgradation of technology",
+        "(c) rise in the price of inputs",
+        "(d) decrease in the number of producers"
+      ],
+      "correct_answer": "(b) upgradation of technology",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) upgradation of technology",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) upgradation of technology",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not interpret the implication of the shift in the supply curve"
+      ],
+      "examiner_notes": "Differentiate between expansion/contraction of supply and increase/decrease in supply.",
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "Statement 1: Income tax, GST, and Custom Duties are examples of Tax Revenue. Statement 2: Escheat and Forfeitures are also a part of Tax Revenue. (a) Both Statements 1 and 2 are true. (b) Both Statements 1 and 2 are false. (c) Statement 1 is true, and Statement 2 is false. (d) Statement 1 is false, and Statement 2 is true.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Both Statements 1 and 2 are true.",
+        "(b) Both Statements 1 and 2 are false.",
+        "(c) Statement 1 is true, and Statement 2 is false.",
+        "(d) Statement 1 is false, and Statement 2 is true."
+      ],
+      "correct_answer": "(c) Statement 1 is true, and Statement 2 is false.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Statement 1 is true, and Statement 2 is false.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Statement 1 is true, and Statement 2 is false.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Unfamiliar with escheat and forfeiture as components of non-tax revenue"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "Mr. Raju grows wheat and needs shoes, whereas Mr. Tony who makes shoes, wants rice. So, they are unable to trade with each other. Which drawback of barter system is illustrated in this situation? (a) Lack of Double Coincidence of Wants (b) Lack of Divisibility (c) Lack of Common Measure of Value (d) Problem of Storing Wealth",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Lack of Double Coincidence of Wants",
+        "(b) Lack of Divisibility",
+        "(c) Lack of Common Measure of Value",
+        "(d) Problem of Storing Wealth"
+      ],
+      "correct_answer": "(a) Lack of Double Coincidence of Wants",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Lack of Double Coincidence of Wants",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Lack of Double Coincidence of Wants",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "Suman is a trained nurse who offers services to a hospital. Once her duty hours end, she cannot carry forward her unused services to the next day because: (a) labour is mobile. (b) labour is perishable. (c) labour is not homogeneous. (d) labour can be separated from the labourer.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) labour is mobile.",
+        "(b) labour is perishable.",
+        "(c) labour is not homogeneous.",
+        "(d) labour can be separated from the labourer."
+      ],
+      "correct_answer": "(b) labour is perishable.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) labour is perishable.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) labour is perishable.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "Assertion (A): Commercial Banks accept various types of deposits to meet the needs of different customers. Reason (R): Fixed deposits allow customers to deposit money for a specific period and earn high interest, while current deposits do not help in earning interest but help in frequent transactions for businessmen. (a) (A) is true and (R) is false. (b) (A) is false and (R) is true. (c) Both (A) and (R) are true and (R) is the correct explanation of (A). (d) Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(d) Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+      ],
+      "correct_answer": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Lacked clarity regarding the underlying reason"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "If iPhone and Samsung Galaxy are considered as substitute goods, then which of the following pairs is considered as complementary goods? (a) Coke and Lime Soda (b) Toothbrush and Toothpaste (c) Petrol cars and Electric cars (d) LPG and CNG",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Coke and Lime Soda",
+        "(b) Toothbrush and Toothpaste",
+        "(c) Petrol cars and Electric cars",
+        "(d) LPG and CNG"
+      ],
+      "correct_answer": "(b) Toothbrush and Toothpaste",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Toothbrush and Toothpaste",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Toothbrush and Toothpaste",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused complementary goods with substitute goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "Goods like fruits and vegetables are best described as examples of which type of market form? (a) Perfect competition (b) Monopoly (c) Oligopoly (d) Monopolistic competition",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Perfect competition",
+        "(b) Monopoly",
+        "(c) Oligopoly",
+        "(d) Monopolistic competition"
+      ],
+      "correct_answer": "(a) Perfect competition",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Perfect competition",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Perfect competition",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Treated perfect competition as a purely theoretical concept with no real-life examples"
+      ],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Study the relationship in the first pair of words and complete the second pair: Right to be Informed : Information about products. Right to Seek Redressal : ___________ (a) Choices of goods available in the market (b) Awareness about environmental impact (c) Protection against hoarding (d) Fair compensation for defective goods and services",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Choices of goods available in the market",
+        "(b) Awareness about environmental impact",
+        "(c) Protection against hoarding",
+        "(d) Fair compensation for defective goods and services"
+      ],
+      "correct_answer": "(d) Fair compensation for defective goods and services",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Fair compensation for defective goods and services",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Fair compensation for defective goods and services",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "During the time of inflation, the Central Bank will _________ in order to stabilise the economy. (a) buy Government Securities (b) decrease the Cash Reserve Ratio (c) sell Government Securities (d) decrease Statutory Liquidity Ratio",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) buy Government Securities",
+        "(b) decrease the Cash Reserve Ratio",
+        "(c) sell Government Securities",
+        "(d) decrease Statutory Liquidity Ratio"
+      ],
+      "correct_answer": "(c) sell Government Securities",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) sell Government Securities",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) sell Government Securities",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused the measures adopted to control inflation and deflation"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "In case of cash credit, interest is charged to the borrower on the amount actually withdrawn from the loan account. (a) True (b) False",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) True",
+        "(b) False"
+      ],
+      "correct_answer": "(a) True",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) True",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) True",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Which of the following is NOT a cause of Cost Push Inflation? (a) Administered prices (b) Rise in population (c) Fluctuation in output and supply (d) Enhanced taxation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Administered prices",
+        "(b) Rise in population",
+        "(c) Fluctuation in output and supply",
+        "(d) Enhanced taxation"
+      ],
+      "correct_answer": "(b) Rise in population",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Rise in population",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Rise in population",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Overlooked the word 'NOT'"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "The Government of India borrows a large sum of money from international financial institutions to build highways and modernise railway infrastructure. This situation is an example of: (a) debt used for productive purpose. (b) internal debt. (c) public revenue. (d) net debt.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) debt used for productive purpose.",
+        "(b) internal debt.",
+        "(c) public revenue.",
+        "(d) net debt."
+      ],
+      "correct_answer": "(a) debt used for productive purpose.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) debt used for productive purpose.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) debt used for productive purpose.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not relate the concept to productivity"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(xvi)",
+      "question_text": "In which form of market do both buyers and sellers have accurate and complete information about market conditions? (a) Oligopoly (b) Monopolistic competition (c) Monopoly (d) Perfect competition",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Oligopoly",
+        "(b) Monopolistic competition",
+        "(c) Monopoly",
+        "(d) Perfect competition"
+      ],
+      "correct_answer": "(d) Perfect competition",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Perfect competition",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Perfect competition",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "2(i)",
+      "question_text": "Define the concept of consumer exploitation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When a consumer is cheated by the seller due to the lack of information about the product.",
+      "total_marks": 2,
+      "key_points": [
+        "Consumer is cheated by the seller / producer",
+        "due to lack of information about the product"
+      ],
+      "model_answer": "Consumer exploitation is a situation in which a consumer is cheated by the seller or producer, for example through high prices or poor quality, because of the consumer's lack of information about the product.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused consumer awareness, consumer rights and forms of consumer exploitation"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "2(ii)",
+      "question_text": "\"Risk bearing is the backbone of entrepreneurship.\" Justify the statement.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "The entrepreneur must calculate the risk of the business caused by uncertainties attached to production - investment and profits, changes in tastes of consumers, new inventions, technological obsolescence, frequent changes in government policies. OR As he may earn profit, loss or zero profit, or residual income. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Entrepreneur bears uncertainties of production, investment and profit, changing tastes, new inventions, obsolescence and policy changes",
+        "His reward is residual: he may earn profit, loss or zero profit"
+      ],
+      "model_answer": "Risk bearing is the backbone of entrepreneurship because the entrepreneur alone bears the uncertainties of the business, such as changes in consumer tastes, new inventions and changes in government policy. His income is residual: after paying the other factors he may earn a profit, a loss or nothing.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "2(iii)",
+      "question_text": "What is meant by the 'Margin Requirement on secured loans'?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Margin Requirement refers to the difference between the amount of loan granted and the value of security offered for the loan.",
+      "total_marks": 2,
+      "key_points": [
+        "Difference between the value of the security offered",
+        "and the amount of loan granted against it"
+      ],
+      "model_answer": "Margin requirement is the difference between the value of the security offered by a borrower and the amount of loan granted against it by the bank.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Familiar with the term but unable to express understanding effectively"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "2(iv)",
+      "question_text": "Which concept is depicted in the given image and explain the concept? (Refer to the image of arrows: PRICE up with QUANTITY up, and PRICE down with QUANTITY down.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Law of Supply: other things being constant, when price increases the supply increases and when the price falls supply falls. Or: positive relation between price and supply.",
+      "total_marks": 2,
+      "key_points": [
+        "Concept: law of supply",
+        "Other things constant, quantity supplied rises with price and falls with price (positive relation)"
+      ],
+      "model_answer": "The image depicts the law of supply: other things being constant, when the price of a commodity rises its quantity supplied rises, and when the price falls the quantity supplied falls, showing a positive relation between price and supply.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failed to identify the concept, confusing it with related terms"
+      ],
+      "examiner_notes": null,
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "Explain the meaning of Hyperinflation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When prices rise very fast OR the rate of inflation is in double or triple digits OR the rate of inflation is more than 20 to 100 percent per annum.",
+      "total_marks": 2,
+      "key_points": [
+        "Prices rise very fast",
+        "Rate of inflation in double or triple digits / above 20-100 percent per annum"
+      ],
+      "model_answer": "Hyperinflation is a situation in which prices rise very fast, at double or triple digit rates, often more than 20 to 100 percent per annum, and money loses its value rapidly.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Used rates outside the correct range",
+        "Omitted 'per annum'"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "Outline two primary reasons why economists consider the supply of land to be fixed.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "1. It is fixed and cannot move from place to place. 2. It is fixed in the sense that the total supply of land cannot be increased or decreased.",
+      "total_marks": 2,
+      "key_points": [
+        "Land is immobile and cannot be moved from place to place",
+        "The total supply of land cannot be increased or decreased"
+      ],
+      "model_answer": "Land is considered fixed because it cannot be moved from one place to another, and because the total area of land on earth cannot be increased or decreased by human effort.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not comprehend the concept clearly"
+      ],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "Define the term Regressive Tax.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "A tax will be regressive when the rates of tax decrease as the tax base increases.",
+      "total_marks": 2,
+      "key_points": [
+        "Rate of tax decreases",
+        "as the tax base / income increases"
+      ],
+      "model_answer": "A regressive tax is one in which the rate of tax decreases as the tax base or income increases.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused among the four types of taxation"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "Observe the image and identify the type of capital it represents. Briefly explain your answer. (Refer to the image showing a road roller / earth mover, a computer and a hammer.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Physical capital: it is a man-made factor that aids and assists the process of production. It is tangible in nature.",
+      "total_marks": 2,
+      "key_points": [
+        "Physical capital",
+        "Man-made, tangible goods that assist further production"
+      ],
+      "model_answer": "The image shows physical capital. Machines, computers and tools are man-made, tangible goods that assist in the process of production.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Classified the three images as different types of capital"
+      ],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "State one point of difference between funded debt and unfunded debt.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Funded debt: long term / a separate fund is created. Unfunded debt: short term / no separate fund is created.",
+      "total_marks": 2,
+      "key_points": [
+        "Funded debt is long term vs unfunded debt is short term",
+        "OR a separate fund is created for funded debt vs none for unfunded debt"
+      ],
+      "model_answer": "Funded debt is a long term debt for whose repayment a separate fund is created, whereas unfunded debt is a short term debt for which no separate fund is created.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Explained the difference between redeemable and irredeemable debt instead"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "The elasticity of demand tends to be higher in the long run than in the short run. (a) Do you agree with the statement? (b) Justify your answer with a reason.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Yes. (b) In the long run demand will be elastic as there is enough time to change habits or preferences. OR In the short run demand will be inelastic due to shortage of time. Or any other reason applicable.",
+      "total_marks": 2,
+      "key_points": [
+        "Yes, agree",
+        "In the long run consumers have time to change habits or find substitutes, so demand is more elastic"
+      ],
+      "model_answer": "(a) Yes. (b) In the long run consumers have enough time to change their habits and find substitutes, so demand becomes more elastic; in the short run there is not enough time to adjust, so demand is less elastic.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'Yes' but could not provide the correct justification"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "Ravi deposits ₹50,000 in his savings account in a commercial bank. The bank uses a part of this money to give loan to another customer. This process is repeated with other depositors and borrowers. (a) Identify whether Ravi's deposit is primary or derivative. (b) Give a reason for your choice.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Primary deposit. (b) When a customer deposits currency or cash with commercial banks such deposits are known as primary deposits.",
+      "total_marks": 2,
+      "key_points": [
+        "Primary deposit",
+        "It is a deposit of cash / currency made by the customer"
+      ],
+      "model_answer": "(a) Ravi's deposit is a primary deposit. (b) It is a deposit of cash made by the customer himself, whereas derivative deposits are created by the bank when it gives loans.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify the exact reason"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "How is the Veblen Effect an exception to the law of demand?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Veblen goods are rich man's goods. People buy these goods because they are different from commonly preferred goods / quality-price relation / articles of distinction / snob appeal / prestigious goods.",
+      "total_marks": 2,
+      "key_points": [
+        "Veblen goods are prestige goods / articles of distinction bought for status",
+        "More is demanded at a higher price, which is opposite to the law of demand"
+      ],
+      "model_answer": "Under the Veblen effect, prestige goods such as diamonds are bought by the rich because they are costly and signal status. When their price rises they may be demanded more, and when it falls they lose their snob appeal, so demand falls, which is opposite to the law of demand.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused inferior goods with luxury goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "'Land is one of the most important factors of production.' In this context, explain the factors that affect the productivity of land.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Natural factors (rain / soil / climate / fertility), human factors (ability of efficient labour), size of holdings, improvement on land (irrigation), location of land, organisation (ability of organiser), ownership of land (land ownership law), availability of capital, proper use of land, state help (government policy). (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five factors explained: natural factors; human factors; size of holdings; improvement on land; location; organisation; ownership; capital; proper use; state help"
+      ],
+      "model_answer": "1. Natural factors: soil fertility, rainfall and climate. 2. Human factors: efficiency of the cultivator. 3. Improvement on land: irrigation and drainage raise output. 4. Location of land: land near markets is better used. 5. Availability of capital: funds for seeds, fertilizers and machinery raise productivity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described the features of land instead of factors affecting its productivity"
+      ],
+      "examiner_notes": "Explain that climate, weather and rainfall are grouped under one point as natural factors.",
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "State any five differences between Commercial Bank and Central Bank.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "On the basis of meaning, objective, ownership, note issue, banker, number, credit, example.",
+      "total_marks": 5,
+      "key_points": [
+        "Five matched differences on the basis of: meaning; objective; ownership; note issue; banker to; number; credit; example"
+      ],
+      "model_answer": "1. A commercial bank deals with the public; the central bank is the apex bank. 2. A commercial bank aims at profit; the central bank at public welfare. 3. Commercial banks may be private or public; the central bank is government owned. 4. Commercial banks cannot issue notes; the central bank has the monopoly of note issue. 5. There are many commercial banks, e.g. SBI; there is only one central bank, the RBI.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Mismatched corresponding points and repeated the same points"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "Analyse the image of the market given below (image shows a 'Current Dominant Supplier' inside the MARKET with buyers, and 'Prospective Suppliers' blocked from entering): (a) Identify the type of market referred to in the given image. (b) Explain any three characteristics of the identified market.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Monopoly. (b) Single seller and large number of buyers; no close substitutes; restriction on the entry of new firms; price makers; price discrimination. (Explain any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Monopoly",
+        "Any three characteristics explained: single seller; no close substitutes; restricted entry; price maker; price discrimination"
+      ],
+      "model_answer": "(a) The image shows a monopoly market. (b) 1. There is a single seller and a large number of buyers. 2. Entry of new firms is restricted, as shown by prospective suppliers being blocked. 3. The monopolist is a price maker and may practise price discrimination.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave headings without explanations",
+        "Described incorrect features of monopoly"
+      ],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "State and explain any five characteristics of Capital.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Capital is man-made / not a gift of nature; durable; passive; mobile; subject to depreciation; result of past saving / prospective; supply is elastic; productive; temporary in nature. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five explained: man-made; durable; passive; mobile; depreciates; result of past savings; elastic supply; productive; temporary"
+      ],
+      "model_answer": "1. Capital is man-made. 2. It is a passive factor. 3. It is mobile. 4. It is subject to depreciation. 5. It is the result of past savings.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "(a) Define barter system of exchange. (b) List the last three stages in the evolution of money.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) When commodities are exchanged for commodities, it is called barter system of exchange (C to C). (b) Metallic, Paper, Bank (Plastic / Digital / UPI).",
+      "total_marks": 5,
+      "key_points": [
+        "Barter: direct exchange of goods for goods",
+        "Last three stages in order: metallic money, paper money, bank money (plastic/digital)"
+      ],
+      "model_answer": "(a) Barter is a system of exchange in which goods are exchanged directly for goods without the use of money. (b) The last three stages are metallic money, paper money and bank money (plastic and digital money).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Listed all stages, or only the first three, or in the wrong order"
+      ],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "7(ii)",
+      "question_text": "With the help of a graph, explain the contraction of demand.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Other things being constant, when the price rises the demand falls. Graph: movement upward along the same demand curve, price on Y-axis and quantity demanded on X-axis, with an arrow showing the direction of movement.",
+      "total_marks": 5,
+      "key_points": [
+        "Contraction: other things constant, quantity demanded falls due to a rise in price",
+        "Graph: upward movement along the same demand curve with arrow",
+        "Axes labelled"
+      ],
+      "model_answer": "Contraction of demand is the fall in quantity demanded due to a rise in the commodity's own price, other things being constant. On a graph with price on the Y-axis and quantity demanded on the X-axis, it is shown as an upward movement along the same demand curve, from a lower price and larger quantity to a higher price and smaller quantity, marked with an arrow.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failed to label the axes",
+        "Confused the slopes of demand and supply curves",
+        "Omitted arrows showing direction",
+        "Confused contraction with decrease in demand"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "(a) What is Public Expenditure? (b) State and explain any three merits of direct tax.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Expenditure incurred by public authorities to satisfy those common needs which people in their individual capacity are unable to fulfil efficiently. (b) Economical, equity, certainty, elasticity, civic consciousness, reduction in inequalities, productive to government.",
+      "total_marks": 5,
+      "key_points": [
+        "Public expenditure: spending by public authorities on common needs people cannot meet individually",
+        "Any three merits of direct tax explained: economical; equity; certainty; elasticity; civic consciousness; reduces inequality"
+      ],
+      "model_answer": "(a) Public expenditure is the expenditure incurred by public authorities to satisfy common needs which people cannot meet individually, such as defence and roads. (b) 1. Equity: based on ability to pay. 2. Certainty: the taxpayer knows how much to pay and when. 3. Economical: cost of collection is low.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused merits and features of direct taxes",
+        "Listed points without elaboration"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "How are consumers exploited by retailers?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Underweight and under measurement, duplicate articles, substandard quality, adulterated products, misleading and false information, lack of safety devices, artificial scarcity, poor after sales services.",
+      "total_marks": 5,
+      "key_points": [
+        "Any five ways explained: underweight; duplicate articles; substandard quality; adulteration; misleading information; lack of safety devices; artificial scarcity; poor after sales service"
+      ],
+      "model_answer": "Retailers exploit consumers through underweight and under measurement, selling duplicate articles, selling substandard or adulterated products, creating artificial scarcity to charge higher prices, and giving misleading information about products.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused ways of exploitation with reasons for exploitation",
+        "Listed points without explanation"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "9(i)(a)",
+      "question_text": "Define the term demand.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Demand is a quantity which a consumer is ready and able to purchase at a given price in a given time period.",
+      "total_marks": 2,
+      "key_points": [
+        "Quantity a consumer is willing and able to buy",
+        "at a given price",
+        "in a given time period"
+      ],
+      "model_answer": "Demand is the quantity of a commodity that a consumer is willing and able to buy at a given price during a given period of time.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Omitted the time period and the ability to pay"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "9(i)(b)",
+      "question_text": "Complete the following market demand schedule. (Table - Price of tomato ₹10: A 2, B 6, C 8, Market I. ___; Price ₹8: A 4, B II. ___, C 9, Market 20; Price ₹6: A 8, B 9, C III. ___, Market 27; all quantities in kg per month.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "I. 16 II. 7 III. 10",
+      "total_marks": 3,
+      "key_points": [
+        "I = 16",
+        "II = 7",
+        "III = 10"
+      ],
+      "model_answer": "I. 16 kg (2 + 6 + 8) II. 7 kg (20 - 4 - 9) III. 10 kg (27 - 8 - 9)",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "9(ii)",
+      "question_text": "With reference to elasticity of supply, name and draw a neatly labelled diagram to show: (a) Es < 1 (b) Es = 1",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Relatively inelastic supply (Es < 1): steep supply curve starting from the X-axis. (b) Unitary elastic supply (Es = 1): straight-line supply curve passing through the origin. Both with price on Y-axis and quantity supplied on X-axis.",
+      "total_marks": 5,
+      "key_points": [
+        "Es < 1 named relatively inelastic supply; drawn as a supply curve meeting the X-axis",
+        "Es = 1 named unitary elastic supply; drawn as a straight line through the origin",
+        "Axes labelled price and quantity supplied"
+      ],
+      "model_answer": "(a) Es < 1 is relatively inelastic supply, drawn as an upward sloping supply curve which, when extended, meets the X-axis. (b) Es = 1 is unitary elastic supply, drawn as a straight-line supply curve passing through the origin. In both, price is on the Y-axis and quantity supplied on the X-axis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failed to name the concept",
+        "Did not label the diagram"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Supply",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "10(i)",
+      "question_text": "(a) Define Public Debt. (b) Explain any three causes of growth of Public Expenditure.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) The money that the state owes to its citizens or nationals of other countries. Or: the money borrowed by the country. (b) Political, social and economic causes. (Explain any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Public debt: money borrowed by the government from its citizens or from abroad",
+        "Any three causes explained under political, social and economic heads (defence, democracy, population, social security, rising prices, development, urbanisation)"
+      ],
+      "model_answer": "(a) Public debt is the money borrowed by the government from its citizens or from other countries and institutions. (b) 1. Defence: rising expenditure on the armed forces. 2. Population growth: more spending on schools, hospitals and services. 3. Rise in prices: increases the cost of all government activities.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "10(ii)",
+      "question_text": "Read the extract and answer the questions that follow: As the economy experiences rapid growth, consumers' disposable incomes rise, and they become more willing to spend on goods and services. This leads to upward pressure on prices, particularly in sectors where supply is limited. (a) Identify the type of inflation described in the above extract. (b) Briefly explain the nature of the inflation mentioned in (a). (c) State and explain any three causes of the type of inflation discussed above.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Demand pull inflation. (b) When the total demand exceeds the total supply at current prices. (c) Increase in population; increase in disposable income / purchasing power; increase in money supply; increase in public spending; high rate of investment; increase in export demand; deficit financing; hoarding / black money; tax reduction. (Explain any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Demand pull inflation",
+        "Nature: aggregate demand exceeds total supply at current prices",
+        "Any three causes explained: population; disposable income; money supply; public spending; investment; exports; deficit financing; hoarding; tax cuts"
+      ],
+      "model_answer": "(a) Demand pull inflation. (b) It occurs when the total demand for goods and services exceeds the total supply available at current prices, pulling prices up. (c) 1. Increase in disposable income raises spending. 2. Increase in money supply gives people more to spend. 3. Increase in population raises demand faster than supply.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused cost-push and demand-pull inflation"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    }
+  ]
+}

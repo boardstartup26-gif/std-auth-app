@@ -3,7 +3,7 @@
 // SUBJECTS). "All subjects" opens the unfiltered picker.
 
 import Link from "next/link";
-import { ArrowRight, Atom, BookOpen, FlaskConical, Globe, Landmark, type LucideIcon, Sprout } from "lucide-react";
+import { ArrowRight, Atom, BookOpen, FlaskConical, Globe, IndianRupee, Landmark, type LucideIcon, Sprout } from "lucide-react";
 import { SUBJECTS } from "@/app/(protected)/evaluate/_lib/question";
 import { dashCard, dashHeading, dashLink, tileInteractive } from "../_lib/styles";
 
@@ -16,6 +16,7 @@ const ORDER: { subject: Subject; icon: LucideIcon }[] = [
   { subject: "Biology", icon: Sprout },
   { subject: "Geography", icon: Globe },
   { subject: "History & Civics", icon: Landmark },
+  { subject: "Economics", icon: IndianRupee },
   { subject: "English Literature", icon: BookOpen },
 ];
 
@@ -30,7 +31,7 @@ export function SubjectGrid() {
           All subjects <ArrowRight size={13} strokeWidth={2} aria-hidden />
         </Link>
       </div>
-      <ul className="mt-4 grid grid-cols-3 gap-3 sm:grid-cols-6">
+      <ul className="mt-4 grid grid-cols-4 gap-3 sm:grid-cols-7">
         {ORDER.map(({ subject, icon: Icon }) => (
           <li key={subject}>
             <Link

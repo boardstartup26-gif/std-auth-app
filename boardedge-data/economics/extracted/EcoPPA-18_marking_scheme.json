@@ -1,0 +1,868 @@
+{
+  "year": 2018,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Give two reasons as to why the division of labour is an advantage to the producer?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Increases the size of production / increases the quality of production / reduces cost of production / greater possibilities of inventions / saving of time and tools / benefits large scale production / avoids wastage of resources. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two advantages to the producer: increases size of production; increases quality of production; reduces cost of production; greater possibilities of inventions; saving of time and tools; benefits large scale production; avoids wastage of resources"
+      ],
+      "model_answer": "Division of labour benefits the producer because it reduces the cost of production, as each worker specialises and works faster, and it increases the size of production, making large scale production possible.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Increases the size of production",
+        "Increases the quality of production",
+        "Reduces cost of production",
+        "Greater possibilities of inventions",
+        "Saving of time and tools",
+        "Benefits large scale production",
+        "Avoids wastage of resources"
+      ],
+      "common_errors": [
+        "Wrote advantages of division of labour to consumers, workers and society instead of to the producer"
+      ],
+      "examiner_notes": "Tell the students to read the questions carefully and answer them according to their requirements.",
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Define the term consumer awareness.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Consumer's consciousness towards his / her rights or duties and protection is called consumer awareness. OR The knowledge of the consumer towards their rights and protection is called consumer awareness.",
+      "total_marks": 2,
+      "key_points": [
+        "Consciousness / knowledge of the consumer",
+        "about his / her rights, duties and protection"
+      ],
+      "model_answer": "Consumer awareness is the consciousness or knowledge of a consumer about his or her rights, duties and protection as a consumer.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Discussed various rights of consumers instead of defining consumer awareness",
+        "Did not write key words like rights and duties"
+      ],
+      "examiner_notes": "Instruct the students to emphasize on the keywords when writing definitions.",
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "Why do small farmers suffer during inflation?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) As a major portion of their produce is not marketed but instead kept for self consumption. (ii) They have to purchase inputs like seeds, fertilizers, insecticides etc. at higher prices during inflation.",
+      "total_marks": 2,
+      "key_points": [
+        "A major portion of their produce is kept for self consumption, not marketed, so they gain little from higher prices",
+        "They have to buy inputs like seeds, fertilizers and insecticides at higher prices"
+      ],
+      "model_answer": "Small farmers suffer during inflation because most of their produce is kept for self consumption and not sold, so they do not benefit from higher prices. At the same time they have to buy inputs like seeds, fertilizers and insecticides at higher prices.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the definition of inflation instead of its impact on small farmers"
+      ],
+      "examiner_notes": "While teaching inflation, bifurcate the topic of impact of inflation through examples of big and small farmers.",
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "1(d)",
+      "question_text": "Which are the two sources of public revenue?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Tax - direct or indirect, and Non tax - administrative & commercial. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Tax revenue (direct or indirect taxes)",
+        "Non-tax revenue (administrative and commercial revenue)"
+      ],
+      "model_answer": "The two sources of public revenue are tax revenue, which comes from direct and indirect taxes, and non-tax revenue, which comes from administrative and commercial sources.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Tax revenue",
+        "Non-tax revenue"
+      ],
+      "common_errors": [],
+      "examiner_notes": "Give examples of the various sources of revenues of the government.",
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(e)",
+      "question_text": "Define the term labour as a factor of production.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Labour consists of all human efforts of body or mind which are undertaken in the expectation of reward.",
+      "total_marks": 2,
+      "key_points": [
+        "All human efforts of body or mind",
+        "undertaken in the expectation of reward"
+      ],
+      "model_answer": "Labour consists of all human efforts of body or mind which are undertaken in the expectation of a reward.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the keyword 'reward' in the definition"
+      ],
+      "examiner_notes": "Lay emphasis on key words of the definitions.",
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Explain any one factor that affects the supply of a commodity.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Price of the commodity / price of other commodities / price of related goods / goals of the firms / prices of factors of production / state of technology / number of producers / future expectation regarding price / taxes and subsidies / natural factors / means of transport and communication. (Head point with explanation)",
+      "total_marks": 2,
+      "key_points": [
+        "Names one factor of supply (heading)",
+        "Explains how that factor affects supply"
+      ],
+      "model_answer": "Price of the commodity: other things remaining the same, when the price of a commodity rises, producers are willing to supply more of it because it is more profitable, and when the price falls they supply less.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Price of the commodity",
+        "Price of related goods",
+        "Goals of the firm",
+        "Prices of factors of production",
+        "State of technology",
+        "Number of producers",
+        "Future expectation regarding price",
+        "Taxes and subsidies",
+        "Natural factors",
+        "Means of transport and communication"
+      ],
+      "common_errors": [
+        "Explained a factor affecting demand instead of supply",
+        "Wrote the heading but did not explain it"
+      ],
+      "examiner_notes": "Lay stress that every heading should be accompanied with its explanation.",
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "What do you understand by the term 'near money'?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Near money refers to highly liquid assets which can be easily converted into cash at a short notice.",
+      "total_marks": 2,
+      "key_points": [
+        "Highly liquid assets",
+        "which can be easily converted into cash at short notice"
+      ],
+      "model_answer": "Near money refers to highly liquid assets, such as bills of exchange or time deposits, which can be easily converted into cash at a short notice.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Very few candidates attempted this question"
+      ],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "A list of goods are given below. State whether it is fixed capital or circulating capital. (i) Machines (ii) Raw material (iii) Fuel (iv) Office furniture",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(i) Fixed capital (ii) Circulating capital (iii) Circulating capital (iv) Fixed capital",
+      "total_marks": 2,
+      "key_points": [
+        "Machines - fixed capital",
+        "Raw material - circulating capital",
+        "Fuel - circulating capital",
+        "Office furniture - fixed capital"
+      ],
+      "model_answer": "(i) Machines - Fixed capital (ii) Raw material - Circulating capital (iii) Fuel - Circulating capital (iv) Office furniture - Fixed capital",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "2(d)",
+      "question_text": "With the help of an example explain the term productive debt.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Productive debts are those debts which are used by the government for those projects which yield income. Example: construction of railways, irrigation, power projects, establishment of heavy industries such as iron, steel, cement, fertilizer. (Any one example)",
+      "total_marks": 2,
+      "key_points": [
+        "Debt used by the government for projects which yield income",
+        "One example such as railways, irrigation, power projects or heavy industries"
+      ],
+      "model_answer": "Productive debt is a loan raised by the government for projects that yield income, so the debt can be repaid from that income. For example, a loan taken to build a power project or railways.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Explained public expenditure instead of productive debt",
+        "Could not give an example of productive debt"
+      ],
+      "examiner_notes": "Make a flow chart to explain the difference between public expenditure and productive debt, with relevant examples.",
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "2(e)",
+      "question_text": "Explain any two characteristics of capital.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Capital is man-made / durable / a passive factor of production / a mobile factor / supply of capital is elastic / subject to depreciation / the result of past saving. (Header point with explanation)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two characteristics with explanation: man-made; durable; passive; mobile; supply is elastic; subject to depreciation; result of past savings"
+      ],
+      "model_answer": "Capital is man-made: it is produced by human effort and is not a free gift of nature. Capital is subject to depreciation: machines and tools wear out with use over time and their value falls.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Capital is man-made",
+        "Capital is durable",
+        "Capital is a passive factor",
+        "Capital is mobile",
+        "Supply of capital is elastic",
+        "Capital is subject to depreciation",
+        "Capital is the result of past savings"
+      ],
+      "common_errors": [
+        "Wrote the functions of capital instead of its characteristics"
+      ],
+      "examiner_notes": "Explain the meaning of the terms functions and characteristics so that students answer according to the demands of the question.",
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "How is land different from labour?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Land - passive, immobile, inelastic, perishable, can be separated from the owner. Labour - active, mobile, relatively inelastic, permanent, cannot be separated. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two matched differences: land is passive / labour is active; land is immobile / labour is mobile; land's supply is fixed / labour's is relatively inelastic; land can be separated from its owner / labour cannot be separated from the labourer"
+      ],
+      "model_answer": "Land is a passive factor of production, while labour is an active factor. Land is immobile, whereas labour is mobile and can move from place to place.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the features of land in the column for labour and vice-versa"
+      ],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Draw a diagram showing a perfectly elastic demand curve.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Diagram: Price on Y-axis, Quantity demanded on X-axis, demand curve dd drawn as a horizontal straight line parallel to the X-axis. Ed = infinity.",
+      "total_marks": 2,
+      "key_points": [
+        "Axes labelled: price on Y-axis and quantity demanded on X-axis",
+        "Demand curve is a horizontal line parallel to the X-axis, labelled Ed = infinity"
+      ],
+      "model_answer": "A perfectly elastic demand curve is a horizontal straight line parallel to the X-axis (quantity demanded), with price on the Y-axis. Its elasticity is Ed = infinity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the symbol for the degree of elasticity"
+      ],
+      "examiner_notes": "Train the students to name the axes of the graphs and give sufficient practice to draw graphs with complete detailing.",
+      "topic": "Elasticity of Demand",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "With help of an example explain the term complementary goods.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Complementary goods are those goods which are jointly demanded to satisfy a particular want. Example: car and petrol, pen and ink, glass and water. (Any one example)",
+      "total_marks": 2,
+      "key_points": [
+        "Goods which are jointly demanded to satisfy a particular want",
+        "One example such as car and petrol or pen and ink"
+      ],
+      "model_answer": "Complementary goods are goods that are jointly demanded to satisfy a particular want. For example, a car and petrol are demanded together.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "3(d)",
+      "question_text": "Name any two sources of external debt for India.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "World Bank, IMF, IDA, USA, OPEC, Russian Federation.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two of: World Bank, IMF, IDA, USA, OPEC, Russian Federation"
+      ],
+      "model_answer": "Two sources of external debt for India are the World Bank and the International Monetary Fund (IMF).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "World Bank",
+        "IMF",
+        "IDA",
+        "USA",
+        "OPEC",
+        "Russian Federation"
+      ],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "3(e)",
+      "question_text": "Differentiate between creeping and running inflation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Creeping inflation: (i) price rises around 2 percent annually (ii) essential for the economy because it keeps it away from stagnation. Running inflation: (i) price rises around 10 to 20 percent per annum (ii) the economic position becomes worse as it affects the poor and middle class adversely.",
+      "total_marks": 2,
+      "key_points": [
+        "Creeping inflation: prices rise slowly (about 2% per annum) and it keeps the economy away from stagnation",
+        "Running inflation: prices rise about 10-20% per annum and it harms the economy, especially the poor and middle class"
+      ],
+      "model_answer": "In creeping inflation prices rise slowly, about 2 percent per annum, and it is good for the economy as it keeps it away from stagnation. In running inflation prices rise about 10 to 20 percent per annum and the economic position becomes worse, hurting the poor and middle class.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not give the correct percentage range for both types of inflation"
+      ],
+      "examiner_notes": "Make the students familiar with the different percentage ranges of each type of inflation.",
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Mention two ways by which efficiency of labour can be improved.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Payment of fair and prompt wages / bonus must be given / working conditions should improve / social security measures such as insurance, provident fund, pension / hours of work not more than 8 hours / technical education facilities should be expanded.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two ways: fair and prompt wages; bonus; better working conditions; social security measures; reasonable working hours; expansion of technical education"
+      ],
+      "model_answer": "Efficiency of labour can be improved by paying fair wages promptly and by improving working conditions at the workplace.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Fair and prompt wages",
+        "Bonus",
+        "Better working conditions",
+        "Social security measures",
+        "Hours of work not more than 8 hours",
+        "Expansion of technical education"
+      ],
+      "common_errors": [
+        "Did not write the captions",
+        "Wrote the reasons for low efficiency of labour"
+      ],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "What does the term 'nationalisation of banks' mean?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "By nationalisation we mean the taking over by the government of the ownership and management of the commercial banks.",
+      "total_marks": 2,
+      "key_points": [
+        "Taking over by the government",
+        "of the ownership and management of commercial banks"
+      ],
+      "model_answer": "Nationalisation of banks means the taking over of the ownership and management of commercial banks by the government.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write keywords like 'taking over by the government'"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "Why is India considered to be in a virtual debt trap?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "As India is in a situation where the government has to borrow for the purpose of meeting interest obligations on old debt.",
+      "total_marks": 2,
+      "key_points": [
+        "The government has to borrow",
+        "to pay interest on old debt"
+      ],
+      "model_answer": "India is considered to be in a virtual debt trap because the government has to borrow fresh loans just to meet the interest payments on its old debt.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not well answered by most candidates"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "4(d)",
+      "question_text": "Give any two reasons for giving the monopoly right of note issue to the Central Bank.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "It brings uniformity in note circulation / gives distinctive prestige to the note issue so people develop faith in the currency / government can supervise and control the supply of money / central bank can control the creation of credit by commercial banks. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: uniformity in note circulation; prestige and public faith in the currency; government supervision and control of money supply; control over credit creation by commercial banks"
+      ],
+      "model_answer": "The Central Bank is given the monopoly of note issue because it brings uniformity in note circulation, and because it allows the government to supervise and control the supply of money in the economy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Uniformity in note circulation",
+        "People develop faith in the currency",
+        "Control over supply of money",
+        "Control over credit creation by commercial banks"
+      ],
+      "common_errors": [
+        "Wrote other functions of the Central Bank instead of reasons for the monopoly of note issue"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "4(e)",
+      "question_text": "Mention any two duties of a consumer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Look at the quality of the product / look for warranty or guarantee card / check for ISI or BIS, Agmark / ask for cash memo / be aware of their rights / form consumer awareness organisations / know how to proceed if cheated. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two duties: check quality; ask for warranty/guarantee card; check ISI/BIS/Agmark marks; ask for cash memo; be aware of rights; form consumer organisations; know how to complain if cheated"
+      ],
+      "model_answer": "A consumer should always ask for a cash memo when buying goods, and should check for quality marks such as ISI or Agmark on the product.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Check quality of the product",
+        "Ask for warranty or guarantee card",
+        "Check for ISI / BIS / Agmark",
+        "Ask for cash memo",
+        "Be aware of rights",
+        "Form consumer organisations",
+        "Know how to proceed if cheated"
+      ],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Give any five differences between product and process based division of labour.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Product: entire production of a good done individually or by members of a family / worker specialises in production of a commodity / simple / labour intensive / found in small enterprises / e.g. Indian farmer doing all farm activities with family. Process: production split into different operations, each worker does one or a few / worker specialises in a particular process / complex / capital intensive / found in large enterprises / e.g. modern garment factory.",
+      "total_marks": 5,
+      "key_points": [
+        "Meaning: whole product by one worker or family vs production split into operations",
+        "Specialisation: in a commodity vs in a particular process",
+        "Nature: simple vs complex",
+        "Technique: labour intensive vs capital intensive",
+        "Scale: small enterprises vs large enterprises",
+        "Example: farmer with family vs modern garment factory"
+      ],
+      "model_answer": "1. In product based division of labour the whole product is made by one worker or family; in process based division the production is split into operations and each worker does one or a few. 2. In the first the worker specialises in a commodity; in the second in a particular process. 3. Product based is simple; process based is complex. 4. Product based is labour intensive; process based is capital intensive. 5. Product based is found in small enterprises, such as a farmer working with his family; process based is found in large enterprises, such as a modern garment factory.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not write five differences"
+      ],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain any five rights of the consumers as accepted by the Indian law.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Right to safety / right to be informed / right to choose / right to be heard / right to seek redressal / right to consumer education. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five rights with explanation: right to safety; right to be informed; right to choose; right to be heard; right to seek redressal; right to consumer education"
+      ],
+      "model_answer": "1. Right to safety: protection against goods that are hazardous to life. 2. Right to be informed: to know the quality, quantity, purity, standard and price of goods. 3. Right to choose: access to a variety of goods at competitive prices. 4. Right to be heard: consumers' interests will receive due consideration at appropriate forums. 5. Right to seek redressal: to get compensation against unfair trade practices or exploitation.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the captions without their explanation"
+      ],
+      "examiner_notes": "Lay stress that every heading should be accompanied with its explanation and relevant examples.",
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "How do the manufacturers and traders exploit the consumers?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Under weight and under measurement / substandard quality / duplicate articles / high prices / lack of safety devices / artificial scarcity / poor after sales services / adulteration and impurity / rude behaviour and undue conditions. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five ways explained: underweight and under measurement; substandard quality; duplicate articles; high prices; lack of safety devices; artificial scarcity; poor after sales service; adulteration; rude behaviour and undue conditions"
+      ],
+      "model_answer": "1. Underweight and under measurement: goods sold are less than the quantity paid for. 2. Substandard quality: defective or poor quality goods are sold. 3. Adulteration: cheap substances are mixed in food. 4. Artificial scarcity: goods are hoarded to sell later at higher prices. 5. Poor after sales service: promised service is not provided after the sale.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote why consumers are exploited instead of how they are exploited"
+      ],
+      "examiner_notes": "Explain the concepts of why and how consumers are exploited by giving real life examples.",
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Explain the role of an entrepreneur in the economic development of the country.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "National income increases / mobilises idle savings through the issue of shares and debentures / generates employment opportunities / sets up industries in backward areas to avail concessions / reduces dependence on foreign countries.",
+      "total_marks": 5,
+      "key_points": [
+        "Increases national income",
+        "Mobilises idle savings through shares and debentures",
+        "Generates employment opportunities",
+        "Sets up industries in backward areas (balanced regional development)",
+        "Reduces dependence on foreign countries"
+      ],
+      "model_answer": "An entrepreneur helps economic development by increasing production and national income, mobilising idle savings through the issue of shares and debentures, generating employment opportunities, setting up industries in backward areas which leads to balanced regional development, and reducing the country's dependence on foreign countries by producing goods at home.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Explained the functions of an entrepreneur",
+        "Wrote the qualities of an entrepreneur"
+      ],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "How is a commercial bank different from a central bank?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Central bank: apex institution / objective is social welfare / government owned / monopoly of note issue / banker to government and commercial banks / no direct public dealing / only one. Commercial bank: works under guidelines of central bank / objective is profit / private or government owned / no right of note issue / banker of the general public / direct public dealing / many banks with many branches. (Any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Status: apex institution vs works under central bank guidelines",
+        "Objective: social welfare vs profit",
+        "Ownership: government owned vs private or government",
+        "Note issue: monopoly vs none",
+        "Banker: to government and banks vs to the public",
+        "Public dealing: none vs direct",
+        "Number: only one vs many with branches"
+      ],
+      "model_answer": "1. The central bank is the apex institution of the banking system, while a commercial bank works under its guidelines. 2. The central bank aims at social welfare; a commercial bank aims at profit. 3. The central bank is government owned; a commercial bank may be private or government owned. 4. The central bank has the monopoly of note issue; a commercial bank has no such right. 5. The central bank is banker to the government and commercial banks with no direct public dealing; a commercial bank is banker to the general public.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the features of a commercial bank in the column for central bank and vice-versa"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "What are the merits of an indirect tax?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Convenient / wide coverage / equity / elastic / no evasion / check on consumption of harmful commodities / protection against foreign competition. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five merits explained: convenient; wide coverage; equity; elastic; no evasion; check on consumption of harmful goods; protection against foreign competition"
+      ],
+      "model_answer": "1. Convenient: paid in small amounts when goods are bought. 2. Wide coverage: everyone who buys taxed goods pays it. 3. Elastic: revenue rises as consumption rises. 4. Difficult to evade: it is included in the price. 5. Checks consumption of harmful goods: heavy taxes on liquor and tobacco discourage their use.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the demerits of indirect tax instead of its merits"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "With the help of a graph explain relatively inelastic demand for a commodity.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When the percentage change in demand is less than the percentage change in price; Ed < 1. Graph: Price on Y-axis, Quantity demanded on X-axis, a steep downward sloping demand curve dd showing a large change in price causing a smaller change in quantity demanded.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: percentage change in quantity demanded is less than percentage change in price",
+        "Ed < 1",
+        "Graph with axes labelled (price on Y-axis, quantity demanded on X-axis)",
+        "Steep demand curve showing a large price change with a smaller change in quantity"
+      ],
+      "model_answer": "Demand is relatively inelastic when the percentage change in quantity demanded is less than the percentage change in price, so Ed < 1. On a graph with price on the Y-axis and quantity demanded on the X-axis, the demand curve is steep: a large fall in price leads to only a small increase in quantity demanded. Essential goods like salt have relatively inelastic demand.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the degree and symbol of elasticity",
+        "Did not name the axes or write what each axis measured"
+      ],
+      "examiner_notes": "Train the students to name the axes of the graphs and give sufficient practice in drawing graphs with complete detailing.",
+      "topic": "Elasticity of Demand",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Discuss any five advantages of having a bank account.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Develops the habit of saving / payments through cheques are easier and safe / bills of exchange can be discounted / overdraft facility / payment of insurance premium / money is safe / transactions can be produced as evidence in case of dispute / customers earn interest. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five advantages: habit of saving; safe and easy payment through cheques; discounting bills of exchange; overdraft facility; payment of insurance premiums; safety of money; evidence in case of dispute; earning interest"
+      ],
+      "model_answer": "1. It develops the habit of saving. 2. Money kept in a bank is safe. 3. Payments can be made easily and safely through cheques. 4. Customers earn interest on their deposits. 5. Transactions through a bank account can be produced as evidence in case of a dispute.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the functions of a bank instead of the advantages of a bank account"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Explain any five characteristics of tax.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Compulsory payment: refusal to pay is subject to legal action. (ii) General welfare: tax money is spent for common benefit. (iii) No quid pro quo: no proportionate return to the taxpayer. (iv) Payable regularly and periodically. (v) A legal collection.",
+      "total_marks": 5,
+      "key_points": [
+        "Compulsory payment",
+        "Spent for general welfare / common benefit",
+        "No quid pro quo (no direct return)",
+        "Payable regularly and periodically",
+        "Legal collection"
+      ],
+      "model_answer": "1. A tax is a compulsory payment; refusal leads to legal action. 2. It is spent for the general welfare of the people. 3. There is no quid pro quo: the taxpayer gets no direct proportionate return. 4. It is payable regularly and periodically. 5. It is a legal collection imposed by law.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Explained the canons of taxation instead of the characteristics of tax"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "(i) What is meant by the term demand pull inflation? (ii) Discuss any three causes of demand pull inflation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) A situation in which prices rise because the demand for goods and services exceeds the total supply available at current prices. (ii) Increase in money supply / increase in disposable income / increase in population (explained briefly).",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: prices rise because aggregate demand exceeds total supply at current prices",
+        "Cause: increase in money supply",
+        "Cause: increase in disposable income",
+        "Cause: increase in population"
+      ],
+      "model_answer": "(i) Demand pull inflation is a situation in which prices rise because the demand for goods and services exceeds the total supply available at current prices. (ii) Causes: 1. Increase in money supply gives people more money to spend. 2. Increase in disposable income raises demand for goods. 3. Increase in population raises the demand for goods and services faster than supply.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write the keywords needed for the definition",
+        "Wrote the causes of cost push inflation instead of demand pull inflation"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "(i) Define the term demand. (ii) Explain any three factors that affect the demand for a commodity. (iii) Why are articles of distinction or the Veblen effect an exception to the law of demand?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(i) Demand means the quantity of a commodity or service that a consumer is willing to buy at a given price and at a given time. (ii) Price of the commodity / price of related goods / income of the consumer / tastes and preferences / consumer credit / population / season and weather / government policy / state of business / distribution of income (any three). (iii) Such goods are purchased because their price is high; a fall in their price may lead the rich to buy less because their desire for distinction or status symbol is not satisfied.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition of demand with price and time",
+        "Any three factors affecting demand explained",
+        "Veblen goods are bought for their high price / status; a fall in price leads to less being bought"
+      ],
+      "model_answer": "(i) Demand is the quantity of a commodity that a consumer is willing and able to buy at a given price and at a given time. (ii) Income of the consumer: a rise in income raises demand for normal goods. Price of related goods: a rise in the price of a substitute raises demand for the commodity. Tastes and preferences: a change in fashion raises demand. (iii) Articles of distinction like diamonds are bought because they are costly and give status; if their price falls, the rich may buy less as they no longer signal distinction, which goes against the law of demand.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not write key terms like time and price in the definition"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Discuss any five reasons for growth of public expenditure in India.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Political causes: growth of democracy, increase in defence expenditure. Social causes: population growth, social services, social security measures. Economic causes: rise in prices, growth of public sector, economic assistance to private sector, development programmes, growing trend of urbanisation. (Any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five reasons: growth of democracy; increase in defence expenditure; population growth; social services; social security measures; rise in prices; growth of public sector; assistance to private sector; development programmes; urbanisation"
+      ],
+      "model_answer": "1. Increase in defence expenditure to protect the country. 2. Growth of population requires more public services. 3. Social security measures such as pensions and welfare schemes. 4. Rise in prices raises the cost of government activities. 5. Development programmes and the growing trend of urbanisation need more infrastructure.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Expenditure",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    }
+  ]
+}

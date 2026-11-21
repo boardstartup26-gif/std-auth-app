@@ -18,6 +18,7 @@ import {
   ChevronDown,
   FlaskConical,
   Globe2,
+  IndianRupee,
   Landmark,
   Leaf,
   type LucideIcon,
@@ -36,6 +37,7 @@ const SUBJECT_ICONS: Record<string, LucideIcon> = {
   Biology: Leaf,
   Geography: Globe2,
   "History & Civics": Landmark,
+  Economics: IndianRupee,
   "English Literature": BookOpen,
 };
 

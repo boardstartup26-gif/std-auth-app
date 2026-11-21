@@ -1,0 +1,1012 @@
+{
+  "year": 2025,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "In economics, what does the capital earn as income? (a) Wages (b) Rent (c) Profit (d) Interest",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Wages",
+        "(b) Rent",
+        "(c) Profit",
+        "(d) Interest"
+      ],
+      "correct_answer": "(d) Interest",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Interest",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Interest",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Associated income from capital with 'money' rather than recognising interest"
+      ],
+      "examiner_notes": "Explain how different factors of production generate income, with real-life examples.",
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "Which of the following are examples of substitute goods? (a) Coke and Coffee (b) Pencil and Eraser (c) Tea and Sugar (d) Apple iPhones and Samsung Smart Phones",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Coke and Coffee",
+        "(b) Pencil and Eraser",
+        "(c) Tea and Sugar",
+        "(d) Apple iPhones and Samsung Smart Phones"
+      ],
+      "correct_answer": "(d) Apple iPhones and Samsung Smart Phones",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Apple iPhones and Samsung Smart Phones",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Apple iPhones and Samsung Smart Phones",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused substitute goods with complementary goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "Assertion (A): Mr. Gupta earns a fixed income every month, but he tends to get adversely affected during inflation. Reason (R): The prices of goods, services and the cost of living, does not rise in the same proportion as income, during inflation. (a) Both (A) and (R) are true and (R) is the correct explanation of (A). (b) Both (A) and (R) are true but (R) is not the correct explanation of (A). (c) Both (A) and (R) are false. (d) (A) is false and (R) is true.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(b) Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(c) Both (A) and (R) are false.",
+        "(d) (A) is false and (R) is true."
+      ],
+      "correct_answer": "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Struggled to connect the situation with the underlying concept"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "Amit buys 1 kg of mangoes at ₹120 per kg. Other things remaining constant, when the price of mangoes falls to ₹90 per kg, he buys 2 kg of mangoes. Amit's choice in the given situation shows which concept? (a) Demand schedule (b) Market demand (c) Contraction of demand (d) Expansion of demand",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Demand schedule",
+        "(b) Market demand",
+        "(c) Contraction of demand",
+        "(d) Expansion of demand"
+      ],
+      "correct_answer": "(d) Expansion of demand",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Expansion of demand",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Expansion of demand",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify the concept of expansion of demand"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "The rate of tax, which is uniform for all the taxpayers, is termed as: (a) Progressive (b) Proportional (c) Regressive (d) Direct",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Progressive",
+        "(b) Proportional",
+        "(c) Regressive",
+        "(d) Direct"
+      ],
+      "correct_answer": "(b) Proportional",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Proportional",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Proportional",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused proportional tax with other tax systems"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "Which factor will be responsible for 'product diversification' through innovation? (a) Labour (b) Entrepreneur (c) Capital (d) Landowner",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Labour",
+        "(b) Entrepreneur",
+        "(c) Capital",
+        "(d) Landowner"
+      ],
+      "correct_answer": "(b) Entrepreneur",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Entrepreneur",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Entrepreneur",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused with the market chapter concept of product differentiation"
+      ],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "Statement 1: The primary function of money is to act as a 'store of value'. Statement 2: Money helps in monetary expression of the market value of the commodity. (a) Both Statement 1 and Statement 2 are true. (b) Both Statement 1 and Statement 2 are false. (c) Statement 1 is true and Statement 2 is false. (d) Statement 1 is false and Statement 2 is true.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Both Statement 1 and Statement 2 are true.",
+        "(b) Both Statement 1 and Statement 2 are false.",
+        "(c) Statement 1 is true and Statement 2 is false.",
+        "(d) Statement 1 is false and Statement 2 is true."
+      ],
+      "correct_answer": "(d) Statement 1 is false and Statement 2 is true.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Statement 1 is false and Statement 2 is true.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Statement 1 is false and Statement 2 is true.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not thorough with the functions of money"
+      ],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "BIS stands for: (a) Bureau of Indian States (b) Bureau of Indian Standards (c) Bureau of Indian System (d) Bureau of Indian Solutions",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Bureau of Indian States",
+        "(b) Bureau of Indian Standards",
+        "(c) Bureau of Indian System",
+        "(d) Bureau of Indian Solutions"
+      ],
+      "correct_answer": "(b) Bureau of Indian Standards",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Bureau of Indian Standards",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Bureau of Indian Standards",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "Study the table and examine the relation between price and quantity supplied (table: Price ₹10 - 5 kg, ₹12 - 7 kg, ₹14 - 9 kg): (a) Positive (b) Negative (c) Indirect (d) Proportional",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Positive",
+        "(b) Negative",
+        "(c) Indirect",
+        "(d) Proportional"
+      ],
+      "correct_answer": "(a) Positive",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Positive",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Positive",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused the concepts of demand and supply"
+      ],
+      "examiner_notes": null,
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "Which market structure has the least number of sellers? (a) Oligopoly (b) Monopolistic competition (c) Monopsony (d) Perfect competition",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Oligopoly",
+        "(b) Monopolistic competition",
+        "(c) Monopsony",
+        "(d) Perfect competition"
+      ],
+      "correct_answer": "(a) Oligopoly",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Oligopoly",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Oligopoly",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not pay attention to the key term 'least'"
+      ],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Direct taxes are regressive in nature. (a) True (b) False",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) True",
+        "(b) False"
+      ],
+      "correct_answer": "(b) False",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) False",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) False",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "Savings → Mobilisation of savings → Investment. The above image depicts stages of ___________. (a) Capital formation (b) Capital returns (c) Capital movement (d) Investment of savings",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Capital formation",
+        "(b) Capital returns",
+        "(c) Capital movement",
+        "(d) Investment of savings"
+      ],
+      "correct_answer": "(a) Capital formation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Capital formation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Capital formation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "Radhika cannot postpone her demand for woollen clothes during winter season but at the same time can postpone her demand for a car. This is because her demand for woollen clothes is: (a) Elastic (b) Inelastic (c) Highly Elastic (d) Unit Elastic",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Elastic",
+        "(b) Inelastic",
+        "(c) Highly Elastic",
+        "(d) Unit Elastic"
+      ],
+      "correct_answer": "(b) Inelastic",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Inelastic",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Inelastic",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Unclear with the concept and found it challenging to identify the correct option"
+      ],
+      "examiner_notes": null,
+      "topic": "Elasticity of Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Study the relationship in the first pair of words and complete the second pair. 1. Revenue earned by the government through railway fares : Commercial revenue 2. Revenue earned through Special Assessment : ___________ (a) Direct tax (b) Indirect tax (c) Administrative (d) Commercial",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Direct tax",
+        "(b) Indirect tax",
+        "(c) Administrative",
+        "(d) Commercial"
+      ],
+      "correct_answer": "(c) Administrative",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Administrative",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Administrative",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused commercial revenue with administrative revenue"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "Efficiency of labour shows the productive capacity of a labourer, whereas division of labour shows __________ of labour. (a) Specialisation (b) Utilisation (c) Quantity (d) Perishability",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Specialisation",
+        "(b) Utilisation",
+        "(c) Quantity",
+        "(d) Perishability"
+      ],
+      "correct_answer": "(a) Specialisation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Specialisation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Specialisation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "1(xvi)",
+      "question_text": "Identify the type of debt raised by the government for organising relief camps during natural disasters. (a) Productive (b) Unproductive (c) Gross (d) Funded",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Productive",
+        "(b) Unproductive",
+        "(c) Gross",
+        "(d) Funded"
+      ],
+      "correct_answer": "(b) Unproductive",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Unproductive",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Unproductive",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Debt",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "2(i)",
+      "question_text": "Explain capital as a factor of production.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Capital is defined as produced means of production / money invested in the firm / productive part of a firm's wealth / man-made means of production.",
+      "total_marks": 2,
+      "key_points": [
+        "Capital is a produced (man-made) means of production",
+        "the part of wealth used for further production"
+      ],
+      "model_answer": "Capital is a man-made, produced means of production; it is that part of wealth, such as machines, tools and buildings, which is used for further production.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missed out the key terms"
+      ],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "2(ii)",
+      "question_text": "There is a positive correlation between entrepreneurship and economic development. Justify the statement with two suitable reasons.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Increase in employment opportunities, increase in capital formation, increase in production, balanced regional development, reduces imports, export promotion. (Explain any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons explained: creates employment; increases capital formation; increases production; balanced regional development; reduces imports; promotes exports"
+      ],
+      "model_answer": "Entrepreneurs set up new businesses which create employment opportunities and raise incomes. They also mobilise savings into investment, which increases capital formation and production in the economy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Entrepreneur",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "2(iii)",
+      "question_text": "What is extension of supply?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Rise in supply of a commodity due to rise in its own price, keeping other factors unchanged. Or: other things being constant, when price rises the supply also increases.",
+      "total_marks": 2,
+      "key_points": [
+        "Rise in quantity supplied due to a rise in the commodity's own price",
+        "other factors remaining unchanged"
+      ],
+      "model_answer": "Extension of supply is the rise in the quantity supplied of a commodity due to a rise in its own price, other factors remaining unchanged.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Supply",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "2(iv)",
+      "question_text": "Identify and explain the type of division of labour shown in the above images. (Refer to the two images: 'Cotton Textile' and 'Sugarcane Industry in India'.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Geographical or territorial division of labour: due to some reasons certain goods are produced in a particular place or state. Or: Image 1 - process based or complex division of labour; Image 2 - product based or simple division of labour.",
+      "total_marks": 2,
+      "key_points": [
+        "Identifies territorial (geographical) division of labour",
+        "Explains that particular goods are produced in particular regions due to local advantages"
+      ],
+      "model_answer": "The images show territorial or geographical division of labour, in which certain goods are produced in particular places because of local advantages, such as cotton textiles in one region and sugarcane-based industry in another.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Geographical division of labour",
+        "Territorial division of labour",
+        "Image 1: process based / complex division of labour; Image 2: product based / simple division of labour"
+      ],
+      "common_errors": [
+        "Misinterpreted the visual cues"
+      ],
+      "examiner_notes": "Encourage students to read visual clues by asking what activity is happening and whether it is one occupation or different steps of one process.",
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "How was Standard of Deferred payment a problem for Barter System of Exchange?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "1. It may create controversy regarding the quality of goods. 2. Repayment issues / future payment cannot take place smoothly / credit transactions. 3. Both parties run risks as value may differ.",
+      "total_marks": 2,
+      "key_points": [
+        "Future (credit) payments were difficult under barter",
+        "Disputes over the quality or value of goods to be repaid / both parties run risks"
+      ],
+      "model_answer": "Under barter, future payments were difficult because loans had to be repaid in goods, which led to disputes over the quality of goods to be returned, and both parties ran the risk that the value of the goods would change.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not state 'future payments' as the key term"
+      ],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "The following image shows, 'Tolls as a source of revenue for State as well as Central government.' Identify and explain the type of revenue mentioned in the above statement. (Refer to the image of a National Highways Authority of India toll plaza.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Commercial revenue: the revenue earned by a government enterprise by selling goods and services. / Non-tax revenue.",
+      "total_marks": 2,
+      "key_points": [
+        "Commercial revenue (non-tax revenue)",
+        "Revenue earned by government enterprises by selling goods and services"
+      ],
+      "model_answer": "Tolls are commercial revenue, a form of non-tax revenue: revenue earned by a government enterprise by selling goods and services, here the use of highways.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Misinterpreted the visual cues"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "State one difference between Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR).",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "CRR: every commercial bank is supposed to maintain a minimum percent of total deposits with the Central Bank. SLR: the amount of total deposits maintained in cash (liquid assets) by the commercial banks themselves.",
+      "total_marks": 2,
+      "key_points": [
+        "CRR: minimum percentage of deposits kept with the Central Bank",
+        "SLR: percentage of deposits kept with the commercial bank itself in liquid form"
+      ],
+      "model_answer": "Under CRR, commercial banks must keep a minimum percentage of their total deposits with the Central Bank, whereas under SLR they must keep a percentage of their deposits with themselves in the form of cash and other liquid assets.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused between the two terms"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "Explain the term revenue expenditure.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Revenue expenditures are expenditures incurred on civil administration and defence and are recurring in nature; they do not create assets; non-development / do not reduce liabilities.",
+      "total_marks": 2,
+      "key_points": [
+        "Expenditure on normal running of government such as civil administration and defence, recurring in nature",
+        "Does not create assets or reduce liabilities"
+      ],
+      "model_answer": "Revenue expenditure is the recurring expenditure of the government on its normal functioning, such as civil administration and defence, which does not create any assets or reduce liabilities.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused revenue expenditure with capital expenditure"
+      ],
+      "examiner_notes": null,
+      "topic": "Public Expenditure",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "'Mobile phone and laptop are examples of composite demand.' Justify the statement with a suitable reason.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "They can be used for multiple purposes or have alternative uses.",
+      "total_marks": 2,
+      "key_points": [
+        "Composite demand: goods with multiple / alternative uses",
+        "Mobile phones and laptops are used for several purposes"
+      ],
+      "model_answer": "Composite demand is the demand for a good that has several uses. Mobile phones and laptops are demanded for many purposes such as communication, work, study and entertainment, so they are examples of composite demand.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused composite goods with complementary goods"
+      ],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "Why is capital considered to be 'result of past savings'?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "As it can be produced and increased in stock only after saving money and reinvesting / any form of crop or seed saved creates capital.",
+      "total_marks": 2,
+      "key_points": [
+        "Capital is created only when part of income is saved",
+        "and the savings are invested in producing capital goods"
+      ],
+      "model_answer": "Capital is the result of past savings because it can be created only when people save part of their income instead of consuming it, and these savings are invested to produce capital goods.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Capital",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "What is the implication of 'restricted entry of new firms' in a monopoly market?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "There are restrictions / strong barriers to entry of new firms due to government licensing, patent rights, economies of scale etc.",
+      "total_marks": 2,
+      "key_points": [
+        "Strong barriers prevent new firms from entering",
+        "e.g. government licensing, patents, economies of scale - so the monopolist remains the single seller"
+      ],
+      "model_answer": "Restricted entry means strong barriers such as government licensing, patent rights or economies of scale prevent new firms from entering, so the monopolist remains the only seller and controls the price.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave general answers and could not explain the meaning of restricted entry"
+      ],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "A shopkeeper adds brick powder to chilli powder and he colours different vegetables with harmful dyes to make them look bright and fresh. Identify the concept expressed in the above statement and mention the consumer right which has been violated.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Food adulteration. Right to Safety.",
+      "total_marks": 2,
+      "key_points": [
+        "Concept: food adulteration",
+        "Right violated: right to safety"
+      ],
+      "model_answer": "The concept is food adulteration, and the consumer right violated is the right to safety.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused about the rights of a consumer"
+      ],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "(a) Define inflation. (b) Write any three causes of 'Cost Push Inflation'.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Inflation is a persistent or continuous rise in prices of goods and services. (b) Rise in wages; rise in taxes; rise in price of basic inputs; reduction in government subsidies; Minimum Wage Act; outdated technology; increase in MSP; oil price hike and global inflation; administered prices. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Inflation: persistent rise in prices of goods and services",
+        "Any three cost-push causes: rise in wages; taxes; input prices; reduced subsidies; outdated technology; MSP; oil prices; administered prices"
+      ],
+      "model_answer": "(a) Inflation is a persistent rise in the general prices of goods and services. (b) Cost push inflation is caused by a rise in wages, a rise in the prices of basic inputs such as oil, and higher taxes on production.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote causes of demand-pull inflation instead of cost-push"
+      ],
+      "examiner_notes": null,
+      "topic": "Inflation",
+      "diagram_required": false,
+      "chapter": "Inflation"
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "State and explain any five merits of Indirect taxes.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Popular, wide coverage, helps domestic industry, helps to check consumption of harmful commodities, elastic. (Any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five merits explained: convenient/popular; wide coverage; helps domestic industry; checks consumption of harmful goods; elastic; difficult to evade"
+      ],
+      "model_answer": "1. Convenient: paid in small amounts with purchases. 2. Wide coverage: everyone who buys taxed goods pays. 3. Protects domestic industry through import duties. 4. Checks consumption of harmful goods like tobacco through high taxes. 5. Elastic: revenue rises with consumption.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Public Revenue and Taxation",
+      "diagram_required": false,
+      "chapter": "Public Finance"
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "The following table represents increase in demand, answer the following questions (table: Price ₹10 - Quantity demanded 5 kg; Price ₹10 - Quantity demanded 7 kg): (a) Give a diagrammatic representation based on the above data. (b) Explain any two factors that affect increase in demand.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Diagram: price (₹) on Y-axis, quantity demanded (kgs) on X-axis; at price 10 the demand curve shifts rightward from dd (5 kg) to d1d1 (7 kg). (b) Increase in income, increase in taste and preference, government subsidy, season, increase in population. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "Diagram showing a rightward shift of the demand curve from 5 kg to 7 kg at price ₹10, axes labelled",
+        "Any two factors explained: rise in income; favourable change in tastes; subsidy; season; population growth"
+      ],
+      "model_answer": "(a) With price on the Y-axis and quantity demanded on the X-axis, at the same price of ₹10 the demand curve shifts to the right from dd (5 kg) to d1d1 (7 kg), showing an increase in demand. (b) 1. Increase in income lets consumers buy more at the same price. 2. A favourable change in tastes and preferences increases demand at the same price.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'supply' instead of 'demand' on the diagram"
+      ],
+      "examiner_notes": "Encourage students to always label the demand curve along with the X-axis and Y-axis.",
+      "topic": "Demand",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "(a) Mention any two features of COPRA 2019. (b) State and explain any three reasons why consumers are exploited by retailers or producers.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Three tier system, applies to all goods and services, includes public, private and joint sectors, detailed definition of consumers, product liability, prohibition and penalties for misleading advertisements, e-filing of complaints. (Any two) (b) Lack of information, limited supply, ill effects of advertisement, hoarding, limited competition, illiteracy, lack of bargaining power, irregular prices, lack of unity. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Any two COPRA 2019 features: three-tier redressal; all goods and services; all sectors; product liability; penalties for misleading ads; e-filing",
+        "Any three reasons for exploitation explained: lack of information; limited supply; advertisements; hoarding; limited competition; illiteracy; lack of bargaining power; lack of unity"
+      ],
+      "model_answer": "(a) COPRA 2019 provides a three-tier redressal system and allows e-filing of complaints. (b) 1. Lack of information about quality and price lets sellers cheat consumers. 2. Limited supply allows sellers to raise prices. 3. Illiteracy makes consumers unaware of their rights.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Consumer Awareness",
+      "diagram_required": false,
+      "chapter": "Consumer Awareness"
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "RBI's latest demonetisation measure was declared on 19th May 2023. As per RBI's 'clean note' policy, it withdrew all ₹2,000 notes from circulation. In context of the above statement answer the following questions: (a) What is demonetisation? (b) State any three objectives of demonetisation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) When any currency notes or coins cease to be legal tender money. (b) Elimination of black money, to curb corruption, to eliminate counterfeit currency, to check terror funding. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Demonetisation: currency notes or coins cease to be legal tender",
+        "Any three objectives: eliminate black money; curb corruption; eliminate counterfeit currency; check terror funding"
+      ],
+      "model_answer": "(a) Demonetisation is the act of withdrawing currency notes or coins so that they cease to be legal tender. (b) Its objectives are to eliminate black money, to remove counterfeit currency, and to check terror funding.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Money and Barter",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "7(ii)",
+      "question_text": "(Refer to the image showing logos of many restaurant and food chains such as McDonald's, Subway, KFC and Taco Bell.) (a) Identify and define the market structure depicted in the above image. (b) Give three differences between Perfect Competition Market and Oligopoly market.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Monopolistic competition: a market with a large number of small sellers selling differentiated goods. (b) Perfect competition: large number of buyers and sellers / homogeneous goods / price taker / no selling cost; Oligopoly: few sellers / homogeneous or differentiated goods / price maker / involves selling cost. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Monopolistic competition: many sellers selling differentiated products",
+        "Any three differences: number of sellers; nature of product; price taker vs price maker; selling costs"
+      ],
+      "model_answer": "(a) The image depicts monopolistic competition, a market with a large number of sellers selling differentiated products. (b) 1. Perfect competition has a large number of sellers; oligopoly has a few sellers. 2. Perfect competition sells homogeneous goods; oligopoly may sell homogeneous or differentiated goods. 3. A firm in perfect competition is a price taker with no selling costs; an oligopoly firm is a price maker and incurs selling costs.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify the type of market structure",
+        "Wrote only examples without meanings"
+      ],
+      "examiner_notes": null,
+      "topic": "Forms of Market",
+      "diagram_required": false,
+      "chapter": "Market"
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "(a) Explain the term supply. (b) Give a diagrammatic representation of Relatively Elastic Supply.",
+      "is_subjective": true,
+      "question_type": "diagram",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) The quantity offered for sale by a producer at a given price and at a given time. OR The willingness of a producer to sell a commodity at a given price and at a given time. (b) Diagram of a relatively elastic supply curve (Es > 1): flatter upward sloping curve, price on Y-axis and quantity supplied on X-axis.",
+      "total_marks": 5,
+      "key_points": [
+        "Supply: quantity offered for sale at a given price and time",
+        "Diagram: flatter supply curve with Es > 1, axes labelled"
+      ],
+      "model_answer": "(a) Supply is the quantity of a commodity that a producer offers for sale at a given price and at a given time. (b) Relatively elastic supply (Es > 1) is shown by a flatter upward sloping supply curve meeting the Y-axis, with price on the Y-axis and quantity supplied on the X-axis; a small rise in price leads to a larger rise in quantity supplied.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not use the key term 'time'",
+        "Did not label the graph properly"
+      ],
+      "examiner_notes": "Instruct students to use only a pencil to draw a well-labelled graph.",
+      "topic": "Elasticity of Supply",
+      "diagram_required": true,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "Explain any five characteristics of land.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Land is a free gift of nature, passive, primary, permanent, immobile, limited in supply, differs in fertility and differs in location. (Explain any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five explained: free gift of nature; passive; primary; permanent; immobile; limited; differs in fertility; differs in location"
+      ],
+      "model_answer": "1. Land is a free gift of nature. 2. It is a passive factor that produces only with labour. 3. It is permanent. 4. It is immobile. 5. Its supply is limited.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Land",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "9(i)",
+      "question_text": "(a) Explain the overdraft facility given by a commercial bank. (b) State any three differences between Demand deposits and Fixed deposits.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) When a customer can overdraw his current account balance. (b) Demand deposit: no interest / also called current deposit / cheque book available / no restriction on withdrawal; Fixed deposit: high interest / also called time deposit / no cheque book / restriction on withdrawal.",
+      "total_marks": 5,
+      "key_points": [
+        "Overdraft: current account holder allowed to withdraw more than the balance up to a limit",
+        "Any three differences: interest; name (current vs time deposit); cheque facility; withdrawal restriction"
+      ],
+      "model_answer": "(a) Overdraft is a facility in which a commercial bank allows a current account holder to withdraw more than the balance in the account up to an agreed limit. (b) 1. Demand deposits earn no interest; fixed deposits earn a high interest. 2. Demand deposits carry a cheque book; fixed deposits do not. 3. Demand deposits can be withdrawn any time; fixed deposits have restrictions on withdrawal.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missed the key term 'demand deposit' / current account",
+        "Could not bring out proper differentiation"
+      ],
+      "examiner_notes": null,
+      "topic": "Commercial Banks",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    },
+    {
+      "question_number": "9(ii)",
+      "question_text": "Explain any five determinants affecting demand for goods.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Price of the commodity, income of the consumer, price of related goods, taste and preference, expectation regarding future price, size and composition of population, income distribution, government policy etc.",
+      "total_marks": 5,
+      "key_points": [
+        "Any five determinants explained: own price; income; price of related goods; tastes; future price expectations; population; income distribution; government policy"
+      ],
+      "model_answer": "1. Price of the commodity: lower price, more demand. 2. Income: higher income raises demand for normal goods. 3. Price of related goods: a rise in the price of a substitute raises demand. 4. Tastes and preferences: favourable change raises demand. 5. Size of population: larger population, more demand.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Demand",
+      "diagram_required": false,
+      "chapter": "Theory of Demand and Supply"
+    },
+    {
+      "question_number": "10(i)",
+      "question_text": "What factors contribute to the lower efficiency of labour in India as compared to the developed nations?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Poverty, climate, unionisation, wage laws, low rate of literacy, poor working conditions, inadequate training facilities etc.",
+      "total_marks": 5,
+      "key_points": [
+        "Any five factors explained: poverty and poor health; hot climate; low literacy; poor working conditions; inadequate training; low wages / wage laws; unionisation"
+      ],
+      "model_answer": "1. Poverty leads to poor health and low stamina. 2. The hot climate reduces capacity for hard work. 3. Low literacy limits skills. 4. Poor working conditions reduce productivity. 5. Inadequate training facilities mean workers lack technical skills.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Labour",
+      "diagram_required": false,
+      "chapter": "Productive Mechanism"
+    },
+    {
+      "question_number": "10(ii)",
+      "question_text": "Read the extract and answer the following questions. The Central Bank of a country is called 'central' because it is the apex institution of the entire banking system of the country. The Central Bank has a very important role in 'stabilising' the economy. All the other banks in the economy are subject to control from this bank. The Central Bank itself is subject of the overall control of the government. (a) 'RBI provides a convenient and economical device for settling interbank claims.' Justify the statement with a valid reason. (b) Why is Central Bank called as a 'Lender of last resort'? (c) What is bank rate?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Clearing house function (settling claims through book entries). (b) When all sources fail, as a last resort commercial banks approach the Central Bank for loans or financial support. (c) The rate at which a member commercial bank takes a loan from the Central Bank against approved securities.",
+      "total_marks": 5,
+      "key_points": [
+        "Clearing house: interbank claims settled through book entries",
+        "Lender of last resort: banks approach it when all other sources fail",
+        "Bank rate: rate at which the central bank lends to commercial banks against approved securities"
+      ],
+      "model_answer": "(a) As a clearing house, the RBI settles claims between banks through simple book entries in their accounts, so cash need not be moved. (b) It is called the lender of last resort because commercial banks approach it for loans when all other sources fail. (c) Bank rate is the rate at which the Central Bank lends to commercial banks against approved securities.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Concept of clearing house was not clear",
+        "Missed the key term 'when all sources fail'"
+      ],
+      "examiner_notes": null,
+      "topic": "Central Bank",
+      "diagram_required": false,
+      "chapter": "Banking in India"
+    }
+  ]
+}
