@@ -224,6 +224,26 @@ const ECONOMICS = `=== SUBJECT PROTOCOL: ECONOMICS ===
 
 8. GRAPHS AND SCHEDULES. Diagrams cannot be assessed from text — route them to unassessable_components rather than assuming. A typed hypothetical schedule or a written description of the curve's slope and direction is assessed as text.`;
 
+// Rules drawn from what the CISCE Analysis of Pupil Performance reports for
+// Environmental Science (2020, 2024-2026) repeatedly record as costing marks.
+const ENVIRONMENTAL_SCIENCE = `=== SUBJECT PROTOCOL: ENVIRONMENTAL SCIENCE ===
+
+1. ONE VALID POINT = ONE MARK. Schemes list many acceptable points and say "any two", "any three". Any listed point earns credit, up to the number asked; award for the first N valid, distinct points in the order written and never more than N. Repeating one idea in different words counts once.
+
+2. KEY TERMS IN DEFINITIONS ARE MARK-BEARING. A definition that drops the scheme's defining term is incomplete: incineration "at a very high temperature"; vermicomposting by "earthworms"; soil erosion of the "top soil" by named agents; reforestation as replanting where forest "existed before"; biodegradable waste broken down by "micro-organisms"; conservation tillage with "minimum or no" soil disturbance. Do not supply the missing term on the student's behalf.
+
+3. EXACT NAMES AND EXPANDED FORMS. Where the question asks for an expansion, a treaty, a place or a technology, the precise name is the answer: GMO, GEF, TTZ (Taj Trapezium Zone), IRDP; the Kyoto Protocol, not "a treaty signed in Japan"; Cairo, 1994 for the population conference; "solar panel" (the technology) where the question asks for the technology, not "solar energy" (the source).
+
+4. CLOSELY CONFUSED PAIRS. An answer about the wrong member of a pair has not answered the question, however accurate: afforestation / reforestation; in-situ / ex-situ conservation; bio-pesticide / bio-fertiliser; green manure / compost; sustainable development / sustainable agriculture; agroforestry / community forestry / social forestry; reuse / recycle; urbanisation / counter-urbanisation; water recycling / water harvesting; an energy source / the method of harnessing it. Record such a mix-up as a conceptual error.
+
+5. ANSWER WHAT WAS ASKED. Causes are not effects; aims and objectives are not advantages; problems are not solutions; "how" is not "why". Where the question fixes a context — rural areas, hospital waste, industrial (not vehicular) pollution, environmental (not social or economic) impacts, economic (not general) steps — only points specific to that context earn credit. Record the drift in icse_style_issues.
+
+6. PASSAGE AND IMAGE QUESTIONS. Where a question asks for points from the passage, points taken from it are correct. Where it asks for points beyond the passage, or for the student's own reasons, points copied from the passage earn nothing. For image-based questions, credit the specific identification the scheme names.
+
+7. DIFFERENCES MUST BE MATCHED. In "differentiate" answers, each difference must compare both items on the same basis. Two unrelated definitions are not a difference.
+
+8. DIAGRAMS. Drawings cannot be assessed from text — route them to unassessable_components rather than assuming.`;
+
 /* ------------------------------------------------------------------ */
 /* REGISTRY + BUILDER                                                  */
 /* ------------------------------------------------------------------ */
@@ -235,7 +255,8 @@ export type SubjectKey =
   | "chemistry"
   | "biology"
   | "geography"
-  | "economics";
+  | "economics"
+  | "environmental_science";
 
 const SUBJECT_MODULES: Record<SubjectKey, string> = {
   history_civics: HISTORY_CIVICS,
@@ -245,6 +266,7 @@ const SUBJECT_MODULES: Record<SubjectKey, string> = {
   biology: BIOLOGY,
   geography: GEOGRAPHY,
   economics: ECONOMICS,
+  environmental_science: ENVIRONMENTAL_SCIENCE,
 };
 
 /**
@@ -265,6 +287,9 @@ const SUBJECT_ALIASES: Record<string, SubjectKey> = {
   biology: "biology",
   geography: "geography",
   economics: "economics",
+  environmentalscience: "environmental_science",
+  environmentalstudies: "environmental_science",
+  evs: "environmental_science",
 };
 
 export function resolveSubjectKey(subject: string | null | undefined): SubjectKey | null {

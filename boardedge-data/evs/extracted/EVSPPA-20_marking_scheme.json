@@ -1,0 +1,838 @@
+{
+  "year": 2020,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "question_text": "What are bio pesticides? Give one example of a bio pesticide.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Bio pesticides are biological agents used for control of weeds, insects and pathogens. Example: Bacillus thuringiensis, spider, frog, snake, ducks, etc.",
+      "total_marks": 2,
+      "key_points": [
+        "Biological agents used to control weeds, insects and pathogens",
+        "One example such as Bacillus thuringiensis, spider, frog, snake or ducks"
+      ],
+      "model_answer": "Bio pesticides are biological agents, such as microorganisms or natural predators, used to control weeds, insects and pathogens. Example: Bacillus thuringiensis.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not give an example or gave an incorrect example",
+        "Gave examples of bio-fertilizers instead of bio pesticides"
+      ],
+      "examiner_notes": "Emphasise the difference between pesticide and fertilizer, and between bio pesticides and bio fertilizers, with examples of each.",
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "What are biosphere reserves?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Biosphere reserves are protected areas of land or coastal environment that aim at in-situ conservation of ecosystems and genetic resources. Land use is permitted by designating zones: the core zone of no human activity, the buffer zone of limited human activity and the transition zone of active cooperation between management and local people.",
+      "total_marks": 2,
+      "key_points": [
+        "Protected areas of land or coastal environment for in-situ conservation of ecosystems and genetic resources",
+        "Divided into zones: core (no human activity), buffer (limited activity) and transition (cooperation with local people)"
+      ],
+      "model_answer": "Biosphere reserves are protected areas of land or coastal environment meant for the in-situ conservation of ecosystems and genetic resources. They are divided into a core zone with no human activity, a buffer zone with limited human activity and a transition zone where management and local people cooperate.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave an incomplete explanation",
+        "Gave examples without a proper definition"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "List any two problems that waste can cause to our environment.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Spoils the landscape / creates water, soil and air pollution / breeding ground for disease / home for insects and rodents / accumulated junk and garbage is prone to catch fire. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two problems: spoils landscape; water, soil and air pollution; breeding ground for disease; home for insects and rodents; risk of fire"
+      ],
+      "model_answer": "Waste spoils the landscape and causes water, soil and air pollution. It also becomes a breeding ground for disease-causing organisms, insects and rodents.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Spoils landscape",
+        "Water, soil and air pollution",
+        "Breeding ground for disease",
+        "Home for insects and rodents",
+        "Garbage can catch fire"
+      ],
+      "common_errors": [
+        "Points were not specific",
+        "Wrote methods of waste disposal"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(d)",
+      "question_text": "Explain the working of Remote Sensing Satellites.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Remote sensing satellites have sensors that give two-dimensional information that is either a photographic image or an array of digital data of the earth.",
+      "total_marks": 2,
+      "key_points": [
+        "Satellites carry sensors that record information about the earth",
+        "Information is a photographic image or an array of digital data"
+      ],
+      "model_answer": "Remote sensing satellites carry sensors that record two-dimensional information about the earth's surface, either as a photographic image or as an array of digital data, which is sent to ground stations for study.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote uses of remote sensing satellites instead of their working",
+        "Wrote only what a remote sensing satellite is"
+      ],
+      "examiner_notes": null,
+      "topic": "Environmental Monitoring",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(e)",
+      "question_text": "What is the impact of increasing population on the land?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Forests and grasslands are cleared / poor land management leads to degradation of land / clearing of forests and grassland leads to loss of habitat and biodiversity / ecological imbalance / soil erosion and pollution of air, water and land. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two impacts: forests and grasslands cleared; land degradation; loss of habitat and biodiversity; ecological imbalance; soil erosion and pollution"
+      ],
+      "model_answer": "Increasing population leads to clearing of forests and grasslands for farming and housing, which destroys wildlife habitats and biodiversity. Poor land management under this pressure also causes land degradation and soil erosion.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about different types of pollution instead of the impact of population on land"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "List two aims of MNC's.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "To maximise profits by exploiting resources, paying little attention to the environment / expand business to multiple countries / minimise cost of production, especially labour cost / capture lucrative foreign markets against international competition.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two aims: maximise profits; expand business to many countries; minimise production (labour) cost; capture foreign markets"
+      ],
+      "model_answer": "MNCs aim to maximise their profits and to expand their business to multiple countries, capturing foreign markets against international competition.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote benefits of MNCs for the host country or defined MNCs",
+        "Gave only one aim"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "How has LPG benefitted the rural areas of India?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Available at an affordable price / good substitute for polluting fuels like fuel wood / clean fuel / saves cooking time / no need to collect firewood / easily transported to rural areas.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two benefits to rural areas: affordable; substitute for polluting fuel wood; clean fuel; saves cooking time; no need to collect firewood; easily transported"
+      ],
+      "model_answer": "LPG is a clean fuel that has replaced polluting fuel wood in rural homes, so people no longer have to collect firewood. It is affordable and also saves cooking time.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote general benefits of LPG, not specific to rural areas",
+        "Confused rural and urban areas"
+      ],
+      "examiner_notes": null,
+      "topic": "Fossil and Clean Fuels",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "What are organic fertilizers? Give any one disadvantage of organic fertilizers.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Organic fertilizers are derived from animal matter, excreta, human excreta and vegetable matter, e.g. animal waste, peat, manure, slurry. Disadvantage: more labour required / voluminous and bulky / storage and transport difficult / supply limited nutrients.",
+      "total_marks": 2,
+      "key_points": [
+        "Fertilizers derived from animal matter, excreta and vegetable matter",
+        "One disadvantage: more labour; bulky; difficult to store and transport; limited nutrients"
+      ],
+      "model_answer": "Organic fertilizers are fertilizers derived from animal matter, animal and human excreta and vegetable matter, such as manure and peat. A disadvantage is that they are bulky, so their storage and transport are difficult.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave advantages instead of disadvantages",
+        "Gave the definition of pesticides instead of fertilizers"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "2(d)",
+      "question_text": "Name any two clean fuels.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "CNG, biodiesel, hydrogen, methanol, alcohol and ethanol. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two of: CNG, biodiesel, hydrogen, methanol, alcohol, ethanol"
+      ],
+      "model_answer": "CNG and hydrogen.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "CNG",
+        "Biodiesel",
+        "Hydrogen",
+        "Methanol",
+        "Alcohol",
+        "Ethanol"
+      ],
+      "common_errors": [
+        "Wrote petrol as a clean fuel"
+      ],
+      "examiner_notes": null,
+      "topic": "Fossil and Clean Fuels",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "2(e)",
+      "question_text": "How can the government encourage child education?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Set up schools near villages / appoint trained teachers and staff / supply free books, uniforms and school requirements / mid-day meal programme / incentives for regular attendance / free pick-up for children who stay far away. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two specific measures: schools near villages; trained teachers; free books and uniforms; mid-day meals; attendance incentives; free transport"
+      ],
+      "model_answer": "The government can set up schools near villages and supply free books, uniforms and mid-day meals so that children are encouraged to attend school.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote only about awareness without specific measures",
+        "Wrote about education of the girl child only"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "State any two reasons for fossil fuel depletion.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Population growth increases demand / non-renewable resource / takes years to form once depleted / used for decades to generate electricity / increase in number of vehicles / industrial revolution. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: rising demand due to population growth; non-renewable; takes very long to form; heavy use for electricity; more vehicles; industrialisation"
+      ],
+      "model_answer": "Fossil fuels are being depleted because a growing population and more vehicles have increased demand, and because they are non-renewable resources that take millions of years to form.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote disadvantages of fossil fuels",
+        "Gave examples of fossil fuels instead of reasons for depletion"
+      ],
+      "examiner_notes": null,
+      "topic": "Fossil and Clean Fuels",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Why is it important for hospitals to reduce their solid waste?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "They generate the maximum amount of solid waste / mostly single-use products / can spread disease / can impact water supply, wildlife and reputation of the hospital / creates a safe workplace. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: hospitals generate large amounts of solid waste; mostly single-use items; can spread disease; affects water supply and wildlife; safer workplace"
+      ],
+      "model_answer": "Hospitals generate a large amount of mostly single-use solid waste, and this waste can spread disease and contaminate water supplies if it is not reduced and handled safely.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about general waste problems, not hospital waste",
+        "Wrote methods of reducing hospital waste instead of why it is important"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "What do you understand by the term 'debt trap'?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "A situation where a new debt is added in order to pay an existing debt; it lures borrowers into long-term debt under conditions that favour the lender. Developing countries caught in a debt trap deplete their natural resources to repay debts.",
+      "total_marks": 2,
+      "key_points": [
+        "New debt is taken to pay off an existing debt",
+        "Developing countries deplete natural resources to repay their debts"
+      ],
+      "model_answer": "A debt trap is a situation in which a country has to take new loans just to repay existing debts. Developing countries caught in a debt trap often exploit their natural resources rapidly to repay these loans.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Meaning of the term was not well written"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "3(d)",
+      "question_text": "What is the need for biotechnology in agriculture?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Biotechnology is a collection of scientific techniques used to improve plants: to increase productivity and farm yield / lower production cost / safe for environment and economic growth / enhance product quality / increase salt tolerance. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two needs: increase productivity and yield; lower production cost; enhance quality; increase salt tolerance; environmentally safe"
+      ],
+      "model_answer": "Biotechnology is needed in agriculture to increase crop productivity and yield, and to improve the quality of produce, for example by developing salt-tolerant varieties.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the definition of biotechnology instead of its need",
+        "Wrote about organic farming or fertilizers"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(e)",
+      "question_text": "Define reforestation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Reforestation is the process of restoring and regenerating areas of woodland or forest that existed earlier but were deforested. OR The process of replanting an area with trees.",
+      "total_marks": 2,
+      "key_points": [
+        "Restoring / replanting trees",
+        "on land that was earlier forested but was deforested"
+      ],
+      "model_answer": "Reforestation is the process of replanting and regenerating trees in areas where forests existed earlier but were cut down.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote only 'growing of trees' without the idea of replanting where trees existed before",
+        "Wrote afforestation instead of reforestation"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "State the difference of a core and buffer zone in a tiger reserved area.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Core zone is a legally protected central zone which remains undisturbed by any kind of human activity. Buffer zone lies outside the core zone and is used for education and research activities.",
+      "total_marks": 2,
+      "key_points": [
+        "Core zone: central, legally protected, no human activity",
+        "Buffer zone: surrounds the core, used for education and research"
+      ],
+      "model_answer": "The core zone is the legally protected central area of a tiger reserve that is kept free of all human activity, whereas the buffer zone surrounds the core and is used for limited activities such as education and research.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote only definitions without differentiating",
+        "Wrote incompatible points of difference"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "What is the link between growing population and environment degradation?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "When population increases beyond certain limits the demand for all resources increases; there is loss of biodiversity, air and water pollution and increased pressure on arable land.",
+      "total_marks": 2,
+      "key_points": [
+        "Growing population increases demand for resources",
+        "Leads to loss of biodiversity, pollution and pressure on land"
+      ],
+      "model_answer": "A growing population increases the demand for all resources, which leads to over-use of land, loss of biodiversity and increased air and water pollution, degrading the environment.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about environmental degradation without linking it to population growth"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "What are bunds? How do they reduce soil erosion?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Bunds are earthen barriers with slopes in agricultural lands, made of stone, soil or crop remains. They reduce soil erosion by reducing runoff along contour lines and increasing water infiltration.",
+      "total_marks": 2,
+      "key_points": [
+        "Bunds: earthen / stone barriers built across sloping farmland",
+        "They reduce runoff and increase infiltration, so less soil is washed away"
+      ],
+      "model_answer": "Bunds are earthen or stone barriers built along slopes in agricultural fields. They reduce soil erosion by slowing down runoff along the contours and allowing more water to soak into the soil.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not define bunds",
+        "Mistook bunds for earthen dams",
+        "Only repeated that bunds reduce soil erosion"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "4(d)",
+      "question_text": "How has construction work contributed to degradation of the environment?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Physical disruption / loss of forest wood / loss of agricultural land / loss of fossil fuels / pollution (air, noise) / depletion of renewable resources / excessive energy consumption / increase in travel time. (Any two points)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: physical disruption; loss of forests; loss of agricultural land; air and noise pollution; depletion of resources; excessive energy use"
+      ],
+      "model_answer": "Construction work causes air and noise pollution and leads to the loss of forests and agricultural land as land is cleared for buildings.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Urban Planning and Transport",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "4(e)",
+      "question_text": "Mention any two ways by which industrial pollution can be controlled.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Very tall chimneys / efficient devices and clean technology / alternative fuels / zoning / pollution control devices / planting trees / meteorological control.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: tall chimneys; clean technology; alternative fuels; zoning; pollution control devices; planting trees"
+      ],
+      "model_answer": "Industrial pollution can be controlled by fitting pollution control devices such as electrostatic precipitators, and by locating industries in separate zones away from residential areas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote control measures for vehicular pollution instead of industrial pollution",
+        "Misspelt the names of pollution control devices"
+      ],
+      "examiner_notes": null,
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Define soil erosion. Explain any two man made and any two natural causes for soil erosion.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Soil erosion is the removal of the top fertile soil due to agents like rain, wind and human activities. Man-made: deforestation, overgrazing, wrong agricultural practices, overuse of land, chemical fertilizers and pesticides, mining (any two). Natural: gully erosion and movement of snow and glaciers, rivers along banks, runoff on hill slopes, wind, floods (any two).",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: removal of fertile topsoil by agents such as rain, wind and human activity",
+        "Two man-made causes explained (deforestation, overgrazing, wrong farming, mining, etc.)",
+        "Two natural causes explained (running water, wind, floods, glaciers, etc.)"
+      ],
+      "model_answer": "Soil erosion is the removal of the fertile topsoil by agents such as water, wind and human activities. Man-made causes: deforestation removes the roots that hold soil; overgrazing strips the grass cover. Natural causes: runoff of rainwater on hill slopes washes soil away; strong winds blow away loose dry soil.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention topsoil or agents of erosion in the definition",
+        "Listed causes without explanation"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "What is biodiversity? Explain four reasons for loss of it in recent times.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Biodiversity is the variety of flora and fauna giving rise to qualitative and quantitative differences in living organisms. Reasons: over population, overuse of resources, loss of habitat, hunting and poaching, pollution, increasing demand for land, climate change, man as a super consumer. (Any four)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: variety of flora and fauna / living organisms",
+        "Any four reasons explained: overpopulation; overuse of resources; habitat loss; hunting and poaching; pollution; land demand; climate change"
+      ],
+      "model_answer": "Biodiversity is the variety of plants and animals living in an area. It is being lost because: 1. Habitat loss as forests are cleared for farming and cities. 2. Hunting and poaching of animals for skins and tusks. 3. Pollution of air, water and soil that kills organisms. 4. Climate change that alters habitats faster than species can adapt.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrong definition of biodiversity",
+        "Listed reasons without explanation"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Define incineration. Write any two advantages and any two disadvantages of incineration.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Incinerators are specially constructed closed furnaces in which waste is burnt at very high temperatures for complete combustion; this is incineration. Advantages: saves transport cost, reduces volume of solid waste, burnt waste can generate energy. Disadvantages: expensive plant, causes pollution, destroys recyclable material.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: burning waste in closed furnaces at very high temperature",
+        "Two advantages: saves transport; reduces volume; generates energy",
+        "Two disadvantages: costly plant; pollution; destroys recyclable material"
+      ],
+      "model_answer": "Incineration is the burning of waste in specially built closed furnaces at very high temperatures so that it burns completely. Advantages: it greatly reduces the volume of solid waste, and the heat can be used to generate energy. Disadvantages: the plant is expensive, and it can cause air pollution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not include 'at a very high temperature' in the definition"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "What do you understand by international trade? List four benefits from international trade.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "International trade is the exchange of goods, services and capital between countries and regions. Benefits: shifts production away from unsustainable places; raises living standards; creates opportunities for productive use of resources; information exchange and cultural understanding; a more united world; raises purchasing power. (Any four)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: exchange of goods, services and capital between countries",
+        "Any four benefits: higher living standards; economic development; cultural understanding; united world; purchasing power; better use of resources"
+      ],
+      "model_answer": "International trade is the exchange of goods, services and capital between countries. Benefits: 1. It raises people's standard of living. 2. It promotes economic development by creating opportunities to use resources profitably. 3. It promotes information exchange and cultural understanding. 4. It makes the world more united, as countries no longer work in isolation.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused international trade with national trade",
+        "Mentioned only goods, not services or capital",
+        "Could not write four different benefits"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "What is urbanization? How can the government help to facilitate a better lifestyle to urban areas?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Urbanisation is the migration of people from rural to urban areas in search of jobs and better living standards, resulting in concentration of population in cities. Government should: build low-cost houses, use land efficiently, supply sufficient energy, develop public transport, ensure water supply, education facilities, job opportunities. (Any four points)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: migration from rural to urban areas for jobs and better living, concentrating population in cities",
+        "Any four government measures: low-cost housing; efficient land use; energy supply; public transport; water supply; education; jobs"
+      ],
+      "model_answer": "Urbanisation is the movement of people from rural to urban areas in search of jobs and a better standard of living, leading to the concentration of population in cities. The government can help by building low-cost houses, developing a good public transport system, ensuring proper water and energy supply, and providing education facilities and jobs.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention migration or better standard of life in the definition",
+        "Could not give four points"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Mention any two threats faced by Taj Mahal monument. State any three steps that can be taken to reduce its degradation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Threats: surrounded by 512 industries giving out gaseous pollutants; the Mathura oil refinery is a major source of SO2 affecting the marble; refinery, foundries and pit furnaces are major sources of pollution. Steps: low-sulphur fuel oils in furnaces and boilers; relocate industries; green belt around the Taj Mahal; emission control and monitoring devices.",
+      "total_marks": 5,
+      "key_points": [
+        "Two threats: gaseous pollutants from surrounding industries; SO2 from Mathura refinery damaging the marble; foundries and furnaces",
+        "Three steps: low-sulphur fuels; relocating industries; green belt; emission control and monitoring"
+      ],
+      "model_answer": "Threats: gaseous pollutants from the many industries surrounding Agra, and sulphur dioxide from the Mathura oil refinery, which corrodes the marble. Steps: use low-sulphur fuel in furnaces and boilers, relocate polluting industries away from the monument, and create a green belt around the Taj Mahal.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote control measures instead of threats"
+      ],
+      "examiner_notes": null,
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Write a note on women centered human development as a strategy for controlling the population growth.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Women should be counselled on reproduction and contraceptive techniques; education of girls removes superstitions; gives understanding of childcare; opens work opportunities; leaves little scope for bearing many children; they marry late and have fewer healthy children; fertility rate drops.",
+      "total_marks": 5,
+      "key_points": [
+        "Counselling women on reproduction and contraception",
+        "Education of girls removes superstition and improves childcare",
+        "Education opens work opportunities, so women marry later",
+        "Fewer, healthier children and a lower fertility rate"
+      ],
+      "model_answer": "Women-centred development controls population growth because educating girls removes superstitions and gives them an understanding of childcare and contraception. Educated women get opportunities to work and follow their goals, so they marry later and have fewer, healthier children. Counselling on reproductive health helps avoid unwanted pregnancies. Together these lower the fertility rate.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not establish how women's problems relate to population control"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "When and where was the UN's International conference on Population and Development held? Explain any three objectives.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Held in Cairo, Egypt in September 1994. Objectives: universal education; reduction in infant and child mortality; reduction in maternal mortality; access to reproductive and sexual health services including family planning.",
+      "total_marks": 5,
+      "key_points": [
+        "Cairo, Egypt, 1994",
+        "Any three objectives explained: universal education; reducing infant and child mortality; reducing maternal mortality; access to reproductive health and family planning"
+      ],
+      "model_answer": "The conference was held in Cairo, Egypt in September 1994. Its objectives included: 1. Universal primary education and greater access for women to higher and vocational education. 2. Reduction in infant and child mortality. 3. Access to reproductive health services, including family planning.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not know when and where it was held",
+        "Objectives were not clearly mentioned"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "What is Agro forestry? Discuss any four objectives of Agro forestry.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Agroforestry is a farming system that integrates cropland or livestock with trees and shrubs. Objectives: reduce pressure on natural forests for timber and non-timber produce; check soil erosion and maintain soil fertility; maintain ecological balance with proper use of farm resources; make best use of land, manpower and livestock to obtain food, fuel, fodder, etc.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: integrating crops and/or livestock with trees and shrubs",
+        "Four objectives: reduce pressure on forests; check soil erosion and keep fertility; maintain ecological balance; best use of resources for food, fuel and fodder"
+      ],
+      "model_answer": "Agroforestry is a farming system that integrates crops or livestock with trees and shrubs on the same land. Its objectives are: 1. To reduce pressure on natural forests for timber and other produce. 2. To check soil erosion and maintain soil fertility. 3. To maintain ecological balance while using farm resources properly. 4. To make the best use of land, labour and livestock to obtain food, fuel and fodder.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention crops or livestock with forestry in the definition",
+        "Wrote advantages instead of objectives"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "What is sustainable agriculture? Explain any four regenerative farming techniques.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Sustainable agriculture is a farming practice that is profitable, environmentally friendly and good for the community; it harnesses new technology and renews the best practices of the past. Techniques: inter cropping, crop rotation, agroforestry, polyculture.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: farming that is profitable, eco-friendly and good for the community",
+        "Four techniques explained: intercropping; crop rotation; agroforestry; polyculture"
+      ],
+      "model_answer": "Sustainable agriculture is farming that is profitable, environmentally friendly and good for the community. Regenerative techniques: 1. Intercropping: growing two or more crops together. 2. Crop rotation: growing different crops in sequence on the same land. 3. Agroforestry: planting trees along fields. 4. Polyculture: growing many crops on one piece of land.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused sustainable agriculture with sustainable development",
+        "Wrote soil erosion control techniques instead of regenerative farming techniques"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Define Trickle Drip Irrigation. State any two merits and two demerits of it.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Trickle drip irrigation is supplying an adequate amount of water to plants slowly and directly to the soil. Merits: suitable for row crops; 50-70% water saved; more yield; used where well irrigation is common. Demerits: costly installation and maintenance; not practical for most farming; pipes block and damage easily; not uniform irrigation.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: water supplied slowly and directly to the soil / roots",
+        "Two merits: saves water; higher yield; suits row crops",
+        "Two demerits: costly; pipes get blocked; uneven irrigation"
+      ],
+      "model_answer": "Trickle drip irrigation supplies water to plants slowly and directly to the soil near the roots. Merits: it saves 50-70% of water and increases crop yield. Demerits: installation and maintenance are costly, and the pipes get blocked or damaged easily.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Merits and demerits not written correctly"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "What are the conservation strategies for wildlife at national and international levels? Explain any one in detail.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Wildlife Protection Act 1972, Project Tiger, IUCN, Ramsar Convention, CITES, Convention on Biodiversity. (Any one of the above to be explained in detail.)",
+      "total_marks": 5,
+      "key_points": [
+        "National strategies named (Wildlife Protection Act 1972, Project Tiger)",
+        "International strategies named (IUCN, Ramsar Convention, CITES, Convention on Biodiversity)",
+        "One strategy explained in detail"
+      ],
+      "model_answer": "National strategies include the Wildlife Protection Act, 1972 and Project Tiger; international strategies include IUCN, the Ramsar Convention, CITES and the Convention on Biological Diversity. Project Tiger was launched in 1973 to protect the tiger and its habitat by setting up tiger reserves, each with a core zone free of human activity and a buffer zone, and by checking poaching.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not give strategies at national and international levels",
+        "Wrote about in-situ and ex-situ methods",
+        "Could not explain any one strategy in detail"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    }
+  ]
+}

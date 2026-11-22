@@ -1,0 +1,1044 @@
+{
+  "year": 2024,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "The mechanical device which reduces air pollution from industries is: (a) Two stroke engines (b) Catalytic converter (c) Solar panels (d) Electrostatic precipitator",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Two stroke engines",
+        "(b) Catalytic converter",
+        "(c) Solar panels",
+        "(d) Electrostatic precipitator"
+      ],
+      "correct_answer": "(d) Electrostatic precipitator",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Electrostatic precipitator",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Electrostatic precipitator",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused the electrostatic precipitator with the catalytic converter"
+      ],
+      "examiner_notes": "Familiarise students with the devices which reduce air pollution from industries and illustrate them with a diagram.",
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "Captive breeding is a means: (a) to protect wild animals in forests (b) to restore extinct species (c) to breed wild animals in zoos and botanical gardens (d) to allow animals to breed in natural habitat",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) to protect wild animals in forests",
+        "(b) to restore extinct species",
+        "(c) to breed wild animals in zoos and botanical gardens",
+        "(d) to allow animals to breed in natural habitat"
+      ],
+      "correct_answer": "(c) to breed wild animals in zoos and botanical gardens",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) to breed wild animals in zoos and botanical gardens",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) to breed wild animals in zoos and botanical gardens",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose option (d) instead of (c)"
+      ],
+      "examiner_notes": "Explain that captive breeding takes place only in a zoo or human-controlled environment.",
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "Choose the incorrect pair from the following: (a) Organic fertilizers – Agricultural residue (b) Composting – Organic wastes (c) Vermicomposting – Earthworms (d) Green manure – Chemical compounds",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Organic fertilizers – Agricultural residue",
+        "(b) Composting – Organic wastes",
+        "(c) Vermicomposting – Earthworms",
+        "(d) Green manure – Chemical compounds"
+      ],
+      "correct_answer": "(d) Green manure – Chemical compounds",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Green manure – Chemical compounds",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Green manure – Chemical compounds",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "An ecocity is: (a) a satellite city of an urban area (b) a rural area linked to a city (c) a less populated city (d) a sustainable city",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) a satellite city of an urban area",
+        "(b) a rural area linked to a city",
+        "(c) a less populated city",
+        "(d) a sustainable city"
+      ],
+      "correct_answer": "(d) a sustainable city",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) a sustainable city",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) a sustainable city",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected option (a) or (c)"
+      ],
+      "examiner_notes": "Discuss eco city, sustainable city, secondary city and satellite city, highlighting their differences.",
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "Match each item in COLUMN I with one item in COLUMN II and choose the correct answer: COLUMN I: 1. Montreal Protocol 2. Cairo Conference 3. Global Environmental Facility 4. CITES. COLUMN II: A. Empowerment of women B. Protection of animals C. Funds for climate change D. Ozone depleted substances. (a) 1-A 2-B 3-C 4-D (b) 1-B 2-A 3-D 4-C (c) 1-D 2-A 3-C 4-B (d) 1-C 2-B 3-A 4-D",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 1-A 2-B 3-C 4-D",
+        "(b) 1-B 2-A 3-D 4-C",
+        "(c) 1-D 2-A 3-C 4-B",
+        "(d) 1-C 2-B 3-A 4-D"
+      ],
+      "correct_answer": "(c) 1-D 2-A 3-C 4-B",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) 1-D 2-A 3-C 4-B",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) 1-D 2-A 3-C 4-B",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose option (d), unaware of CITES"
+      ],
+      "examiner_notes": null,
+      "topic": "International Cooperation",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "The reason for poor standard of living and malnutrition in India is: (a) Over population (b) Environmental conditions (c) Absence of natural resources (d) Poor economy of rural India",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Over population",
+        "(b) Environmental conditions",
+        "(c) Absence of natural resources",
+        "(d) Poor economy of rural India"
+      ],
+      "correct_answer": "(a) Over population",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Over population",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Over population",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "Assertion (A): MNC's made better infrastructures, brought employment and reduced the gap between the developed and developing nations. Reason (R): MNC's exploited the resources and acquired land, thus destroying the ecology. (a) A is True and R is False (b) A is False and R is True (c) Both A and R are True and R is the correct explanation of A (d) Both A and R are True but R is not the correct explanation of A",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) A is True and R is False",
+        "(b) A is False and R is True",
+        "(c) Both A and R are True and R is the correct explanation of A",
+        "(d) Both A and R are True but R is not the correct explanation of A"
+      ],
+      "correct_answer": "(c) Both A and R are True and R is the correct explanation of A",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Both A and R are True and R is the correct explanation of A",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Both A and R are True and R is the correct explanation of A",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Most candidates could not comprehend the assertion and reason"
+      ],
+      "examiner_notes": "Provide sufficient practice of Assertion and Reason questions.",
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "Which source of electricity generation is least harmful to the environment? (a) Coal (b) Nuclear energy (c) Gasoline (d) Diesel",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Coal",
+        "(b) Nuclear energy",
+        "(c) Gasoline",
+        "(d) Diesel"
+      ],
+      "correct_answer": "(b) Nuclear energy",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Nuclear energy",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Nuclear energy",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "The figure given alongside refers to a major International Conference on the environment (refer to the 'Earth Summit 1992' logo). This was held in: (a) Kyoto in Japan (b) Rio de Janeiro in Brazil (c) Cairo in Egypt (d) Montreal in Canada",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Kyoto in Japan",
+        "(b) Rio de Janeiro in Brazil",
+        "(c) Cairo in Egypt",
+        "(d) Montreal in Canada"
+      ],
+      "correct_answer": "(b) Rio de Janeiro in Brazil",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Rio de Janeiro in Brazil",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Rio de Janeiro in Brazil",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose 'Cairo in Egypt'"
+      ],
+      "examiner_notes": "Advise students to be specific about the 'when' and 'where' of conferences.",
+      "topic": "International Cooperation",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "Biomass refers to: (a) Plant waste, animal waste and agricultural residue (b) Industrial waste (c) Biogas plant (d) Fertilizers and pesticides",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Plant waste, animal waste and agricultural residue",
+        "(b) Industrial waste",
+        "(c) Biogas plant",
+        "(d) Fertilizers and pesticides"
+      ],
+      "correct_answer": "(a) Plant waste, animal waste and agricultural residue",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Plant waste, animal waste and agricultural residue",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Plant waste, animal waste and agricultural residue",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose option (c) instead of (a)"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Assertion (A): The satellite imagery is used for collecting data on environmental damage. Reason (R): This data collection helps in marketing and selling of forest products. (a) Both A and R are true statements (b) A is false and R is true (c) Both A and R are true and R is the correct reason for A (d) A is true but R is not the correct reason for A",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Both A and R are true statements",
+        "(b) A is false and R is true",
+        "(c) Both A and R are true and R is the correct reason for A",
+        "(d) A is true but R is not the correct reason for A"
+      ],
+      "correct_answer": "(d) A is true but R is not the correct reason for A",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) A is true but R is not the correct reason for A",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) A is true but R is not the correct reason for A",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused between options (b) and (c)"
+      ],
+      "examiner_notes": null,
+      "topic": "Environmental Monitoring",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "The main objective of IRDP is: (a) Improvement in banking (b) Alleviation of rural poverty (c) Development of rural youth (d) Employment to retired persons",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Improvement in banking",
+        "(b) Alleviation of rural poverty",
+        "(c) Development of rural youth",
+        "(d) Employment to retired persons"
+      ],
+      "correct_answer": "(b) Alleviation of rural poverty",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Alleviation of rural poverty",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Alleviation of rural poverty",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose 'Development of rural youth'"
+      ],
+      "examiner_notes": "Explain why IRDP was launched and discuss the schemes under it.",
+      "topic": "Rural Development",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "'Many urban centres have landfill sites, and often, waste is not disposed in these sites.' In this context which of the following improves solid waste management: (a) Teaching people the importance of segregation (b) Hospital waste to be gathered collectively (c) Composting is a bad option (d) Staff handling the wastes should be discouraged",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Teaching people the importance of segregation",
+        "(b) Hospital waste to be gathered collectively",
+        "(c) Composting is a bad option",
+        "(d) Staff handling the wastes should be discouraged"
+      ],
+      "correct_answer": "(a) Teaching people the importance of segregation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Teaching people the importance of segregation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Teaching people the importance of segregation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Extensive planting of trees on barren land to increase forest cover is called: (a) Reforestation (b) Afforestation (c) Deforestation (d) Energy plantations",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Reforestation",
+        "(b) Afforestation",
+        "(c) Deforestation",
+        "(d) Energy plantations"
+      ],
+      "correct_answer": "(b) Afforestation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Afforestation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Afforestation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": "Explain the difference between afforestation, reforestation and deforestation.",
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "Given below are few methods of conservation of resources. Choose the correct method of soil conservation: (a) Metal recycling (b) Triple drip irrigation (c) Mulching and dry farming (d) Shifting cultivation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Metal recycling",
+        "(b) Triple drip irrigation",
+        "(c) Mulching and dry farming",
+        "(d) Shifting cultivation"
+      ],
+      "correct_answer": "(c) Mulching and dry farming",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Mulching and dry farming",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Mulching and dry farming",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose option (b)"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(xvi)",
+      "question_text": "(Refer to the image titled 'Bhopal Disaster (gas tragedy)'.) What was the main cause of this tragedy? (a) The factory was located in an isolated area (b) The company exported tested and good technology to the Indian plant (c) Trained and knowledgeable staff (d) Safety checks were less frequent due to shortage of staff",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) The factory was located in an isolated area",
+        "(b) The company exported tested and good technology to the Indian plant",
+        "(c) Trained and knowledgeable staff",
+        "(d) Safety checks were less frequent due to shortage of staff"
+      ],
+      "correct_answer": "(d) Safety checks were less frequent due to shortage of staff",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Safety checks were less frequent due to shortage of staff",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Safety checks were less frequent due to shortage of staff",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Industrial Disasters",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "2(i)",
+      "question_text": "Why is LPG more popular to use as a fuel? Write two advantages of it.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Eco-friendly / available at subsidised rate / no fumes / low operational cost / no ash or residue / can be used in vehicles / clean fuel / fast cooking / affordable / no poisonous gases (no SO2, NO2) / high calorific value / blue flame, less sulphur.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two advantages of LPG as a fuel: clean, no smoke or ash; affordable / subsidised; high calorific value; fast cooking; no poisonous gases"
+      ],
+      "model_answer": "LPG is popular because it is a clean fuel that burns with a blue flame without smoke, ash or poisonous gases, and it has a high calorific value, so food cooks quickly.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote general advantages of LPG, not as a fuel",
+        "Wrote the same answer for both parts"
+      ],
+      "examiner_notes": null,
+      "topic": "Fossil and Clean Fuels",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "2(ii)",
+      "question_text": "What are the two causes for rise of population in India?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Accelerating birth rate / decreased infant mortality / increased life expectancy / more food production / improved public health / medical advances / religious beliefs / preference for a male child / lack of education, especially of girls / lack of family planning / more hands for labour / lack of awareness / early marriage / poverty / gender bias. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two causes: high birth rate; falling infant mortality; longer life expectancy; better health care; preference for a male child; illiteracy; lack of family planning; early marriage; poverty"
+      ],
+      "model_answer": "Population in India has risen because improved medical facilities have reduced infant mortality and increased life expectancy, while lack of education and family planning keep the birth rate high.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave very general answers",
+        "Wrote the impact of rising population instead of its causes"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "2(iii)",
+      "question_text": "\"Most slum residents in urban area are better off than the rural poor.\" Give any two advantages the slum residents have over rural poor.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Better access to schools / better basic amenities like electricity and water / more job opportunities / improved living conditions / family planning programmes / better health and medical facilities / internet and communication / entertainment / exposure to modern culture / subsidies / business opportunities / better transport. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two advantages of urban slum dwellers: better schools; electricity and water; more jobs; better medical facilities; better transport and communication"
+      ],
+      "model_answer": "Urban slum dwellers have more job opportunities than the rural poor and better access to basic amenities such as electricity, water, schools and hospitals.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote advantages of rural residents over urban areas",
+        "Wrote problems of rural areas without comparison"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "2(iv)",
+      "question_text": "State any two reasons to prove landfills are not environment friendly.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Can pollute air, water and soil / attract animals and insects / release methane, increasing global warming / require vast land, taking away habitats and crop land / chemical leaching / attract disease vectors / spread pathogens / foul smell / generate heat / destroy scenic beauty. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: pollute air, water and soil; release methane (global warming); use vast land; leaching of chemicals; attract vectors and spread disease; foul smell"
+      ],
+      "model_answer": "Landfills are not environment friendly because they release methane, a greenhouse gas that increases global warming, and because chemicals leaching from them pollute the soil and groundwater.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Not clear about the concept of landfills"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "Give any two advantages of efficient land use planning.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Systematic assessment of land / economic zoning and development / reduces income inequality / safeguards resources / divides areas for specific purposes / use of land within its capabilities / less conflict / efficient and ethical use / soil conservation / avoids degradation / optimum use / meets needs of growing population / converts wasteland / reclaims wetlands / preserves environment / demarcates fertile land.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two advantages: optimum use of land within its capability; avoids degradation and conserves soil; allocates land for different uses; reduces conflict; preserves the environment; meets the needs of a growing population"
+      ],
+      "model_answer": "Efficient land use planning ensures the optimum use of land according to its capability, and it prevents land degradation by allocating land for different uses and protecting fertile land and the environment.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about usefulness of land instead of land use planning",
+        "Confused land reforms with land use planning",
+        "Confused aims with advantages"
+      ],
+      "examiner_notes": null,
+      "topic": "Land Use and Wetlands",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "How is organic manure made? State one benefit of organic manure.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Organic manure is made by decomposition of organic matter / bacterial breakdown of dead decaying matter. Benefit: does not harm the soil / enriches soil with nutrients / no soil pollution / improves aeration / maintains soil texture / improves water retention / adds NPK / safe for plants / reduces acidity or alkalinity / low cost / eco-friendly.",
+      "total_marks": 2,
+      "key_points": [
+        "Made by decomposition of organic matter by microbes / bacteria",
+        "One benefit: enriches soil with nutrients; improves texture, aeration or water retention; no soil pollution; low cost"
+      ],
+      "model_answer": "Organic manure is made by the decomposition of dead and decaying organic matter by bacteria and other microbes. It enriches the soil with nutrients without polluting it.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not mention that biodegradable matter is broken down by microbes"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "State two steps that must be taken to achieve global food security.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Rapid economic growth / faster agricultural growth / slower population growth / boost agricultural science and technology / secure property rights and access to finance / education and health / more crop production / maintain food stocks / biotechnology and GMOs / HYV / food aid / better distribution of food / rejuvenate land fertility / developed countries provide food in emergencies. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two steps: increase crop production through technology, HYVs or biotechnology; better distribution of food; maintain food stocks; slower population growth; food aid from developed countries"
+      ],
+      "model_answer": "Global food security can be achieved by increasing crop production using agricultural technology and high-yielding varieties, and by ensuring better distribution of food so that surplus reaches food-deficit countries.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about the usefulness of food rather than its distribution",
+        "Unclear about the meaning of food security"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "Write one advantage and one disadvantage of solar energy.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Advantage: free steady supply in tropical countries / pollution free / renewable / no residue / usable in remote areas and space / storable in batteries / reduces electricity cost / conserves fossil fuel. Disadvantage: expensive installation / not available on cloudy days or at night / takes more space / regular maintenance needed.",
+      "total_marks": 2,
+      "key_points": [
+        "One advantage: renewable and pollution free; free supply; usable in remote areas; reduces electricity cost",
+        "One disadvantage: expensive installation; not available at night or on cloudy days; needs space"
+      ],
+      "model_answer": "Advantage: solar energy is renewable and produces no pollution. Disadvantage: it is not available at night or on cloudy days.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not write the disadvantages correctly"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "Mention any two principles of Sustainable development.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Respect and care for all forms of life / improve the quality of human life / minimise depletion of resources / conserve the earth's diversity and vitality / enable communities to care for their environment / leave resources for future generations / change personal attitudes and practices. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two principles: respect all life; improve quality of human life; minimise resource depletion; conserve earth's diversity; communities care for environment; change personal attitudes"
+      ],
+      "model_answer": "Two principles of sustainable development are to respect and care for all forms of life, and to minimise the depletion of non-renewable resources so that resources are left for future generations.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused sustainable development with sustainable agriculture",
+        "Wrote the definition instead of principles"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Development",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "Name the energy that is produced by the rise and fall of ocean water. What is the advantage of the above stated energy?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Tidal energy. Advantages: renewable / non-polluting / high energy density / low operation and maintenance cost / inexhaustible. (Any one)",
+      "total_marks": 2,
+      "key_points": [
+        "Tidal energy",
+        "One advantage: renewable; non-polluting; inexhaustible; low running cost"
+      ],
+      "model_answer": "Tidal energy. It is a renewable and non-polluting source of energy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote hydropower or other ocean energies instead of tidal energy"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "What are biodegradable wastes? How are these biodegradable wastes helpful?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Wastes which can be decomposed into simpler substances by micro-organisms like bacteria. Usefulness: used as biofertilisers (nutrient-rich, non-polluting, cheap) / enrich soil / no soil pollution / maintain soil texture / eco-friendly / reduce landfill / increase humus.",
+      "total_marks": 2,
+      "key_points": [
+        "Wastes decomposed into simpler substances by micro-organisms",
+        "Useful as manure / biofertiliser, enriching soil and reducing landfill waste"
+      ],
+      "model_answer": "Biodegradable wastes are wastes that can be broken down into simpler substances by micro-organisms such as bacteria. They are helpful because they can be composted into nutrient-rich manure that enriches the soil without pollution.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about plastics",
+        "Unclear about the uses of biodegradable waste"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "Write any two contributions of private enterprises in city improvement.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Provide trading and employment / livelihood facilities like housing, water supply, sewerage, transport, health and education / women empowerment / eco-friendly products / renewable energy / waste management / tree plantation / maintain parks and gardens / environmental awareness / energy-efficient technology / promote 3Rs. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two contributions: employment; housing and civic facilities; waste management; tree plantation and maintaining parks; awareness; eco-friendly products and technology"
+      ],
+      "model_answer": "Private enterprises help improve cities by taking up waste management projects and by planting trees and maintaining parks and gardens.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote government contributions instead of private"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "The vehicular traffic is a major problem in metro cities. Write two ways in which traffic congestion affects environment. Suggest three methods to reduce traffic on roads.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Effects: air pollution / greenhouse emissions concentrated at a place / secondary pollutants / noise pollution / depletion of fossil fuels / acid rain, ozone depletion, smog. (Any two) Methods: mass or public transport and car pools / expressways / road maintenance / ease bottlenecks / fines for breaking rules / staggered office hours and work from home / good signals / odd-even scheme / separate lanes / digital tolls / time restriction on heavy vehicles / one-way roads. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Two environmental effects of congestion: air pollution; noise pollution; greenhouse emissions; smog; fuel depletion",
+        "Three methods to reduce traffic: public transport / car pools; staggered hours / work from home; odd-even scheme; separate lanes; better roads and signals"
+      ],
+      "model_answer": "Traffic congestion causes air pollution as idling vehicles emit exhaust, and noise pollution from honking and engines. Traffic can be reduced by encouraging public transport and car pools, staggering office hours or allowing work from home, and using an odd-even vehicle scheme on alternate days.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the same points for both parts",
+        "Wrote using clean fuel to reduce congestion"
+      ],
+      "examiner_notes": null,
+      "topic": "Urban Planning and Transport",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "Sanitary land fill and Incineration are two methods of waste disposal. Briefly describe the two processes. Suggest any other ecofriendly method of waste disposal for biodegradable wastes.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Sanitary landfills are sites where waste is covered and allowed to decompose, isolated from the environment for safe disposal; once completely degraded it is safe. Incineration is burning hazardous materials at temperatures high enough to destroy contaminants; heat can be used as steam. Other method: composting / bioremediation / vermicomposting / breakdown by bacteria or microbes.",
+      "total_marks": 5,
+      "key_points": [
+        "Sanitary landfill: waste covered and isolated, allowed to decompose safely",
+        "Incineration: burning waste at very high temperature to destroy contaminants",
+        "Another eco-friendly method: composting / vermicomposting / bioremediation"
+      ],
+      "model_answer": "In a sanitary landfill, waste is spread, compacted and covered with soil in a site isolated from the environment, where it decomposes safely. Incineration is the burning of waste at very high temperatures to destroy contaminants; the heat can be used to produce steam. Biodegradable waste can also be disposed of by composting or vermicomposting.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not include 'at a very high temperature' for incineration",
+        "Could not distinguish open and sanitary landfills",
+        "Wrote recycling for biodegradable waste"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "What is terracing? Where is it practiced? State three advantages of terracing.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Fields are cut at right angles to the slope and agriculture is carried out on the flat surfaces, to prevent soil erosion. Practised in hilly regions, slopes and mountains (step farming). Advantages: reduces soil erosion / minimises landslides / reduces runoff / reduces wastage of irrigation water / reduces sedimentation / increases water holding / prevents loss of nutrients / more area for crops. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Terracing: cutting steps (flat fields) across the slope for farming",
+        "Practised in hilly / mountainous regions",
+        "Three advantages: reduces soil erosion; reduces runoff; minimises landslides; saves irrigation water; retains nutrients"
+      ],
+      "model_answer": "Terracing is cutting a hill slope into a series of flat steps at right angles to the slope, on which crops are grown. It is practised in hilly and mountainous regions. Advantages: it reduces soil erosion and surface runoff, minimises landslides, and increases the water-holding capacity of the soil.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described terracing as farming on rooftops",
+        "Wrote names of countries instead of hilly regions"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "'Biogas is produced by fermentation of biodegradable wastes.' Mention any three advantages and any two disadvantages of using biogas.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Advantages: low cost, eco-friendly, non-polluting / raw material easily available in rural areas / reduces dependence on fossil fuels and firewood / converts waste into useful product / high calorific value / gives rich organic manure / smokeless / reduces deforestation. Disadvantages: not feasible everywhere, especially in cities / difficult to improve efficiency / impurities corrode engine parts / not economical at large scale / needs space / foul smell / transport problems / high installation cost / large volume of raw material.",
+      "total_marks": 5,
+      "key_points": [
+        "Three advantages: cheap and non-polluting; easily available raw material; reduces use of firewood; high calorific value; slurry gives organic manure",
+        "Two disadvantages: not feasible in urban areas; needs space; high installation cost; foul smell; large raw material required"
+      ],
+      "model_answer": "Advantages: biogas is a cheap, smokeless and non-polluting fuel; its raw material is easily available in rural areas, which reduces the use of firewood; and the leftover slurry is a rich organic manure. Disadvantages: it is not feasible in urban areas as it needs a lot of space, and the plant's installation cost is high.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused biogas with biomass",
+        "Could not write the disadvantages"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "What are the aims of Integrated Pest Management (IPM)? Write three advantages of IPM.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Aims: balanced ecosystem / avoid crop loss / healthy environment / minimise adverse effects of pesticides / high-quality produce at minimal cost / promote biodiversity / reduce dependence on synthetic pesticides. (Any two) Advantages: effective and environmentally sensitive / economical with least hazard / applicable to agricultural and non-agricultural settings / reduced chance of pest resistance / reduced pesticide use through a variety of control options. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Two aims: avoid crop loss from pests; minimise harmful effects of pesticides; maintain a balanced ecosystem; quality produce at low cost",
+        "Three advantages: environmentally sensitive; economical and least hazardous; less pest resistance; reduced pesticide use; usable in many settings"
+      ],
+      "model_answer": "Aims of IPM: to avoid crop losses caused by pests, and to keep the harmful effects of pesticides to a minimum while maintaining a balanced ecosystem. Advantages: it is an effective and environmentally sensitive approach; it reduces the chance of pests developing resistance; and it reduces pesticide use by combining biological, physical and cultural controls.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused aims with advantages",
+        "Wrote the same points for both"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "7(ii)",
+      "question_text": "Differentiate between ex-situ and in-situ conservation. Give one example of in-situ conservation. Write any two advantages of in-situ conservation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "In-situ: in the natural habitat / no special care units / protects habitat and many species / moderate cost / more sustainable / no special breeding skills. Ex-situ: outside natural habitat / special care units / conserves threatened species / high cost / special breeding skills. Examples: sanctuaries, national parks, biosphere reserves. Advantages: protects natural habitats / maintains viable numbers / legislation / research and education / natural reproduction and traits / evolution continues / tourism. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "Difference: in-situ in the natural habitat vs ex-situ outside it (zoos, gardens, seed banks)",
+        "Example of in-situ: national park / sanctuary / biosphere reserve",
+        "Two advantages of in-situ: natural habitat protected; species keep natural traits and breed naturally; many species conserved together; lower cost"
+      ],
+      "model_answer": "In-situ conservation protects organisms in their natural habitat, while ex-situ conservation protects them outside their natural habitat in places such as zoos and botanical gardens under special care. Example of in-situ: a national park such as Jim Corbett. Advantages: the whole natural habitat and many species are protected together, and animals breed naturally and keep their natural traits.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote incompatible points of difference",
+        "Wrote only definitions"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "List any two ecological impacts of Urbanisation. What three measures can be adopted to strengthen rural-urban linkage?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Ecological impacts: pollutants from factories / waste and disease / urban sprawl destroys habitats / loss of farmland, wetlands, grazing land / altered local climate / loss of biodiversity and resources. (Any two) Linkage: flow of farm produce to urban markets / flow of market information / flow of farm technology / rural development and microfinance schemes / agro-based industry / agro and village tourism / more village markets. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Two ecological impacts: habitat loss from urban sprawl; loss of farmland and wetlands; loss of biodiversity; pollution; altered local climate",
+        "Three linkage measures: flow of produce to urban markets; flow of information and technology; agro-based industries; rural development and microfinance; agro-tourism"
+      ],
+      "model_answer": "Urbanisation destroys natural habitats as cities sprawl, and it converts fertile farmland and wetlands into built-up land. Rural-urban linkage can be strengthened by improving the flow of farm produce from villages to urban markets, sharing market information and new farming technology with farmers, and setting up agro-based industries in rural areas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote social, cultural and economic impacts instead of ecological ones",
+        "Could not write measures for rural-urban linkage"
+      ],
+      "examiner_notes": null,
+      "topic": "Rural Development",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "Write the expanded form of GMO. Write two benefits and two problems associated with these organisms.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Genetically Modified Organisms. Benefits: disease, flood and drought resistant crops / nutritious food / more yield / lower cost of food and drugs / pest resistance / better quality / food security. Problems: altered metabolism / new allergens / ecological imbalance / super pests and weeds / unknown safety / small farmers suffer / gene transfer to conventional varieties / loss of original germplasm.",
+      "total_marks": 5,
+      "key_points": [
+        "Genetically Modified Organism",
+        "Two benefits: pest and disease resistance; higher yield; more nutritious food; food security",
+        "Two problems: allergens; unknown long-term safety; superweeds and pests; gene transfer; harms small farmers"
+      ],
+      "model_answer": "GMO stands for Genetically Modified Organism. Benefits: GM crops can be pest and drought resistant, and they give higher yields of more nutritious food. Problems: GM food may introduce new allergens, and genes may transfer to conventional varieties, causing loss of original germplasm.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not write the expanded form",
+        "Did not explain the benefits and problems"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "9(i)",
+      "question_text": "What is Community Forestry? State two objectives of community forestry. How does this forestry benefit the community?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Raising of trees on community land / social area / conservation of forest with the help of the community. Benefits and objectives: government provides seeds, seedlings and fertilisers; communities manage the plantations; food and fodder; fuel wood; manure; recreation; the entire community benefits; the community takes responsibility for protecting trees.",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: raising trees on community land with the participation of local people",
+        "Objectives and benefits: food, fodder, fuel wood and manure for the community; community manages and protects the trees; recreational needs"
+      ],
+      "model_answer": "Community forestry is the raising of trees on community land with the participation of the local people. Its objectives are to meet the community's needs for fuel wood, fodder and food, and to make the community responsible for protecting the trees. It benefits the community by supplying fuel, fodder, manure and recreational spaces, while the government provides seeds and seedlings.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Defined community forestry incorrectly",
+        "Confused objectives with advantages"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "9(ii)",
+      "question_text": "What is GEF? Explain any two areas of global environmental issues which is addressed by GEF.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "GEF (Global Environmental Facility) is a partnership for international cooperation. It focuses on: biodiversity, climate change, chemicals, international waters, land degradation, sustainable forest management, ozone depletion.",
+      "total_marks": 5,
+      "key_points": [
+        "GEF = Global Environmental Facility, a partnership for international cooperation (funding)",
+        "Two areas explained: biodiversity; climate change; chemicals; international waters; land degradation; forest management; ozone depletion"
+      ],
+      "model_answer": "GEF is the Global Environmental Facility, an international partnership that funds projects on global environmental problems. Two areas it addresses: climate change, by funding projects that reduce greenhouse gas emissions; and biodiversity, by supporting the conservation of ecosystems and species.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not give the expanded form of GEF",
+        "Listed areas without explanation"
+      ],
+      "examiner_notes": null,
+      "topic": "International Cooperation",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "10(i)",
+      "question_text": "Suggest five methods by which we can reduce cutting of trees or combat deforestation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Reforestation and afforestation / energy plantation / materials other than wood / recycling wood and paper / changing consumption patterns / less wood for paper / strict laws / managing forest grazing / ban firewood use / less wooden furniture / social, agro and community forestry / ban jhumming / Van Mahotsav / silviculture. (Any five)",
+      "total_marks": 5,
+      "key_points": [
+        "Any five methods: afforestation and reforestation; energy plantations; using alternatives to wood; recycling paper and timber; strict forest laws; social / agro / community forestry; banning slash-and-burn"
+      ],
+      "model_answer": "1. Afforestation and reforestation. 2. Energy plantations to supply fuel wood. 3. Using materials other than wood and recycling timber and paper. 4. Strict laws for the conservation of forests. 5. Promoting social, agro and community forestry.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote impacts of deforestation instead of methods",
+        "Repeated similar methods"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "10(ii)",
+      "question_text": "Read the following paragraph and answer the following questions. Counter urbanization is a demographic and social process. Of late urbanization process in India is witnessing counter–urbanization in its life cycle. The counter-urbanization increases urbanism in physically rural areas. The growth in information technology, increase in car ownership over the last 40 years, more mobility, new business parks on the edge of cities, more people tend to move when they retire and so on are factors responsible for counter urbanization. (a) Mention any two causes associated with Counter Urbanization as given in the paragraph. (b) Write two more causes, other than the ones mentioned here, which you think lead people to return to rural areas. (c) What changes will be observed in rural areas as an effect of counter-urbanization?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Growth in information technology / increase in car ownership / more mobility / new business parks on the edge of cities. (b) High land value / high local taxes / cheap land in rural areas / rural development / better transport and communication / congestion and pollution in cities / clean surroundings / new jobs and businesses in villages / better amenities. (c) Changes in demography / loss of original character / change in layout / higher land prices / changes in economy / less public transport use / traffic and pollution in rural areas.",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two causes from the passage: IT growth; car ownership; mobility; business parks",
+        "(b) Two other causes: high land prices and taxes in cities; congestion and pollution in cities; cheap land and clean surroundings in villages; better rural amenities and transport",
+        "(c) Effects: change in demography; loss of original character; higher land prices; more traffic and pollution in rural areas"
+      ],
+      "model_answer": "(a) Growth in information technology and increase in car ownership. (b) High land prices and congestion and pollution in cities, and cheaper land with cleaner surroundings in villages. (c) The rural population structure changes, land prices rise, traffic and pollution increase, and villages lose their original character.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not identify causes given in the passage",
+        "Repeated points",
+        "Could not explain demographic change in rural areas"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    }
+  ]
+}

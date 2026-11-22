@@ -1,0 +1,1074 @@
+{
+  "year": 2026,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "The term used for the increase in population, which leads to the growth and expansion of cities is: (a) Deurbanisation (b) Counter urbanisation (c) Urbanisation (d) Ruralisation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Deurbanisation",
+        "(b) Counter urbanisation",
+        "(c) Urbanisation",
+        "(d) Ruralisation"
+      ],
+      "correct_answer": "(c) Urbanisation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Urbanisation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Urbanisation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote counter-urbanisation",
+        "Overlooked the key phrase 'growth and expansion of cities'"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "Assertion (A): Education plays a key role in women's empowerment. Reason (R): Access to education empowers women to make their own decision. (a) (A) is true and (R) is false. (b) (A) is false and (R) is true. (c) Both (A) and (R) are true and (R) is the correct explanation of (A). (d) Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(d) Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+      ],
+      "correct_answer": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected option (d)",
+        "Considered the assertion and reason separately"
+      ],
+      "examiner_notes": "Teach a step-by-step approach to Assertion–Reason questions.",
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "The principle of 3Rs in waste management stands for: (a) Reduce, Regain, Recycle (b) Reduce, Reuse, Regain (c) Reuse, Retain, Regain (d) Reuse, Reduce, Recycle",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Reduce, Regain, Recycle",
+        "(b) Reduce, Reuse, Regain",
+        "(c) Reuse, Retain, Regain",
+        "(d) Reuse, Reduce, Recycle"
+      ],
+      "correct_answer": "(d) Reuse, Reduce, Recycle",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Reuse, Reduce, Recycle",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Reuse, Reduce, Recycle",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'Reduce, Regain, Recycle'"
+      ],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "Which of following is NOT related to land use planning? (a) Systematic assessment of land (b) Unplanned drainage system (c) Complete infrastructure planning (d) Developed transport facility",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Systematic assessment of land",
+        "(b) Unplanned drainage system",
+        "(c) Complete infrastructure planning",
+        "(d) Developed transport facility"
+      ],
+      "correct_answer": "(b) Unplanned drainage system",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Unplanned drainage system",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Unplanned drainage system",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose options (c) or (d)"
+      ],
+      "examiner_notes": null,
+      "topic": "Land Use and Wetlands",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "Identify the best method to make the soil fertile. (a) Spraying pesticides (b) Burning grass cover (c) Using trickle drip irrigation (d) Adding farmyard manure",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Spraying pesticides",
+        "(b) Burning grass cover",
+        "(c) Using trickle drip irrigation",
+        "(d) Adding farmyard manure"
+      ],
+      "correct_answer": "(d) Adding farmyard manure",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Adding farmyard manure",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Adding farmyard manure",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected trickle drip irrigation, confusing water and soil conservation"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "Match Column I with Column II. Column I: 1. Planting rows of trees and shrubs. 2. Cutting the fields at a right angle to the slope. 3. Dry leaves are spread on soil. 4. Reduce the speed of water flow. Column II: A. Check Dams B. Mulching C. Terrace Farming D. Wind Breakers. (a) 1-C, 2-D, 3-A, 4-B (b) 1-D, 2-C, 3-B, 4-A (c) 1-A, 2-C, 3-B, 4-D (d) 1-B, 2-A, 3-C, 4-D",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 1-C, 2-D, 3-A, 4-B",
+        "(b) 1-D, 2-C, 3-B, 4-A",
+        "(c) 1-A, 2-C, 3-B, 4-D",
+        "(d) 1-B, 2-A, 3-C, 4-D"
+      ],
+      "correct_answer": "(b) 1-D, 2-C, 3-B, 4-A",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) 1-D, 2-C, 3-B, 4-A",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) 1-D, 2-C, 3-B, 4-A",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected option (a)",
+        "Copied the statements incorrectly"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "Which one of the following statements is NOT correct? (a) Ozone depletion benefits the earth. (b) Eutrophication is due to the dissolved phosphate in water bodies. (c) Global warming is the rise in the average temperature of the earth. (d) Greenhouse effect is due to deforestation.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Ozone depletion benefits the earth.",
+        "(b) Eutrophication is due to the dissolved phosphate in water bodies.",
+        "(c) Global warming is the rise in the average temperature of the earth.",
+        "(d) Greenhouse effect is due to deforestation."
+      ],
+      "correct_answer": "(a) Ozone depletion benefits the earth.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Ozone depletion benefits the earth.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Ozone depletion benefits the earth.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Ozone Depletion and Climate",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "To reduce the environmental impact of construction activities, which of the following methods should be undertaken? (a) Increasing construction waste (b) Using eco-friendly construction material (c) Using timber for construction (d) Inefficient use of water resources",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Increasing construction waste",
+        "(b) Using eco-friendly construction material",
+        "(c) Using timber for construction",
+        "(d) Inefficient use of water resources"
+      ],
+      "correct_answer": "(b) Using eco-friendly construction material",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Using eco-friendly construction material",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Using eco-friendly construction material",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Urban Planning and Transport",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "Fukushima : Release of radioactive materials : : Bhopal Gas Tragedy : ___________ (a) Leakage of Methyl Isocyanate (b) Leakage of oil (c) Flash floods due to cloud burst (d) Dumping of Cobalt 60",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Leakage of Methyl Isocyanate",
+        "(b) Leakage of oil",
+        "(c) Flash floods due to cloud burst",
+        "(d) Dumping of Cobalt 60"
+      ],
+      "correct_answer": "(a) Leakage of Methyl Isocyanate",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Leakage of Methyl Isocyanate",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Leakage of Methyl Isocyanate",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose 'leakage of oil'"
+      ],
+      "examiner_notes": null,
+      "topic": "Industrial Disasters",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "One positive impact of MNCs on the local economy of the host country is: (a) drain of wealth (b) destruction of culture (c) employment generation (d) introduction of government policies",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) drain of wealth",
+        "(b) destruction of culture",
+        "(c) employment generation",
+        "(d) introduction of government policies"
+      ],
+      "correct_answer": "(c) employment generation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) employment generation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) employment generation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused positive and negative impacts of MNCs"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "According to IUCN, Dodos have been classified as ___________. (a) Endangered species (b) Endemic species (c) Vulnerable species (d) Extinct species",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Endangered species",
+        "(b) Endemic species",
+        "(c) Vulnerable species",
+        "(d) Extinct species"
+      ],
+      "correct_answer": "(d) Extinct species",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Extinct species",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Extinct species",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected endemic species"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "Microbial breakdown of biomass in the absence of oxygen produces __________ gases. (a) Chlorine and fluorine (b) Methane and carbon dioxide (c) Nitrogen and hydrogen (d) Oxygen and nitrogen",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Chlorine and fluorine",
+        "(b) Methane and carbon dioxide",
+        "(c) Nitrogen and hydrogen",
+        "(d) Oxygen and nitrogen"
+      ],
+      "correct_answer": "(b) Methane and carbon dioxide",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Methane and carbon dioxide",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Methane and carbon dioxide",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected nitrogen and hydrogen"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "Identify the type of farming that is shown through the diagram given below (a circle divided into Beans, Carrot, Corn and Tomato with arrows going round, and '?' in the centre): (a) Inter Cropping (b) Mixed farming (c) Crop rotation (d) Strip farming",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Inter Cropping",
+        "(b) Mixed farming",
+        "(c) Crop rotation",
+        "(d) Strip farming"
+      ],
+      "correct_answer": "(c) Crop rotation",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Crop rotation",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Crop rotation",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected mixed cropping or intercropping"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Identify the incorrect pair from the following: (a) Solar energy – Solar panels (b) Leguminous crop – Wheat (c) Ethanol – Fuel efficiency (d) Rare species – One horned rhino",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Solar energy – Solar panels",
+        "(b) Leguminous crop – Wheat",
+        "(c) Ethanol – Fuel efficiency",
+        "(d) Rare species – One horned rhino"
+      ],
+      "correct_answer": "(b) Leguminous crop – Wheat",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Leguminous crop – Wheat",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Leguminous crop – Wheat",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Identified the correct pair instead of the incorrect pair"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "The picture given below shows a car with a fuel tank (a cylindrical gas tank fitted in the boot). Identify the fuel used in the tank to run the vehicle. (a) Piped Natural Gas (b) Gasoline (c) Compressed Natural Gas (d) Lead-free Petrol",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Piped Natural Gas",
+        "(b) Gasoline",
+        "(c) Compressed Natural Gas",
+        "(d) Lead-free Petrol"
+      ],
+      "correct_answer": "(c) Compressed Natural Gas",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Compressed Natural Gas",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Compressed Natural Gas",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused CNG with PNG, gasoline or lead-free petrol"
+      ],
+      "examiner_notes": null,
+      "topic": "Fossil and Clean Fuels",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "1(xvi)",
+      "question_text": "Which of the following issues was addressed by the Earth Summit held in Rio (1992)? (a) Biodiversity and climate change (b) Transboundary air pollution (c) Poverty alleviation (d) International trade regulation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Biodiversity and climate change",
+        "(b) Transboundary air pollution",
+        "(c) Poverty alleviation",
+        "(d) International trade regulation"
+      ],
+      "correct_answer": "(a) Biodiversity and climate change",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Biodiversity and climate change",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Biodiversity and climate change",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected option (b)"
+      ],
+      "examiner_notes": null,
+      "topic": "International Cooperation",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "2(i)",
+      "question_text": "Name any two devices that reduce industrial air pollution.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Fabric filters / baghouses / gravity settling chamber / cyclone separator / scrubbers / electrostatic precipitator / plate tower / packed bed tower / filters. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two industrial devices: electrostatic precipitator; scrubbers; cyclone separator; fabric filters / baghouses; gravity settling chamber"
+      ],
+      "model_answer": "Electrostatic precipitator and scrubber.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [
+        "Electrostatic precipitator",
+        "Scrubbers",
+        "Cyclone separator",
+        "Fabric filters",
+        "Baghouses",
+        "Gravity settling chamber",
+        "Plate tower",
+        "Packed bed tower"
+      ],
+      "common_errors": [
+        "Wrote general pollution-control methods",
+        "Gave devices for vehicular or water pollution"
+      ],
+      "examiner_notes": null,
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "2(ii)",
+      "question_text": "Mention any two reasons for the increase in birth rate of world population.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Improved healthcare / vaccination / fewer food shortages / better nutrition / immunisation / reduced infant mortality / religious beliefs favouring large families / low female education / early marriage / preference for a male child / belief that more children mean more assets. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: early marriage; low female education; preference for a male child; religious beliefs favouring large families; children seen as assets; better health care and lower infant mortality"
+      ],
+      "model_answer": "Birth rates rise because of early marriage, which lengthens the reproductive span, and because of low levels of female education and a preference for a male child.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave effects of population growth",
+        "Gave vague or repeated reasons"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "2(iii)",
+      "question_text": "Unplanned and haphazard growth of urban complexes has serious environmental impacts. State any two environmental impacts of unplanned urban growth.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Congestion / more waste / habitat loss / loss of agricultural land / pollution / deforestation / more energy use / degraded ecosystems / urban heat islands / less biodiversity / water scarcity / soil degradation and erosion / water logging / over-exploitation of resources. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two environmental impacts: habitat loss; loss of farmland; deforestation; pollution; more waste; urban heat islands; water scarcity; water logging"
+      ],
+      "model_answer": "Unplanned urban growth destroys natural habitats and farmland, and it increases air and water pollution and the generation of waste.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote causes of unplanned growth instead of its effects",
+        "Wrote social or economic impacts"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "2(iv)",
+      "question_text": "Write any two consequences of soil erosion.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Removal of topsoil / loss of nutrients and fertility / reduced water retention / loss of soil biodiversity and habitats / food scarcity / lower productivity and income / loss of vegetation / desertification / water contamination / sedimentation of water bodies / water pollution from pesticides / lower oxygen in water / flooding risk. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two consequences: loss of fertile topsoil and nutrients; lower crop productivity; desertification; sedimentation of water bodies; increased flooding"
+      ],
+      "model_answer": "Soil erosion removes the fertile topsoil, reducing soil fertility and crop productivity, and the eroded soil causes sedimentation of rivers and lakes, increasing the risk of floods.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Stated causes of soil erosion instead of consequences"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "A Genetically Modified Organism (GMO) is an organism whose genome has been engineered in a laboratory. Give any one advantage and any one disadvantage of such an organism.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Advantage: pest and disease resistance / better quality / more nutrients / herbicide tolerance / more yield / food security / environmental benefit / longer shelf life / higher profits / tolerance to heat and salinity. Disadvantage: out-crossing affects food safety / harm to non-target organisms / GM proteins disturb ecosystem / contaminates other species / loss of original genes / allergies / less biodiversity / super weeds / antibiotic resistance / farmers must buy new seeds / chronic health issues.",
+      "total_marks": 2,
+      "key_points": [
+        "One advantage: pest / disease resistance; higher yield; more nutritious; longer shelf life",
+        "One disadvantage: allergies; super weeds; contamination of other species; loss of biodiversity; cost of new seeds"
+      ],
+      "model_answer": "Advantage: GM crops can be made resistant to pests and diseases, increasing yield. Disadvantage: the foreign gene can spread to and contaminate other species, reducing biodiversity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about biotechnology instead of GMOs",
+        "Gave two points of the same type"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "What is captive breeding? Give any one advantage of captive breeding.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "A means of conserving species that do not survive in their natural habitat / endangered species; breeding done in a controlled, human-managed environment like a zoo, botanical garden or aquarium. Advantage: conserves endangered species / protects against disease / preserves gene pool / avoids inbreeding problems / saves from extinction / protects from predators and poachers / research and education.",
+      "total_marks": 2,
+      "key_points": [
+        "Breeding of endangered species in a controlled, human-managed environment such as a zoo",
+        "One advantage: saves species from extinction; preserves gene pool; protects from predators and poachers"
+      ],
+      "model_answer": "Captive breeding is the breeding of endangered species in a controlled, human-managed environment such as a zoo or aquarium. It saves species from extinction by protecting them from predators and poachers.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about simple breeding",
+        "Confused it with domestication or natural breeding"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "Write any two ways in which energy plantations are useful to combat deforestation.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Prevent soil erosion / supply more oxygen / reduce stress on fossil fuels / reduce non-renewable energy use / help combat deforestation / inexhaustible renewable energy / fuelwood for stoves and boilers / rejuvenate poor land / support biofuel plants. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: provide fuelwood so natural forests are not cut; renewable energy source reducing fossil fuel use; rejuvenate poor-quality land; prevent soil erosion"
+      ],
+      "model_answer": "Energy plantations supply fuelwood for stoves and boilers, so people do not need to cut natural forests, and they rejuvenate poor-quality land while preventing soil erosion.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about normal plantations",
+        "Confused energy plantations with power plants or afforestation"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "What is sewage sludge? Give one benefit of using sewage sludge.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Sewage sludge is the semi-solid, mud-like residue that forms during wastewater treatment, collecting suspended and dissolved organic and inorganic materials. Benefits: increases organic carbon and humic content / improves soil structure and fertility / increases microbial activity / reduces synthetic fertilisers / used as manure / increases productivity / cheaper / biogas production / renewable energy feedstock. (Any one)",
+      "total_marks": 2,
+      "key_points": [
+        "Semi-solid residue left after wastewater treatment",
+        "One benefit: used as manure / fertiliser; improves soil fertility; biogas production"
+      ],
+      "model_answer": "Sewage sludge is the semi-solid, mud-like residue that settles out during the treatment of wastewater. Treated sludge can be used as manure to improve soil fertility.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described sludge as a liquid",
+        "Confused it with untreated sewage",
+        "Gave harmful effects instead of benefits"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "India's toy industry can't meet its domestic demand, so foreign manufacturers export toys to India. These toys are sold at a higher price compared to locally produced toys. (Adapted from: The Times of India, September 2, 2020) Identify the type of practice indicated in the above statements. Write one way of practising it.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Unfair trade practice: selling products using deceptive, fraudulent and unethical methods / international trade practices. Way: unfair trade between countries / false representation / targeting vulnerable populations / false advertising / tied selling / false prizes / deceptive pricing / non-compliance with standards / not paying taxes / false guarantees / hoarding / bait-and-switch / unsafe or counterfeit goods / unfair return policies / hidden cost.",
+      "total_marks": 2,
+      "key_points": [
+        "Unfair trade practice",
+        "One way: deceptive pricing; false advertising; selling counterfeit or unsafe goods; hidden costs; hoarding"
+      ],
+      "model_answer": "This is an unfair trade practice. One way it is practised is through deceptive pricing, selling goods at higher prices than their value.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Referred to general international trade or imports",
+        "Identified the practice but did not explain how it is carried out"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "What is the role of Biotechnology in agriculture to achieve global food security?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Improve agronomic attributes / improve crop yield / resistance to pests, diseases and drought / less dependence on fertilisers and pesticides / efficient cultivation methods / more nutritional value / climate-smart agriculture / shorter maturation time / flood tolerance / transfer beneficial genes.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two roles: improves crop yield; pest, disease and drought resistant crops; higher nutritional value; less dependence on fertilisers and pesticides; shorter maturation time"
+      ],
+      "model_answer": "Biotechnology helps achieve food security by developing crops with higher yields and crops resistant to pests, diseases and drought, so that more food is produced reliably.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote applications in medicine or industry",
+        "Gave a general definition of biotechnology"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "State any two advantages of recycling timber.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Prevents deforestation / conserves resources / reduces waste / reduces tree cutting, mitigating climate change / less expensive / new products / lower moisture so fewer pests / manure from wood waste / power generation / conserves forests / eco-friendly / energy generation.",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: prevents deforestation; conserves resources; reduces waste; cheaper; mitigates climate change"
+      ],
+      "model_answer": "Recycling timber reduces the need to cut trees, which prevents deforestation, and it reduces the amount of waste sent to landfills.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote uses of wood instead of advantages of recycling timber",
+        "Described the process of recycling"
+      ],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "Observe the image given below and answer the following questions (image: a cross-section of the earth showing magma as a heat source, hot water reservoirs, a drilling rig, wells and a generating unit at the surface): (a) Identify the type of energy that is obtained from this source. (b) Write one advantage of this type of energy mentioned in (a) above.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Geothermal energy. (b) Eco-friendly / renewable / fewer carbon emissions / huge amount of heat / does not depend on solar energy / continuous supply / low operating cost / reduces fossil fuel dependence / less land / long life.",
+      "total_marks": 2,
+      "key_points": [
+        "(a) Geothermal energy",
+        "(b) One advantage: renewable; continuous supply independent of weather; low emissions; low operating cost"
+      ],
+      "model_answer": "(a) Geothermal energy. (b) It is a renewable source that provides a continuous supply of energy, unlike solar or wind energy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Identified it as hydroelectricity or heat energy",
+        "Gave general advantages of heat energy"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "(a) Suggest any two economic steps taken by the government to promote clean transport system. (b) Describe any three ways how proper town planning and zoning can help reduce traffic congestion.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Fuel efficiency standards / resources for public transport / heavy fines for polluting materials and adulterated fuel / vehicle maintenance / pollution checks / alternative fuels (CNG, LPG, electricity) / hybrid vehicles / better roads / subsidies for EVs / metro projects / lower taxes on eco-friendly vehicles / lower tolls for non-polluting vehicles. (Any two) (b) Expressways / better roads / parking zones / planning roads to avoid bottlenecks / road infrastructure / zoning commercial and residential areas / flyovers / separate lanes / traffic signals / separate entry and exit roads / two-way roads / highways / outer rings / bypass roads. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two economic steps: subsidies for electric / CNG vehicles; lower taxes or tolls on eco-friendly vehicles; fines for polluting vehicles and adulterated fuel; funding public transport and metro projects",
+        "(b) Three town-planning measures: zoning commercial and residential areas; parking zones; flyovers, bypasses and ring roads; separate lanes; planning roads to avoid bottlenecks"
+      ],
+      "model_answer": "(a) The government can give subsidies for electric and CNG vehicles and reduce taxes and tolls on non-polluting vehicles. (b) Town planning can reduce congestion by zoning commercial and residential areas separately, building bypass and ring roads and flyovers, and designating proper parking zones.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote traffic management or vehicle types without economic measures",
+        "Understood 'clean transport' as physically cleaning vehicles",
+        "Missed terms like zoning, land use and road planning"
+      ],
+      "examiner_notes": null,
+      "topic": "Urban Planning and Transport",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "(Refer to the flow chart: Growing Population → Increase in Consumption → Resource Depletion → Environmental Degradation.) (a) Explain the connection between growing population and environmental degradation illustrated in the flow chart given above. (b) Explain how education helps in controlling the rate of population growth of a country.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) More use of resources causes over-consumption leading to depletion of resources; hence more population causes environmental degradation. (b) Awareness of consequences of population explosion / disadvantages of large families / economic benefits of small families / girls understand reproductive health / awareness of birth control / career orientation / delayed marriage / higher income reduces need for large families / overcomes superstitions favouring more children or a male child. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Growing population increases consumption, which depletes resources and degrades the environment (in sequence)",
+        "(b) Three ways education helps: awareness of birth control; delayed marriage; understanding the benefits of a small family; overcoming superstitions; career orientation of women"
+      ],
+      "model_answer": "(a) As population grows, consumption of goods and resources increases; this over-consumption depletes natural resources such as forests, water and minerals, and the depletion leads to environmental degradation. (b) Education makes people aware of birth control methods and of the economic benefits of a small family; it delays marriage as people pursue careers; and it helps overcome superstitions that favour more children or a male child.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not explain all steps of the flow chart in sequence",
+        "Stated that education helps without explaining how"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "Urban areas produce thousands of tons of solid waste every day. A major portion of this waste is dumped in open landfills. Segregation of waste at source, recycling and composting help reduce the amount of garbage that goes to landfills. (a) What is a sanitary landfill? (b) Mention two problems caused by improper waste disposal. (c) Explain two methods that can help manage solid waste effectively.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) A way of disposing of waste inside land without creating hazards to public health or safety; waste is placed in a covered landfill or pit. (b) Spoils aesthetics / spreads diseases / foul smell / soil, air and water pollution / destroys ecosystems / blocks water bodies / biodiversity loss / groundwater contamination / bioaccumulation / stray animals / breeding of mosquitoes and flies. (Any two) (c) Sanitary landfills / incineration / reuse, recycling and refusal / reducing at source / vermicomposting / segregation at source / biomethanation or biogas / rejuvenating land / bioremediation. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Safe disposal of waste in a covered, lined pit without hazards to public health",
+        "(b) Two problems: spreads disease; pollution of soil, air and water; groundwater contamination; foul smell; breeding of mosquitoes",
+        "(c) Two methods explained: segregation at source; composting / vermicomposting; recycling; incineration; biogas production"
+      ],
+      "model_answer": "(a) A sanitary landfill is a covered and lined pit where waste is spread, compacted and covered with soil so that it is disposed of without creating hazards to public health. (b) Improper waste disposal spreads diseases by breeding flies and mosquitoes, and it contaminates soil and groundwater. (c) Segregation at source separates biodegradable and non-biodegradable waste so each can be treated properly; composting converts biodegradable waste into manure.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described dumping of sanitary pads",
+        "Omitted key terms like compaction, soil cover, liners and leachate",
+        "Gave solutions instead of problems"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "The famous 'Chipko movement' is a living example of people's participation in environmental conservation. (a) What was the aim of the Chipko movement? (b) Give two reasons for the conservation of forests. (c) Write two advantages of community participation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) To protect forests / trees in Uttarakhand by hugging trees to prevent them from being cut down. (b) Lungs of the earth / regulate temperature and rainfall / prevent soil erosion / maintain groundwater / reduce climate change / clean air and oxygen / carbon sinks / reduce global warming / conserve biodiversity / protect habitats. (Any two) (c) Local knowledge / economic benefits / welfare groups / conserve local environment / balance harvesting and renewal / SHGs / local skills / long-term sustainability / collective action / public support / employment / participation in forestry, fisheries and farm management. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) To protect trees and forests (in Uttarakhand) from being cut down, by hugging them",
+        "(b) Two reasons: prevent soil erosion; regulate rainfall and temperature; conserve biodiversity; act as carbon sinks",
+        "(c) Two advantages: use of local knowledge; collective action and long-term sustainability; economic benefits and employment"
+      ],
+      "model_answer": "(a) The aim of the Chipko movement was to protect the forests of Uttarakhand from being cut down, with villagers hugging the trees. (b) Forests prevent soil erosion and act as carbon sinks that reduce global warming. (c) Community participation makes use of local knowledge, and it encourages collective action that makes conservation sustainable in the long term.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave vague answers like 'to save the environment'",
+        "Confused community participation with community forestry"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "Agroforestry is a farming system in which livestock and trees are grown together. (a) Write two advantages of Agroforestry. (b) What is Conservation Tillage? Write any two ways in which this method harms the agricultural fields.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Food and water supplies / fuelwood / cottage industry materials / products from livestock and crops together / animal waste as manure / biodiversity / reduces poverty / reduces erosion / restores fertility / reduces greenhouse effect / windbreak / soil microorganisms / shade / conserves trees. (Any two) (b) Conserves soil by reducing erosion and conserving nutrients / 30% crop residue left on the surface. Harms: labour-intensive for small farmers and capital-intensive for large ones / no single method suits all fields / residues may carry diseases or pests / flooding, compaction or poor drainage can delay planting. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two advantages: fuelwood and fodder; products from crops and livestock together; reduces soil erosion; restores fertility; increases biodiversity",
+        "(b) Conservation tillage: minimum soil disturbance with crop residue left on the surface to reduce erosion",
+        "(b) Two harms: residues carry pests and diseases; labour / capital intensive; no single method suits all fields; poor drainage and delayed planting"
+      ],
+      "model_answer": "(a) Agroforestry supplies fuelwood and fodder along with crops, and it reduces soil erosion and restores soil fertility. (b) Conservation tillage is farming with minimum disturbance of the soil, leaving at least 30% crop residue on the surface to reduce erosion. It can harm fields because the residues may carry pests and diseases to the next season, and poor drainage or soil compaction can delay planting.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not explain the integration of crops, trees and livestock",
+        "Stated that soil is ploughed deeply",
+        "Wrote advantages instead of harmful effects"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "7(ii)",
+      "question_text": "(a) Why is dependence on fossil fuel harmful to the environment? (b) Suggest any three ways by which renewable energy can be harnessed from different sources.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Non-renewable / limited supply / carbon emissions / pollutes air, water and soil / waste residue / global warming / biodiversity loss / mining degrades land / acid rain / smog. (b) Solar: solar panels and photovoltaic cells; wind: windmills; hydroelectricity: turbines with running water; geothermal: earth's heat; biomass: plant and animal residues; tidal: rise and fall of tides; wave: ocean waves; ocean thermal: temperature difference. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Fossil fuels are non-renewable and their burning emits carbon dioxide causing global warming, air pollution and acid rain",
+        "(b) Three source–method pairs: solar panels; wind turbines / windmills; hydroelectric turbines; geothermal; biomass / biogas plants; tidal"
+      ],
+      "model_answer": "(a) Dependence on fossil fuels is harmful because they are non-renewable, and burning them emits carbon dioxide and other pollutants that cause global warming, air pollution and acid rain. (b) Solar energy is harnessed using solar panels (photovoltaic cells); wind energy using windmills or wind turbines; and hydroelectricity using turbines turned by running water.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote generally about fossil fuels without environmental effects",
+        "Listed energy sources instead of methods of harnessing",
+        "Mentioned nuclear or fossil fuels as renewable"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "Scientists decide to preserve the seeds of a rare plant in a seed bank, as it faced extinction in its natural habitat. (a) Name the type of conservation being used and state one benefit of this method. (b) Give three reasons for the implementation of the Wildlife Protection Act, 1972 by the Government of India.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Ex-situ conservation / cryopreservation / preservation in liquid nitrogen or low temperature. Benefits: protects endangered species / prevents extinction / preserves gene pool / protects plants / plant breeding / increases populations / research and education. (Any one) (b) Prohibit killing and hunting of specified animals / protect specified plants / fund national parks and sanctuaries / regulate trade in wild animals and products / appoint wardens and advisory boards / heavy penalties / records of animals killed or captured / protect rights of Scheduled Tribes / prohibit cultivation of selected plants without licence / certain plants as government property. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Ex-situ conservation, with one benefit such as preventing extinction or preserving the gene pool",
+        "(b) Three reasons: prohibit hunting of specified animals; protect specified plants; regulate trade in wildlife products; establish national parks and sanctuaries; penalties for offences"
+      ],
+      "model_answer": "(a) This is ex-situ conservation. It prevents the extinction of the species by preserving its genes for the future. (b) The Wildlife Protection Act, 1972 was implemented to prohibit the hunting of specified wild animals, to regulate and restrict trade in wild animals and their products, and to provide for the establishment of national parks and wildlife sanctuaries.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Did not identify a seed bank as ex-situ conservation",
+        "Wrote generally about wildlife conservation without the Act's purpose"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "\"Industrial growth must be balanced with environmental conservation.\" (a) Based on this statement, write two ways in which industrial growth degrades the environment. (b) Suggest any three ecofriendly measures that can be taken to prevent environmental degradation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Indiscriminate use of raw materials / waste generation / not conforming to standards / untested technologies / air, water and soil pollution / water contamination / habitat destruction / global warming / climate change / deforestation / acid rain. (Any two) (b) Non-polluting raw materials / change raw materials / regulate hazardous chemicals / regular safety checks / pollution control devices / afforestation / alternative fuels like CNG, solar, EVs / save electricity / energy-saving devices / effluent treatment plants / EIA / replace old machines / regular inspection. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two ways: over-use of natural resources; air, water and soil pollution; waste generation; habitat destruction and deforestation",
+        "(b) Three measures: pollution control devices; effluent treatment plants; alternative fuels and renewable energy; Environmental Impact Assessment; afforestation"
+      ],
+      "model_answer": "(a) Industrial growth degrades the environment through indiscriminate use of natural resources and through air, water and soil pollution from emissions and effluents. (b) Industries should install pollution control devices, set up effluent treatment plants, and use cleaner alternative fuels such as CNG and solar energy.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote economic aspects of industrial growth",
+        "Suggested impractical measures such as closing industries"
+      ],
+      "examiner_notes": null,
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "9(i)",
+      "question_text": "(a) Give two advantages of recycling waste materials. (b) What are toxic wastes? Mention two harmful effects of such wastes.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Reduces waste / less pressure on resources / less pollution / metals reused / energy source / saves energy / fewer greenhouse emissions / jobs / raw materials / less land for dumping / lower carbon emissions / cost-effective / fewer imports. (Any two) (b) Toxic wastes are harmful to human health and the environment and cannot be degraded naturally. Effects: diseases / death / persist long / bioaccumulation and biomagnification / birth defects / water and soil contamination / ecosystem disruption / long-term health effects / genetic mutations. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two advantages: reduces waste; conserves natural resources; saves energy; reduces pollution",
+        "(b) Toxic wastes: poisonous or harmful wastes that cannot be degraded naturally",
+        "(b) Two effects: diseases and death; contamination of soil and water; bioaccumulation; birth defects and mutations"
+      ],
+      "model_answer": "(a) Recycling reduces the amount of waste sent to landfills, and it conserves natural resources and energy. (b) Toxic wastes are poisonous wastes, harmful to human health and the environment, that cannot be degraded naturally. They contaminate soil and water, and they accumulate in organisms, causing diseases and birth defects.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote products made from recycled materials",
+        "Identified toxic waste as sewage or organic waste"
+      ],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "9(ii)",
+      "question_text": "(a) State two ways by which the Integrated Rural Development Programme aims to remove rural poverty. (b) What is Counter Urbanisation? Write two effects of this process.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Providing employment / housing / education / medical facilities / upgrading kuccha houses / MGNREGA guaranteed wage employment / self-help groups / better standard of living / small scale industries / skill development / social security / infrastructure / agro tourism. (Any two) (b) The movement of population and economic activity away from urban areas / from urban to rural areas. Effects: demographic change / loss of original character / impact on local communities / rising prices / economic change / impact on public transport / pollution / changed layout / congestion / higher land prices / social tension / smaller urban workforce / burden on rural health care and schools. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two ways: self-employment and wage employment; skill development; self-help groups; housing and basic facilities",
+        "(b) Counter urbanisation: movement of people from urban to rural areas",
+        "(b) Two effects: demographic change; rising land prices; traffic and pollution in villages; loss of rural character; burden on rural services"
+      ],
+      "model_answer": "(a) IRDP aims to remove rural poverty by providing employment opportunities to the rural poor and by supporting self-help groups and skill development. (b) Counter urbanisation is the movement of people from urban areas to rural areas. Its effects include a rise in land prices in villages and increased traffic and pollution in rural areas.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about general rural development without poverty removal",
+        "Confused counter urbanisation with urbanisation or suburbanisation"
+      ],
+      "examiner_notes": null,
+      "topic": "Rural Development",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "10(i)",
+      "question_text": "Alternative technology, as compared to traditional technology has supported a good life for the people. (a) List two examples of alternate technology for sustainable development. (b) Write three applications where the technology of satellite imagery is used to protect the environment.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Less-polluting production methods / methods using fewer resources / efficient resource use / less energy / eco-friendly energy / solar energy / wind energy / electric vehicles / CNG / biomass energy such as alcohol fuels / hydroelectricity. (Any two) (b) Deforestation (forest structure detected) / estimating tree height and forest types / desertification / soil and land cover / dryland monitoring / land degradation / soil erosion and moisture / forest fires / mining / wildlife tracking / oil spills / floods and calamities / wasteland surveys / ozone layer. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two examples: solar panels; wind energy; electric vehicles; CNG; biomass fuels; less-polluting production methods",
+        "(b) Three applications: monitoring deforestation; tracking desertification and land degradation; locating forest fires; monitoring oil spills; tracking wildlife; predicting floods"
+      ],
+      "model_answer": "(a) Electric vehicles and solar energy systems are examples of alternative technology for sustainable development. (b) Satellite imagery is used to monitor deforestation by detecting changes in forest cover, to track the spread of desertification and land degradation, and to locate forest fires quickly for mitigation.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Gave traditional technologies or sources like 'solar energy' instead of technologies",
+        "Wrote general satellite uses like communication"
+      ],
+      "examiner_notes": null,
+      "topic": "Environmental Monitoring",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "10(ii)",
+      "question_text": "The picture given below shows a section of the earth's atmosphere thinning at the poles of the earth (it shows solar radiation, the stratosphere, the ozone layer, harmful ultraviolet radiation and CFCs rising from a city). (a) Identify the environmental issue shown. (b) Which International Treaty was signed to reduce this effect? (c) Write the expanded form of the chemical responsible for this issue. (d) What are the two effects of UV radiation on human health?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Ozone layer depletion. (b) Montreal Protocol. (c) Chlorofluorocarbon. (d) Skin damage / skin cancer / premature ageing / eye damage, cataract / immune suppression / mutation / hair loss. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Ozone layer depletion",
+        "(b) Montreal Protocol",
+        "(c) Chlorofluorocarbon (CFC)",
+        "(d) Two effects: skin cancer; cataract and eye damage; premature ageing; weakened immune system"
+      ],
+      "model_answer": "(a) Ozone layer depletion. (b) The Montreal Protocol. (c) Chlorofluorocarbon. (d) UV radiation causes skin cancer and eye damage such as cataracts.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused ozone depletion with other issues",
+        "Mismatched issue and treaty"
+      ],
+      "examiner_notes": null,
+      "topic": "Ozone Depletion and Climate",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    }
+  ]
+}

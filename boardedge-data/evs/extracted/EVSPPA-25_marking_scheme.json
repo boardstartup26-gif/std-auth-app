@@ -1,0 +1,1048 @@
+{
+  "year": 2025,
+  "paper": "1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "question_text": "Four Stroke Engine : Vehicular Pollution : : Electrostatic Precipitator : ___________ (a) Domestic Combustion (b) Industrial Pollution (c) Taj Trapezium Zone (d) Effective Traffic Management",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Domestic Combustion",
+        "(b) Industrial Pollution",
+        "(c) Taj Trapezium Zone",
+        "(d) Effective Traffic Management"
+      ],
+      "correct_answer": "(b) Industrial Pollution",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Industrial Pollution",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Industrial Pollution",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Selected option (a) or (d)"
+      ],
+      "examiner_notes": "Familiarise students with pollution controlling devices using labelled diagrams.",
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(ii)",
+      "question_text": "Assertion (A): Population control is necessary to maintain the natural resource of country. Reason (R): The rising population exhausts the resources at a fast rate. (a) (A) is true and (R) is false. (b) (A) is false and (R) is true. (c) Both (A) and (R) are true and (A) is the correct explanation of (R). (d) Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) (A) is true and (R) is false.",
+        "(b) (A) is false and (R) is true.",
+        "(c) Both (A) and (R) are true and (A) is the correct explanation of (R).",
+        "(d) Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+      ],
+      "correct_answer": "(c) Both (A) and (R) are true and (A) is the correct explanation of (R).",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Both (A) and (R) are true and (A) is the correct explanation of (R).",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Both (A) and (R) are true and (A) is the correct explanation of (R).",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Failed to interpret the assertion and reason and chose option (d)"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "1(iii)",
+      "question_text": "Birth rate is also known as: (a) Natality (b) Demography (c) Demographic transition (d) Mortality",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Natality",
+        "(b) Demography",
+        "(c) Demographic transition",
+        "(d) Mortality"
+      ],
+      "correct_answer": "(a) Natality",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Natality",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Natality",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose demography or mortality"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "1(iv)",
+      "question_text": "Which of the following is an eco-friendly activity that can be practised? (a) Utilising fossil fuel vehicle for shorter distances. (b) Using plastic bags for shopping. (c) Carrying cloth bags for shopping. (d) Using excess pesticides.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Utilising fossil fuel vehicle for shorter distances.",
+        "(b) Using plastic bags for shopping.",
+        "(c) Carrying cloth bags for shopping.",
+        "(d) Using excess pesticides."
+      ],
+      "correct_answer": "(c) Carrying cloth bags for shopping.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Carrying cloth bags for shopping.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Carrying cloth bags for shopping.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(v)",
+      "question_text": "The town planning committee has asked you, as a student representative, to create awareness about land use amongst citizens. Which one of the following suggestions would you give for proper land use? (a) Construct more green buildings. (b) Increase mining and forest activity for maximum use of land resources. (c) Taking measures to reduce degradation and exploitation of land resources. (d) Make land available for more buildings.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Construct more green buildings.",
+        "(b) Increase mining and forest activity for maximum use of land resources.",
+        "(c) Taking measures to reduce degradation and exploitation of land resources.",
+        "(d) Make land available for more buildings."
+      ],
+      "correct_answer": "(c) Taking measures to reduce degradation and exploitation of land resources.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Taking measures to reduce degradation and exploitation of land resources.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Taking measures to reduce degradation and exploitation of land resources.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose 'Construct more green buildings'"
+      ],
+      "examiner_notes": null,
+      "topic": "Land Use and Wetlands",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(vi)",
+      "question_text": "Match the following columns correctly. Column I: 1. IUCN 2. Ramsar Convention 3. Extinct species 4. CITES. Column II: A. Totally wiped-out species B. Checks International trading of wildlife C. Wetland conservation D. Red Data book listing endangered species. (a) 1-A, 2-B, 3-C, 4-D (b) 1-B, 2-C, 3-D, 4-A (c) 1-C, 2-B, 3-A, 4-D (d) 1-D, 2-C, 3-A, 4-B",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) 1-A, 2-B, 3-C, 4-D",
+        "(b) 1-B, 2-C, 3-D, 4-A",
+        "(c) 1-C, 2-B, 3-A, 4-D",
+        "(d) 1-D, 2-C, 3-A, 4-B"
+      ],
+      "correct_answer": "(d) 1-D, 2-C, 3-A, 4-B",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) 1-D, 2-C, 3-A, 4-B",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) 1-D, 2-C, 3-A, 4-B",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Copied the statement wrongly"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(vii)",
+      "question_text": "Recycling timber is eco-friendly because: (a) more landfill waste is generated. (b) it uses more energy. (c) it decreases deforestation. (d) recycled timber has more moisture.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) more landfill waste is generated.",
+        "(b) it uses more energy.",
+        "(c) it decreases deforestation.",
+        "(d) recycled timber has more moisture."
+      ],
+      "correct_answer": "(c) it decreases deforestation.",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) it decreases deforestation.",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) it decreases deforestation.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(viii)",
+      "question_text": "Soil erosion can be prevented by: (a) Deforestation (b) Drip irrigation (c) Contour ploughing (d) Removal of vegetation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Deforestation",
+        "(b) Drip irrigation",
+        "(c) Contour ploughing",
+        "(d) Removal of vegetation"
+      ],
+      "correct_answer": "(c) Contour ploughing",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Contour ploughing",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(c) Contour ploughing",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose drip irrigation instead of contour ploughing"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(ix)",
+      "question_text": "Seeds of new plant varieties obtained by breeding of closely related plants are: (a) Dicotyledonous seeds (b) Hybrid seeds (c) Open-pollinated seeds (d) Monocotyledonous seeds",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Dicotyledonous seeds",
+        "(b) Hybrid seeds",
+        "(c) Open-pollinated seeds",
+        "(d) Monocotyledonous seeds"
+      ],
+      "correct_answer": "(b) Hybrid seeds",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Hybrid seeds",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Hybrid seeds",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(x)",
+      "question_text": "Which of the following is an ecological approach to pest control? (a) Integrated Pest Management (b) Use of Biofertilizers (c) Integrated Nutrient Supply Programme (d) Bioremediation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Integrated Pest Management",
+        "(b) Use of Biofertilizers",
+        "(c) Integrated Nutrient Supply Programme",
+        "(d) Bioremediation"
+      ],
+      "correct_answer": "(a) Integrated Pest Management",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Integrated Pest Management",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Integrated Pest Management",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose bioremediation",
+        "Confused IPM with biofertilizers"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "1(xi)",
+      "question_text": "Which of the following is an example of Ex-situ conservation? (a) Gir National Park (b) Nanda Devi Biosphere Reserve (c) Bharatpur Bird Sanctuary (d) Byculla Zoo in Mumbai",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Gir National Park",
+        "(b) Nanda Devi Biosphere Reserve",
+        "(c) Bharatpur Bird Sanctuary",
+        "(d) Byculla Zoo in Mumbai"
+      ],
+      "correct_answer": "(d) Byculla Zoo in Mumbai",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Byculla Zoo in Mumbai",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(d) Byculla Zoo in Mumbai",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose Gir National Park"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "1(xii)",
+      "question_text": "The Chernobyl disaster occurred on 26th April, 1986 in __________ releasing ____________ particles into the atmosphere. (a) Brazil : SPM (b) Ukraine : Radioactive (c) Canada : Ultrafine (d) Russia : VOC",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Brazil : SPM",
+        "(b) Ukraine : Radioactive",
+        "(c) Canada : Ultrafine",
+        "(d) Russia : VOC"
+      ],
+      "correct_answer": "(b) Ukraine : Radioactive",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Ukraine : Radioactive",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Ukraine : Radioactive",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose Russia, not knowing Chernobyl is in Ukraine"
+      ],
+      "examiner_notes": null,
+      "topic": "Industrial Disasters",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(xiii)",
+      "question_text": "Identify the process of waste disposal shown through a flowchart given below (flowchart: an unlabelled first step → Transport → ? → Heat and Ashe → Leachate Collection): (a) Sanitary Landfill (b) Incineration (c) Open dumping (d) Mulching",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Sanitary Landfill",
+        "(b) Incineration",
+        "(c) Open dumping",
+        "(d) Mulching"
+      ],
+      "correct_answer": "(b) Incineration",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Incineration",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Incineration",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Overlooked the clue 'heat and ashes' and chose sanitary landfill"
+      ],
+      "examiner_notes": null,
+      "topic": "Waste Disposal",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "1(xiv)",
+      "question_text": "Study the picture given below (it shows the sun's radiation, the stratosphere, the ozone layer, CFCs, HCFCs and VOCs released from the earth, and harmful UV rays). The effect of air pollution shown in this picture is: (a) Acid rain (b) Ozone depletion (c) Global warming (d) Smog formation",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Acid rain",
+        "(b) Ozone depletion",
+        "(c) Global warming",
+        "(d) Smog formation"
+      ],
+      "correct_answer": "(b) Ozone depletion",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Ozone depletion",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Ozone depletion",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Answered global warming instead of ozone depletion"
+      ],
+      "examiner_notes": null,
+      "topic": "Ozone Depletion and Climate",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "1(xv)",
+      "question_text": "Identify the incorrect pair. (a) Montreal Protocol - Greenhouse gases (b) Global Environmental Facility - supports projects on international waters (c) Multinational companies - operate in multiple countries (d) Biotechnology - genetically modified organisms",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Montreal Protocol - Greenhouse gases",
+        "(b) Global Environmental Facility - supports projects on international waters",
+        "(c) Multinational companies - operate in multiple countries",
+        "(d) Biotechnology - genetically modified organisms"
+      ],
+      "correct_answer": "(a) Montreal Protocol - Greenhouse gases",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Montreal Protocol - Greenhouse gases",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(a) Montreal Protocol - Greenhouse gases",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Chose option (b) instead of (a)"
+      ],
+      "examiner_notes": null,
+      "topic": "International Cooperation",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "1(xvi)",
+      "question_text": "\"Follow the 3 Rs and repair the Earth.\" On the basis of this statement, identify which of the following 'R' is followed when fly ash from power plants is used as a cement substitute. (a) Reduce (b) Reuse (c) Recycle (d) Recharge",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "options": [
+        "(a) Reduce",
+        "(b) Reuse",
+        "(c) Recycle",
+        "(d) Recharge"
+      ],
+      "correct_answer": "(b) Reuse",
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Reuse",
+      "total_marks": 1,
+      "key_points": [],
+      "model_answer": "(b) Reuse",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Answered reduce or recycle instead of reuse"
+      ],
+      "examiner_notes": "Clearly explain the difference between reuse and recycle with daily-life examples.",
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "2(i)",
+      "question_text": "What is TTZ with reference to the World Heritage monument in India? Why was it formed?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Taj Trapezium Zone / Taj Mahal Trapezium Zone. Formed to reduce the effect of air pollution on the Taj Mahal / prevent establishment of industries / stop vehicle emissions / protect from acid rain / use of LPG or CNG / green zone around the Taj / closure of brick kilns / stop coal use / pollution checks / alternative fuels / battery vehicles / protect Fatehpur Sikri and Agra Fort.",
+      "total_marks": 2,
+      "key_points": [
+        "TTZ = Taj Trapezium Zone",
+        "Formed to protect the Taj Mahal from air pollution and acid rain, e.g. by restricting polluting industries and fuels"
+      ],
+      "model_answer": "TTZ is the Taj Trapezium Zone, a defined area around the Taj Mahal. It was formed to protect the monument from air pollution and acid rain by restricting polluting industries and the use of coal, and promoting cleaner fuels such as CNG and LPG.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'Taj Mahal Zone' instead of Taj Trapezium Zone",
+        "Mentioned only 'heritage site' for its formation"
+      ],
+      "examiner_notes": null,
+      "topic": "Air Pollution and Control",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "2(ii)",
+      "question_text": "Write any two strategies that can be used to control population in the developing countries.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Family planning programmes / welfare of small families / educational campaigns / awareness of contraceptives / raising marriageable age / literacy for women / limiting government facilities to two children / monetary help / incentives for sterilisation / media campaigns / eradicating gender bias / higher per capita income / women's empowerment / spacing between children. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two strategies: family planning programmes; raising marriageable age; awareness campaigns on contraception; women's education and empowerment; incentives and limits for small families"
+      ],
+      "model_answer": "Population can be controlled through family planning programmes that promote contraception, and by raising the marriageable age and educating and empowering women.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote causes and effects of population growth",
+        "Misread population as pollution"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Control",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "2(iii)",
+      "question_text": "Mention the environmental impacts of construction activities in urban areas.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Particulate air pollution / noise pollution / disturbs urban ecology / all kinds of pollution / depletion of water, land, soil and fossil fuels / lung cancer and respiratory disease / reduces forest area / disturbs percolation of water / loss of wetlands and fields / disturbs water table. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two impacts: dust (particulate) air pollution; noise pollution; depletion of resources; loss of forests, wetlands or fields; disturbed water percolation and water table"
+      ],
+      "model_answer": "Construction activities cause dust (particulate) air pollution and noise pollution, and they deplete resources like water and soil while reducing green cover and wetlands.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Specified global warming or greenhouse effect as impacts"
+      ],
+      "examiner_notes": null,
+      "topic": "Urban Planning and Transport",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "2(iv)",
+      "question_text": "Urban residents live longer and have lower infant mortality rates than rural population. State any two reasons for the given statement.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Widespread birth control / better medical facilities / legal abortions / social attitude favouring small families / later marriage / more women working / delayed reproduction / pension systems / higher education and affluence / more money / better nutrition and health care / no gender discrimination / banning sex determination / less poverty / women's empowerment. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: better medical facilities; better nutrition and health care; higher education and income; later marriage and delayed reproduction; less poverty"
+      ],
+      "model_answer": "Urban residents have better medical facilities and better nutrition and health care, and they are generally more educated and better off, so they live longer and fewer infants die.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Listed advantages and disadvantages of urban life",
+        "Described urban life as more eco-friendly"
+      ],
+      "examiner_notes": null,
+      "topic": "Population Growth",
+      "diagram_required": false,
+      "chapter": "Population"
+    },
+    {
+      "question_number": "3(i)",
+      "question_text": "State any two reasons for recycling water.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Conserve water / reduce pressure on freshwater bodies / reduce wastage / reduce water pollution / maintain ecological balance / less dependence on groundwater and rainwater / maintain water table / multipurpose use / protect lakes, rivers and aquatic life. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two reasons: conserve water; reduce pressure on freshwater sources; reduce water pollution; maintain the water table; protect aquatic life"
+      ],
+      "model_answer": "Water is recycled to conserve water and reduce pressure on freshwater sources, and to reduce the pollution of rivers and lakes by wastewater.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused water harvesting with water recycling"
+      ],
+      "examiner_notes": null,
+      "topic": "Reduce, Reuse, Recycle",
+      "diagram_required": false,
+      "chapter": "Waste Management"
+    },
+    {
+      "question_number": "3(ii)",
+      "question_text": "Soil becomes vulnerable to erosion through human activities. State any two human activities that destroy plant cover.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Farming / logging / deforestation / chemicals / firewood use / mining / overuse of land / construction / overgrazing / off-road vehicles and road construction / deliberate burning / forest fires / unsustainable agriculture / shifting cultivation. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two human activities: deforestation / logging; overgrazing; mining; construction; burning vegetation; shifting cultivation"
+      ],
+      "model_answer": "Deforestation for timber and farmland, and overgrazing by livestock, destroy the plant cover and leave soil exposed to erosion.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote natural activities like floods and earthquakes"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(iii)",
+      "question_text": "How does biotechnology help to increase food production?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Crossbreeding / genetic engineering / GMOs / better quality crops / transgenic crops / HYVs / insect, pest, drought and disease resistant varieties / hybridisation / salt tolerant varieties. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: high-yielding varieties; GM / transgenic crops; pest, drought and disease resistant varieties; salt-tolerant varieties; hybridisation"
+      ],
+      "model_answer": "Biotechnology increases food production by developing high-yielding varieties and genetically modified crops that are resistant to pests, diseases and drought.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about biotechnology in medicine",
+        "Could not relate biotechnology to food production"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "3(iv)",
+      "question_text": "Give a reason why polyculture is better than monoculture.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Reduces susceptibility to diseases / less chance of crop failure / food all year / multiple crops / less depletion of soil fertility / provides habitat / breaks pest cycle / increases local biodiversity / more profit.",
+      "total_marks": 2,
+      "key_points": [
+        "A valid reason: less crop failure; reduced disease and pest spread; less depletion of soil fertility; greater biodiversity; more profit"
+      ],
+      "model_answer": "Polyculture is better because growing several crops together reduces the chance of total crop failure and breaks the pest cycle, while depleting the soil's fertility less than a single crop.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described polyculture as different cultures of society"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "4(i)",
+      "question_text": "Why are wetlands important to us?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Improve water quality / provide irrigation / wildlife habitat / increase biodiversity / control water regime / ecosystem productivity / reduce coastal storm damage / prevent floods / economic, cultural, scientific and recreational opportunities / education / scenic beauty / kidney of the land / tourism. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two: improve water quality (kidneys of the land); prevent floods and storm damage; wildlife habitat and biodiversity; irrigation; recreation and tourism"
+      ],
+      "model_answer": "Wetlands improve water quality by filtering pollutants, acting as the kidneys of the land, and they prevent floods by storing excess water, while also providing habitat for wildlife.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Misinterpreted wetlands as rice fields"
+      ],
+      "examiner_notes": null,
+      "topic": "Land Use and Wetlands",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "4(ii)",
+      "question_text": "Mention any two unfair trade means practised by the developed countries.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "False representation / selling something different / targeting vulnerable populations / false advertising / substandard products / exploiting resources of developing countries / tied selling / false prizes / deceptive pricing / cheap low-quality goods / defective items / illegal or banned items / adulteration / low quality at high price / paying less / sending waste to developing countries / non-compliance with standards. (Any two)",
+      "total_marks": 2,
+      "key_points": [
+        "Any two unfair practices: exploiting resources of developing countries; dumping waste in developing countries; false advertising; selling banned, defective or low-quality goods at high prices; deceptive pricing"
+      ],
+      "model_answer": "Developed countries exploit the natural resources of developing countries at low prices, and they send their wastes and banned or low-quality goods to developing countries.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote quotas and tariffs as unfair trade practices"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "4(iii)",
+      "question_text": "What is green manure? Give any one benefit of using green manure.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Green manures are crops grown within a rotation to build soil organic matter and structure, supply nitrogen, phosphorus, potassium and other nutrients for the following crop, and prevent leaching of nutrients. Benefits: eco-friendly / maintains organic matter / food for microbes / releases nutrients / stops use of harmful fertilisers / improves water holding / improves soil structure / reduces erosion / suppresses weeds / does not alter pH. (Any one)",
+      "total_marks": 2,
+      "key_points": [
+        "Crops grown in rotation and ploughed in to add organic matter and nutrients (N, P, K) to the soil",
+        "One benefit: improves soil structure / water holding; adds nutrients; reduces erosion; suppresses weeds; eco-friendly"
+      ],
+      "model_answer": "Green manure is a crop grown in rotation and ploughed back into the soil to add organic matter and nutrients such as nitrogen for the next crop. It improves the soil's structure and water-holding capacity.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote about organic compost instead of green manure",
+        "Wrote about biofertilisers"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "4(iv)",
+      "question_text": "(Refer to the image showing crops protected by a three-strata barrier of trees.) (a) Which farming technique is associated with the strategic plantation of trees as depicted in the image? (b) How does this technique contribute to a sustainable agriculture?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Windbreaks / shelter belts. (b) Shields crops from wind damage / reduces lodging and loss of fruit or flowers / prevents soil erosion / preserves soil fertility / reduces sedimentation / reduces heating and cooling costs / habitat and corridors for wildlife / biodiversity / maintains food chain / extra income / birds help in pest control / shade.",
+      "total_marks": 2,
+      "key_points": [
+        "(a) Windbreaks / shelter belts",
+        "(b) One way: shields crops from wind; prevents soil erosion; preserves soil fertility; supports biodiversity"
+      ],
+      "model_answer": "(a) Windbreaks (shelter belts). (b) The rows of trees shield crops from wind damage and prevent soil erosion, preserving soil fertility for future crops.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote agroforestry or 'three strata barrier' instead of windbreaks",
+        "Failed to relate windbreaks to sustainable agriculture"
+      ],
+      "examiner_notes": null,
+      "topic": "Soil Erosion and Conservation",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "5(i)",
+      "question_text": "Observe the diagram showing the percentage of gases released by vehicles (pie chart: CO2 60%, CH4 20%, CFCs 14%, N2O 6%): (a) Name the gas which is released in maximum amount. (b) The increase of the above-mentioned gas became a global concern, therefore an international agreement was signed in Japan in 1977. Name this agreement and write one objective of the agreement. (c) How is methane used in rural as well as urban areas? (d) Write one effect of the presence of excess oxides of nitrogen in the atmosphere.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Carbon dioxide / CO2. (b) Kyoto Protocol; reduce emission of greenhouse gases / reduce them below 5.2% of 1990 levels / address global warming / carbon sink / emission trading / combat climate change. (c) Methane is used as a fuel for cooking / vehicles. (d) Acid rain / acids with water vapour / air pollution / smog / global warming / ozone depletion / damage to vegetation / respiratory problems / soil acidity / reduced soil fertility. (Any one)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Carbon dioxide",
+        "(b) Kyoto Protocol, with one objective such as reducing greenhouse gas emissions",
+        "(c) Methane used as fuel for cooking or vehicles (biogas / CNG)",
+        "(d) One effect of excess nitrogen oxides: acid rain; smog; respiratory problems; damage to vegetation"
+      ],
+      "model_answer": "(a) Carbon dioxide. (b) The Kyoto Protocol; its objective was to reduce the emission of greenhouse gases to combat global warming. (c) Methane is used as a fuel for cooking in rural areas (biogas) and for running vehicles in urban areas (CNG). (d) Excess oxides of nitrogen combine with water vapour to cause acid rain.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'treaty in Japan' instead of Kyoto Protocol",
+        "Could not state an objective",
+        "Wrote usefulness of nitrogen instead of the effect of its oxides"
+      ],
+      "examiner_notes": null,
+      "topic": "Ozone Depletion and Climate",
+      "diagram_required": false,
+      "chapter": "Pollution and Its Control"
+    },
+    {
+      "question_number": "5(ii)",
+      "question_text": "Mushroom farming and handicraft business are small scale industries. How can these industries help to reduce poverty and bring about economic development?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Jobs for local people / income generation / investment / economic stability / rural development / productivity / reduce poverty / women's upliftment / better living standard / stop migration to cities / reduce slums / social upliftment / social security.",
+      "total_marks": 5,
+      "key_points": [
+        "Any five ways: provide local employment; generate income; rural development; women's upliftment; improve living standards; check migration to cities and slums"
+      ],
+      "model_answer": "Small scale industries like mushroom farming and handicrafts provide jobs to local people and generate income, which reduces poverty. They need little investment, promote rural development and the upliftment of women, raise living standards, and stop migration from villages to city slums.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote general benefits of mushroom farming and handicrafts instead of how they reduce poverty"
+      ],
+      "examiner_notes": null,
+      "topic": "Rural Development",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "6(i)",
+      "question_text": "The private sector and programmes like 'Swachh Bharat Abhiyan' aim to keep surroundings clean and improve the living conditions in the city. (a) List any two ways in which private enterprises participate in improvement of the city. (b) Mention any three ways by which public awareness can be created to keep surroundings clean.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Plant trees and maintain gardens / better service delivery / water management / housing and slum rehabilitation / waste disposal / rallies and seminars / beautify the city / glow boards and lights / media / awareness / lead Clean City Movement. (b) Group meetings / workshops / print media / electronic media / cinema halls / puppet shows and street plays / by school children: eco clubs, pamphlets, songs, skits, posters.",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two ways: plant trees and maintain gardens; waste disposal projects; water management; slum rehabilitation; beautification",
+        "(b) Three ways: workshops and group meetings; print and electronic media; street plays and puppet shows; eco clubs, pamphlets and posters by students"
+      ],
+      "model_answer": "(a) Private enterprises plant trees and maintain gardens, and take up waste disposal projects in the city. (b) Public awareness can be created through workshops and group meetings, through print and electronic media campaigns, and through street plays and eco clubs run by school children.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote that private enterprises impose taxes",
+        "Copied the answer of part (a) into part (b)"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "6(ii)",
+      "question_text": "(a) What is energy plantation? (b) Write any two ways in which energy plantation is useful to humans and environment. (c) What forms of livelihood can people take up to depend less on forests?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Growing selected species of trees and shrubs harvested in a short time specifically for fuel. (b) Prevents soil erosion / reduces erosion, floods and siltation / rural employment / by-products like oils and fodder / cheap energy / eco-friendly / shelter for birds / clean air / saves fossil fuel / reduces global warming. (Any two) (c) Fishing, seaweed farming, non-timber products, apiculture, sericulture, pearl and aquaculture, lac culture, mushroom culture, pottery.",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Growing fast-growing trees and shrubs specifically for fuel",
+        "(b) Two uses: cheap fuel source saving fossil fuels; prevents soil erosion; rural employment; by-products",
+        "(c) Livelihoods: apiculture, sericulture, fishing, aquaculture, mushroom culture, lac culture, pottery"
+      ],
+      "model_answer": "(a) Energy plantation is the growing of selected fast-growing trees and shrubs that are harvested in a short time specifically for fuel. (b) It provides a cheap source of fuel, saving fossil fuels, and it prevents soil erosion. (c) People can take up apiculture (bee keeping), sericulture, fishing and mushroom culture.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote the definition of plantation instead of energy plantation",
+        "Confused energy plantation with thermal power plants",
+        "Wrote basket or furniture making as livelihoods"
+      ],
+      "examiner_notes": null,
+      "topic": "Forests and Biodiversity",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "7(i)",
+      "question_text": "Excessive exploitation of species, whether a plant or animal reduces the size of its population, so it becomes vulnerable to extinction. (a) Write any two causes of biodiversity loss. (b) Name any two advantages and any one disadvantage of In-situ conservation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Human exploitation such as farming, industry, hunting and poaching, deforestation, use of animal products, pollution, forest fires, overharvesting, climate change, clearing forests, overpopulation, overuse of resources. (b) Advantages: natural instincts retained / wildlife conserved / prevents extinction / protection from poaching / ecosystem protected / research / cheaper / large populations / gene pool / variation. Disadvantages: natural disasters / diseases / large areas hard to maintain / tourism pollution / young preyed upon / inbreeding / competition / no captive breeding.",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Two causes: deforestation; hunting and poaching; pollution; overharvesting; climate change; habitat clearing",
+        "(b) Two advantages of in-situ: natural instincts retained; whole ecosystem protected; cheaper; large populations protected",
+        "(b) One disadvantage of in-situ: exposed to natural disasters and disease; large areas hard to maintain; predation of young"
+      ],
+      "model_answer": "(a) Deforestation, which destroys habitats, and hunting and poaching. (b) Advantages of in-situ conservation: species keep their natural instincts, and the whole ecosystem is protected at a lower cost. Disadvantage: animals remain exposed to natural disasters and diseases.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused causes with effects of biodiversity loss",
+        "Gave advantages of ex-situ instead of in-situ conservation"
+      ],
+      "examiner_notes": null,
+      "topic": "Wildlife Conservation",
+      "diagram_required": false,
+      "chapter": "Biodiversity and Conservation"
+    },
+    {
+      "question_number": "7(ii)",
+      "question_text": "What is Conservation Tillage? Mention any three advantages of Conservation Tillage.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Crop cultivation in which the soil is disturbed little (minimum tillage) or not at all (no-till) to reduce soil erosion and lower labour costs. Advantages: reduces erosion / saves fuel / cuts costs / holds more water / prevents compaction / more crops / high yield / lower labour cost / less fertiliser / less water / stops desertification / maintains texture / infiltration / reduces runoff / economical. (Any three)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: farming with minimum or no disturbance (ploughing) of the soil",
+        "Three advantages: reduces soil erosion; holds more water in soil; saves fuel and labour costs; reduces runoff; maintains soil texture"
+      ],
+      "model_answer": "Conservation tillage is a method of cultivation in which the soil is disturbed very little (minimum tillage) or not at all (no-till), leaving crop residue on the surface. Advantages: it reduces soil erosion, the soil holds more water, and it saves fuel and labour costs.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'making holes' or 'making bunds'",
+        "Vaguely mentioned mulching or composting"
+      ],
+      "examiner_notes": null,
+      "topic": "Sustainable Farming Practices",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "8(i)",
+      "question_text": "Read the following passage and answer the questions that follow: In India vermicomposting has been practiced intermittently for more than three decades. It is also taken up by farmers on an individual basis to fulfil their own needs. Farmers adopting the practice can apply for subsidies and financial assistance to set up vermicompost units through government programs. (a) What is vermicomposting? (b) Why are the farmers adopting the practice of vermicomposting in agricultural fields?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) A sustainable and eco-friendly practice that uses earthworms to decompose organic waste into nutrient-rich compost. (b) Develops roots / improves soil structure / increases fertility / increases water retention / helps germination, growth and yield / plant growth hormones / reduces organic waste / low-cost waste management / organic food / less pesticides / easy and low cost / increases NPK and micronutrients. (Any four)",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Use of earthworms to decompose organic waste into nutrient-rich compost",
+        "(b) Any four reasons: improves soil structure and fertility; increases water retention; improves growth and yield; low cost; reduces organic waste; adds NPK"
+      ],
+      "model_answer": "(a) Vermicomposting is the use of earthworms to decompose organic waste into nutrient-rich compost. (b) Farmers adopt it because it increases soil fertility and nutrients like NPK, improves soil structure and water retention, improves crop growth and yield, and is a low-cost way of managing organic waste.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Missed the keyword earthworms",
+        "Repeated points from the passage like subsidies"
+      ],
+      "examiner_notes": null,
+      "topic": "Fertilisers and Pest Control",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "8(ii)",
+      "question_text": "What is a gene bank? List any two objectives of maintaining gene banks. Suggest any two causes of global food imbalance.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Gene bank: a collection of seeds, plants, animals or genetic material maintained in a repository. Objectives: control genetic erosion / stock seeds for future / research / store reproductive cells / long-term storage / conserve biodiversity and genes / regenerate species. Causes of food imbalance: economic inequality / topography / less fertile land / unemployment / political unrest / overuse by developed countries / wastage due to lack of storage / lack of transport.",
+      "total_marks": 5,
+      "key_points": [
+        "Gene bank: repository of seeds or genetic material",
+        "Two objectives: prevent genetic erosion; store seeds for future; support research; conserve biodiversity",
+        "Two causes of food imbalance: economic inequality; less fertile land; political unrest; lack of storage and transport"
+      ],
+      "model_answer": "A gene bank is a repository where seeds, plant parts or other genetic material are stored. Its objectives are to prevent genetic erosion and to store seeds for future use and research. Global food imbalance is caused by economic inequality between countries and by wastage due to lack of storage and transport.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Described a gene bank as a general storage bank",
+        "Wrote effects instead of causes of food imbalance"
+      ],
+      "examiner_notes": null,
+      "topic": "Biotechnology and Food Security",
+      "diagram_required": false,
+      "chapter": "Sustainable Agriculture and Food Security"
+    },
+    {
+      "question_number": "9(i)",
+      "question_text": "Answer the questions based on the image given below (image of panels fixed on a rooftop): (a) Name the technology shown in the image, which is used as an alternative source of energy. (b) Give any two advantages and any two disadvantages of the above technology which is used to save power.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Solar panel / cell / photovoltaic cell. (b) Advantages: long-term savings / lower power bill / less energy dependence / no pollutants / easy to use / renewable / no smoke / abundant in tropics / eco-friendly. Disadvantages: not accessible everywhere / less useful in cloudy weather / high installation cost / sunlight dependent / space constraints / needs battery backup.",
+      "total_marks": 5,
+      "key_points": [
+        "(a) Solar panel / photovoltaic cell",
+        "(b) Two advantages: renewable and pollution free; reduces power bills",
+        "(b) Two disadvantages: high installation cost; less useful in cloudy weather / at night; needs space"
+      ],
+      "model_answer": "(a) Solar panels (photovoltaic cells). (b) Advantages: they produce renewable, pollution-free electricity and reduce power bills. Disadvantages: installation is expensive, and they are less useful in cloudy weather and at night.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Wrote 'solar energy' instead of 'solar panel'",
+        "Wrote advantages of renewable energy in general"
+      ],
+      "examiner_notes": null,
+      "topic": "Renewable Energy",
+      "diagram_required": false,
+      "chapter": "Energy Resources"
+    },
+    {
+      "question_number": "9(ii)",
+      "question_text": "Write any three characteristics of a Sustainable City. Give any two reasons why sustainable cities are the need of the hour.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Characteristics: lower greenhouse emissions / energy-efficient practices / protect ecosystems and green spaces / cleaner air and water / public transit, pedestrian and cycling infrastructure / less reliance on private vehicles / less congestion / energy-efficient buildings and renewables / effective waste management / minimise sprawl / resilient to disasters and climate change. (Any three) Reasons: resources for future generations / save energy / reduce pollution / reduce waste / non-renewables cannot be sustained. (Any two)",
+      "total_marks": 5,
+      "key_points": [
+        "Three characteristics: low emissions; public transport and cycling lanes; green spaces; renewable energy and efficient buildings; effective waste management",
+        "Two reasons: conserve resources for future generations; reduce pollution; save energy; reduce waste"
+      ],
+      "model_answer": "A sustainable city has efficient public transport and cycling lanes, uses renewable energy and energy-efficient buildings, and manages waste through recycling and composting. Sustainable cities are needed to conserve resources for future generations and to reduce pollution and waste.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Confused sustainable cities with secondary cities",
+        "Overlapped the two parts"
+      ],
+      "examiner_notes": null,
+      "topic": "Urbanisation",
+      "diagram_required": false,
+      "chapter": "Urbanisation and Rural Development"
+    },
+    {
+      "question_number": "10(i)",
+      "question_text": "NGOs are involved in environmental protection aiming to promote ecofriendly technology, stopping degradation and reducing pollution. With reference to this, write any two ways by which NGO's help to protect the environment. State any three ways by which NGOs can use satellite imagery to monitor the global environment.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "NGOs: file public litigation cases / finance renewable energy / afforestation / organic fertilisers / monitor MNCs / regulate hazardous waste / empower people. (Any two) Satellite imagery: weather forecasting / find deforestation and desertification / collect and store data digitally.",
+      "total_marks": 5,
+      "key_points": [
+        "Two NGO roles: public interest litigation; afforestation; monitoring MNCs; regulating hazardous waste; financing renewable energy",
+        "Three uses of satellite imagery: weather forecasting; detecting deforestation and desertification; collecting and storing data digitally"
+      ],
+      "model_answer": "NGOs protect the environment by filing public interest litigation cases and by running afforestation drives. Using satellite imagery they can forecast weather, detect deforestation and desertification, and collect and store environmental data digitally.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Repeated points from the passage",
+        "Wrote only that satellites take photos"
+      ],
+      "examiner_notes": null,
+      "topic": "Environmental Monitoring",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    },
+    {
+      "question_number": "10(ii)",
+      "question_text": "What do you understand by international trade? State any four ways in which people of a country are benefitted by this.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "options": null,
+      "correct_answer": null,
+      "marks_per_correct_point": 1,
+      "scheme_text": "International trade is the exchange of goods, services and capital between countries and regions. Benefits: technology shared / economic trade between developed and developing countries / countries more united / source of foreign exchange / promotes cultural understanding. (Any four)",
+      "total_marks": 5,
+      "key_points": [
+        "Definition: exchange of goods, services and capital between countries",
+        "Four benefits: sharing of technology; foreign exchange; countries more united; cultural understanding; trade between developed and developing countries"
+      ],
+      "model_answer": "International trade is the exchange of goods, services and capital between countries. People benefit because technology is shared between countries, it earns foreign exchange, it promotes cultural understanding, and it makes countries more united instead of isolated.",
+      "model_answer_verified": true,
+      "accepted_alternatives": [],
+      "common_errors": [
+        "Could not explain four different benefits",
+        "Wrote about MNC exploitation, a disadvantage"
+      ],
+      "examiner_notes": null,
+      "topic": "Trade, MNCs and Debt",
+      "diagram_required": false,
+      "chapter": "Global Environmental Issues"
+    }
+  ]
+}

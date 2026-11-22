@@ -50,6 +50,7 @@ const SUBJECT_FOLDERS = {
   physics: "physics",
   history: "history & civics",
   economics: "economics",
+  evs: "environmental science",
 };
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;

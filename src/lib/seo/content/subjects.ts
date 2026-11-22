@@ -1,14 +1,15 @@
 // src/lib/seo/content/subjects.ts
 //
 // Public subject landing pages (/icse-class-10/[subject]). One entry per
-// subject BoardEdge can actually mark — seven, matching the corpus — never one
+// subject BoardEdge can actually mark — eight, matching the corpus — never one
 // per keyword variation. A subject is added here when its papers are imported,
 // not before.
 //
 // Where the content comes from, so it can be kept true:
 //   • `coverage` was counted against the live questions table on 2026-11-20
 //     (questions.chapter, questions.is_subjective, questions.year); Economics
-//     was added on 2026-11-22, and the other six rechecked then. Hardcoded,
+//     and Environmental Science were added on 2026-11-22, and the others
+//     rechecked then. Hardcoded,
 //     like CORPUS on the landing page, so these pages stay static prerenders.
 //     Recount when papers are imported.
 //   • `markLeaks` restates, for students, the subject protocols the grader is
@@ -17,7 +18,7 @@
 //     actually marks.
 //   • Paper numbering is the ICSE Class 10 structure (Science Papers 1–3,
 //     History, Civics & Geography Papers 1–2, English Paper 2, and Economics
-//     as a Group II elective).
+//     and Environmental Science as Group II electives).
 //
 // No marking-scheme text or model answers ever appear on these pages: answer
 // keys only reach a student after they have attempted the question.
@@ -423,6 +424,69 @@ export const SUBJECT_PAGES: SubjectPage[] = [
         question: "Which ICSE Economics years are available?",
         answer:
           "Questions from the 2018, 2019, 2024, 2025 and 2026 ICSE Class 10 Economics papers, 185 in total, each with its official marking scheme.",
+      },
+    ],
+    updated: "2026-11-22",
+  },
+
+  // ─── Environmental Science ─────────────────────────────────────────────────
+  {
+    slug: "environmental-science",
+    name: "Environmental Science",
+    paper: "Group II Elective",
+    metaTitle: "ICSE Class 10 Environmental Science Past Papers With Marking Schemes",
+    metaDescription:
+      "152 ICSE Class 10 Environmental Science past-paper questions (2020–2026) with official marking schemes. See where key terms, exact names and context earn marks.",
+    intro:
+      "ICSE Environmental Science looks easy to write about and is strict to mark. Incineration without “at a very high temperature”, a treaty described instead of named, or reforestation answered as afforestation all lose marks the student thought were safe. BoardEdge marks your answer against the official CISCE scheme for the real past-paper question you chose.",
+    coverage: {
+      questions: 152,
+      written: 104,
+      years: [2020, 2024, 2025, 2026],
+      chapters: [
+        ["Sustainable Agriculture and Food Security", 34],
+        ["Biodiversity and Conservation", 23],
+        ["Global Environmental Issues", 18],
+        ["Urbanisation and Rural Development", 18],
+        ["Waste Management", 17],
+        ["Population", 14],
+        ["Energy Resources", 14],
+        ["Pollution and Its Control", 14],
+      ],
+    },
+    markLeaks: [
+      {
+        title: "Dropping the defining term",
+        body: "Definitions are marked on one or two key words: incineration “at a very high temperature”, vermicomposting by “earthworms”, soil erosion of the “top soil”. A definition without them is incomplete, however close it sounds.",
+      },
+      {
+        title: "Describing instead of naming",
+        body: "When the question asks for a treaty, an expansion or a technology, the exact name is the answer. “A treaty signed in Japan” is not the Kyoto Protocol, and “solar energy” is not a solar panel.",
+      },
+      {
+        title: "Answering the twin concept",
+        body: "Afforestation and reforestation, in-situ and ex-situ, reuse and recycle, green manure and compost are marked as different answers. Writing about the wrong one earns nothing.",
+      },
+      {
+        title: "Ignoring the context",
+        body: "If the question says rural areas, hospital waste or industrial pollution, only points about that context count. General points about LPG, waste or pollution miss the mark.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How are ICSE Environmental Science answers marked?",
+        answer:
+          "Point by point, against the official scheme. Schemes list many acceptable points and ask for “any two” or “any three”; any of them counts, up to the number asked. BoardEdge shows which of your points were credited and which you missed.",
+      },
+      {
+        question: "Does BoardEdge handle the picture and passage questions?",
+        answer:
+          "Yes. Questions built around a picture, chart or passage show it alongside the question, and your answer is marked against what the scheme expects from it.",
+      },
+      {
+        question: "Which ICSE Environmental Science years are available?",
+        answer:
+          "Questions from the 2020, 2024, 2025 and 2026 ICSE Class 10 Environmental Science papers, 152 in total, each with its official marking scheme.",
       },
     ],
     updated: "2026-11-22",

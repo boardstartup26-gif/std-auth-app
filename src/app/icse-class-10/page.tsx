@@ -23,7 +23,7 @@ import { GUIDES, guidePath } from "@/lib/seo/content/guides";
 
 const TITLE = "ICSE Class 10 Past Papers With Official Marking Schemes";
 const DESCRIPTION =
-  "Practise ICSE Class 10 past-paper questions in seven subjects and get every answer marked against the official CISCE marking scheme, point by point.";
+  "Practise ICSE Class 10 past-paper questions in eight subjects and get every answer marked against the official CISCE marking scheme, point by point.";
 
 export const metadata: Metadata = buildPageMetadata({
   title: TITLE,
