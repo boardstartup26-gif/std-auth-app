@@ -22,6 +22,7 @@ import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { refundTokens, reserveTokens } from "@/lib/evaluation/grading";
+import { usingFreeProvider } from "@/lib/evaluation/groq";
 import {
   GradingError,
   loadQuestionByKey,
@@ -95,6 +96,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "You must be signed in to run an evaluation." }, { status: 401 });
   }
   const userId = user.id;
+
+  // Refused before any credit is reserved; see src/lib/evaluation/groq.ts.
+  if (usingFreeProvider()) {
+    return NextResponse.json(
+      { error: "Photo answers are paused for now. Please type your answer instead." },
+      { status: 503 },
+    );
+  }
 
   const gate = await getEvaluationGateState(userId);
   if (!gate.allowed) {

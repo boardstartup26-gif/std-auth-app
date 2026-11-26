@@ -27,6 +27,7 @@ import { computeLeakage, latestPerQuestion, weakestChapters } from "@/lib/progre
 import { creditCost } from "@/lib/practice-sets/mark";
 import { isPaperId, readPaper } from "@/lib/practice-sets/read";
 import { refundTokens, reserveTokens } from "@/lib/evaluation/grading";
+import { usingFreeProvider } from "@/lib/evaluation/groq";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { getUsageDateIST } from "@/lib/usage-date";
 import { EVENTS } from "@/lib/analytics/events";
@@ -405,6 +406,15 @@ export async function submitPaper(setId: string): Promise<SubmitResult> {
 
   const byId = new Map(((qs ?? []) as { id: string; is_subjective: boolean; question_type: string | null }[]).map((q) => [q.id, q]));
   const cost = answered.reduce((sum, id) => sum + (byId.has(id) ? creditCost(byId.get(id)!) : 0), 0);
+
+  // Only written answers cost credits and call the model. Refused before the
+  // paper is claimed, so it stays editable; see src/lib/evaluation/groq.ts.
+  if (cost > 0 && usingFreeProvider()) {
+    return {
+      ok: false,
+      message: "Marking written answers in practice papers is paused for now. Your answers are saved.",
+    };
+  }
 
   const submittedAt = new Date().toISOString();
   const { data: claimed } = await admin

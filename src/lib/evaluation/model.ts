@@ -9,6 +9,7 @@
 
 import type Anthropic from "@anthropic-ai/sdk";
 import { buildExaminerSystemPrompt, CORE_PROMPT } from "@/lib/prompts/examiner-prompt";
+import { requestGradingFromGroq, usingFreeProvider } from "./groq";
 
 export const GRADING_MODEL = "claude-sonnet-5-5";
 
@@ -53,6 +54,9 @@ export async function requestGrading(
     label: string;
   },
 ): Promise<string> {
+  // Temporary free-tier switch; see ./groq.ts.
+  if (usingFreeProvider()) return requestGradingFromGroq({ system, content, label });
+
   const body = {
     model: GRADING_MODEL,
     max_tokens: maxTokens,
