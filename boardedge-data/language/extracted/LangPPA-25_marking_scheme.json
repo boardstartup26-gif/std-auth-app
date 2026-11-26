@@ -1,0 +1,1838 @@
+{
+  "year": 2025,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2025 - Analysis of Pupil Performance (raw/LangPPA-25.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story in which a poor tailor wins an award which changes his/her life.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "The story must be original. The central character must be a poor tailor. There must be evidence of struggle, achievement, success and reward. A change in the circumstances should be indicated.",
+      "key_points": [
+        "Original story",
+        "Central character is a poor tailor",
+        "Evidence of struggle, achievement, success and reward",
+        "A change in the tailor's circumstances is shown"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Struggles of the tailor not shown",
+        "Central character not a tailor",
+        "Ended at the award without showing the change in life",
+        "Plot borrowed from films"
+      ],
+      "examiner_notes": "Most answered with varying linguistic ability. Some insufficiently highlighted the tailor's struggles, or showed struggle in a profession other than tailoring; the character was mistakenly made a carpenter, teacher etc. Some ended at the award without showing how it changed the tailor's life. Some borrowed themes from popular films.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(ii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nYour friends once played a harmless prank on you. Give an account of what happened, your response to the prank and what you learnt from the experience.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is a first-person account and must be narrated from within the plausible experience of a Class X candidate. There must be an understanding of the word 'prank'. Accept any trick, joke, harmless bit of mischief. Details of the prank, the response and the learning should come through clearly.",
+      "key_points": [
+        "First-person account within the plausible experience of a Class X candidate",
+        "Shows understanding of 'prank' (trick, joke, harmless mischief)",
+        "Details of the prank",
+        "The narrator's response",
+        "What was learnt from the experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Lesson learnt missing or unclear",
+        "Described a harmful prank",
+        "Adult rather than age-appropriate experience"
+      ],
+      "examiner_notes": "Most could not bring out the lesson learnt. Some misunderstood 'harmless prank', describing harmful tricks; a few confused it with a clown's act or juggling; others gave adult examples such as office-party pranks.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nDescribe what you see and hear as you move about the corridors and compound during your school break time. How does the scene change after the bell rings?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Words of sight and feeling must form the main body of this composition. The noisy corridors, the children rushing around, eating tiffin, crowds near the taps etc to be described. It should conclude with the contrast - when the bell rings, everyone goes back to their classrooms and silence sets in.",
+      "key_points": [
+        "Words of sight and feeling (and sound) form the main body",
+        "Break-time scenes: noisy corridors, children rushing, eating tiffin, crowds near taps",
+        "Concludes with the contrast after the bell: return to classrooms, silence"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Change after the bell missing or an afterthought",
+        "Contrast of chaos and calm not developed"
+      ],
+      "examiner_notes": "Many attempted it and described break time adequately, some vividly. Only a few brought out the change after the bell; for most it was an afterthought. The noise and chaos of break and the quiet order afterwards were inadequately contrasted.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iv)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\n'More collaboration, less competition is the need of the hour'. Express your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Views either for or against are to be accepted. The candidate should take a clear stand and give valid reasons for whatever stand he/she takes. Credit to be given for a cohesive well-constructed logical argument and ideas based on logical reasoning and personal experience.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Valid reasons supporting the stand",
+        "Cohesive, logical argument drawing on reasoning and personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Confused collaboration and competition",
+        "No clear stand",
+        "Too few real-life examples"
+      ],
+      "examiner_notes": "Most could not distinguish 'collaboration' from 'competition' and failed to take a clear stand; the concepts were confused through limited vocabulary. Most struggled to give adequate examples or relate the terms to real-life situations.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(v)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture, or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemisation /listing/description of the picture is to be penalised.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Itemised the picture",
+        "Theme not connected to the picture",
+        "Theme left undeveloped"
+      ],
+      "examiner_notes": "Most did not attempt it. Among those who did, themes of poverty, joy in simplicity, and the happiness of the poor versus the dissatisfaction of the privileged were left incomplete; references to the rich were not connected to the picture. Several merely listed the elements in the picture.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2025/q1-v.png",
+        "description": "A smiling woman in a sari and two smiling children gather freshly picked brinjals (aubergines) into a green basin in a leafy vegetable garden beside a village house.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-v.png"
+    },
+    {
+      "question_number": "2(i)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "Your grandmother has taught you a special skill. Write a letter thanking her. Explain how you will use that skill and why it is important to you.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nThanking: e.g. thank you / I am so grateful/happy (Any one)\nHow you use that skill: e.g. decorate room / paint cards / help mother in kitchen / cook at weekends / rangoli at festivals, celebrations / teach a game like chess learnt from Grandma to other children (Any two)\nWhy it is important for you: e.g. empowering / it'll make me independent / I will be able to help others / stay occupied / be able to contribute (Any two)\nExpression: Opening and closing sentences, syntax, vocabulary and punctuation.",
+      "key_points": [
+        "Correct informal letter format",
+        "Thanking (any one): e.g. thank you / I am so grateful/happy",
+        "How you use that skill (any two): e.g. decorate room / paint cards / help mother in kitchen / cook at weekends / rangoli at festivals, celebrations / teach a game like chess learnt from Grandma to other children",
+        "Why it is important for you (any two): e.g. empowering / it'll make me independent / I will be able to help others / stay occupied / be able to contribute",
+        "Expression: Opening and closing sentences, syntax, vocabulary and punctuation."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Did not thank grandmother / name the skill",
+        "Use of skill not separated from its importance",
+        "'Dear Grandmother Geeta' salutation",
+        "'Your child, ABC' / full-name subscription",
+        "'Your's'"
+      ],
+      "examiner_notes": "Content: most forgot to thank the grandmother or even identify the skill; many could not separate the use of the skill from its importance. Format: 'February' misspelt or 'Feb', year omitted, numeric date; salutations such as 'Dear Grandmother Geeta'; subscriptions like 'Your child, ABC' or full name; 'Your's'; cursive 'y'. Expression was better than in previous years and than Question 1.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Grandmother",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Thanking",
+            "selection": "any_1",
+            "examples": [
+              "thank you",
+              "I am so grateful/happy"
+            ]
+          },
+          {
+            "element": "How you use that skill",
+            "selection": "any_2",
+            "examples": [
+              "decorate room",
+              "paint cards",
+              "help mother in kitchen",
+              "cook at weekends",
+              "rangoli at festivals, celebrations",
+              "teach a game like chess learnt from Grandma to other children"
+            ]
+          },
+          {
+            "element": "Why it is important for you",
+            "selection": "any_2",
+            "examples": [
+              "empowering",
+              "it'll make me independent",
+              "I will be able to help others",
+              "stay occupied / be able to contribute"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Opening and closing sentences, syntax, vocabulary and punctuation.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(ii)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "There is no bus stop in your locality. Write a letter to the Municipal Commissioner of your town/city complaining about the problem. Offer possible solutions.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nComplaints: e.g. walking long distances / delays / heavy school bags / inconvenience (Any two)\nSuggestions: e.g. build a bus stop / give a shuttle service / encourage buses to stop even if there is no bus stop / post a policeman (Any two)\nExpression: Opening and closing sentences, syntax, vocabulary and punctuation.",
+      "key_points": [
+        "Correct formal letter format",
+        "Complaints (any two): e.g. walking long distances / delays / heavy school bags / inconvenience",
+        "Suggestions (any two): e.g. build a bus stop / give a shuttle service / encourage buses to stop even if there is no bus stop / post a policeman",
+        "Expression: Opening and closing sentences, syntax, vocabulary and punctuation."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Only one solution offered",
+        "Vague request instead of solutions",
+        "'Respected Sir'",
+        "Incomplete receiver's address"
+      ],
+      "examiner_notes": "Content: some copied the question without identifying problems; many failed to suggest plausible solutions, only asking the Commissioner to look into the matter; most offered only 'build a bus stop'. Format: February errors, year omitted; 'Respected Sir'; 'Yours sincerely'/'Your humble servant'; ABC or first name only; 'Your's'; cursive 'y'; receiver's address incomplete (only city after designation). Some casual language.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Municipal Commissioner",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Complaints",
+            "selection": "any_2",
+            "examples": [
+              "walking long distances",
+              "delays",
+              "heavy school bags",
+              "inconvenience"
+            ]
+          },
+          {
+            "element": "Suggestions",
+            "selection": "any_2",
+            "examples": [
+              "build a bus stop",
+              "give a shuttle service",
+              "encourage buses to stop even if there is no bus stop",
+              "post a policeman"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Opening and closing sentences, syntax, vocabulary and punctuation.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(i)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Your school is hosting an Inter School Story Writing Competition. Write a notice informing the students about the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Weave a Tale / Telling Tales / Wordy Magic / Tall Tales / Tailing a Tale / Tell Tale\nEvent: Inter School Story Writing Competition\nDate: Accept single date, for example a week or fortnight away from the date of writing\nTime: 10.00 a.m. - 3.00 p.m. [no capital letters for a.m., p.m.]\nVenue: smaller place to larger\nParticipation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before ...\n[Recommended: no word from the question is used for the creative title]",
+      "key_points": [
+        "Creative Title: Weave a Tale / Telling Tales / Wordy Magic / Tall Tales / Tailing a Tale / Tell Tale",
+        "Event: Inter School Story Writing Competition",
+        "Date: Accept single date, for example a week or fortnight away from the date of writing",
+        "Time: 10.00 a.m. - 3.00 p.m. [no capital letters for a.m., p.m.]",
+        "Venue: smaller place to larger",
+        "Participation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before ...",
+        "[Recommended: no word from the question is used for the creative title]"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Creative title uses words from the question",
+        "Vague or overlong title",
+        "Unrealistic event date",
+        "Vague venue",
+        "Registration details missing",
+        "Notice written as one paragraph"
+      ],
+      "examiner_notes": "Several used words from the topic ('story', 'writing') in creative titles or vague titles ('Burst of Talent'); some wrote very long titles or reused 'War of Words' from the specimen paper. Event dates were before, too soon after, or unrealistically later than the exam. Venues were vague or overly broad; registration details were often omitted or misplaced. Notices were written as one long paragraph or had an extra paragraph after the venue.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Event",
+          "Date",
+          "Time",
+          "Venue",
+          "Participation"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Weave a Tale",
+              "Telling Tales",
+              "Wordy Magic",
+              "Tall Tales",
+              "Tailing a Tale",
+              "Tell Tale"
+            ]
+          },
+          {
+            "element": "Event",
+            "selection": null,
+            "examples": [
+              "Inter School Story Writing Competition"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "Accept single date, for example a week or fortnight away from the date of writing"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "10.00 a.m. - 3.00 p.m. [no capital letters for a.m., p.m.]"
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller place to larger"
+            ]
+          },
+          {
+            "element": "Participation",
+            "selection": null,
+            "examples": [
+              "All pupils who wish to register should give their names to the Vice Principal/etc. on or before ..."
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Weave a Tale",
+          "Telling Tales",
+          "Wordy Magic",
+          "Tall Tales",
+          "Tell Tale"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(ii)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is hosting an Inter School Story Writing Competition.\nWrite an email to a famous person inviting him/her to be the Judge on the occasion.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id (recipient; official, with @ and provider)\nSubject\nSalutation\nOpening sentence\nClosing sentence\nSubscription\nExpression - All details of the notice are to be included in the e-mail.",
+      "key_points": [
+        "E-mail id (recipient; official, with @ and provider)",
+        "Subject",
+        "Salutation",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription",
+        "Expression - All details of the notice are to be included in the e-mail."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Unsuitable recipient email id",
+        "Subject copied from the question",
+        "Date/time/venue missing",
+        "Invitation placed only in the closing sentence",
+        "Wrong event (not story writing)"
+      ],
+      "examiner_notes": "Some wrote the principal's address or 'famousperson@gmail.com' as the recipient id; several copied 'judge on occasion' as the subject. Salutation and subscription errors matched those in letters. Date, time and venue were often missing; many put the invitation in the closing sentence. Some digressed to music, dance or weddings instead of story writing.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A famous person",
+        "format_elements": [
+          "E-mail id (recipient; official, with @ and provider)",
+          "Subject",
+          "Salutation",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression - All details of the notice are to be included in the e-mail.",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(1)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n1. satchels (line 2)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) snatching",
+        "(b) scarves",
+        "(c) school bags",
+        "(d) sweaters"
+      ],
+      "correct_answer": "(c) school bags",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) school bags",
+      "key_points": [],
+      "model_answer": "(c) school bags",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'scarves'"
+      ],
+      "examiner_notes": "Several misread the meaning without context; 'satchels' was identified as (b) instead of (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(2)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n2. spare (line 10)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) share",
+        "(b) offer",
+        "(c) thin",
+        "(d) extra"
+      ],
+      "correct_answer": "(d) extra",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) extra",
+      "key_points": [],
+      "model_answer": "(d) extra",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'share' or (b) 'offer'"
+      ],
+      "examiner_notes": "Many incorrectly chose (a) or (b).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "word_opposite_mcq",
+      "question_text": "Which word in the passage is the opposite of 'closed'?",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) behind",
+        "(b) fascinated",
+        "(c) opened",
+        "(d) revealing"
+      ],
+      "correct_answer": "(c) opened",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) opened",
+      "key_points": [],
+      "model_answer": "(c) opened",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Most answered correctly.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(a)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words:\n(a) How were the school children dressed?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Grey shorts and skirts / light blue shirts or blouses / faded and mended / hair oiled and combed flat.",
+      "key_points": [
+        "grey shorts or skirts",
+        "light blue shirts or blouses",
+        "faded and mended",
+        "hair oiled and combed down flat"
+      ],
+      "model_answer": "Grey shorts and skirts / light blue shirts or blouses / faded and mended / hair oiled and combed flat.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Mentioned only one item of clothing",
+        "Confused the colours"
+      ],
+      "examiner_notes": "Most answered correctly; some mentioned only one part of the uniform or confused the colours.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(b)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(b) In what way was Jagu kind to Hari?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Glass of tea / middle of the day.",
+      "key_points": [
+        "He sometimes handed Hari a glass of tea",
+        "in the middle of the day"
+      ],
+      "model_answer": "Glass of tea / middle of the day.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Most answered correctly.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(c) What did the song tell Hari about Jagu?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "That Jagu had a village somewhere / that he called home.",
+      "key_points": [
+        "Jagu too had a village somewhere that he called home"
+      ],
+      "model_answer": "That Jagu had a village somewhere / that he called home.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Described how the song was sung",
+        "Said it showed kindness / love of singing"
+      ],
+      "examiner_notes": "Most answered correctly; a few described how the song was sung, or read it as showing Jagu's kindness or love of singing.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(d)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(d) Which sentence in the passage tells us that Jagu was not a talkative man?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.",
+      "key_points": [
+        "Quotes the sentence exactly"
+      ],
+      "model_answer": "It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Quoted more than one sentence",
+        "Quoted only a phrase",
+        "Paraphrased instead of quoting"
+      ],
+      "examiner_notes": "Many quoted more than one sentence or only phrases; a few paraphrased instead of quoting.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(e)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(e) Why were there no customers at that time of the day?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "It was too hot and still.",
+      "key_points": [
+        "It was (too) hot",
+        "and still (the hot, still afternoon hours)"
+      ],
+      "model_answer": "It was too hot and still.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Omitted 'still'"
+      ],
+      "examiner_notes": "Most missed the word 'still' and some did not understand it in context.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iv)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words describe how Mr. Panwallah introduced Hari to watch mending.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. come and sit\n2. Want to help?\n3. open / show him the working of the grandfather clock\n4. make an apprentice\n5. between two and four\n6. ask Jagu\n7. pay you little\n8. two hours a day\n(Any 6 points in correct sequence)",
+      "key_points": [
+        "come and sit",
+        "Want to help?",
+        "open / show him the working of the grandfather clock",
+        "make an apprentice",
+        "between two and four",
+        "ask Jagu",
+        "pay you little",
+        "two hours a day"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Summarised the wrong paragraph",
+        "Exceeded 50 words",
+        "Covered only the clock and apprenticeship"
+      ],
+      "examiner_notes": "Candidates struggled with the summary: several summarised the preceding paragraph and missed most key points; most exceeded the word limit and drew no grids or rough drafts. Most answers covered only opening the clock and becoming an apprentice.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2025-q4",
+        "text": "A little later, when he went to the pump to wash, he saw the school children pouring by with their satchels across their shoulders. They all wore the same clothes - grey shorts or skirts and light blue shirts or blouses - faded and mended, and they all had their hair oiled and combed down very flat. Some went by in laughing, racing groups, others had to be led by their mothers or grandparents to the school building. This reminded him of his sisters in the village.\n\nThe boys in the kitchen now looked at him with less hostility. Jagu seemed pleased with Hari too, and sometimes handed him a glass of tea in the middle of the day. When he had a few moments to spare, Jagu sat down at one of the long wooden tables, drummed loudly on it and sang a song in a dialect Hari did not know. When he caught Hari listening and smiling, he smiled back. Then Hari knew that he too had a village somewhere that he called home. It was just that he was a silent, hardworking, worried man and had no time and no gift for speech.\n\nIt was the watch mender, Mr. Panwallah, who was truly a benefactor, the kindest and most helpful of all. One afternoon, during those hot, still hours when there were no customers for a change, Hari was standing in front of the eating house, idly watching the traffic because he was too tired to do anything else, and Mr. Panwallah called to him to come and sit beside him on the bench behind the counter in his shop.\n\n\"Want to help?\" he asked. \"Want to learn how to make a clock tick? I'm just going to open this big grandfather clock sent to me for repair - you'll be able to see the workings plain. Don't often get a piece like this anymore - wall clocks, yes, and electronic gadgets - but you don't often come upon a grandfather clock like this. It's a real piece of luck, being able to show you one of this size. Look,\" he said, swinging open the door at the back and revealing the machinery to a fascinated Hari who felt as if the door had opened into a new and strange house. Mr. Panwallah showed Hari what was wrong with it, what had made it stop.\n\n\"Interesting, isn't it? How would you like to learn? Tell you what - I'll take you on as an apprentice. You don't have much to do between two and four, do you? Of course you will have to ask Jagu first. I can pay you a little, not much, and you can help me for two hours a day. Perhaps I can make a watch mender of you.\"",
+        "source": "Village by the Sea, Anita Desai",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "come and sit",
+          "Want to help?",
+          "open / show him the working of the grandfather clock",
+          "make an apprentice",
+          "between two and four",
+          "ask Jagu",
+          "pay you little",
+          "two hours a day"
+        ],
+        "points_required": 6,
+        "sequence_required": true,
+        "scheme_note": null,
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage but write in correct serial order the word or phrase appropriate to the blank space.\nExample: One day we (0) ______ (lift) the box up. Answer: (0) lifted\nWe (1) ______ (find) a dead mouse (2) ______ (lie) among our treasures. It (3) ______ (be) an exciting discovery. A boy took it up by its tail and (4) ______ (wave) it in front of our faces. \"What shall we do with it?\" he (5) ______ (cry). \"It stinks!\" someone (6) ______ (shout). \"Throw it out of the window quick!\" He (7) ______ (hesitate). They all (8) ______ (look) at me.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. lifted] (1) found  (2) lying  (3) was  (4) waved  (5) cried  (6) shouted  (7) hesitated  (8) looked",
+      "key_points": [
+        "(1) found",
+        "(2) lying",
+        "(3) was",
+        "(4) waved",
+        "(5) cried",
+        "(6) shouted",
+        "(7) hesitated",
+        "(8) looked"
+      ],
+      "model_answer": "(1) found\n(2) lying\n(3) was\n(4) waved\n(5) cried\n(6) shouted\n(7) hesitated\n(8) looked",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'lieing' for 'lying'",
+        "'cryed' for 'cried'",
+        "'being'/'become' for 'was'",
+        "'were looking' for 'looked'"
+      ],
+      "examiner_notes": "Most made spelling and tense errors: (2) 'lieing', (5) 'cryed', (3) 'being'/'become' for 'was', (8) 'were looking' for 'looked'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "find",
+          "answer": "found",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "lie",
+          "answer": "lying",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "be",
+          "answer": "was",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "wave",
+          "answer": "waved",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "cry",
+          "answer": "cried",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "shout",
+          "answer": "shouted",
+          "accepted": []
+        },
+        {
+          "item": "7",
+          "prompt": "hesitate",
+          "answer": "hesitated",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "look",
+          "answer": "looked",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in the blanks with appropriate words.\n(a) My best friend, John is named ______ his grandfather.\n(b) A grey mist hung ______ the fields.\n(c) The little girl spoke ______ against the bully.\n(d) They accused him ______ theft.\n(e) The police got the fire ______ control.\n(f) There is a bridge ______ the river.\n(g) The driver jumped ______ the car.\n(h) I have not seen my uncle ______ last summer.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(f) over"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(a) after  (b) over  (c) up  (d) of  (e) under  (f) across / over  (g) into  (h) since",
+      "key_points": [
+        "(a) after",
+        "(b) over",
+        "(c) up",
+        "(d) of",
+        "(e) under",
+        "(f) across / over",
+        "(g) into",
+        "(h) since"
+      ],
+      "model_answer": "(a) after\n(b) over\n(c) up\n(d) of\n(e) under\n(f) across\n(g) into\n(h) since",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(a) 'for'",
+        "(c) 'out'",
+        "(e) 'into'",
+        "(g) 'off'",
+        "More than one answer written"
+      ],
+      "examiner_notes": "Common errors: (a) 'for', (c) 'out', (e) 'into', (g) 'off'. Some wrote more than one answer.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "a",
+          "prompt": "named ___ his grandfather",
+          "answer": "after",
+          "accepted": []
+        },
+        {
+          "item": "b",
+          "prompt": "hung ___ the fields",
+          "answer": "over",
+          "accepted": []
+        },
+        {
+          "item": "c",
+          "prompt": "spoke ___ against the bully",
+          "answer": "up",
+          "accepted": []
+        },
+        {
+          "item": "d",
+          "prompt": "accused him ___ theft",
+          "answer": "of",
+          "accepted": []
+        },
+        {
+          "item": "e",
+          "prompt": "the fire ___ control",
+          "answer": "under",
+          "accepted": []
+        },
+        {
+          "item": "f",
+          "prompt": "a bridge ___ the river",
+          "answer": "across",
+          "accepted": [
+            "over"
+          ]
+        },
+        {
+          "item": "g",
+          "prompt": "jumped ___ the car",
+          "answer": "into",
+          "accepted": []
+        },
+        {
+          "item": "h",
+          "prompt": "___ last summer",
+          "answer": "since",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n1. These are fresh mangoes. I bought them yesterday.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) These are fresh mangoes which I bought yesterday.",
+        "(b) These mangoes were fresher when I bought them yesterday.",
+        "(c) These are fresh mangoes which were bought yesterday.",
+        "(d) These are fresh mangoes brought by me yesterday."
+      ],
+      "correct_answer": "(a) These are fresh mangoes which I bought yesterday.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) These are fresh mangoes which I bought yesterday.",
+      "key_points": [],
+      "model_answer": "(a) These are fresh mangoes which I bought yesterday.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (d) ('brought' for 'bought')"
+      ],
+      "examiner_notes": "Most answered correctly; some chose (d), mistaking 'brought' for 'bought'. Some used dots instead of writing the full sentence.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n2. The debating teams were very happy. They were declared joint champions.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The debating teams were very happy as they have been declared joint champions.",
+        "(b) The debating teams are very happy as they are declared joint champions.",
+        "(c) The debating teams were very happy as they had been declared joint champions.",
+        "(d) The debating teams will be very happy as they will be declared joint champions."
+      ],
+      "correct_answer": "(c) The debating teams were very happy as they had been declared joint champions.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) The debating teams were very happy as they had been declared joint champions.",
+      "key_points": [],
+      "model_answer": "(c) The debating teams were very happy as they had been declared joint champions.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a), tense not backshifted"
+      ],
+      "examiner_notes": "Many chose (a) instead of (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n3. The rain came down. All the people ran away.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) When the rain came down, all the people ran away.",
+        "(b) When it rained, the people ran away.",
+        "(c) The rain had come down all the people ran away.",
+        "(d) The rain having come, all the people ran away."
+      ],
+      "correct_answer": "(a) When the rain came down, all the people ran away.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) When the rain came down, all the people ran away.",
+      "key_points": [],
+      "model_answer": "(a) When the rain came down, all the people ran away.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Most answered correctly.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n4. The disciple was wise. The teacher did not trust him.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Although the disciple was wise yet the teacher trusted him.",
+        "(b) Although the disciple was not wise the teacher trusted him.",
+        "(c) Although the disciple is wise, the teacher trusted him.",
+        "(d) Although the disciple was wise, the teacher did not trust him."
+      ],
+      "correct_answer": "(d) Although the disciple was wise, the teacher did not trust him.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Although the disciple was wise, the teacher did not trust him.",
+      "key_points": [],
+      "model_answer": "(d) Although the disciple was wise, the teacher did not trust him.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Most answered correctly.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n1. The teacher said, \"Come early tomorrow, the examination begins at eight o'clock.\"\n(Begin: The teacher told us to.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The teacher told us to come early the next day as the examination would begin at eight o'clock.",
+        "(b) The teacher told us to come early tomorrow as the examination begins at eight o'clock.",
+        "(c) The teacher told us the examination will begin at eight o'clock so come early tomorrow.",
+        "(d) The teacher told us to come by eight o'clock as the examination will begin early the next day."
+      ],
+      "correct_answer": "(a) The teacher told us to come early the next day as the examination would begin at eight o'clock.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) The teacher told us to come early the next day as the examination would begin at eight o'clock.",
+      "key_points": [],
+      "model_answer": "(a) The teacher told us to come early the next day as the examination would begin at eight o'clock.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'tomorrow' not changed to 'the next day'"
+      ],
+      "examiner_notes": "Most were unclear about direct-to-indirect speech rules.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n2. Rahul not only plays the guitar but also the drums.\n(Use: 'as well as')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Rahul plays the guitar as well as the drums.",
+        "(b) Rahul plays the guitar as well the drums.",
+        "(c) Rahul plays the guitar as well as he does the drums.",
+        "(d) Rahul play's the guitar and the drums as well."
+      ],
+      "correct_answer": "(a) Rahul plays the guitar as well as the drums.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Rahul plays the guitar as well as the drums.",
+      "key_points": [],
+      "model_answer": "(a) Rahul plays the guitar as well as the drums.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Some chose (c), reading 'also' as indicating degree of skill.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n3. She said she would not be available.\n(Add a question tag)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Didn't she say that she would not be available?",
+        "(b) She said she would not be available, did she?",
+        "(c) She said she would not be available, didn't she?",
+        "(d) She said she would not be available, wouldn't she?"
+      ],
+      "correct_answer": "(c) She said she would not be available, didn't she?",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) She said she would not be available, didn't she?",
+      "key_points": [],
+      "model_answer": "(c) She said she would not be available, didn't she?",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b)"
+      ],
+      "examiner_notes": "Many chose (b) instead of (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n4. This is the most beautiful painting in the exhibition.\n(Begin: No other......)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) No other painting is as beautiful as this exhibition.",
+        "(b) No other painting in this exhibition is beautiful.",
+        "(c) No other painting is beautiful as this painting in the exhibition.",
+        "(d) No other painting in the exhibition is as beautiful as this one."
+      ],
+      "correct_answer": "(d) No other painting in the exhibition is as beautiful as this one.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) No other painting in the exhibition is as beautiful as this one.",
+      "key_points": [],
+      "model_answer": "(d) No other painting in the exhibition is as beautiful as this one.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Many misread the comparison and chose (c) over (d).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(5)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n5. I prefer aerobics to yoga.\n(Use: 'rather')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) I would rather do aerobics to yoga.",
+        "(b) I would rather do aerobics than yoga.",
+        "(c) I would rather prefer aerobics than yoga.",
+        "(d) I would rather do yoga than aerobics."
+      ],
+      "correct_answer": "(b) I would rather do aerobics than yoga.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) I would rather do aerobics than yoga.",
+      "key_points": [],
+      "model_answer": "(b) I would rather do aerobics than yoga.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'rather prefer'"
+      ],
+      "examiner_notes": "Most chose (c), presuming 'rather prefer' can be used together.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(6)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n6. The coach taught the children the rules of the game.\n(Begin: The rules.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The rules have being taught by the coach to the children.",
+        "(b) The rules of the game have been taught by the children to the coach.",
+        "(c) The rules of the game is taught by the coach to the children.",
+        "(d) The rules of the game were taught by the coach to the children."
+      ],
+      "correct_answer": "(d) The rules of the game were taught by the coach to the children.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) The rules of the game were taught by the coach to the children.",
+      "key_points": [],
+      "model_answer": "(d) The rules of the game were taught by the coach to the children.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Tense error in passive",
+        "Chose (b)"
+      ],
+      "examiner_notes": "Most made active-passive tense errors; some carelessly chose (b).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(7)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n7. No sooner did the film star arrive than the crowd cheered.\n(Begin: As soon as.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) As soon as the film star arrived then the crowd cheered.",
+        "(b) As soon as the film star arrives the crowd starts cheering.",
+        "(c) As soon as the crowd cheers the film star arrives.",
+        "(d) As soon as the film star arrived the crowd cheered."
+      ],
+      "correct_answer": "(d) As soon as the film star arrived the crowd cheered.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) As soon as the film star arrived the crowd cheered.",
+      "key_points": [],
+      "model_answer": "(d) As soon as the film star arrived the crowd cheered.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) with 'then'"
+      ],
+      "examiner_notes": "Some chose (a), reading 'then' as a time reference.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(8)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n8. School bags are often too heavy for students to carry.\n(Use: 'so')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) School bags are so heavy students cannot carry them.",
+        "(b) School bags are often so heavy that students cannot carry them.",
+        "(c) School bags are often so heavy for students to carry.",
+        "(d) School bags are heavy so students cannot carry them."
+      ],
+      "correct_answer": "(b) School bags are often so heavy that students cannot carry them.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) School bags are often so heavy that students cannot carry them.",
+      "key_points": [],
+      "model_answer": "(b) School bags are often so heavy that students cannot carry them.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Many were unclear about 'so...that' and chose (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Teach short-story methodology: plot, character, minimal effective dialogue, logical endings",
+      "Explain the difference between a short story and a narrative essay",
+      "Keep personal narratives age-appropriate; distinguish harmless from harmful, joke from prank",
+      "Teach use of the senses and contrast in descriptions; avoid itemisation",
+      "For argument: clear stance, 2-3 main points with examples, effective conclusion",
+      "Discuss varied approaches to a picture: account, narrative, story or description"
+    ],
+    "2": [
+      "Teach the difference between formal and friendly letters and their formats",
+      "Full date on letters; correct salutation (Sir/Madam, not 'Respected') and subscription ('Yours faithfully')",
+      "Receiver's address begins with the designation, then the organisation",
+      "Identify the premise, problems and solutions in the topic"
+    ],
+    "3": [
+      "Refer to www.cisce.org for notice format",
+      "Creative titles: catchy, within three words, no words from the topic",
+      "Single event date about ten days to a fortnight after the notice; registration deadline 2-3 days after issue",
+      "Teach email-id components; copy the event name into the subject line",
+      "Notice and email details must match"
+    ],
+    "4": [
+      "Read words in context; practise vocabulary and antonyms",
+      "Reproduce sentences word-for-word when quoting",
+      "Practise inference and higher-order questions",
+      "Train grid drawing, rough and fair drafts for summaries"
+    ],
+    "5": [
+      "Contextual practice of tense consistency and forms of 'be'",
+      "Read the whole sentence before choosing a preposition",
+      "Write the option letter and full sentence, and check they match",
+      "Practise reported speech, question tags, comparison, voice, 'so...that', 'rather...than'"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Q1: short scripts; spelling (there/their, principal/principle, tailor/taylor)",
+      "Q1: the word 'collaboration' in the argumentative essay",
+      "Q2(ii): addressing all parts and giving solutions in the formal letter",
+      "Q3: missing catchy title, dates and other practical details in the notice",
+      "Q4: summary writing",
+      "Q5: tense (especially misuse of present continuous), prepositions, sentence construction",
+      "Punctuation; contractions and colloquial language ('kids', 'gonna'); copying the passage or topic"
+    ],
+    "confusions": [
+      "Q1: collaboration vs competition",
+      "Q2: meaning of 'skill' in the friendly letter",
+      "Q3: topic taken as 'Writing' rather than 'Short Story Writing'",
+      "Q4: vocabulary",
+      "Q5: tense, articles, prepositions"
+    ]
+  }
+}

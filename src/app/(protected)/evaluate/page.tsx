@@ -873,7 +873,7 @@ export default function EvaluatePage() {
               {subject && <ContextBlock subject={subject} q={selectedQuestion} />}
 
               {selectedQuestion.question_text?.trim() ? (
-                <p className={sheetQuestionText}>{selectedQuestion.question_text}</p>
+                <p className={`${sheetQuestionText} whitespace-pre-line`}>{selectedQuestion.question_text}</p>
               ) : (
                 <p className="m-0 text-sm italic leading-relaxed text-paper-ink-soft">
                   Question text not yet available. Refer to your physical question paper.

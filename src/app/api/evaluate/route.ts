@@ -7,6 +7,7 @@ import {
   buildUserMessage,
   ClaudeEvalSchema,
   persistSubmission,
+  questionTextForGrading,
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
@@ -49,6 +50,9 @@ interface QuestionRow {
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: "figure" | "physical_map" | "ocr_pending" | null;
+  // JSONB passage/picture context. Only rows flagged include_in_grading
+  // (English Language) change what the grader sees; see questionTextForGrading.
+  stimulus: unknown;
 }
 
 // ─── Telemetry ────────────────────────────────────────────────────────────────
@@ -246,7 +250,7 @@ export async function POST(req: NextRequest) {
   const { data: questionRow, error: questionError } = await supabase
     .from("questions")
     .select(
-      "id, question_text, is_subjective, question_type, options, correct_answer, correct_option, diagram_required, diagram_url, diagram_source"
+      "id, question_text, is_subjective, question_type, options, correct_answer, correct_option, diagram_required, diagram_url, diagram_source, stimulus"
     )
     .eq("subject_id", subjectRow.id)
     .eq("year", year)
@@ -469,7 +473,11 @@ export async function POST(req: NextRequest) {
     rawContent = await requestGrading(anthropic, {
       label: "typed",
       system: examinerSystem(subject),
-      content: buildUserMessage(question.question_text, student_answer, scheme),
+      content: buildUserMessage(
+        questionTextForGrading(question.question_text, question.stimulus),
+        student_answer,
+        scheme
+      ),
       // The marking_points schema repeats the full scheme wording and a
       // verbatim quote per point (on top of model_answer/examiner_feedback/
       // improvement_tips), so a low ceiling truncates the JSON on questions

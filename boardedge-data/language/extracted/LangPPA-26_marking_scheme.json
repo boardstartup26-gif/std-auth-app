@@ -1,0 +1,1852 @@
+{
+  "year": 2026,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2026 - Analysis of Pupil Performance (raw/LangPPA-26.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story beginning with the words: It was midnight and the doorbell rang...",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "The story must be original and must begin with the words given. The story must have elements of mystery, suspense or humour and a surprise ending.",
+      "key_points": [
+        "Original story",
+        "Begins with the exact given words: 'It was midnight and the doorbell rang...'",
+        "Elements of mystery, suspense or humour",
+        "A surprise ending"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Did not begin with the given words, or rephrased/moved them mid-story",
+        "Wrote a first-person narrative essay instead of a story",
+        "Copied portions of the question or comprehension passage",
+        "Lost continuity in the narrative"
+      ],
+      "examiner_notes": "Many candidates did not begin the story with the given words; they rephrased the opening sentence or inserted it midway. Some struggled to maintain continuity in the narrative. Some wrote first-person narrative essays rather than stories, while others reproduced portions of the question or the comprehension passage instead of developing an original story.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": "It was midnight and the doorbell rang...",
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(ii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nIf you could change one period in your school timetable, which one would you choose? Why do you think it needs to be changed and with which subject or activity would you replace it?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is a first person account and must be narrated from within the plausible experience of a Class X candidate. The change must be in a subject taught in school and may include co-curricular activities. Reasons for change must be clearly given and the replaced subject or activity should be clearly named.",
+      "key_points": [
+        "First-person account within the plausible experience of a Class X candidate",
+        "Names the period/subject taught in school to be changed (may include co-curricular activities)",
+        "Clear reasons for the change",
+        "Clearly names the replacement subject or activity"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Did not name the replacement subject or activity"
+      ],
+      "examiner_notes": "Some candidates failed to clearly mention the subject they proposed to introduce in place of the existing one. Academically demanding subjects were often identified as 'burdensome'; Physical Education was a popular choice. Most grasped the essence and explained their reasons adequately even where linguistic proficiency was limited.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nYou and your family enjoy eating out. Give a description of your favourite restaurant or food stall, and the sights and smells that attract you to the place. Explain why you like eating here.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Words of sight and smell must form the main body of this composition. There should be a description of the restaurant/food. Why that particular restaurant is special to the narrator must be explained.",
+      "key_points": [
+        "Words of sight and smell form the main body",
+        "Description of the restaurant/food stall and its food",
+        "Explains why this particular place is special to the narrator"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Described the building/interiors instead of the food",
+        "Named several restaurants instead of focusing on one",
+        "'Me and my family'",
+        "there/their confusion; misspelt 'restaurant', 'necessary'"
+      ],
+      "examiner_notes": "Many candidates devoted most of their essays to describing the building and interiors rather than the food; the sensory experience of the food (aroma, taste, texture) deserved more emphasis. Some named several restaurants instead of one; others described a single visit. Errors such as 'Me and my family', there/their confusion and misspelling 'restaurant' and 'necessary' were noted.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iv)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\n'Homework is a necessary evil.'\nExpress your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Views either for or against. The candidate should take a clear stand and give valid reasons for whatever stand he/she takes. A cohesive well-constructed logical argument and ideas based on logical reasoning and personal experience.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Valid reasons supporting the stand",
+        "Cohesive, logical argument drawing on reasoning and personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "No clear stand / argued both sides",
+        "Misunderstood 'necessary evil' and contradicted own stand",
+        "Too few examples to substantiate views"
+      ],
+      "examiner_notes": "Most took a clear stand, the majority against the motion, stressing the need for rest after a rigorous schedule. A few failed to take a clear stand or argued both sides; some gave inadequate examples. 'Necessary evil' was not understood by a few, who stated disagreement but then argued in support of the statement.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(v)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture, or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Accept a wide interpretation. Any relevant ideas taken from the picture is to be accepted. However, a mere itemization / listing / description of the picture is to be penalized.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Itemised or merely described the picture",
+        "No clear connection between picture and composition"
+      ],
+      "examiner_notes": "The least attempted topic. Themes included childhood, poverty, the joy of simplicity, ingenuity, protection and sharing among siblings. Some resorted to itemisation rather than a coherent narrative; others merely described the picture without developing the ideas it suggested.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2026/q1-v.png",
+        "description": "Two barefoot children, wearing helmets, sit one behind the other on a pretend motorbike made from two old car tyres and an upturned paint bucket, on a dirt road beside a grassy bank.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-v.png"
+    },
+    {
+      "question_number": "2(i)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "Your examinations are drawing near, and you would like to form a study group. Write a letter to one of your classmates inviting him or her to join it. Give details of how you plan to revise and explain why it would be helpful.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nInvitation: e.g. please come / I invite you / we would like you to join (Any one)\nDetails of the study group / how you plan to revise: e.g. topic-wise discussion / shared notes / using online devices / discussion / inviting a teacher to help (Any two)\nWhy it would be helpful: e.g. better performance / more confidence / doubts cleared / teacher assistance (Any two)\nExpression: Opening and closing sentences, syntax, vocabulary and punctuation.",
+      "key_points": [
+        "Correct informal letter format",
+        "Invitation (any one): e.g. please come / I invite you / we would like you to join",
+        "Details of the study group / how you plan to revise (any two): e.g. topic-wise discussion / shared notes / using online devices / discussion / inviting a teacher to help",
+        "Why it would be helpful (any two): e.g. better performance / more confidence / doubts cleared / teacher assistance",
+        "Expression: Opening and closing sentences, syntax, vocabulary and punctuation."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Did not actually invite the classmate",
+        "Did not separate revision plan from benefits",
+        "'Feb'/misspelt February, missing year, numeric date",
+        "'Dear Friend'/'Dear Classmate' salutation",
+        "'Your's' / 'Your friend, ABC' subscription"
+      ],
+      "examiner_notes": "Content: some mentioned the plan but forgot to invite the classmate, or asked the classmate to form the group. The revision plan and its benefits were often not distinguished; 'revise' was used as a point instead of naming the revision activities. Format: 'February' misspelt or abbreviated, year omitted, date in numerals; impersonal salutations ('Dear Friend', 'Dear Classmate'); subscription errors ('Your friend, ABC', full name, 'Yours lovingly friend', 'Your's'); cursive 'y'. Expression was comparatively better than in Question 1, though spelling errors were frequent.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A classmate",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Invitation",
+            "selection": "any_1",
+            "examples": [
+              "please come",
+              "I invite you",
+              "we would like you to join"
+            ]
+          },
+          {
+            "element": "Details of the study group / how you plan to revise",
+            "selection": "any_2",
+            "examples": [
+              "topic-wise discussion",
+              "shared notes",
+              "using online devices",
+              "discussion",
+              "inviting a teacher to help"
+            ]
+          },
+          {
+            "element": "Why it would be helpful",
+            "selection": "any_2",
+            "examples": [
+              "better performance",
+              "more confidence",
+              "doubts cleared",
+              "teacher assistance"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Opening and closing sentences, syntax, vocabulary and punctuation.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(ii)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "The drainage system in your locality needs repair. Write a letter to the Municipal Commissioner stating the problems caused due to this. Suggest solutions to improve the situation.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nComplaints: e.g. flooded streets / overflowing gutters (Any two)\nSuggestions: e.g. replace the old drains / repair drains / desilting / unplug / clean / sanitization (Any two)\nExpression: Opening and closing sentences, syntax, vocabulary and punctuation.",
+      "key_points": [
+        "Correct formal letter format",
+        "Complaints (any two): e.g. flooded streets / overflowing gutters",
+        "Suggestions (any two): e.g. replace the old drains / repair drains / desilting / unplug / clean / sanitization",
+        "Expression: Opening and closing sentences, syntax, vocabulary and punctuation."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Restated the question instead of naming problems",
+        "Vague request ('look into the matter') instead of specific solutions",
+        "'Respected Sir' salutation",
+        "'Yours sincerely'/'Your humble servant' subscription"
+      ],
+      "examiner_notes": "Content: some merely reproduced the information in the question without identifying further problems; others raised poor hygiene, foul odour, waterlogged roads, pests and disease. Many failed to propose specific solutions and only asked the Commissioner to 'look into the matter'. Format: February errors, missing year, numeric date; 'Respected Sir'; 'Yours sincerely'/'Your humble servant', 'XYZ' or first name only; 'Your's'. Expression was better than previous years; most kept a formal tone.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Municipal Commissioner",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Complaints",
+            "selection": "any_2",
+            "examples": [
+              "flooded streets",
+              "overflowing gutters"
+            ]
+          },
+          {
+            "element": "Suggestions",
+            "selection": "any_2",
+            "examples": [
+              "replace the old drains",
+              "repair drains",
+              "desilting",
+              "unplug",
+              "clean",
+              "sanitization"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Opening and closing sentences, syntax, vocabulary and punctuation.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(i)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Your school is organising an Inter House Non-Flame Cooking Competition. Write a notice informing the students about the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Master Chef / Little Chef / Tickle your Tastebuds / Snack Time\nEvent: Annual Inter House Non-Flame Cooking Competition\nDate: Accept single date, for example a week or fortnight away from the date of writing\nTime: 10.00 a.m. - 3.00 p.m. [Accept capital letters for a.m., p.m.]\nVenue: smaller place to larger\nParticipation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before/by ...\n[Recommended: no word from the question is used for the creative title]",
+      "key_points": [
+        "Creative Title: Master Chef / Little Chef / Tickle your Tastebuds / Snack Time",
+        "Event: Annual Inter House Non-Flame Cooking Competition",
+        "Date: Accept single date, for example a week or fortnight away from the date of writing",
+        "Time: 10.00 a.m. - 3.00 p.m. [Accept capital letters for a.m., p.m.]",
+        "Venue: smaller place to larger",
+        "Participation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before/by ...",
+        "[Recommended: no word from the question is used for the creative title]"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Vague or question-derived creative title",
+        "Omitted 'Inter-House'",
+        "Unrealistic event date / wrong year",
+        "Venue not smaller-to-larger",
+        "Registration details missing or deadline after the event"
+      ],
+      "examiner_notes": "Many struggled to frame a relevant creative title; vague titles ('Compete to Win', 'Art Attack') or words from the question ('cooking') were used. 'Inter-House' was often omitted. Event dates were too early, too close to or too far from the exam date, or carried wrong months/years. Venues were not given smaller-to-larger; registration details were omitted or the deadline fell after/too close to the event. Format and paragraph sequencing were often not followed.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Event",
+          "Date",
+          "Time",
+          "Venue",
+          "Participation"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Master Chef",
+              "Little Chef",
+              "Tickle your Tastebuds",
+              "Snack Time"
+            ]
+          },
+          {
+            "element": "Event",
+            "selection": null,
+            "examples": [
+              "Annual Inter House Non-Flame Cooking Competition"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "Accept single date, for example a week or fortnight away from the date of writing"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "10.00 a.m. - 3.00 p.m. [Accept capital letters for a.m., p.m.]"
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller place to larger"
+            ]
+          },
+          {
+            "element": "Participation",
+            "selection": null,
+            "examples": [
+              "All pupils who wish to register should give their names to the Vice Principal/etc. on or before/by ..."
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Master Chef",
+          "Little Chef",
+          "Tickle your Tastebuds",
+          "Snack Time"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(ii)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is organising an Inter House Non-Flame Cooking Competition.\nWrite an email to a famous chef, inviting him/her to judge the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id (recipient; official, with @ and provider)\nSubject\nSalutation\nOpening sentence\nClosing sentence\nSubscription\nExpression - All details of the notice are to be included in the e-mail.",
+      "key_points": [
+        "E-mail id (recipient; official, with @ and provider)",
+        "Subject",
+        "Salutation",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription",
+        "Expression - All details of the notice are to be included in the e-mail."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Confused 'chef' with 'chief'",
+        "Unsuitable email id",
+        "Missing subject line",
+        "Informal salutation ('Hi ...')",
+        "Omitted the notice's date, time and venue"
+      ],
+      "examiner_notes": "A few confused 'chef' with 'chief'. Inappropriate email ids ('famouschef...', 'principal@gmail.com') were used. The subject line was mostly correct, but some omitted it or wrote the date. Informal salutations ('Hi Gordon'); subscription errors as in letters. Some omitted the date, time and venue from the notice; some used flowery language and irrelevant details.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A famous chef",
+        "format_elements": [
+          "E-mail id (recipient; official, with @ and provider)",
+          "Subject",
+          "Salutation",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression - All details of the notice are to be included in the e-mail.",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(1)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n1. dilapidated (line 6)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) faded and yellow",
+        "(b) new and shining",
+        "(c) tightly wrapped",
+        "(d) old and ragged"
+      ],
+      "correct_answer": "(d) old and ragged",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) old and ragged",
+      "key_points": [],
+      "model_answer": "(d) old and ragged",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'faded and yellow'"
+      ],
+      "examiner_notes": "'Dilapidated' was incorrectly identified as (a) 'faded and yellow'. Some copied the questions instead of answering.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(2)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n2. elementary (line 21)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) primary",
+        "(b) special",
+        "(c) secondary",
+        "(d) village"
+      ],
+      "correct_answer": "(a) primary",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) primary",
+      "key_points": [],
+      "model_answer": "(a) primary",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'secondary'",
+        "Chose (d) 'village'"
+      ],
+      "examiner_notes": "'Elementary' was incorrectly identified as (c) 'secondary' by many and (d) 'village' by a few.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "word_opposite_mcq",
+      "question_text": "Which word in the passage is the opposite of 'boring'?",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) important",
+        "(b) nuisance",
+        "(c) nourishment",
+        "(d) interesting"
+      ],
+      "correct_answer": "(d) interesting",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) interesting",
+      "key_points": [],
+      "model_answer": "(d) interesting",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Correctly answered by most candidates.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(a)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words:\n(a) How was the new teacher dressed?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "striped cotton jacket / towel around his neck / dyed cotton trousers with patches / thick socks instead of shoes / straw hat",
+      "key_points": [
+        "striped cotton jacket",
+        "towel around his neck",
+        "dyed cotton trousers with patches",
+        "thick socks instead of shoes",
+        "(dilapidated) straw hat"
+      ],
+      "model_answer": "striped cotton jacket / towel around his neck / dyed cotton trousers with patches / thick socks instead of shoes / straw hat",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrote only 'not like a teacher'/'like a farmer' without details"
+      ],
+      "examiner_notes": "Almost all answered correctly. Some wrote only 'not like a teacher' or 'like a farmer' without the details of trousers, socks, hat etc.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(b)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(b) Which sentence in the passage tells us that Totto-chan had seen the new teacher before?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "\"Aren't you the farmer who works in the field by the stream?\"",
+        "\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.",
+        "As she stared at the teacher, Totto-chan thought that she had seen him before."
+      ],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "\"Aren't you the farmer who works in the field by the stream?\" / \"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted. / As she stared at the teacher, Totto-chan thought that she had seen him before. (Any one)",
+      "key_points": [
+        "Quotes one of the accepted sentences exactly"
+      ],
+      "model_answer": "\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Paraphrased instead of quoting",
+        "Gave line number or whole paragraph",
+        "Quoted extra sentences"
+      ],
+      "examiner_notes": "Candidates were expected to quote only the specific sentence. Some wrote the line number or the entire paragraph; many paraphrased it or embedded it in an answer; other sentences were also included.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(c) Why do you think the headmaster had to correct the farmer about his role?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "The farmer claimed he was an ordinary farmer but the headmaster said he was a farming teacher; he had agreed to teach them how to plant a field.",
+      "key_points": [
+        "The farmer claimed he was only an ordinary farmer, not a teacher",
+        "The headmaster said he was their farming teacher who had agreed to teach them how to plant a field"
+      ],
+      "model_answer": "The farmer claimed he was an ordinary farmer but the headmaster said he was a farming teacher; he had agreed to teach them how to plant a field.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Copied text without analysis",
+        "Superficial response"
+      ],
+      "examiner_notes": "An analytical question requiring interpretation. Many answered correctly; some were confused or superficial, and several copied portions of the text without analysis.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(d)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(d) Why was the headmaster right in inviting the new teacher to take a class?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "A wide variety of plausible answers.",
+      "key_points": [
+        "Any plausible, text-supported reason, e.g. the headmaster believed children learn best by actually seeing things done; the farmer had practical knowledge and taught by demonstration"
+      ],
+      "model_answer": "The headmaster believed it was important for children to learn by actually seeing things done, and the farmer, with his practical knowledge, could demonstrate how to plant a field.",
+      "model_answer_verified": false,
+      "common_errors": [
+        "Copied text without applying reasoning"
+      ],
+      "examiner_notes": "A higher-order thinking question. Most answered correctly; some merely copied text without analysis.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(e)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(e) What did the farmer say that proved that he knew a lot about snakes?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "He taught them that all snakes are not poisonous.",
+      "key_points": [
+        "The snakes here are not poisonous (and won't hurt you if you don't hurt them)"
+      ],
+      "model_answer": "He taught them that all snakes are not poisonous.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Omitted 'not poisonous'"
+      ],
+      "examiner_notes": "Almost all answered correctly, though some wrote only that snakes 'won't hurt us unless we hurt them' and did not use the word 'poisonous'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iv)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words, give an account of what the farmer taught the children that day.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. told them about weeds / hardy / some grow faster\n2. hid the sun\n3. good hiding places for insects\n4. nuisance / taking nourishment from soil\n5. how to dig\n6. make furrows\n7. spread fertilizer\n8. everything else you had to grow in a field / how to plant a field / demonstrated\n9. snakes... / insects, birds and butterflies (accept both as separate points)\n10. weather\n(Any 6 points in correct sequence)",
+      "key_points": [
+        "told them about weeds / hardy / some grow faster",
+        "hid the sun",
+        "good hiding places for insects",
+        "nuisance / taking nourishment from soil",
+        "how to dig",
+        "make furrows",
+        "spread fertilizer",
+        "everything else you had to grow in a field / how to plant a field / demonstrated",
+        "snakes... / insects, birds and butterflies (accept both as separate points)",
+        "weather"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Focused only on weeds",
+        "Exceeded 50 words",
+        "Too short (about 20 words), points omitted",
+        "Started from the wrong section of the passage",
+        "Points in rough draft missing from fair draft"
+      ],
+      "examiner_notes": "Most wrote the summary well and identified most key points. Some focused only on weeds; a few exceeded the word limit; several wrote barely 20 words and omitted points. Others began from the wrong section and missed points; some dropped points from rough to fair draft or left the fair draft incomplete.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2026-q4",
+        "text": "\"This is your teacher today. He's going to show you all sorts of things.\" With that the headmaster introduced a new teacher. Totto-chan took a good look at him but he wasn't dressed like a teacher at all. He wore a striped cotton jacket and he had a towel hanging around his neck. His trousers were of dyed cotton and were full of patches. Instead of shoes, he wore thick socks, while on his head was a rather dilapidated straw hat.\n\nThe children were all assembled by the pond at the temple.\n\nAs she stared at the teacher, Totto-chan thought that she had seen him before. \"Where?\" she wondered. His kindly face was sunburnt and full of wrinkles. She suddenly remembered!\n\n\"Aren't you the farmer who works in the field by the stream?\" she asked him, delighted.\n\n\"That's right,\" said the 'teacher', with a smile wrinkling up his face. \"You pass my place every time you go to the village! That's my field. That one over there full of mustard blossoms.\"\n\n\"Wow! So you're going to be our teacher today,\" cried the children excitedly.\n\n\"No!\" said the man, waving his hand in front of his face. \"I'm not a teacher! I'm just a farmer. Your headmaster just asked me to do it, that's all.\"\n\n\"Oh yes, he is, he's your farming teacher,\" said the headmaster, standing beside him. \"He very kindly agreed to teach you how to plant a field.\"\n\nAt an elementary school, anyone who taught the children anything would probably have to have teaching qualifications, but the headmaster didn't worry about things like that. He thought it important for children to learn by actually seeing things done.\n\n\"Let's begin then,\" said the farming teacher.\n\nThe farming teacher told the children to get spades and other tools from the car and started them on weeding. He told them all about weeds: how hardy they were; how some grew faster than crops and hid the sun from them; how weeds were good hiding places for bad insects; and how weeds could be a nuisance by taking all the nourishment from the soil. He taught them one thing after another. And while he talked, his hands never stopped pulling out weeds.\n\nThe children did the same. Then the teacher showed them how to dig, how to make furrows; how to spread fertilizer; and everything else you had to do to grow things in a field, explaining as he demonstrated.\n\nA little snake put its head out and very nearly bit the hand of Ta-chan, one of the older boys, but the farming teacher reassured him, \"The snakes here are not poisonous, and they won't hurt you if you don't hurt them.\"\n\nBesides teaching the children how to plant a field, the farming teacher told them interesting things about insects, birds, and butterflies, about the weather, and about all sorts of other things.",
+        "source": "Adapted from 'Totto-chan - The Little Girl at the Window' by Tetsuko Kuroyanagi",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "told them about weeds / hardy / some grow faster",
+          "hid the sun",
+          "good hiding places for insects",
+          "nuisance / taking nourishment from soil",
+          "how to dig",
+          "make furrows",
+          "spread fertilizer",
+          "everything else you had to grow in a field / how to plant a field / demonstrated",
+          "snakes... / insects, birds and butterflies (accept both as separate points)",
+          "weather"
+        ],
+        "points_required": 6,
+        "sequence_required": true,
+        "scheme_note": null,
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage but write in correct serial order the word or phrase appropriate to the blank space.\nExample: The road northwards through Tanganyika was narrow and often deeply rutted. And once I (0) ______ (see) a very large brown cobra. Answer: saw\nIt (1) ______ (glide) slowly over the ruts in the road ahead of me. It was seven or eight feet long and (2) ______ (hold) its flat spoon-shaped head six inches up in the air. I (3) ______ (stop) the car smartly so as not (4) ______ (run) over it. To be truthful, I was so (5) ______ (frighten), I (6) ______ (go) quickly into reverse and (7) ______ (keep) backing away. The fearsome thing (8) ______ (disappear) into the undergrowth.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(1) was gliding",
+        "(8) had disappeared"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. saw] (1) glided / was gliding  (2) held  (3) stopped  (4) to run  (5) frightened  (6) went  (7) kept  (8) disappeared / had disappeared",
+      "key_points": [
+        "(1) glided / was gliding",
+        "(2) held",
+        "(3) stopped",
+        "(4) to run",
+        "(5) frightened",
+        "(6) went",
+        "(7) kept",
+        "(8) disappeared / had disappeared"
+      ],
+      "model_answer": "(1) glided\n(2) held\n(3) stopped\n(4) to run\n(5) frightened\n(6) went\n(7) kept\n(8) disappeared",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'holded' for 'held'",
+        "'runned' for 'to run'",
+        "'keeped' for 'kept'",
+        "'dissapeared' spelling",
+        "'frightening' for 'frightened'"
+      ],
+      "examiner_notes": "Many struggled with tense: 'glide'/'gliding' (1), 'holded' (2), 'stopd' (3), 'runned' (4), 'frightening'/'frighten' (5), 'goes'/'gone' (6), 'keep'/'keeped' (7), 'dissappear(ed)' (8).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "glide",
+          "answer": "glided",
+          "accepted": [
+            "was gliding"
+          ]
+        },
+        {
+          "item": "2",
+          "prompt": "hold",
+          "answer": "held",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "stop",
+          "answer": "stopped",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "run",
+          "answer": "to run",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "frighten",
+          "answer": "frightened",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "go",
+          "answer": "went",
+          "accepted": []
+        },
+        {
+          "item": "7",
+          "prompt": "keep",
+          "answer": "kept",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "disappear",
+          "answer": "disappeared",
+          "accepted": [
+            "had disappeared"
+          ]
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in the blanks with appropriate words.\n(a) He acted according ______ my instructions.\n(b) They scaled up the wall ______ means of a rope.\n(c) Gina has a passion ______ music.\n(d) Father patted Jai ______ his back for his good results.\n(e) I have not seen Sonia ______ last May.\n(f) They worked ______ the night to complete the project on time.\n(g) Ms. Sharma refused to buy a new car because the cost was ______ her means.\n(h) Saif knew nothing about the event since it had happened ______ he was born.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(f) throughout",
+        "(f) into"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(a) to  (b) by  (c) for  (d) on  (e) since  (f) through / throughout / into  (g) beyond  (h) before",
+      "key_points": [
+        "(a) to",
+        "(b) by",
+        "(c) for",
+        "(d) on",
+        "(e) since",
+        "(f) through / throughout / into",
+        "(g) beyond",
+        "(h) before"
+      ],
+      "model_answer": "(a) to\n(b) by\n(c) for\n(d) on\n(e) since\n(f) through\n(g) beyond\n(h) before",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(b) 'with'",
+        "(c) 'in'/'of'",
+        "(f) 'from'/'along'",
+        "(g) 'within'/'against'/'in'"
+      ],
+      "examiner_notes": "Most answered (a), (d), (e), (h) correctly. In (b) many wrote 'with'; some wrote 'in'/'of' in (c). In (f) 'from'/'along' and in (g) 'within'/'against'/'in' were common errors; (f) and (g) were hardest.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "a",
+          "prompt": "according ___ my instructions",
+          "answer": "to",
+          "accepted": []
+        },
+        {
+          "item": "b",
+          "prompt": "___ means of a rope",
+          "answer": "by",
+          "accepted": []
+        },
+        {
+          "item": "c",
+          "prompt": "a passion ___ music",
+          "answer": "for",
+          "accepted": []
+        },
+        {
+          "item": "d",
+          "prompt": "patted Jai ___ his back",
+          "answer": "on",
+          "accepted": []
+        },
+        {
+          "item": "e",
+          "prompt": "___ last May",
+          "answer": "since",
+          "accepted": []
+        },
+        {
+          "item": "f",
+          "prompt": "worked ___ the night",
+          "answer": "through",
+          "accepted": [
+            "throughout",
+            "into"
+          ]
+        },
+        {
+          "item": "g",
+          "prompt": "___ her means",
+          "answer": "beyond",
+          "accepted": []
+        },
+        {
+          "item": "h",
+          "prompt": "___ he was born",
+          "answer": "before",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n1. He picked up the bundle. He walked away.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He picked up the bundle and walked away.",
+        "(b) Packing up the bundle, he walked away.",
+        "(c) Picking up the bundle, he walked away.",
+        "(d) He walked away by picking up the bundle."
+      ],
+      "correct_answer": "(c) Picking up the bundle, he walked away.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Picking up the bundle, he walked away.",
+      "key_points": [],
+      "model_answer": "(c) Picking up the bundle, he walked away.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a)/(b)"
+      ],
+      "examiner_notes": "Many chose (a) or (b).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n2. Ravi is not a technician. Ravi is not a musician.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Ravi is both a technician also a musician.",
+        "(b) Ravi is neither a technician nor a musician.",
+        "(c) Besides not being a technician, Ravi is a musician.",
+        "(d) Ravi is not a musician but a technician."
+      ],
+      "correct_answer": "(b) Ravi is neither a technician nor a musician.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Ravi is neither a technician nor a musician.",
+      "key_points": [],
+      "model_answer": "(b) Ravi is neither a technician nor a musician.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (d)"
+      ],
+      "examiner_notes": "A few chose (d).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n3. Tanya is extremely polite. We like her.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Tanya is extremely polite but we like her.",
+        "(b) We like Tanya despite her being extremely polite.",
+        "(c) Tanya's extremely polite ways make us like her.",
+        "(d) We like Tanya because she is extremely polite."
+      ],
+      "correct_answer": "(d) We like Tanya because she is extremely polite.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) We like Tanya because she is extremely polite.",
+      "key_points": [],
+      "model_answer": "(d) We like Tanya because she is extremely polite.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Most answered correctly; some chose (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n4. The construction started on time. It was delayed due to the bad weather.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Although the construction started on time, it was delayed due to the bad weather.",
+        "(b) Since the construction started on time, it was delayed due to the bad weather.",
+        "(c) The construction started on time, so it was delayed due to the bad weather.",
+        "(d) The construction started on time, as well as got delayed due to the bad weather."
+      ],
+      "correct_answer": "(a) Although the construction started on time, it was delayed due to the bad weather.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Although the construction started on time, it was delayed due to the bad weather.",
+      "key_points": [],
+      "model_answer": "(a) Although the construction started on time, it was delayed due to the bad weather.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'Since'"
+      ],
+      "examiner_notes": "Some chose (b).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n1. Samudragupta was one of the greatest of the Indian kings.\n(End with: ...Samudragupta.)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) No other king is as great as Samudragupta.",
+        "(b) All other kings are greater than Samudragupta.",
+        "(c) Very few Indian kings were as great as Samudragupta.",
+        "(d) Some Indian kings are greatest as Samudragupta."
+      ],
+      "correct_answer": "(c) Very few Indian kings were as great as Samudragupta.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Very few Indian kings were as great as Samudragupta.",
+      "key_points": [],
+      "model_answer": "(c) Very few Indian kings were as great as Samudragupta.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a)/(d)"
+      ],
+      "examiner_notes": "Many lacked clarity on degrees of comparison; (a) and (d) were chosen in some cases.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n2. One should keep one's promises.\n(Begin with: Promises ...)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Promises should keep one.",
+        "(b) One's promises are not meant to be kept.",
+        "(c) Promises should be kept.",
+        "(d) Promises are one's to keep."
+      ],
+      "correct_answer": "(c) Promises should be kept.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Promises should be kept.",
+      "key_points": [],
+      "model_answer": "(c) Promises should be kept.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b)/(d)"
+      ],
+      "examiner_notes": "Some chose (b) or (d), possibly from careless reading; active-to-passive conversion caused errors.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n3. He said, \"I have passed the examination.\"\n(Begin: He said that.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He said that he had passed the examination.",
+        "(b) He said that he passed the examination.",
+        "(c) He said that he has passed the examination.",
+        "(d) He said that he will pass the examination."
+      ],
+      "correct_answer": "(a) He said that he had passed the examination.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) He said that he had passed the examination.",
+      "key_points": [],
+      "model_answer": "(a) He said that he had passed the examination.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Did not backshift 'has passed' to 'had passed'"
+      ],
+      "examiner_notes": "Many lacked clarity on direct-to-reported speech, especially the tense change 'has passed' to 'had passed', pronouns, and retaining quotation marks.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n4. He finished his exercise and put his books away.\n(Begin: Having ......)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Having his books put away, he exercised.",
+        "(b) Having put his books away, he finished his exercise.",
+        "(c) Having finished his exercise, he put his books away.",
+        "(d) Having to finish his exercise, he put his books away."
+      ],
+      "correct_answer": "(c) Having finished his exercise, he put his books away.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Having finished his exercise, he put his books away.",
+      "key_points": [],
+      "model_answer": "(c) Having finished his exercise, he put his books away.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b), reversing the order of actions"
+      ],
+      "examiner_notes": "The compound sentence becomes a simple sentence with a participial phrase; some confused (b) and (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(5)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n5. Unless she practises every day, she will not be able to meet her goal.\n(Begin with: If...)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) If she practises every day, she will be able to meet her goal.",
+        "(b) If she practises every day, she will not be able to meet her goal.",
+        "(c) If she does not practise every day, her goal will be met.",
+        "(d) If she practises every day, her goal will not be met."
+      ],
+      "correct_answer": "(a) If she practises every day, she will be able to meet her goal.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) If she practises every day, she will be able to meet her goal.",
+      "key_points": [],
+      "model_answer": "(a) If she practises every day, she will be able to meet her goal.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Double negative or wrong tense with 'if'"
+      ],
+      "examiner_notes": "Errors came from weak reasoning and careless reading; some wrote 'If she will not practise...', omitted 'not', or created a double negative.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(6)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n6. Rashmi was too late to hear the first speech.\n(Use: ...so...that...)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Rashmi was so late for the first speech.",
+        "(b) Rashmi was so late that she could hear the first speech.",
+        "(c) Rashmi is so late that she cannot hear the first speech.",
+        "(d) Rashmi was so late that she could not hear the first speech."
+      ],
+      "correct_answer": "(d) Rashmi was so late that she could not hear the first speech.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Rashmi was so late that she could not hear the first speech.",
+      "key_points": [],
+      "model_answer": "(d) Rashmi was so late that she could not hear the first speech.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Misused 'so...that'"
+      ],
+      "examiner_notes": "Some did not read the stem and distractors carefully; many lacked clarity on 'so...that'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(7)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n7. There is a slight difference between the two shades.\n(Use: 'different')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The slight difference is between two shades.",
+        "(b) The two shades are slightly different.",
+        "(c) The slightly different shades are between two.",
+        "(d) The two different shades are slightly different."
+      ],
+      "correct_answer": "(b) The two shades are slightly different.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) The two shades are slightly different.",
+      "key_points": [],
+      "model_answer": "(b) The two shades are slightly different.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Used noun 'difference' instead of adjective 'different'"
+      ],
+      "examiner_notes": "Some used incorrect structures, misplaced words, or the noun 'difference' instead of the adjective 'different'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(8)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n8. Dr. Shetty is a professor and a research scientist.\n(Begin with: Not only.......)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Not only was Dr. Shetty a professor but also a research scientist.",
+        "(b) Not only is Dr. Shetty a professor as well as a research scientist.",
+        "(c) Dr. Shetty is both a professor and research scientist.",
+        "(d) Not only is Dr. Shetty a professor but also a research scientist."
+      ],
+      "correct_answer": "(d) Not only is Dr. Shetty a professor but also a research scientist.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Not only is Dr. Shetty a professor but also a research scientist.",
+      "key_points": [],
+      "model_answer": "(d) Not only is Dr. Shetty a professor but also a research scientist.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) (tense change 'was')",
+        "No inversion after 'Not only'"
+      ],
+      "examiner_notes": "Some chose (a), (b) or (c); a few wrote 'Not only Dr. Shetty is...', showing unclear word order.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Teach story-planning techniques and the elements and structure of an original short story",
+      "Guide students to place given words or sentences exactly where instructed",
+      "Teach use of sensory details (sight, sound, smell, taste, touch) in descriptions",
+      "Teach argument construction with a clear stand, two or three main points and illustrations",
+      "Encourage broad interpretation of the picture beyond listing its contents"
+    ],
+    "2": [
+      "Teach correct formal and friendly letter formats; refer to specimen letters on the CISCE website",
+      "Read the topic carefully and address the premise, problems and plausible solutions",
+      "Write the full date with the month spelt out correctly; receiver's address begins with designation"
+    ],
+    "3": [
+      "Use model emails to teach format, structure and language",
+      "Explain email-id components (username, @, domain)",
+      "Use the event name in the subject line",
+      "Keep notice and email details (date, time, venue) consistent"
+    ],
+    "4": [
+      "Practise contextual vocabulary, synonyms and antonyms",
+      "Teach exact quotation when a sentence is asked for",
+      "Develop inferential and higher-order thinking skills",
+      "Practise summary writing with grids, rough and fair drafts"
+    ],
+    "5": [
+      "Reinforce tense rules and regular/irregular verb forms",
+      "Practise prepositions in context",
+      "Practise transformations: voice, reported speech, unless/if...not, too...to/so...that, degrees of comparison, not only...but also"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Argumentative composition",
+      "Prepositions, tenses, syntax and articles",
+      "Punctuation in direct speech; commas, full stops, question marks",
+      "Informal and colloquial language",
+      "Addressing all parts of letter questions",
+      "HOTS questions in comprehension"
+    ],
+    "confusions": [
+      "Q1(i): given opening words not used as the start of a structured plot; story turned into a narrative",
+      "Q1(v): no clear connection between essay and picture",
+      "Q3: both notice and email had to be written; some wrote only one",
+      "Q4(iii)(c) and (d)",
+      "Q5: tense and prepositions"
+    ]
+  }
+}

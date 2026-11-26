@@ -43,6 +43,12 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 - Shared grading code (`buildUserMessage`, `ClaudeEvalSchema`, `reserveTokens`/`refundTokens`, `persistSubmission`, anchors) lives in [src/lib/evaluation/grading.ts](src/lib/evaluation/grading.ts), moved verbatim from the typed route so both paths grade identically.
 - JSX gotcha seen here: text right after a `{expression}` loses its leading space when it contains an HTML entity (`&rsquo;`, `&apos;`). Use literal `’` in such text.
 
+### English Language (Paper 1)
+
+- Comprehension and picture questions carry `questions.stimulus` with `include_in_grading: true`; `questionTextForGrading()` ([grading.ts](src/lib/evaluation/grading.ts)) puts the passage or picture description ahead of the question on every grading path. Keep it on any new path. Rows without the flag grade unchanged.
+- Writing tasks have no published mark split. BoardEdge’s split lives in the `ENGLISH_LANGUAGE` module of the examiner prompt; the SEO page FAQ says it is ours, not the Board’s.
+- Data: `boardedge-data/language/extracted/`, loaded with `scripts/subject_import1.mjs`. `marking_logic` holds grammar answers and must stay off the student column grant.
+
 ### Practice papers (Question Set Generator)
 
 - Flow: build → cover → attempt the whole paper → review → submit → whole paper marked → results. All on `/practice-paper/[id]`, which renders by `practice_sets.status` (`in_progress` → `marking` → `marked`). Papers never hand off to `/evaluate`.

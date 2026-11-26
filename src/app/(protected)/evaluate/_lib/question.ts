@@ -85,6 +85,7 @@ export const SUBJECTS = [
   "History & Civics",
   "Economics",
   "Environmental Science",
+  "English Language",
   "English Literature",
 ] as const;
 
@@ -96,7 +97,7 @@ export const OTHER_BUCKET = "__other__";
 
 // The submitted value must match how correct_answer is stored for that
 // question: full option text for chemistry/physics/biology/geography/economics/
-// environmental science, bare
+// environmental science/english language, bare
 // key letter for history & civics/english literature.
 export function mcqOptionValue(opt: McqOption): string {
   return typeof opt === "string" ? opt : opt.key;

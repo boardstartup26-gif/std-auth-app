@@ -29,6 +29,7 @@ import {
   ClaudeEvalSchema,
   matchObjectiveAnswer,
   persistSubmission,
+  questionTextForGrading,
   refundTokens,
   resolveAnswerDisplay,
   resolveMarkingPointAnchors,
@@ -72,6 +73,7 @@ interface QuestionForMarking {
   options: McqOption[] | null;
   correct_answer: string | null;
   correct_option: string | string[] | null;
+  stimulus: unknown;
   marking_schemes: MarkingScheme | MarkingScheme[] | null;
 }
 
@@ -131,7 +133,7 @@ async function gradeWritten(
   const raw = await requestGrading(anthropic, {
     label: "practice-paper",
     system: examinerSystem(subject),
-    content: buildUserMessage(q.question_text, answer, scheme),
+    content: buildUserMessage(questionTextForGrading(q.question_text, q.stimulus), answer, scheme),
     maxTokens: GRADING_MAX_TOKENS,
   });
   const cleaned = raw
@@ -226,7 +228,7 @@ export async function markPaper(userId: string, setId: string, deadline: number)
     const { data: qs, error: qError } = await admin
       .from("questions")
       .select(
-        "id, question_text, is_subjective, question_type, options, correct_answer, correct_option, " +
+        "id, question_text, is_subjective, question_type, options, correct_answer, correct_option, stimulus, " +
           "marking_schemes ( scheme_text, total_marks, key_points, model_answer, model_answer_verified, " +
           "accepted_alternatives, common_errors, examiner_notes, marks_per_correct_point )",
       )

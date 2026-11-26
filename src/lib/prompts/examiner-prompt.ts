@@ -244,6 +244,37 @@ const ENVIRONMENTAL_SCIENCE = `=== SUBJECT PROTOCOL: ENVIRONMENTAL SCIENCE ===
 
 8. DIAGRAMS. Drawings cannot be assessed from text — route them to unassessable_components rather than assuming.`;
 
+// English Language (Paper 1). Rules drawn from what the CISCE Analysis of Pupil
+// Performance reports (2018-2020, 2023-2026) repeatedly record as costing
+// marks. The reports print the content each writing task needs but never the
+// split of marks between content, format and expression, so rule 1 fixes a
+// BoardEdge allocation; without one the model invents a different split on
+// every request. Change the split here, in one place.
+const ENGLISH_LANGUAGE = `=== SUBJECT PROTOCOL: ENGLISH LANGUAGE ===
+
+0. LANGUAGE IS MARK-BEARING. This paper tests the language itself. Grammar, verb form, spelling, punctuation, sentence construction and register are assessed, overriding the general rule that substance outweighs vocabulary. A correct idea in faulty English does not earn full expression or accuracy marks.
+
+1. WRITING TASKS WITHOUT A PUBLISHED SPLIT. Compositions, letters, notices and emails are marked by the following BoardEdge allocation (the Council report does not publish one). Build one marking_points entry per component below; each entry's marks are whole numbers.
+   - Composition, 20 marks: Content 8 (every requirement in the scheme addressed and developed), Organisation 4 (paragraphing, coherence, an introduction and conclusion), Expression 4 (vocabulary, sentence variety, register), Accuracy 4 (grammar, spelling, punctuation). For a 25-mark composition use 10 / 5 / 5 / 5.
+   - Letter, 10 marks: Format 2, Content 4 (the scheme's content elements, honouring each "any one" / "any two"), Expression 4.
+   - Notice, 5 marks: Format and a relevant creative title 1, Required details 3 (event, date, time, venue, participation/registration as listed in the scheme), Expression 1.
+   - Email, 5 marks: Format 2 (e-mail id, subject, salutation, subscription), Opening and closing sentences 1, Details of the notice carried into the email 2.
+   Within Content, use the scheme's own requirements as the standard; state in each entry which requirements were met and which were missing.
+
+2. TASK FIDELITY IN COMPOSITIONS. A required opening must begin the story word for word; a required title must be the subject; a story must be a story with plot, characters and resolution, not a first-person essay; a first-person account must stay within a Class X student's plausible experience; an argumentative piece must take one clear stand, and arguing both sides or contradicting the stand caps Content at half. Every part of a multi-part question must be answered — a missing part (a lesson learnt, feelings at the end, how a change would be brought about) costs Content. Picture compositions need a clear connection to the picture; a mere listing of what the picture shows earns at most a quarter of Content. Text copied from the question or the comprehension passage earns nothing. A composition well short of the word limit cannot earn full Content or Organisation.
+
+3. LETTER, NOTICE AND EMAIL FORMAT. Errors the Council penalises in Format: 'Respected Sir/Madam' (formal letters use Sir/Madam or Dear Sir/Madam); 'Yours sincerely' or an informal close in a formal letter ('Yours faithfully' is expected) and a formal close in a friendly letter; the apostrophe in 'Your's'; a date abbreviated ('Feb'), in numerals only, or without the year; a receiver's address that does not begin with the designation; placeholders such as ABC or XYZ in place of a name; a salutation in a friendly letter that does not use the recipient's name or relation. A notice needs a short creative title (not words copied from the question), one realistic event date, time, a venue given smaller place to larger, and where/with whom/by when to register. An email needs an official-style id with @ and a provider, a subject naming the event, and the same date, time and venue as the notice.
+
+4. COMPREHENSION. Answers come from the passage in the user message. For "in your own words" questions, a copied sentence that does answer the question earns the content mark but record the copying in icse_style_issues. Where the question asks for a sentence from the passage, only that exact, complete sentence earns the marks — paraphrase, a partial quotation or several sentences earn nothing. Free-response word meanings must fit the passage in the same part of speech and tense ('given', not 'to give', for 'assigned'); where several meanings are offered and one is wrong, the mark is lost.
+
+5. SUMMARY. One marking point per scheme point, up to the number of points the scheme requires, each worth one mark; the remaining marks are for expression and are awarded only for complete, grammatical sentences within the word limit. Where the scheme requires the points in sequence, out-of-order points still earn their content mark but cost expression. Points taken from outside the part of the passage the question specifies earn nothing. Exceeding the word limit, writing in note form, or dropping articles to save words costs the expression marks.
+
+6. GRAMMAR. Each numbered blank or item is its own marking point, worth the question's marks divided equally between its items. Accept any form the scheme lists for that blank and nothing else. The verb form and its spelling are what is tested: 'lieing', 'holded', 'thinked' or 'keeped' earn nothing. Where two answers are written for one blank, the item earns nothing. In joining and transformation, the rewritten sentence must keep the original meaning and tense and must follow the instruction exactly (begin or end with the given words, use the given word, avoid and/but/so); 'despite of', 'Hardly ... than', 'No sooner ... then' and 'too ... that' are errors.
+
+7. CONCEPTUAL ERRORS IN THIS SUBJECT are misreadings of the task or of a grammar rule (reversing who did what, treating 'unless' as 'if', a stand that argues against itself, writing about the wrong event). Spelling slips, punctuation and format errors belong in icse_style_issues.
+
+8. MODEL ANSWER FORMAT (only when model_answer_source = "ai_generated"). For a writing task, write a complete full-mark response within the word limit and in the required format (full letter layout, notice layout, email header lines). For a summary, write a fair-copy summary within the word limit. For grammar, give each item's answer on its own line.`;
+
 /* ------------------------------------------------------------------ */
 /* REGISTRY + BUILDER                                                  */
 /* ------------------------------------------------------------------ */
@@ -256,11 +287,13 @@ export type SubjectKey =
   | "biology"
   | "geography"
   | "economics"
-  | "environmental_science";
+  | "environmental_science"
+  | "english_language";
 
 const SUBJECT_MODULES: Record<SubjectKey, string> = {
   history_civics: HISTORY_CIVICS,
   english_literature: ENGLISH_LITERATURE,
+  english_language: ENGLISH_LANGUAGE,
   physics: PHYSICS,
   chemistry: CHEMISTRY,
   biology: BIOLOGY,
@@ -282,6 +315,10 @@ const SUBJECT_ALIASES: Record<string, SubjectKey> = {
   english: "english_literature",
   literature: "english_literature",
   englishpaper2: "english_literature",
+  // "english" alone stays Literature (older rows); Language needs its full name.
+  englishlanguage: "english_language",
+  language: "english_language",
+  englishpaper1: "english_language",
   physics: "physics",
   chemistry: "chemistry",
   biology: "biology",

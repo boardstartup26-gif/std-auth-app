@@ -1,0 +1,1838 @@
+{
+  "year": 2023,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2023 - Analysis of Pupil Performance (raw/LangPPA-23.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story in which two children and their school teacher are the main characters.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "The story must be original. All three characters should have a definite role.",
+      "key_points": [
+        "Original story",
+        "Two children and their school teacher are the main characters",
+        "All three characters have a definite role"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "First-person narrative instead of a story",
+        "Plot lifted from known authors or the comprehension",
+        "Characters without a definite role",
+        "No proper ending"
+      ],
+      "examiner_notes": "Stories lacked creativity; many wrote a first-person narrative instead of a short story. Some lifted language and plots from popular children's authors or from the comprehension passage, changing only names. 'Original' was misunderstood by a few. Characters were underdeveloped; dialogue did not advance the story; endings rambled or were missing. Short scripts and overlong essays were common; no paragraphs.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(ii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nImagine a situation where you get an opportunity to change one thing in your school. What would it be? Why do you want to change it? How would you bring about the change?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Only one change required - what change. Why necessary, benefits. How - A plan on how to bring about the change is to be included. E.g., Change in timing or Write a letter, take an opinion poll.",
+      "key_points": [
+        "Only one change, clearly named",
+        "Why it is necessary / its benefits",
+        "A plan for how to bring about the change (e.g. write a letter, take an opinion poll)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Wrote about changing schools or own behaviour",
+        "Listed several changes",
+        "No plan for implementing the change",
+        "Posed as the Principal"
+      ],
+      "examiner_notes": "Many misread the topic and wrote about changing the school itself, their own behaviour, or listed several changes and ignored the rest of the question. The plan for bringing about the change was largely missing. Elaborate introductions wasted time; some posed as the Principal; impractical changes were proposed.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\n'School examinations do not test intelligence.' Express your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Views either for or against are to be accepted. The candidate should take a clear stand and give valid reasons for whatever stand he / she takes. Credit to be given for a cohesive well-constructed logical argument and ideas based on logical reasoning and personal experience.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Valid reasons supporting the stand",
+        "Cohesive, logical argument drawing on reasoning and personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Argued both sides",
+        "Repetitive, unsupported arguments",
+        "Aggrieved rather than persuasive tone"
+      ],
+      "examiner_notes": "Some argued both sides without a definitive stance. Logical reasoning was often missing; arguments were repetitive, too few and not backed by illustration or example. The tone was at times aggrieved rather than objective and persuasive.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iv)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nYou are a regular visitor to your school library. Describe your library. Give details of the familiar sights. What do you see and feel as different students come in and check out the books? Why is this place so important?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Brief description of library, shelves, books, magazines, quiet, hush, librarian, students entering browsing, reading. Importance of reading in a student's life.",
+      "key_points": [
+        "Brief description of the library: shelves, books, magazines, quiet, hush, librarian",
+        "Students entering, browsing, reading; what the narrator sees and feels",
+        "Importance of the library / reading in a student's life"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Listed sights instead of describing",
+        "Feelings and students' reactions missing",
+        "Benefits of reading without describing the library"
+      ],
+      "examiner_notes": "The most popular choice. Even able writers merely listed familiar sights (yellow walls, brown shelves). The library as one quiet room in a busy building was not evoked; feelings and students' reactions were not brought out; why the library matters was not in focus. Some wrote on the benefits of reading without describing the library.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(v)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture, or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemization / listing / description of the picture is to be penalized.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Began 'This picture shows...' and listed elements",
+        "Picture not used as the central idea",
+        "Copied the question or passage"
+      ],
+      "examiner_notes": "Most began 'This picture shows us that...' and listed its elements. A connection between the picture and the composition was lacking in most cases; the picture was not used as the central theme. Some copied the question or passage; colloquialisms and contractions were used.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2023/q1-v.png",
+        "description": "On a flooded street in heavy rain, a young girl crouches under a black umbrella, sheltering and comforting a wet brown stray dog; another child stands beside them.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-v.png"
+    },
+    {
+      "question_number": "2(i)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "You have had to shift to a new house recently. Write a letter to your grandmother telling her what you miss about your old house. Tell her also what you like about your new house and what you plan to do to make it comfortable for yourself.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nWhat you miss: e.g. friends / locality / gardens / space / quiet (Any two)\nWhat you like: e.g. new / fresh / gardens / locality / space / own room (Any two)\nWhat you plan to do: e.g. decorate / plant / paint (Any one)\nExpression: Language, syntax, vocabulary\nFormat (as printed in the 2023 scheme) - Friendly letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / one initial + surname.",
+      "key_points": [
+        "Correct informal letter format",
+        "What you miss (any two): e.g. friends / locality / gardens / space / quiet",
+        "What you like (any two): e.g. new / fresh / gardens / locality / space / own room",
+        "What you plan to do (any one): e.g. decorate / plant / paint",
+        "Expression: Language, syntax, vocabulary"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Wrote about school instead of home",
+        "Plan for making the home comfortable missing",
+        "Formal subscription ('Yours faithfully') in an informal letter",
+        "Surname added to first name"
+      ],
+      "examiner_notes": "Format: incomplete address, wrong date or missing year; odd salutations (dear grandfather/friend/parent); missing commas; subscriptions such as 'Yours faithfully', 'Yours truly', 'Your's lovingly', 'ABC'; surname added to the first name; mixed formats. Content: some wrote about the old school instead of the old home, or about themselves, friends and the new school; many omitted what they missed or how they would make the new home comfortable; points were jumbled or one point over-developed. Some copied the points from the topic.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Grandmother",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "What you miss",
+            "selection": "any_2",
+            "examples": [
+              "friends",
+              "locality",
+              "gardens",
+              "space",
+              "quiet"
+            ]
+          },
+          {
+            "element": "What you like",
+            "selection": "any_2",
+            "examples": [
+              "new",
+              "fresh",
+              "gardens",
+              "locality",
+              "space",
+              "own room"
+            ]
+          },
+          {
+            "element": "What you plan to do",
+            "selection": "any_1",
+            "examples": [
+              "decorate",
+              "plant",
+              "paint"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Language, syntax, vocabulary",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(ii)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "A certain book / chapter has been included in your syllabus. You have heard that a film version is now available. Write a letter to the Manager of a film theatre near your school, requesting that the film be shown. Tell him / her why it will be beneficial to the students.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nName of book / chapter: e.g. Boy with Striped Pyjamas\nRequest to show: e.g. Please arrange / show / have morning matinee / holiday\nWhy beneficial to students: e.g. clearer understanding / come alive / depth\nExpression: Language, syntax, vocabulary\nFormat (as printed in the 2023 scheme) - Friendly letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / one initial + surname.",
+      "key_points": [
+        "Correct formal letter format",
+        "Name of book / chapter: e.g. Boy with Striped Pyjamas",
+        "Request to show: e.g. Please arrange / show / have morning matinee / holiday",
+        "Why beneficial to students: e.g. clearer understanding / come alive / depth",
+        "Expression: Language, syntax, vocabulary"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Book/chapter not named",
+        "No specific show requested",
+        "Benefits framed as fun, not learning",
+        "'Respected Sir/Madam'"
+      ],
+      "examiner_notes": "Format: no 'To' address, or designation/organisation missing; school name or XYZ; incomplete or numeric dates; wrong months; 'Respected Sir/Madam/Ma'am'; 'Yours sincerely' or 'Yours affectionately' instead of 'Yours faithfully'; 'Your's'. Content: many did not name the book or chapter or a specific show; benefits were not explained or focused on the 'fun' of an outing. Expression: informal language and faulty construction.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Manager of a film theatre",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Name of book / chapter",
+            "selection": null,
+            "examples": [
+              "Boy with Striped Pyjamas"
+            ]
+          },
+          {
+            "element": "Request to show",
+            "selection": null,
+            "examples": [
+              "Please arrange / show / have morning matinee / holiday"
+            ]
+          },
+          {
+            "element": "Why beneficial to students",
+            "selection": null,
+            "examples": [
+              "clearer understanding",
+              "come alive",
+              "depth"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Language, syntax, vocabulary",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(i)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Write a notice to be put up in your school informing the pupils of Classes IX and X about the Remedial Classes to be held after the school hours and asking them to register their names for it.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Ready to Learn / Refresh Revise, Relearn\nEvent: Remedial Classes / Registration for Remedial Classes\nDate: 10 - 15 March 2023 (Accept single date or several dates)\nTime: 2.00 p.m. - 5.00 p.m. (after school hours)\nVenue: smaller place to larger\nParticipate: All pupils who wish to avail of / have been nominated for / etc. the remedial class/es should give their names to the Vice Principal/etc. on or before ...",
+      "key_points": [
+        "Creative Title: Ready to Learn / Refresh Revise, Relearn",
+        "Event: Remedial Classes / Registration for Remedial Classes",
+        "Date: 10 - 15 March 2023 (Accept single date or several dates)",
+        "Time: 2.00 p.m. - 5.00 p.m. (after school hours)",
+        "Venue: smaller place to larger",
+        "Participate: All pupils who wish to avail of / have been nominated for / etc. the remedial class/es should give their names to the Vice Principal/etc. on or before ..."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Misunderstood 'Remedial' as 'Remedy'/competition",
+        "Missing or irrelevant creative title",
+        "Notice as a paragraph",
+        "Unrealistic dates",
+        "Incomplete venue"
+      ],
+      "examiner_notes": "Creative titles were missing, inappropriate or long. Many misread 'Remedial' as 'Remedy' (titles like 'First Aid') or as a competition, jubilee event or sports. Notices were written as paragraphs. Event dates were too far ahead or on the exam date (should be 10-14 days after the notice); registration dates too close to or after the event. Details were interchanged or incomplete (no year, vague venue).",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Event",
+          "Date",
+          "Time",
+          "Venue",
+          "Participate"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Ready to Learn",
+              "Refresh Revise, Relearn"
+            ]
+          },
+          {
+            "element": "Event",
+            "selection": null,
+            "examples": [
+              "Remedial Classes / Registration for Remedial Classes"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "10 - 15 March 2023 (Accept single date or several dates)"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "2.00 p.m. - 5.00 p.m. (after school hours)"
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller place to larger"
+            ]
+          },
+          {
+            "element": "Participate",
+            "selection": null,
+            "examples": [
+              "All pupils who wish to avail of / have been nominated for / etc. the remedial class/es should give their names to the Vice Principal/etc. on or before ..."
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Ready to Learn",
+          "Refresh Revise, Relearn"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(ii)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is holding Remedial Classes for the pupils of Classes IX and X after school hours.\nWrite an email to the Principal of a neighbouring school inviting their pupils to attend the classes if they so wish. Give all details of the classes to be held.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id (recipient; official, with @ and provider)\nSubject\nSalutation\nOpening sentence\nClosing sentence\nSubscription\nExpression - All details of the notice are to be included in the e-mail.",
+      "key_points": [
+        "E-mail id (recipient; official, with @ and provider)",
+        "Subject",
+        "Salutation",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription",
+        "Expression - All details of the notice are to be included in the e-mail."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "'principle' in the email id",
+        "Subject missing",
+        "Invited the Principal instead of the pupils",
+        "Details do not match the notice"
+      ],
+      "examiner_notes": "Incorrect email ids ('principle'); personal ids; subject missing; unclear opening sentence; missing closing sentence; opening/closing overlapping the content. 'Respected sir/Ma'am' or 'thank you' and a name. Date, venue, time missing or the exam date given; notice and email dates not matching. Some invited the Principal instead of the pupils.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Principal of a neighbouring school",
+        "format_elements": [
+          "E-mail id (recipient; official, with @ and provider)",
+          "Subject",
+          "Salutation",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression - All details of the notice are to be included in the e-mail.",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(1)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n1. summoned (line 1)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) totalled",
+        "(b) ordered",
+        "(c) requested",
+        "(d) shout"
+      ],
+      "correct_answer": "(b) ordered",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) ordered",
+      "key_points": [],
+      "model_answer": "(b) ordered",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'requested'",
+        "Chose (a) 'totalled'"
+      ],
+      "examiner_notes": "Several ignored context: 'summoned' was taken as 'requested', or as a sum total; some wrote words outside the options or mismatched letters.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(2)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n2. aversion (line 10)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) hatred",
+        "(b) fear",
+        "(c) politeness",
+        "(d) creation"
+      ],
+      "correct_answer": "(a) hatred",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) hatred",
+      "key_points": [],
+      "model_answer": "(a) hatred",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'fear'",
+        "Chose (c) 'politeness'"
+      ],
+      "examiner_notes": "'Aversion' was taken as 'politeness' by some and 'fear' by many.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(3)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n3. restored (line 25)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) helped",
+        "(b) returned",
+        "(c) permit",
+        "(d) victory"
+      ],
+      "correct_answer": "(b) returned",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) returned",
+      "key_points": [],
+      "model_answer": "(b) returned",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (d) 'victory'"
+      ],
+      "examiner_notes": "'Restored' was interpreted as 'victory'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)(a)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words:\n(a) Why did no one confess to having removed the missing bell?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Feared expulsion",
+      "key_points": [
+        "Fear of expulsion"
+      ],
+      "model_answer": "Feared expulsion",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrote 'punishment' instead of 'expulsion'",
+        "Wrote about the advantages of no bell"
+      ],
+      "examiner_notes": "Many gave a general answer (they were happy the bell was gone) or missed 'fear of expulsion'; 'punishment' is not an adequate substitute for 'expulsion'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)(b)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(b) Why did suspicion fall on the Sports Captain?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "because of hatred for morning PT [+ nothing could be proved]",
+      "key_points": [
+        "Because of the boys' aversion/hatred for morning PT",
+        "(nothing could be proved)"
+      ],
+      "model_answer": "because of hatred for morning PT [+ nothing could be proved]",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Omitted 'PT'"
+      ],
+      "examiner_notes": "Most correct; some omitted 'PT' and wrote only 'hatred for morning'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(c) What made Brian think that it was Mr. Sharma?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "He walked in his sleep + sleepwalkers did funny things.",
+      "key_points": [
+        "Mr. Sharma walked in his sleep",
+        "sleepwalkers did funny (strange) things"
+      ],
+      "model_answer": "He walked in his sleep + sleepwalkers did funny things.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Read 'funny' as comical",
+        "Incomplete thought"
+      ],
+      "examiner_notes": "Most correct; some took 'funny' as comical rather than strange, or mentioned sleepwalking without completing the thought.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)(d)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(d) Which sentence in the passage tells you that Mr. Knight thought poorly of Tata's academic performance?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "'When did you ever concentrate on your studies, Tata?' To be quoted entirely. No marks to be given if written in own words, or partially quoted.",
+      "key_points": [
+        "Quotes 'When did you ever concentrate on your studies, Tata?' entirely (with the question mark)"
+      ],
+      "model_answer": "'When did you ever concentrate on your studies, Tata?'",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Omitted the question mark",
+        "Quoted more than one sentence",
+        "Wrote it in indirect speech"
+      ],
+      "examiner_notes": "Marks were lost for misquoting, omitting the question mark, writing a paragraph, quoting more than one sentence, or using indirect speech.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)(e)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(e) Why was the accountant a popular man?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "He ran the school tuck shop / allowed them credit.",
+      "key_points": [
+        "He ran the school's tuck shop",
+        "allowed most of them a certain amount of credit"
+      ],
+      "model_answer": "He ran the school tuck shop / allowed them credit.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'truck shop' for 'tuck shop'"
+      ],
+      "examiner_notes": "Most correct; quite a few wrote 'truck shop'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words describe the effects of the lost bell.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. No bell to rouse\n2. Everyone got up late\n3. No morning PT\n4. Some of us missed breakfast\n5. Teachers got confused\n6. Mixed up classes\n7. Suspicion fell on the Sports Captain\n8. Speculation - it could have been Mr Sharma, Mool Chand... reasons\n(Any 6 points in correct sequence)\n[Full credit of just these 1st 6 given]",
+      "key_points": [
+        "No bell to rouse",
+        "Everyone got up late",
+        "No morning PT",
+        "Some of us missed breakfast",
+        "Teachers got confused",
+        "Mixed up classes",
+        "Suspicion fell on the Sports Captain",
+        "Speculation - it could have been Mr Sharma, Mool Chand... reasons"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Exceeded 50 words",
+        "Summarised the uses of the bell instead of the effects of losing it",
+        "Points out of sequence"
+      ],
+      "examiner_notes": "Several exceeded 50 words or dropped articles to save words; some summarised the whole passage. Grids and rough drafts were often missing; phrasing was long-winded; some found only 2-3 points or broke chronological order. Many focused on the uses of the morning bell.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2023-q4",
+        "text": "That huge bell never stopped ringing. It got us out of bed, it summoned us for meals, it rang between class periods, it sent us unwillingly to bed.\n\nOne morning it failed to ring, or rather, there was no bell to ring. Someone had removed it, and it wasn't found till late in the afternoon.\n\nWhat a glorious day! As there was no bell to rouse us, everyone got up late, and there was no morning PT. Some of us missed breakfast too. The teachers got confused and mixed up their classes. How could the school manage without it? Confusion reigned.\n\nOf course, no one owned up. It could have meant expulsion. Some suspicion fell on the Sports Captain because of our aversion to morning PT, but nothing could be proved.\n\nNo one was very anxious to find the bell - we were quite happy without it - but it was finally discovered hanging from a branch of one of the trees.\n\n'It may have been Mr. Sharma,' surmised Brian. Mr. Sharma, our Maths teacher, was known to walk in his sleep. And sleepwalkers did funny things sometimes.\n\n'It could be Mool Chand himself,' suggested Cyrus Satralkar.\n\nMool Chand was the school chowkidar, who also had the job of banging the brass bell at appointed times.\n\n'Why would he throw it away?'\n\n'He must be as fed up with ringing it as we are of hearing it.' This was my theory. 'Perhaps he wants a rise in salary.'\n\nThe identity of the culprit remained a mystery. Happily, the senior Hockey team went on a winning spree against all corners, and our month-end exits were restored.\n\nBut soon there was another sensation.\n\nA girl was admitted to our class!\n\nThe boys were scandalized. No girl had ever studied in our school before. We protested.\n\n'What's the problem?' asked Mr. Knight, our class master. 'Haven't you seen a girl before?'\n\n'But - but. Sir...' Tata was our spokesman. 'How will we concentrate on our studies?'\n\n'When did you ever concentrate on your studies, Tata?'\n\n'Are we going co-ed, sir?' Adams wanted to know.\n\n'Not at all,' said Mr. Knight. 'This is a special case. She is the school accounts manager's daughter, and he can't afford the Girls school fees. So, I'm sure you'll make her feel very welcome.'\n\nThe accountant was a popular man who also ran the school's tuck shop and allowed most of us a certain amount of credit. All our objections faded away.\n\nAt first, Sunita, our new entrant, was a bit of a distraction because, although she was very shy and demure, she had lovely curly hair, bright eyes, pink cheeks and a smile for everyone. All the boys were very polite and attentive to her and Brian in particular was always ready to help her.",
+        "source": "Collection of Stories, Ruskin Bond",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "No bell to rouse",
+          "Everyone got up late",
+          "No morning PT",
+          "Some of us missed breakfast",
+          "Teachers got confused",
+          "Mixed up classes",
+          "Suspicion fell on the Sports Captain",
+          "Speculation - it could have been Mr Sharma, Mool Chand... reasons"
+        ],
+        "points_required": 6,
+        "sequence_required": true,
+        "scheme_note": "[Full credit of just these 1st 6 given]",
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage but write in correct serial order the word or phrase appropriate to the blank space.\nExample: (0) One night four college students ______ (be) out partying late and did not study for the test scheduled for the next day. Answer: were\nIn the morning, they (1) ______ (think) of a plan. They (2) ______ (make) themselves look dirty with grease and dirt. Then they (3) ______ (go) to the Dean and (4) ______ (say) they (5) ______ (go) out to a wedding last night and on their way back the tyre of their car burst and they had to push the car all the way back. The Dean thought for a minute and said that they could have the re-test after three days. They (6) ______ (thank) him and said they would be ready. On the day of the test, they were made to sit in separate rooms. They agreed as they (7) ______ (prepare) well. But they (8) ______ (get) a rude shock!",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. were] (1) thought  (2) made  (3) went  (4) said  (5) had gone  (6) thanked  (7) had prepared  (8) got",
+      "key_points": [
+        "(1) thought",
+        "(2) made",
+        "(3) went",
+        "(4) said",
+        "(5) had gone",
+        "(6) thanked",
+        "(7) had prepared",
+        "(8) got"
+      ],
+      "model_answer": "(1) thought\n(2) made\n(3) went\n(4) said\n(5) had gone\n(6) thanked\n(7) had prepared\n(8) got",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'thinked' for 'thought'",
+        "(5) 'went' for 'had gone'",
+        "(7) 'prepared' for 'had prepared'"
+      ],
+      "examiner_notes": "Common errors: (1) 'thinked', (5) 'went' and (7) 'prepared' - simple past confused with past perfect.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "think",
+          "answer": "thought",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "make",
+          "answer": "made",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "go",
+          "answer": "went",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "say",
+          "answer": "said",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "go",
+          "answer": "had gone",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "thank",
+          "answer": "thanked",
+          "accepted": []
+        },
+        {
+          "item": "7",
+          "prompt": "prepare",
+          "answer": "had prepared",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "get",
+          "answer": "got",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in the blanks with appropriate words.\n(a) A bird ______ hand is worth two in the bush.\n(b) The boy is crazy ______ football.\n(c) She was tired ______ fighting and struggling all the time.\n(d) He opted ______ of the race.\n(e) We borrowed the bikes ______ our uncle.\n(f) The police station is ______ the right.\n(g) I looked at the stars ______ the telescope.\n(h) There was an accident ______ the crossroads.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(f) to",
+        "(h) near"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(a) in  (b) about  (c) of  (d) out  (e) from  (f) on / to  (g) through  (h) at / near",
+      "key_points": [
+        "(a) in",
+        "(b) about",
+        "(c) of",
+        "(d) out",
+        "(e) from",
+        "(f) on / to",
+        "(g) through",
+        "(h) at / near"
+      ],
+      "model_answer": "(a) in\n(b) about\n(c) of\n(d) out\n(e) from\n(f) on\n(g) through\n(h) at",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(a) 'at'",
+        "(b) 'for'",
+        "(d) 'out of'/'from'",
+        "(g) 'from'"
+      ],
+      "examiner_notes": "Common errors: (a) 'at', (b) 'for' (colloquial), (d) 'out of' written in full or 'from', (f) 'near', (g) 'from', (h) 'towards'/'from'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "a",
+          "prompt": "a bird ___ hand",
+          "answer": "in",
+          "accepted": []
+        },
+        {
+          "item": "b",
+          "prompt": "crazy ___ football",
+          "answer": "about",
+          "accepted": []
+        },
+        {
+          "item": "c",
+          "prompt": "tired ___ fighting",
+          "answer": "of",
+          "accepted": []
+        },
+        {
+          "item": "d",
+          "prompt": "opted ___ of the race",
+          "answer": "out",
+          "accepted": []
+        },
+        {
+          "item": "e",
+          "prompt": "borrowed ___ our uncle",
+          "answer": "from",
+          "accepted": []
+        },
+        {
+          "item": "f",
+          "prompt": "___ the right",
+          "answer": "on",
+          "accepted": [
+            "to"
+          ]
+        },
+        {
+          "item": "g",
+          "prompt": "___ the telescope",
+          "answer": "through",
+          "accepted": []
+        },
+        {
+          "item": "h",
+          "prompt": "___ the crossroads",
+          "answer": "at",
+          "accepted": [
+            "near"
+          ]
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so. Choose the correct option.\n1. He jumped up. He ran away.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He jumped up before he ran away.",
+        "(b) Jumping up, he ran away.",
+        "(c) He ran away after jumping.",
+        "(d) He ran away because he jumped up."
+      ],
+      "correct_answer": "(b) Jumping up, he ran away.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Jumping up, he ran away.",
+      "key_points": [],
+      "model_answer": "(b) Jumping up, he ran away.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a)/(c) with before/after"
+      ],
+      "examiner_notes": "Before/after concepts were pulled in where not required.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so. Choose the correct option.\n2. He has failed many times. Still, he hopes to succeed.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He succeeds after he failed many times.",
+        "(b) Despite of failing, he hopes to succeed.",
+        "(c) In spite of many failures, he hopes to succeed.",
+        "(d) He failed many times even though he hopes to succeed."
+      ],
+      "correct_answer": "(c) In spite of many failures, he hopes to succeed.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) In spite of many failures, he hopes to succeed.",
+      "key_points": [],
+      "model_answer": "(c) In spite of many failures, he hopes to succeed.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'Despite of'"
+      ],
+      "examiner_notes": "Careless reading; some thought 'despite of' is correct.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so. Choose the correct option.\n3. Do not be a jeweller. Do not be a goldsmith.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Be neither a jeweller nor a goldsmith.",
+        "(b) Be both a jeweller and a goldsmith.",
+        "(c) Either be a jeweller or a goldsmith.",
+        "(d) Be a jeweller as well as a goldsmith."
+      ],
+      "correct_answer": "(a) Be neither a jeweller nor a goldsmith.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Be neither a jeweller nor a goldsmith.",
+      "key_points": [],
+      "model_answer": "(a) Be neither a jeweller nor a goldsmith.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Confused either-or with neither-nor"
+      ],
+      "examiner_notes": "Lack of familiarity with 'either-or' and 'neither-nor'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so. Choose the correct option.\n4. A cottager and his wife had a hen. The hen laid an egg every day.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Everyday, a hen laid an egg for a cottager and his wife.",
+        "(b) A cottager and his wife had a hen who laid an egg every day.",
+        "(c) The cottager and his wife had an egg every day because they had a hen.",
+        "(d) A cottager and his wife had a hen which laid an egg every day."
+      ],
+      "correct_answer": "(d) A cottager and his wife had a hen which laid an egg every day.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) A cottager and his wife had a hen which laid an egg every day.",
+      "key_points": [],
+      "model_answer": "(d) A cottager and his wife had a hen which laid an egg every day.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'hen who'"
+      ],
+      "examiner_notes": "The 'hen who' option was chosen most often instead of 'which'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n1. He said to me, \"I don't believe you.\"\n(Begin: He said.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He said he doesn't want to believe in me.",
+        "(b) He said that he didn't believe me.",
+        "(c) He said that he didn't believe in me.",
+        "(d) He said I don't believe you."
+      ],
+      "correct_answer": "(b) He said that he didn't believe me.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) He said that he didn't believe me.",
+      "key_points": [],
+      "model_answer": "(b) He said that he didn't believe me.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'believe in me'"
+      ],
+      "examiner_notes": "Some did not understand direct-to-reported conversion rules or chose the wrong tense.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n2. Some boys were helping the wounded man.\n(Begin: The wounded.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The wounded man was helping some boys.",
+        "(b) The wounded man were helping some boys.",
+        "(c) The wounded man was being helped by some boys.",
+        "(d) The wounded boys were helping the man."
+      ],
+      "correct_answer": "(c) The wounded man was being helped by some boys.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) The wounded man was being helped by some boys.",
+      "key_points": [],
+      "model_answer": "(c) The wounded man was being helped by some boys.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Reversed the doer and receiver"
+      ],
+      "examiner_notes": "Confusion about who helped whom.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n3. He is as wise as Solomon.\n(Use: 'wiser')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Solomon was wiser than he is.",
+        "(b) He and Solomon are wiser.",
+        "(c) Solomon was the wisest.",
+        "(d) Solomon was not wiser than he is."
+      ],
+      "correct_answer": "(d) Solomon was not wiser than he is.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Solomon was not wiser than he is.",
+      "key_points": [],
+      "model_answer": "(d) Solomon was not wiser than he is.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a)"
+      ],
+      "examiner_notes": "The past tense with Solomon confused many.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n4. If the boys do not reach the school on time, they will be punished.\n(Begin: Unless......)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Unless the boys reach the school on time, they will not be punished.",
+        "(b) Unless the boys are punished, they will not reach the school on time.",
+        "(c) Unless the school punished the boys, they will not reach on time.",
+        "(d) Unless the boys reach the school on time, they will be punished."
+      ],
+      "correct_answer": "(d) Unless the boys reach the school on time, they will be punished.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Unless the boys reach the school on time, they will be punished.",
+      "key_points": [],
+      "model_answer": "(d) Unless the boys reach the school on time, they will be punished.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a), double negative"
+      ],
+      "examiner_notes": "Most substituted 'will not be punished' for 'will be punished'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(5)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n5. As soon as he reaches home, his friends call him.\n(Begin: Hardly.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Hardly does he reach home when his friends call him.",
+        "(b) Hardly had he reached home than his friends called him.",
+        "(c) Hardly, he reaches home, his friends call him.",
+        "(d) Hardly when he reaches home than his friends call him."
+      ],
+      "correct_answer": "(a) Hardly does he reach home when his friends call him.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Hardly does he reach home when his friends call him.",
+      "key_points": [],
+      "model_answer": "(a) Hardly does he reach home when his friends call him.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) 'Hardly...than'"
+      ],
+      "examiner_notes": "Most thought 'than' should follow 'Hardly' instead of 'when'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(6)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n6. She is weak, but she is courageous.\n(Begin: Despite.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Despite of being weak she is courageous.",
+        "(b) Despite being weak, she is courageous.",
+        "(c) Despite being courageous, she is not weak.",
+        "(d) Despite weak, she is courageous."
+      ],
+      "correct_answer": "(b) Despite being weak, she is courageous.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Despite being weak, she is courageous.",
+      "key_points": [],
+      "model_answer": "(b) Despite being weak, she is courageous.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'Despite of'"
+      ],
+      "examiner_notes": "Candidates chose 'Despite of'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(7)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n7. We will never forget what we saw.\n(Begin: Never.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Never forget what we see.",
+        "(b) Never will we forget what we had seen.",
+        "(c) Never will we see what we forget.",
+        "(d) Never will we forget what we saw."
+      ],
+      "correct_answer": "(b) Never will we forget what we had seen.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Never will we forget what we had seen.",
+      "key_points": [],
+      "model_answer": "(b) Never will we forget what we had seen.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (d) simple past 'saw'"
+      ],
+      "examiner_notes": "Most chose the simple past instead of the past perfect.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(8)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence. Choose the correct options.\n8. Jaswant's grandfather is too old to take up this job.\n(Use: ...so...that...)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Jaswant's grandfather is so old that he could not take up this job.",
+        "(b) Jaswant's grandfather is so old that he cannot take up this job.",
+        "(c) Jaswant's grandfather is so old that he could take up this job.",
+        "(d) Jaswant's grandfather is so old that he can take up this job."
+      ],
+      "correct_answer": "(b) Jaswant's grandfather is so old that he cannot take up this job.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) Jaswant's grandfather is so old that he cannot take up this job.",
+      "key_points": [],
+      "model_answer": "(b) Jaswant's grandfather is so old that he cannot take up this job.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'could not'"
+      ],
+      "examiner_notes": "Many chose 'could not' instead of 'cannot'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Discuss short-story format; stress originality; hint at theme, characters and setting in the introduction",
+      "Practise plot development, dialogue and logical, open-ended or cliffhanger endings",
+      "Explain the difference between short story and narrative writing",
+      "Teach students to identify and address every part of the question; use rough drafts; respect word limits",
+      "Argumentative essays: a hook, 3-4 planned points with examples, a strong stance, a strong conclusion",
+      "Descriptive essays: rich description rather than listing",
+      "Picture composition: find the central idea; avoid itemising"
+    ],
+    "2": [
+      "Teach correct format (address, date, salutation, subscription) and the formal/informal difference",
+      "Read the question carefully and develop every point; identify premise, problems and solutions",
+      "Avoid contractions, short forms and colloquial language"
+    ],
+    "3": [
+      "Explain why a creative (phrasal) title is needed",
+      "Give date, venue (smaller and larger) and time correctly",
+      "Explain registration details and the gap before the event",
+      "Teach official email-id components; copy the event into the subject",
+      "Notice and email details must match; clarify host vs invitee roles"
+    ],
+    "4": [
+      "Read words in context; regular vocabulary and MCQ practice",
+      "Infer rather than lift sentences",
+      "Quote exactly one appropriate sentence when asked",
+      "Use a grid for summaries; keep sequence; leave out irrelevant detail"
+    ],
+    "5": [
+      "Teach verb forms and tenses logically",
+      "Demonstrate prepositions with everyday examples; adverbs and phrasal verbs",
+      "Teach rules of synthesis; neither-nor vs either-or",
+      "Practise voice, comparison, reported speech, 'too', 'Hardly...when', tense change"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Essay word limit (300-350): short scripts or overlong essays; copying the question or passage",
+      "Informal letter: making oneself comfortable in a new home; uneven coverage of parts",
+      "Formal letter: making specific requests in formal language",
+      "Notice: topic not understood, written as a paragraph; notice-email connection missed",
+      "Comprehension vocabulary and analytical questions; quoting a sentence",
+      "Grammar: prepositions"
+    ],
+    "confusions": [
+      "Q1(ii): the concept of change",
+      "Letters: likes/dislikes between the two homes; naming a specific chapter",
+      "Notice-email: what remedial classes are and who the host is",
+      "Grammar: tenses and MCQ distractors"
+    ]
+  }
+}

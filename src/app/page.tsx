@@ -5,8 +5,8 @@
 // has something to mark, and both read the same record.
 //
 // The page stays a static prerender: no data fetching, every figure below is a
-// constant checked against the live corpus at authoring time (2,793 questions,
-// each with a marking scheme, eight subjects, 2018–2026). Motion is the only
+// constant checked against the live corpus at authoring time (3,017 questions,
+// each with a marking scheme, nine subjects, 2018–2026). Motion is the only
 // client-side part, isolated in <Reveal> and <ScoreClimber>.
 
 import type { Metadata } from "next";
@@ -49,16 +49,17 @@ export const metadata: Metadata = buildPageMetadata({
 // not wait on the database to render a headline number. Recount when a subject
 // or year is imported.
 const CORPUS = {
-  questions: 2793,
+  questions: 3017,
   // What the headline figure counts up to. Rounded down, not up: a count that
   // stops short of the real number and says "+" cannot overstate the corpus on
   // the day a paper is added or removed.
-  questionsRounded: 2750,
+  questionsRounded: 3000,
   subjects: [
     "Geography",
     "Biology",
     "Chemistry",
     "Physics",
+    "English Language",
     "English Literature",
     "History & Civics",
     "Economics",
@@ -67,7 +68,7 @@ const CORPUS = {
   // Shown as a span. The papers held are 2018-2020 and 2023-2026: ICSE 2021 was
   // cancelled outright, and 2022 ran as two semesters rather than one paper, so
   // the gap is mostly years that have no single paper to hold. 2026 is
-  // Economics and Environmental Science only so far. The FAQ lists the years individually, which is
+  // Economics, Environmental Science and English Language only so far. The FAQ lists the years individually, which is
   // where a reader who wants the exact set will look.
   years: "2018–2026",
 };
@@ -82,7 +83,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Which subjects and years are available?",
     answer:
-      "Eight subjects are live: Geography, Biology, Chemistry, Physics, English Literature, History & Civics, Economics, and Environmental Science. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available, plus the 2026 Economics and Environmental Science papers — 2,793 questions in total, each carrying its official marking scheme. More years are being added.",
+      "Nine subjects are live: Geography, Biology, Chemistry, Physics, English Language, English Literature, History & Civics, Economics, and Environmental Science. Past papers from 2018, 2019, 2020, 2023, 2024, and 2025 are available, plus the 2026 Economics, Environmental Science and English Language papers — 3,017 questions in total, each carrying its official marking scheme. More years are being added.",
   },
   {
     question: "Why not just ask ChatGPT or other Generic AI platforms?",

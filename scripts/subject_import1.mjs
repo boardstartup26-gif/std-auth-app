@@ -53,6 +53,27 @@ function validateEntry(entry) {
   return missing;
 }
 
+// Optional richer fields (English Language JSON carries them). Each is sent
+// only when the JSON has it, so other subjects keep the column defaults —
+// questions.evaluation_mode defaults to 'point_based' and must not be nulled.
+//   stimulus      → granted to students: passage / picture description only.
+//                   include_in_grading makes the grader see it too.
+//   marking_logic → NOT granted to students (it holds grammar answers): the
+//                   writing-task, summary and grammar-item structure.
+const MARKING_LOGIC_KEYS = ['task_type', 'choice_group', 'writing_task', 'summary_spec', 'grammar_items'];
+
+function richFields(entry) {
+  const out = {};
+  if (entry.stimulus != null) out.stimulus = entry.stimulus;
+  if (entry.evaluation_mode) out.evaluation_mode = entry.evaluation_mode;
+  if (entry.section) out.section = entry.section;
+  if (entry.parent_question_number) out.parent_question_number = String(entry.parent_question_number);
+  const logic = {};
+  for (const k of MARKING_LOGIC_KEYS) if (entry[k] != null) logic[k] = entry[k];
+  if (Object.keys(logic).length) out.marking_logic = logic;
+  return out;
+}
+
 // ─── Core import ────────────────────────────────────────────────────────────
 
 async function importFile(jsonPath, subjectId) {
@@ -146,7 +167,8 @@ async function importFile(jsonPath, subjectId) {
       }
 
       if (DRY_RUN) {
-        console.log(`   🔍  Would insert: ${label} — "${String(entry.question_text ?? '').slice(0, 60)}..."`);
+        const extra = Object.keys(richFields(entry));
+        console.log(`   🔍  Would insert: ${label} — "${String(entry.question_text ?? '').slice(0, 60)}..."${extra.length ? ` [+${extra.join(', ')}]` : ''}`);
         inserted++;
         continue;
       }
@@ -167,6 +189,7 @@ async function importFile(jsonPath, subjectId) {
           diagram_required: entry.diagram_required ?? false,
           topic: entry.topic ?? null,
           chapter: entry.chapter ?? null,
+          ...richFields(entry),
         })
         .select('id')
         .single();

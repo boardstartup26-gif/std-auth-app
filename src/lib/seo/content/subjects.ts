@@ -1,7 +1,7 @@
 // src/lib/seo/content/subjects.ts
 //
 // Public subject landing pages (/icse-class-10/[subject]). One entry per
-// subject BoardEdge can actually mark — eight, matching the corpus — never one
+// subject BoardEdge can actually mark — nine, matching the corpus — never one
 // per keyword variation. A subject is added here when its papers are imported,
 // not before.
 //
@@ -9,7 +9,7 @@
 //   • `coverage` was counted against the live questions table on 2026-11-20
 //     (questions.chapter, questions.is_subjective, questions.year); Economics
 //     and Environmental Science were added on 2026-11-22, and the others
-//     rechecked then. Hardcoded,
+//     rechecked then; English Language was added on 2026-11-27. Hardcoded,
 //     like CORPUS on the landing page, so these pages stay static prerenders.
 //     Recount when papers are imported.
 //   • `markLeaks` restates, for students, the subject protocols the grader is
@@ -17,7 +17,7 @@
 //     change the matching leak here — the page must describe how BoardEdge
 //     actually marks.
 //   • Paper numbering is the ICSE Class 10 structure (Science Papers 1–3,
-//     History, Civics & Geography Papers 1–2, English Paper 2, and Economics
+//     History, Civics & Geography Papers 1–2, English Papers 1–2, and Economics
 //     and Environmental Science as Group II electives).
 //
 // No marking-scheme text or model answers ever appear on these pages: answer
@@ -490,6 +490,66 @@ export const SUBJECT_PAGES: SubjectPage[] = [
       },
     ],
     updated: "2026-11-22",
+  },
+
+  // ─── English Language ──────────────────────────────────────────────────────
+  {
+    slug: "english-language",
+    name: "English Language",
+    paper: "English Paper 1",
+    metaTitle: "ICSE Class 10 English Language Past Papers With Marking Schemes",
+    metaDescription:
+      "224 ICSE Class 10 English Language past-paper questions (2018–2026): composition, letter, notice, email, comprehension and grammar, with where marks are lost.",
+    intro:
+      "English Language marks usually go missing in the details: a story that does not start with the given words, “Respected Sir” at the top of a formal letter, a summary over the word limit, a sentence paraphrased when the question asked you to quote it. BoardEdge marks your answer against the CISCE scheme for the real past-paper question you chose.",
+    coverage: {
+      questions: 224,
+      written: 164,
+      years: [2018, 2019, 2020, 2023, 2024, 2025, 2026],
+      chapters: [
+        ["Grammar", 98],
+        ["Comprehension", 65],
+        ["Composition", 35],
+        ["Letter Writing", 14],
+        ["Notice and Email Writing", 12],
+      ],
+    },
+    markLeaks: [
+      {
+        title: "Not doing exactly what the task says",
+        body: "A required opening line or title must be used as given, a story must be a story, and every part of a multi-part question needs an answer. A lesson learnt or a solution left out costs content marks.",
+      },
+      {
+        title: "Format slips in letters, notices and emails",
+        body: "“Respected Sir”, “Your’s”, an abbreviated or incomplete date, a creative title copied from the question, or an email missing its subject are errors the examiner reports flag year after year.",
+      },
+      {
+        title: "Paraphrasing when asked to quote",
+        body: "When a comprehension question asks for a sentence from the passage, only that exact, complete sentence earns the marks. For summaries, going over the word limit or writing in note form costs marks.",
+      },
+      {
+        title: "One wrong letter in a verb",
+        body: "Grammar blanks test the form and its spelling: “holded”, “lieing” or “keeped” earn nothing. Rewritten sentences must keep the original meaning and follow the instruction exactly.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How does BoardEdge mark compositions and letters?",
+        answer:
+          "Against the content the official scheme asks for in that question, plus organisation, format, expression and accuracy. The CISCE reports do not publish how marks divide between these, so BoardEdge applies its own fixed split, and your feedback shows each part separately.",
+      },
+      {
+        question: "Does BoardEdge show the comprehension passage and the composition picture?",
+        answer:
+          "Yes. Comprehension questions show the passage above the question, and picture compositions show the picture printed in that year’s paper.",
+      },
+      {
+        question: "Which ICSE English Language years are available?",
+        answer:
+          "Questions from the 2018, 2019, 2020, 2023, 2024, 2025 and 2026 ICSE Class 10 English Language papers, 224 in total.",
+      },
+    ],
+    updated: "2026-11-27",
   },
 
   // ─── English Literature ────────────────────────────────────────────────────

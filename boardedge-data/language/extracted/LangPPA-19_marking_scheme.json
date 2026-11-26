@@ -1,0 +1,1840 @@
+{
+  "year": 2019,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2019 - Analysis of Pupil Performance (raw/LangPPA-19.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story in which two children and their Grandfather are the main characters.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Original Short Story: The story must be original. The Grandfather and the two Grandchildren form the main characters. All three characters must be part of the plot. The story may be in first or the third person and could take any form - i.e. comic, tragic, dramatic or a mystery.",
+      "key_points": [
+        "Original story",
+        "The Grandfather and two grandchildren are the main characters",
+        "All three characters are part of the plot",
+        "First or third person; any form (comic, tragic, dramatic, mystery)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "First-person narrative instead of a story",
+        "Reproduced 'After Blenheim'",
+        "No proper ending"
+      ],
+      "examiner_notes": "Most ignored the essentials of a short story (plot, sequence, setting, characters, dialogue) and wrote a first-person narrative. Many did not understand 'original' and reproduced 'After Blenheim' from the poetry syllabus. Stories lacked creativity and a neat ending.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(b)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nClosed Circuit Television (CCTV) must be installed in every class room. Give your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Argumentative Composition: Views for or against the motion are to be accepted. Credit is to be given for a cohesive, well-constructed, logical argument and ideas and reasoning based on personal experience. Candidates must establish why CCTV cameras are necessary or not in the Classrooms / schools of today. Candidate must take a clear stand and give valid reasons for the stand taken.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Establishes why CCTV cameras are or are not necessary in classrooms/schools",
+        "Valid reasons; cohesive, logical argument drawing on personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Confused CCTV with television",
+        "Argued both sides",
+        "Drifted to CCTV in public places"
+      ],
+      "examiner_notes": "Some mistook CCTV for television. Many argued both sides without a stand; arguments were few and centred on indiscipline and lazy teachers being curbed. Some drifted to CCTV in malls and shops.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(c)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nYour class had to conduct a Morning Assembly. Write an account of how you prepared for it, what your role was and what you gained from the experience.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Narrative Composition: This is a personal account of 15-year-old child of the Morning Assembly in each School. The composition must include planning, motivation and the role played by the students. The composition should also indicate what lessons are learnt through this exercise and why these lessons are so important.",
+      "key_points": [
+        "Personal account from a 15-year-old's perspective",
+        "Planning/preparation and motivation",
+        "The narrator's role",
+        "Lessons learnt and why they matter"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Described the assembly only, without preparation, role or lessons",
+        "Mixed tenses"
+      ],
+      "examiner_notes": "Essays were often garbled with mixed tenses. Role, preparation and the experience gained were inadequately presented; most gave only a detailed account of the assembly itself.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(d)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nSummers are becoming hotter with each passing year. Write a description of one such very hot day. What did you see and hear as you walked outside? How were birds and animals affected?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Descriptive Composition: The candidate must give a detailed description of hot summer day. The heat, rising temperatures, humidity or aridity must be included. Images of animals and birds seeking shade and water should make up a part of this composition.",
+      "key_points": [
+        "Detailed description of one very hot summer day",
+        "Heat, rising temperatures, humidity or aridity",
+        "Sights and sounds outside",
+        "Birds and animals seeking shade and water"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Described the season, not one day",
+        "Drifted to global warming",
+        "Birds and animals omitted"
+      ],
+      "examiner_notes": "Many shifted to global warming or described the summer season rather than one hot day. The effect on birds and animals was forgotten; vocabulary for heat and humidity and use of the five senses were weak.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(e)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Picture Composition: Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemization / listing / description of the picture is to be penalized.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Strayed from the picture's theme",
+        "Listed elements",
+        "No conclusion"
+      ],
+      "examiner_notes": "The link with the picture was often missing as candidates strayed from its central theme; some merely listed its elements or described a sight seen on a journey; many essays lacked a logical conclusion.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2019/q1-e.png",
+        "description": "Children in school uniform with bags crowd around a small roadside stall near a school gate, buying packets of chips and snacks hung on display.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-e.png"
+    },
+    {
+      "question_number": "2(a)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "You want to start a new club in your school. Write a letter to your Principal requesting permission to start the club, explain your role in it and give reasons to prove that the club will be beneficial for the school.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nKind of club\nYour role / your duty: e.g. Head / President / leader / plan / organize / carry out activity / motivate (Any one)\nReasons - why you want a club: e.g. give skills / spot new talent / exposure / team building / extra activity / improve campus / help others / all-round development (Any two)\nExpression: criteria not itemised in the 2019 scheme.\nFormat (as printed in the 2019 scheme) - Informal letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct formal letter format",
+        "Kind of club",
+        "Your role / your duty (any one): e.g. Head / President / leader / plan / organize / carry out activity / motivate",
+        "Reasons - why you want a club (any two): e.g. give skills / spot new talent / exposure / team building / extra activity / improve campus / help others / all-round development",
+        "Expression: criteria not itemised in the 2019 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Kind of club not named",
+        "Own role not specified",
+        "Informal subscription",
+        "'your's'"
+      ],
+      "examiner_notes": "Format: no address (school name or 'Examination hall'); February misspelt; wrong dates; no 'Sir'/'Madam'; informal subscriptions; 'your's'. Content: the candidate's role and the kind of club were not specified. Expression: casual language and faulty construction.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Principal",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Kind of club",
+            "selection": null,
+            "examples": []
+          },
+          {
+            "element": "Your role / your duty",
+            "selection": "any_1",
+            "examples": [
+              "Head",
+              "President",
+              "leader",
+              "plan",
+              "organize",
+              "carry out activity",
+              "motivate"
+            ]
+          },
+          {
+            "element": "Reasons - why you want a club",
+            "selection": "any_2",
+            "examples": [
+              "give skills",
+              "spot new talent",
+              "exposure",
+              "team building",
+              "extra activity",
+              "improve campus",
+              "help others",
+              "all-round development"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2019 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(b)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "Your friend has not fared well in the recent examinations. Write a letter to him / her expressing your concern. Give him / her some advice on how to score better marks and offer to help him / her to improve his / her performance.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nExpressing concern: e.g. sorry / worried / upset / anxious / concerned (Any one)\nAdvice: e.g. plan proper study timetable / use study notes / seek teachers' help / pay attention in class / practice frequently / proper food / rest / relaxation (Any two)\nHelp - 'I' must be there: e.g. take my notes / I shall sit with you / I shall help you / I shall take up your work (Any two)\nExpression: criteria not itemised in the 2019 scheme.\nFormat (as printed in the 2019 scheme) - Informal letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct informal letter format",
+        "Expressing concern (any one): e.g. sorry / worried / upset / anxious / concerned",
+        "Advice (any two): e.g. plan proper study timetable / use study notes / seek teachers' help / pay attention in class / practice frequently / proper food / rest / relaxation",
+        "Help - 'I' must be there (any two): e.g. take my notes / I shall sit with you / I shall help you / I shall take up your work",
+        "Expression: criteria not itemised in the 2019 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Concern not expressed",
+        "Offer of help missing",
+        "Formal subscription in an informal letter"
+      ],
+      "examiner_notes": "Format: formal subscriptions; odd combinations of 'friend' and 'dear'. Content: concern was not expressed; many omitted the help they would offer, treating advice as enough. Expression: very casual language.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A friend",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Expressing concern",
+            "selection": "any_1",
+            "examples": [
+              "sorry",
+              "worried",
+              "upset",
+              "anxious",
+              "concerned"
+            ]
+          },
+          {
+            "element": "Advice",
+            "selection": "any_2",
+            "examples": [
+              "plan proper study timetable",
+              "use study notes",
+              "seek teachers' help",
+              "pay attention in class",
+              "practice frequently",
+              "proper food",
+              "rest",
+              "relaxation"
+            ]
+          },
+          {
+            "element": "Help - 'I' must be there",
+            "selection": "any_2",
+            "examples": [
+              "take my notes",
+              "I shall sit with you",
+              "I shall help you",
+              "I shall take up your work"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2019 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(a)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Your school is hosting an Inter-School Quiz Competition. Write out a notice to be displayed in your school giving all details for the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Question Hour / Quizzitica! / Brain Storm [English words only]\nInter-School Quiz: Annual Inter school Quiz / Bradley Memorial Inter-School Quiz\nDate: any date after 22nd February and before 28th March\nTime: accept any time - a.m./am/A.M.\nVenue: smaller place to larger\nInvite participation: to whom to apply to, etc.",
+      "key_points": [
+        "Creative Title: Question Hour / Quizzitica! / Brain Storm [English words only]",
+        "Inter-School Quiz: Annual Inter school Quiz / Bradley Memorial Inter-School Quiz",
+        "Date: any date after 22nd February and before 28th March",
+        "Time: accept any time - a.m./am/A.M.",
+        "Venue: smaller place to larger",
+        "Invite participation: to whom to apply to, etc."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Missing or lifted creative title",
+        "Notice as a paragraph",
+        "Incomplete venue/date/time",
+        "Unrealistic date"
+      ],
+      "examiner_notes": "Many ignored the creative title and full details (venue, date, time, target audience). Titles were missing, unimaginative, too long, or lifted 'War of Words' from the Council website. Details were in a paragraph; venue/date/time incomplete; dates too far ahead or on the exam date (should be 10-15 days after the notice).",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Inter-School Quiz",
+          "Date",
+          "Time",
+          "Venue",
+          "Invite participation"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Question Hour",
+              "Quizzitica!",
+              "Brain Storm [English words only]"
+            ]
+          },
+          {
+            "element": "Inter-School Quiz",
+            "selection": null,
+            "examples": [
+              "Annual Inter school Quiz",
+              "Bradley Memorial Inter-School Quiz"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "any date after 22nd February and before 28th March"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "accept any time - a.m./am/A.M."
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller place to larger"
+            ]
+          },
+          {
+            "element": "Invite participation",
+            "selection": null,
+            "examples": [
+              "to whom to apply to, etc."
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Question Hour",
+          "Quizzitica!",
+          "Brain Storm"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is hosting an Inter-School Quiz Competition.\nWrite an e-mail to the Principal of a neighbouring school requesting him / her to send a team of three members to participate in the Quiz Competition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id (recipient; official, with @ and provider)\nSubject\nSalutation\nOpening sentence\nClosing sentence\nSubscription\nExpression/Body",
+      "key_points": [
+        "E-mail id (recipient; official, with @ and provider)",
+        "Subject",
+        "Salutation",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription",
+        "Expression/Body"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Email id without @ / personal id",
+        "'Respected Ma'am'",
+        "Asked the recipient to host the quiz"
+      ],
+      "examiner_notes": "Incorrect ids (no @), personal ids with names; unclear opening; missing closing; overlap with content; 'Respected Ma'am'. In a few cases the recipient was asked to host the quiz.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Principal of a neighbouring school",
+        "format_elements": [
+          "E-mail id (recipient; official, with @ and provider)",
+          "Subject",
+          "Salutation",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression/Body",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(i)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(i) splendid (line 7)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "wonderful",
+        "majestic",
+        "magnificent",
+        "impressive"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "very good / wonderful / majestic / magnificent / impressive",
+      "key_points": [
+        "A contextual meaning of 'splendid' in the right form: very good / wonderful / majestic / magnificent / impressive"
+      ],
+      "model_answer": "very good",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong form of the meaning",
+        "Meaning not in context"
+      ],
+      "examiner_notes": "Some gave meanings in the wrong form or explained them in sentences.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(ii) spotted (line 20)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "sighted",
+        "noticed",
+        "caught sight of"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "saw / sighted / noticed / caught sight of",
+      "key_points": [
+        "A contextual meaning of 'spotted' in the right form: saw / sighted / noticed / caught sight of"
+      ],
+      "model_answer": "saw",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong form of the meaning",
+        "Meaning not in context"
+      ],
+      "examiner_notes": "Form mismatch ('see' for 'saw'); some misread it as 'dotted'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(iii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(iii) automatically (line 29)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "by himself",
+        "with no outward force",
+        "instinctively",
+        "involuntarily",
+        "spontaneously"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "mechanically / by himself / with no outward force / instinctively / involuntarily / spontaneously",
+      "key_points": [
+        "A contextual meaning of 'automatically' in the right form: mechanically / by himself / with no outward force / instinctively / involuntarily / spontaneously"
+      ],
+      "model_answer": "mechanically",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong form of the meaning",
+        "Meaning not in context"
+      ],
+      "examiner_notes": "Some gave meanings that did not fit the context.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(i)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words.\n(i) How did the porter assist Billy?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Gave him information / about the Bell Hotel / (cheap, nearby)",
+      "key_points": [
+        "He gave Billy information",
+        "about The Bell Hotel (a cheap hotel nearby) and pointed the way"
+      ],
+      "model_answer": "Gave him information / about the Bell Hotel / (cheap, nearby)",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Hotel not named"
+      ],
+      "examiner_notes": "The hotel was not named; most wrote only that the porter pointed the way.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(ii) Why did Billy want to do everything briskly?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Wanted to become / (like the big shots in the office, they were fantastically brisk / they were amazing) any one from within the brackets.",
+      "key_points": [
+        "He wanted to become like / imitate the big shots at the Head Office",
+        "who were fantastically brisk / amazing (any one)"
+      ],
+      "model_answer": "Wanted to become / (like the big shots in the office, they were fantastically brisk / they were amazing) any one from within the brackets.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Said fear of the dark road",
+        "Said because he was young"
+      ],
+      "examiner_notes": "Quite a few said it was because the road was dark and lonely or because he was young; very few said he wanted to imitate the big shots.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(iii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(iii) Why did Billy think animals were a good sign in a place like this?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Proof that the people were good / they loved and cared for animals. (anything that implies love and care)",
+      "key_points": [
+        "It showed the people were good",
+        "they loved and cared for animals (anything implying love and care)"
+      ],
+      "model_answer": "Proof that the people were good / they loved and cared for animals. (anything that implies love and care)",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Copied without analysis",
+        "Love and care not mentioned"
+      ],
+      "examiner_notes": "Many copied the passage without analysis; love/care of the owner was not mentioned; cause and effect was missed.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(iv)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(iv) Which sentence tells you that something strange happened to Billy?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "\"Then a queer thing happened to him.\" (Quote exactly the entire sentence).",
+      "key_points": [
+        "Quotes 'Then a queer thing happened to him.' exactly"
+      ],
+      "model_answer": "Then a queer thing happened to him.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Quoted extra sentences",
+        "Own words instead of quoting"
+      ],
+      "examiner_notes": "Many quoted more than one sentence or an incomplete one; some answered in their own words.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(v)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(v) How much did the room cost?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Five dollars a night with breakfast.",
+      "key_points": [
+        "Five dollars a night, including breakfast"
+      ],
+      "model_answer": "Five dollars a night with breakfast.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'costed'"
+      ],
+      "examiner_notes": "A few wrote 'costed' instead of 'cost'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words, give a brief account of what Billy saw as he looked through the window of the room.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. Bright fire in the hearth\n2. Little dog (on the carpet)\n3. Pleasant furniture\n4. Piano\n5. Sofa and stuffed armchairs\n6. Parrot in a cage\n(Any 6 points)\nAll Nouns. Implied meaning / the words may be placed in any order / only a description of the room is required. (six things in the room + expression)",
+      "key_points": [
+        "Bright fire in the hearth",
+        "Little dog (on the carpet)",
+        "Pleasant furniture",
+        "Piano",
+        "Sofa and stuffed armchairs",
+        "Parrot in a cage"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Exceeded 50 words",
+        "Summarised beyond the room description"
+      ],
+      "examiner_notes": "Many exceeded 50 words or dropped articles to save words; a few summarised the whole passage or part of it.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2019-q4",
+        "text": "Billy Weaver had travelled down from London and by the time he arrived it was nine o'clock in the night and the moon was coming up.\n\n\"Excuse me,\" he asked a porter. \"but is there a cheap hotel nearby?\"\n\n\"Try The Bell Hotel,\" the porter answered, pointing down the road.\n\nBilly thanked him, picked up his suitcase and set out to walk the distance to The Bell Hotel. He had never been to Richmond before. But the man at the Office had told him it was a splendid city.\n\nBilly was seventeen years old. He was wearing a new navy-blue overcoat, a new brown hat, and a new brown suit, and he was feeling fine. He walked briskly down the street. He was trying to do everything briskly these days. The big shots up at the Head Office were fantastically brisk all the time. They were amazing.\n\nThe road was lonely and dark with a few scattered houses.\n\nSuddenly, in a downstairs window Billy saw a printed notice propped up against the window glass. It said Bed and Breakfast.\n\nHe moved a bit closer and peered through the window into the room, and the first thing he saw was a bright fire burning in the hearth. On the carpet in front of the fire, a little dog was curled up asleep with its nose tucked into its belly. The room in half-darkness was filled with pleasant furniture. There was a piano and a big sofa and several plump armchairs; and in one corner he spotted a large parrot in a cage. Animals were usually a good sign in a place like this, Billy told himself and it looked to him as though it would be a pretty decent house to stay in.\n\nThen a queer thing happened to him. He was in the act of stepping back and going away from the window when he felt a strange urge to ring the bell!\n\nHe pressed the bell. He heard it ringing, and then at once the door swung open and a woman was standing there.\n\nShe gave him a warm welcoming smile.\n\n\"Please come in,\" she said pleasantly. Billy found himself automatically moving forward into the house.\n\n\"I saw the notice in the window,\" he said, holding himself back.\n\n\"Yes, I know.\"\n\n\"I was wondering about a room.\"\n\n\"It's all ready for you, my dear,\" she said. She had a round pink face and very gentle blue eyes.\n\n\"How much do your charge?\"\n\n\"Five dollars a night, including breakfast.\"\n\nIt was fantastically cheap. He could easily afford it.",
+        "source": "Adapted from 'The Landlady' by Roald Dahl (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "Bright fire in the hearth",
+          "Little dog (on the carpet)",
+          "Pleasant furniture",
+          "Piano",
+          "Sofa and stuffed armchairs",
+          "Parrot in a cage"
+        ],
+        "points_required": 6,
+        "sequence_required": false,
+        "scheme_note": "All Nouns. Implied meaning / the words may be placed in any order / only a description of the room is required. (six things in the room + expression)",
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(a)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage, but write in correct serial order the word or phrase appropriate to the blank space.\nExample: (0) roamed\nOnce upon a time, in the days when genies and giants (0) ______ (roam) the land, there (1) ______ (live) a farmer (2) ______ (name) Baba Ayub. He lived with his family in a little village by the name of Maidan Sabz. Because he had a large family to feed, Baba Ayub (3) ______ (see) his days (4) ______ (consume) by hard work. Every day, he (5) ______ (labour) from dawn to sundown, (6) ______ (plow) his field and (7) ______ (turn) the soil and (8) ______ (tend) to his meagre pistachio trees.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(6) ploughing"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. roamed] (1) lived  (2) named  (3) saw  (4) consumed  (5) laboured  (6) plowing / ploughing  (7) turning  (8) tending",
+      "key_points": [
+        "(1) lived",
+        "(2) named",
+        "(3) saw",
+        "(4) consumed",
+        "(5) laboured",
+        "(6) plowing / ploughing",
+        "(7) turning",
+        "(8) tending"
+      ],
+      "model_answer": "(1) lived\n(2) named\n(3) saw\n(4) consumed\n(5) laboured\n(6) plowing\n(7) turning\n(8) tending",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(6)-(8) simple past instead of -ing form"
+      ],
+      "examiner_notes": "Many answered (6), (7) and (8) in the simple past instead of the continuous form.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "live",
+          "answer": "lived",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "name",
+          "answer": "named",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "see",
+          "answer": "saw",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "consume",
+          "answer": "consumed",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "labour",
+          "answer": "laboured",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "plow",
+          "answer": "plowing",
+          "accepted": [
+            "ploughing"
+          ]
+        },
+        {
+          "item": "7",
+          "prompt": "turn",
+          "answer": "turning",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "tend",
+          "answer": "tending",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(b)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in each blank with an appropriate word:\n(i) The puppy was hiding ______ the sofa.\n(ii) Stop worrying ______ your future.\n(iii) When I stepped ______ the lift, I found it had stopped working.\n(iv) We had to use a bridge to go ______ the river.\n(v) I have lived in this town ______ ten years.\n(vi) Please switch ______ all lights and fans when you leave the room.\n(vii) Ronnie is married ______ my cousin.\n(viii) The gift came ______ a birthday card.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(i) behind",
+        "(i) beside"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(i) under / behind / beside  (ii) about  (iii) into  (iv) across  (v) for  (vi) off  (vii) to  (viii) with",
+      "key_points": [
+        "(i) under / behind / beside",
+        "(ii) about",
+        "(iii) into",
+        "(iv) across",
+        "(v) for",
+        "(vi) off",
+        "(vii) to",
+        "(viii) with"
+      ],
+      "model_answer": "(i) under\n(ii) about\n(iii) into\n(iv) across\n(v) for\n(vi) off\n(vii) to\n(viii) with",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(iii) 'in' for 'into'",
+        "(v) 'since' for 'for'",
+        "(vi) 'on' for 'off'",
+        "(vii) 'with' for 'to'"
+      ],
+      "examiner_notes": "Many did poorly: 'in' vs 'into' in (iii); 'since' for 'for' in (v); 'on' for 'off' in (vi); 'with' for 'to' in (vii); phrasal verbs used instead of single words.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "i",
+          "prompt": "hiding ___ the sofa",
+          "answer": "under",
+          "accepted": [
+            "behind",
+            "beside"
+          ]
+        },
+        {
+          "item": "ii",
+          "prompt": "worrying ___ your future",
+          "answer": "about",
+          "accepted": []
+        },
+        {
+          "item": "iii",
+          "prompt": "stepped ___ the lift",
+          "answer": "into",
+          "accepted": []
+        },
+        {
+          "item": "iv",
+          "prompt": "go ___ the river",
+          "answer": "across",
+          "accepted": []
+        },
+        {
+          "item": "v",
+          "prompt": "___ ten years",
+          "answer": "for",
+          "accepted": []
+        },
+        {
+          "item": "vi",
+          "prompt": "switch ___ all lights",
+          "answer": "off",
+          "accepted": []
+        },
+        {
+          "item": "vii",
+          "prompt": "married ___ my cousin",
+          "answer": "to",
+          "accepted": []
+        },
+        {
+          "item": "viii",
+          "prompt": "came ___ a birthday card",
+          "answer": "with",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(i) He was very ill. He did not take any medicine.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Though he was very ill, he did not take any medicine.",
+        "Even though he was very ill, he did not take any medicine.",
+        "In spite of being very ill, he did not take any medicine.",
+        "Despite being very ill, he did not take any medicine.",
+        "He was very ill, yet he did not take any medicine.",
+        "He was very ill, still he did not take any medicine."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Although he was very ill, he did not take any medicine. / Though he was very ill, he did not take any medicine. / Even though he was very ill, he did not take any medicine. / In spite of being very ill, he did not take any medicine. / Despite being very ill, he did not take any medicine. / He was very ill, yet he did not take any medicine. / He was very ill, still he did not take any medicine. (If the words 'very' or 'any' are missing - no penalty)",
+      "key_points": [
+        "Although he was very ill, he did not take any medicine.",
+        "(If the words 'very' or 'any' are missing - no penalty)"
+      ],
+      "model_answer": "Although he was very ill, he did not take any medicine.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'inspite' as a conjunction",
+        "Causal link"
+      ],
+      "examiner_notes": "Wrong approaches: 'He was very ill, inspite he did not...' and causal joins ('as he was very ill').",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(ii) You come back from your holiday. We will discuss the problem.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "We will discuss the problem after you come back from your holiday.",
+        "We will discuss the problem when you come back from your holiday.",
+        "When you come back from your holiday we will discuss the problem."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "After you come back from your holiday we will discuss the problem. / We will discuss the problem after you come back from your holiday. / We will discuss the problem when you come back from your holiday. / When you come back from your holiday we will discuss the problem.",
+      "key_points": [
+        "After you come back from your holiday we will discuss the problem."
+      ],
+      "model_answer": "After you come back from your holiday we will discuss the problem.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'As soon as' (no immediacy)"
+      ],
+      "examiner_notes": "'As soon as' was used though no immediacy was involved.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(iii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iii) He remained absent on Friday. It was foolish of him.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "It was foolish of him to remain absent on Friday.",
+      "key_points": [
+        "It was foolish of him to remain absent on Friday."
+      ],
+      "model_answer": "It was foolish of him to remain absent on Friday.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'he remained' instead of 'to remain'"
+      ],
+      "examiner_notes": "'he remained absent' was used instead of 'to remain absent'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(iv)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iv) Rahul ran all the way to the bus stop. He missed the bus.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Though Rahul ran all the way to the bus stop, he missed the bus.",
+        "Even though Rahul ran all the way to the bus stop, he missed the bus.",
+        "In spite of running all the way to the bus stop, Rahul missed the bus.",
+        "Despite running all the way to the bus stop, Rahul missed the bus.",
+        "Rahul ran all the way to the bus stop yet he missed the bus.",
+        "Rahul ran all the way to the bus stop, still he missed the bus."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Although Rahul ran all the way to the bus stop, he missed the bus. / Though Rahul ran all the way to the bus stop, he missed the bus. / Even though Rahul ran all the way to the bus stop, he missed the bus. / In spite of running all the way to the bus stop, Rahul missed the bus. / Despite running all the way to the bus stop, Rahul missed the bus. / Rahul ran all the way to the bus stop yet he missed the bus. / Rahul ran all the way to the bus stop, still he missed the bus.",
+      "key_points": [
+        "Although Rahul ran all the way to the bus stop, he missed the bus."
+      ],
+      "model_answer": "Although Rahul ran all the way to the bus stop, he missed the bus.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'Although ... yet'",
+        "Causal link"
+      ],
+      "examiner_notes": "'though' combined with 'yet/still' (incorrect); some made it causal ('missed the bus as he ran').",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(i) The old woman said to Arun, \"Can you help me to cross the street?\"\n(Begin: The old woman asked Arun ...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "The old woman asked Arun whether he could help her (to) cross the street."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "The old woman asked Arun if he could help her (to) cross the street. / The old woman asked Arun whether he could help her (to) cross the street.",
+      "key_points": [
+        "The old woman asked Arun if he could help her (to) cross the street."
+      ],
+      "model_answer": "The old woman asked Arun if he could help her (to) cross the street.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "No 'if'/'whether'"
+      ],
+      "examiner_notes": "Many did not use 'if'/'whether'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(ii) As soon as the sun rose over the hills, the fog disappeared.\n(Begin: No sooner...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "No sooner had the sun risen over the hills than the fog disappeared."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "No sooner did the sun rise over the hills than the fog disappeared. / No sooner had the sun risen over the hills than the fog disappeared.",
+      "key_points": [
+        "No sooner did the sun rise over the hills than the fog disappeared."
+      ],
+      "model_answer": "No sooner did the sun rise over the hills than the fog disappeared.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'did ... rose'",
+        "'that' for 'than'"
+      ],
+      "examiner_notes": "Wrong verb forms ('No sooner did the sun rose'), misplaced 'than', or 'that' for 'than'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(iii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iii) It rained so heavily that they could not go for the picnic.\n(Rewrite: Using 'too ... to')",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "It rained too heavily for them to go for the picnic.",
+      "key_points": [
+        "It rained too heavily for them to go for the picnic."
+      ],
+      "model_answer": "It rained too heavily for them to go for the picnic.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'too ... that'",
+        "Omitted 'for them'"
+      ],
+      "examiner_notes": "Incorrect constructions such as 'too heavily that they could not' or omitting 'for them'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(iv)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iv) If your friends get here before 7 o'clock we can take them out for dinner.\n(Rewrite: Using 'unless')",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "We cannot take your friends out for dinner unless they get here before 7 o'clock."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Unless your friends get here before 7 o'clock we cannot take them out for dinner. / We cannot take your friends out for dinner unless they get here before 7 o'clock.",
+      "key_points": [
+        "Unless your friends get here before 7 o'clock we cannot take them out for dinner."
+      ],
+      "model_answer": "Unless your friends get here before 7 o'clock we cannot take them out for dinner.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Kept 'can'"
+      ],
+      "examiner_notes": "'can' was used instead of 'cannot'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(v)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(v) The school captain was elected by the students of classes XI and XII.\n(Begin: The students...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "The students of Classes XI and XII elected the school captain.",
+      "key_points": [
+        "The students of Classes XI and XII elected the school captain."
+      ],
+      "model_answer": "The students of Classes XI and XII elected the school captain.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'had elected'",
+        "Reversed doer and receiver"
+      ],
+      "examiner_notes": "Past perfect used instead of simple past; some reversed the subject.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(vi)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vi) Greenland is the largest island in the world.\n(Rewrite: Using 'larger')",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Greenland is larger than all other islands in the world."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Greenland is larger than any other island in the world. / Greenland is larger than all other islands in the world.",
+      "key_points": [
+        "Greenland is larger than any other island in the world."
+      ],
+      "model_answer": "Greenland is larger than any other island in the world.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong comparative structure"
+      ],
+      "examiner_notes": "Incorrect form with the comparative ('No other island was larger than...').",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(vii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vii) How cruel Shylock was to demand his pound of flesh!\n(Begin: It was cruel...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "It was cruel of Shylock to demand his pound of flesh.",
+      "key_points": [
+        "It was cruel of Shylock to demand his pound of flesh."
+      ],
+      "model_answer": "It was cruel of Shylock to demand his pound of flesh.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'It was cruel Shylock who...'"
+      ],
+      "examiner_notes": "'cruel' was used as a qualifier ('It was cruel Shylock who...', 'It was cruel that Shylock...').",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(viii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(viii) Arun was asked by his mother to explain the missing buttons on his shirt.\n(Rewrite: Using 'explanation')",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Arun's mother asked him for an explanation about the missing buttons on his shirt."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Arun was asked by his mother to give an explanation for/about the missing buttons on his shirt. / Arun's mother asked him for an explanation about the missing buttons on his shirt.",
+      "key_points": [
+        "Arun was asked by his mother to give an explanation for/about the missing buttons on his shirt."
+      ],
+      "model_answer": "Arun was asked by his mother to give an explanation for/about the missing buttons on his shirt.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong preposition after 'explanation'"
+      ],
+      "examiner_notes": "All kinds of prepositions were tried (for, of, in, on, about, to).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Insist on originality; discourage lifting stories from prose or films",
+      "Use famous short-story writers to fire imagination; teach plot structure",
+      "Teach taking and defending a stand",
+      "Teach the five senses in narrative/descriptive writing; correct tenses"
+    ],
+    "2": [
+      "Teach correct format, style and tone for formal and informal letters",
+      "Refer to the Council website for format",
+      "Read the question carefully and highlight key points"
+    ],
+    "3": [
+      "Write notices and emails for a target audience with the right tone, style and format",
+      "Prepare catchy titles for school events",
+      "Distinguish official and personal email ids",
+      "The content of the notice forms the content of the email"
+    ],
+    "4": [
+      "Regular vocabulary practice; check meanings by substitution",
+      "Read between the lines for cause and effect",
+      "Choose the exact sentence when asked to quote",
+      "Use a grid; identify key nouns and verbs for summaries"
+    ],
+    "5": [
+      "Practise verb forms in passages",
+      "Explain in/into, on/upon, since/for",
+      "Teach though/although vs causal links; after vs as soon as",
+      "Teach the implications of wrong word choice in transformation"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Essay: expressing thoughts in English; mother-tongue words",
+      "Letter: the idea of forming a new club for a specific activity",
+      "Notice & email: connection between them; wrong format",
+      "Comprehension: analytical questions",
+      "Grammar rules unclear"
+    ],
+    "confusions": []
+  }
+}

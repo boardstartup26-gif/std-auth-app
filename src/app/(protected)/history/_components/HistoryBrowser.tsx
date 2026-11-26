@@ -20,6 +20,7 @@ import {
   Globe2,
   IndianRupee,
   Landmark,
+  PenLine,
   Recycle,
   Leaf,
   type LucideIcon,
@@ -40,6 +41,7 @@ const SUBJECT_ICONS: Record<string, LucideIcon> = {
   "History & Civics": Landmark,
   Economics: IndianRupee,
   "Environmental Science": Recycle,
+  "English Language": PenLine,
   "English Literature": BookOpen,
 };
 

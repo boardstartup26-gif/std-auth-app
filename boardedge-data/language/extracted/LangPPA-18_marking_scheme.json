@@ -1,0 +1,1698 @@
+{
+  "year": 2018,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2018 - Analysis of Pupil Performance (raw/LangPPA-18.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (350 - 400 words) on the following:\nWrite an original short story entitled 'The Gift'.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 25,
+      "marks_per_correct_point": null,
+      "scheme_text": "The story must be original and must bring out the theme of a special or meaningful gift. The giver and receiver should be the main characters.",
+      "key_points": [
+        "Original story",
+        "Brings out the theme of a special or meaningful gift",
+        "The giver and receiver are the main characters"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Narrative instead of a story",
+        "Described the gift instead of its impact on the receiver",
+        "Borrowed plot"
+      ],
+      "examiner_notes": "Many wrote a narrative instead of a story; ideas were borrowed from films and books. Some wrote of 'nature' or 'life' as gifts. The gift's impact on the receiver was often missing, with focus shifting to describing the gift.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 350,
+          "max": 400
+        },
+        "time_guidance_minutes": 35,
+        "required_opening": null,
+        "required_title": "The Gift",
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(b)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (350 - 400 words) on the following:\n\"Money is important for happiness.\" Express your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 25,
+      "marks_per_correct_point": null,
+      "scheme_text": "Argumentative essay: views for or against the motion are to be accepted. Credit is to be given for a cohesive, well-constructed, logical argument and ideas and reasoning based on personal experience. Candidate must take a clear stand and give valid reasons for the stand taken.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Valid reasons for the stand",
+        "Cohesive, logical argument drawing on reasoning and personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Argued both sides",
+        "Narrative instead of argument",
+        "Short stories used as illustrations"
+      ],
+      "examiner_notes": "The most popular topic. Many argued both sides without a clear stand; some essays became narratives with repeated points and no logic. A striking error was inserting short stories to illustrate points.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 350,
+          "max": 400
+        },
+        "time_guidance_minutes": 35,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(c)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (350 - 400 words) on the following:\nNarrate an incident from your own experience when you helped to prepare a meal. Explain what you did and what you gained from the experience.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 25,
+      "marks_per_correct_point": null,
+      "scheme_text": "Candidate should give clear sequencing of events, the effort involved, assistance given, result of effort and the lesson learnt. It must be a first-person account. 'I' is the central theme.",
+      "key_points": [
+        "First-person account with 'I' at the centre",
+        "Clear sequence of events",
+        "The effort involved and assistance given",
+        "Result of the effort",
+        "The lesson learnt"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Own contribution not described",
+        "Group effort instead of personal role",
+        "Role reversal (others helped the narrator)"
+      ],
+      "examiner_notes": "Many did not say what help they gave, how, or to whom. Some described a group effort instead of their own part; some described help given to them by parents and siblings.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 350,
+          "max": 400
+        },
+        "time_guidance_minutes": 35,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(d)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (350 - 400 words) on the following:\nYou had been waiting outside the examination hall. Describe what you saw and the sounds you heard when you arrived at the place. What were your feelings? Describe how the scene changed once you entered the hall and the examination started.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 25,
+      "marks_per_correct_point": null,
+      "scheme_text": "A description of noise, chatter of children, parents, last minute rush to look at notes, etc. Teachers trying to solve doubts, give answers, telling them to relax. Parents asked to leave - the bell. The hush of the hall, prayer, silence, the examination begins.",
+      "key_points": [
+        "Scene outside: noise, chatter of children and parents, last-minute rush to look at notes",
+        "Teachers solving doubts, telling students to relax",
+        "The narrator's feelings",
+        "Parents asked to leave; the bell",
+        "Change inside: the hush of the hall, prayer, silence, the examination begins"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Scene outside skimmed",
+        "Contrast with the silent hall missing",
+        "Dwelt on exam fear instead of the scene"
+      ],
+      "examiner_notes": "Many skimmed over the scene outside the hall and did not draw on personal experience. Noise, chatter, last-minute rush and the silence inside were not focused on; some dwelt on exam fear from the previous night.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 350,
+          "max": 400
+        },
+        "time_guidance_minutes": 35,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(e)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (350 - 400 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 25,
+      "marks_per_correct_point": null,
+      "scheme_text": "Picture Composition: Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemization / listing / description of the picture is to be penalized.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "General essay on women's cricket/empowerment without the picture",
+        "No link with the picture",
+        "No logical ending"
+      ],
+      "examiner_notes": "Many wrote on women's cricket in India or on the girl child and women's empowerment without reference to the picture. Endings were often illogical; the link with the picture was missing as many strayed from its central theme.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 350,
+          "max": 400
+        },
+        "time_guidance_minutes": 35,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2018/q1-e.png",
+        "description": "Village girls in salwar kameez play cricket barefoot on a dusty field beside a maize crop; one swings a bat at a red ball in mid-air while the others watch.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-e.png"
+    },
+    {
+      "question_number": "2(a)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "Your uncle has offered to get you a pet for your birthday. Write a letter to him telling him what you would like, give reasons for your choice and tell him how you would take care of your pet.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nName the animal (it must be an animal, not a toy or gadget): e.g. cat / dog / turtle / gold fish\nReasons: e.g. unique / loving / easy to care for / no one has, or everyone else has / I am an animal lover / we have the space (Any two)\nCare: e.g. cleaning / diet / health / walk / visit to vet / brushing / exercise / training (Any two)\nExpression: criteria not itemised in the 2018 scheme.\nFormat (as printed in the 2018 scheme) - Informal letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct informal letter format",
+        "Name the animal (it must be an animal, not a toy or gadget): e.g. cat / dog / turtle / gold fish",
+        "Reasons (any two): e.g. unique / loving / easy to care for / no one has, or everyone else has / I am an animal lover / we have the space",
+        "Care (any two): e.g. cleaning / diet / health / walk / visit to vet / brushing / exercise / training",
+        "Expression: criteria not itemised in the 2018 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "No reasons for the choice",
+        "Reasons and care merged",
+        "'Respected uncle' / 'XYZ'",
+        "Thanked for a pet already received"
+      ],
+      "examiner_notes": "Format: incorrect and mixed formats; address in block letters; 'Respected uncle', 'Mamaji' in the salutation; 'XYZ' as signature. Content: many gave no reasons for wanting the pet, merged reason and care into one sentence, described the pet, or thanked the uncle for a pet already received.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Uncle",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Name the animal (it must be an animal, not a toy or gadget)",
+            "selection": null,
+            "examples": [
+              "cat",
+              "dog",
+              "turtle",
+              "gold fish"
+            ]
+          },
+          {
+            "element": "Reasons",
+            "selection": "any_2",
+            "examples": [
+              "unique",
+              "loving",
+              "easy to care for",
+              "no one has, or everyone else has",
+              "I am an animal lover",
+              "we have the space"
+            ]
+          },
+          {
+            "element": "Care",
+            "selection": "any_2",
+            "examples": [
+              "cleaning",
+              "diet",
+              "health",
+              "walk",
+              "visit to vet",
+              "brushing",
+              "exercise",
+              "training"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2018 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(b)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "The traffic outside your school is very heavy and chaotic. Write a letter to the Deputy Commissioner of Police (Traffic) pointing out the danger of such heavy and chaotic traffic in a school zone. Suggest possible solutions for the problem.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nDanger (should be explained): e.g. accident / death / no space to walk / jostling / misbehaviour / road rage / late to school (Any two)\nSolutions: e.g. no parking / one way / patrol by police / school safety brigade / carpooling / school buses / encourage cycling or walking to school (Any two)\nExpression: criteria not itemised in the 2018 scheme.\nFormat (as printed in the 2018 scheme) - Informal letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct formal letter format",
+        "Danger (should be explained) (any two): e.g. accident / death / no space to walk / jostling / misbehaviour / road rage / late to school",
+        "Solutions (any two): e.g. no parking / one way / patrol by police / school safety brigade / carpooling / school buses / encourage cycling or walking to school",
+        "Expression: criteria not itemised in the 2018 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Danger not specified or explained",
+        "Honking distraction given as the danger",
+        "Incomplete format"
+      ],
+      "examiner_notes": "Format was often incorrect or incomplete. Content lacked analysis; many did not specify the danger, or treated distraction from honking as the danger.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Deputy Commissioner of Police (Traffic)",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Danger (should be explained)",
+            "selection": "any_2",
+            "examples": [
+              "accident",
+              "death",
+              "no space to walk",
+              "jostling",
+              "misbehaviour",
+              "road rage",
+              "late to school"
+            ]
+          },
+          {
+            "element": "Solutions",
+            "selection": "any_2",
+            "examples": [
+              "no parking",
+              "one way",
+              "patrol by police",
+              "school safety brigade",
+              "carpooling",
+              "school buses",
+              "encourage cycling or walking to school"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2018 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(a)(i)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One word answers or short phrases will be accepted.\n(i) battered (line 7)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "broken",
+        "worn out"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "damaged / broken / worn out (meaning should be in the same tense)",
+      "key_points": [
+        "A contextual meaning of 'battered' in the same tense: damaged / broken / worn out"
+      ],
+      "model_answer": "damaged",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong tense/form",
+        "One of several meanings wrong"
+      ],
+      "examiner_notes": "Tense/form not maintained; multiple meanings were penalised if one was wrong.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(a)(ii)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One word answers or short phrases will be accepted.\n(ii) mused (line 15)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "spoke dreamily",
+        "thought aloud"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "spoke thoughtfully / spoke dreamily / thought aloud (meaning should be in the same tense)",
+      "key_points": [
+        "A contextual meaning of 'mused' in the same tense: spoke thoughtfully / spoke dreamily / thought aloud"
+      ],
+      "model_answer": "spoke thoughtfully",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong tense/form",
+        "One of several meanings wrong"
+      ],
+      "examiner_notes": "Tense/form not maintained.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(a)(iii)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One word answers or short phrases will be accepted.\n(iii) emerged (line 48)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "appeared"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "came out / appeared (meaning should be in the same tense)",
+      "key_points": [
+        "A contextual meaning of 'emerged' in the same tense: came out / appeared"
+      ],
+      "model_answer": "came out",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrong tense/form",
+        "One of several meanings wrong"
+      ],
+      "examiner_notes": "Wrong form, e.g. 'to come out' or 'coming out' for 'emerged'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(i)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words.\n(i) Why did Granny hope Uncle Ken would keep his job at Firpo's hotel?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Salary good / steady job",
+      "key_points": [
+        "The salary was very good",
+        "It was a steady job"
+      ],
+      "model_answer": "Salary good / steady job",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Lifted from the passage"
+      ],
+      "examiner_notes": "Answers were largely lifted directly from the passage.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(ii)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(ii) When Uncle Ken arrived with his luggage, Granny remarked that she hoped the hotel had not closed down because of him. What does this remark tell you about Uncle Ken?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is a critical thinking question - plausible answers to be accepted. Uncle Ken was constantly changing jobs / was not a steady person / irresponsible / eccentric (implied meaning to be accepted).",
+      "key_points": [
+        "A plausible inference such as: he kept changing jobs / was not steady / irresponsible / eccentric (implied meaning accepted)"
+      ],
+      "model_answer": "It suggests that Uncle Ken was not a steady person; he kept changing jobs and was irresponsible, so trouble often followed him.",
+      "model_answer_verified": false,
+      "common_errors": [
+        "No inference drawn"
+      ],
+      "examiner_notes": "Needed critical thinking; many faltered and answers were wide and varied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(iii)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(iii) Why did Uncle Ken think that driving a taxi in Dehra would be profitable?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "There was only one taxi in Dehra + (room for another one / the need was there for another) (any one given in bracket to be accepted).",
+      "key_points": [
+        "There was only one taxi in the whole of Dehra",
+        "so there was room/need for another (any one)"
+      ],
+      "model_answer": "There was only one taxi in Dehra + (room for another one / the need was there for another) (any one given in bracket to be accepted).",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": null,
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(iv)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(iv) Which sentence tells you that the narrator and his friend were waiting to be invited for a drive in a car?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "\"Mohan and I needed no urging.\" (Whole sentence to be quoted exactly.)",
+      "key_points": [
+        "Quotes 'Mohan and I needed no urging.' exactly"
+      ],
+      "model_answer": "Mohan and I needed no urging.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Quoted two sentences",
+        "Own words instead of quoting"
+      ],
+      "examiner_notes": "Many quoted two sentences or answered in their own words.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(v)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(v) Why did Miss Kellner run indoors when she saw Uncle Ken at the wheel of the car?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "She was frightened / rash driving / speed / knew Uncle Ken to be an irresponsible driver. (Any two)",
+      "key_points": [
+        "Any two: she was frightened",
+        "feared rash driving / speed",
+        "knew Uncle Ken to be an irresponsible driver"
+      ],
+      "model_answer": "She was frightened / rash driving / speed / knew Uncle Ken to be an irresponsible driver. (Any two)",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Reason for her fear not inferred"
+      ],
+      "examiner_notes": "Many failed to infer the reason or to pick up points explaining her fear.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)(vi)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(vi) What was Uncle Ken's intention at the roundabout?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "He wanted to turn around + (return home / drive back / go back) (Any one in bracket to be accepted).",
+      "key_points": [
+        "He wanted to turn around (at the roundabout)",
+        "and drive back / return home / go back (any one)"
+      ],
+      "model_answer": "He wanted to turn around + (return home / drive back / go back) (Any one in bracket to be accepted).",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": null,
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(c)(i)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 60 words, describe what happened after the car went through the wall.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. Knocked it down\n2. Emerged on the other side\n3. Brought it to a halt\n4. Maharaja runs to greet them\n5. Beams with pleasure\n6. Invites Ken for a tennis game\n(Any 6 points)",
+      "key_points": [
+        "Knocked it down",
+        "Emerged on the other side",
+        "Brought it to a halt",
+        "Maharaja runs to greet them",
+        "Beams with pleasure",
+        "Invites Ken for a tennis game"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Exceeded 60 words",
+        "Lifted paragraphs",
+        "Only key words / incomplete sentences"
+      ],
+      "examiner_notes": "Several exceeded the word limit; some lifted whole paragraphs; a few wrote only key words; the precis was in incomplete sentences.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 60,
+        "points": [
+          "Knocked it down",
+          "Emerged on the other side",
+          "Brought it to a halt",
+          "Maharaja runs to greet them",
+          "Beams with pleasure",
+          "Invites Ken for a tennis game"
+        ],
+        "points_required": 6,
+        "sequence_required": false,
+        "scheme_note": null,
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(c)(ii)",
+      "parent_question_number": "3",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "Give a title to your summary in 3(c)(i). Give a reason to justify your choice of the title.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Any apt title to be accepted (for Precis). Justification for choice of the title.",
+      "key_points": [
+        "An apt title for the summary (not for the whole passage)",
+        "A short justification showing why the title is effective"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Titled the passage instead of the summary",
+        "Overlong or irrelevant title",
+        "Justification merely repeats the title"
+      ],
+      "examiner_notes": "Most titled the passage rather than the summary; some titles were long sentences or irrelevant; justifications were long-winded or repeated the title.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2018-q3",
+        "text": "Granny knew I'd been in the train for two nights, and she had a huge breakfast ready for me.\n\nLater she told me there'd been a letter from Uncle Ken.\n\n'He says he's the manager in Firpo's hotel in Simla,' she said. 'The salary is very good. It's a steady job and I hope he keeps it.'\n\nThree days later Uncle Ken was on the veranda steps with his bedding roll and battered suitcase.\n\n'Have you given up the hotel job?' asked Granny.\n\n'No,' said Uncle Ken. 'They have closed down.'\n\n'I hope it wasn't because of you.'\n\n'No, Aunt Ellen. The bigger hotels in the hill stations are closing down.'\n\n'Well, never mind. Come along and have your lunch.'\n\nOver lunch, Uncle Ken talked very seriously about ways and means of earning a living.\n\n'There is only one taxi in the whole of Dehra,' he mused. 'Surely there is business for another?'\n\n'I'm sure there is,' said Granny. 'But where does it get you? In the first place, you don't have a taxi. And in the second place, you can't drive.'\n\n'I can soon learn. There's a driving school in town. And I can use Uncle's old car.'\n\n'I don't think it will run now,' said Granny.\n\n'Of course, it will. It just needs some oiling and greasing and a spot of paint.'\n\n'All right, learn to drive.'\n\nSo, Uncle Ken joined the driving school.\n\nAfter a month Uncle Ken announced that he could drive and that he was taking the car out for a trial run.\n\n'You haven't got your license yet,' said Granny.\n\n'Oh, I won't take it far,' said Uncle Ken. 'Just down the road and back again.'\n\nHe spent all morning cleaning up the car. Granny gave him money for a can of petrol.\n\nAfter tea, Uncle Ken said, 'Come along, Ruskin, hop in and I will give you a ride. Bring Mohan along too.' Mohan and I needed no urging. We got into the car beside Uncle Ken.\n\n'Now don't go too fast, Ken,' said Granny anxiously. 'You are not used to the car as yet.'\n\nUncle Ken nodded and smiled and gave two sharp toots on the horn. He was feeling pleased with himself.\n\nDriving through the gate, he nearly ran over a cat.\n\nMiss Kellner, coming out for her evening rickshaw ride, saw Uncle Ken at the wheel of the car and ran indoors again.\n\nUncle Ken drove straight and fast, tootling the horn without a break.\n\nAt the end of the road there was a roundabout.\n\n'We'll turn here,' said Uncle Ken, 'and then drive back again.'\n\nHe turned the steering wheel, we began going round the roundabout, but the steering wheel wouldn't turn all the way, not as much as Uncle Ken would have liked it to... So, instead he went on - and straight through the Maharaja of Jetpur's garden wall.\n\nIt was a single-brick wall, and the car knocked it down and emerged on the other side without any damage to the car or any of its occupants. Uncle Ken brought it to a halt in the middle of the Maharaja's lawn.\n\nRunning across the grass came the Maharaja himself. When he saw that it was Uncle Ken at the wheel, the Maharaja beamed with pleasure.\n\n'Delighted to see you, old chap!' he exclaimed. 'Jolly decent of you to drop in again. How about a game of tennis?'",
+        "source": "Adapted from a Ruskin Bond story featuring Uncle Ken (source not printed in the PPA)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage, but write in correct serial order the word or phrase appropriate to the blank space.\nExample: (0) beginning\nAlice was (0) ______ (begin) to get very tired of (1) ______ (sit) by her sister on the bank and of having nothing to do: once or twice she had (2) ______ (peep) into the book her sister was reading, but it (3) ______ (have) no pictures or conversations in it, \"and what is the use of a book,\" (4) ______ (think) Alice, \"without pictures or conversations?\"\nAlice wondered whether the pleasure of (5) ______ (make) a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes (6) ______ (run) close by her. Alice did not think this was very remarkable, until the Rabbit actually (7) ______ (take) a watch out of its waistcoat-pocket, and (8) ______ (look) at it, and then hurried on.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. beginning] (1) sitting  (2) peeped  (3) had  (4) thought  (5) making  (6) ran  (7) took  (8) looked",
+      "key_points": [
+        "(1) sitting",
+        "(2) peeped",
+        "(3) had",
+        "(4) thought",
+        "(5) making",
+        "(6) ran",
+        "(7) took",
+        "(8) looked"
+      ],
+      "model_answer": "(1) sitting\n(2) peeped\n(3) had\n(4) thought\n(5) making\n(6) ran\n(7) took\n(8) looked",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Performance was generally good; candidates lacking basic grammar did poorly.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "sit",
+          "answer": "sitting",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "peep",
+          "answer": "peeped",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "have",
+          "answer": "had",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "think",
+          "answer": "thought",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "make",
+          "answer": "making",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "run",
+          "answer": "ran",
+          "accepted": []
+        },
+        {
+          "item": "7",
+          "prompt": "take",
+          "answer": "took",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "look",
+          "answer": "looked",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in each blank with an appropriate word:\n(i) The poet's mother was stung ______ a scorpion.\n(ii) \"Please write ______ what I tell you otherwise you will forget,\" the teacher said.\n(iii) The dog was hiding ______ the bed, barking at the stranger.\n(iv) Sheila's grandmother found it difficult to climb ______ the steep staircase.\n(v) The soldier fought bravely ______ his country.\n(vi) There is no use crying ______ spilt milk.\n(vii) I don't know what they were arguing ______ but I could hear angry voices.\n(viii) The school playground is out ______ bounds for the pupils of the primary school.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(iv) down",
+        "(vii) over"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(i) by  (ii) down  (iii) under  (iv) up / down  (v) for  (vi) over  (vii) about / over  (viii) of",
+      "key_points": [
+        "(i) by",
+        "(ii) down",
+        "(iii) under",
+        "(iv) up / down",
+        "(v) for",
+        "(vi) over",
+        "(vii) about / over",
+        "(viii) of"
+      ],
+      "model_answer": "(i) by\n(ii) down\n(iii) under\n(iv) up\n(v) for\n(vi) over\n(vii) about\n(viii) of",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(iii) 'underneath'",
+        "(vii) 'for'"
+      ],
+      "examiner_notes": "Some were unsure of prepositions, e.g. 'underneath' for 'under' in (iii) and 'for' for 'about' in (vii).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "i",
+          "prompt": "stung ___ a scorpion",
+          "answer": "by",
+          "accepted": []
+        },
+        {
+          "item": "ii",
+          "prompt": "write ___ what I tell you",
+          "answer": "down",
+          "accepted": []
+        },
+        {
+          "item": "iii",
+          "prompt": "hiding ___ the bed",
+          "answer": "under",
+          "accepted": []
+        },
+        {
+          "item": "iv",
+          "prompt": "climb ___ the steep staircase",
+          "answer": "up",
+          "accepted": [
+            "down"
+          ]
+        },
+        {
+          "item": "v",
+          "prompt": "fought bravely ___ his country",
+          "answer": "for",
+          "accepted": []
+        },
+        {
+          "item": "vi",
+          "prompt": "crying ___ spilt milk",
+          "answer": "over",
+          "accepted": []
+        },
+        {
+          "item": "vii",
+          "prompt": "arguing ___",
+          "answer": "about",
+          "accepted": [
+            "over"
+          ]
+        },
+        {
+          "item": "viii",
+          "prompt": "out ___ bounds",
+          "answer": "of",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)(i)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(i) They have to go to bed early every night. They are allowed to stay up late on Saturdays.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Though they have to go to bed early every night, they are allowed to stay up late on Saturdays.",
+        "Even though they have to go to bed early every night, they are allowed to stay up late on Saturdays.",
+        "They have to go to bed early every night, while they are allowed to stay up late on Saturdays.",
+        "They have to go to bed early every night, whereas they are allowed to stay up late on Saturdays."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Although they have to go to bed early every night, they are allowed to stay up late on Saturdays. / Though they have to go to bed early every night, they are allowed to stay up late on Saturdays. / Even though they have to go to bed early every night, they are allowed to stay up late on Saturdays. / They have to go to bed early every night, while they are allowed to stay up late on Saturdays. / They have to go to bed early every night, whereas they are allowed to stay up late on Saturdays.",
+      "key_points": [
+        "Although they have to go to bed early every night, they are allowed to stay up late on Saturdays."
+      ],
+      "model_answer": "Although they have to go to bed early every night, they are allowed to stay up late on Saturdays.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'except on Saturdays' changes the meaning"
+      ],
+      "examiner_notes": "Many wrote 'except on Saturdays', changing the meaning.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)(ii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(ii) The children were delighted. The exams had been cancelled.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "The children were delighted as the exams had been cancelled.",
+        "The children were delighted since the exams had been cancelled.",
+        "The children were delighted because the exams had been cancelled.",
+        "The exams had been cancelled therefore the children were delighted."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "The children were delighted that the exams had been cancelled. / The children were delighted as the exams had been cancelled. / The children were delighted since the exams had been cancelled. / The children were delighted because the exams had been cancelled. / The exams had been cancelled therefore the children were delighted.",
+      "key_points": [
+        "The children were delighted that the exams had been cancelled."
+      ],
+      "model_answer": "The children were delighted that the exams had been cancelled.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Reversed cause and effect"
+      ],
+      "examiner_notes": "Several reversed cause and effect: 'As the children were delighted, the exams had been cancelled.'",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)(iii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iii) We are not allowed to play in the sun. We are not allowed to play in the rain.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "We are not allowed to play either in the sun or in the rain.",
+        "Neither are we allowed to play in the sun nor in the rain."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "We are neither allowed to play in the sun nor in the rain. / We are not allowed to play either in the sun or in the rain. / Neither are we allowed to play in the sun nor in the rain.",
+      "key_points": [
+        "We are neither allowed to play in the sun nor in the rain."
+      ],
+      "model_answer": "We are neither allowed to play in the sun nor in the rain.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'as well as' instead of 'neither...nor'"
+      ],
+      "examiner_notes": "Some used 'as well as' instead of 'neither...nor'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)(iv)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iv) This is the place. The dog was rescued from its cruel owner.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "The dog was rescued from its cruel owner in this place.",
+        "The dog was rescued from its cruel owner at this place."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is the place where the dog was rescued from its cruel owner. / The dog was rescued from its cruel owner in this place. / The dog was rescued from its cruel owner at this place.",
+      "key_points": [
+        "This is the place where the dog was rescued from its cruel owner."
+      ],
+      "model_answer": "This is the place where the dog was rescued from its cruel owner.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": null,
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(i)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(i) She laid the table after she had finished the cooking.\n(Begin: When...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "When she had finished her cooking she laid the table."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "When she had finished the cooking she laid the table. / When she had finished her cooking she laid the table.",
+      "key_points": [
+        "When she had finished the cooking she laid the table."
+      ],
+      "model_answer": "When she had finished the cooking she laid the table.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Many failed to understand the meaning of the sentences; the GRM rule (Grammar + Rubric + Meaning) was not applied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(ii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(ii) He is old but still he works hard.\n(Begin: Despite...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Despite being old, he works hard.",
+      "key_points": [
+        "Despite being old, he works hard."
+      ],
+      "model_answer": "Despite being old, he works hard.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'despite of'",
+        "'despite ... still'"
+      ],
+      "examiner_notes": "Several wrote 'despite of' instead of 'despite being'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(iii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iii) The delivery boy was requested to bring the parcel the next day.\n(Rewrite using direct speech)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "\"Please deliver the parcel tomorrow,\" she said to the delivery boy."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "\"Please bring the parcel tomorrow,\" he said to the delivery boy. / \"Please deliver the parcel tomorrow,\" she said to the delivery boy. (Any reporting subject - he/she/I/we/they - said to the delivery boy)",
+      "key_points": [
+        "\"Please bring the parcel tomorrow,\" he said to the delivery boy.",
+        "(Any reporting subject - he/she/I/we/they - said to the delivery boy)"
+      ],
+      "model_answer": "\"Please bring the parcel tomorrow,\" he said to the delivery boy.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Voice not changed",
+        "'the next day' not changed to 'tomorrow'"
+      ],
+      "examiner_notes": "Many failed to change the voice from passive to active.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(iv)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iv) I prefer playing a game to watching television.\n(Begin: I would rather...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "I would rather play a game than watch television.",
+      "key_points": [
+        "I would rather play a game than watch television."
+      ],
+      "model_answer": "I would rather play a game than watch television.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Many failed to understand the meaning of the sentences; the GRM rule (Grammar + Rubric + Meaning) was not applied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(v)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(v) Every family has a black sheep.\n(Begin: There is no...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "There is no family which does not have a black sheep."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "There is no family that does not have a black sheep. / There is no family which does not have a black sheep.",
+      "key_points": [
+        "There is no family that does not have a black sheep."
+      ],
+      "model_answer": "There is no family that does not have a black sheep.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Many failed to understand the meaning of the sentences; the GRM rule (Grammar + Rubric + Meaning) was not applied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(vi)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vi) I have never worn a more ill-fitting suit.\n(End: ... ever worn.)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is the most ill-fitting suit (that) I have ever worn.",
+      "key_points": [
+        "This is the most ill-fitting suit (that) I have ever worn."
+      ],
+      "model_answer": "This is the most ill-fitting suit (that) I have ever worn.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Many failed to understand the meaning of the sentences; the GRM rule (Grammar + Rubric + Meaning) was not applied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(vii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vii) Anil is too fast a runner not to come first in the race.\n(Begin: Anil is so...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Anil is so fast a runner that he has to come first in the race.",
+        "Anil is so fast a runner that he will come first in the race.",
+        "Anil is so fast a runner that he is sure to come first in the race.",
+        "Anil is so fast a runner that he will surely come first in the race.",
+        "Anil is so fast a runner that he cannot but come first in the race."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Anil is so fast a runner that he cannot fail to come first in the race. / Anil is so fast a runner that he has to come first in the race. / Anil is so fast a runner that he will come first in the race. / Anil is so fast a runner that he is sure to come first in the race. / Anil is so fast a runner that he will surely come first in the race. / Anil is so fast a runner that he cannot but come first in the race.",
+      "key_points": [
+        "Anil is so fast a runner that he cannot fail to come first in the race."
+      ],
+      "model_answer": "Anil is so fast a runner that he cannot fail to come first in the race.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Reversed the meaning ('cannot come first')"
+      ],
+      "examiner_notes": "Many changed the meaning: 'Anil is so fast a runner that he cannot come first'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(d)(viii)",
+      "parent_question_number": "4",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(viii) As soon as the sports meet ended, the children ran on the field.\n(Begin: Hardly...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Hardly did the sports meet end, when the children ran on the field."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Hardly had the sports meet ended when the children ran on the field. / Hardly did the sports meet end, when the children ran on the field.",
+      "key_points": [
+        "Hardly had the sports meet ended when the children ran on the field."
+      ],
+      "model_answer": "Hardly had the sports meet ended when the children ran on the field.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'Hardly ... than'"
+      ],
+      "examiner_notes": "Many failed to understand the meaning of the sentences; the GRM rule (Grammar + Rubric + Meaning) was not applied.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "paper_structure_note": "2018 paper: four questions - Q1 Composition [25] (350-400 words, 35 minutes), Q2 Letter [10], Q3 Comprehension [25], Q4 Grammar [20]. No notice/email question.",
+  "teacher_suggestions": {
+    "1": [
+      "Explain the difference between a story and a narrative; mind-map to avoid repetition",
+      "Teach cohesive argument; do not accept stories in argumentative essays",
+      "Make narratives lively and sequential",
+      "Teach descriptive essays: senses, evocative imagery, figures of speech",
+      "Link the essay with the picture"
+    ],
+    "2": [
+      "Teach correct formal and informal formats",
+      "Discourage 'Examination Hall' as an address and 'XYZ' as a signature",
+      "Write in paragraphs; address the issue directly"
+    ],
+    "3": [
+      "Develop vocabulary and contextual meaning",
+      "Answer critical and analytical questions; note key words",
+      "Identify key nouns and verbs; write the summary in brief complete sentences",
+      "The title is for the summary, not the passage; justify it briefly"
+    ],
+    "4": [
+      "Practise mixed tenses in sentences and paragraphs",
+      "Use newspaper cuttings for preposition practice",
+      "Teach neither...nor; why 'still' and 'despite' are not used together",
+      "Practise Hardly...when, No sooner...than, Either...or"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Q1: interpretation of 'gifts'; equating money with happiness; taking a clear stand; narrative vs descriptive",
+      "Q2: format of formal and informal letters",
+      "Q3: distinguishing analytical inference from textual content",
+      "Q4: basic grammar, rubric and syntax, tenses"
+    ],
+    "confusions": []
+  }
+}

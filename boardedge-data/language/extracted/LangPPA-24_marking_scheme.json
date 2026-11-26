@@ -1,0 +1,1848 @@
+{
+  "year": 2024,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2024 - Analysis of Pupil Performance (raw/LangPPA-24.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(i)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story entitled 'A Strange Visitor'.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "The story must be original and must have at least two characters - the narrator and the visitor. The 'strangeness' must be qualified, the encounter and the action that arises out of the encounter described. Credit to be given for humour or suspense. Accept a wide interpretation of visitor as in alien, animal or human.",
+      "key_points": [
+        "Original story with at least two characters: the narrator and the visitor",
+        "The 'strangeness' of the visitor is qualified",
+        "The encounter and the action arising from it are described",
+        "Credit for humour or suspense",
+        "Wide interpretation of 'visitor' accepted (alien, animal or human)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Strangeness of the visitor not shown",
+        "Wrote a narrative essay, not a story",
+        "Undeveloped plot and characters"
+      ],
+      "examiner_notes": "Many did not highlight the visitor's 'strangeness' or understand 'strange' as unusual, surprising or unknown. Plot and characters were underdeveloped; twists and dialogue were absent. Most treated it as a narrative essay of a past experience; many did not understand 'original'.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": "A Strange Visitor",
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(ii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nNarrate an incident from your experience in which your parents had entrusted you with a difficult task. Give details of the task, how you carried it out and your feelings at the end.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is a first-person account and must be narrated from within the plausible experience of a Class X candidate. There must be a clear description of the difficult task and how it was carried out. The feeling of satisfaction, contentment and joy etc. must form the conclusion of the composition.",
+      "key_points": [
+        "First-person account within the plausible experience of a Class X candidate",
+        "Clear description of the difficult task",
+        "How the task was carried out",
+        "Concludes with feelings at the end (satisfaction, contentment, joy etc.)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Feelings at the end missing",
+        "Misunderstood 'entrusted'",
+        "Adult task beyond a Class X student's experience"
+      ],
+      "examiner_notes": "Most did not answer the whole question, especially the ending. Many did not understand 'entrusted'; feelings at the end were mostly missing. Many went beyond their plausible age, describing adult tasks such as office work. Sentence structure and language were below the expected standard.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iii)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nDescribe how you spend your time on a holiday afternoon. Why do you think it is necessary to have these times of quietness and solitude?",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is a descriptive essay giving an account of quietness, rest, solitude or a leisure time activity that is done alone like reading, writing, listening to music. The candidate must describe the activity as well as the benefits of quietness and solitude. Any contradiction (e.g. noisy parties, crowds, sports) of solitude and quietness must be penalised.",
+      "key_points": [
+        "Describes a quiet, solitary afternoon activity (e.g. reading, writing, listening to music)",
+        "Explains the benefits of quietness and solitude",
+        "No contradiction of solitude (noisy parties, crowds, sports are penalised)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Described the whole day instead of an afternoon",
+        "Ignored or contradicted quietness and solitude"
+      ],
+      "examiner_notes": "Many described the whole day or holiday rather than an afternoon. 'Quietness and solitude' were misunderstood or left out; many wrote about enjoyment with friends and relatives.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Contradicting solitude and quietness (noisy parties, crowds, sports)"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(iv)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nExpress your views either for or against the statement 'Junk food should be banned'.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Views either for or against are to be accepted. The candidate should take a clear stand and give valid reasons for whatever stand he/she takes. Credit to be given for a cohesive well-constructed logical argument and ideas based on logical reasoning and personal experience.",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Valid reasons supporting the stand",
+        "Cohesive, logical argument drawing on reasoning and personal experience"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Stand contradicted by the arguments",
+        "Argued both sides",
+        "Repetition, too few examples"
+      ],
+      "examiner_notes": "Most took a stand against the motion but then described the ill effects of junk food, contradicting themselves. Some repeated arguments, did not take a clear stand, or argued both sides; irrelevant arguments and a lack of illustrative examples were seen.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(v)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture, or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemization / listing / description of the picture is to be penalised.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "Not a mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Wrong game identified (not carrom)",
+        "Itemisation",
+        "No connection to the picture"
+      ],
+      "examiner_notes": "Not attempted by many. A few wrote about cricket or other games instead of carrom; some copied the comprehension; mere itemisation was observed, and there was often no clear connection between composition and picture.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2024/q1-v.png",
+        "description": "Five village boys sit around a board drawn in the dirt, with pockets dug at the corners, playing a carrom-like game using bottle caps as pieces.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-v.png"
+    },
+    {
+      "question_number": "2(i)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "Your friend was absent from school on a day when an unfortunate incident took place for which you were blamed. Write a letter to your friend giving details about the incident, your role in it and how the matter was finally resolved.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nDetails about the incident (a 'normal' event where something goes wrong): e.g. a game or classroom activity in which a prank is played / an accident / cheating / any act of misconduct or indiscipline (Any two)\nYour role in it: e.g. assisted in the prank / you could be the ringleader / you accidentally or deliberately hurt somebody / copied or assisted in copying / bullying (Any two)\nHow the problem was resolved: e.g. confession / apology / will not do it again / learnt a lesson (Any one)\nExpression: Language, syntax and vocabulary.",
+      "key_points": [
+        "Correct informal letter format",
+        "Details about the incident (a 'normal' event where something goes wrong) (any two): e.g. a game or classroom activity in which a prank is played / an accident / cheating / any act of misconduct or indiscipline",
+        "Your role in it (any two): e.g. assisted in the prank / you could be the ringleader / you accidentally or deliberately hurt somebody / copied or assisted in copying / bullying",
+        "How the problem was resolved (any one): e.g. confession / apology / will not do it again / learnt a lesson",
+        "Expression: Language, syntax and vocabulary."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Own role not described",
+        "Resolution missing",
+        "'Yours sincerely' in an informal letter",
+        "'Dear friend' without a name"
+      ],
+      "examiner_notes": "Many did not understand the whole question, focusing on the incident and how they were blamed; proving innocence and their role were often not described, and the resolution was sometimes missing. Some wrote about incidents outside school. Format: punctuation, 'February' spelling, wrong/missing year, 'Yours sincerely' subscription, ABC/XYZ signatures, 'Dear friend' without a name. Expression: spelling, grammar and sentence structure errors.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A friend",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Details about the incident (a 'normal' event where something goes wrong)",
+            "selection": "any_2",
+            "examples": [
+              "a game or classroom activity in which a prank is played",
+              "an accident",
+              "cheating",
+              "any act of misconduct or indiscipline"
+            ]
+          },
+          {
+            "element": "Your role in it",
+            "selection": "any_2",
+            "examples": [
+              "assisted in the prank",
+              "you could be the ringleader",
+              "you accidentally or deliberately hurt somebody",
+              "copied or assisted in copying",
+              "bullying"
+            ]
+          },
+          {
+            "element": "How the problem was resolved",
+            "selection": "any_1",
+            "examples": [
+              "confession",
+              "apology",
+              "will not do it again",
+              "learnt a lesson"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Language, syntax and vocabulary.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(ii)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "You wish to stage a play to create awareness about the importance of saving electricity. Write a letter to the Manager of a nearby shopping mall/supermarket requesting permission to use the space in front of the shopping mall/supermarket to stage the play. Give him/her details about your requirements and state why the play will be beneficial to the shoppers.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nRequest permission: e.g. Please may I / kindly grant\nDetails about requirement: e.g. date / time / other arrangements like stage, electricity, microphones\nWhy the play will be beneficial: e.g. conservation of resources / overuse of fossil fuels / creating awareness of the need to conserve\nExpression: Language, syntax and vocabulary.",
+      "key_points": [
+        "Correct formal letter format",
+        "Request permission: e.g. Please may I / kindly grant",
+        "Details about requirement: e.g. date / time / other arrangements like stage, electricity, microphones",
+        "Why the play will be beneficial: e.g. conservation of resources / overuse of fossil fuels / creating awareness of the need to conserve",
+        "Expression: Language, syntax and vocabulary."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Requirements not specified (only 'space')",
+        "Mall name missing from receiver's address",
+        "Informal language ('we are kids')"
+      ],
+      "examiner_notes": "Format: incomplete sender's address; name of the mall missing from the receiver's address; 'February' errors; 'Respected Sir', 'Yours sincerely', 'ABC'/'XYZ'. Content: weight went to benefits; requirements were neglected - many named only 'space' without specifics. Expression: punctuation, spelling, grammar, paragraphing errors; informal language such as 'we are kids'.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Manager of a shopping mall/supermarket",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Request permission",
+            "selection": null,
+            "examples": [
+              "Please may I",
+              "kindly grant"
+            ]
+          },
+          {
+            "element": "Details about requirement",
+            "selection": null,
+            "examples": [
+              "date",
+              "time",
+              "other arrangements like stage, electricity, microphones"
+            ]
+          },
+          {
+            "element": "Why the play will be beneficial",
+            "selection": null,
+            "examples": [
+              "conservation of resources",
+              "overuse of fossil fuels",
+              "creating awareness of the need to conserve"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Language, syntax and vocabulary.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(i)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Your school is hosting an Inter School Dance Competition. Write a notice to be put up on your school notice board informing the students about the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Rhythmic Beats / Twinkletoes / Happy Feet\nEvent: Inter School Dance Competition\nDate: Accept single date, for example a week or fortnight away from the date of writing\nTime: 10.00 a.m. - 3.00 p.m.\nVenue: smaller place to larger\nParticipation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before ...",
+      "key_points": [
+        "Creative Title: Rhythmic Beats / Twinkletoes / Happy Feet",
+        "Event: Inter School Dance Competition",
+        "Date: Accept single date, for example a week or fortnight away from the date of writing",
+        "Time: 10.00 a.m. - 3.00 p.m.",
+        "Venue: smaller place to larger",
+        "Participation: All pupils who wish to register should give their names to the Vice Principal/etc. on or before ..."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Missing/irrelevant creative title",
+        "Event date unrealistic or year missing",
+        "Notice written as a paragraph",
+        "Incomplete venue",
+        "Registration deadline after the event"
+      ],
+      "examiner_notes": "Creative titles were missing, used words naming the event, were irrelevant or too long. Event dates coincided with the exam, lacked the year, or were too far ahead (should be about 10-14 days after the notice). Details were written as a paragraph; date, time and venue were interchanged or incomplete. Registration dates were too close to or after the event.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Event",
+          "Date",
+          "Time",
+          "Venue",
+          "Participation"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Rhythmic Beats",
+              "Twinkletoes",
+              "Happy Feet"
+            ]
+          },
+          {
+            "element": "Event",
+            "selection": null,
+            "examples": [
+              "Inter School Dance Competition"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "Accept single date, for example a week or fortnight away from the date of writing"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "10.00 a.m. - 3.00 p.m."
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller place to larger"
+            ]
+          },
+          {
+            "element": "Participation",
+            "selection": null,
+            "examples": [
+              "All pupils who wish to register should give their names to the Vice Principal/etc. on or before ..."
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Rhythmic Beats",
+          "Twinkletoes",
+          "Happy Feet"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(ii)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is hosting an Inter School Dance Competition.\nWrite an email to the Principal of a neighbouring school to request him/her to send their dance teacher to act as a judge for the competition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id (recipient; official, with @ and provider)\nSubject\nSalutation\nOpening sentence\nClosing sentence\nSubscription\nExpression - All details of the notice are to be included in the e-mail.",
+      "key_points": [
+        "E-mail id (recipient; official, with @ and provider)",
+        "Subject",
+        "Salutation",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription",
+        "Expression - All details of the notice are to be included in the e-mail."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Incomplete or personal email id",
+        "Subject missing",
+        "'Respected Sir/Ma'am'",
+        "Notice details missing or inconsistent",
+        "Wrote as the principal"
+      ],
+      "examiner_notes": "Incomplete email ids (e.g. missing '@'); personal ids. Subject missing or without 'Dance Competition'. Unclear opening sentence; missing closing sentence; opening/closing overlapped with content, invitation placed in the closing. 'Respected Sir/Ma'am' or just 'thank you' and a name. Date, time and venue omitted or not matching the notice. Many assumed the identity of the principal.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Principal of a neighbouring school",
+        "format_elements": [
+          "E-mail id (recipient; official, with @ and provider)",
+          "Subject",
+          "Salutation",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression - All details of the notice are to be included in the e-mail.",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(1)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n1. perturbed (line 8)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) frightened",
+        "(b) unsettled",
+        "(c) confused",
+        "(d) mocked"
+      ],
+      "correct_answer": "(b) unsettled",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) unsettled",
+      "key_points": [],
+      "model_answer": "(b) unsettled",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'frightened'",
+        "Chose (c) 'confused'",
+        "Wrote all options"
+      ],
+      "examiner_notes": "Many errors: contextual meaning not understood; 'mocked', (c) 'confused' and 'frightened' were chosen; some wrote all the options.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(i)(2)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_mcq",
+      "question_text": "For each word given below choose the correct meaning (as used in the passage) from the options provided:\n2. stunted (line 19)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) prevented from growing",
+        "(b) prepared for tricks",
+        "(c) prevented from taking action",
+        "(d) allowed to do stunts"
+      ],
+      "correct_answer": "(a) prevented from growing",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) prevented from growing",
+      "key_points": [],
+      "model_answer": "(a) prevented from growing",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Many chose 'prevented from taking action'; some gave all the options.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "word_opposite_mcq",
+      "question_text": "Which word in the passage means the opposite of the word 'expensive'?",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) carefree",
+        "(b) ordinary",
+        "(c) cheap",
+        "(d) haggling"
+      ],
+      "correct_answer": "(c) cheap",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) cheap",
+      "key_points": [],
+      "model_answer": "(c) cheap",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'carefree'",
+        "Chose (b) 'ordinary'"
+      ],
+      "examiner_notes": "Many errors: some chose (b); several wrote 'carefree' instead of 'cheap'; many missed 'opposite'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(a)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words:\n(a) What kept Ashamanja Babu happy?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Two Hindi films and fish twice a week.",
+      "key_points": [
+        "Two Hindi films (a week)",
+        "fish twice a week"
+      ],
+      "model_answer": "Two Hindi films and fish twice a week.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Incomplete points",
+        "Copied the paragraph"
+      ],
+      "examiner_notes": "Many could not answer properly or give all the points; some copied the entire paragraph.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(b)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(b) What does this tell you about him?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "content, happy, satisfied, at peace with himself, and not overly ambitious.",
+      "key_points": [
+        "content / happy / satisfied",
+        "at peace with himself / not overly ambitious"
+      ],
+      "model_answer": "content, happy, satisfied, at peace with himself, and not overly ambitious.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Repeated earlier answer"
+      ],
+      "examiner_notes": "Many could not identify the key points; some repeated the same answer for all questions.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(c) What is that one other thing he needed to complete his happiness?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "dog",
+      "key_points": [
+        "a dog"
+      ],
+      "model_answer": "dog",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrote 'companionship' or 'pet' instead of 'dog'"
+      ],
+      "examiner_notes": "Several wrote companion/companionship/pet instead of 'dog'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(d)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(d) Why did Ashamanja Babu think the man was a beggar?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "clothes, five sewn-on patches on trousers and jacket.",
+      "key_points": [
+        "his clothes",
+        "(at least) five sewn-on patches on his trousers and jacket"
+      ],
+      "model_answer": "clothes, five sewn-on patches on trousers and jacket.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Omitted 'clothes'/patches"
+      ],
+      "examiner_notes": "Most missed the word 'clothes' or wrote generally without mentioning the clothes and their patched condition.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iii)(e)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "inference",
+      "question_text": "(e) Why did Ashamanja Babu forget about his oranges?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "so happy with the dog / got what he wanted / overjoyed - the oranges seemed trivial/unimportant.",
+      "key_points": [
+        "He was so happy/overjoyed with the dog / got what he wanted",
+        "so the oranges seemed trivial/unimportant"
+      ],
+      "model_answer": "so happy with the dog / got what he wanted / overjoyed - the oranges seemed trivial/unimportant.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Copied words without reasoning"
+      ],
+      "examiner_notes": "Repetitive points; most copied words from the passage without critical thinking.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(iv)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words, narrate the series of events from the time the puppy was taken out of the box till it was paid for.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. took out / put down (or both separately)\n2. offered as a cheap / happy / good dog\n3. pup shook off raindrops\n4. looked at Ashamanja Babu\n5. wagged its tail\n6. Ashamanja Babu moved closer\n7. Ashamanja Babu crouched on the ground\n8. stretched out his hand\n9. puppy licked his finger\n10. Ashamanja Babu haggled\n11. brought down the price / 10 to 7 rupees\n12. paid the money\n13. put pup in shoebox\n(Any 6 points in correct sequence)\nAccept any six points and implied meaning.",
+      "key_points": [
+        "took out / put down (or both separately)",
+        "offered as a cheap / happy / good dog",
+        "pup shook off raindrops",
+        "looked at Ashamanja Babu",
+        "wagged its tail",
+        "Ashamanja Babu moved closer",
+        "Ashamanja Babu crouched on the ground",
+        "stretched out his hand",
+        "puppy licked his finger",
+        "Ashamanja Babu haggled",
+        "brought down the price / 10 to 7 rupees",
+        "paid the money",
+        "put pup in shoebox"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Exceeded 50 words",
+        "Dropped articles to save words",
+        "Summarised the whole passage",
+        "Points out of sequence"
+      ],
+      "examiner_notes": "Many exceeded 50 words, dropped articles to cut the count, or summarised the whole passage. Grids and rough drafts were often missing; word count not given; long-winded phrasing. Some identified only two or three points or broke chronological order; marks were also lost for expression.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2024-q4",
+        "text": "Ashamanja Babu lived in a small flat in Bhowanipore. A clerk in the registry department of Lajpat Rai Post Office, Ashamanja Babu was fortunate as he could walk to his office in seven minutes flat without having to fight his way into the buses and trains of Calcutta. He lived a rather carefree life as he was not the kind of person to sit and brood about what might have been had Fate been kinder to him. On the whole, he was quite content with his lot. Two Hindi films and fish twice a week - these were enough to keep him happy. The only thing that perturbed him at times was his lack of companionship. A bachelor with few friends and relatives, he often wished he had a dog to keep him company. It need not be a huge Alsatian like the one owned by the Talukdars, who lived two houses down the lane; it could be any ordinary little dog which would follow him around morning and evening, wag its tail when he came home from work and obey his orders faithfully. Ashamanja Babu's secret desires were that he would speak to his dog in English. 'Stand up', 'Sit down', 'Shake hands' - how nice it would be if his dog obeyed such commands! That would make him really happy.\n\nOn a cloudy day marked by a steady drizzle, Ashamanja Babu went to the market in Hashimara to buy some oranges. At one end of the market, beside a stunted kul tree, sat a man. As their eyes met, the man smiled. Was he a beggar? His clothes made him look like one. Ashamanja Babu noticed at least five sewn-on patches on his trousers and jacket. But the man didn't have a begging bowl. Instead, by his side was a shoe-box with a little pup sticking its head out of it.\n\n'Good morning!' said the man in English. Ashamanja Babu was obliged to return the greeting.\n\n'Buy dog? Dog buy? Very good dog.' The man had taken the pup out of the box and had put it down on the ground. 'Very cheap. Very good. Happy dog.'\n\nThe pup shook the raindrops off its coat, looked at Ashamanja Babu and wagged its minuscule two-inch tail. Ashamanja Babu moved closer to the pup, crouched on the ground and stretched out his hand. The pup gave his ring finger a lick with its pink tongue. Nice, friendly dog.\n\n'How much? What price?'\n\n'Ten rupees.'\n\nA little haggling and the price came down to seven rupees. Ashamanja Babu paid the money, put the pup back in the shoe-box, closed the lid to save it from the drizzle, and turned homewards, forgetting all about the oranges.",
+        "source": "Ashamanja Babu's Dog by Satyajit Ray",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "took out / put down (or both separately)",
+          "offered as a cheap / happy / good dog",
+          "pup shook off raindrops",
+          "looked at Ashamanja Babu",
+          "wagged its tail",
+          "Ashamanja Babu moved closer",
+          "Ashamanja Babu crouched on the ground",
+          "stretched out his hand",
+          "puppy licked his finger",
+          "Ashamanja Babu haggled",
+          "brought down the price / 10 to 7 rupees",
+          "paid the money",
+          "put pup in shoebox"
+        ],
+        "points_required": 6,
+        "sequence_required": true,
+        "scheme_note": "Accept any six points and implied meaning.",
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage but write in correct serial order the word or phrase appropriate to the blank space.\nExample: Next day my uncle (0) ______ (spend) a lot of time. Answer: (0) spent\nHe (1) ______ (select) clothes for me, and my aunt (2) ______ (give) my face a scrub and (3) ______ (groom) me. My uncle (4) ______ (follow) me about (5) ______ (utter) several pieces of advice before (6) ______ (let) me out. 'You must never scowl even if the sun (7) ______ (hit) you in the eyes. You must try (8) ______ (look) pleasant.'",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(5) uttering"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. spent] (1) selected  (2) gave  (3) groomed  (4) followed  (5) uttered / uttering  (6) letting  (7) hits  (8) to look",
+      "key_points": [
+        "(1) selected",
+        "(2) gave",
+        "(3) groomed",
+        "(4) followed",
+        "(5) uttered / uttering",
+        "(6) letting",
+        "(7) hits",
+        "(8) to look"
+      ],
+      "model_answer": "(1) selected\n(2) gave\n(3) groomed\n(4) followed\n(5) uttered\n(6) letting\n(7) hits\n(8) to look",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Present tense for past (selects, follows, utters)",
+        "'gaves', 'gromed', 'hites' spellings",
+        "(8) 'looking' for 'to look'"
+      ],
+      "examiner_notes": "Common errors: (1) selects/select/'selets', (2) give/'gaves', (3) grooms/'gromed', (4) follows, (5) utters, (6) lets, (7) heats/hit/'hites', (8) looking. Some gave two answers.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "select",
+          "answer": "selected",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "give",
+          "answer": "gave",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "groom",
+          "answer": "groomed",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "follow",
+          "answer": "followed",
+          "accepted": []
+        },
+        {
+          "item": "5",
+          "prompt": "utter",
+          "answer": "uttered",
+          "accepted": [
+            "uttering"
+          ]
+        },
+        {
+          "item": "6",
+          "prompt": "let",
+          "answer": "letting",
+          "accepted": []
+        },
+        {
+          "item": "7",
+          "prompt": "hit",
+          "answer": "hits",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "look",
+          "answer": "to look",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in the blanks with appropriate words.\n(a) There's a black cat sitting ______ the wall.\n(b) The horse jumped ______ the hedge.\n(c) Mother goes ______ the market every day.\n(d) Several people have climbed Mount Everest ______ recent years.\n(e) I often go to school ______ my friend.\n(f) I have left my keys ______ home.\n(g) Instead of talking, prove your worth ______ doing something.\n(h) I have not slept ______ yesterday.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(a) on  (b) over  (c) to  (d) in  (e) with  (f) at  (g) by  (h) since",
+      "key_points": [
+        "(a) on",
+        "(b) over",
+        "(c) to",
+        "(d) in",
+        "(e) with",
+        "(f) at",
+        "(g) by",
+        "(h) since"
+      ],
+      "model_answer": "(a) on\n(b) over\n(c) to\n(d) in\n(e) with\n(f) at\n(g) by\n(h) since",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(a) 'beside'",
+        "(b) 'across'",
+        "(d) 'over'",
+        "(f) 'in'",
+        "(h) 'from'"
+      ],
+      "examiner_notes": "Common errors: (a) beside, (b) across, (c) for, (d) over, (e) for, (f) in, (g) after, (h) from. A few wrote more than one answer.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "a",
+          "prompt": "sitting ___ the wall",
+          "answer": "on",
+          "accepted": []
+        },
+        {
+          "item": "b",
+          "prompt": "jumped ___ the hedge",
+          "answer": "over",
+          "accepted": []
+        },
+        {
+          "item": "c",
+          "prompt": "goes ___ the market",
+          "answer": "to",
+          "accepted": []
+        },
+        {
+          "item": "d",
+          "prompt": "___ recent years",
+          "answer": "in",
+          "accepted": []
+        },
+        {
+          "item": "e",
+          "prompt": "go to school ___ my friend",
+          "answer": "with",
+          "accepted": []
+        },
+        {
+          "item": "f",
+          "prompt": "left my keys ___ home",
+          "answer": "at",
+          "accepted": []
+        },
+        {
+          "item": "g",
+          "prompt": "prove your worth ___ doing something",
+          "answer": "by",
+          "accepted": []
+        },
+        {
+          "item": "h",
+          "prompt": "not slept ___ yesterday",
+          "answer": "since",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n1. The magician took pity on the mouse. He turned it into a cat.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Showing pity on the mouse he turned it into a cat.",
+        "(b) Taking pity on the mouse he turned it into a cat.",
+        "(c) The magician turned the mouse into a cat by taking pity.",
+        "(d) Taking pity on the mouse the magician turned it into a cat."
+      ],
+      "correct_answer": "(d) Taking pity on the mouse the magician turned it into a cat.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Taking pity on the mouse the magician turned it into a cat.",
+      "key_points": [],
+      "model_answer": "(d) Taking pity on the mouse the magician turned it into a cat.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b) (subject 'he' unclear)"
+      ],
+      "examiner_notes": "Option letters did not match statements; some wrote incomplete sentences or confused (b) and (d).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n2. This work must be completed. There is a deadline.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Since this work must be completed, there is a deadline.",
+        "(b) This work must be completed because there is a deadline.",
+        "(c) This work must be completed though there is a deadline.",
+        "(d) This work must be completed when there is a deadline."
+      ],
+      "correct_answer": "(b) This work must be completed because there is a deadline.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) This work must be completed because there is a deadline.",
+      "key_points": [],
+      "model_answer": "(b) This work must be completed because there is a deadline.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'Since'"
+      ],
+      "examiner_notes": "Many chose (a); some used 'though' or 'since' instead of 'because'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n3. He fled somewhere. His pursuers could not follow him.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He fled where his pursuers could not follow him.",
+        "(b) He pursued somewhere his followers could not flee.",
+        "(c) He fled somewhere when his pursuers could not follow him.",
+        "(d) He fled where his pursuers cannot follow him."
+      ],
+      "correct_answer": "(a) He fled where his pursuers could not follow him.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) He fled where his pursuers could not follow him.",
+      "key_points": [],
+      "model_answer": "(a) He fled where his pursuers could not follow him.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (d) 'cannot'"
+      ],
+      "examiner_notes": "Many chose the present 'cannot' instead of past 'could not'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iii)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Choose the correct option to make one complete sentence without using and, but or so.\n4. He began late. He finished first.",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He finished first and began late.",
+        "(b) He began first but finished late.",
+        "(c) Though he finished late, he began first.",
+        "(d) Though he began late, he finished first."
+      ],
+      "correct_answer": "(d) Though he began late, he finished first.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Though he began late, he finished first.",
+      "key_points": [],
+      "model_answer": "(d) Though he began late, he finished first.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c)"
+      ],
+      "examiner_notes": "Several chose (c) instead of (d).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(1)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n1. Arun and Nikhil had climbed the mountain.\n(Add a question tag)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Arun and Nikhil had climbed the mountain, didn't they?",
+        "(b) Arun and Nikhil had climbed the mountain, had they?",
+        "(c) Arun and Nikhil had climbed the mountain, hadn't they?",
+        "(d) Arun and Nikhil had climbed the mountain, did they?"
+      ],
+      "correct_answer": "(c) Arun and Nikhil had climbed the mountain, hadn't they?",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Arun and Nikhil had climbed the mountain, hadn't they?",
+      "key_points": [],
+      "model_answer": "(c) Arun and Nikhil had climbed the mountain, hadn't they?",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'didn't they'"
+      ],
+      "examiner_notes": "Many chose (a) instead of (c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(2)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n2. The children have broken the window pane.\n(Begin: The window pane.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The window pane had been broken by the children.",
+        "(b) The window pane has been broken by the children.",
+        "(c) The window pane has not been broken by the children.",
+        "(d) The window pane had not been broken by the children."
+      ],
+      "correct_answer": "(b) The window pane has been broken by the children.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) The window pane has been broken by the children.",
+      "key_points": [],
+      "model_answer": "(b) The window pane has been broken by the children.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (a) 'had been'"
+      ],
+      "examiner_notes": "Many ignored the present perfect 'have broken' and chose (a) with 'had been'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(3)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n3. The apples are so cheap that they cannot be good.\n(Use: 'too')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) The apples are too cheap and good.",
+        "(b) The apples are too cheap as well as good.",
+        "(c) The apples are too good to be cheap.",
+        "(d) The apples are too cheap to be good."
+      ],
+      "correct_answer": "(d) The apples are too cheap to be good.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) The apples are too cheap to be good.",
+      "key_points": [],
+      "model_answer": "(d) The apples are too cheap to be good.",
+      "model_answer_verified": true,
+      "common_errors": [],
+      "examiner_notes": "Most correct; a few chose distractors (a)/(b)/(c).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(4)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n4. She is very clever and beautiful.\n(Use: 'not only')",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Not only is she very clever but also beautiful.",
+        "(b) Not only was she beautiful and she was also clever.",
+        "(c) Not only is she clever she was also very beautiful.",
+        "(d) Not only was she very beautiful but is also clever."
+      ],
+      "correct_answer": "(a) Not only is she very clever but also beautiful.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(a) Not only is she very clever but also beautiful.",
+      "key_points": [],
+      "model_answer": "(a) Not only is she very clever but also beautiful.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Tense changed to 'was'"
+      ],
+      "examiner_notes": "A few chose (b)/(c)/(d), focusing on past 'was' instead of present 'is'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(5)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n5. I prefer a simple vanilla ice cream to fancy desserts.\n(Begin: I would rather.........)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) I would rather have a simple vanilla ice cream to fancy desserts.",
+        "(b) I would rather have a simple vanilla ice cream than fancy desserts.",
+        "(c) I would rather prefer a simple vanilla ice cream than fancy desserts.",
+        "(d) I would rather have a vanilla ice cream than a fancy dessert."
+      ],
+      "correct_answer": "(b) I would rather have a simple vanilla ice cream than fancy desserts.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(b) I would rather have a simple vanilla ice cream than fancy desserts.",
+      "key_points": [],
+      "model_answer": "(b) I would rather have a simple vanilla ice cream than fancy desserts.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'rather prefer'"
+      ],
+      "examiner_notes": "Many chose (c) with 'rather prefer'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(6)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n6. He asked, \"When do you intend to make the payment?\"\n(Begin: He asked ......)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) He asked when he did intend to make the payment.",
+        "(b) He asked when she is intending to make the payment.",
+        "(c) He asked when I intended to make the payment.",
+        "(d) He asked when they are intending to make the payment."
+      ],
+      "correct_answer": "(c) He asked when I intended to make the payment.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) He asked when I intended to make the payment.",
+      "key_points": [],
+      "model_answer": "(c) He asked when I intended to make the payment.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Pronoun/tense not changed together"
+      ],
+      "examiner_notes": "Many did not consider all the elements of the narration change.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(7)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n7. If the rain does not stop, Mariam will not be able to do the laundry.\n(Begin: Unless....)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Unless the rain does not stop, Mariam will not be able to do the laundry.",
+        "(b) Unless Mariam does the laundry, the rain will not stop.",
+        "(c) Unless the rain stop, Mariam will not be able to do the laundry.",
+        "(d) Unless the rain stops, Mariam will not be able to do the laundry."
+      ],
+      "correct_answer": "(d) Unless the rain stops, Mariam will not be able to do the laundry.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(d) Unless the rain stops, Mariam will not be able to do the laundry.",
+      "key_points": [],
+      "model_answer": "(d) Unless the rain stops, Mariam will not be able to do the laundry.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (c) 'stop' (agreement)"
+      ],
+      "examiner_notes": "Many chose (c) instead of (d), confused by distractors.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(iv)(8)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Choose the correct option and rewrite the sentence according to the instruction given after each.\n8. This is the best movie I have ever seen.\n(Begin: Never....)",
+      "is_subjective": false,
+      "question_type": "mcq",
+      "evaluation_mode": "deterministic",
+      "options": [
+        "(a) Never had I seen a good movie than this.",
+        "(b) Never I have seen a better movie than this.",
+        "(c) Never have I seen a better movie than this.",
+        "(d) I have never seen a good movie as this."
+      ],
+      "correct_answer": "(c) Never have I seen a better movie than this.",
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": 1,
+      "scheme_text": "(c) Never have I seen a better movie than this.",
+      "key_points": [],
+      "model_answer": "(c) Never have I seen a better movie than this.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Chose (b), no inversion after 'Never'"
+      ],
+      "examiner_notes": "Most correct; a few chose (b).",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Stress originality; teach plot structure, dialogue, character building and logical endings",
+      "Explain the difference between a short story and a first-person account",
+      "Ensure each sub-part of the question is answered without overlap",
+      "Use precise language, vivid detail and figurative language in descriptions",
+      "For argument: strong stance, three or four main points with examples; conduct class debates",
+      "Use the picture as a precursor to the composition; avoid itemisation"
+    ],
+    "2": [
+      "Teach correct format (address, date, salutation, subscription) via CISCE's website",
+      "Read the question carefully and develop every point; identify key elements (event, requirements, benefits)",
+      "Avoid contractions, short forms and colloquial language"
+    ],
+    "3": [
+      "Refer to www.cisce.org for format; practise two-to-three-word creative titles",
+      "Event date 10-14 days after the notice; gap between registration and event",
+      "Distinguish personal and official email ids; copy the event as the email subject",
+      "Notice and email date, time and venue must correspond"
+    ],
+    "4": [
+      "Dictionary work, word games, synonyms and homonyms",
+      "Choose only one option",
+      "Use own words rather than copying",
+      "Teach cause-and-effect and inference",
+      "Keep summaries within 50 words, in sequence, without dropping articles"
+    ],
+    "5": [
+      "Teach tense changes and spelling of verb forms",
+      "Practise prepositions and phrasal verbs",
+      "Write one option and match letter to statement",
+      "Revise question tags, voice, too/so, not only, rather...than, reported speech, inversion after 'Never'"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Q1(i): short scripts or overlong compositions",
+      "Q1(ii): the concept of 'difficult task'",
+      "Q2 & Q3: formats of letter, notice and email",
+      "Q4(iv): higher-order questions and summary writing",
+      "Q5(i) & (ii): prepositions and phrasal verbs",
+      "Tense usage, punctuation, spelling, singular/plural, articles, conjunctions"
+    ],
+    "confusions": [
+      "Contextual meanings of words",
+      "Grammar, sentence structure and syntax",
+      "Identifying a question as factual/text-based or analytical"
+    ]
+  }
+}

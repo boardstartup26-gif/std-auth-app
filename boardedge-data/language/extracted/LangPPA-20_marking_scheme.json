@@ -1,0 +1,1827 @@
+{
+  "year": 2020,
+  "paper": "1",
+  "subject": "English Language",
+  "board": "ICSE",
+  "class": 10,
+  "source": "CISCE ICSE English Language (Paper 1) 2020 - Analysis of Pupil Performance (raw/LangPPA-20.pdf)",
+  "paper_total_marks": 80,
+  "schema_version": "english-language-v1",
+  "marking_schemes": [
+    {
+      "question_number": "1(a)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Short Story",
+      "task_type": "short_story",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWrite an original short story entitled 'The Secret'.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "The short story must be centred around something that was kept a secret for a long time and was later revealed. The revelation should include an element of surprise or suspense. A touch of humour must be given merit.",
+      "key_points": [
+        "Original story centred on something kept secret for a long time and later revealed",
+        "The revelation carries surprise or suspense",
+        "Merit for a touch of humour"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Secret never revealed, or revealed too early",
+        "Lifted a prescribed story",
+        "First-person narrative instead of a story"
+      ],
+      "examiner_notes": "Many did not understand 'original'; some plagiarised 'Hearts and Hands' from the prescribed short stories. Quite a few never revealed the secret, or revealed it in the second paragraph, losing surprise. Some wrote a first-person narrative; plot, setting, sequence and characters were unclear; endings were weak.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "short_story",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": "The Secret",
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(b)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Argumentative Composition",
+      "task_type": "argumentative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\n'A family without pets is an incomplete family'.\nExpress your views either for or against this statement.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Argumentative essay: Views for or against the motion are to be accepted. Credit is to be given for a cohesive, well-constructed, logical argument, ideas and reasoning based on personal experience. Candidates must establish why pets are or are not important for the wellbeing and happiness of the family. Examples should be given to prove their argument. Candidates must take a clear stand and give valid reasons for their opinion. [2 to 3 points]",
+      "key_points": [
+        "Takes one clear stand, either for or against",
+        "Establishes why pets are or are not important for the family's wellbeing and happiness",
+        "Examples support the argument",
+        "2 to 3 well-developed points; cohesive logical argument"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Wrote about pet care instead of the proposition",
+        "Confused pets with livestock",
+        "Argued both sides"
+      ],
+      "examiner_notes": "Many strayed from the proposition, focusing on grooming pets. Most lacked ideas; some confused pets with domesticated animals (cows, goats). Many failed to take a stand and argued both sides; arguments were too few.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "argumentative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": "for_or_against",
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(c)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Descriptive Composition",
+      "task_type": "descriptive",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nWhich do you prefer - morning, afternoon, evening or night?\nDescribe your favourite time of the day. What are the sights, sounds, smells and feelings that you associate with your favourite time of the day? Why do you like this part of the day better than the others.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "This is descriptive composition, and the candidate must choose the best part of the day. A brief description of the time and reasons for the choice must be given.",
+      "key_points": [
+        "Chooses one favourite part of the day",
+        "Description with sights, sounds, smells and feelings",
+        "Reasons for preferring it over the others"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Described every part of the day",
+        "Described seasons instead",
+        "Mixed tenses"
+      ],
+      "examiner_notes": "Many described all parts of the day instead of justifying one. Poor linguistic ability, garbled tenses and underdeveloped description were common; some described seasons instead.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "descriptive",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(d)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Personal Narrative",
+      "task_type": "personal_narrative",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nHave you ever said or done something that changed the life of another person? Give an account of your words or actions that led to this change and describe how the experience made you feel.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "A brief account of words or actions. The impact on the other person, the effect on the narrator. This is a first-person account. 'I' must be the protagonist. [Action/impact can be positive or negative]",
+      "key_points": [
+        "First-person account with 'I' as the protagonist",
+        "Brief account of the narrator's words or actions",
+        "The impact on the other person",
+        "The effect on the narrator (feelings); impact may be positive or negative"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Role reversal: someone else changed the narrator's life",
+        "Memorised essay"
+      ],
+      "examiner_notes": "Many reproduced memorised guidebook essays (identical themes). The most common error was role reversal: describing another person's impact on the candidate instead of the reverse. Weak vocabulary and expression.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "personal_narrative",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "1(e)",
+      "parent_question_number": "1",
+      "section": "composition",
+      "chapter": "Composition",
+      "topic": "Picture Composition",
+      "task_type": "picture_composition",
+      "question_text": "Write a composition (300 - 350 words) on the following:\nStudy the picture given below. Write a story or a description or an account of what it suggests to you. Your composition may be about the subject of the picture or you may take suggestions from it; however, there must be a clear connection between the picture and your composition.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 20,
+      "marks_per_correct_point": null,
+      "scheme_text": "Picture Composition: Accept a wide interpretation. Any relevant ideas taken from the picture should be accepted. However, a mere itemization / listing / description of the picture is not to be given credit.",
+      "key_points": [
+        "Clear connection between the picture and the composition",
+        "Wide interpretation accepted: story, description or account",
+        "No credit for mere itemisation/listing/description of the picture"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Listed the picture's elements",
+        "No connection to the picture",
+        "Drifted to unrelated themes"
+      ],
+      "examiner_notes": "Connection between picture and composition was lacking in most cases; a few wrote on the negative impact of mobile phones; many lacked a conclusion. Listing the picture's elements was the most common error; some described a sight seen on a journey or shifted to child labour.",
+      "choice_group": {
+        "group": "1",
+        "attempt": "any_one",
+        "of": 5
+      },
+      "writing_task": {
+        "form": "picture_composition",
+        "word_limit": {
+          "min": 300,
+          "max": 350
+        },
+        "time_guidance_minutes": 30,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": null,
+        "format_elements": [],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Relevance to the chosen topic and every part of the task addressed",
+          "Content and development of ideas",
+          "Organisation: paragraphing, coherence, logical flow",
+          "Expression: vocabulary, sentence structure, grammar, spelling and punctuation"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Mere itemisation / listing / description of the picture (no credit)"
+        ],
+        "mark_split_published": false
+      },
+      "stimulus": {
+        "type": "picture",
+        "image_file": "2020/q1-e.png",
+        "description": "A group of smiling village children pose together on a dirt lane as one boy holds up a mobile phone to take a selfie of them all.",
+        "description_source": "written from the printed picture; not part of the CISCE paper",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": true,
+      "diagram_file": "q1-e.png"
+    },
+    {
+      "question_number": "2(a)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Informal Letter",
+      "task_type": "informal_letter",
+      "question_text": "You have changed your school recently. Write a letter to your friend in your old school telling him / her what you like about your new school but also what you miss about your old school.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Friendly/Informal letter)\nContent\nWhy you like the new school (Two or three)\nWhy you miss the old school (Two or three)\nExpression: criteria not itemised in the 2020 scheme.\nExplanatory Note: 1. Friend's name should be mentioned in the salutation. 2. In the content there must be a total of five points between like and dislike. Format (as printed in the 2020 scheme) - Friendly letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct informal letter format",
+        "Why you like the new school (two or three)",
+        "Why you miss the old school (two or three)",
+        "Expression: criteria not itemised in the 2020 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Friend's name missing from salutation",
+        "Liked/missed points reversed or missing",
+        "'Your's sincerely'",
+        "Bald statement 'I miss my old school'"
+      ],
+      "examiner_notes": "Most did well. Format: mixed formats; 'Dear friend' combinations or 'Respected Sir'; missing commas; 'Your's sincerely', 'Yours truely', 'Yours lovingly, ABC'; wrong dates. Content: some wrote about liking the old school, did not say what they missed, did not mention the change of school (or wrote of a change of city), or stated 'I miss my old school' without reasons.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "informal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "A friend at the old school",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Salutation addressing the recipient by name or relation (e.g. Dear Riya / Dear Grandma)",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (e.g. Yours lovingly / Yours affectionately), no apostrophe in 'Yours'",
+          "Sender's first name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Why you like the new school",
+            "selection": "2_to_3",
+            "examples": []
+          },
+          {
+            "element": "Why you miss the old school",
+            "selection": "2_to_3",
+            "examples": []
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2020 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "2(b)",
+      "parent_question_number": "2",
+      "section": "letter",
+      "chapter": "Letter Writing",
+      "topic": "Formal Letter",
+      "task_type": "formal_letter",
+      "question_text": "Some taps in your locality are left open all day resulting in a tremendous waste of water. Write a letter to the Municipal Commissioner of your town / city, complaining about the problem. Suggest ways in which this waste of water can be prevented.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 10,
+      "marks_per_correct_point": null,
+      "scheme_text": "Format (Formal letter)\nContent\nComplaints: e.g. water wastage / dirty / slippery / unhealthy / stagnant water / causes severe shortages (Any two)\nSuggestions: e.g. call the plumber / repair / install tank / change valve / frequent monitoring / shut off the mains / helpline / any other suggestions (Any two)\nExpression: criteria not itemised in the 2020 scheme.\nExplanatory Note: Designation and name of the city should be mentioned in the 'To' address. Format (as printed in the 2020 scheme) - Friendly letter: Address, Date, Salutation, Subscription, First name. Formal letter: From address, Date, To address, Salutation, Subscription, Name + surname / initial.",
+      "key_points": [
+        "Correct formal letter format",
+        "Complaints (any two): e.g. water wastage / dirty / slippery / unhealthy / stagnant water / causes severe shortages",
+        "Suggestions (any two): e.g. call the plumber / repair / install tank / change valve / frequent monitoring / shut off the mains / helpline / any other suggestions",
+        "Expression: criteria not itemised in the 2020 scheme."
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Taps in homes instead of public taps",
+        "Problems caused not described",
+        "Only 'close the taps' as a suggestion",
+        "City missing from the 'To' address"
+      ],
+      "examiner_notes": "Format: no address (school name or 'Examination hall'); February misspelt; wrong dates; no 'Sir'/'Madam'; 'your's'. Content: taps in houses mistaken for taps in the locality; problems caused by the waste not mentioned; suggestions inadequate (only 'close the taps'). Expression: casual language and faulty construction.",
+      "choice_group": {
+        "group": "2",
+        "attempt": "any_one",
+        "of": 2
+      },
+      "writing_task": {
+        "form": "formal_letter",
+        "word_limit": null,
+        "time_guidance_minutes": 20,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Municipal Commissioner",
+        "format_elements": [
+          "Sender's address",
+          "Date (day, month written in full, year)",
+          "Receiver's address beginning with the designation, then organisation and city",
+          "Salutation (Sir / Madam / Dear Sir / Dear Madam), not 'Respected Sir'",
+          "Subject line",
+          "Body: opening sentence, content paragraphs, closing sentence",
+          "Subscription (Yours faithfully), no apostrophe in 'Yours'",
+          "Sender's full name"
+        ],
+        "content_requirements": [
+          {
+            "element": "Complaints",
+            "selection": "any_2",
+            "examples": [
+              "water wastage",
+              "dirty",
+              "slippery",
+              "unhealthy",
+              "stagnant water",
+              "causes severe shortages"
+            ]
+          },
+          {
+            "element": "Suggestions",
+            "selection": "any_2",
+            "examples": [
+              "call the plumber",
+              "repair",
+              "install tank",
+              "change valve",
+              "frequent monitoring",
+              "shut off the mains",
+              "helpline",
+              "any other suggestions"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "criteria not itemised in the 2020 scheme.",
+        "penalised": [],
+        "mark_split_published": false
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(a)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Notice Writing",
+      "task_type": "notice",
+      "question_text": "Your school is organising a fete / carnival to raise funds for victims of the recent floods in your State. Write a notice to be put up on the school notice board giving details of the event.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "Creative Title: Carnival / Fun time / Care and Share / Helping hands [English words only]\nEvent: ...School helps flood victims\nDate: Any date in March (date + month + year)\nTime: accept any time - a.m./am/A.M.\nVenue: smaller to bigger place\nInvite participation: to whom to apply to, etc. [Target audience]",
+      "key_points": [
+        "Creative Title: Carnival / Fun time / Care and Share / Helping hands [English words only]",
+        "Event: ...School helps flood victims",
+        "Date: Any date in March (date + month + year)",
+        "Time: accept any time - a.m./am/A.M.",
+        "Venue: smaller to bigger place",
+        "Invite participation: to whom to apply to, etc. [Target audience]"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Missing/inappropriate creative title",
+        "Purpose (flood relief) omitted",
+        "Notice as a paragraph",
+        "Unrealistic date"
+      ],
+      "examiner_notes": "Creative titles were missing, inappropriate or long ('Fund', 'Let us Enjoy Carnival'). Details were given as a paragraph. Event dates were too far ahead or on the exam date (should be 7-14 days after the notice). Some took the event as a cultural competition or omitted its fund-raising purpose. Details were interchanged or incomplete (no year, vague venue).",
+      "choice_group": null,
+      "writing_task": {
+        "form": "notice",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "Students of the school",
+        "format_elements": [
+          "Creative Title",
+          "Event",
+          "Date",
+          "Time",
+          "Venue",
+          "Invite participation"
+        ],
+        "content_requirements": [
+          {
+            "element": "Creative Title",
+            "selection": null,
+            "examples": [
+              "Carnival",
+              "Fun time",
+              "Care and Share",
+              "Helping hands [English words only]"
+            ]
+          },
+          {
+            "element": "Event",
+            "selection": null,
+            "examples": [
+              "...School helps flood victims"
+            ]
+          },
+          {
+            "element": "Date",
+            "selection": null,
+            "examples": [
+              "Any date in March (date + month + year)"
+            ]
+          },
+          {
+            "element": "Time",
+            "selection": null,
+            "examples": [
+              "accept any time - a.m./am/A.M."
+            ]
+          },
+          {
+            "element": "Venue",
+            "selection": null,
+            "examples": [
+              "smaller to bigger place"
+            ]
+          },
+          {
+            "element": "Invite participation",
+            "selection": null,
+            "examples": [
+              "to whom to apply to, etc. [Target audience]"
+            ]
+          }
+        ],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": null,
+        "penalised": [
+          "Words from the question used in the creative title (recommended against)"
+        ],
+        "mark_split_published": false,
+        "creative_title_examples": [
+          "Carnival",
+          "Fun time",
+          "Care and Share",
+          "Helping hands"
+        ]
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "3(b)",
+      "parent_question_number": "3",
+      "section": "notice_email",
+      "chapter": "Notice and Email Writing",
+      "topic": "Email Writing",
+      "task_type": "email",
+      "question_text": "Your school is organising a fete / carnival to raise funds for victims of the recent floods in your State.\nWrite an e-mail to the Principal of a neighbouring school, inviting him/ her to send their candidates to attend the fete / carnival.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "rubric_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 5,
+      "marks_per_correct_point": null,
+      "scheme_text": "E-mail id [No name to be used in the email id]\nSubject: Invitation + for the event\nSalutation [As in formal letter]\nOpening sentence\nClosing sentence\nSubscription [As in formal letter]\nExpression - All details of the notice are to be included in full sentences in the e-mail. [Date/time/venue should be included.]",
+      "key_points": [
+        "E-mail id [No name to be used in the email id]",
+        "Subject: Invitation + for the event",
+        "Salutation [As in formal letter]",
+        "Opening sentence",
+        "Closing sentence",
+        "Subscription [As in formal letter]",
+        "Expression - All details of the notice are to be included in full sentences in the e-mail. [Date/time/venue should be included.]"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Personal email id / name in id",
+        "Subject missing",
+        "Invited only the Principal",
+        "Date/time/venue missing"
+      ],
+      "examiner_notes": "Incorrect or personal email ids; subject missing; unclear opening; missing closing; opening/closing overlapping the content; 'Respected sir/Ma'am'. Date, venue, time missing (only the exam date given). Some invited only the Principal rather than asking them to send pupils.",
+      "choice_group": null,
+      "writing_task": {
+        "form": "email",
+        "word_limit": null,
+        "time_guidance_minutes": null,
+        "required_opening": null,
+        "required_title": null,
+        "required_ending": null,
+        "stance": null,
+        "recipient": "The Principal of a neighbouring school",
+        "format_elements": [
+          "E-mail id [No name to be used in the email id]",
+          "Subject: Invitation + for the event",
+          "Salutation [As in formal letter]",
+          "Opening sentence",
+          "Closing sentence",
+          "Subscription [As in formal letter]"
+        ],
+        "content_requirements": [],
+        "assessment_criteria": [
+          "Format",
+          "Content",
+          "Expression"
+        ],
+        "expression_criteria": "Expression - All details of the notice are to be included in full sentences in the e-mail. [Date/time/venue should be included.]",
+        "penalised": [],
+        "mark_split_published": false,
+        "question_text_note": "Event context from 3(i) prefixed so this question stands alone."
+      },
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(i)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(i) assigned (line 3)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "to give for a particular purpose",
+        "given",
+        "allocated"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "allotted / to give for a particular purpose / given / allocated",
+      "key_points": [
+        "A contextual meaning of 'assigned' in the right form: allotted / to give for a particular purpose / given / allocated"
+      ],
+      "model_answer": "allotted",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Meaning not in context or wrong word form"
+      ],
+      "examiner_notes": "Many gave meanings that did not fit when substituted in the passage, or in the wrong form (e.g. 'to give' instead of 'given'); 'something registered to a particular person' was seen.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(ii) ideal (line 19)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "the best possible",
+        "appropriate",
+        "flawless",
+        "most appropriate",
+        "most suitable",
+        "excellent"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "perfect / the best possible / appropriate / flawless / most appropriate / most suitable / excellent",
+      "key_points": [
+        "A contextual meaning of 'ideal' in the right form: perfect / the best possible / appropriate / flawless / most appropriate / most suitable / excellent"
+      ],
+      "model_answer": "perfect",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Meaning not in context or wrong word form"
+      ],
+      "examiner_notes": "Some gave 'beneficial', which does not fit the context.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(a)(iii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Vocabulary in Context",
+      "task_type": "vocabulary_free",
+      "question_text": "Give the meaning of the following words as used in the passage. One-word answers or short phrases will be accepted.\n(iii) independent (line 24)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "free",
+        "not needing or wanting help",
+        "separate",
+        "without any help",
+        "self-reliant",
+        "without assistance"
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "self-directed / free / not needing or wanting help / separate / without any help / self-reliant / without assistance",
+      "key_points": [
+        "A contextual meaning of 'independent' in the right form: self-directed / free / not needing or wanting help / separate / without any help / self-reliant / without assistance"
+      ],
+      "model_answer": "self-directed",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Meaning not in context or wrong word form"
+      ],
+      "examiner_notes": "Some wrote 'without any dependent'; some explained meanings in sentences.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(i)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "Answer the following questions briefly in your own words.\n(i) What was unusual about the seating arrangement?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "The children were allowed to sit / anywhere they like.",
+      "key_points": [
+        "The children were allowed to sit",
+        "anywhere they liked (at any time), unlike a fixed desk"
+      ],
+      "model_answer": "The children were allowed to sit / anywhere they like.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrote about the railway carriage",
+        "Omitted 'anywhere they liked'"
+      ],
+      "examiner_notes": "Many wrote about attending class in a railway carriage; some copied paragraphs; some gave only 'could sit' without 'anywhere they liked'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(ii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(ii) How did the method of teaching help the teacher?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "Enabled the teacher to observe / what were they interested in / their way of thinking / their character.",
+      "key_points": [
+        "It enabled the teacher to observe the pupils",
+        "what they were interested in / their way of thinking / their character"
+      ],
+      "model_answer": "Enabled the teacher to observe / what were they interested in / their way of thinking / their character.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Described the schedule"
+      ],
+      "examiner_notes": "Most wrote all the points; some described the day's schedule instead of the method.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(iii)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(iii) Why did the pupils enjoy their lessons at this school?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "They loved starting with their favourite subject / had all day to cope with what they didn't like / could work independently. [any two points]",
+      "key_points": [
+        "Any two: they could start with their favourite subject",
+        "had all day to cope with subjects they disliked",
+        "could work independently"
+      ],
+      "model_answer": "They loved starting with their favourite subject / had all day to cope with what they didn't like / could work independently. [any two points]",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Copied without giving reasons"
+      ],
+      "examiner_notes": "Some copied part of the passage without focusing on the reason.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(iv)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "comprehension_short",
+      "question_text": "(iv) What different things did the first-grade pupils do?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 2,
+      "marks_per_correct_point": null,
+      "scheme_text": "They copied letters of the alphabets / drew pictures / read books / did physical exercises.",
+      "key_points": [
+        "copied letters of the alphabet",
+        "drew pictures",
+        "read books",
+        "did physical exercises"
+      ],
+      "model_answer": "They copied letters of the alphabets / drew pictures / read books / did physical exercises.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Wrote about not reaching independent study"
+      ],
+      "examiner_notes": "Many erred, writing that first graders had not reached independent study or asked their teachers about everything.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(b)(v)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Short-Answer Comprehension",
+      "task_type": "quote_identification",
+      "question_text": "(v) Which sentence in the passage tells us that the boy had difficulty in walking like other children?",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "\"The boy dragged his leg and his whole body swayed from side to side.\" (Entire sentence to be quoted exactly).",
+      "key_points": [
+        "Quotes the entire sentence exactly"
+      ],
+      "model_answer": "The boy dragged his leg, and his whole body swayed from side to side.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Quoted the wrong or extra sentences",
+        "Incomplete quotation",
+        "Own words instead of quoting"
+      ],
+      "examiner_notes": "Several quoted the wrong lines, more than one sentence, or incomplete sentences; some used their own words.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "4(c)",
+      "parent_question_number": "4",
+      "section": "comprehension",
+      "chapter": "Comprehension",
+      "topic": "Summary Writing",
+      "task_type": "summary",
+      "question_text": "In not more than 50 words, describe how the children were taught.",
+      "is_subjective": true,
+      "question_type": "long_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 8,
+      "marks_per_correct_point": 1,
+      "scheme_text": "Points:\n1. Teacher makes a list\n2. Children could choose to do first what they liked best / choose favourite subject / start with any subject (any one phrasing)\n3. Would do later (cope with) what they disliked\n4. Children worked independently\n5. They could approach / consult the teacher when they needed help / free to go to (any one phrasing)\n6. Further exercises were given as homework / to work at (alone)\n(Any 6 points)\nPoints to look for: How the children were taught.",
+      "key_points": [
+        "Teacher makes a list",
+        "Children could choose to do first what they liked best / choose favourite subject / start with any subject (any one phrasing)",
+        "Would do later (cope with) what they disliked",
+        "Children worked independently",
+        "They could approach / consult the teacher when they needed help / free to go to (any one phrasing)",
+        "Further exercises were given as homework / to work at (alone)"
+      ],
+      "model_answer": null,
+      "model_answer_verified": false,
+      "common_errors": [
+        "Exceeded 50 words",
+        "Summarised the whole passage",
+        "Only 2-3 points"
+      ],
+      "examiner_notes": "Several exceeded 50 words, dropped articles, or summarised the whole passage. Many misunderstood the question, found only 2-3 points, misjudged how much text to cover, and did not use a grid.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": {
+        "type": "passage",
+        "passage_id": "2020-q4",
+        "text": "Attending classes inside a railway carriage seemed unusual enough, but the seating arrangements turned out to be unusual, too. At Totto-chan's previous school each pupil was assigned a specific desk. But here they could sit anywhere they liked at any time.\n\nThe most unusual thing of all about this school, however, was the lessons themselves.\n\nSchools normally schedule one subject, for example history, during the first period, when everyone in the class just did history; then say, arithmetic in the second period, when you just did arithmetic. But here it was quite different. At the beginning of the first period, the teacher made a list of all the problems and questions in the subjects to be studied that day. Then she would say, \"Now, start with any of these you like.\"\n\nSo, whether you started on history or arithmetic or something else didn't matter at all. Someone who liked composition might be writing something, while behind you someone who liked chemistry might be boiling something in a flask over an alcohol burner.\n\nThis method of teaching enabled the teachers to observe - as the children progressed to higher grades - what they were interested in as well as their way of thinking and their character. It was an ideal way for teachers to really get to know their pupils.\n\nAs for the pupils, they loved being able to start with their favourite subject, the fact that they had all day to cope with the subjects they disliked meant they could usually manage them somehow. So, study was mostly independent, with pupils free to go and consult the teacher whenever necessary. Then pupils would be given further exercises to work at alone. It was study in the truest sense of the word, and it meant there were no pupils just sitting inattentively while the teacher talked and explained.\n\nThe first-grade pupils hadn't quite reached the stage of independent study, but even they were allowed to start with any subject they wanted. Some copied letters of the alphabet, some drew pictures, some read books, and some even did physical exercises.\n\nJust then the boy sitting behind her got up and walked toward the blackboard with his notebook, apparently to consult the teacher. Totto-chan stopped looking around the room and fixed her eyes on his back as he walked. The boy dragged his leg, and his whole body swayed from side to side. Totto-chan wondered at first if he was doing it on purpose, but she soon realized the boy couldn't help it.\n\nThe boy said brightly, \"My name's Yasuaki. What's yours?\"\n\nShe was so glad to hear him speak that she replied loudly, \"I'm Totto-chan.\"",
+        "source": "Adapted from Totto-chan (Tetsuko Kuroyanagi)",
+        "line_references": "Line numbers in questions refer to the printed paper's margin numbering.",
+        "include_in_grading": true
+      },
+      "grammar_items": null,
+      "summary_spec": {
+        "word_limit": 50,
+        "points": [
+          "Teacher makes a list",
+          "Children could choose to do first what they liked best / choose favourite subject / start with any subject (any one phrasing)",
+          "Would do later (cope with) what they disliked",
+          "Children worked independently",
+          "They could approach / consult the teacher when they needed help / free to go to (any one phrasing)",
+          "Further exercises were given as homework / to work at (alone)"
+        ],
+        "points_required": 6,
+        "sequence_required": false,
+        "scheme_note": "Points to look for: How the children were taught.",
+        "content_marks_inferred": 6,
+        "expression_marks_inferred": 2,
+        "mark_split_published": false
+      },
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(a)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Verb Forms (Cloze)",
+      "task_type": "verb_form_cloze",
+      "question_text": "Fill in each of the numbered blanks with the correct form of the word given in brackets. Do not copy the passage but write in correct serial order the word or phrase appropriate to the blank space.\nExample: (0) taught\nBy the time she was three, Matilda had (0) ______ (teach) herself to read by (1) ______ (study) newspapers and magazines that (2) ______ (lie) around the house. At the age of four, she could (3) ______ (read) fast and well and she naturally began (4) ______ (hanker) after books. The only book in the whole of this enlightened household was something called Easy Cooking (5) ______ (belong) to her mother, and when she had read this from cover to cover and had (6) ______ (learn) all the recipes by heart, she (7) ______ (decide) she (8) ______ (want) something more interesting.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(4) to hanker",
+        "(6) learned"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "[0. taught] (1) studying  (2) lay  (3) read  (4) hankering / to hanker  (5) belonging  (6) learnt / learned  (7) decided  (8) wanted",
+      "key_points": [
+        "(1) studying",
+        "(2) lay",
+        "(3) read",
+        "(4) hankering / to hanker",
+        "(5) belonging",
+        "(6) learnt / learned",
+        "(7) decided",
+        "(8) wanted"
+      ],
+      "model_answer": "(1) studying\n(2) lay\n(3) read\n(4) hankering\n(5) belonging\n(6) learnt\n(7) decided\n(8) wanted",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'studing' spelling",
+        "'lied' for 'lay'",
+        "'which belonged' for 'belonging'"
+      ],
+      "examiner_notes": "Common errors: (1) 'studing'; (2) 'lied' instead of 'lay'; (5) 'which belonged' (an adjective clause) instead of the verb form; (3), (4), (7), (8) in continuous/simple past/perfect forms where another form was needed.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "1",
+          "prompt": "study",
+          "answer": "studying",
+          "accepted": []
+        },
+        {
+          "item": "2",
+          "prompt": "lie",
+          "answer": "lay",
+          "accepted": []
+        },
+        {
+          "item": "3",
+          "prompt": "read",
+          "answer": "read",
+          "accepted": []
+        },
+        {
+          "item": "4",
+          "prompt": "hanker",
+          "answer": "hankering",
+          "accepted": [
+            "to hanker"
+          ]
+        },
+        {
+          "item": "5",
+          "prompt": "belong",
+          "answer": "belonging",
+          "accepted": []
+        },
+        {
+          "item": "6",
+          "prompt": "learn",
+          "answer": "learnt",
+          "accepted": [
+            "learned"
+          ]
+        },
+        {
+          "item": "7",
+          "prompt": "decide",
+          "answer": "decided",
+          "accepted": []
+        },
+        {
+          "item": "8",
+          "prompt": "want",
+          "answer": "wanted",
+          "accepted": []
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(b)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Prepositions",
+      "task_type": "preposition_fill",
+      "question_text": "Fill in the blanks with appropriate words.\n(i) It has been raining ______ two hours.\n(ii) He just scraped ______ his examination.\n(iii) Mrs. Kapoor was bent ______ attending the meeting.\n(iv) She is proud and looks ______ on her colleagues.\n(v) Rahul plays football ______ his grandfather.\n(vi) The mother was sitting ______ the sick child all night.\n(vii) Monica is leaning ______ the wall.\n(viii) Rosie is very good ______ art and craft.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "(iii) upon",
+        "(vi) with",
+        "(vi) near",
+        "(vi) by",
+        "(viii) in"
+      ],
+      "total_marks": 4,
+      "marks_per_correct_point": 0.5,
+      "scheme_text": "(i) for  (ii) through  (iii) on / upon  (iv) down  (v) with  (vi) beside / with / near / by  (vii) against  (viii) at / in",
+      "key_points": [
+        "(i) for",
+        "(ii) through",
+        "(iii) on / upon",
+        "(iv) down",
+        "(v) with",
+        "(vi) beside / with / near / by",
+        "(vii) against",
+        "(viii) at / in"
+      ],
+      "model_answer": "(i) for\n(ii) through\n(iii) on\n(iv) down\n(v) with\n(vi) beside\n(vii) against\n(viii) at",
+      "model_answer_verified": true,
+      "common_errors": [
+        "(i) 'since' for 'for'",
+        "(ii) 'into'/'out'",
+        "(iii) 'over'",
+        "(vii) 'on'/'by' for 'against'"
+      ],
+      "examiner_notes": "Most did not know the proper prepositions: (i) 'since' for 'for'; (ii) 'into'/'out' for 'through'; (iii) 'over' for 'on/upon'; (iv) pride linked to looking down not understood; (vii) 'on'/'by' for 'against'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": [
+        {
+          "item": "i",
+          "prompt": "raining ___ two hours",
+          "answer": "for",
+          "accepted": []
+        },
+        {
+          "item": "ii",
+          "prompt": "scraped ___ his examination",
+          "answer": "through",
+          "accepted": []
+        },
+        {
+          "item": "iii",
+          "prompt": "bent ___ attending",
+          "answer": "on",
+          "accepted": [
+            "upon"
+          ]
+        },
+        {
+          "item": "iv",
+          "prompt": "looks ___ on her colleagues",
+          "answer": "down",
+          "accepted": []
+        },
+        {
+          "item": "v",
+          "prompt": "plays football ___ his grandfather",
+          "answer": "with",
+          "accepted": []
+        },
+        {
+          "item": "vi",
+          "prompt": "sitting ___ the sick child",
+          "answer": "beside",
+          "accepted": [
+            "with",
+            "near",
+            "by"
+          ]
+        },
+        {
+          "item": "vii",
+          "prompt": "leaning ___ the wall",
+          "answer": "against",
+          "accepted": []
+        },
+        {
+          "item": "viii",
+          "prompt": "good ___ art and craft",
+          "answer": "at",
+          "accepted": [
+            "in"
+          ]
+        }
+      ],
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(i) Sarah and Tyra are twins. They look exactly alike.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Sarah and Tyra are twins who look exactly alike.",
+        "Sarah and Tyra, who look exactly alike, are twins."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Sarah and Tyra who are twins look exactly alike. / Sarah and Tyra are twins who look exactly alike. / Sarah and Tyra, who look exactly alike, are twins.",
+      "key_points": [
+        "Sarah and Tyra who are twins look exactly alike."
+      ],
+      "model_answer": "Sarah and Tyra who are twins look exactly alike.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Causal link ('because')"
+      ],
+      "examiner_notes": "Many took a causal premise ('because/therefore they look alike').",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(ii) Rohan does not like to play cricket. He does not like to play hockey either.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Rohan likes to play neither cricket nor hockey.",
+        "Rohan does not like to play either cricket or hockey."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Rohan neither likes to play cricket nor hockey. / Rohan likes to play neither cricket nor hockey. / Rohan does not like to play either cricket or hockey.",
+      "key_points": [
+        "Rohan neither likes to play cricket nor hockey."
+      ],
+      "model_answer": "Rohan neither likes to play cricket nor hockey.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Used 'and'"
+      ],
+      "examiner_notes": "Many used 'and' instead of 'neither...nor' / 'either...or'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(iii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iii) Sania pushed as hard as she could. The door would not open.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Though Sania pushed as hard as she could, the door would not open.",
+        "Even though Sania pushed as hard as she could, the door would not open.",
+        "In spite of Sania pushing the door as hard as she could, it would not open.",
+        "Despite Sania pushing the door as hard as she could, it would not open.",
+        "Sania pushed as hard as she could, yet the door would not open.",
+        "Sania pushed as hard as she could; however / still / nevertheless the door would not open."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Although Sania pushed as hard as she could, the door would not open. / Though Sania pushed as hard as she could, the door would not open. / Even though Sania pushed as hard as she could, the door would not open. / In spite of Sania pushing the door as hard as she could, it would not open. / Despite Sania pushing the door as hard as she could, it would not open. / Sania pushed as hard as she could, yet the door would not open. / Sania pushed as hard as she could; however / still / nevertheless the door would not open.",
+      "key_points": [
+        "Although Sania pushed as hard as she could, the door would not open."
+      ],
+      "model_answer": "Although Sania pushed as hard as she could, the door would not open.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'even' instead of 'even though'",
+        "Used 'but'"
+      ],
+      "examiner_notes": "Conceptual errors: 'even' for 'though/even though'; coordinating 'but' instead of a subordinating conjunction.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(c)(iv)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Joining",
+      "task_type": "sentence_joining",
+      "question_text": "Join the following sentences to make one complete sentence without using and, but or so:\n(iv) The school bus drove through the gate. The clock was striking eight at that moment.",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "The school bus drove through the gate when the clock was striking eight.",
+        "When the clock was striking eight the school bus drove through the gate.",
+        "When the school bus drove through the gate, the clock was striking eight at that moment."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "The clock was striking eight when the school bus drove through the gate. / The school bus drove through the gate when the clock was striking eight. / When the clock was striking eight the school bus drove through the gate. / When the school bus drove through the gate, the clock was striking eight at that moment.",
+      "key_points": [
+        "The clock was striking eight when the school bus drove through the gate."
+      ],
+      "model_answer": "The clock was striking eight when the school bus drove through the gate.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "No adverb clause of time"
+      ],
+      "examiner_notes": "Candidates did not use an adverb clause.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(i)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(i) The librarian orders books for the school library every year.\n(Begin: Books...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Books are ordered by the librarian for the library every year."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Books are ordered for the library every year by the librarian. / Books are ordered by the librarian for the library every year.",
+      "key_points": [
+        "Books are ordered for the library every year by the librarian."
+      ],
+      "model_answer": "Books are ordered for the library every year by the librarian.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Tense changed in the passive"
+      ],
+      "examiner_notes": "Some changed the tense ('are being ordered', 'has been ordered') or broke subject-verb agreement.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(ii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(ii) No one will deny that the children have worked very hard this year.\n(Begin: Everyone...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Everyone will admit that the children have worked very hard this year.",
+        "Everyone will affirm that the children have worked very hard this year.",
+        "Everyone will accept that the children have worked very hard this year."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Everyone will agree that the children have worked very hard this year. / Everyone will admit that the children have worked very hard this year. / Everyone will affirm that the children have worked very hard this year. / Everyone will accept that the children have worked very hard this year.",
+      "key_points": [
+        "Everyone will agree that the children have worked very hard this year."
+      ],
+      "model_answer": "Everyone will agree that the children have worked very hard this year.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'Everyone will not deny'"
+      ],
+      "examiner_notes": "A few changed the meaning, e.g. 'Everyone will not deny...'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(iii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iii) As soon as the teacher enters, she is greeted by her candidates.\n(Begin: No sooner...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "No sooner does the teacher enter, than she is greeted by her candidates.",
+      "key_points": [
+        "No sooner does the teacher enter, than she is greeted by her candidates."
+      ],
+      "model_answer": "No sooner does the teacher enter, than she is greeted by her candidates.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Past tense",
+        "'then' for 'than'",
+        "'enters' after 'does'"
+      ],
+      "examiner_notes": "Many used the past tense for a present-tense sentence; some wrote 'No sooner does the teacher enters, then...'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(iv)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(iv) She is so busy that she finds no time to entertain her friends.\n(Rewrite using 'too')",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "She is too busy to find time to entertain her friends.",
+      "key_points": [
+        "She is too busy to find time to entertain her friends."
+      ],
+      "model_answer": "She is too busy to find time to entertain her friends.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Mixed 'too' with 'that'"
+      ],
+      "examiner_notes": "Many wrote 'She is too busy that she cannot...', mixing 'too...to' with 'so...that'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(v)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(v) In spite of the very hot weather, Kevin stepped out to buy some bread.\n(Begin: Despite...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "Despite the weather being very hot, Kevin stepped out to buy some bread.",
+        "Despite the fact that the weather was very hot, Kevin stepped out to buy some bread."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Despite the very hot weather Kevin stepped out to buy some bread. / Despite the weather being very hot, Kevin stepped out to buy some bread. / Despite the fact that the weather was very hot, Kevin stepped out to buy some bread.",
+      "key_points": [
+        "Despite the very hot weather Kevin stepped out to buy some bread."
+      ],
+      "model_answer": "Despite the very hot weather Kevin stepped out to buy some bread.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'Despite of'"
+      ],
+      "examiner_notes": "Many wrote 'Despite of'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(vi)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vi) Sheela will be selected for the competition only if she goes for the auditions.\n(Begin: Unless...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "Unless Sheela goes for the auditions she will not be selected for the competition.",
+      "key_points": [
+        "Unless Sheela goes for the auditions she will not be selected for the competition."
+      ],
+      "model_answer": "Unless Sheela goes for the auditions she will not be selected for the competition.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Pronoun before noun",
+        "Dropped 'not'"
+      ],
+      "examiner_notes": "Some used the pronoun before the noun ('Unless she goes..., Sheela...'); some wrote 'she will be selected' instead of 'will not be selected'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(vii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(vii) I would rather eat fruit than a lot of unhealthy junk food.\n(Begin: I prefer...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "I prefer eating fruit to a lot of unhealthy junk food.",
+      "key_points": [
+        "I prefer eating fruit to a lot of unhealthy junk food."
+      ],
+      "model_answer": "I prefer eating fruit to a lot of unhealthy junk food.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "'prefer ... than'"
+      ],
+      "examiner_notes": "Most used 'rather than' / 'than' / 'over' instead of 'to'.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    },
+    {
+      "question_number": "5(d)(viii)",
+      "parent_question_number": "5",
+      "section": "grammar",
+      "chapter": "Grammar",
+      "topic": "Sentence Transformation",
+      "task_type": "sentence_transformation",
+      "question_text": "Re-write the following sentences according to the instructions given after each. Make other changes that may be necessary, but do not change the meaning of each sentence.\n(viii) The tree was cut down ruthlessly.\n(Begin: They...)",
+      "is_subjective": true,
+      "question_type": "short_answer",
+      "evaluation_mode": "point_based",
+      "options": null,
+      "correct_answer": null,
+      "accepted_alternatives": [
+        "They ruthlessly cut down the tree."
+      ],
+      "total_marks": 1,
+      "marks_per_correct_point": null,
+      "scheme_text": "They cut down the tree ruthlessly. / They ruthlessly cut down the tree.",
+      "key_points": [
+        "They cut down the tree ruthlessly."
+      ],
+      "model_answer": "They cut down the tree ruthlessly.",
+      "model_answer_verified": true,
+      "common_errors": [
+        "Tense changed",
+        "Omitted 'down'"
+      ],
+      "examiner_notes": "Many wrote 'had cut'/'were cutting'; some omitted 'down', changing the meaning.",
+      "choice_group": null,
+      "writing_task": null,
+      "stimulus": null,
+      "grammar_items": null,
+      "summary_spec": null,
+      "diagram_required": false,
+      "diagram_file": null
+    }
+  ],
+  "teacher_suggestions": {
+    "1": [
+      "Insist on originality; discourage lifting stories from prose or films",
+      "Teach plot structure and logical endings",
+      "Teach argumentative structure: clear stand, 4-5 planned points with examples, strong conclusion",
+      "Teach use of all the senses in descriptive writing",
+      "Discourage memorised essays; read the topic to avoid role reversal",
+      "Practise picture composition with varied pictures and videos"
+    ],
+    "2": [
+      "Teach correct format and tone; refer to the Council website for formal and informal formats",
+      "Read the question carefully and identify key points",
+      "Avoid SMS language, contractions and slang"
+    ],
+    "3": [
+      "Give date, venue and time correctly",
+      "Build a class list of short, catchy titles for school events",
+      "Distinguish official and personal email ids",
+      "Copy the event from the notice into the subject; clarify host vs invitee"
+    ],
+    "4": [
+      "Check word meanings by substituting them in the passage; match the word form",
+      "Quote the most appropriate sentence verbatim",
+      "Summary steps: grasp the main idea, pick key words, drop extra words, use a grid"
+    ],
+    "5": [
+      "Practise sequence of tenses and verb forms in passages",
+      "Explain 'since' vs 'for'; read the whole sentence before choosing a preposition",
+      "Teach synthesis rules (neither...nor, either...or, though/although)",
+      "Practise transformation rules with logical reasoning"
+    ]
+  },
+  "general_comments": {
+    "difficult_topics": [
+      "Essay: 300-350 words beyond many; copying the comprehension; mother-tongue words",
+      "Formal letter: consequences of water wastage misunderstood (taken as wastage in homes)",
+      "Notice and email: connection between the two; purpose and host of the carnival",
+      "Comprehension: word meanings, analytical questions, choosing the right text for the summary",
+      "Grammar rules unclear to many"
+    ],
+    "confusions": []
+  }
+}

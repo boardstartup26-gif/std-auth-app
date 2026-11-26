@@ -134,8 +134,9 @@ export function FigureSlot({ q, onZoom }: { q: Question; onZoom: () => void }) {
 
 // ─── Context block (extract/stimulus) ──────────────────────────────────────
 // Renders the passage, literary extract, or picture a question refers to,
-// above question_text. Only History & Civics and English Literature rows
-// carry this data today; every other subject falls through to no context.
+// above question_text. Only History & Civics, English Literature and English
+// Language rows carry this data today; every other subject falls through to no
+// context.
 //
 // Pictures are NOT handled here — a History & Civics picture question is a
 // diagram like any other subject's, so it goes through diagram_url/
@@ -175,6 +176,17 @@ function PassageContext({ stimulus }: { stimulus: StimulusData }) {
   );
 }
 
+// An English Language comprehension passage runs to several paragraphs, so it
+// keeps its paragraph breaks and is set upright rather than in italics.
+function ComprehensionPassage({ stimulus }: { stimulus: StimulusData }) {
+  return (
+    <div className={contextItem}>
+      <blockquote className={`${contextBlockquote} whitespace-pre-line not-italic`}>{stimulus.text}</blockquote>
+      {stimulus.source && <p className={contextSource}>Source: {stimulus.source}</p>}
+    </div>
+  );
+}
+
 function TableContext({ table }: { table: TableData }) {
   if (!table.rows?.length) return null;
   return (
@@ -208,6 +220,10 @@ export function ContextBlock({ subject, q }: { subject: string; q: Question }) {
 
   if (subject === "English Literature") {
     if (q.literary_work || q.extract) blocks.push(<LiteratureContext q={q} key="lit" />);
+  }
+
+  if (subject === "English Language" && q.stimulus?.type === "passage") {
+    blocks.push(<ComprehensionPassage stimulus={q.stimulus} key="passage" />);
   }
 
   if (subject === "History & Civics") {

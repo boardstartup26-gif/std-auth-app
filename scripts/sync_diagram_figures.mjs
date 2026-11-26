@@ -51,6 +51,7 @@ const SUBJECT_FOLDERS = {
   history: "history & civics",
   economics: "economics",
   evs: "environmental science",
+  language: "english language",
 };
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;

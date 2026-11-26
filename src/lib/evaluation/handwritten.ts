@@ -31,7 +31,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { createAdminClient } from "@/lib/supabase/server";
 import { isSubjectiveGraded } from "@/lib/question-format";
-import { buildUserMessage, ClaudeEvalSchema, type MarkingScheme } from "./grading";
+import { buildUserMessage, ClaudeEvalSchema, questionTextForGrading, type MarkingScheme } from "./grading";
 import { examinerSystem, GRADING_MAX_TOKENS, HANDWRITTEN_MAX_TOKENS, requestGrading } from "./model";
 
 // ─── Limits ──────────────────────────────────────────────────────────────────
@@ -314,7 +314,7 @@ export type QuestionLookup =
     };
 
 const QUESTION_COLUMNS =
-  "id, question_text, is_subjective, question_type, diagram_required, diagram_url, diagram_source";
+  "id, question_text, is_subjective, question_type, diagram_required, diagram_url, diagram_source, stimulus";
 const SCHEME_COLUMNS =
   "scheme_text, total_marks, key_points, model_answer, model_answer_verified, accepted_alternatives, common_errors, examiner_notes, marks_per_correct_point";
 
@@ -326,6 +326,7 @@ interface QuestionFacts {
   diagram_required: boolean | null;
   diagram_url: string | null;
   diagram_source: string | null;
+  stimulus: unknown;
 }
 
 /**
@@ -369,7 +370,13 @@ async function checkQuestion(row: QuestionFacts | null): Promise<QuestionLookup>
   }
   return {
     ok: true,
-    question: { id: row.id, questionText: row.question_text, scheme: scheme as MarkingScheme },
+    // questionText only feeds the grading calls, so it carries the passage or
+    // picture description for rows that need it (English Language).
+    question: {
+      id: row.id,
+      questionText: questionTextForGrading(row.question_text, row.stimulus),
+      scheme: scheme as MarkingScheme,
+    },
   };
 }
 
