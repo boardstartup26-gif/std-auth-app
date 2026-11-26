@@ -15,6 +15,7 @@ import { after } from "next/server";
 import { createAdminClient } from "@/lib/supabase/server";
 import { getWeeklyLimit } from "@/lib/credits";
 import { recordWrittenAnswerForReferral } from "@/lib/referrals/service";
+import { resolveSubjectKey } from "@/lib/prompts/examiner-prompt";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -215,6 +216,50 @@ export function trimSurplusMarkingPoints<T extends { marks: number; marks_awarde
     }
   }
   return kept;
+}
+
+// ─── Score Reconciliation ──────────────────────────────────────────────────
+// The model reports a total and a per-point breakdown, and they can disagree:
+// a letter came back 10/10 with "Expression 3/4" beside it. The score shown
+// must follow the breakdown, so it is computed here from the points:
+//
+//   1. each point's marks are held to [0, its maximum] and its status is
+//      derived from them;
+//   2. surplus unearned points are trimmed;
+//   3. the score is the sum of the points, capped at the question's total.
+//
+// English Language writing tasks are split into components that must all be
+// earned. When the model's maximums add up to more than the question is worth,
+// the sum alone would hide a deduction, so there the score is also held to
+// "total minus what was lost". Other subjects aren't, because their extra points
+// are usually unused "any N of" alternatives.
+//
+// With no points at all there is nothing to follow, and the (already clamped)
+// model total stands.
+export function reconcileMarks<
+  T extends { marks: number; marks_awarded: number; status: MarkingPoint["status"] },
+>(
+  points: T[],
+  clampedModelMarks: number,
+  totalMarks: number,
+  subject: string
+): { points: T[]; marks: number } {
+  if (!points.length) return { points, marks: clampedModelMarks };
+
+  const consistent = points.map((p): T => {
+    const got = Math.max(0, Math.min(p.marks_awarded, p.marks));
+    const status = got >= p.marks ? "awarded" : got > 0 ? "partial" : "missed";
+    return { ...p, marks_awarded: got, status };
+  });
+  const kept = trimSurplusMarkingPoints(consistent, totalMarks);
+
+  const earned = kept.reduce((sum, p) => sum + p.marks_awarded, 0);
+  let marks = Math.min(earned, totalMarks);
+  if (resolveSubjectKey(subject) === "english_language") {
+    const lost = kept.reduce((sum, p) => sum + p.marks - p.marks_awarded, 0);
+    marks = Math.max(0, Math.min(marks, totalMarks - lost));
+  }
+  return { points: kept, marks: Math.round(marks * 100) / 100 };
 }
 
 // ─── Anchor Resolution ─────────────────────────────────────────────────────

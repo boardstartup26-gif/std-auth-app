@@ -18,7 +18,7 @@ import { recordServerEvent } from "@/lib/analytics/server";
 import {
   persistSubmission,
   resolveMarkingPointAnchors,
-  trimSurplusMarkingPoints,
+  reconcileMarks,
   type EvaluationOutput,
 } from "@/lib/evaluation/grading";
 import {
@@ -171,8 +171,9 @@ export async function POST(req: NextRequest) {
 
   // Quotes were taken from the transcript with its [?] markers; the saved
   // answer has them removed, so the quotes are too before anchoring.
+  const reconciled = reconcileMarks(claudeEval.marking_points, clampedMarks, total, subject ?? "");
   const markingPoints = resolveMarkingPointAnchors(
-    trimSurplusMarkingPoints(claudeEval.marking_points, total).map((mp) => ({
+    reconciled.points.map((mp) => ({
       ...mp,
       matched_text: mp.matched_text ? finaliseTranscript(mp.matched_text) || null : null,
     })),
@@ -183,7 +184,7 @@ export async function POST(req: NextRequest) {
   const evaluation: EvaluationOutput = {
     ...claudeEval,
     marking_points: markingPoints,
-    marks_awarded: clampedMarks,
+    marks_awarded: reconciled.marks,
     total_marks: total,
     model_answer_source: question.scheme.model_answer_verified ? "verified" : "ai_generated",
     token_cost: grading.tokenCost,
@@ -234,7 +235,7 @@ export async function POST(req: NextRequest) {
         transcript_edited: edited,
         legibility: grading.legibility,
         pages: grading.pages,
-        marks_awarded: clampedMarks,
+        marks_awarded: reconciled.marks,
         total_marks: total,
         marks_clamped: marksClamped,
         model_answer_source: evaluation.model_answer_source,

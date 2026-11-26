@@ -29,7 +29,7 @@ import {
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
-  trimSurplusMarkingPoints,
+  reconcileMarks,
   type EvaluationOutput,
 } from "@/lib/evaluation/grading";
 import { getUsageDateIST } from "@/lib/usage-date";
@@ -409,13 +409,12 @@ export async function POST(req: NextRequest) {
     });
   }
 
+  const reconciled = reconcileMarks(claudeEval.marking_points, clampedMarks, marks, subject);
+
   const evaluation: DerivedEvaluationOutput = {
     ...claudeEval,
-    marking_points: resolveMarkingPointAnchors(
-      trimSurplusMarkingPoints(claudeEval.marking_points, marks),
-      studentAnswer
-    ),
-    marks_awarded: clampedMarks,
+    marking_points: resolveMarkingPointAnchors(reconciled.points, studentAnswer),
+    marks_awarded: reconciled.marks,
     total_marks: marks,
     // Hard cap, same reasoning as the clamp: the prompt asks for at most 2,
     // the code guarantees it.

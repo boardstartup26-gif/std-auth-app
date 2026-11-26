@@ -33,7 +33,7 @@ import {
   refundTokens,
   resolveAnswerDisplay,
   resolveMarkingPointAnchors,
-  trimSurplusMarkingPoints,
+  reconcileMarks,
   type EvaluationOutput,
   type MarkingScheme,
   type McqOption,
@@ -155,13 +155,11 @@ async function gradeWritten(
     });
   }
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
+  const reconciled = reconcileMarks(claudeEval.marking_points, clamped, scheme.total_marks, subject);
   return {
     ...claudeEval,
-    marking_points: resolveMarkingPointAnchors(
-      trimSurplusMarkingPoints(claudeEval.marking_points, scheme.total_marks),
-      answer,
-    ),
-    marks_awarded: clamped,
+    marking_points: resolveMarkingPointAnchors(reconciled.points, answer),
+    marks_awarded: reconciled.marks,
     token_cost: CREDIT_COST_SUBJECTIVE,
     tokens_remaining: 0,
   };

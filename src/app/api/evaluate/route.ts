@@ -11,7 +11,7 @@ import {
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
-  trimSurplusMarkingPoints,
+  reconcileMarks,
   matchObjectiveAnswer,
   resolveAnswerDisplay,
   type EvaluationOutput,
@@ -557,15 +557,18 @@ export async function POST(req: NextRequest) {
 
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
-  const markingPointsWithAnchors = resolveMarkingPointAnchors(
-    trimSurplusMarkingPoints(claudeEval.marking_points, scheme.total_marks),
-    student_answer
+  const reconciled = reconcileMarks(
+    claudeEval.marking_points,
+    clampedMarks,
+    scheme.total_marks,
+    subject
   );
+  const markingPointsWithAnchors = resolveMarkingPointAnchors(reconciled.points, student_answer);
 
   const evaluation: EvaluationOutput = {
     ...claudeEval,
     marking_points: markingPointsWithAnchors,
-    marks_awarded: clampedMarks,
+    marks_awarded: reconciled.marks,
     token_cost: tokenCost,
     tokens_remaining: tokensRemaining,
   };
@@ -606,7 +609,7 @@ export async function POST(req: NextRequest) {
     question_number,
     question_type: question.question_type,
     is_subjective: true,
-    marks_awarded: clampedMarks,
+    marks_awarded: evaluation.marks_awarded,
     total_marks: scheme.total_marks,
     // A clamp means the model returned a mark outside [0, total]. Rare, but
     // worth being able to count without grepping logs.
