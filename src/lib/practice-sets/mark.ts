@@ -32,11 +32,12 @@ import {
   refundTokens,
   resolveAnswerDisplay,
   resolveMarkingPointAnchors,
+  trimSurplusMarkingPoints,
   type EvaluationOutput,
   type MarkingScheme,
   type McqOption,
 } from "@/lib/evaluation/grading";
-import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
+import { examinerSystem, GRADING_MAX_TOKENS, requestGrading } from "@/lib/evaluation/model";
 import { isSubjectiveGraded } from "@/lib/question-format";
 
 type Admin = ReturnType<typeof createAdminClient>;
@@ -127,15 +128,13 @@ async function gradeWritten(
   scheme: MarkingScheme,
   answer: string,
 ): Promise<EvaluationOutput> {
-  const message = await anthropic.messages.create({
-    model: "claude-sonnet-4-5",
-    max_tokens: 4096,
-    system: buildExaminerSystemPrompt(subject),
-    messages: [{ role: "user", content: buildUserMessage(q.question_text, answer, scheme) }],
+  const raw = await requestGrading(anthropic, {
+    label: "practice-paper",
+    system: examinerSystem(subject),
+    content: buildUserMessage(q.question_text, answer, scheme),
+    maxTokens: GRADING_MAX_TOKENS,
   });
-  const textBlock = message.content.find((b) => b.type === "text");
-  if (!textBlock || textBlock.type !== "text") throw new Error("Claude returned no text content");
-  const cleaned = textBlock.text
+  const cleaned = raw
     .replace(/^```json\s*/i, "")
     .replace(/^```\s*/i, "")
     .replace(/```\s*$/i, "")
@@ -156,7 +155,10 @@ async function gradeWritten(
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
   return {
     ...claudeEval,
-    marking_points: resolveMarkingPointAnchors(claudeEval.marking_points, answer),
+    marking_points: resolveMarkingPointAnchors(
+      trimSurplusMarkingPoints(claudeEval.marking_points, scheme.total_marks),
+      answer,
+    ),
     marks_awarded: clamped,
     token_cost: CREDIT_COST_SUBJECTIVE,
     tokens_remaining: 0,

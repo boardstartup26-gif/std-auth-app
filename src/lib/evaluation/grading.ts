@@ -161,10 +161,31 @@ export const MarkingPointSchema = z.object({
   matched_text: z.string().nullable(),
 });
 
+/**
+ * Removes any marking point worth 0 marks or less before validation. On "any two
+ * of these" schemes the model lists the unused alternatives as 0-mark points,
+ * which would otherwise fail the whole evaluation. They carry no marks, so the
+ * score is unaffected. Entries whose `marks` isn't a number are left in place so
+ * the schema still rejects them. Logs a count only, no student content.
+ */
+function dropNonPositiveMarkingPoints(points: unknown): unknown {
+  if (!Array.isArray(points)) return points;
+  const kept = points.filter((p) => {
+    const marks = (p as { marks?: unknown } | null)?.marks;
+    return !(typeof marks === "number" && marks <= 0);
+  });
+  if (kept.length < points.length) {
+    console.warn(
+      `[BoardEdge] removed ${points.length - kept.length} marking point(s) with marks <= 0 before validation`
+    );
+  }
+  return kept;
+}
+
 export const ClaudeEvalSchema = z.object({
   marks_awarded: z.number(),
   total_marks: z.number(),
-  marking_points: z.array(MarkingPointSchema),
+  marking_points: z.preprocess(dropNonPositiveMarkingPoints, z.array(MarkingPointSchema)),
   conceptual_errors: z.array(z.string()),
   icse_style_issues: z.array(z.string()),
   unassessable_components: z.array(z.string()),
@@ -173,6 +194,28 @@ export const ClaudeEvalSchema = z.object({
   examiner_feedback: z.string(),
   improvement_tips: z.array(z.string()),
 });
+
+// ─── Surplus Points ────────────────────────────────────────────────────────
+// On "any two of these four" schemes the model may list all four options at
+// 1 mark each. The feedback screens treat every point that wasn't awarded as
+// marks lost, so a full-mark answer would appear to have lost two. While the
+// points add up to more than the question is worth, this drops points that
+// earned nothing, last first. Points that earned marks are never touched, and
+// neither is marks_awarded.
+export function trimSurplusMarkingPoints<T extends { marks: number; marks_awarded: number }>(
+  points: T[],
+  totalMarks: number
+): T[] {
+  let excess = points.reduce((sum, p) => sum + p.marks, 0) - totalMarks;
+  const kept = [...points];
+  for (let i = kept.length - 1; i >= 0 && excess > 1e-9; i--) {
+    if (kept[i].marks_awarded === 0 && kept[i].marks <= excess + 1e-9) {
+      excess -= kept[i].marks;
+      kept.splice(i, 1);
+    }
+  }
+  return kept;
+}
 
 // ─── Anchor Resolution ─────────────────────────────────────────────────────
 // Claude returns a verbatim quote (matched_text), never a character index.

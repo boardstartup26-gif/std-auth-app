@@ -10,6 +10,7 @@ import {
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
+  trimSurplusMarkingPoints,
   matchObjectiveAnswer,
   resolveAnswerDisplay,
   type EvaluationOutput,
@@ -17,7 +18,7 @@ import {
   type McqOption,
 } from "@/lib/evaluation/grading";
 import { getUsageDateIST } from "@/lib/usage-date";
-import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
+import { examinerSystem, GRADING_MAX_TOKENS, requestGrading } from "@/lib/evaluation/model";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
@@ -465,29 +466,16 @@ export async function POST(req: NextRequest) {
 
   let rawContent: string;
   try {
-    const message = await anthropic.messages.create({
-      model: "claude-sonnet-4-5",
+    rawContent = await requestGrading(anthropic, {
+      label: "typed",
+      system: examinerSystem(subject),
+      content: buildUserMessage(question.question_text, student_answer, scheme),
       // The marking_points schema repeats the full scheme wording and a
       // verbatim quote per point (on top of model_answer/examiner_feedback/
-      // improvement_tips), which is far more verbose than the old flat
-      // points_hit/points_missed arrays. 1024 was sized for that old shape
-      // and was truncating responses mid-JSON on questions with several
-      // marking points — bumped to give real headroom.
-      max_tokens: 4096,
-      system: buildExaminerSystemPrompt(subject),
-      messages: [
-        {
-          role: "user",
-          content: buildUserMessage(question.question_text, student_answer, scheme),
-        },
-      ],
+      // improvement_tips), so a low ceiling truncates the JSON on questions
+      // with several marking points.
+      maxTokens: GRADING_MAX_TOKENS,
     });
-
-    const textBlock = message.content.find((b) => b.type === "text");
-    if (!textBlock || textBlock.type !== "text") {
-      throw new Error("Claude returned no text content");
-    }
-    rawContent = textBlock.text;
   } catch (claudeError: unknown) {
     // Token was already reserved before this call — refund it since the
     // student got no evaluation.
@@ -562,7 +550,7 @@ export async function POST(req: NextRequest) {
   claudeEval.model_answer_source = scheme.model_answer_verified ? "verified" : "ai_generated";
 
   const markingPointsWithAnchors = resolveMarkingPointAnchors(
-    claudeEval.marking_points,
+    trimSurplusMarkingPoints(claudeEval.marking_points, scheme.total_marks),
     student_answer
   );
 

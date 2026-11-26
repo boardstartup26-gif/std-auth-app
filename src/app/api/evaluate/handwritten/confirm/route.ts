@@ -18,6 +18,7 @@ import { recordServerEvent } from "@/lib/analytics/server";
 import {
   persistSubmission,
   resolveMarkingPointAnchors,
+  trimSurplusMarkingPoints,
   type EvaluationOutput,
 } from "@/lib/evaluation/grading";
 import {
@@ -171,7 +172,7 @@ export async function POST(req: NextRequest) {
   // Quotes were taken from the transcript with its [?] markers; the saved
   // answer has them removed, so the quotes are too before anchoring.
   const markingPoints = resolveMarkingPointAnchors(
-    claudeEval.marking_points.map((mp) => ({
+    trimSurplusMarkingPoints(claudeEval.marking_points, total).map((mp) => ({
       ...mp,
       matched_text: mp.matched_text ? finaliseTranscript(mp.matched_text) || null : null,
     })),

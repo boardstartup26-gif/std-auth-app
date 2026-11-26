@@ -29,20 +29,19 @@ import {
   refundTokens,
   reserveTokens,
   resolveMarkingPointAnchors,
+  trimSurplusMarkingPoints,
   type EvaluationOutput,
 } from "@/lib/evaluation/grading";
 import { getUsageDateIST } from "@/lib/usage-date";
-import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
+import { examinerSystem, GRADING_MAX_TOKENS, requestGrading } from "@/lib/evaluation/model";
 import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import physicsRubricJson from "@/lib/data/rubrics/physics_canonical_rubric.json";
 import chemistryRubricJson from "@/lib/data/rubrics/chem_rubric_ppa18.json";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
-// Same model as /api/evaluate. temperature 0 on both calls: classification
-// and grading should be as repeatable as the API allows for identical input.
-const MODEL = "claude-sonnet-4-5";
-const TEMPERATURE = 0;
+// The classifier's whole reply is one short JSON object.
+const CLASSIFIER_MAX_TOKENS = 200;
 
 // Same ceiling as /api/evaluate — the answer is pasted verbatim into the
 // prompt, so without a cap one credit buys an arbitrarily large input.
@@ -111,54 +110,6 @@ function parseModelJson(raw: string): unknown {
   return JSON.parse(cleaned);
 }
 
-/**
- * Removes, in place, any marking point whose `marks` is 0 or less. Runs BEFORE
- * ClaudeEvalSchema validation, which requires marks > 0 — a penalty emitted as
- * its own 0-mark "point" would otherwise fail the whole evaluation and cost
- * the student a refunded retry. Entries whose `marks` isn't a number are left
- * alone so the schema still rejects them. Logs only a count and the archetype
- * id — no student or question content.
- */
-function dropNonPositiveMarkingPoints(parsed: unknown, archetypeId: string): void {
-  if (typeof parsed !== "object" || parsed === null) return;
-  const container = parsed as { marking_points?: unknown };
-  if (!Array.isArray(container.marking_points)) return;
-
-  const kept = container.marking_points.filter((p) => {
-    if (typeof p !== "object" || p === null) return true;
-    const marks = (p as { marks?: unknown }).marks;
-    return !(typeof marks === "number" && marks <= 0);
-  });
-  const removed = container.marking_points.length - kept.length;
-  if (removed > 0) {
-    container.marking_points = kept;
-    console.warn(
-      `[BoardEdge] evaluate-derived: removed ${removed} marking point(s) with marks <= 0 before validation`,
-      { archetypeId }
-    );
-  }
-}
-
-async function callClaude(
-  anthropic: Anthropic,
-  system: string,
-  userContent: string,
-  maxTokens: number
-): Promise<string> {
-  const message = await anthropic.messages.create({
-    model: MODEL,
-    max_tokens: maxTokens,
-    temperature: TEMPERATURE,
-    system,
-    messages: [{ role: "user", content: userContent }],
-  });
-  const textBlock = message.content.find((b) => b.type === "text");
-  if (!textBlock || textBlock.type !== "text") {
-    throw new Error("Claude returned no text content");
-  }
-  return textBlock.text;
-}
-
 // ─── Call 1: archetype classification ────────────────────────────────────────
 
 function buildClassifierSystemPrompt(subject: DerivedSubject): string {
@@ -222,12 +173,6 @@ IMPROVEMENT TIPS: return at most 2 improvement_tips, each exactly one sentence. 
 MODEL ANSWER: there is no verified model answer. Construct one from your derived marking points, as Section 4 directs for the absent case. model_answer_source is "ai_generated".
 
 The rubric section is grading material: never quote constraint_ids, criterion_ids, rule_refs or evidence references in any output field.`;
-
-function buildDerivedSystemPrompt(subject: DerivedSubject): string {
-  return `${buildExaminerSystemPrompt(subject)}
-
-${DERIVED_SCHEME_ADDENDUM}`;
-}
 
 function buildDerivedUserMessage(
   question: string,
@@ -359,12 +304,12 @@ export async function POST(req: NextRequest) {
 
   let archetypeId: string;
   try {
-    const raw = await callClaude(
-      anthropic,
-      buildClassifierSystemPrompt(subject),
-      buildClassifierUserMessage(question, rubric),
-      100
-    );
+    const raw = await requestGrading(anthropic, {
+      label: "derived-classify",
+      system: buildClassifierSystemPrompt(subject),
+      content: buildClassifierUserMessage(question, rubric),
+      maxTokens: CLASSIFIER_MAX_TOKENS,
+    });
     const validated = ClassificationSchema.safeParse(parseModelJson(raw));
     if (!validated.success) {
       console.error("[BoardEdge] evaluate-derived: invalid archetype classification:", raw);
@@ -398,10 +343,10 @@ export async function POST(req: NextRequest) {
 
   let rawContent: string;
   try {
-    rawContent = await callClaude(
-      anthropic,
-      buildDerivedSystemPrompt(subject),
-      buildDerivedUserMessage(
+    rawContent = await requestGrading(anthropic, {
+      label: "derived-grade",
+      system: examinerSystem(subject, DERIVED_SCHEME_ADDENDUM),
+      content: buildDerivedUserMessage(
         question,
         studentAnswer,
         marks,
@@ -410,8 +355,8 @@ export async function POST(req: NextRequest) {
       ),
       // Same headroom as /api/evaluate: marking_points repeat point wording
       // plus a verbatim quote each, and truncation mid-JSON is the failure.
-      4096
-    );
+      maxTokens: GRADING_MAX_TOKENS,
+    });
   } catch (claudeError: unknown) {
     await refundTokens(supabase, userId, today, tokenCost);
     console.error("[BoardEdge] evaluate-derived: Claude API error:", claudeError);
@@ -424,7 +369,6 @@ export async function POST(req: NextRequest) {
   let claudeEval: z.infer<typeof ClaudeEvalSchema>;
   try {
     const parsedJson = parseModelJson(rawContent);
-    dropNonPositiveMarkingPoints(parsedJson, archetypeId);
     const validated = ClaudeEvalSchema.safeParse(parsedJson);
     if (!validated.success) {
       throw new Error(`Schema validation failed: ${validated.error.message}`);
@@ -467,7 +411,10 @@ export async function POST(req: NextRequest) {
 
   const evaluation: DerivedEvaluationOutput = {
     ...claudeEval,
-    marking_points: resolveMarkingPointAnchors(claudeEval.marking_points, studentAnswer),
+    marking_points: resolveMarkingPointAnchors(
+      trimSurplusMarkingPoints(claudeEval.marking_points, marks),
+      studentAnswer
+    ),
     marks_awarded: clampedMarks,
     total_marks: marks,
     // Hard cap, same reasoning as the clamp: the prompt asks for at most 2,

@@ -30,9 +30,9 @@ import { createCipheriv, createDecipheriv, hkdfSync, randomBytes } from "node:cr
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { createAdminClient } from "@/lib/supabase/server";
-import { buildExaminerSystemPrompt } from "@/lib/prompts/examiner-prompt";
 import { isSubjectiveGraded } from "@/lib/question-format";
 import { buildUserMessage, ClaudeEvalSchema, type MarkingScheme } from "./grading";
+import { examinerSystem, GRADING_MAX_TOKENS, HANDWRITTEN_MAX_TOKENS, requestGrading } from "./model";
 
 // ─── Limits ──────────────────────────────────────────────────────────────────
 
@@ -47,8 +47,6 @@ export const MAX_TOTAL_BYTES = 4 * 1024 * 1024;
 export const MAX_TRANSCRIPT_CHARS = 12_000;
 /** How long a student has to review a transcript before the seal lapses. */
 const SEAL_TTL_MS = 30 * 60 * 1000;
-
-export const HANDWRITING_MODEL = "claude-sonnet-4-5";
 
 // ─── Images ──────────────────────────────────────────────────────────────────
 
@@ -130,22 +128,10 @@ export class GradingError extends Error {
   }
 }
 
-async function callClaude(
-  system: string,
-  content: Anthropic.Messages.ContentBlockParam[],
-  maxTokens: number,
-): Promise<string> {
+async function callClaude(request: Parameters<typeof requestGrading>[1]): Promise<string> {
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   try {
-    const message = await anthropic.messages.create({
-      model: HANDWRITING_MODEL,
-      max_tokens: maxTokens,
-      system,
-      messages: [{ role: "user", content }],
-    });
-    const textBlock = message.content.find((b) => b.type === "text");
-    if (!textBlock || textBlock.type !== "text") throw new Error("Claude returned no text content");
-    return textBlock.text;
+    return await requestGrading(anthropic, request);
   } catch (err) {
     throw new GradingError("anthropic_error", err instanceof Error ? err.message : "Unknown error");
   }
@@ -179,9 +165,10 @@ export async function transcribeAndGrade({
   scheme: MarkingScheme;
   images: { mediaType: ImageMediaType; base64: string }[];
 }): Promise<HandwrittenEval> {
-  const raw = await callClaude(
-    `${buildExaminerSystemPrompt(subject)}\n\n${HANDWRITING_ADDENDUM}`,
-    [
+  const raw = await callClaude({
+    label: "handwritten",
+    system: examinerSystem(subject, HANDWRITING_ADDENDUM),
+    content: [
       ...images.map(
         (img): Anthropic.Messages.ImageBlockParam => ({
           type: "image",
@@ -190,10 +177,9 @@ export async function transcribeAndGrade({
       ),
       { type: "text", text: buildUserMessage(questionText, PLACEHOLDER, scheme) },
     ],
-    // Transcript plus the full marking_points evaluation; the typed path's
-    // 4096 has no room for a long transcript on top.
-    8192,
-  );
+    // Higher than the typed path: there is a transcript to fit as well.
+    maxTokens: HANDWRITTEN_MAX_TOKENS,
+  });
   return validate(HandwrittenEvalSchema, raw);
 }
 
@@ -212,11 +198,12 @@ export async function gradeCorrectedTranscript({
   scheme: MarkingScheme;
   answer: string;
 }): Promise<ClaudeEval> {
-  const raw = await callClaude(
-    buildExaminerSystemPrompt(subject),
-    [{ type: "text", text: buildUserMessage(questionText, answer, scheme) }],
-    4096,
-  );
+  const raw = await callClaude({
+    label: "handwritten-corrected",
+    system: examinerSystem(subject),
+    content: buildUserMessage(questionText, answer, scheme),
+    maxTokens: GRADING_MAX_TOKENS,
+  });
   return validate(ClaudeEvalSchema, raw);
 }
 
