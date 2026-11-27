@@ -225,25 +225,33 @@ export function trimSurplusMarkingPoints<T extends { marks: number; marks_awarde
 // the scheme makes case mark-bearing, so this check runs after the model and
 // before reconcileMarks on every grading path.
 //
-// Kept narrow on purpose: 1-mark questions only (a bigger question may want an
-// explanation as well as the name), short keys only (a long scheme isn't a list
-// of names), and every part the student wrote must be an accepted answer
-// ("Nitrogen dioxide (NO2)" passes; "Nitrogen dioxide or hydrogen" doesn't). It
-// only ever raises a mark to full, never lowers one.
+// Kept narrow on purpose, because a false match hands out an unearned mark:
+//   - 1-mark questions and short keys only;
+//   - never English Language, where capitals and punctuation are mark-bearing;
+//   - keys split into alternatives only on " or " or a spaced slash, so "m/s",
+//     "Copper(II) oxide" and "Nitrogen, hydrogen" stay whole;
+//   - signs and punctuation inside an answer are kept ("-5" is not "5");
+//   - chemical symbols and formulas compare case-sensitively ("CO" is not "Co").
+// It only ever raises a mark to full, never lowers one.
 
 const MAX_KEY_LENGTH = 60;
 
-function normaliseKeyText(raw: string): string {
+// "CO", "Co", "NO2", "Na+": one short token where case changes the meaning.
+const FORMULA = /^(?=\S{1,12}$)(?:[A-Z][a-z]?\d*[+-]?|(?=.*[A-Z])(?=.*[\d+\-]|.+[A-Z])[A-Za-z0-9()+\-]+)$/;
+
+function cleanKeyText(raw: string): string {
   return raw
     .normalize("NFKC") // NO₂ → NO2
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\s+/g, " ")
     .trim()
-    .replace(/^(the|an|a) /, "");
+    .replace(/\.$/, "")
+    .trim();
 }
 
-function splitAlternatives(raw: string): string[] {
-  return raw.split(/\s*(?:\/|\(|\)|,|;|\bor\b)\s*/i).map(normaliseKeyText).filter(Boolean);
+function normaliseKeyText(raw: string): string {
+  const cleaned = cleanKeyText(raw);
+  if (FORMULA.test(cleaned)) return cleaned;
+  return cleaned.toLowerCase().replace(/^(the|an|a) (?=\S)/, "");
 }
 
 function acceptedKeyAnswers(scheme: MarkingScheme, correctAnswer: string | null | undefined): Set<string> {
@@ -254,9 +262,14 @@ function acceptedKeyAnswers(scheme: MarkingScheme, correctAnswer: string | null 
     sources.push(...scheme.accepted_alternatives.filter((a): a is string => typeof a === "string"));
   }
   const keys = new Set<string>();
-  for (const s of sources) {
-    if (s.length > MAX_KEY_LENGTH || /[\n.!?]\s/.test(s)) continue;
-    for (const alt of splitAlternatives(s)) keys.add(alt);
+  for (const source of sources) {
+    // A leading part label like "(b)" or "(ii)" is not part of the answer.
+    const s = source.trim().replace(/^\((?:[a-z]|[ivx]+)\)\s*/, "");
+    if (s.length > MAX_KEY_LENGTH || /\n|[.!?]\s/.test(s)) continue;
+    for (const alt of [s, ...s.split(/\s+\/\s*|\s*\/\s+|\s+or\s+/i)]) {
+      const key = normaliseKeyText(alt);
+      if (key) keys.add(key);
+    }
   }
   return keys;
 }
@@ -264,24 +277,27 @@ function acceptedKeyAnswers(scheme: MarkingScheme, correctAnswer: string | null 
 export function isExactKeyAnswer(
   studentAnswer: string,
   scheme: MarkingScheme,
+  subject: string,
   correctAnswer?: string | null
 ): boolean {
+  if (resolveSubjectKey(subject) === "english_language") return false;
   if (scheme.total_marks > 1 || studentAnswer.length > MAX_KEY_LENGTH) return false;
   const keys = acceptedKeyAnswers(scheme, correctAnswer);
-  if (!keys.size) return false;
   if (keys.has(normaliseKeyText(studentAnswer))) return true;
-  const parts = splitAlternatives(studentAnswer);
-  return parts.length > 0 && parts.every((p) => keys.has(p));
+  // "Nitrogen dioxide (NO2)": a name and its bracketed form, both accepted.
+  const pair = cleanKeyText(studentAnswer).match(/^(.+?) \((.+)\)$/);
+  return !!pair && keys.has(normaliseKeyText(pair[1])) && keys.has(normaliseKeyText(pair[2]));
 }
 
 export function creditExactKeyAnswer<E extends z.infer<typeof ClaudeEvalSchema>>(
   evaluation: E,
   studentAnswer: string,
   scheme: MarkingScheme,
+  subject: string,
   correctAnswer?: string | null
 ): E {
   const total = scheme.total_marks;
-  if (evaluation.marks_awarded >= total || !isExactKeyAnswer(studentAnswer, scheme, correctAnswer)) {
+  if (evaluation.marks_awarded >= total || !isExactKeyAnswer(studentAnswer, scheme, subject, correctAnswer)) {
     return evaluation;
   }
   console.warn("[BoardEdge] exact key answer under-marked by the model; awarding full marks");

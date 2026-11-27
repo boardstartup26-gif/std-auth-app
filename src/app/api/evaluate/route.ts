@@ -525,7 +525,7 @@ export async function POST(req: NextRequest) {
       parseFailureStage = FAILURE_STAGES.SCHEMA_VALIDATION_ERROR;
       throw new Error(`Schema validation failed: ${validated.error.message}`);
     }
-    claudeEval = creditExactKeyAnswer(validated.data, student_answer, scheme, question.correct_answer);
+    claudeEval = creditExactKeyAnswer(validated.data, student_answer, scheme, subject, question.correct_answer);
   } catch (err) {
     await refundTokens(supabase, userId, today, tokenCost);
     console.error("[BoardEdge] Failed to parse/validate Claude output:", rawContent, err);

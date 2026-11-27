@@ -164,7 +164,7 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  claudeEval = creditExactKeyAnswer(claudeEval, answer, question.scheme);
+  claudeEval = creditExactKeyAnswer(claudeEval, answer, question.scheme, subject ?? "");
 
   // Same enforcement as the typed route: the schema checks shape, this checks
   // range. A sealed grade is ours, but it was still produced by a model.

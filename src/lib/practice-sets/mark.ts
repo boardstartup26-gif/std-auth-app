@@ -148,6 +148,7 @@ async function gradeWritten(
     validated.data,
     answer,
     scheme,
+    subject,
     q.correct_answer,
   );
 
