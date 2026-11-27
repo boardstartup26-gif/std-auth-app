@@ -28,6 +28,7 @@ import {
   buildUserMessage,
   ClaudeEvalSchema,
   matchObjectiveAnswer,
+  creditExactKeyAnswer,
   persistSubmission,
   questionTextForGrading,
   refundTokens,
@@ -143,7 +144,12 @@ async function gradeWritten(
     .trim();
   const validated = ClaudeEvalSchema.safeParse(JSON.parse(cleaned));
   if (!validated.success) throw new Error(`Schema validation failed: ${validated.error.message}`);
-  const claudeEval: z.infer<typeof ClaudeEvalSchema> = validated.data;
+  const claudeEval: z.infer<typeof ClaudeEvalSchema> = creditExactKeyAnswer(
+    validated.data,
+    answer,
+    scheme,
+    q.correct_answer,
+  );
 
   // Schema validation checks shape, not range: the clamp is load-bearing.
   const clamped = Math.max(0, Math.min(claudeEval.marks_awarded, scheme.total_marks));

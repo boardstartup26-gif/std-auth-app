@@ -218,6 +218,92 @@ export function trimSurplusMarkingPoints<T extends { marks: number; marks_awarde
   return kept;
 }
 
+// ─── Exact Key Answers ─────────────────────────────────────────────────────
+// A 1-mark "name the gas" answer that IS the answer key must never lose its
+// mark. The model has refused "Nitrogen Dioxide" against "Nitrogen dioxide /
+// NO2" for "not matching the spelling and format", i.e. a capital D. Nothing in
+// the scheme makes case mark-bearing, so this check runs after the model and
+// before reconcileMarks on every grading path.
+//
+// Kept narrow on purpose: 1-mark questions only (a bigger question may want an
+// explanation as well as the name), short keys only (a long scheme isn't a list
+// of names), and every part the student wrote must be an accepted answer
+// ("Nitrogen dioxide (NO2)" passes; "Nitrogen dioxide or hydrogen" doesn't). It
+// only ever raises a mark to full, never lowers one.
+
+const MAX_KEY_LENGTH = 60;
+
+function normaliseKeyText(raw: string): string {
+  return raw
+    .normalize("NFKC") // NO₂ → NO2
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .replace(/^(the|an|a) /, "");
+}
+
+function splitAlternatives(raw: string): string[] {
+  return raw.split(/\s*(?:\/|\(|\)|,|;|\bor\b)\s*/i).map(normaliseKeyText).filter(Boolean);
+}
+
+function acceptedKeyAnswers(scheme: MarkingScheme, correctAnswer: string | null | undefined): Set<string> {
+  const sources: string[] = [];
+  if (correctAnswer) sources.push(correctAnswer);
+  if (scheme.scheme_text) sources.push(scheme.scheme_text);
+  if (Array.isArray(scheme.accepted_alternatives)) {
+    sources.push(...scheme.accepted_alternatives.filter((a): a is string => typeof a === "string"));
+  }
+  const keys = new Set<string>();
+  for (const s of sources) {
+    if (s.length > MAX_KEY_LENGTH || /[\n.!?]\s/.test(s)) continue;
+    for (const alt of splitAlternatives(s)) keys.add(alt);
+  }
+  return keys;
+}
+
+export function isExactKeyAnswer(
+  studentAnswer: string,
+  scheme: MarkingScheme,
+  correctAnswer?: string | null
+): boolean {
+  if (scheme.total_marks > 1 || studentAnswer.length > MAX_KEY_LENGTH) return false;
+  const keys = acceptedKeyAnswers(scheme, correctAnswer);
+  if (!keys.size) return false;
+  if (keys.has(normaliseKeyText(studentAnswer))) return true;
+  const parts = splitAlternatives(studentAnswer);
+  return parts.length > 0 && parts.every((p) => keys.has(p));
+}
+
+export function creditExactKeyAnswer<E extends z.infer<typeof ClaudeEvalSchema>>(
+  evaluation: E,
+  studentAnswer: string,
+  scheme: MarkingScheme,
+  correctAnswer?: string | null
+): E {
+  const total = scheme.total_marks;
+  if (evaluation.marks_awarded >= total || !isExactKeyAnswer(studentAnswer, scheme, correctAnswer)) {
+    return evaluation;
+  }
+  console.warn("[BoardEdge] exact key answer under-marked by the model; awarding full marks");
+  return {
+    ...evaluation,
+    marks_awarded: total,
+    marking_points: [
+      {
+        point: scheme.scheme_text || correctAnswer || "Correct answer",
+        marks: total,
+        status: "awarded" as const,
+        marks_awarded: total,
+        matched_text: studentAnswer.trim() || null,
+      },
+    ],
+    conceptual_errors: [],
+    icse_style_issues: [],
+    examiner_feedback: "Correct. Your answer matches the marking scheme.",
+    improvement_tips: [],
+  };
+}
+
 // ─── Score Reconciliation ──────────────────────────────────────────────────
 // The model reports a total and a per-point breakdown, and they can disagree:
 // a letter came back 10/10 with "Expression 3/4" beside it. The score shown

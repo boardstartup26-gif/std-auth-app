@@ -19,6 +19,7 @@ import {
   persistSubmission,
   resolveMarkingPointAnchors,
   reconcileMarks,
+  creditExactKeyAnswer,
   type EvaluationOutput,
 } from "@/lib/evaluation/grading";
 import {
@@ -162,6 +163,8 @@ export async function POST(req: NextRequest) {
       );
     }
   }
+
+  claudeEval = creditExactKeyAnswer(claudeEval, answer, question.scheme);
 
   // Same enforcement as the typed route: the schema checks shape, this checks
   // range. A sealed grade is ours, but it was still produced by a model.
