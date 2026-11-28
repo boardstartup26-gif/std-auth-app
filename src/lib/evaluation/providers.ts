@@ -72,9 +72,9 @@ const PROVIDERS: Record<ProviderId, ProviderConfig> = {
     endpoint: "https://openrouter.ai/api/v1/chat/completions",
     keyEnv: "OPENROUTER_API_KEY",
     modelsEnv: "OPENROUTER_MODELS",
-    // Both had an endpoint that doesn't collect prompts when chosen. Free
-    // listings change often; override with OPENROUTER_MODELS.
-    defaultModels: ["baidu/ernie-5.5-flash-preview:free", "google/gemma-4-31b-it:free"],
+    // Had an endpoint that doesn't collect prompts when chosen. A preview
+    // listing, so it may disappear; override with OPENROUTER_MODELS.
+    defaultModels: ["baidu/ernie-5.5-flash-preview:free"],
     isFree: (m) => m.endsWith(":free"),
     acceptsImages: (m) => m.startsWith("google/gemma-4"),
     timeoutMs: 25_000,
