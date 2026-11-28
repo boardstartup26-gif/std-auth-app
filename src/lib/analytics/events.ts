@@ -39,6 +39,15 @@ export const EVENTS = {
    */
   TRANSCRIPT_READY: "transcript_ready",
 
+  // ── Model providers ────────────────────────────────────────────────────────
+  /**
+   * Server, free-tier grading only: one row per grading request. Carries
+   * `label`, `ok`, the `provider` and `model` that served it, token counts,
+   * `duration_ms` and `fallbacks` (each failed attempt and why). No student
+   * content and no user id.
+   */
+  AI_GRADING_CALL: "ai_grading_call",
+
   // ── Practice papers ────────────────────────────────────────────────────────
   /** Server: a student built a practice paper. Carries the spec and the fit. */
   PRACTICE_SET_CREATED: "practice_set_created",

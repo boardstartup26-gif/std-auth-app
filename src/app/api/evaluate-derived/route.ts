@@ -20,7 +20,6 @@
 // are the rate limit itself.
 
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 import { CREDIT_COST_SUBJECTIVE } from "@/lib/constants";
@@ -205,6 +204,9 @@ Write the marking points for this question from the rubric section, then evaluat
 
 // ─── Route Handler ────────────────────────────────────────────────────────────
 
+// Two model calls (classify, then grade) share this limit.
+export const maxDuration = 60;
+
 export async function POST(req: NextRequest) {
   let rawBody: unknown;
   try {
@@ -290,8 +292,6 @@ export async function POST(req: NextRequest) {
   const tokensRemaining = Math.max(0, reservation.limit - reservation.newCount);
 
   const rubric = RUBRICS[subject];
-  const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-
   // ─── Call 1: classify ──────────────────────────────────────────────────────
 
   const archetypeIds = rubric.archetypes.map((a) => a.archetype_id);
@@ -304,8 +304,10 @@ export async function POST(req: NextRequest) {
 
   let archetypeId: string;
   try {
-    const raw = await requestGrading(anthropic, {
+    const raw = await requestGrading({
       label: "derived-classify",
+      schema: ClassificationSchema,
+      budgetMs: 15_000,
       system: buildClassifierSystemPrompt(subject),
       content: buildClassifierUserMessage(question, rubric),
       maxTokens: CLASSIFIER_MAX_TOKENS,
@@ -343,8 +345,10 @@ export async function POST(req: NextRequest) {
 
   let rawContent: string;
   try {
-    rawContent = await requestGrading(anthropic, {
+    rawContent = await requestGrading({
       label: "derived-grade",
+      schema: ClaudeEvalSchema,
+      budgetMs: 40_000,
       system: examinerSystem(subject, DERIVED_SCHEME_ADDENDUM),
       content: buildDerivedUserMessage(
         question,

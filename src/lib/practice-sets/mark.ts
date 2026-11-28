@@ -2,7 +2,7 @@
 //
 // Marks a submitted practice paper. Each answer is graded exactly as a single
 // question is in /api/evaluate: objective answers by deterministic matching,
-// written answers by one Claude call with the same examiner prompt, user
+// written answers by one model call with the same examiner prompt, user
 // message, schema validation and marks clamp. Each result is persisted with
 // persistSubmission, so paper answers show up in /history, count towards
 // mastery and feed the reattempt prompts like any other answer.
@@ -20,7 +20,6 @@
 //
 // Server-only.
 
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { createAdminClient } from "@/lib/supabase/server";
 import { CREDIT_COST_OBJECTIVE, CREDIT_COST_SUBJECTIVE } from "@/lib/constants";
@@ -40,12 +39,17 @@ import {
   type McqOption,
 } from "@/lib/evaluation/grading";
 import { examinerSystem, GRADING_MAX_TOKENS, requestGrading } from "@/lib/evaluation/model";
+import { GradingUnavailableError, usingFreeProviders } from "@/lib/evaluation/providers";
 import { isSubjectiveGraded } from "@/lib/question-format";
 
 type Admin = ReturnType<typeof createAdminClient>;
 
 const STALE_CLAIM_MS = 3 * 60 * 1000;
 const CONCURRENCY = 4;
+// Free tiers allow only a few requests a minute.
+const FREE_CONCURRENCY = 2;
+// A grading call may run this far past the run's deadline before it is cut off.
+const OVERRUN_MS = 20_000;
 
 export interface MarkProgress {
   status: "in_progress" | "marking" | "marked";
@@ -56,6 +60,8 @@ export interface MarkProgress {
   finished?: { score: number; outOf: number };
   /** Answers this run marked, for telemetry. */
   graded?: GradedAnswer[];
+  /** No model could take an answer right now; it is still pending. */
+  busy?: boolean;
 }
 
 export interface GradedAnswer {
@@ -125,14 +131,16 @@ function gradeObjective(q: QuestionForMarking, scheme: MarkingScheme, answer: st
 }
 
 async function gradeWritten(
-  anthropic: Anthropic,
   subject: string,
   q: QuestionForMarking,
   scheme: MarkingScheme,
   answer: string,
+  deadline: number,
 ): Promise<EvaluationOutput> {
-  const raw = await requestGrading(anthropic, {
+  const raw = await requestGrading({
     label: "practice-paper",
+    schema: ClaudeEvalSchema,
+    budgetMs: Math.max(0, deadline + OVERRUN_MS - Date.now()),
     system: examinerSystem(subject),
     content: buildUserMessage(questionTextForGrading(q.question_text, q.stimulus), answer, scheme),
     maxTokens: GRADING_MAX_TOKENS,
@@ -173,20 +181,22 @@ async function gradeWritten(
 }
 
 async function grade(
-  anthropic: Anthropic,
   subject: string,
   q: QuestionForMarking,
   answer: string,
+  deadline: number,
 ): Promise<EvaluationOutput> {
   const scheme = Array.isArray(q.marking_schemes) ? q.marking_schemes[0] : q.marking_schemes;
   if (!scheme) throw new Error("marking scheme missing");
   if (!isSubjectiveGraded(q)) return gradeObjective(q, scheme, answer);
   // One retry: a truncated or malformed reply is usually a one-off.
   try {
-    return await gradeWritten(anthropic, subject, q, scheme, answer);
+    return await gradeWritten(subject, q, scheme, answer, deadline);
   } catch (err) {
+    // Every model has just been tried; asking again now would change nothing.
+    if (err instanceof GradingUnavailableError) throw err;
     console.warn("[BoardEdge] paper answer grading failed, retrying once:", err instanceof Error ? err.message : err);
-    return gradeWritten(anthropic, subject, q, scheme, answer);
+    return gradeWritten(subject, q, scheme, answer, deadline);
   }
 }
 
@@ -228,6 +238,7 @@ export async function markPaper(userId: string, setId: string, deadline: number)
     .or(`mark_state.eq.pending,and(mark_state.eq.grading,claimed_at.lt.${staleBefore})`);
   const queue = (open ?? []) as { question_id: string; answer_text: string; mark_state: string; claimed_at: string | null }[];
   const graded: GradedAnswer[] = [];
+  let busy = false;
 
   if (queue.length) {
     const { data: qs, error: qError } = await admin
@@ -246,12 +257,11 @@ export async function markPaper(userId: string, setId: string, deadline: number)
       return { status: "marking", done: await progressOf(admin, setId, total), total };
     }
     const questions = new Map(((qs ?? []) as unknown as QuestionForMarking[]).map((q) => [q.id, q]));
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
     const refundDate = usageDateOf((set.submitted_at as string | null) ?? new Date().toISOString());
 
     let next = 0;
     const worker = async () => {
-      while (next < queue.length && Date.now() < deadline) {
+      while (!busy && next < queue.length && Date.now() < deadline) {
         const item = queue[next++];
         // Claim it. Only the run whose update matches the state it read gets
         // to grade; anyone else sees zero rows and moves on.
@@ -269,7 +279,7 @@ export async function markPaper(userId: string, setId: string, deadline: number)
         const cost = q ? creditCost(q) : 0;
         try {
           if (!q) throw new Error("question missing");
-          const evaluation = await grade(anthropic, set.subject as string, q, item.answer_text);
+          const evaluation = await grade(set.subject as string, q, item.answer_text, deadline);
           const { studentAnswerId } = await persistSubmission(admin, {
             questionId: q.id,
             studentAnswer: item.answer_text,
@@ -290,6 +300,17 @@ export async function markPaper(userId: string, setId: string, deadline: number)
             totalMarks: evaluation.total_marks,
           });
         } catch (err) {
+          if (err instanceof GradingUnavailableError && err.retryable) {
+            // A rate limit or outage, not a problem with this answer: hand it
+            // back for a later run, keep its credit, and end this run.
+            busy = true;
+            await admin
+              .from("practice_set_answers")
+              .update({ mark_state: "pending", claimed_at: null, updated_at: new Date().toISOString() })
+              .eq("set_id", setId)
+              .eq("question_id", item.question_id);
+            continue;
+          }
           console.error("[BoardEdge] paper answer could not be marked:", {
             setId,
             questionId: item.question_id,
@@ -306,7 +327,8 @@ export async function markPaper(userId: string, setId: string, deadline: number)
         }
       }
     };
-    await Promise.all(Array.from({ length: Math.min(CONCURRENCY, queue.length) }, worker));
+    const concurrency = usingFreeProviders() ? FREE_CONCURRENCY : CONCURRENCY;
+    await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, worker));
   }
 
   const { data: remaining } = await admin
@@ -316,7 +338,7 @@ export async function markPaper(userId: string, setId: string, deadline: number)
     .in("mark_state", ["pending", "grading"])
     .limit(1);
   if (remaining?.length) {
-    return { status: "marking", done: await progressOf(admin, setId, total), total, graded };
+    return { status: "marking", done: await progressOf(admin, setId, total), total, graded, busy };
   }
 
   const finished = await finalisePaper(admin, setId);

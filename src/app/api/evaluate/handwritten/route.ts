@@ -22,7 +22,7 @@ import { getEvaluationGateState } from "@/lib/parent-consent/service";
 import { EVENTS, FAILURE_STAGES, type FailureStage } from "@/lib/analytics/events";
 import { recordServerEvent } from "@/lib/analytics/server";
 import { refundTokens, reserveTokens } from "@/lib/evaluation/grading";
-import { usingFreeProvider } from "@/lib/evaluation/groq";
+import { canGradePhotos } from "@/lib/evaluation/providers";
 import {
   GradingError,
   loadQuestionByKey,
@@ -97,8 +97,8 @@ export async function POST(req: NextRequest) {
   }
   const userId = user.id;
 
-  // Refused before any credit is reserved; see src/lib/evaluation/groq.ts.
-  if (usingFreeProvider()) {
+  // Refused before any credit is reserved; see canGradePhotos().
+  if (!canGradePhotos()) {
     return NextResponse.json(
       { error: "Photo answers are paused for now. Please type your answer instead." },
       { status: 503 },

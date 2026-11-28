@@ -1,6 +1,5 @@
 import { after, NextRequest, NextResponse } from "next/server";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { CREDIT_COST_SUBJECTIVE, CREDIT_COST_OBJECTIVE } from "@/lib/constants";
 import {
@@ -121,6 +120,9 @@ function trackEvaluationCompleted(
 }
 
 // ─── Route Handler ────────────────────────────────────────────────────────────
+
+// Room for the free-tier chain to reach its last provider.
+export const maxDuration = 60;
 
 export async function POST(req: NextRequest) {
   const startedAt = Date.now();
@@ -463,16 +465,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(evaluation, { status: 200 });
   }
 
-  // ─── SUBJECTIVE PATH (Claude call) ────────────────────────────────────────
-
-  const anthropic = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
-  });
+  // ─── SUBJECTIVE PATH (model call) ─────────────────────────────────────────
 
   let rawContent: string;
   try {
-    rawContent = await requestGrading(anthropic, {
+    rawContent = await requestGrading({
       label: "typed",
+      schema: ClaudeEvalSchema,
       system: examinerSystem(subject),
       content: buildUserMessage(
         questionTextForGrading(question.question_text, question.stimulus),

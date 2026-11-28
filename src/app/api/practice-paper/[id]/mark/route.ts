@@ -106,6 +106,14 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
       }),
     );
   }
+  // Nothing could be marked this run. The marking screen backs off on an error
+  // response and offers "Try Again"; a 200 would make it call again at once.
+  if (progress.busy && !graded.length) {
+    return NextResponse.json(
+      { error: "Grading is busy. Your answers are saved; try again in a few minutes." },
+      { status: 503 },
+    );
+  }
   return NextResponse.json({ status: progress.status, done: progress.done, total: progress.total });
 }
 

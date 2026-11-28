@@ -27,7 +27,7 @@
 // Server-only.
 
 import { createCipheriv, createDecipheriv, hkdfSync, randomBytes } from "node:crypto";
-import Anthropic from "@anthropic-ai/sdk";
+import type Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { createAdminClient } from "@/lib/supabase/server";
 import { isSubjectiveGraded } from "@/lib/question-format";
@@ -128,10 +128,9 @@ export class GradingError extends Error {
   }
 }
 
-async function callClaude(request: Parameters<typeof requestGrading>[1]): Promise<string> {
-  const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+async function callModel(request: Parameters<typeof requestGrading>[0]): Promise<string> {
   try {
-    return await requestGrading(anthropic, request);
+    return await requestGrading(request);
   } catch (err) {
     throw new GradingError("anthropic_error", err instanceof Error ? err.message : "Unknown error");
   }
@@ -165,8 +164,9 @@ export async function transcribeAndGrade({
   scheme: MarkingScheme;
   images: { mediaType: ImageMediaType; base64: string }[];
 }): Promise<HandwrittenEval> {
-  const raw = await callClaude({
+  const raw = await callModel({
     label: "handwritten",
+    schema: HandwrittenEvalSchema,
     system: examinerSystem(subject, HANDWRITING_ADDENDUM),
     content: [
       ...images.map(
@@ -198,8 +198,9 @@ export async function gradeCorrectedTranscript({
   scheme: MarkingScheme;
   answer: string;
 }): Promise<ClaudeEval> {
-  const raw = await callClaude({
+  const raw = await callModel({
     label: "handwritten-corrected",
+    schema: ClaudeEvalSchema,
     system: examinerSystem(subject),
     content: buildUserMessage(questionText, answer, scheme),
     maxTokens: GRADING_MAX_TOKENS,

@@ -1,15 +1,17 @@
 // src/lib/evaluation/model.ts
 //
-// The one place a grading request to Claude is built. The typed route, the
-// handwritten routes, the practice-paper marker and /api/evaluate-derived all
-// call through here, so the model, thinking setting, prompt caching and refusal
-// handling can't drift apart between them.
+// The one entry point for grading requests. The typed route, the handwritten
+// routes, the practice-paper marker and /api/evaluate-derived all call through
+// here, so the model, thinking setting, prompt caching and refusal handling
+// can't drift apart between them. GRADING_PROVIDER=free (or groq) sends the
+// same request down the free-tier chain in ./providers.ts instead of to Claude.
 //
 // Server-only.
 
 import type Anthropic from "@anthropic-ai/sdk";
+import type { z } from "zod";
 import { buildExaminerSystemPrompt, CORE_PROMPT } from "@/lib/prompts/examiner-prompt";
-import { requestGradingFromGroq, usingFreeProvider } from "./groq";
+import { requestFromFreeProviders, usingFreeProviders } from "./providers";
 
 export const GRADING_MODEL = "claude-sonnet-5-5";
 
@@ -35,27 +37,43 @@ export function examinerSystem(subject: string, addendum?: string): Anthropic.Te
   return parts.map((text) => ({ type: "text", text, cache_control: { type: "ephemeral" } }));
 }
 
+// Loaded on first use: the free-tier path never needs the SDK, and a cold start
+// shouldn't pay for it before the first model call. Reused so connections are.
+let anthropicClient: Promise<Anthropic> | null = null;
+
+function claude(): Promise<Anthropic> {
+  anthropicClient ??= import("@anthropic-ai/sdk").then(
+    ({ default: Client }) => new Client({ apiKey: process.env.ANTHROPIC_API_KEY }),
+  );
+  return anthropicClient;
+}
+
 /**
  * Sends one grading request and returns the reply text. Throws on an API error,
- * a refusal or an empty reply; each caller keeps its own refund and telemetry.
+ * a refusal or an empty reply; each caller keeps its own parsing, refund and
+ * telemetry.
  */
-export async function requestGrading(
-  anthropic: Anthropic,
-  {
-    system,
-    content,
-    maxTokens,
-    label,
-  }: {
-    system: string | Anthropic.TextBlockParam[];
-    content: string | Anthropic.ContentBlockParam[];
-    maxTokens: number;
-    /** Which call site this is, for the usage log. */
-    label: string;
-  },
-): Promise<string> {
-  // Temporary free-tier switch; see ./groq.ts.
-  if (usingFreeProvider()) return requestGradingFromGroq({ system, content, label });
+export async function requestGrading({
+  system,
+  content,
+  maxTokens,
+  label,
+  schema,
+  budgetMs,
+}: {
+  system: string | Anthropic.TextBlockParam[];
+  content: string | Anthropic.ContentBlockParam[];
+  maxTokens: number;
+  /** Which call site this is, for the usage log. */
+  label: string;
+  /** Shape of the expected reply. The free chain requests and checks it; Claude is prompted. */
+  schema: z.ZodType;
+  /** Free chain only: how long all attempts together may take. */
+  budgetMs?: number;
+}): Promise<string> {
+  if (usingFreeProviders()) {
+    return requestFromFreeProviders({ system, content, maxTokens, label, schema, budgetMs });
+  }
 
   const body = {
     model: GRADING_MODEL,
@@ -73,7 +91,7 @@ export async function requestGrading(
 
   // SDK 0.71 predates both "between_tools" and "fallbacks", hence the cast. The
   // SDK sends the body through unchanged.
-  const message = await anthropic.messages.create(
+  const message = await (await claude()).messages.create(
     body as unknown as Anthropic.MessageCreateParamsNonStreaming,
     { headers: { "anthropic-beta": "server-side-fallback-2026-07-01" } },
   );
