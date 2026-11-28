@@ -4,7 +4,6 @@ import { useActionState, useState } from "react";
 import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
-import { createBrowserClient } from "@supabase/ssr";
 import {
   backLink,
   btnPrimary,
@@ -68,6 +67,8 @@ function GoogleButton({
       // immediately after, and a plain fetch would be cancelled with it.
       track(EVENTS.SIGNUP_STARTED, { method: "google" }, { beacon: true });
     }
+    // Loaded on click, so the form doesn't wait on a library only Google uses.
+    const { createBrowserClient } = await import("@supabase/ssr");
     const supabase = createBrowserClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!

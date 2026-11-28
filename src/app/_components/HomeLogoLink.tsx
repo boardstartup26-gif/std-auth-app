@@ -18,6 +18,9 @@
 // own marketing page — and the swap happens before they've had time to read
 // the header, let alone click it.
 //
+// The Supabase library is large, so it is only downloaded when this browser
+// holds a session cookie. Anonymous visitors never fetch it.
+//
 // Starts pointed at "/": that's correct for the anonymous case (most of
 // traffic) with zero flash, and it's also what a server-rendered static page
 // has to emit before any client code has run, so this is the only choice
@@ -25,7 +28,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { createClient } from "@/lib/supabase/client";
+
+// Supabase's session cookie: sb-<project>-auth-token, split into .0, .1 when long.
+const SESSION_COOKIE = /(?:^|;\s*)sb-[^=;]+-auth-token(?:\.\d+)?=/;
 
 export function HomeLogoLink({
   className,
@@ -37,9 +42,10 @@ export function HomeLogoLink({
   const [href, setHref] = useState("/");
 
   useEffect(() => {
+    if (!SESSION_COOKIE.test(document.cookie)) return;
     let cancelled = false;
-    createClient()
-      .auth.getUser()
+    import("@/lib/supabase/client")
+      .then(({ createClient }) => createClient().auth.getUser())
       .then(({ data: { user } }) => {
         if (!cancelled && user) setHref("/dashboard");
       })

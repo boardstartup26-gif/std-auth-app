@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { createBrowserClient } from "@supabase/ssr";
 import { BrandPanel } from "../_components/AuthForm";
 import { backLink, btnPrimary, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
 
@@ -18,7 +17,13 @@ export default function ForgotPasswordPage() {
     setPending(true);
     setError(null);
 
-    const supabase = createBrowserClient(
+    const lib = await import("@supabase/ssr").catch(() => null);
+    if (!lib) {
+      setError("Couldn't connect. Check your connection and try again.");
+      setPending(false);
+      return;
+    }
+    const supabase = lib.createBrowserClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
     );

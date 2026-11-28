@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createBrowserClient } from "@supabase/ssr";
 import { BrandPanel } from "@/app/(auth)/_components/AuthForm";
 import { btnPrimary, errorAlert, inputBase, sectionLabel } from "@/lib/ui";
 
@@ -23,7 +22,13 @@ export default function ResetPasswordPage() {
 
     setPending(true);
 
-    const supabase = createBrowserClient(
+    const lib = await import("@supabase/ssr").catch(() => null);
+    if (!lib) {
+      setError("Couldn't connect. Check your connection and try again.");
+      setPending(false);
+      return;
+    }
+    const supabase = lib.createBrowserClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
     );

@@ -117,6 +117,8 @@ BoardEdge (package name `std-auth`) is an AI-powered answer evaluation platform 
 
 ## Known gotchas
 
+- **Function region is pinned to Mumbai** (`"regions": ["bom1"]` in [vercel.json](vercel.json)) because Supabase is in `ap-south-1`. Without it Vercel runs functions in `iad1` and every database query crosses the world. Move both together.
+- **Keep `@supabase/ssr` out of public pages' first load**: load it with `import()` at the moment of use, as `HomeLogoLink` and the auth forms do (about 220 KB of JavaScript).
 - **Middleware must stay in `src/`.** Next only invokes a middleware/proxy file beside the `app` directory (`src/app` here). A root-level `middleware.ts` still compiles but never runs, and nothing errors — that is how route protection and session refresh were silently off from 2026-04-28 to 2026-11-11. To check it's live: `curl -I localhost:3000/dashboard` signed out must be a `307` to `/login`, not a `200`.
 - **Duplicate route trees**: `src/app/protected/layout.tsx` (no parentheses) is a stray leftover next to the real `src/app/(protected)/*` route group — it is not part of the active route structure (route groups in parens don't affect the URL). Don't edit it thinking it's live.
 - **Dead file, intentionally excluded**: `src/app/(protected)/evaluate/page_scc.tsx` is excluded in `tsconfig.json`'s `exclude` list — it's a backup/scratch copy of the evaluate page, not in use. Don't "fix" type errors in it; it's meant to stay out of the build.
